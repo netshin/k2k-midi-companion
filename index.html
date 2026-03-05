@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>K2600 Patch Display</title>
+
+<script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js">
+</script>
+
+<script type="module">
+  let myBankLSB =0 ;
+  let myBankMSB =0 ;
+  // Enable WEBMIDI.js and trigger the onEnabled() function when ready
+  WebMidi
+    .enable()
+    .then(onEnabled)
+    .catch(err => alert(err));
+
+function onEnabled() {
+console.log("WebMidi Enabled");
+  if (WebMidi.inputs.length < 1) {
+    console.log("No Device Detected");
+  } else {
+    WebMidi.inputs.forEach((device, index) => {
+      console.log("index:" + index + " " + device.name);
+    });
+  };
+  
+  const mySynth = WebMidi.inputs[0];
+  // const mySynth = WebMidi.getInputByName("TYPE NAME HERE!")
+  
+  mySynth.channels[1].addListener("noteon", e => {
+    console.log (`${e.note.name}`);
+//    document.body.innerHTML+= `${e.note.name} <br>`;
+  });
+// ==== LISTEN FOR BANK MESSAGES ====
+  mySynth.channels[1].addListener("controlchange", e => {
+  if (e.controller.number === 32) {
+    console.log("Bank LSB:", e.rawValue);
+    myBankLSB = e.rawValue;
+  }else if (e.controller.number === 0) {
+    console.log("Bank MSB:", e.rawValue);
+    myBankMSB = e.rawValue;
+  }
+});
+
+  mySynth.channels[1].addListener("programchange", e => {
+     console.log("Bank MSB:" + myBankMSB + " Bank LSB:" + myBankLSB + " dataBytes: " + e.dataBytes + " PC raw data:" + e.rawData);
+     handleProgramChange(myBankMSB,myBankLSB,e.dataBytes);
+});
+
+}
+</script>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Courier New", monospace;
+  }
+
+  /* Outer rack vibe */
+  .rack {
+    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow:
+      0 20px 50px rgba(0,0,0,0.7),
+      inset 0 2px 4px rgba(255,255,255,0.05);
+  }
+
+  /* Main metal panel */
+  .panel {
+    background: linear-gradient(180deg, #3a3a3a, #242424);
+    padding: 50px 80px;
+    border-radius: 6px;
+    box-shadow:
+      inset 0 3px 6px rgba(0,0,0,0.6),
+      inset 0 -2px 4px rgba(255,255,255,0.04);
+  }
+
+  /* LCD frame */
+  .lcd-frame {
+    background: #0a1c2f;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow:
+      inset 0 0 15px rgba(0,0,0,0.9),
+      0 0 10px rgba(0,150,255,0.2);
+  }
+
+  /* LCD screen */
+  #display {
+    background: #0f2f5a;
+    color: #7df0ff;
+    font-size: 64px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px;
+    min-width: 600px;
+
+    box-shadow:
+      inset 0 0 20px rgba(0,0,0,0.8);
+
+    animation: lcdGlow 4s infinite ease-in-out;
+  }
+
+  @keyframes lcdGlow {
+    0%   { text-shadow: 0 0 5px #7df0ff; }
+    50%  { text-shadow: 0 0 18px #7df0ff; }
+    100% { text-shadow: 0 0 5px #7df0ff; }
+  }
+.screw {
+  width: 14px;
+  height: 14px;
+  background: radial-gradient(circle at 30% 30%, #666, #222);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.panel {
+  position: relative;
+}
+
+.tl { top: 15px; left: 15px; }
+.tr { top: 15px; right: 15px; }
+.bl { bottom: 15px; left: 15px; }
+.br { bottom: 15px; right: 15px; }
+
+/* Make LCD container position relative */
+.lcd-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make LCD container position relative */
+.lcd-frame {
+  position: relative;
+  overflow: hidden;
+}
+
+#notes div {
+  margin-bottom: 6px;
+  font-family: monospace;
+}
+
+/* MIDI CC entries */
+.cc {
+  color: #ffd84d; /* warm hardware yellow */
+  font-weight: bold;
+}
+
+/* Data / Info / Other */
+.meta {
+  color: #e0e0e0; /* soft white */
+}
+
+</style>
+
+
+  </head>
+  
+<body>
+  <div class="rack">
+    <div class="panel">
+      <div class="lcd-frame">
+        <div id="display">Waiting...</div>
+      </div>
+            <div class="notes-frame">
+        <div id="notes">
+          Select a patch to see description...
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="screw tl"></div>
+<div class="screw tr"></div>
+<div class="screw bl"></div>
+<div class="screw br"></div>
+</body>
+
+</html>
