@@ -1,0 +1,28 @@
+{
+  "modelId": "k2600",
+  "displayName": "K2600",
+  "manufacturer": "Kurzweil",
+  "supportUrl": "https://kurzweil.com/k2600/",
+  "patchDataPath": "k2600_programs.json",
+  "controllerDataPath": "k2600_controllers.json",
+  "locationDigits": 3,
+  "programIndex": {
+    "formula": "lsb_times_100_plus_program"
+  },
+  "romCards": [
+    { "id": "orchestral", "label": "Orchestral", "aliases": ["Orchestral"] },
+    { "id": "contemporary", "label": "Contemporary", "aliases": ["Contemporary"] },
+    { "id": "piano", "label": "SD Piano", "aliases": ["Piano", "Stereo Dynamic Piano"] },
+    { "id": "vintage_keys", "label": "Vintage EPs", "aliases": ["Vintage Keys", "Vintage EPs"] },
+    { "id": "general_midi", "label": "General MIDI", "aliases": ["General MIDI", "GM"] },
+    { "id": "live_mode", "label": "Live Mode", "aliases": ["Live Mode"] }
+  ],
+  "patchAccessRules": [
+    { "start": 900, "end": 999, "requiresRomId": "orchestral" },
+    { "start": 800, "end": 899, "requiresRomId": "contemporary" },
+    { "start": 720, "end": 729, "requiresRomId": "piano" },
+    { "start": 740, "end": 749, "requiresRomId": "live_mode" },
+    { "start": 600, "end": 699, "requiresRomId": "vintage_keys" },
+    { "start": 500, "end": 635, "requiresRomId": "general_midi" }
+  ]
+}

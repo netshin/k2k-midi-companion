@@ -6,6 +6,7 @@ console.log("starting app.js");
 
 let patches = {};
 let controllers = {};
+let synthModel = null;
 let mySynth = null;
 let selectedMidiInput = null;
 
@@ -21,10 +22,14 @@ const WAITING_MESSAGE = "Waiting...";
 
 async function loadData() {
 
-  const patchResponse = await fetch("k2600_programs.json");
+  const modelConfigPath = CONFIG?.modelConfigPath || "k2600_model.json";
+  const modelResponse = await fetch(modelConfigPath);
+  synthModel = await modelResponse.json();
+
+  const patchResponse = await fetch(synthModel.patchDataPath);
   patches = await patchResponse.json();
 
-  const controllerResponse = await fetch("k2600_controllers.json");
+  const controllerResponse = await fetch(synthModel.controllerDataPath);
   controllers = await controllerResponse.json();
 
   console.log("JSON loaded");
@@ -41,7 +46,15 @@ async function startMIDI() {
 
   console.log("WebMidi Enabled");
 
-  const savedId = localStorage.getItem("preferredMidiInput");
+  let savedId = localStorage.getItem(getMidiStorageKey());
+
+  if (!savedId) {
+    const legacySavedId = localStorage.getItem("preferredMidiInput");
+    if (legacySavedId) {
+      localStorage.setItem(getMidiStorageKey(), legacySavedId);
+      savedId = legacySavedId;
+    }
+  }
 
   if (savedId) {
 
@@ -137,7 +150,7 @@ function connectDevice(input) {
 
   /* save device id */
 
-  localStorage.setItem("preferredMidiInput", input.id);
+  localStorage.setItem(getMidiStorageKey(), input.id);
 
   attachMidiListeners();
   setWaitingDisplay();
@@ -211,8 +224,16 @@ function attachMidiListeners() {
 
 function handleProgramChange(myBankMSB, myBankLSB, programNumber) {
 
-  let patchNumber = (myBankLSB * 100) + programNumber;
+  const patchNumber = computePatchNumber(myBankMSB, myBankLSB, programNumber);
   const location = formatPatchLocation(patchNumber);
+  const requiredRomCard = getRequiredRomCardForPatch(patchNumber);
+
+  if (requiredRomCard && !isRomCardEnabled(requiredRomCard)) {
+    setDisplayText("ROM Not Enabled", location);
+    document.getElementById("notes").textContent =
+      `Enable "${requiredRomCard.label}" in Config to use this patch location.`;
+    return;
+  }
 
   const patch = patches[patchNumber];
 
@@ -277,15 +298,43 @@ function setupSettingsButton() {
 }
 
 
+function setupWebButton() {
+
+  const webButton = document.getElementById("webButton");
+
+  if (!webButton) return;
+
+  webButton.addEventListener("click", () => {
+    const url = synthModel?.supportUrl;
+    if (!url) return;
+    window.open(url, "_blank", "noopener,noreferrer");
+  });
+
+}
+
+
 /* =====================
 ROM CARD SELECTION
 ======================= */
-const romCards = [
-  "Orchestral",
-  "Contemporary",
-  "Piano",
-  "Vintage Keys"
-];
+function getRequiredRomCardForPatch(patchNumber) {
+
+  const rules = synthModel?.patchAccessRules || [];
+
+  for (const rule of rules) {
+    if (patchNumber >= rule.start && patchNumber <= rule.end) {
+      const rom = (synthModel.romCards || []).find(card => card.id === rule.requiresRomId);
+      return rom || null;
+    }
+  }
+
+  return null;
+}
+
+function isRomCardEnabled(card) {
+
+  const saved = getSavedRomIds();
+  return saved.includes(card.id);
+}
 
 
 function buildRomSelector() {
@@ -294,13 +343,16 @@ function buildRomSelector() {
 
   container.innerHTML = "";
 
-  romCards.forEach(name => {
+  const romCards = synthModel?.romCards || [];
+
+  romCards.forEach(card => {
 
     const tile = document.createElement("div");
 
     tile.className = "romTile";
 
-    tile.textContent = name;
+    tile.textContent = card.label;
+    tile.dataset.romId = card.id;
 
     tile.onclick = () => {
       tile.classList.toggle("active");
@@ -315,19 +367,19 @@ function buildRomSelector() {
 function saveRomSelection() {
 
   const active = [...document.querySelectorAll(".romTile.active")]
-      .map(el => el.textContent);
+      .map(el => el.dataset.romId);
 
-  localStorage.setItem("k2600_roms", JSON.stringify(active));
+  localStorage.setItem(getRomStorageKey(), JSON.stringify(active));
 
 }
 
 function restoreRomSelection() {
 
-  const saved = JSON.parse(localStorage.getItem("k2600_roms") || "[]");
+  const saved = getSavedRomIds();
 
   document.querySelectorAll(".romTile").forEach(tile => {
 
-    if (saved.includes(tile.textContent)) {
+    if (saved.includes(tile.dataset.romId)) {
       tile.classList.add("active");
     }
 
@@ -335,8 +387,76 @@ function restoreRomSelection() {
 
 }
 
+function getSavedRomIds() {
+
+  const romCards = synthModel?.romCards || [];
+  const savedByModel = localStorage.getItem(getRomStorageKey());
+  const savedLegacy = localStorage.getItem("k2600_roms");
+  const saved = JSON.parse(savedByModel || savedLegacy || "[]");
+
+  if (!Array.isArray(saved)) {
+    return [];
+  }
+
+  const ids = [];
+
+  saved.forEach(item => {
+    const byId = romCards.find(card => card.id === item);
+    if (byId) {
+      ids.push(byId.id);
+      return;
+    }
+
+    const byLabel = romCards.find(card => card.label === item);
+    if (byLabel) {
+      ids.push(byLabel.id);
+      return;
+    }
+
+    const byAlias = romCards.find(card => (card.aliases || []).includes(item));
+    if (byAlias) {
+      ids.push(byAlias.id);
+    }
+  });
+
+  const normalized = [...new Set(ids)];
+
+  if (!savedByModel && normalized.length > 0) {
+    localStorage.setItem(getRomStorageKey(), JSON.stringify(normalized));
+  }
+
+  return normalized;
+}
+
 function formatPatchLocation(patchNumber) {
-  return String(patchNumber).padStart(3, "0");
+  const digits = synthModel?.locationDigits || 3;
+  return String(patchNumber).padStart(digits, "0");
+}
+
+function computePatchNumber(bankMsb, bankLsb, programNumber) {
+
+  const formula = synthModel?.programIndex?.formula || "lsb_times_100_plus_program";
+
+  if (formula === "lsb_times_100_plus_program") {
+    return (bankLsb * 100) + programNumber;
+  }
+
+  if (formula === "midi_program_only") {
+    return programNumber;
+  }
+
+  console.warn(`Unknown program index formula "${formula}", falling back to lsb_times_100_plus_program`);
+  return (bankLsb * 100) + programNumber;
+}
+
+function getMidiStorageKey() {
+  const modelId = synthModel?.modelId || "default";
+  return `${modelId}_preferredMidiInput`;
+}
+
+function getRomStorageKey() {
+  const modelId = synthModel?.modelId || "default";
+  return `${modelId}_roms`;
 }
 
 function setDisplayText(mainText, locationText = null) {
@@ -463,8 +583,13 @@ async function startApp() {
 
   await loadData();
 
+  if (synthModel?.manufacturer) {
+    document.title = `${synthModel.manufacturer} ${synthModel.displayName} Patch Display`;
+  }
+
   await startMIDI();
   setupSettingsButton();
+  setupWebButton();
 
 }
 
