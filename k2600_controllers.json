@@ -4,7 +4,7 @@
   "2": "Breath Controller",
   "4": "Foot Pedal",
   "5": "Portamento Time",
-  "6": "Sider A",
+  "6": "Slider A",
   "7": "Volume",
   "8": "Balance",
   "10": "Pan",
@@ -25,6 +25,8 @@
   "26": "Slider F",  
   "27": "Slider G",  
   "28": "Slider H",  
+  "29": "Switch 10", 
+
   "64": "Sustain",
   "65": "PortSwitch",
   "66": "Sostenuto",

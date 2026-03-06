@@ -1,0 +1,60 @@
+{
+  "1": {
+    "name": "Concert Piano 1",
+    "controls": [
+      { "type": "MIDI", "number": 25, "description": "(Aux) Hall Level+Time" },
+      { "type": "MIDI", "number": 29, "description": "Soundboard Wet/Dry" },
+      { "type": "Info", "description": "Soft Pedal is active" }
+    ]
+  },
+  "2": {
+    "name": "Stereo Solo Pno",
+    "controls": [
+      { "type": "MIDI",
+        "number": 6,
+ "description": "InEQ: Treb" },
+      { "type": "MIDI", "number": 25, "description": "(Aux) Hall Level+Time" },
+      { "type": "MIDI", "number": 29, "description": "Soundboard Wet/Dry" },
+      { "type": "Info", "description": "Soft Pedal is active" }
+    ]
+  },
+  "3": {
+    "name": "Brt Concert Pno",
+    "controls": [
+      { "type": "MIDI", "number": 25, "description": "(Aux) Hall Level+Time" },
+      { "type": "MIDI", "number": 29, "description": "Soundboard Wet/Dry" },
+      { "type": "Info", "description": "Soft Pedal is active" }
+    ]
+  },
+  "4": {
+    "name": "Rok Piano",
+    "controls": [
+      { "type": "MIDI", "number": 25, "description": "Room Wet/Dry" },
+      { "type": "MIDI", "number": 26, "description": "(Aux) Hall Level" },
+      { "type": "MIDI", "number": 27, "description": "Hall Time" }
+    ]
+  },
+  "5": {
+    "name": "Piano for Lyrs",
+    "controls": [
+      { "type": "MIDI", "number": 25, "description": "(Aux) Hall Level" },
+      { "type": "MIDI", "number": 26, "description": "Hall Time" },
+      { "type": "MIDI", "number": 29, "description": "Soundboard Wet/Dry" }
+    ]
+  },
+  "6": {
+    "name": "DrkPno^ArakisPno",
+    "controls": [
+      { "type": "MWheel", "description": "Vibrato (ArakisPno)" },
+      { "type": "MIDI",
+        "number": 6,
+ "description": "Toggle: DrkPno ^ ArakisPno" },
+      { "type": "MIDI", "number": 22, "description": "detune" },
+      { "type": "MIDI", "number": 25, "description": "(Aux) Chorus/Plate Level + Wet/Dry" },
+      { "type": "MIDI", "number": 26, "description": "Plate Time" },
+      { "type": "MIDI", "number": 27, "description": "Chorus FB" },
+      { "type": "MIDI", "number": 28, "description": "Chorus Mix" },
+      { "type": "MPress", "description": "Vibrato (ArakisPno)" }
+    ]
+  }
+}

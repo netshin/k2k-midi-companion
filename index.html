@@ -48,8 +48,8 @@ console.log("WebMidi Enabled");
 });
 
   mySynth.channels[1].addListener("programchange", e => {
-     console.log("Bank MSB:" + myBankMSB + " Bank LSB:" + myBankLSB + " dataBytes: " + e.dataBytes + " PC raw data:" + e.rawData);
-     handleProgramChange(myBankMSB,myBankLSB,e.dataBytes);
+     console.log("Bank MSB:" + myBankMSB + " Bank LSB:" + myBankLSB + " dataBytes: " + e.dataBytes + " PC value:" + e.value);
+     handleProgramChange(myBankMSB,myBankLSB,e.value);
 });
 
 }
@@ -152,11 +152,24 @@ console.log("WebMidi Enabled");
   font-family: monospace;
 }
 
-/* MIDI CC entries */
-.cc {
-  color: #ffd84d; /* warm hardware yellow */
+
+.ctrl-row {
+  display: flex;
+  font-family: monospace;
+  margin-bottom: 6px;
+}
+
+.ctrl-name {
+  width: 150px;   /* fixed control column */
+  color: #ffd84d;
   font-weight: bold;
 }
+
+.ctrl-desc {
+  flex: 1;
+  color: #e0e0e0;
+}
+
 
 /* Data / Info / Other */
 .meta {

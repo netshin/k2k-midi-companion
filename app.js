@@ -11,10 +11,19 @@ fetch("k2600_programs.json")
   });
 
 
+let controllers = {};
+
+fetch("k2600_controllers.json")
+  .then(r => r.json())
+  .then(data => {
+    controllers = data;
+  });
+
+
 function handleProgramChange(myBankMSB,myBankLSB,programNumber) {
-  console.log (programNumber[0].toString());
-  let myProgramNumber = programNumber[0].toString();
-  const patch = patches[myProgramNumber];
+  console.log (programNumber);
+  let patchNumber = (myBankLSB * 100) + programNumber;
+  const patch = patches[patchNumber];
 
   if (!patch) {
     document.getElementById("display").textContent = "Unknown Patch";
@@ -31,7 +40,8 @@ function handleProgramChange(myBankMSB,myBankLSB,programNumber) {
   patch.controls.forEach(control => {
 
     if (control.type === "MIDI") {
-      notesHtml += `<div class="cc">CC ${control.number} — ${control.description}</div>`;
+      const ctrlName = controllers[control.number] || `CC ${control.number}`;
+      notesHtml += `<div class="ctrl-row"><span class="ctrl-name">`+ctrlName + `</span><span class="ctrl-desc">${control.description}</span></div>`;
     }
     else if (control.type === "Info") {
       notesHtml += `<div class="meta">${control.description}</div>`;
