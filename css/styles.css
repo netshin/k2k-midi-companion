@@ -14,6 +14,10 @@ body {
   font-family:"Courier New", monospace;
 }
 
+.hidden {
+  display:none !important;
+}
+
 
 /* ==============================
    BRUSHED METAL TEXTURE
@@ -271,6 +275,11 @@ body {
 
 }
 
+.k2600-button.active {
+  color:#7df0ff;
+  border-color:#7df0ff;
+}
+
 
 /* ==============================
    TOP BUTTONS
@@ -288,6 +297,149 @@ body {
   align-items:center;
 
   z-index:1000;
+}
+
+/* ==============================
+   KDFX VIEW
+============================== */
+
+.kdfx-view {
+  width:min(94vw, 1200px);
+}
+
+.kdfx-header {
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:16px;
+}
+
+.kdfx-title {
+  background:#0f2f5a;
+  color:#7df0ff;
+  letter-spacing:2px;
+  padding:10px 14px;
+  min-width:220px;
+  text-align:center;
+  box-shadow:inset 0 0 12px rgba(0,0,0,0.8);
+}
+
+#kdfxSearch {
+  flex:1;
+  height:40px;
+  padding:0 12px;
+  background:#111;
+  color:#e0e0e0;
+  border:1px solid #444;
+  outline:none;
+}
+
+.kdfx-grid {
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:16px;
+}
+
+.kdfx-detail-panel {
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+}
+
+.kdfx-legend {
+  color:#7df0ff;
+  margin:0;
+  letter-spacing:0.5px;
+}
+
+.kdfx-list,
+.kdfx-detail {
+  background:#101822;
+  border:1px solid #1e2c3b;
+  padding:12px;
+  min-height:500px;
+  max-height:65vh;
+  overflow:auto;
+}
+
+.kdfx-list-item {
+  padding:8px 10px;
+  border-bottom:1px solid #1e2c3b;
+  cursor:pointer;
+  color:#cfd8e3;
+}
+
+.kdfx-list-item.active,
+.kdfx-list-item:hover {
+  background:#15314d;
+  color:#7df0ff;
+}
+
+.kdfx-detail h3 {
+  color:#ffd84d;
+  margin:0 0 8px 0;
+}
+
+.kdfx-line {
+  color:#e0e0e0;
+  margin:6px 0;
+  display:grid;
+  grid-template-columns:72px minmax(170px, 1fr) 122px minmax(170px, 1fr) 132px;
+  column-gap:10px;
+  align-items:baseline;
+}
+
+.kdfx-label {
+  display:block;
+}
+
+.kdfx-bus {
+  color:#7df0ff;
+}
+
+.kdfx-preset {
+  color:#e0e0e0;
+}
+
+.kdfx-preset-id {
+  color:#ffd84d;
+}
+
+.kdfx-algorithm {
+  color:#9fd0ff;
+}
+
+.kdfx-algorithm-id {
+  color:#c4ff8f;
+}
+
+.kdfx-legend {
+  display:grid;
+  grid-template-columns:72px minmax(170px, 1fr) 122px minmax(170px, 1fr) 132px;
+  column-gap:10px;
+  align-items:baseline;
+}
+
+@media (max-width: 920px) {
+  .kdfx-grid {
+    grid-template-columns:1fr;
+  }
+
+  .kdfx-list,
+  .kdfx-detail {
+    min-height:280px;
+  }
+
+  .kdfx-header {
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .kdfx-line,
+  .kdfx-legend {
+    grid-template-columns:1fr;
+    row-gap:2px;
+  }
 }
 
 

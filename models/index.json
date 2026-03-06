@@ -1,0 +1,22 @@
+{
+  "models": [
+    {
+      "key": "kurzweil-k2600",
+      "manufacturer": "Kurzweil",
+      "model": "K2600",
+      "modelId": "k2600",
+      "default": true,
+      "configPath": "Kurzweil/K2600/k2600_model.json",
+      "allowedDataFiles": [
+        "k2600_model.json",
+        "k2600_programs.json",
+        "k2600_setups.json",
+        "k2600_controllers.json",
+        "k2600_kdfx_studios.json",
+        "k2600_kdfx presets.json",
+        "k2600_kdfx_algorithems.json",
+        "k2600_kdfx_lookup.json"
+      ]
+    }
+  ]
+}

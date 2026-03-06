@@ -56,15 +56,18 @@
 <!-- TOP BUTTONS -->
 
 <div class="topButtons">
-  <div id="settingsButton" class="settingsButton k2600-button">Config</div>
-  <div id="webButton" class="webButton k2600-button">Web</div>
+  <div id="programsButton" class="programsButton k2600-button" title="Display Details about ROM Programs">Programs</div>
+  <div id="setupsButton" class="setupsButton k2600-button" title="Display Details about Setups">Setups</div>
+  <div id="kdfxButton" class="kdfxButton k2600-button" title="Display Details about KDFX Studio structure">KDFX Studios</div>
+  <div id="settingsButton" class="settingsButton k2600-button" title="Configure Application">Config</div>
+  <div id="webButton" class="webButton k2600-button" title="Visit support for your synth">Web</div>
 </div>
 
 
 
 <!-- MAIN SYNTH UI -->
 
-<div class="rack">
+<div id="mainView" class="rack">
 
   <div class="panel">
 
@@ -80,6 +83,33 @@
 
   </div>
 
+</div>
+
+<!-- KDFX STUDIOS VIEW -->
+
+<div id="kdfxView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="kdfx-header">
+      <div class="kdfx-title">KDFX Studios</div>
+      <input id="kdfxSearch" type="text" placeholder="Search studio/preset/algorithm..." />
+    </div>
+
+    <div class="kdfx-grid">
+      <div id="kdfxStudioList" class="kdfx-list"></div>
+      <div class="kdfx-detail-panel">
+        <div class="kdfx-legend">
+          <span class="kdfx-bus">Bus</span>
+          <span class="kdfx-preset">Preset</span>
+          <span class="kdfx-preset-id">[Preset Number]</span>
+          <span class="kdfx-algorithm">(Algorithm)</span>
+          <span class="kdfx-algorithm-id">[Algorithm Number]</span>
+        </div>
+        <div id="kdfxStudioDetail" class="kdfx-detail">
+          Select a studio to view routing details.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 

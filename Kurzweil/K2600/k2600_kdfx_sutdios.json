@@ -1,0 +1,1224 @@
+[
+    {
+        "ID": 1,
+        "Name": "RoomChorDly Hall",
+        "Bus 1 FX Preset": " Bassy Room ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " Fluid ChorDlyRvb ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 2,
+        "Name": "RmChorChRv Hall",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " SlowSpinChorus ",
+        "Bus 3 FX Preset": " Vanilla ChorRvb ",
+        "Aux FX Preset": " Short Hall "
+    },
+    {
+        "ID": 3,
+        "Name": "RoomChorCDR Hall",
+        "Bus 1 FX Preset": " Bassy Room ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " Fluid ChorDlyRvb ",
+        "Aux FX Preset": " Generic Hall "
+    },
+    {
+        "ID": 4,
+        "Name": "RoomChor Hall",
+        "Bus 1 FX Preset": " Sizzly Drum Room ",
+        "Bus 2 FX Preset": " Thick Chorus ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 5,
+        "Name": "RoomChrCh4T Hall",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " MultiTap Chorus ",
+        "Aux FX Preset": " Sweeter Hall "
+    },
+    {
+        "ID": 6,
+        "Name": "RoomFlngCDR Hall",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " ChorusDelayHall ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 7,
+        "Name": "RoomFlgEcho Hall",
+        "Bus 1 FX Preset": " Thick Room ",
+        "Bus 2 FX Preset": " Squeeze Flange ",
+        "Bus 3 FX Preset": " Stereo Echoes1 ",
+        "Aux FX Preset": " Immense Mosque "
+    },
+    {
+        "ID": 8,
+        "Name": "RmFlngStImg Garg",
+        "Bus 1 FX Preset": " ClassRoom ",
+        "Bus 2 FX Preset": " Sweet Flange ",
+        "Bus 3 FX Preset": " Widespread ",
+        "Aux FX Preset": " My Garage "
+    },
+    {
+        "ID": 9,
+        "Name": "RmFlgChDly Room",
+        "Bus 1 FX Preset": " Utility Room ",
+        "Bus 2 FX Preset": " Sweet Flange ",
+        "Bus 3 FX Preset": " Chorus Comeback ",
+        "Aux FX Preset": " Real Big Room "
+    },
+    {
+        "ID": 10,
+        "Name": "ChmbFlgGtRv Hall",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " Gated Reverb ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 11,
+        "Name": "RoomFlngCDR Hall",
+        "Bus 1 FX Preset": " Bassy Room ",
+        "Bus 2 FX Preset": " Sweet Flange ",
+        "Bus 3 FX Preset": " Chorus PercHall ",
+        "Aux FX Preset": " Huge Batcave "
+    },
+    {
+        "ID": 12,
+        "Name": "RoomFlngLsr Echo",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " Sweet Flange ",
+        "Bus 3 FX Preset": " LazerfazerEchoes ",
+        "Aux FX Preset": " Furbelows "
+    },
+    {
+        "ID": 13,
+        "Name": "RmFlgFXFlng Flng",
+        "Bus 1 FX Preset": " Sizzly Drum Room ",
+        "Bus 2 FX Preset": " Delirium Tremens ",
+        "Bus 3 FX Preset": " Throaty Flange ",
+        "Aux FX Preset": " Wetlip Flange "
+    },
+    {
+        "ID": 14,
+        "Name": "SpaceFlng Hall",
+        "Bus 1 FX Preset": " Ballroom ",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Aux FX Preset": " Large Room "
+    },
+    {
+        "ID": 15,
+        "Name": "ChmbFlngCDR Verb",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " ChorusDelayHall ",
+        "Aux FX Preset": " My Dreamy 481!! "
+    },
+    {
+        "ID": 16,
+        "Name": "RoomPhsrCDR Hall",
+        "Bus 1 FX Preset": " Bassy Room ",
+        "Bus 2 FX Preset": " Circles ",
+        "Bus 3 FX Preset": " ChorDlyRvb Lead ",
+        "Aux FX Preset": " Generic Hall "
+    },
+    {
+        "ID": 17,
+        "Name": "RmPhsrQuFlg Hall",
+        "Bus 1 FX Preset": " ClassRoom ",
+        "Bus 2 FX Preset": " Circles ",
+        "Bus 3 FX Preset": " Quantize+Flange ",
+        "Aux FX Preset": " Generic Hall "
+    },
+    {
+        "ID": 18,
+        "Name": "RoomPhsr Space",
+        "Bus 1 FX Preset": " The Comfy Club ",
+        "Bus 2 FX Preset": " Slow Deep Phaser ",
+        "Aux FX Preset": " Exponent Booth "
+    },
+    {
+        "ID": 19,
+        "Name": "RmEQmphEcho Comp",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " Mono EQ Morpher ",
+        "Bus 3 FX Preset": " Stereo Echoes1 ",
+        "Aux FX Preset": " SKCompressr 12:1 "
+    },
+    {
+        "ID": 20,
+        "Name": "RmEQmphEcho Hall",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " Mono EQ Morpher ",
+        "Bus 3 FX Preset": " Stereo Echoes1 ",
+        "Aux FX Preset": " Splendid Palace "
+    },
+    {
+        "ID": 21,
+        "Name": "RmEQmph4Tp Space",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " Mono EQ Morpher ",
+        "Bus 3 FX Preset": " 4-Tap Delay ",
+        "Aux FX Preset": " Sun Room "
+    },
+    {
+        "ID": 22,
+        "Name": "RmEQmph4Tap Hall",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " Mono EQ Morpher ",
+        "Bus 3 FX Preset": " 4-Tap Delay ",
+        "Aux FX Preset": " Splendid Palace "
+    },
+    {
+        "ID": 23,
+        "Name": "RmSweepEcho Hall",
+        "Bus 1 FX Preset": " BrightSmallRoom ",
+        "Bus 2 FX Preset": " LFO Sweep Filter ",
+        "Bus 3 FX Preset": " Guitar Echo ",
+        "Aux FX Preset": " Short Hall "
+    },
+    {
+        "ID": 24,
+        "Name": "RoomResEcho Hall",
+        "Bus 1 FX Preset": " Natural Room ",
+        "Bus 2 FX Preset": " Resonant Filter ",
+        "Bus 3 FX Preset": " Stereo Echoes1 ",
+        "Aux FX Preset": " Predelay Hall "
+    },
+    {
+        "ID": 25,
+        "Name": "RmRotoFl4T CmpRv",
+        "Bus 1 FX Preset": " BrightSmallRoom ",
+        "Bus 2 FX Preset": " VibrChor Rotors2 ",
+        "Bus 3 FX Preset": " Flange + 4Tap ",
+        "Aux FX Preset": " Reverb>Compress2 "
+    },
+    {
+        "ID": 26,
+        "Name": "RoomSrsCDR Hall",
+        "Bus 1 FX Preset": " Bassy Room ",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " ChorDlyRvb Lead ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 27,
+        "Name": "RoomSRSRoom Room",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 28,
+        "Name": "RoomSRSChDl Hall",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " Chorus Delay ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 29,
+        "Name": "RoomSrsCDR CDR",
+        "Bus 1 FX Preset": " Bassy Room ",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " ChorDlyRvb Lead ",
+        "Aux FX Preset": " ChorusDelayHall "
+    },
+    {
+        "ID": 30,
+        "Name": "RmStImgChDl Hall",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " Widespread ",
+        "Bus 3 FX Preset": " Chorus Delay ",
+        "Aux FX Preset": " The Piano Hall "
+    },
+    {
+        "ID": 31,
+        "Name": "RoomSRSRoom Chmb",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " JudgeJudyChamber "
+    },
+    {
+        "ID": 32,
+        "Name": "RoomSRSRoom Hall",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 33,
+        "Name": "ChmbCompCDR Hall",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " SKCompressor 9:1 ",
+        "Bus 3 FX Preset": " ChorusDelayHall ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 34,
+        "Name": "RoomCmpChor Hall",
+        "Bus 1 FX Preset": " BrightSmallRoom ",
+        "Bus 2 FX Preset": " DrumKompress 5:1 ",
+        "Bus 3 FX Preset": " Chorusier ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 35,
+        "Name": "RoomComp Hall",
+        "Bus 1 FX Preset": " Stall One ",
+        "Bus 2 FX Preset": " DrumKompress 5:1 ",
+        "Aux FX Preset": " Concert Hall "
+    },
+    {
+        "ID": 36,
+        "Name": "RoomComp Hall",
+        "Bus 1 FX Preset": " Add More Air ",
+        "Bus 2 FX Preset": " SKCompressor 9:1 ",
+        "Aux FX Preset": " Bob'sDiffuseHall "
+    },
+    {
+        "ID": 37,
+        "Name": "BthComp SRS Hall",
+        "Bus 1 FX Preset": " Small Wood Booth ",
+        "Bus 2 FX Preset": " SK FB Comprs 6:1 ",
+        "Bus 4 FX Preset": " SRS ",
+        "Aux FX Preset": " Reflective Hall "
+    },
+    {
+        "ID": 38,
+        "Name": "RoomCmpCh4T Hall",
+        "Bus 1 FX Preset": " Sizzly Drum Room ",
+        "Bus 2 FX Preset": " DrumKompress 5:1 ",
+        "Bus 3 FX Preset": " MultiTap Chorus ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 39,
+        "Name": "RmDsRotFl4t RvCm",
+        "Bus 1 FX Preset": " BrightSmallRoom ",
+        "Bus 2 FX Preset": " Rotostort ",
+        "Bus 3 FX Preset": " Flange + 4Tap ",
+        "Aux FX Preset": " Reverb>Compress2 "
+    },
+    {
+        "ID": 40,
+        "Name": "RoomRmHall Hall",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " Percussive Room ",
+        "Bus 3 FX Preset": " Grandiose Hall ",
+        "Aux FX Preset": " Plate Mail "
+    },
+    {
+        "ID": 41,
+        "Name": "Room Room SRS2",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 3 FX Preset": " In The Studio ",
+        "Aux FX Preset": " SRS "
+    },
+    {
+        "ID": 42,
+        "Name": "RoomRmHall Hall",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " Percussive Room ",
+        "Bus 3 FX Preset": " Grandiose Hall ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 43,
+        "Name": "Room Room Hall",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 3 FX Preset": " In The Studio ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 44,
+        "Name": "Room Hall Hall",
+        "Bus 1 FX Preset": " Sizzly Drum Room ",
+        "Bus 3 FX Preset": " Semisweet Hall ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 45,
+        "Name": "Room Room Hall2",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 3 FX Preset": " Sizzly Drum Room ",
+        "Aux FX Preset": " Concert Hall "
+    },
+    {
+        "ID": 46,
+        "Name": "Room Room Hall2",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 2 FX Preset": " In The Studio ",
+        "Aux FX Preset": " Immense Mosque "
+    },
+    {
+        "ID": 47,
+        "Name": "Room Room Hall2",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 3 FX Preset": " In The Studio ",
+        "Aux FX Preset": " Immense Mosque "
+    },
+    {
+        "ID": 48,
+        "Name": "Room Hall Hall2",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 3 FX Preset": " Pipes Hall ",
+        "Aux FX Preset": " Immense Mosque "
+    },
+    {
+        "ID": 49,
+        "Name": "Sndbrd Room Hall",
+        "Bus 1 FX Preset": " Soundboard ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " Abbey Piano Hall "
+    },
+    {
+        "ID": 50,
+        "Name": "Sndbrd Rm Hall2",
+        "Bus 1 FX Preset": " Soundboard ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " The Piano Hall "
+    },
+    {
+        "ID": 51,
+        "Name": "Room Room Hall3",
+        "Bus 1 FX Preset": " The Real Room ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " Abbey Piano Hall "
+    },
+    {
+        "ID": 52,
+        "Name": "auxChrMDly Room",
+        "Bus 2 FX Preset": " Soft Chorus ",
+        "Bus 3 FX Preset": " Warped Echoes ",
+        "Aux FX Preset": " Large Room "
+    },
+    {
+        "ID": 53,
+        "Name": "auxFlngChRv Room",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " Chorus Slow Hall ",
+        "Aux FX Preset": " Green Room "
+    },
+    {
+        "ID": 54,
+        "Name": "auxShp4MDly Hall",
+        "Bus 2 FX Preset": " SubtleDrumShape ",
+        "Bus 3 FX Preset": " 2Dlys Ch Fl Mono ",
+        "Aux FX Preset": " Reflective Hall "
+    },
+    {
+        "ID": 55,
+        "Name": "auxDistLasr Room",
+        "Bus 2 FX Preset": " SubtleDistortion ",
+        "Bus 3 FX Preset": " Laserwaves ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 56,
+        "Name": "auxEnhSp4T Class",
+        "Bus 2 FX Preset": " 3 Band Enhancer ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " ClassRoom "
+    },
+    {
+        "ID": 57,
+        "Name": "auxDistLasr Acid",
+        "Bus 2 FX Preset": " Burnt Transistor ",
+        "Bus 3 FX Preset": " Drum Neurezonate ",
+        "Aux FX Preset": " Acid Trip Room "
+    },
+    {
+        "ID": 58,
+        "Name": "EnhcManPhs Room",
+        "Bus 1 FX Preset": " 3 Band Enhancer ",
+        "Bus 2 FX Preset": " Manual Phaser ",
+        "Aux FX Preset": " Stall One "
+    },
+    {
+        "ID": 59,
+        "Name": "EnhrFlg8Tap Room",
+        "Bus 1 FX Preset": " OldPianoEnhancer ",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " 8-Tap Delay ",
+        "Aux FX Preset": " BrightSmallRoom "
+    },
+    {
+        "ID": 60,
+        "Name": "EnhcCmpFlng Room",
+        "Bus 1 FX Preset": " OldPianoEnhancer ",
+        "Bus 2 FX Preset": " HKCompressor 3:1 ",
+        "Bus 3 FX Preset": " Simply Flange ",
+        "Aux FX Preset": " Real Big Room "
+    },
+    {
+        "ID": 61,
+        "Name": "CompEQmphCh Room",
+        "Bus 1 FX Preset": " SK FB Comprs 6:1 ",
+        "Bus 2 FX Preset": " Mono EQ Morpher ",
+        "Bus 3 FX Preset": " Ordinary Chorus ",
+        "Aux FX Preset": " PrettySmallPlace "
+    },
+    {
+        "ID": 62,
+        "Name": "BthQFlg4Tap Hall",
+        "Bus 1 FX Preset": " Small Wood Booth ",
+        "Bus 2 FX Preset": " Quantize+Flange ",
+        "Bus 3 FX Preset": " 4-Tap Delay ",
+        "Aux FX Preset": " Generic Hall "
+    },
+    {
+        "ID": 63,
+        "Name": "ChmbTremCDR Room",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " Tremolo ",
+        "Bus 3 FX Preset": " ChorLite DlyHall ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 64,
+        "Name": "ChmbCmpFlRv Hall",
+        "Bus 1 FX Preset": " Brass Chamber ",
+        "Bus 2 FX Preset": " SK FB Comprs 6:1 ",
+        "Bus 3 FX Preset": " FlangeVerb Gtr ",
+        "Aux FX Preset": " Short Hall "
+    },
+    {
+        "ID": 65,
+        "Name": "ChamDstEcho Room",
+        "Bus 1 FX Preset": " Brass Chamber ",
+        "Bus 2 FX Preset": " Synth Distortion ",
+        "Bus 3 FX Preset": " Stereo Echoes1 ",
+        "Aux FX Preset": " Green Room "
+    },
+    {
+        "ID": 66,
+        "Name": "ChamFlg4Tap Hall",
+        "Bus 1 FX Preset": " Brass Chamber ",
+        "Bus 2 FX Preset": " Throaty Flange ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 67,
+        "Name": "ChmbEnv4Tap GtRv",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " Bass Env Filter ",
+        "Bus 3 FX Preset": " OffbeatFlamDelay ",
+        "Aux FX Preset": " Gated Reverb "
+    },
+    {
+        "ID": 68,
+        "Name": "CmbrShapLsr Hall",
+        "Bus 1 FX Preset": " Sax Chamber ",
+        "Bus 2 FX Preset": " SuperShaper ",
+        "Bus 3 FX Preset": " Spry Young Boy ",
+        "Aux FX Preset": " Short Hall "
+    },
+    {
+        "ID": 69,
+        "Name": "auxPtchDst+ Chmb",
+        "Bus 2 FX Preset": " PitcherA ",
+        "Bus 3 FX Preset": " PolyAmp Chorus ",
+        "Aux FX Preset": " Bloom Chamber "
+    },
+    {
+        "ID": 70,
+        "Name": "auxChorFlRv Cmbr",
+        "Bus 2 FX Preset": " Basic Chorus ",
+        "Bus 3 FX Preset": " Flange Theatre ",
+        "Aux FX Preset": " Sax Chamber "
+    },
+    {
+        "ID": 71,
+        "Name": "auxChorFlRv Cmb2",
+        "Bus 2 FX Preset": " Chorus Morris ",
+        "Bus 3 FX Preset": " Flange Theatre ",
+        "Aux FX Preset": " Sax Chamber "
+    },
+    {
+        "ID": 72,
+        "Name": "auxChorFlRv Cmb3",
+        "Bus 2 FX Preset": " Basic Chorus ",
+        "Bus 3 FX Preset": " Flange Hall ",
+        "Aux FX Preset": " Sax Chamber "
+    },
+    {
+        "ID": 73,
+        "Name": "auxChorFlRv Cmb4",
+        "Bus 2 FX Preset": " Basic Chorus ",
+        "Bus 3 FX Preset": " Flange Theatre ",
+        "Aux FX Preset": " SmallStudioRoom "
+    },
+    {
+        "ID": 74,
+        "Name": "HallFlgChDl Room",
+        "Bus 1 FX Preset": " Elegant Hall ",
+        "Bus 2 FX Preset": " Simply Flange ",
+        "Bus 3 FX Preset": " Chorus Delay ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 75,
+        "Name": "HallPtchLsr Hall",
+        "Bus 1 FX Preset": " Bright Hall ",
+        "Bus 2 FX Preset": " PitcherB ",
+        "Bus 3 FX Preset": " Spry Young Boy ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 76,
+        "Name": "HallGateFl4T Bth",
+        "Bus 1 FX Preset": " Grandiose Hall ",
+        "Bus 2 FX Preset": " Simple Gate ",
+        "Bus 3 FX Preset": " FlangeTap Synth ",
+        "Aux FX Preset": " NiceLittleBooth "
+    },
+    {
+        "ID": 77,
+        "Name": "HallChorFDR Room",
+        "Bus 1 FX Preset": " Grandiose Hall ",
+        "Bus 2 FX Preset": " ThickChorus no4T ",
+        "Bus 3 FX Preset": " FlangeDelayRoom ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 78,
+        "Name": "HallPtchPtFl Lsr",
+        "Bus 1 FX Preset": " Bright Hall ",
+        "Bus 2 FX Preset": " PitcherB ",
+        "Bus 3 FX Preset": " MnPitcher+Flange ",
+        "Aux FX Preset": " LaserVerb "
+    },
+    {
+        "ID": 79,
+        "Name": "HallFlng8Tp Room",
+        "Bus 1 FX Preset": " Elegant Hall ",
+        "Bus 2 FX Preset": " Squeeze Flange ",
+        "Bus 3 FX Preset": " 8-Tap Delay ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 80,
+        "Name": "HallChrEcho Room",
+        "Bus 1 FX Preset": " Grandiose Hall ",
+        "Bus 2 FX Preset": " Soft Chorus ",
+        "Bus 3 FX Preset": " Stereo Echoes2 ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 81,
+        "Name": "HallChorCDR Hall",
+        "Bus 1 FX Preset": " Grandiose Hall ",
+        "Bus 2 FX Preset": " Chorusier ",
+        "Bus 3 FX Preset": " ChorLite DlyHall ",
+        "Aux FX Preset": " Grandiose Hall "
+    },
+    {
+        "ID": 82,
+        "Name": "HallRsFltChDl Rm",
+        "Bus 1 FX Preset": " School Stairwell ",
+        "Bus 2 FX Preset": " Resonant Filter ",
+        "Bus 3 FX Preset": " Chorus Delay ",
+        "Aux FX Preset": " SmallStudioRoom "
+    },
+    {
+        "ID": 83,
+        "Name": "Hall ChDly Hall",
+        "Bus 1 FX Preset": " Elegant Hall ",
+        "Bus 3 FX Preset": " FastChorusDouble ",
+        "Aux FX Preset": " Large Room "
+    },
+    {
+        "ID": 84,
+        "Name": "HallFlgChDl Hall",
+        "Bus 1 FX Preset": " Elegant Hall ",
+        "Bus 2 FX Preset": " Simply Flange ",
+        "Bus 3 FX Preset": " Chorus Delay ",
+        "Aux FX Preset": " Splendid Palace "
+    },
+    {
+        "ID": 85,
+        "Name": "Hall Room SRS",
+        "Bus 1 FX Preset": " Recital Hall ",
+        "Bus 3 FX Preset": " Percussive Room ",
+        "Aux FX Preset": " SRS "
+    },
+    {
+        "ID": 86,
+        "Name": "Hall Room Room",
+        "Bus 1 FX Preset": " Real Dense Hall ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Aux FX Preset": " The Real Room "
+    },
+    {
+        "ID": 87,
+        "Name": "Hall CmpRvb",
+        "Bus 1 FX Preset": " Bob'sDiffuseHall ",
+        "Aux FX Preset": " Reverb>Compress "
+    },
+    {
+        "ID": 88,
+        "Name": "Hall Flng Hall",
+        "Bus 1 FX Preset": " Reflective Hall ",
+        "Bus 2 FX Preset": " Simply Flange ",
+        "Aux FX Preset": " Dreamverb "
+    },
+    {
+        "ID": 89,
+        "Name": "HallRoomChr Hall",
+        "Bus 1 FX Preset": " School Stairwell ",
+        "Bus 2 FX Preset": " BrightSmallRoom ",
+        "Bus 3 FX Preset": " Chorus Comeback ",
+        "Aux FX Preset": " HighSchool Gym "
+    },
+    {
+        "ID": 90,
+        "Name": "auxPhsrFDR Hall",
+        "Bus 2 FX Preset": " Vibrato Phaser ",
+        "Bus 3 FX Preset": " FlangeDlyBigHall ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 91,
+        "Name": "auxChrDist+ Hall",
+        "Bus 2 FX Preset": " Basic Chorus ",
+        "Bus 3 FX Preset": " TubeAmp DlyChor ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 92,
+        "Name": "auxFlgDist+ Hall",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " TubeAmp DlyChor2 ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 93,
+        "Name": "auxChrDst+ Hall",
+        "Bus 2 FX Preset": " Basic Chorus ",
+        "Bus 3 FX Preset": " TubeAmp DlyChor ",
+        "Aux FX Preset": " Generic Hall "
+    },
+    {
+        "ID": 94,
+        "Name": "auxChorMDly Hall",
+        "Bus 2 FX Preset": " Rock Chorus ",
+        "Bus 3 FX Preset": " StereoFlamDelay ",
+        "Aux FX Preset": " Generic Hall "
+    },
+    {
+        "ID": 95,
+        "Name": "auxChorSp6T Hall",
+        "Bus 2 FX Preset": " Chorusier ",
+        "Bus 3 FX Preset": " SpectraShapeTaps ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 96,
+        "Name": "auxChorChDl Hall",
+        "Bus 2 FX Preset": " Ordinary Chorus ",
+        "Bus 3 FX Preset": " Doubler & Echo ",
+        "Aux FX Preset": " Smoooth Hall "
+    },
+    {
+        "ID": 97,
+        "Name": "auxPhasStIm Hall",
+        "Bus 2 FX Preset": " Saucepan Phaser ",
+        "Bus 3 FX Preset": " Widespread ",
+        "Aux FX Preset": " Classic Plate "
+    },
+    {
+        "ID": 98,
+        "Name": "auxFlngCDR Hall",
+        "Bus 2 FX Preset": " Sweet Flange ",
+        "Bus 3 FX Preset": " ChorDlyRvb Lead2 ",
+        "Aux FX Preset": " Splendid Palace "
+    },
+    {
+        "ID": 99,
+        "Name": "auxPhsrFldbl Hall",
+        "Bus 2 FX Preset": " Vibrato Phaser ",
+        "Bus 3 FX Preset": " Flanger Double ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 100,
+        "Name": "auxSRSRoom Hall",
+        "Bus 2 FX Preset": " SRS ",
+        "Bus 3 FX Preset": " The Comfy Club ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 101,
+        "Name": "auxFlLsr SwHall",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " Spry Young Boy ",
+        "Aux FX Preset": " Sweeter Hall "
+    },
+    {
+        "ID": 102,
+        "Name": "auxEnh4Tap Hall",
+        "Bus 2 FX Preset": " Extreem Enhancer ",
+        "Bus 3 FX Preset": " 4-Tap Delay ",
+        "Aux FX Preset": " Concert Hall "
+    },
+    {
+        "ID": 103,
+        "Name": "EnhcChorCDR Hall",
+        "Bus 1 FX Preset": " OldPianoEnhancer ",
+        "Bus 2 FX Preset": " Chorusier ",
+        "Bus 3 FX Preset": " ChorusSmallRoom ",
+        "Aux FX Preset": " Elegant Hall "
+    },
+    {
+        "ID": 104,
+        "Name": "EnhChorChDl Hall",
+        "Bus 1 FX Preset": " 3 Band Enhancer ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " Chorus VryLngDly ",
+        "Aux FX Preset": " Semisweet Hall "
+    },
+    {
+        "ID": 105,
+        "Name": "EnhcChor Plate",
+        "Bus 1 FX Preset": " 3 Band Enhancer2 ",
+        "Bus 2 FX Preset": " Chorusier ",
+        "Aux FX Preset": " Bloom Plate "
+    },
+    {
+        "ID": 106,
+        "Name": "CompFlgChor Hall",
+        "Bus 1 FX Preset": " SK FB Comprs 6:1 ",
+        "Bus 2 FX Preset": " Throaty Flange ",
+        "Bus 3 FX Preset": " Ordinary Chorus ",
+        "Aux FX Preset": " Reflective Hall "
+    },
+    {
+        "ID": 107,
+        "Name": "ChorChorFlg Hall",
+        "Bus 1 FX Preset": " Rock Chorus ",
+        "Bus 2 FX Preset": " Basic Chorus ",
+        "Bus 3 FX Preset": " Big Slow Flange ",
+        "Aux FX Preset": " Grandiose Hall "
+    },
+    {
+        "ID": 108,
+        "Name": "ChapelSRS Hall",
+        "Bus 1 FX Preset": " Classic Chapel ",
+        "Bus 2 FX Preset": " SRS ",
+        "Aux FX Preset": " Concert Hall "
+    },
+    {
+        "ID": 109,
+        "Name": "ChapelSRS Hall2",
+        "Bus 1 FX Preset": " Classic Chapel ",
+        "Bus 2 FX Preset": " SRS ",
+        "Aux FX Preset": " Immense Mosque "
+    },
+    {
+        "ID": 110,
+        "Name": "Chapel Room Hall",
+        "Bus 1 FX Preset": " Classic Chapel ",
+        "Bus 3 FX Preset": " Sizzly Drum Room ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 111,
+        "Name": "PltEnvFl4T Room",
+        "Bus 1 FX Preset": " Plebe Chamber ",
+        "Bus 2 FX Preset": " Bass Env Filter ",
+        "Bus 3 FX Preset": " Bap ba-da-dap ",
+        "Aux FX Preset": " The Comfy Club "
+    },
+    {
+        "ID": 112,
+        "Name": "PlatEnvFl4T Filt",
+        "Bus 1 FX Preset": " Plebe Chamber ",
+        "Bus 2 FX Preset": " Bass Env Filter ",
+        "Bus 3 FX Preset": " Bap ba-da-dap ",
+        "Aux FX Preset": " DoubleRiseFilter "
+    },
+    {
+        "ID": 113,
+        "Name": "PltEnvFl4T Plate",
+        "Bus 1 FX Preset": " Plebe Chamber ",
+        "Bus 2 FX Preset": " Synth Env Filter ",
+        "Bus 3 FX Preset": " Bap ba-da-dap ",
+        "Aux FX Preset": " BigPredelayPlate "
+    },
+    {
+        "ID": 114,
+        "Name": "PltTEnvFlg Plate",
+        "Bus 1 FX Preset": " Plebe Chamber ",
+        "Bus 2 FX Preset": " Trig Env Filter ",
+        "Bus 3 FX Preset": " Big Slow Flange ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 115,
+        "Name": "PlateRngMd Hall",
+        "Bus 1 FX Preset": " Huge Tight Plate ",
+        "Bus 2 FX Preset": " Ring Modulator ",
+        "Aux FX Preset": " Classic Plate "
+    },
+    {
+        "ID": 116,
+        "Name": "auxDist+Echo Plt",
+        "Bus 2 FX Preset": " PolyAmp Chorus ",
+        "Bus 3 FX Preset": " Guitar Echo ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 117,
+        "Name": "auxEnvSp4T Plate",
+        "Bus 2 FX Preset": " EPno Env Filter ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 118,
+        "Name": "auxShap4MD Plate",
+        "Bus 2 FX Preset": " 3 Band Shaper ",
+        "Bus 3 FX Preset": " 2Dlys Ch Fl Mono ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 119,
+        "Name": "auxChorDist+ Plt",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " TubeAmp DlyChor ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 120,
+        "Name": "auxShFlgChDl Plt",
+        "Bus 2 FX Preset": " Shaper->Flange ",
+        "Bus 3 FX Preset": " MultiEchoChorus ",
+        "Aux FX Preset": " BigPredelayPlate "
+    },
+    {
+        "ID": 121,
+        "Name": "auxMPFlgLasr Plt",
+        "Bus 2 FX Preset": " MnPitcher+Flange ",
+        "Bus 3 FX Preset": " Cheap LaserVerb ",
+        "Aux FX Preset": " BigPredelayPlate "
+    },
+    {
+        "ID": 122,
+        "Name": "auxShap4MD Plate",
+        "Bus 2 FX Preset": " SubtleDrumShape ",
+        "Bus 3 FX Preset": " 2Dlys Ch Fl Mono ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 123,
+        "Name": "FlgEnv4Tap Plate",
+        "Bus 1 FX Preset": " Throaty Flange ",
+        "Bus 2 FX Preset": " EPno Env Filter ",
+        "Bus 3 FX Preset": " 4-Tap Delay ",
+        "Aux FX Preset": " Platey Room "
+    },
+    {
+        "ID": 124,
+        "Name": "EnhrFlgCDR Plate",
+        "Bus 1 FX Preset": " OldPianoEnhancer ",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " ChorDlyRvb Lead ",
+        "Aux FX Preset": " Weighty Platey "
+    },
+    {
+        "ID": 125,
+        "Name": "auxRingPFD Plate",
+        "Bus 2 FX Preset": " Ring Modulator ",
+        "Bus 3 FX Preset": " Pitcher+Flng+Dly ",
+        "Aux FX Preset": " Medm Warm Plate "
+    },
+    {
+        "ID": 126,
+        "Name": "GtRvShapMDl Room",
+        "Bus 1 FX Preset": " Gated Reverb ",
+        "Bus 2 FX Preset": " SuperShaper ",
+        "Bus 3 FX Preset": " L:Flange R:Delay ",
+        "Aux FX Preset": " Tabla Room "
+    },
+    {
+        "ID": 127,
+        "Name": "GtdEnhcStIm Room",
+        "Bus 1 FX Preset": " Gated Reverb ",
+        "Bus 2 FX Preset": " OldPianoEnhancer ",
+        "Bus 3 FX Preset": " Widespread ",
+        "Aux FX Preset": " Percussive Room "
+    },
+    {
+        "ID": 128,
+        "Name": "Gtd2ChrEcho 2Vrb",
+        "Bus 1 FX Preset": " Gated Reverb ",
+        "Bus 2 FX Preset": " Chorus Comeback ",
+        "Bus 3 FX Preset": " Guitar Echo ",
+        "Aux FX Preset": " L:SmlRm R:LrgRm "
+    },
+    {
+        "ID": 129,
+        "Name": "GtdEnhcStIm Hall",
+        "Bus 1 FX Preset": " Gated Reverb ",
+        "Bus 2 FX Preset": " OldPianoEnhancer ",
+        "Bus 3 FX Preset": " Widespread ",
+        "Aux FX Preset": " Sweeter Hall "
+    },
+    {
+        "ID": 130,
+        "Name": "auxEnvSp4T GtVrb",
+        "Bus 2 FX Preset": " EPno Env Filter ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " Gated Reverb "
+    },
+    {
+        "ID": 131,
+        "Name": "GtRbSwpFlt Lasr",
+        "Bus 1 FX Preset": " Gated Reverb ",
+        "Bus 2 FX Preset": " Circle Bandsweep ",
+        "Aux FX Preset": " Drum Neurezonate "
+    },
+    {
+        "ID": 132,
+        "Name": "GtRbSwpFlt FlDly",
+        "Bus 1 FX Preset": " Gated Reverb ",
+        "Bus 2 FX Preset": " DoubleRiseFilter ",
+        "Aux FX Preset": " ThroatyFlangeDly "
+    },
+    {
+        "ID": 133,
+        "Name": "ChRvStIEcho Hall",
+        "Bus 1 FX Preset": " SoftChorus Hall ",
+        "Bus 2 FX Preset": " Widespread ",
+        "Bus 3 FX Preset": " Guitar Echo ",
+        "Aux FX Preset": " Recital Hall "
+    },
+    {
+        "ID": 134,
+        "Name": "ChorChorCDR Spac",
+        "Bus 1 FX Preset": " Chorus Comeback ",
+        "Bus 2 FX Preset": " Chorusier ",
+        "Bus 3 FX Preset": " ChorLite DlyHall ",
+        "Aux FX Preset": " Ballroom "
+    },
+    {
+        "ID": 135,
+        "Name": "ChDlDstEQ Hall",
+        "Bus 1 FX Preset": " Chorus PanDelay ",
+        "Bus 2 FX Preset": " Burnt Transistor ",
+        "Aux FX Preset": " My Dreamy 481!! "
+    },
+    {
+        "ID": 136,
+        "Name": "auxDPanCDR ChPlt",
+        "Bus 2 FX Preset": " Dual Panner ",
+        "Bus 3 FX Preset": " ChorDlyRvb Lead2 ",
+        "Aux FX Preset": " ChorBigBrtPlate "
+    },
+    {
+        "ID": 137,
+        "Name": "AuxChorFlng CDR",
+        "Bus 2 FX Preset": " Thick Chorus ",
+        "Bus 3 FX Preset": " Throaty Flange ",
+        "Aux FX Preset": " ChorDlyRvb Lead "
+    },
+    {
+        "ID": 138,
+        "Name": "auxEnhcSp4T CDR",
+        "Bus 2 FX Preset": " 3 Band Enhancer ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " ChorusDelayHall "
+    },
+    {
+        "ID": 139,
+        "Name": "auxPtchDst+ ChRv",
+        "Bus 2 FX Preset": " PitcherA ",
+        "Bus 3 FX Preset": " PolyAmp Chorus ",
+        "Aux FX Preset": " ChorusMedChamber "
+    },
+    {
+        "ID": 140,
+        "Name": "EnhcChorChDl PCD",
+        "Bus 1 FX Preset": " 3 Band Enhancer ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " Chorus VryLngDly ",
+        "Aux FX Preset": " Pitcher+Chor+Dly "
+    },
+    {
+        "ID": 141,
+        "Name": "auxPoly FDR",
+        "Bus 2 FX Preset": " Synth Distortion ",
+        "Aux FX Preset": " FlangeDelayHall "
+    },
+    {
+        "ID": 142,
+        "Name": "EnhcChorChDl FDR",
+        "Bus 1 FX Preset": " 3 Band Enhancer ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " Chorus VryLngDly ",
+        "Aux FX Preset": " SloFlangeDlyRoom "
+    },
+    {
+        "ID": 143,
+        "Name": "EnhcChrChDl FDR2",
+        "Bus 1 FX Preset": " 3 Band Enhancer ",
+        "Bus 2 FX Preset": " Everyday Chorus ",
+        "Bus 3 FX Preset": " BasicChorusDelay ",
+        "Aux FX Preset": " SloFlangeDlyRoom "
+    },
+    {
+        "ID": 144,
+        "Name": "auxRotoSp4T FlRv",
+        "Bus 2 FX Preset": " VibrChor Rotors2 ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " FlangeVerb Clav "
+    },
+    {
+        "ID": 145,
+        "Name": "auxRotaryFDR Plt",
+        "Bus 2 FX Preset": " VibrChor Rotors ",
+        "Bus 3 FX Preset": " FlangeDelayRoom ",
+        "Aux FX Preset": " Medm Warm Plate "
+    },
+    {
+        "ID": 146,
+        "Name": "RotoOrgFX Hall",
+        "Bus 1 FX Preset": " Full VbCh Rotors ",
+        "Aux FX Preset": " Spacious Hall "
+    },
+    {
+        "ID": 147,
+        "Name": "CmpRvbFlDl Hall",
+        "Bus 1 FX Preset": " Drum Comprs>Rvb ",
+        "Bus 3 FX Preset": " Flange + Delay ",
+        "Aux FX Preset": " Dreamverb "
+    },
+    {
+        "ID": 148,
+        "Name": "auxEnhSp4T CmpRv",
+        "Bus 2 FX Preset": " 3 Band Enhancer2 ",
+        "Bus 3 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " Reverb>Compress "
+    },
+    {
+        "ID": 149,
+        "Name": "auxPtchRoom RvCm",
+        "Bus 2 FX Preset": " PitcherA ",
+        "Bus 3 FX Preset": " Percussive Room ",
+        "Aux FX Preset": " Reverb>Compress "
+    },
+    {
+        "ID": 150,
+        "Name": "PhsrChorCDR Phsr",
+        "Bus 1 FX Preset": " ThunderPhaser ",
+        "Bus 2 FX Preset": " Chorus Comeback ",
+        "Bus 3 FX Preset": " DeepChorDlyHall ",
+        "Aux FX Preset": " ThunderPhaser "
+    },
+    {
+        "ID": 151,
+        "Name": "ChDlSp4TFlDl Phs",
+        "Bus 1 FX Preset": " Chorus Comeback ",
+        "Bus 2 FX Preset": " Astral Taps ",
+        "Bus 3 FX Preset": " Flange + Delay ",
+        "Aux FX Preset": " Manual Phaser "
+    },
+    {
+        "ID": 152,
+        "Name": "auxFlgDst+ ChLsD",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " TubeAmp DlyChor2 ",
+        "Aux FX Preset": " Chorus Slapbacks "
+    },
+    {
+        "ID": 153,
+        "Name": "auxFlgDst+ ChLs2",
+        "Bus 2 FX Preset": " Big Slow Flange ",
+        "Bus 3 FX Preset": " TubeAmp Flange ",
+        "Aux FX Preset": " Chorus Slapbacks "
+    },
+    {
+        "ID": 154,
+        "Name": "RoomRoomSRS CmRv",
+        "Bus 1 FX Preset": " PrettySmallPlace ",
+        "Bus 2 FX Preset": " BrightSmallRoom ",
+        "Bus 4 FX Preset": " SRS ",
+        "Aux FX Preset": " Drum Comprs>Rvb "
+    },
+    {
+        "ID": 155,
+        "Name": "RoomRoom Room",
+        "Bus 1 FX Preset": " Sun Room ",
+        "Bus 2 FX Preset": " SmallStudioRoom ",
+        "Aux FX Preset": " Stall One "
+    },
+    {
+        "ID": 156,
+        "Name": "GtRvPlate Hall",
+        "Bus 1 FX Preset": " Gate Plate ",
+        "Bus 2 FX Preset": " Weighty Platey ",
+        "Aux FX Preset": " HighSchool Gym "
+    },
+    {
+        "ID": 157,
+        "Name": "RoomRoom SRS",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 2 FX Preset": " Spitty Drum Room ",
+        "Aux FX Preset": " SRS "
+    },
+    {
+        "ID": 158,
+        "Name": "EnhcSp4T Hall",
+        "Bus 1 FX Preset": " 3 Band Enhancer ",
+        "Bus 2 FX Preset": " Spectral 4-Tap ",
+        "Aux FX Preset": " Semisweet Hall "
+    },
+    {
+        "ID": 159,
+        "Name": "Room RoomChr SRS",
+        "Bus 1 FX Preset": " Percussive Room ",
+        "Bus 3 FX Preset": " BrightSmallRoom ",
+        "Bus 4 FX Preset": " Thick Chorus ",
+        "Aux FX Preset": " SRS "
+    },
+    {
+        "ID": 160,
+        "Name": "KB3 V/C ->Rotary",
+        "Bus 1 FX Preset": " KB3 FXBus ",
+        "Aux FX Preset": " KB3 AuxFX "
+    },
+    {
+        "ID": 161,
+        "Name": "EQStImg 5BndEQ",
+        "Bus 1 FX Preset": " No Effect ",
+        "Bus 2 FX Preset": " Graphic EQ ",
+        "Bus 3 FX Preset": " Widespread ",
+        "Bus 4 FX Preset": " No Effect ",
+        "Aux FX Preset": " 5 Band EQ "
+    },
+    {
+        "ID": 162,
+        "Name": "aux5BeqStIm Hall",
+        "Bus 1 FX Preset": " No Effect ",
+        "Bus 2 FX Preset": " 5 Band EQ ",
+        "Bus 3 FX Preset": " Widespread ",
+        "Bus 4 FX Preset": " No Effect ",
+        "Aux FX Preset": " Real Dense Hall "
+    },
+    {
+        "ID": 198,
+        "Name": "Digitech Studio"
+    },
+    {
+        "ID": 199,
+        "Name": "Default Studio"
+    }
+]

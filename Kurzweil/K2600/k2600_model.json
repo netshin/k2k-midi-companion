@@ -4,8 +4,14 @@
   "manufacturer": "Kurzweil",
   "supportUrl": "https://kurzweil.com/k2600/",
   "patchDataPath": "k2600_programs.json",
+  "setupDataPath": "k2600_setups.json",
+  "kdfxLookupDataPath": "k2600_kdfx_lookup.json",
   "controllerDataPath": "k2600_controllers.json",
   "locationDigits": 3,
+  "setupLocationDigits": 2,
+  "setupIndex": {
+    "formula": "program_plus_1"
+  },
   "programIndex": {
     "formula": "lsb_times_100_plus_program"
   },

@@ -1,0 +1,434 @@
+[
+    {
+        "ID": 1,
+        "Name": "MiniVerb"
+    },
+    {
+        "ID": 2,
+        "Name": "Dual MiniVerb"
+    },
+    {
+        "ID": 3,
+        "Name": "Gated MiniVerb"
+    },
+    {
+        "ID": 4,
+        "Name": "Classic Place"
+    },
+    {
+        "ID": 5,
+        "Name": "Classic Verb"
+    },
+    {
+        "ID": 6,
+        "Name": "TQ Place"
+    },
+    {
+        "ID": 7,
+        "Name": "TQ Verb"
+    },
+    {
+        "ID": 8,
+        "Name": "Diffuse Place"
+    },
+    {
+        "ID": 9,
+        "Name": "Diffuse Verb"
+    },
+    {
+        "ID": 10,
+        "Name": "OmniPlace"
+    },
+    {
+        "ID": 11,
+        "Name": "OmniVerb"
+    },
+    {
+        "ID": 12,
+        "Name": "Panaural Room"
+    },
+    {
+        "ID": 13,
+        "Name": "Stereo Hall"
+    },
+    {
+        "ID": 14,
+        "Name": "Grand Plate"
+    },
+    {
+        "ID": 15,
+        "Name": "Finite Verb"
+    },
+    {
+        "ID": 130,
+        "Name": "Complex Echo"
+    },
+    {
+        "ID": 131,
+        "Name": "4-Tap Delay"
+    },
+    {
+        "ID": 132,
+        "Name": "4-Tap Delay BPM"
+    },
+    {
+        "ID": 133,
+        "Name": "8-Tap Delay"
+    },
+    {
+        "ID": 134,
+        "Name": "8-Tap Delay BPM"
+    },
+    {
+        "ID": 135,
+        "Name": "Spectral 4-Tap"
+    },
+    {
+        "ID": 136,
+        "Name": "Spectral 6-Tap"
+    },
+    {
+        "ID": 150,
+        "Name": "Chorus 1"
+    },
+    {
+        "ID": 151,
+        "Name": "Chorus 2"
+    },
+    {
+        "ID": 152,
+        "Name": "Dual Chorus 1"
+    },
+    {
+        "ID": 153,
+        "Name": "Dual Chorus 2"
+    },
+    {
+        "ID": 154,
+        "Name": "Flanger 1"
+    },
+    {
+        "ID": 155,
+        "Name": "Flanger 2"
+    },
+    {
+        "ID": 156,
+        "Name": "LFO Phaser"
+    },
+    {
+        "ID": 157,
+        "Name": "LFO Phaser Twin"
+    },
+    {
+        "ID": 158,
+        "Name": "Manual Phaser"
+    },
+    {
+        "ID": 159,
+        "Name": "Vibrato Phaser"
+    },
+    {
+        "ID": 160,
+        "Name": "SingleLFO Phaser"
+    },
+    {
+        "ID": 700,
+        "Name": "Chorus+Delay"
+    },
+    {
+        "ID": 701,
+        "Name": "Chorus+4Tap"
+    },
+    {
+        "ID": 702,
+        "Name": "Chorus<>4Tap"
+    },
+    {
+        "ID": 703,
+        "Name": "Chor+Dly+Reverb"
+    },
+    {
+        "ID": 704,
+        "Name": "Chorus<>Reverb"
+    },
+    {
+        "ID": 705,
+        "Name": "Chorus<>LasrDly"
+    },
+    {
+        "ID": 706,
+        "Name": "Flange+Delay"
+    },
+    {
+        "ID": 707,
+        "Name": "Flange+4Tap"
+    },
+    {
+        "ID": 708,
+        "Name": "Flange<>4Tap"
+    },
+    {
+        "ID": 709,
+        "Name": "Flan+Dly+Reverb"
+    },
+    {
+        "ID": 710,
+        "Name": "Flange<>Reverb"
+    },
+    {
+        "ID": 711,
+        "Name": "Flange<>LasrDly"
+    },
+    {
+        "ID": 712,
+        "Name": "Flange<>Pitcher"
+    },
+    {
+        "ID": 713,
+        "Name": "Flange<>Shaper"
+    },
+    {
+        "ID": 714,
+        "Name": "Quantize+Flange"
+    },
+    {
+        "ID": 715,
+        "Name": "Dual MovDelay"
+    },
+    {
+        "ID": 716,
+        "Name": "Quad MovDelay"
+    },
+    {
+        "ID": 717,
+        "Name": "LasrDly<>Reverb"
+    },
+    {
+        "ID": 718,
+        "Name": "Shaper<>Reverb"
+    },
+    {
+        "ID": 719,
+        "Name": "Reverb<>Compress"
+    },
+    {
+        "ID": 720,
+        "Name": "MonoPitcher+Chor"
+    },
+    {
+        "ID": 721,
+        "Name": "MonoPitcher+Flan"
+    },
+    {
+        "ID": 722,
+        "Name": "Pitcher+Chor+Dly"
+    },
+    {
+        "ID": 723,
+        "Name": "Pitcher+Flan+Dly"
+    },
+    {
+        "ID": 724,
+        "Name": "Mono Distortion"
+    },
+    {
+        "ID": 725,
+        "Name": "MonoDistort+Cab"
+    },
+    {
+        "ID": 726,
+        "Name": "MonoDistort + EQ"
+    },
+    {
+        "ID": 727,
+        "Name": "PolyDistort + EQ"
+    },
+    {
+        "ID": 728,
+        "Name": "StereoDistort+EQ"
+    },
+    {
+        "ID": 729,
+        "Name": "TubeAmp<>MD>Chor"
+    },
+    {
+        "ID": 730,
+        "Name": "TubeAmp<>MD>Flan"
+    },
+    {
+        "ID": 731,
+        "Name": "PolyAmp<>MD>Chor"
+    },
+    {
+        "ID": 732,
+        "Name": "PolyAmp<>MD>Flan"
+    },
+    {
+        "ID": 733,
+        "Name": "VibChor+Rotor 2"
+    },
+    {
+        "ID": 734,
+        "Name": "Distort + Rotary"
+    },
+    {
+        "ID": 735,
+        "Name": "KB3 FXBus"
+    },
+    {
+        "ID": 736,
+        "Name": "KB3 AuxFX"
+    },
+    {
+        "ID": 737,
+        "Name": "VibChor+Rotor 4"
+    },
+    {
+        "ID": 900,
+        "Name": "Env Follow Filt"
+    },
+    {
+        "ID": 901,
+        "Name": "TrigEnvelopeFilt"
+    },
+    {
+        "ID": 902,
+        "Name": "LFO Sweep Filter"
+    },
+    {
+        "ID": 903,
+        "Name": "Resonant Filter"
+    },
+    {
+        "ID": 904,
+        "Name": "Dual Res Filter"
+    },
+    {
+        "ID": 905,
+        "Name": "EQ Morpher"
+    },
+    {
+        "ID": 906,
+        "Name": "Mono EQ Morpher"
+    },
+    {
+        "ID": 907,
+        "Name": "Ring Modulator"
+    },
+    {
+        "ID": 908,
+        "Name": "Pitcher"
+    },
+    {
+        "ID": 909,
+        "Name": "Super Shaper"
+    },
+    {
+        "ID": 910,
+        "Name": "3 Band Shaper"
+    },
+    {
+        "ID": 911,
+        "Name": "Mono LaserVerb"
+    },
+    {
+        "ID": 912,
+        "Name": "LaserVerb Lite"
+    },
+    {
+        "ID": 913,
+        "Name": "LaserVerb"
+    },
+    {
+        "ID": 950,
+        "Name": "HardKneeCompress"
+    },
+    {
+        "ID": 951,
+        "Name": "SoftKneeCompress"
+    },
+    {
+        "ID": 952,
+        "Name": "Expander"
+    },
+    {
+        "ID": 953,
+        "Name": "Compress w/SC EQ"
+    },
+    {
+        "ID": 954,
+        "Name": "Compress/Expand"
+    },
+    {
+        "ID": 955,
+        "Name": "Comp/Exp + EQ"
+    },
+    {
+        "ID": 956,
+        "Name": "Compress 3 Band"
+    },
+    {
+        "ID": 957,
+        "Name": "Gate"
+    },
+    {
+        "ID": 958,
+        "Name": "Super Gate"
+    },
+    {
+        "ID": 959,
+        "Name": "2 Band Enhancer"
+    },
+    {
+        "ID": 960,
+        "Name": "3 Band Enhancer"
+    },
+    {
+        "ID": 961,
+        "Name": "Tremolo"
+    },
+    {
+        "ID": 962,
+        "Name": "Tremolo BPM"
+    },
+    {
+        "ID": 963,
+        "Name": "AutoPanner"
+    },
+    {
+        "ID": 964,
+        "Name": "Dual AutoPanner"
+    },
+    {
+        "ID": 965,
+        "Name": "SRS"
+    },
+    {
+        "ID": 966,
+        "Name": "Stereo Image"
+    },
+    {
+        "ID": 967,
+        "Name": "Mono -> Stereo"
+    },
+    {
+        "ID": 968,
+        "Name": "Graphic EQ"
+    },
+    {
+        "ID": 969,
+        "Name": "Dual Graphic EQ"
+    },
+    {
+        "ID": 970,
+        "Name": "5 Band EQ"
+    },
+    {
+        "ID": 998,
+        "Name": "FXMod Diagnostic"
+    },
+    {
+        "ID": 999,
+        "Name": "Stereo Analyze"
+    }
+]
