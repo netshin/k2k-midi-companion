@@ -7,9 +7,12 @@ console.log("starting app.js");
 let patches = {};
 let controllers = {};
 let mySynth = null;
+let selectedMidiInput = null;
 
 let myBankMSB = 0;
 let myBankLSB = 0;
+const NEEDS_MIDI_MESSAGE = "Configure a MIDI Interface...";
+const WAITING_MESSAGE = "Waiting...";
 
 
 /* ============================
@@ -73,28 +76,50 @@ function showDeviceModal() {
   const container = document.getElementById("deviceTiles");
 
   container.innerHTML = "";
+  selectedMidiInput = null;
 
   if (WebMidi.inputs.length === 0) {
-    container.innerHTML = "<div>No MIDI devices detected</div>";
+    container.innerHTML = '<div class="tile tile-disabled">No Interface Detected</div>';
+    buildRomSelector();
+    restoreRomSelection();
     modal.style.display = "flex";
     return;
   }
 
-  WebMidi.inputs.forEach(input => {
+  selectedMidiInput = WebMidi.inputs[0];
+
+  WebMidi.inputs.forEach((input, index) => {
 
     const tile = document.createElement("div");
 
     tile.className = "tile";
     tile.textContent = input.name;
+    tile.dataset.inputId = input.id;
 
-    tile.onclick = () => connectDevice(input);
+    if (index === 0) {
+      tile.classList.add("active");
+    }
+
+    tile.onclick = () => selectMidiInput(input.id);
 
     container.appendChild(tile);
 
   });
 
+  buildRomSelector();
+  restoreRomSelection();
   modal.style.display = "flex";
   
+}
+
+function selectMidiInput(inputId) {
+
+  selectedMidiInput = WebMidi.getInputById(inputId) || null;
+
+  document.querySelectorAll("#deviceTiles .tile").forEach(tile => {
+    tile.classList.toggle("active", tile.dataset.inputId === selectedMidiInput?.id);
+  });
+
 }
 
 
@@ -103,6 +128,8 @@ function showDeviceModal() {
 ============================ */
 
 function connectDevice(input) {
+
+  if (!input) return;
 
   mySynth = input;
 
@@ -113,6 +140,7 @@ function connectDevice(input) {
   localStorage.setItem("preferredMidiInput", input.id);
 
   attachMidiListeners();
+  setWaitingDisplay();
 
   document.getElementById("deviceModal").style.display = "none";
 
@@ -184,16 +212,17 @@ function attachMidiListeners() {
 function handleProgramChange(myBankMSB, myBankLSB, programNumber) {
 
   let patchNumber = (myBankLSB * 100) + programNumber;
+  const location = formatPatchLocation(patchNumber);
 
   const patch = patches[patchNumber];
 
   if (!patch) {
-    document.getElementById("display").textContent = "Unknown Patch";
+    setDisplayText("Unknown Patch", location);
     document.getElementById("notes").textContent = "";
     return;
   }
 
-  document.getElementById("display").textContent = patch.name;
+  setDisplayText(patch.name, location);
 
   let notesHtml = "";
 
@@ -248,6 +277,184 @@ function setupSettingsButton() {
 }
 
 
+/* =====================
+ROM CARD SELECTION
+======================= */
+const romCards = [
+  "Orchestral",
+  "Contemporary",
+  "Piano",
+  "Vintage Keys"
+];
+
+
+function buildRomSelector() {
+
+  const container = document.getElementById("romTiles");
+
+  container.innerHTML = "";
+
+  romCards.forEach(name => {
+
+    const tile = document.createElement("div");
+
+    tile.className = "romTile";
+
+    tile.textContent = name;
+
+    tile.onclick = () => {
+      tile.classList.toggle("active");
+    };
+
+    container.appendChild(tile);
+
+  });
+
+}
+
+function saveRomSelection() {
+
+  const active = [...document.querySelectorAll(".romTile.active")]
+      .map(el => el.textContent);
+
+  localStorage.setItem("k2600_roms", JSON.stringify(active));
+
+}
+
+function restoreRomSelection() {
+
+  const saved = JSON.parse(localStorage.getItem("k2600_roms") || "[]");
+
+  document.querySelectorAll(".romTile").forEach(tile => {
+
+    if (saved.includes(tile.textContent)) {
+      tile.classList.add("active");
+    }
+
+  });
+
+}
+
+function formatPatchLocation(patchNumber) {
+  return String(patchNumber).padStart(3, "0");
+}
+
+function setDisplayText(mainText, locationText = null) {
+
+  const display = document.getElementById("display");
+
+  if (!display) return;
+
+  display.textContent = "";
+
+  const nameLine = document.createElement("div");
+  nameLine.className = "display-name";
+  nameLine.textContent = mainText;
+  display.appendChild(nameLine);
+
+  if (!locationText) return;
+
+  const locationLine = document.createElement("div");
+  locationLine.className = "display-location";
+  locationLine.textContent = `Location: ${locationText}`;
+  display.appendChild(locationLine);
+
+}
+
+function setNeedsMidiDisplay() {
+
+  const notes = document.getElementById("notes");
+
+  setDisplayText(NEEDS_MIDI_MESSAGE);
+
+  if (notes) {
+    notes.textContent = "";
+  }
+
+}
+
+function setWaitingDisplay() {
+
+  setDisplayText(WAITING_MESSAGE);
+
+}
+
+
+const modal = document.querySelector(".modal");
+const okButton = document.querySelector(".okButton");
+const cancelButton = document.querySelector(".cancelButton");
+
+/* ===============================
+   CLOSE MODAL
+================================ */
+
+function closeModal() {
+  if (modal) {
+    modal.style.display = "none";
+  }
+}
+
+
+/* ===============================
+   SAVE SETTINGS
+================================ */
+
+function saveSettings() {
+
+  if (selectedMidiInput) {
+    connectDevice(selectedMidiInput);
+  } else if (!mySynth) {
+    setNeedsMidiDisplay();
+  }
+
+  saveRomSelection();
+
+  console.log("Settings saved");
+
+  closeModal();
+}
+
+function cancelSettings() {
+  closeModal();
+
+  if (!mySynth) {
+    setNeedsMidiDisplay();
+  }
+}
+
+
+/* ===============================
+   BUTTON HANDLERS
+================================ */
+
+okButton.addEventListener("click", saveSettings);
+
+cancelButton.addEventListener("click", cancelSettings);
+
+
+/* ===============================
+   KEYBOARD SHORTCUTS
+================================ */
+
+document.addEventListener("keydown", function(e) {
+
+  if (modal.style.display === "none") return;
+
+  if (e.key === "Enter") {
+    saveSettings();
+  }
+
+  if (e.key === "Escape") {
+    cancelSettings();
+  }
+
+});
+
+
+
+
+
+
 /* ============================
    APPLICATION STARTUP
 ============================ */
@@ -257,7 +464,6 @@ async function startApp() {
   await loadData();
 
   await startMIDI();
-
   setupSettingsButton();
 
 }
