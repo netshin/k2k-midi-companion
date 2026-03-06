@@ -1,119 +1,405 @@
+/* ==============================
+   GLOBAL
+============================== */
+
 body {
-    margin: 0;
-    height: 100vh;
-    background: #111;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Courier New", monospace;
-  }
+  margin:0;
+  height:100vh;
+  background:#111;
 
-  /* Outer rack vibe */
-  .rack {
-    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow:
-      0 20px 50px rgba(0,0,0,0.7),
-      inset 0 2px 4px rgba(255,255,255,0.05);
-  }
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  /* Main metal panel */
-  .panel {
-    background: linear-gradient(180deg, #3a3a3a, #242424);
-    padding: 50px 80px;
-    border-radius: 6px;
-    box-shadow:
-      inset 0 3px 6px rgba(0,0,0,0.6),
-      inset 0 -2px 4px rgba(255,255,255,0.04);
-  }
-
-  /* LCD frame */
-  .lcd-frame {
-    background: #0a1c2f;
-    padding: 20px;
-    border-radius: 4px;
-    box-shadow:
-      inset 0 0 15px rgba(0,0,0,0.9),
-      0 0 10px rgba(0,150,255,0.2);
-  }
-
-  /* LCD screen */
-  #display {
-    background: #0f2f5a;
-    color: #7df0ff;
-    font-size: 64px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 40px;
-    min-width: 600px;
-
-    box-shadow:
-      inset 0 0 20px rgba(0,0,0,0.8);
-
-    animation: lcdGlow 4s infinite ease-in-out;
-  }
-
-  @keyframes lcdGlow {
-    0%   { text-shadow: 0 0 5px #7df0ff; }
-    50%  { text-shadow: 0 0 18px #7df0ff; }
-    100% { text-shadow: 0 0 5px #7df0ff; }
-  }
-.screw {
-  width: 14px;
-  height: 14px;
-  background: radial-gradient(circle at 30% 30%, #666, #222);
-  border-radius: 50%;
-  position: absolute;
+  font-family:"Courier New", monospace;
 }
+
+
+/* ==============================
+   BRUSHED METAL TEXTURE
+============================== */
+
+.rack {
+
+  background:
+    linear-gradient(145deg,#2a2a2a,#1a1a1a),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.02),
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+
+  padding:40px;
+
+  border-radius:10px;
+
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.7),
+    inset 0 2px 4px rgba(255,255,255,0.05);
+}
+
+
+/* ==============================
+   MAIN PANEL
+============================== */
 
 .panel {
-  position: relative;
+
+  position:relative;
+
+  background:
+    linear-gradient(180deg,#3a3a3a,#242424),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.015),
+      rgba(255,255,255,0.015) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+
+  padding:50px 80px;
+
+  border-radius:6px;
+
+  box-shadow:
+    inset 0 3px 6px rgba(0,0,0,0.6),
+    inset 0 -2px 4px rgba(255,255,255,0.04);
 }
 
-.tl { top: 15px; left: 15px; }
-.tr { top: 15px; right: 15px; }
-.bl { bottom: 15px; left: 15px; }
-.br { bottom: 15px; right: 15px; }
 
-/* Make LCD container position relative */
+/* ==============================
+   LCD FRAME
+============================== */
+
 .lcd-frame {
-  position: relative;
-  overflow: hidden;
+
+  background:#0a1c2f;
+
+  padding:20px;
+
+  border-radius:4px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  box-shadow:
+    inset 0 0 15px rgba(0,0,0,0.9),
+    0 0 10px rgba(0,150,255,0.2);
 }
 
-/* Make LCD container position relative */
-.lcd-frame {
-  position: relative;
-  overflow: hidden;
+
+/* ==============================
+   LCD DISPLAY
+============================== */
+
+#display {
+
+  background:#0f2f5a;
+
+  color:#7df0ff;
+
+  font-size:64px;
+
+  letter-spacing:4px;
+
+  text-transform:uppercase;
+
+  text-align:center;
+
+  padding:40px;
+
+  min-width:600px;
+
+  box-shadow:
+    inset 0 0 20px rgba(0,0,0,0.8);
+
+  animation:lcdGlow 4s infinite ease-in-out;
 }
+
+@keyframes lcdGlow {
+
+  0%   { text-shadow:0 0 5px #7df0ff; }
+  50%  { text-shadow:0 0 18px #7df0ff; }
+  100% { text-shadow:0 0 5px #7df0ff; }
+
+}
+
+
+/* ==============================
+   PATCH NOTES AREA
+============================== */
 
 #notes div {
-  margin-bottom: 6px;
-  font-family: monospace;
+  margin-bottom:6px;
 }
 
-
 .ctrl-row {
-  display: flex;
-  font-family: monospace;
-  margin-bottom: 6px;
+  display:flex;
+  margin-bottom:6px;
 }
 
 .ctrl-name {
-  width: 150px;   /* fixed control column */
-  color: #ffd84d;
-  font-weight: bold;
+  width:150px;
+  color:#ffd84d;
+  font-weight:bold;
 }
 
 .ctrl-desc {
-  flex: 1;
-  color: #e0e0e0;
+  flex:1;
+  color:#e0e0e0;
+}
+
+.meta {
+  color:#e0e0e0;
 }
 
 
-/* Data / Info / Other */
-.meta {
-  color: #e0e0e0; /* soft white */
+/* ==============================
+   PANEL SCREWS
+============================== */
+
+.screw {
+  width:14px;
+  height:14px;
+
+  background:radial-gradient(circle at 30% 30%,#666,#222);
+
+  border-radius:50%;
+
+  position:absolute;
+}
+
+.tl { top:15px; left:15px; }
+.tr { top:15px; right:15px; }
+.bl { bottom:15px; left:15px; }
+.br { bottom:15px; right:15px; }
+
+
+/* ==============================
+   SETTINGS BUTTON
+============================== */
+
+#settingsButton {
+
+  position: fixed;
+
+  top: 18px;
+  left: 18px;
+
+  width: 64px;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 42px;
+
+  background: linear-gradient(180deg,#3a3a3a,#242424);
+
+  color: #ffffff;   /* white by default */
+
+  border: 2px solid #222;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  z-index: 10000;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.08),
+    inset 0 -3px 6px rgba(0,0,0,0.6),
+    0 4px 10px rgba(0,0,0,0.8);
+
+  opacity: 0.9;
+}
+
+#settingsButton:hover {
+
+  color: #ffd84d;   /* yellow like control labels */
+
+  border-color: #ffd84d;
+
+  box-shadow:
+    0 0 10px rgba(255,216,77,0.7),
+    inset 0 2px 4px rgba(255,255,255,0.1),
+    inset 0 -3px 6px rgba(0,0,0,0.7);
+}
+
+.gear {
+  display:inline-block;
+  transition:transform 0.2s ease;
+}
+
+#settingsButton:hover .gear {
+  transform:rotate(20deg);
+}
+
+#settingsButton::after {
+
+  content:"Configuration screen";
+
+  position:absolute;
+
+  left:75px;
+  top:50%;
+
+  transform:translateY(-50%);
+
+  background:#111;
+
+   color: #ffffff;   /* white by default */
+
+  padding:8px 12px;
+
+  border-radius:4px;
+
+  font-size:14px;
+
+  border:1px solid #444;
+
+  opacity:0;
+
+  transition:opacity 0.2s ease;
+
+  white-space:nowrap;
+}
+
+#settingsButton:hover::after {
+  opacity:1;
+}
+
+#settingsButton:hover::after {
+  opacity:1;
+}
+
+
+/* ==============================
+   DEVICE SELECTOR PANEL
+============================== */
+
+.modal {
+
+  position:fixed;
+
+  inset:0;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:rgba(0,0,0,0.8);
+
+  z-index:9999;
+}
+
+
+/* make selector look like another rack module */
+
+.modal-content {
+
+  background:
+    linear-gradient(180deg,#3a3a3a,#242424),
+    repeating-linear-gradient(
+      90deg,
+      rgba(255,255,255,0.02),
+      rgba(255,255,255,0.02) 2px,
+      transparent 2px,
+      transparent 4px
+    );
+
+  padding:40px 60px;
+
+  border-radius:6px;
+
+  box-shadow:
+    inset 0 3px 6px rgba(0,0,0,0.6),
+    inset 0 -2px 4px rgba(255,255,255,0.04),
+    0 20px 50px rgba(0,0,0,0.7);
+
+  min-width:600px;
+}
+
+
+/* LCD-style title */
+
+.modal-content h2 {
+
+  background:#0f2f5a;
+
+  color:#7df0ff;
+
+  padding:12px;
+
+  text-align:center;
+
+  letter-spacing:3px;
+
+  margin-bottom:30px;
+
+  box-shadow:
+    inset 0 0 12px rgba(0,0,0,0.8);
+}
+
+
+/* device tiles */
+
+#deviceTiles {
+
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+
+  gap:16px;
+}
+
+
+/* hardware buttons */
+
+.tile {
+
+  background:linear-gradient(180deg,#4a4a4a,#2b2b2b);
+
+  color:#ffd84d;
+
+  padding:18px;
+
+  text-align:center;
+
+  border-radius:4px;
+
+  border:2px solid #222;
+
+  cursor:pointer;
+
+  box-shadow:
+    inset 0 2px 4px rgba(255,255,255,0.08),
+    inset 0 -3px 6px rgba(0,0,0,0.6),
+    0 3px 6px rgba(0,0,0,0.8);
+
+  transition:all 0.15s ease;
+}
+
+.tile:hover {
+
+  color:#7df0ff;
+
+  border-color:#7df0ff;
+
+  box-shadow:
+    0 0 10px rgba(125,240,255,0.7),
+    inset 0 2px 4px rgba(255,255,255,0.1),
+    inset 0 -3px 6px rgba(0,0,0,0.7);
+}
+
+.tile:active {
+
+  transform:translateY(1px);
+
+  box-shadow:
+    inset 0 4px 6px rgba(0,0,0,0.8);
 }

@@ -2,78 +2,70 @@
 
 <html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <title>K2600 Patch Display</title>
-  <link rel="stylesheet" href="css/styles.css">
-<script src="app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js">
-</script>
+<head>
 
-<script type="module">
-  let myBankLSB =0 ;
-  let myBankMSB =0 ;
-  // Enable WEBMIDI.js and trigger the onEnabled() function when ready
-  WebMidi
-    .enable()
-    .then(onEnabled)
-    .catch(err => alert(err));
+<meta charset="UTF-8">
+<title>K2600 Patch Display</title>
 
-function onEnabled() {
-console.log("WebMidi Enabled");
-  if (WebMidi.inputs.length < 1) {
-    console.log("No Device Detected");
-  } else {
-    WebMidi.inputs.forEach((device, index) => {
-      console.log("index:" + index + " " + device.name);
-    });
-  };
-  
-  const mySynth = WebMidi.inputs[0];
-  // const mySynth = WebMidi.getInputByName("TYPE NAME HERE!")
-  
-  mySynth.channels[1].addListener("noteon", e => {
-    console.log (`${e.note.name}`);
-//    document.body.innerHTML+= `${e.note.name} <br>`;
-  });
-// ==== LISTEN FOR BANK MESSAGES ====
-  mySynth.channels[1].addListener("controlchange", e => {
-  if (e.controller.number === 32) {
-    console.log("Bank LSB:", e.rawValue);
-    myBankLSB = e.rawValue;
-  }else if (e.controller.number === 0) {
-    console.log("Bank MSB:", e.rawValue);
-    myBankMSB = e.rawValue;
-  }
-});
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<script src="js/config.js" defer></script>
 
-  mySynth.channels[1].addListener("programchange", e => {
-     console.log("Bank MSB:" + myBankMSB + " Bank LSB:" + myBankLSB + " dataBytes: " + e.dataBytes + " PC value:" + e.value);
-     handleProgramChange(myBankMSB,myBankLSB,e.value);
-});
+<script src="https://cdn.jsdelivr.net/npm/webmidi@latest/dist/iife/webmidi.iife.js" defer></script>
 
-}
-</script>
+<script src="js/app.js" defer></script>
+
 </head>
-  
-<body>
-  <div class="rack">
-    <div class="panel">
-      <div class="lcd-frame">
-        <div id="display">Waiting...</div>
-      </div>
-            <div class="notes-frame">
-        <div id="notes">
-          Select a patch to see description...
-        </div>
-      </div>
 
-    </div>
+<body>
+
+
+<!-- DEVICE SELECTION MODAL -->
+
+<div id="deviceModal" class="modal">
+  <div class="modal-content">
+    <h2>Select MIDI Interface</h2>
+    <div id="deviceTiles"></div>
   </div>
-  <div class="screw tl"></div>
+</div>
+
+
+<!-- SETTINGS BUTTON -->
+
+<div id="settingsButton">
+  <span class="gear">⚙</span>
+</div>
+
+
+<!-- MAIN SYNTH UI -->
+
+<div class="rack">
+
+  <div class="panel">
+
+    <div class="lcd-frame">
+      <div id="display">Waiting...</div>
+    </div>
+
+    <div class="notes-frame">
+      <div id="notes" class="ctrl-desc">
+        Select a patch to see description...
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- PANEL SCREWS -->
+
+<div class="screw tl"></div>
 <div class="screw tr"></div>
 <div class="screw bl"></div>
 <div class="screw br"></div>
+
+
 </body>
 
 </html>
