@@ -390,13 +390,17 @@ function renderProgramNotes(patch) {
 
   patch.controls.forEach(control => {
 
-    if (control.type === "MIDI") {
+    if (control.type === "MIDI" || control.type === "MPress") {
 
-      const ctrlName = controllers[control.number] || `CC ${control.number}`;
+      const isMPress = control.type === "MPress";
+      const ctrlName = isMPress
+        ? "MPress"
+        : (controllers[control.number] || `CC ${control.number}`);
+      const ctrlNameClass = isMPress ? "ctrl-name ctrl-name-mpress" : "ctrl-name";
 
       notesHtml +=
         `<div class="ctrl-row">
-          <span class="ctrl-name">${ctrlName}</span>
+          <span class="${ctrlNameClass}">${ctrlName}</span>
           <span class="ctrl-desc">${control.description}</span>
         </div>`;
 

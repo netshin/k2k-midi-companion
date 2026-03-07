@@ -181,6 +181,10 @@ body {
   font-weight:bold;
 }
 
+.ctrl-name-mpress {
+  color:#ffb56b;
+}
+
 .ctrl-desc {
   flex:1;
   color:#e0e0e0;

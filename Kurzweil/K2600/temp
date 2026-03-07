@@ -1,26 +1,154 @@
-E Pno Amp
-Tron Effects
-70s EfxDistB
-Flange Tap Synth
-HlFlgChDl Rm LD1
-Hall CabDst Hall
-2 Bus 2 Chain 2
-Ster ChorusDelay
-Phsr Trpflt
-Jazzy Room
-Drum Crusher
-Verb Roto Room
-Flt Cmp Ch4T
-DrCmpr CDR
-Chor Cmp Verb
-Cmpr ChrDbl
-ChorRotoCmp Rev
-RevCmp Hall
-Filt Chaos Room
-SKComp MTChor
-Qntflg Cmp Chor
-SKCmp FlngVerb
-CDR Cmp FlgHll
-CDR Pan FlgHll
-Verb RvCmp Delay
-Chor&Flng Delays
+700 New Classical 1
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Adds distance
+    MIDI: 67 Soft pedal
+    information: The most realistic sound for classical pieces
+
+701 New Classical 2
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Adds distance
+    MIDI: 67 Soft pedal
+    information: For “big” classical playing
+
+702 Classical Grand3
+    MIDI: 25 Wetter
+    MIDI: 67 Soft pedal
+
+
+703 DynGrand ClosMic
+    MIDI: 25 Wetter
+    MIDI: 67 Soft pedal
+    information: Close-mic dynamic grand; exaggerated filter on softest strikes, for extended dynamic range
+
+704 Jazz Grand
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Bigger hall
+    MIDI: 67 Soft pedal
+    information: Sounds nice in a jazz combo setting
+
+705 Bright Grand
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 22 Treble EQ boost
+    MIDI; 25 Adds distance
+    MIDI: 67 Soft pedal
+    information: Sounds like a relatively brightly-voiced piano
+
+
+706 Songwriter’s Pno
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Wetter
+    MIDI: 67 Soft pedal
+    information: Play simple block chords to accompany a pop or rock song
+
+707 Soft Grand
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Wetter
+708 Ballad Grand
+    Mod Wheel Pitch modulation
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Adds chorusing in the reverb
+    information: For long sustaining chords in a rock band setting
+
+709 FM & Grand
+    Mod Wheel Tremolo
+    MIDI: 6 Disables synth layer
+    MIDI: 22 Timbre Control
+    MIDI: 23 Octave in bass
+    MIDI: 24 Fades frequency-modulation layers
+    MIDI: 25 Wetter
+    MIDI: 26 Chorus wet
+    MIDI: 27 Chorus feedback
+
+710 Hardhammer Piano
+    MIDI: 6 More highs
+    MIDI: 25 Wetter
+
+711 Stage Grand St
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Wetter
+    MIDI: 67 Soft pedal
+    information: Compressor in studio 749 controls dynamics in live settings
+
+712 Jazz Grand Mono
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Reverb time
+    information: For use with a mono PA system
+
+713 Rock Grand Mono
+    MIDI: 6 Disables sympathetic vibrations
+    MIDI: 25 Reverb time
+    For use with a mono PA system
+
+714 GrPno & Strings
+    Mod Wheel Lowpass filter on strings
+    MIDI: 6 Strings forward
+    MIDI: 25 Piano delays
+    MIDI: 26 Feedback control (tails longer)
+
+715 GrPno & Pad
+    Mod Wheel Fades pad
+    MIDI: 6 Envelope control on pad
+    MIDI: 25 Wetter
+716 Grand & Rich Pad
+    MIDI: 26 Feedback control (tails longer)
+    information: Velocity controls each note's effects send; accents sound nice sustained
+
+717 Dyn Pno&Pad
+    MIDI: 22 Disables String 1
+    MIDI: 26 Feedback control (tails longer)
+    MIDI: 29 Enables String 2
+    information: Velocity controls each note’s send to the feedback flangers
+
+718 In Canyon w/Str
+    MIDI: 6 Fades String layer
+    MIDI: 25 Flange wet
+    MIDI: 26 Increases reverb time
+
+719 Mello w/Voxpad
+    Mod Wheel Pitch modulation
+    MIDI: 6 Fades string layer
+    MIDI: 25 Flange wet
+    MIDI: 26 Increases reverb time
+
+720 String Chaser
+    Mod Wheel Pitch modulation
+    MIDI: 6 Filter
+    MIDI: 25 Adds distance
+    MIDI: 26 Decreases reverb time
+
+721 Bowed Piano
+    MIDI: 6 Fades to bowed layer only
+    MIDI: 25 Controls send to flanger
+722 GPno & Puff
+    MIDI: 25 Wetter
+    MIDI: 67 Soft pedal
+    For percussive playing
+
+723 SynGrand & EPno
+    Mod Wheel Manual wah-wah
+    MIDI: 25 Wetter
+
+724 Twang Grand
+    Mod Wheel Detune
+    MIDI: 6 Layer balance
+
+725 AlternativePiano
+    Mod Wheel Pitch modulation
+    MIDI: 6 Timbre control
+
+726 Affected Grand
+    Mod Wheel Filter modulation
+    
+727 Robot Grand
+    MIDI: 6 Disables the per-note sample & hold
+    information: For staccato repetitive playing (with the arpeggiator, for example)
+    
+728 Distorted Grand
+    MIDI: 6 Hipass filter, program-wide
+729 Way in the Grand
+    Mod Wheel Pitch modulation on layers
+    MIDI: 6 Enables third layer
+    MIDI: 25 Pitch modulation on the reverb
+    MIDI: 26 Drier
+    information: Play sparsely!
+

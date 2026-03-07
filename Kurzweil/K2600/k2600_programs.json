@@ -24,7 +24,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "InEQ: Treble"
       },
       {
@@ -49,13 +48,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "String Balance - softer"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "String Balance - louder"
       },
       {
@@ -75,13 +72,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "String Fade"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "String Swell"
       },
       {
@@ -121,13 +116,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo/ Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Chorus LFODepth+Rate, (aux) Plate Level cut+PreDly adjustment"
       },
       {
@@ -178,13 +171,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Stereo Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Rate"
       },
       {
@@ -235,13 +226,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Enables Stereo Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Rate"
       },
       {
@@ -267,13 +256,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "LFO Detune, Layer Delay"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tine Overtones (modulator pitch)"
       },
       {
@@ -324,13 +311,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Defeat release layer"
       },
       {
@@ -361,13 +346,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Drawbar 1"
       },
       {
@@ -422,13 +405,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Drawbar 1"
       },
       {
@@ -479,13 +460,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Drawbar 1"
       },
       {
@@ -536,13 +515,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Timbre"
       },
       {
@@ -578,13 +555,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Layer Detune"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Switch Organ Stops"
       },
       {
@@ -630,7 +605,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Low pass filter cutoff (duller)"
       },
       {
@@ -656,13 +630,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Lo Pass Res Filter Cut Off (duller)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lo Pass non res filter Cut Off (duller)"
       },
       {
@@ -708,13 +680,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Envelope Attack Rate"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low pass filter cutoff (duller)"
       },
       {
@@ -739,13 +709,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Fade Solo Strings"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Fade Ensemble Strings"
       },
       {
@@ -766,13 +734,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Sweeping Notch"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Timbre (duller)"
       },
       {
@@ -793,13 +759,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Timbre (brightness)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enables Octave Layer"
       },
       {
@@ -820,13 +784,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Slow Vibrato depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Cutoff"
       },
       {
@@ -857,13 +819,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Slow Vibrato Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Bandpass Center Frequency"
       },
       {
@@ -899,13 +859,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato+Rate (CathV), Sin Tremolo Rate (8veV)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: CathedralVox ^ 8veVox"
       },
       {
@@ -955,7 +913,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency cut+Res (string)"
       },
       {
@@ -1010,13 +967,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "defeats vel. Crash"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Layer Xfade Timpani and Orch Bass Drum"
       },
       {
@@ -1047,13 +1002,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "defeats vel. Crash"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Layer Xfade Timpani and Orch Bass Drum"
       },
       {
@@ -1084,13 +1037,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "defeats vel. Crash"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Swaps Fr Horns for Trumpets"
       },
       {
@@ -1115,13 +1066,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo (guitars)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Guitars + Horns"
       },
       {
@@ -1162,13 +1111,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Defeats Ride Cymbal"
       },
       {
@@ -1193,13 +1140,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr Enable"
       },
       {
@@ -1250,13 +1195,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Chorusy Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Exciter gain"
       },
       {
@@ -1282,13 +1225,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato (Guitar)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Fade Strings"
       },
       {
@@ -1319,13 +1260,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Defeats Release Layer"
       },
       {
@@ -1356,13 +1295,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Rate"
       },
       {
@@ -1417,13 +1354,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Depth"
       },
       {
@@ -1449,13 +1384,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Toggle: to Stereo Guitar Mutes"
       },
       {
@@ -1495,13 +1428,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "HFStim adjustment"
       },
       {
@@ -1556,7 +1487,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Wah wah"
       },
       {
@@ -1566,7 +1496,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Cabinet Type"
       },
       {
@@ -1587,13 +1516,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr Enable"
       },
       {
@@ -1648,13 +1575,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Ride Layer Enabled"
       },
       {
@@ -1679,13 +1604,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Ride Cymbal Fade"
       },
       {
@@ -1710,13 +1633,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Lyrs"
       },
       {
@@ -1771,13 +1692,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Shaper, Para Treblele boost"
       },
       {
@@ -1807,13 +1726,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enable Mute at Medium Velocities"
       },
       {
@@ -1843,13 +1760,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -1904,13 +1819,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -1969,13 +1882,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "LoPass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Res"
       },
       {
@@ -2030,13 +1941,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency, Low Pass Separation, Envelope Decay Control"
       },
       {
@@ -2081,13 +1990,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "LPGate Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Saw+Shp Pitch, Atk Control"
       },
       {
@@ -2122,13 +2029,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Multiple Layer toggle"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Toms"
       },
       {
@@ -2179,13 +2084,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Pitch: AuxPerc"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Toms"
       },
       {
@@ -2235,13 +2138,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Multiple Layer toggle"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks"
       },
       {
@@ -2292,13 +2193,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Pitch for most Needle FX and other SFX"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Toms, HiHats"
       },
       {
@@ -2353,13 +2252,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "AltStart control, Impact on most elements"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Toms"
       },
       {
@@ -2440,13 +2337,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Volume"
       },
       {
@@ -2481,13 +2376,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Rate"
       },
       {
@@ -2533,13 +2426,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "EnvCtl: Rel, Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Fade in Percussive Layer"
       },
       {
@@ -2575,13 +2466,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Switch Conga Layers"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Conga Pitch when MW up"
       },
       {
@@ -2617,13 +2506,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, LoPass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr enable"
       },
       {
@@ -2682,7 +2569,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Envelope Control Atk"
       },
       {
@@ -2707,13 +2593,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "swell, Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: DynTrumpet ^ Miles"
       },
       {
@@ -2768,13 +2652,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -2819,13 +2701,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Swell"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -2855,7 +2735,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "LoPass adjustment"
       },
       {
@@ -2895,13 +2774,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -2936,13 +2813,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "InEQ: Bass, LoPass Frequency"
       },
       {
@@ -2997,13 +2872,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Fade in French Horn layer"
       },
       {
@@ -3038,13 +2911,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enable and Fade in Fr Hrn Section"
       },
       {
@@ -3064,13 +2935,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Low Pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Flute Variation"
       },
       {
@@ -3091,13 +2960,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "HF Stimulator Drive"
       },
       {
@@ -3133,13 +3000,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, LoPass sep (expression / dynamic Control)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Horn ^ Solo String"
       },
       {
@@ -3202,13 +3067,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato/Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Fade out Pizz Basses"
       },
       {
@@ -3234,13 +3097,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Fade Chiff Layer"
       },
       {
@@ -3270,13 +3131,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, modulation"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Lyr 1 ^ Lyr 3"
       },
       {
@@ -3331,13 +3190,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Filter Envelope Attack"
       },
       {
@@ -3378,13 +3235,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency,Envelope Control Attack & Release"
       },
       {
@@ -3429,13 +3284,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency, EnvCtl: Att+Rel"
       },
       {
@@ -3480,13 +3333,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "EnvCtl: Att, Notch Frequency"
       },
       {
@@ -3541,13 +3392,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency+Res"
       },
       {
@@ -3606,13 +3455,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "FM Depth (timbre)"
       },
       {
@@ -3662,13 +3509,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Shaper Gain"
       },
       {
@@ -3718,13 +3563,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency & Res"
       },
       {
@@ -3769,13 +3612,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Xfade Octave Feedback, Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -3805,13 +3646,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr 1 Octave Pitch Shift"
       },
       {
@@ -3866,13 +3705,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Modulator Pitch (timbre)"
       },
       {
@@ -3927,13 +3764,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch"
       },
       {
@@ -3992,13 +3827,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Envelope Control: Atk Rate, Dec Rate"
       },
       {
@@ -4053,13 +3886,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch (sine+)"
       },
       {
@@ -4089,13 +3920,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "none"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "High Pass Frequency"
       },
       {
@@ -4136,13 +3965,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "All Pass Frequency, Lyr 2 Detune"
       },
       {
@@ -4172,13 +3999,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -4204,13 +4029,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -4265,13 +4088,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "7 step LFO depth - pitch"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -4317,13 +4138,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "ShapeModOsc Pitch"
       },
       {
@@ -4363,13 +4182,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Band Pass Frequency, Width, Amplitude"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr enable"
       },
       {
@@ -4424,13 +4241,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Slow pitch mod Master Sync Osc"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch Slave Sync Osc"
       },
       {
@@ -4476,13 +4291,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch"
       },
       {
@@ -4523,13 +4336,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -4588,7 +4399,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "E Pno Vibrato + ParaTreble"
       },
       {
@@ -4638,13 +4448,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "String Level"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "InEQ: Treble boost"
       },
       {
@@ -4680,13 +4488,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vox Level"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Vox Balance, Piano Treble boost"
       },
       {
@@ -4732,7 +4538,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "InEQ: Treble"
       },
       {
@@ -4757,7 +4562,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "InEQ: Treble"
       },
       {
@@ -4828,7 +4632,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo"
       },
       {
@@ -4868,7 +4671,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Wah Filter"
       },
       {
@@ -4878,7 +4680,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Depth"
       },
       {
@@ -4929,7 +4730,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Wah Filter"
       },
       {
@@ -4939,7 +4739,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enable Release Layer"
       },
       {
@@ -4975,13 +4774,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Chorusy Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Layer 1 Pitch"
       },
       {
@@ -5026,13 +4823,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Rate"
       },
       {
@@ -5068,13 +4863,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Tremolo Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Tremolo Rate"
       },
       {
@@ -5115,13 +4908,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Drawbar 1"
       },
       {
@@ -5172,13 +4963,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Leslie Depth"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Distortion Drive"
       },
       {
@@ -5219,13 +5008,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Disable Layer 2"
       },
       {
@@ -5271,13 +5058,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Decrescendo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -5318,7 +5103,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Subtle Pitch and LP Filter modulation"
       },
       {
@@ -5339,13 +5123,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Alt Attack: switched"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enable Octave Layer"
       },
       {
@@ -5376,13 +5158,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "none"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Treblele Shelf EQ"
       },
       {
@@ -5408,13 +5188,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "EQ Duller"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Shaper"
       },
       {
@@ -5435,13 +5213,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "4P Low Pass Separation"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency, Resonance"
       },
       {
@@ -5491,13 +5267,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Envelope Control: Attack"
       },
       {
@@ -5527,13 +5301,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Envelope Control: Attack"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -5568,13 +5340,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Envelope Control: Atk & Release"
       },
       {
@@ -5590,13 +5360,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato+Rate"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr XFade"
       },
       {
@@ -5651,13 +5419,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Para EQ Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Boost Vox Layer"
       },
       {
@@ -5692,13 +5458,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato+Rate"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LP2Res Frequency"
       },
       {
@@ -5743,13 +5507,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enhancer Drive & Gain (less)"
       },
       {
@@ -5784,13 +5546,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Slight Vibrato, String Balance"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "String Balance, Gtr Hi Frequency Cut"
       },
       {
@@ -5845,13 +5605,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Notch Filt Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Para Mid Frequency"
       },
       {
@@ -5910,13 +5668,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Para EQ AMP"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Para EQ Frequency, Width, Depth"
       },
       {
@@ -5971,13 +5727,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Octave Pitch shift Pad layer"
       },
       {
@@ -6022,13 +5776,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enhancer Amplitude"
       },
       {
@@ -6073,13 +5825,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato/Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enables Dist Gtr Lyrs"
       },
       {
@@ -6138,13 +5888,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "EnvCtl: Att, LoPass Frequency+Res"
       },
       {
@@ -6199,13 +5947,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Steep Resonant Bass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Cabinet Preset, Out Gain (KDFX)"
       },
       {
@@ -6260,13 +6006,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -6321,13 +6065,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Octave Pitch Shift Layer 2, (Aux) Ambience Level"
       }
     ]
@@ -6338,13 +6080,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: DualBass + SlpBass"
       },
       {
@@ -6399,13 +6139,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "BandPass Frequency+Width, EnvCtl: Imp, LoPass adjustment"
       },
       {
@@ -6460,13 +6198,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -6507,13 +6243,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Shaper amt, HiPass Frequency"
       },
       {
@@ -6568,13 +6302,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "AltControl: Toms"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Snares, Toms, HiHats"
       },
       {
@@ -6629,13 +6361,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Multiple Layer toggle"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Toms"
       },
       {
@@ -6690,13 +6420,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Multiple Layer toggle"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Toms"
       },
       {
@@ -6722,13 +6450,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Assorted Filters, on most elements"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "PItch: Kicks (B1, C2), and Toms"
       },
       {
@@ -6787,13 +6513,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "(FX2) Resonant Filter Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Filter: Kicks, Toms, assorted other elements"
       },
       {
@@ -6844,13 +6568,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "EP Chord Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency Snare"
       },
       {
@@ -6891,13 +6613,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "none"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch Toms, Kicks"
       },
       {
@@ -6937,13 +6657,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Cowbell + Shaker Enable"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": ""
       },
       {
@@ -7002,13 +6720,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7053,7 +6769,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7074,13 +6789,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -7135,13 +6848,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, mute adjustment"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -7196,13 +6907,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Low Pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7237,13 +6946,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7298,13 +7005,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Low Pass Frequency - Flute"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Flute^WWind Sect"
       },
       {
@@ -7349,13 +7054,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Low Pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Oboe ^ Eng Hrn"
       },
       {
@@ -7380,13 +7083,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7411,13 +7112,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7442,13 +7141,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Enable Layer 3&4"
       },
       {
@@ -7503,13 +7200,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency, Envelope Control: Att, Dec"
       },
       {
@@ -7564,13 +7259,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -7625,13 +7318,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Envelope Control: Attack"
       },
       {
@@ -7667,13 +7358,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -7728,13 +7417,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -7784,13 +7471,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency, Impact"
       },
       {
@@ -7840,13 +7525,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "HiPass Frequency"
       },
       {
@@ -7901,13 +7584,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pulse Width"
       },
       {
@@ -7953,13 +7634,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Pitch Modulation"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Shaper Layer 1"
       },
       {
@@ -8005,13 +7684,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -8046,13 +7723,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch - Octave Shift"
       },
       {
@@ -8107,13 +7782,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Octave Harmonic Feedback"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -8153,13 +7826,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Octave Pitch Shift Layer 1"
       },
       {
@@ -8199,13 +7870,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -8240,13 +7909,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -8291,13 +7958,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Bandpass Frequency"
       },
       {
@@ -8343,13 +8008,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr disable(up); LoPass Res"
       },
       {
@@ -8399,13 +8062,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "InEQ: Bass"
       },
       {
@@ -8460,13 +8121,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch Shift"
       },
       {
@@ -8491,13 +8150,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Gain"
       },
       {
@@ -8532,13 +8189,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Non Lin Gain, Low Pass Frequency"
       },
       {
@@ -8568,13 +8223,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency + Res"
       },
       {
@@ -8624,13 +8277,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Octave Pitch Shift"
       },
       {
@@ -8666,13 +8317,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Hi Frequency Stimulator Drive (less)"
       },
       {
@@ -8722,13 +8371,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "HiPass Frequencys+Width"
       },
       {
@@ -8783,13 +8430,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Panner LFO Rate, Lyr Delay, Lyr Xfade"
       },
       {
@@ -8848,13 +8493,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "High Pass Frequency"
       },
       {
@@ -8900,13 +8543,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -8961,13 +8602,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch Layer 2"
       },
       {
@@ -9017,13 +8656,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Wrap"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Shaper"
       },
       {
@@ -9049,13 +8686,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LPGate Frequency"
       },
       {
@@ -9101,13 +8736,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Saw+ Pitch"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Hi Pass Frequency"
       },
       {
@@ -9153,7 +8786,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Pitch, Shaper Layer 2"
       },
       {
@@ -9176,19 +8808,632 @@
     "name": "Default Program",
     "controls": []
   },
+  "700": {
+    "name": "New Classical 1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Adds distance"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "The most realistic sound for classical pieces"
+      }
+    ]
+  },
+  "701": {
+    "name": "New Classical 2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Adds distance"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "For 'big' classical playing"
+      }
+    ]
+  },
+  "702": {
+    "name": "Classical Grand3",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      }
+    ]
+  },
+  "703": {
+    "name": "DynGrand ClosMic",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "Close-mic dynamic grand; exaggerated filter on softest strikes, for extended dynamic range"
+      }
+    ]
+  },
+  "704": {
+    "name": "Jazz Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Bigger hall"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "Sounds nice in a jazz combo setting"
+      }
+    ]
+  },
+  "705": {
+    "name": "Bright Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Treble EQ boost"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Adds distance"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "Sounds like a relatively brightly-voiced piano"
+      }
+    ]
+  },
+  "706": {
+    "name": "Songwriter's Pno",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "Play simple block chords to accompany a pop or rock song"
+      }
+    ]
+  },
+  "707": {
+    "name": "Soft Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      }
+    ]
+  },
+  "708": {
+    "name": "Ballad Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch modulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Adds chorusing in the reverb"
+      },
+      {
+        "type": "Info",
+        "description": "For long sustaining chords in a rock band setting"
+      }
+    ]
+  },
+  "709": {
+    "name": "FM & Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables synth layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Timbre Control"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Octave in bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Fades frequency-modulation layers"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Chorus wet"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus feedback"
+      }
+    ]
+  },
+  "710": {
+    "name": "Hardhammer Piano",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "More highs"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      }
+    ]
+  },
+  "711": {
+    "name": "Stage Grand St",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "Compressor in studio 749 controls dynamics in live settings"
+      }
+    ]
+  },
+  "712": {
+    "name": "Jazz Grand Mono",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Reverb time"
+      },
+      {
+        "type": "Info",
+        "description": "For use with a mono PA system"
+      }
+    ]
+  },
+  "713": {
+    "name": "Rock Grand Mono",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables sympathetic vibrations"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Reverb time"
+      },
+      {
+        "type": "Info",
+        "description": "For use with a mono PA system"
+      }
+    ]
+  },
+  "714": {
+    "name": "GrPno & Strings",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Lowpass filter on strings"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Strings forward"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Piano delays"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Feedback control (tails longer)"
+      }
+    ]
+  },
+  "715": {
+    "name": "GrPno & Pad",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Fades pad"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope control on pad"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      }
+    ]
+  },
+  "716": {
+    "name": "Grand & Rich Pad",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Feedback control (tails longer)"
+      },
+      {
+        "type": "Info",
+        "description": "Velocity controls each note's effects send; accents sound nice sustained"
+      }
+    ]
+  },
+  "717": {
+    "name": "Dyn Pno&Pad",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Disables String 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Feedback control (tails longer)"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Enables String 2"
+      },
+      {
+        "type": "Info",
+        "description": "Velocity controls each note's send to the feedback flangers"
+      }
+    ]
+  },
+  "718": {
+    "name": "In Canyon w/Str",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Fades String layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Flange wet"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Increases reverb time"
+      }
+    ]
+  },
+  "719": {
+    "name": "Mello w/Voxpad",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch modulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Fades string layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Flange wet"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Increases reverb time"
+      }
+    ]
+  },
+  "720": {
+    "name": "String Chaser",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch modulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Filter"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Adds distance"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Decreases reverb time"
+      }
+    ]
+  },
+  "721": {
+    "name": "Bowed Piano",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Fades to bowed layer only"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Controls send to flanger"
+      }
+    ]
+  },
+  "722": {
+    "name": "GPno & Puff",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      },
+      {
+        "type": "MIDI",
+        "number": 67,
+        "description": "Soft pedal"
+      },
+      {
+        "type": "Info",
+        "description": "For percussive playing"
+      }
+    ]
+  },
+  "723": {
+    "name": "SynGrand & EPno",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Manual wah-wah"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Wetter"
+      }
+    ]
+  },
+  "724": {
+    "name": "Twang Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Detune"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer balance"
+      }
+    ]
+  },
+  "725": {
+    "name": "AlternativePiano",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch modulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Timbre control"
+      }
+    ]
+  },
+  "726": {
+    "name": "Affected Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter modulation"
+      }
+    ]
+  },
+  "727": {
+    "name": "Robot Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables the per-note sample & hold"
+      },
+      {
+        "type": "Info",
+        "description": "For staccato repetitive playing (with the arpeggiator, for example)"
+      }
+    ]
+  },
+  "728": {
+    "name": "Distorted Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Hipass filter, program-wide"
+      }
+    ]
+  },
+  "729": {
+    "name": "Way in the Grand",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch modulation on layers"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables third layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Pitch modulation on the reverb"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Drier"
+      },
+      {
+        "type": "Info",
+        "description": "Play sparsely!"
+      }
+    ]
+  },
   "730": {
     "name": "L'il Nipper Kit",
     "controls": [
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "SFX Pitch"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kick, Toms"
       },
       {
@@ -9243,13 +9488,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Filter Resonance (A#4-C5)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": ""
       },
       {
@@ -9308,13 +9551,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Alternate Kick (B2-C3)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: nearly all elements"
       },
       {
@@ -9369,13 +9610,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Multiple Layer toggle"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch: Kicks, Snares, Toms, Shaker"
       },
       {
@@ -9467,13 +9706,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: BottomFeed ^ Pulse"
       },
       {
@@ -9528,13 +9765,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, HiPass Frequency (Chirp)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Gate"
       },
       {
@@ -9589,13 +9824,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, LoPass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: SustBass + MixBass"
       },
       {
@@ -9650,13 +9883,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: SkoolBass ^ SImple"
       },
       {
@@ -9723,13 +9954,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Mellostr ^ ShineOn"
       },
       {
@@ -9784,13 +10013,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Arystal ^ InTheAir"
       },
       {
@@ -9845,13 +10072,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "none"
       },
       {
@@ -9906,13 +10131,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: OronicoKno + Shift"
       },
       {
@@ -9971,13 +10194,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, LoPass Res"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: WispSingrs + Glass"
       },
       {
@@ -10032,13 +10253,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr 3 volume (ride cymbal)"
       },
       {
@@ -10097,13 +10316,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Low Pass Frequency"
       },
       {
@@ -10153,13 +10370,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "toggle: Alaska + Glide"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "EnvCtl: Imp"
       },
       {
@@ -10218,13 +10433,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Detooner ^ BigPMW"
       },
       {
@@ -10279,13 +10492,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass LFO Rate, Shaper amt, EnvCtl: Att+Dec"
       },
       {
@@ -10340,13 +10551,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "string and brass balance"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: DynOrch ^ WTellOrch"
       },
       {
@@ -10390,13 +10599,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: OrcBrs ^ FrenchBone"
       },
       {
@@ -10451,13 +10658,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Pan adjustment, LoPass Res"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Synth Bells 1 + 2, AltCtl adjustment"
       },
       {
@@ -10512,13 +10717,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Shaper Control, Vibrato ^ Pan adjustment"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Crystaline ^ RX7"
       },
       {
@@ -10574,13 +10777,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Tremolo"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: Enterprize ^ MTree"
       },
       {
@@ -10639,13 +10840,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Lyr detune(Sol)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: RaveStrg ^ Solina"
       },
       {
@@ -10704,13 +10903,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "3-way toggle: Ens Strg, Solo Strg(dwn 8ve), Flute"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Octave jump"
       },
       {
@@ -10755,13 +10952,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato, Vibrato Rate"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -10816,13 +11011,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Pitch modulation"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "LoPass Frequency"
       },
       {
@@ -10877,7 +11070,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Lyr Balance"
       },
       {
@@ -10893,7 +11085,6 @@
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Wet/Dry Mix"
       },
       {
@@ -10924,7 +11115,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Harp Balance"
       },
       {
@@ -10950,13 +11140,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato (ArakisPno)"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "toggle: DrkPno ^ ArakisPno"
       },
       {
@@ -10996,7 +11184,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "ParaEQ LFO Depth"
       },
       {
@@ -11046,7 +11233,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato"
       },
       {
@@ -11081,7 +11267,6 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Vibrato (Strings)"
       },
       {
@@ -11135,13 +11320,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Pitch LFO, Shaper amt"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch (Sine+) adjustment, BandPass Frequency, Dist amt"
       },
       {
@@ -11204,13 +11387,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "hi bird LFO Rate, Panner adjustment"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "lo bird LFO Rate"
       },
       {
@@ -11270,13 +11451,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "LoPass Frequency+Res"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Pitch adjustment"
       },
       {
@@ -11334,13 +11513,11 @@
       {
         "type": "MIDI",
         "number": 1,
-
         "description": "Lyr Pitch, LoPass Frequency+Res, Wrap adjustment"
       },
       {
         "type": "MIDI",
         "number": 6,
-
         "description": "Lyr Pitch, LoPass LFO adjustment"
       },
       {
