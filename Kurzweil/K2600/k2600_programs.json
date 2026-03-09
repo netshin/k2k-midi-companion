@@ -3470,7 +3470,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Envelope Control, atk & decay"
+        "description": "Envelope Control, attack  & decay"
       },
       {
         "type": "MIDI",
@@ -11085,27 +11085,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Wet/Dry Mix"
-      },
-      {
-        "type": "MIDI",
-        "number": 25,
-        "description": "(Aux) FDR Level"
-      },
-      {
-        "type": "MIDI",
-        "number": 26,
-        "description": "(Aux) Wet/Dry, Delay Mix"
-      },
-      {
-        "type": "MIDI",
-        "number": 27,
-        "description": "(Aux) Flanger Mix"
-      },
-      {
-        "type": "MIDI",
-        "number": 28,
-        "description": "(Aux) Flanger tempo"
+        "description": "Wet/Dry mix"
       }
     ]
   },
@@ -11115,115 +11095,50 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Harp Balance"
-      },
-      {
-        "type": "MIDI",
-        "number": 25,
-        "description": "(Aux) FLRev Level, Reverb Time"
-      },
-      {
-        "type": "MIDI",
-        "number": 26,
-        "description": "Flange Tempo"
-      },
-      {
-        "type": "MIDI",
-        "number": 27,
-        "description": "(FX3) Wet/Dry"
-      }
-    ]
-  },
-  "792": {
-    "name": "DrkPno^ArakisPno",
-    "controls": [
-      {
-        "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato (ArakisPno)"
+        "description": "Harp balance"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "toggle: DrkPno ^ ArakisPno"
-      },
-      {
-        "type": "MIDI",
-        "number": 22,
-        "description": "detune"
-      },
-      {
-        "type": "MIDI",
-        "number": 25,
-        "description": "(aux) Chorus/Plate Level + Wet/Dry"
-      },
-      {
-        "type": "MIDI",
-        "number": 26,
-        "description": "Plate Time"
-      },
-      {
-        "type": "MIDI",
-        "number": 27,
-        "description": "Chorus Feedback"
-      },
-      {
-        "type": "MIDI",
-        "number": 28,
-        "description": "Chorus Mix"
-      },
-      {
-        "type": "MPress",
-        "description": "Vibrato (ArakisPno)"
+        "description": "Wet/Dry mix"
       }
     ]
   },
-  "793": {
-    "name": "Funky Piano",
+  "792": {
+    "name": "Xylopiano",
     "controls": [
       {
         "type": "MIDI",
         "number": 1,
-        "description": "ParaEQ LFO Depth"
+        "description": "Release control"
       },
       {
         "type": "MIDI",
-        "number": 23,
-        "description": "InEQ: Bass"
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "793": {
+    "name": "Grand,Harp&Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Lead tremolo"
       },
       {
         "type": "MIDI",
-        "number": 24,
-        "description": "InEQ: Treble"
-      },
-      {
-        "type": "MIDI",
-        "number": 25,
-        "description": "(aux) Room Level+Time"
-      },
-      {
-        "type": "MIDI",
-        "number": 26,
-        "description": "Flange Wet/Dry"
-      },
-      {
-        "type": "MIDI",
-        "number": 27,
-        "description": "Flange Feedback"
-      },
-      {
-        "type": "MIDI",
-        "number": 28,
-        "description": "Flange Cross Feedback"
-      },
-      {
-        "type": "MIDI",
-        "number": 29,
-        "description": "Flange LFO Tempo"
+        "number": 6,
+        "description": "Lead fade"
       },
       {
         "type": "MPress",
-        "description": "ParaEQ Depth"
+        "description": "Lead tremolo"
+      },
+      {
+        "type": "Info",
+        "description": "Sustain pedal does not affect the lead sound"
       }
     ]
   },
@@ -11559,6 +11474,2857 @@
         "type": "MIDI",
         "number": 29,
         "description": "toggle: Pitcher + LaserDelay"
+      }
+    ]
+  },
+  "800": {
+    "name": "Jungle Jam",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Disables layered \"chirps\" and fades rain stick on A0"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables \"screamers\" on G5-C6"
+      },
+            
+      {
+        "type": "Info",
+        "description": "Related articulations found at equal distances above and below D4, with extras outside the center region"
+      }
+    ]
+  },
+  "801": {
+    "name": "Mbira Stack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "802": {
+    "name": "Ritual Metals",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "803": {
+    "name": "Prepared Mbira",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch change"
+      }
+    ]
+  },
+  "804": {
+    "name": "Balinesque",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pan flute fade"
+      }
+    ]
+  },
+  "805": {
+    "name": "Ambient Bells",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "806": {
+    "name": "World Jam 1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch change"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Mirror image drum mapping"
+      }
+    ]
+  },
+  "807": {
+    "name": "World Jam 2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch change"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer pitch"
+      },
+      {
+        "type": "MPress",
+        "description": "Mirror image drum mapping"
+      }
+    ]
+  },
+  "808": {
+    "name": "India Jam",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "fades the drone"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },      {
+        "type": "Info",
+        "description": "LH drone may be played as broken chord C2, G2, C3, G3 and held with sustain or sostenuto"
+      },
+      {
+        "type": "MPress",
+        "description": "pitch for the bayan"
+      }
+    ]
+  },
+  "809": {
+    "name": "Slo Wood Flute",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Less tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Filter control"
+      }
+    ]
+  },
+  "810": {
+    "name": "Hybrid Pan Flute",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tremolo"
+      }
+    ]
+  },
+  "811": {
+    "name": "Chiff Brass Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato, Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Unison layers"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Filter"
+      }
+    ]
+  },
+  "812": {
+    "name": "Bell Players",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Muzhar fade"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tibetan cym envelope control"
+      }
+    ]
+  },
+  "813": {
+    "name": "Prs Koto",
+    "controls": [
+      {
+        "type": "MPress",
+        "description": "Pitch mod"
+      }
+    ]
+  },
+  "814": {
+    "name": "Medicine Man",
+    "controls": []
+  },
+  "815": {
+    "name": "Mbira",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Release control"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tremolo"
+      }
+    ]
+  },
+  "816": {
+    "name": "Kotobira",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Mbira balance"
+      }
+    ]
+  },
+  "817": {
+    "name": "Cartoon Perc",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "818": {
+    "name": "CowGogiBell",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt start"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer select"
+      }
+    ]
+  },
+  "819": {
+    "name": "Perc Pan Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "820": {
+    "name": "Trippy Organ",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "821": {
+    "name": "Koto Followers",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "822": {
+    "name": "Hybrid Horn",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Balance (bell)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Timbre control, Vibrato"
+      }
+    ]
+  },
+  "823": {
+    "name": "Dyno EP Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo, Env control"
+      }
+    ]
+  },
+  "824": {
+    "name": "ParaKoto",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pad tremolo"
+      }
+    ]
+  },
+  "825": {
+    "name": "Super Clav",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Phase clav enable"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disable release"
+      },
+      {
+        "type": "MPress",
+        "description": "Filter rate"
+      }
+    ]
+  },
+  "826": {
+    "name": "StrataClav",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "827": {
+    "name": "Touch Clav",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "EQ, Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables release"
+      },
+      {
+        "type": "MPress",
+        "description": "Filter control"
+      }
+    ]
+  },
+  "828": {
+    "name": "Bad Klav",
+    "controls": []
+  },
+  "829": {
+    "name": "Rad Rotor",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Rotary speaker"
+      }
+    ]
+  },
+  "830": {
+    "name": "B-2001",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Rotary speaker"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Perc balance"
+      },
+      {
+        "type": "MPress",
+        "description": "Rotary speaker"
+      }
+    ]
+  },
+  "831": {
+    "name": "Perc Organ",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Rotary speaker"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Perc balance"
+      },
+      {
+        "type": "MPress",
+        "description": "Rotary speaker"
+      }
+    ]
+  },
+  "832": {
+    "name": "Drawbar Organ CS",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Rotary speaker"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Filter control"
+      }
+    ]
+  },
+  "833": {
+    "name": "Bebop Alto Sax",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Attack control"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "834": {
+    "name": "Soft Alto Sax",
+    "controls": [
+      {
+        "type": "MPress",
+        "description": "Vibrato, Swell"
+      }
+    ]
+  },
+  "835": {
+    "name": "Soprano Sax",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato, Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato, Swell"
+      }
+    ]
+  },
+  "836": {
+    "name": "Low Soft Sax",
+    "controls": [
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "837": {
+    "name": "Air Reeds CS",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Harmonica enable"
+      },
+      {
+        "type": "MPress",
+        "description": "Harmonica vibrato"
+      }
+    ]
+  },
+  "838": {
+    "name": "Jazz Muted Trp",
+    "controls": []
+  },
+  "839": {
+    "name": "Jazz Lab Band",
+    "controls": [
+      {
+        "type": "MPress",
+        "description": "Vibrato, Swell"
+      }
+    ]
+  },
+  "840": {
+    "name": "Harmon Section",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato, Swell"
+      }
+    ]
+  },
+  "841": {
+    "name": "Sfz Cres Brass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Swell"
+      }
+    ]
+  },
+  "842": {
+    "name": "Neo Stabs",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato, Filter control"
+      }
+    ]
+  },
+  "843": {
+    "name": "Gtr Jazz Band",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Switches RH from guitar to horn section"
+      },
+      {
+        "type": "MIDI",
+        "number": 66,
+        "description": "holds horns and adds bright tenor"
+      },
+      {
+        "type": "Info",
+        "description": "LH hard strikes trigger kick/snare"
+      }
+    ]
+  },
+  "844": {
+    "name": "Full Rock Band",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Enables rotary speaker for RH organ"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "switches LH to walking rhythm section, and RH to guitar solo"
+      },
+      {
+        "type": "MPress",
+        "description": "Enables rotary speaker for RH organ"
+      },
+      {
+        "type": "Info",
+        "description": "LH bass is layered with kick/snare for driving rhythm section. At ff, crash cymbal is triggered"
+      }
+    ]
+  },
+  "845": {
+    "name": "World Rave Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Disable chirps"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix, Disable claps (G6-G#6)"
+      }
+    ]
+  },
+  "846": {
+    "name": "Punch Gate Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "847": {
+    "name": "Shadow Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Flanging (A#3-B3)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "848": {
+    "name": "Fat Traps",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter (C2-A#2)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "849": {
+    "name": "Generator Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Disable claps (G3-G#3)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "850": {
+    "name": "Shudder Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "851": {
+    "name": "Crowd Stomper",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "852": {
+    "name": "Econo Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Gate time (G3-C#4)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "853": {
+    "name": "EDrum Kit 1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Gate time (B2-D#3, G3-C#4), Pitch (D6)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix Pitch (D6) Sust ped chokes cymbal (F#5)"
+      }
+    ]
+  },
+  "854": {
+    "name": "EDrum Kit 2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter control (A#1-C2, F#6-C7)Wet/Dry mix"
+      }
+    ]
+  },
+  "855": {
+    "name": "Dog Chases Tail",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Various loop effects"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tempo (pitch)"
+      },
+      {
+        "type": "Info",
+        "description": "Loops below E4 are tuned to play together, as are loops above E4."
+      }
+    ]
+  },
+  "856": {
+    "name": "Saw Loop Factory",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Layer balance"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tempo (pitch)"
+      }
+    ]
+  },
+  "857": {
+    "name": "Two Live Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer select"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "858": {
+    "name": "Dual/Tri Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Ghost note enable"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "859": {
+    "name": "Clav-o-Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "860": {
+    "name": "ChirpBass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "861": {
+    "name": "DigiBass",
+    "controls": []
+  },
+  "862": {
+    "name": "Mono Synth Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch bend goes +2/-12ST"
+      }
+    ]
+  },
+  "863": {
+    "name": "Touch MiniBass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato, Swell"
+      }
+    ]
+  },
+  "864": {
+    "name": "Ostinato Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "EQ"
+      }
+    ]
+  },
+  "865": {
+    "name": "House Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Release control"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "866": {
+    "name": "Dubb Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Release control"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "867": {
+    "name": "Straight Strat",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "EQ"
+      }
+    ]
+  },
+  "868": {
+    "name": "Chorus Gtr",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Detune"
+      }
+    ]
+  },
+  "869": {
+    "name": "Strataguitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt start"
+      }
+    ]
+  },
+  "870": {
+    "name": "Elect 12 String",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Detune"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix, EQ"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "871": {
+    "name": "Dyn Jazz Guitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "PBend gives fretboard slide"
+      }
+    ]
+  },
+  "872": {
+    "name": "Pedal Steel",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "873": {
+    "name": "Strummer DistGtr",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "874": {
+    "name": "Rock Axe",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt start"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "EQ"
+      },
+      {
+        "type": "MPress",
+        "description": "Feedback"
+      }
+    ]
+  },
+  "875": {
+    "name": "Hammeron",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre control"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Timbre control"
+      }
+    ]
+  },
+  "876": {
+    "name": "Rock Axe Mono",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt start"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "EQ, Delay"
+      },
+      {
+        "type": "MPress",
+        "description": "Feedback"
+      }
+    ]
+  },
+  "877": {
+    "name": "Attack Stack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "878": {
+    "name": "SkinnyLead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Overdrive enable"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Filter"
+      }
+    ]
+  },
+  "879": {
+    "name": "Q Sweep SynClav",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Sweep rate control"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "880": {
+    "name": "Anna Mini",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "881": {
+    "name": "Ballad Stack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Swell"
+      }
+    ]
+  },
+  "882": {
+    "name": "Big Stack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Env control"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "883": {
+    "name": "BrazKnuckles",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "EQ"
+      }
+    ]
+  },
+  "884": {
+    "name": "Hybrid Breath",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Envelope control, EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope control, Wet/Dry mixVibrato"
+      }
+    ]
+  },
+  "885": {
+    "name": "Hybrid Stack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Layer balance"
+      }
+    ]
+  },
+  "886": {
+    "name": "Eye Saw",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Release control, Filter"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "887": {
+    "name": "Mello Hyb Brass",
+    "controls": []
+  },
+  "888": {
+    "name": "Sizzl E Pno",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pad balance"
+      }
+    ]
+  },
+  "889": {
+    "name": "My JayDee",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Release control"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "890": {
+    "name": "Slo SynthOrch",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter effect"
+      }
+    ]
+  },
+  "891": {
+    "name": "SpaceStation",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope control"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "892": {
+    "name": "Glass Web",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Delay control"
+      }
+    ]
+  },
+  "893": {
+    "name": "Circus Music",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "894": {
+    "name": "Mandala",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter control"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch change"
+      }
+    ]
+  },
+  "895": {
+    "name": "Slow Strat",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Filter sweep enable"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "896": {
+    "name": "Fluid Koto",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "897": {
+    "name": "Koreana Pad",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Filter, Wet/Dry mix"
+      }
+    ]
+  },
+  "898": {
+    "name": "Tangerine",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Enable 5th"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope Ctl"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "899": {
+    "name": "Planet 9",
+    "controls": []
+  },
+  "900": {
+    "name": "TotalCntrl Orch1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Layer bal"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Adds brass & flute, boosts strings"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell (trp out - ww solo)"
+      }
+    ]
+  },
+  "901": {
+    "name": "TotalCntrl Orch2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Layer bal, adds harp"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer balance, adds horns/cuts woodwinds"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "902": {
+    "name": "BaroqueOrchestra",
+    "controls": [
+      {
+        "type": "MPress",
+        "description": "Swell"
+      },
+      {
+        "type": "Info",
+        "description": "Sost ped disables brass"
+      }
+    ]
+  },
+  "903": {
+    "name": "Oboe&Flute w/Str",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Strings fadeout"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables strings"
+      }
+    ]
+  },
+  "904": {
+    "name": "Horn&Flute w/Str",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Strings fadeout"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables strings"
+      }
+    ]
+  },
+  "905": {
+    "name": "Trp&Horns w/Str",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Strings fadeout"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disables strings"
+      }
+    ]
+  },
+  "906": {
+    "name": "Piccolo",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "907": {
+    "name": "Orchestral Flute",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Envelope control (slower)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "908": {
+    "name": "Solo Flute",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "909": {
+    "name": "Orchestral Oboe",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix, rate & depth"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "910": {
+    "name": "Solo Oboe",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato off"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "911": {
+    "name": "2nd Oboe",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato off"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "912": {
+    "name": "Orch EnglishHorn",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix, rate & depth"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ]
+  },
+  "913": {
+    "name": "Solo EnglishHorn",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato off"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "914": {
+    "name": "Orch Clarinet",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "915": {
+    "name": "Solo Clarinet",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "916": {
+    "name": "Orch Bassoon",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "917": {
+    "name": "Solo Bassoon",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato off"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "918": {
+    "name": "Woodwinds 1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "919": {
+    "name": "Woodwinds 2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix, rate & depth"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell, vibrato"
+      }
+    ]
+  },
+  "920": {
+    "name": "Dynamic Trumpet",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "921": {
+    "name": "Copland Sft Trp",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato off"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "922": {
+    "name": "Orch Trumpet",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (darker)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope Control"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell, vibrato rate & depth"
+      }
+    ]
+  },
+  "923": {
+    "name": "Soft Trumpet",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "924": {
+    "name": "Strght Mute Trp",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato off"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "925": {
+    "name": "French Horn MW",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "926": {
+    "name": "Slow Horn",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "927": {
+    "name": "F Horn Con Sord",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "928": {
+    "name": "F Horn a2 MW",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "929": {
+    "name": "French Horn Sec1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Slight swell"
+      }
+    ]
+  },
+  "930": {
+    "name": "French Horn Sec2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "931": {
+    "name": "Solo Trombone",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Selects legato layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Slight swell when MW is off"
+      }
+    ]
+  },
+  "932": {
+    "name": "Tuba",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato rate & depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "933": {
+    "name": "Dyn Hi Brass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell, legato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "934": {
+    "name": "Dyn Lo Brass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Swell, legato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "935": {
+    "name": "Dyn Brass & Horn",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (darker)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "936": {
+    "name": "Soaring Brass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "937": {
+    "name": "MarcatoViolin MW",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Spiccato articulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "938": {
+    "name": "Solo Violin",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Delays auto-vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "939": {
+    "name": "2nd Violin",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Envelope control"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate"
+      }
+    ]
+  },
+  "940": {
+    "name": "Orch Viola",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Release time (shorter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "941": {
+    "name": "Solo Viola",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Delays auto-vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "942": {
+    "name": "Slow Viola",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (darker)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell, vibrato rate & depth"
+      }
+    ]
+  },
+  "943": {
+    "name": "MarcatoCello MW",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Spiccato articulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "944": {
+    "name": "Solo Cello",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Delays auto-vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth"
+      }
+    ]
+  },
+  "945": {
+    "name": "Slow Cello",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate, swell"
+      }
+    ]
+  },
+  "946": {
+    "name": "Arco Dbl Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Bass boost"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "947": {
+    "name": "Slow Arco Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Delays auto-vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell, vibrato rate & depth"
+      }
+    ]
+  },
+  "948": {
+    "name": "Brt Dbl Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Decrescendo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate"
+      }
+    ]
+  },
+  "949": {
+    "name": "Touch Strings",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope Control"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "950": {
+    "name": "Fast Strings MW",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Selects faster strings"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Timbre (darker), Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "951": {
+    "name": "Chamber Section",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "952": {
+    "name": "Sfz Strings MW",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "953": {
+    "name": "Sweet Strings",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Fade out"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato depth"
+      }
+    ]
+  },
+  "954": {
+    "name": "Baroque Strg Ens",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Bass boost, layer delay"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix Swell"
+      }
+    ]
+  },
+  "955": {
+    "name": "Big String Ens",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "956": {
+    "name": "Bass String Sec",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Bass boost on solo layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "957": {
+    "name": "Pizzicato String",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (darker)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "958": {
+    "name": "Wet Pizz",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Treble boost"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "959": {
+    "name": "Arco & Pizz",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (brighter), layer balance"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables 2nd string layer, stereo panning"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ]
+  },
+  "960": {
+    "name": "Classical Guitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Fade/disables key-up layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "961": {
+    "name": "Virtuoso Guitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato rate & depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "Info",
+        "description": "Sost ped enables stacato envelope"
+      }
+    ]
+  },
+  "962": {
+    "name": "Acoustic Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato rate & depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "963": {
+    "name": "Snappy Jazz Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato rate & depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch of snap, disables ride"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato rate & depth Sost ped disables ride cymbal"
+      }
+    ]
+  },
+  "964": {
+    "name": "Dynamic Harp",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Release time (longer)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "965": {
+    "name": "Harp w/8ve CTL",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Brightness"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables octave"
+      }
+    ]
+  },
+  "966": {
+    "name": "Harp Arps",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Selects diminished"
+      }
+    ]
+  },
+  "967": {
+    "name": "Celesta",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "968": {
+    "name": "Pipes",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (hollow)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "969": {
+    "name": "Pedal Pipes",
+    "controls": []
+  },
+  "970": {
+    "name": "Church Bells",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Distance"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Timbre (brighter)"
+      }
+    ]
+  },
+  "971": {
+    "name": "Glockenspiel",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "Info",
+        "description": "Sus ped enables key-up layer (for rolls)"
+      }
+    ]
+  },
+  "972": {
+    "name": "Xylophone",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Timbre (fuller)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "Info",
+        "description": "Sus ped enables key-up layer (for rolls)"
+      }
+    ]
+  },
+  "973": {
+    "name": "Chimes",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "974": {
+    "name": "Timpani/Chimes",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt attack (timp)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "975": {
+    "name": "Timpani",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "Info",
+        "description": "Sus ped enables key-up layer (for rolls)"
+      }
+    ]
+  },
+  "976": {
+    "name": "Timpani & Perc",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt attack (timp)"
+      },
+      {
+        "type": "Info",
+        "description": "Sost ped enables bass drum. Sus ped dampens."
+      }
+    ]
+  },
+  "977": {
+    "name": "Big Drum Corp",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables both fill layers (black keys: f#3-a#4)"
+      },
+      {
+        "type": "Info",
+        "description": "Sost ped switches layers. Sus ped dampens."
+      }
+    ]
+  },
+  "978": {
+    "name": "Orch Percussion1",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Switches fill layers"
+      },
+      {
+        "type": "Info",
+        "description": "Sus ped dampens"
+      }
+    ]
+  },
+  "979": {
+    "name": "Orch Percussion2",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      },
+      {
+        "type": "Info",
+        "description": "Sus ped dampens"
+      }
+    ]
+  },
+  "980": {
+    "name": "Jam Corp",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alt attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "(black keys:"
+      }
+    ]
+  },
+  "981": {
+    "name": "Conga & Perc",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch control"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Wet/Dry mix"
+      }
+    ]
+  },
+  "982": {
+    "name": "Woody Jam Rack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch control up to 1200ct"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables random drum layer"
+      }
+    ]
+  },
+  "983": {
+    "name": "Metal Garden",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch control up to 1200ct"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch control down to - 1200ct"
+      }
+    ]
+  },
+  "984": {
+    "name": "Hot Tamali Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tunes drums, alt attack  on snares"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Switches to old drum map"
+      }
+    ]
+  },
+  "985": {
+    "name": "Funk Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tunes drums"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Switches to old drum map"
       }
     ]
   }
