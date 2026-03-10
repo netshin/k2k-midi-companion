@@ -16,6 +16,7 @@ let mySynth = null;
 let selectedMidiInput = null;
 let selectedMode = "programs";
 let selectedKdfxStudioId = null;
+let modSourceTooltipHideTimer = null;
 
 let myBankMSB = 0;
 let myBankLSB = 0;
@@ -557,6 +558,8 @@ function showView(viewId) {
   const modSourcesButton = document.getElementById("modSourcesButton");
   const kdfxButton = document.getElementById("kdfxButton");
 
+  hideModSourceTooltip();
+
   if (viewId === "kdfx") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
@@ -606,33 +609,144 @@ function showView(viewId) {
 function renderModSources(query = "") {
 
   const list = document.getElementById("modSourceList");
+  const tooltip = document.getElementById("modSourceTooltip");
 
   if (!list) return;
 
   const text = query.trim().toLowerCase();
 
   const rows = Object.entries(modSources || {})
-    .map(([assignedValue, source]) => ({
+    .map(([assignedValue, source]) => {
+      const sourceObj = (source && typeof source === "object")
+        ? source
+        : { label: String(source || ""), details: "" };
+
+      return {
       assignedValue: Number(assignedValue),
-      source: String(source || ""),
-    }))
+      source: String(sourceObj.label || ""),
+      details: String(sourceObj.details || ""),
+    };
+    })
     .sort((a, b) => a.assignedValue - b.assignedValue)
     .filter(row => {
       if (!text) return true;
-      return String(row.assignedValue).includes(text) || row.source.toLowerCase().includes(text);
+      return String(row.assignedValue).includes(text)
+        || row.source.toLowerCase().includes(text)
+        || row.details.toLowerCase().includes(text);
     });
 
   if (rows.length === 0) {
     list.textContent = "No modulation sources match the search.";
+    hideModSourceTooltip();
     return;
   }
 
-  list.innerHTML = rows
-    .map(row =>
-      `<div class="modsrc-row"><span class="modsrc-id">${row.assignedValue}</span><span class="modsrc-name">${row.source}</span></div>`
-    )
-    .join("");
+  list.textContent = "";
 
+  const frag = document.createDocumentFragment();
+
+  rows.forEach(row => {
+
+    const rowEl = document.createElement("div");
+    rowEl.className = "modsrc-row";
+
+    const idEl = document.createElement("span");
+    idEl.className = "modsrc-id";
+    idEl.textContent = String(row.assignedValue);
+
+    const nameEl = document.createElement("span");
+    nameEl.className = "modsrc-name";
+    nameEl.textContent = row.source;
+
+    const iconEl = document.createElement("span");
+
+    if (row.details) {
+      iconEl.className = "modsrc-info";
+      iconEl.textContent = "i";
+      iconEl.title = "Show details";
+      iconEl.tabIndex = 0;
+      iconEl.setAttribute("role", "button");
+      iconEl.setAttribute("aria-label", `Show details for source ${row.assignedValue}`);
+
+      const show = () => showModSourceTooltip(row.details, iconEl);
+      const hide = () => scheduleHideModSourceTooltip();
+
+      iconEl.addEventListener("mouseenter", show);
+      iconEl.addEventListener("mouseleave", hide);
+      iconEl.addEventListener("focus", show);
+      iconEl.addEventListener("blur", hide);
+      iconEl.addEventListener("click", () => showModSourceTooltip(row.details, iconEl));
+      iconEl.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          showModSourceTooltip(row.details, iconEl);
+        }
+      });
+    }
+
+    rowEl.appendChild(idEl);
+    rowEl.appendChild(nameEl);
+    rowEl.appendChild(iconEl);
+    frag.appendChild(rowEl);
+  });
+
+  list.appendChild(frag);
+
+  if (tooltip) {
+    tooltip.onmouseenter = () => clearHideModSourceTooltipTimer();
+    tooltip.onmouseleave = () => scheduleHideModSourceTooltip();
+  }
+
+}
+
+function clearHideModSourceTooltipTimer() {
+  if (!modSourceTooltipHideTimer) return;
+  clearTimeout(modSourceTooltipHideTimer);
+  modSourceTooltipHideTimer = null;
+}
+
+function hideModSourceTooltip() {
+  const tooltip = document.getElementById("modSourceTooltip");
+  if (!tooltip) return;
+  tooltip.classList.add("hidden");
+}
+
+function scheduleHideModSourceTooltip() {
+  clearHideModSourceTooltipTimer();
+  modSourceTooltipHideTimer = setTimeout(() => {
+    hideModSourceTooltip();
+  }, 180);
+}
+
+function showModSourceTooltip(text, anchorEl) {
+
+  const tooltip = document.getElementById("modSourceTooltip");
+  if (!tooltip || !anchorEl) return;
+
+  clearHideModSourceTooltipTimer();
+
+  tooltip.textContent = text;
+  tooltip.classList.remove("hidden");
+
+  const rect = anchorEl.getBoundingClientRect();
+  const tipRect = tooltip.getBoundingClientRect();
+  const margin = 12;
+
+  let left = rect.left - tipRect.width - margin;
+  if (left < margin) {
+    left = Math.min(window.innerWidth - tipRect.width - margin, rect.right + margin);
+  }
+
+  let top = rect.top;
+  if (top + tipRect.height > window.innerHeight - margin) {
+    top = window.innerHeight - tipRect.height - margin;
+  }
+  if (top < margin) {
+    top = margin;
+  }
+
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
 }
 
 function renderKdfxList(query = "") {

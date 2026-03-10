@@ -1,184 +1,610 @@
 {
-  "32": "Channel State (Chan St)",
-  "33": "Mono Pressure (MPress)",
-  "34": "Bipolar Mono Pressure (BMPress)",
-  "35": "Pitch Wheel Message (PWheel)",
-  "36": "Bipolar Mod Wheel (Bi-Mwl)",
-  "37": "Absolute Value of Pitch Wheel (AbsPwl)",
-  "38": "Global ASR (GASR2)",
-  "39": "Global FUN2 (GFUN2)",
-  "40": "Global LFO (GLFO2)",
-  "41": "Global LFO Phase (GLFO2ph)",
-  "42": "Global FUN 4 (GFUN4)",
-  "43": "Volume Control (VolCtl)",
-  "44": "Pan Control (PanCtl)",
-  "45": "Balance Control (BalCtl)",
-  "46": "Channel Count (ChanCnt)",
-  "55": "Sync State (SyncSt)",
-  "56": "A Clock",
-  "57": "Negative A Clock (~A Clock)",
-  "58": "B Clock",
-  "59": "Negative B Clock (~B Clock)",
-  "60": "Global Phase 1 and 2 (G Phase 1, G Phase 2)",
-  "61": "Global Phase 1 and 2 (G Phase 1, G Phase 2)",
-  "62": "Global Random Variant 1 and 2 (GRandV 1, GRandV 2)",
-  "63": "Global Random Variant 1 and 2 (GRandV 1, GRandV 2)",
-  "72": "cts, and the MaxDpt parameter to 12 cts. Then set the value of the DptCtl",
-  "96": "Note State (Note St)",
-  "97": "Key State (Key St)",
-  "98": "Key Number (KeyNum)",
-  "99": "Bipolar Key Number (BKeyNum)",
-  "100": "Attack Velocity (AttVel)",
-  "101": "Inverse Attack Velocity (InvAttVel)",
-  "102": "Polyphonic Pressure (PPress)",
-  "103": "Bipolar Polyphonic Pressure (BPPress)",
-  "104": "Release Velocity (RelVel)",
-  "105": "Bipolar Attack Velocity (Bi-AVel)",
-  "106": "Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)",
-  "107": "Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)",
-  "108": "Random Variants 1 and 2 (RandV1, RandV2)",
-  "109": "Random Variants 1 and 2 (RandV1, RandV2)",
-  "110": "ASR1, ASR2",
-  "111": "ASR1, ASR2",
-  "112": "FUN1, FUN2",
-  "113": "FUN1, FUN2",
-  "114": "LFO1",
-  "115": "LFO1 Phase (LFO1ph)",
-  "116": "LFO2",
-  "117": "LFO2 Phase (LFO2ph)",
-  "118": "FUN3, FUN4",
-  "119": "FUN3, FUN4",
-  "120": "Amplitude Envelope (AMPENV)",
-  "121": "Envelopes 2 and 3 (ENV2, ENV3)",
-  "122": "Envelopes 2 and 3 (ENV2, ENV3)",
-  "123": "Loop State (Loop St)",
-  "124": "Sample Playback Rate (PB Rate)",
-  "125": "Attack State (Atk State)",
-  "126": "Release State (Rel State)",
-  "127": "ON",
-  "128": "-ON",
-  "129": "GKeyNum",
-  "130": "GAttVel",
-  "131": "GHiKey, GLoKey",
-  "132": "GHiKey, GLoKey",
-  "133": "Constant -0.99",
-  "134": "Constant -0.98",
-  "135": "Constant -0.97",
-  "136": "Constant -0.96",
-  "137": "Constant -0.95",
-  "138": "Constant -0.94",
-  "139": "Constant -0.93",
-  "140": "Constant -0.92",
-  "141": "Constant -0.91",
-  "142": "Constant -0.90",
-  "143": "Constant -0.88",
-  "144": "Constant -0.86",
-  "145": "Constant -0.84",
-  "146": "Constant -0.82",
-  "147": "Constant -0.80",
-  "148": "Constant -0.78",
-  "149": "Constant -0.76",
-  "150": "Constant -0.74",
-  "151": "Constant -0.72",
-  "152": "Constant -0.70",
-  "153": "Constant -0.68",
-  "154": "Constant -0.66",
-  "155": "Constant -0.64",
-  "156": "Constant -0.62",
-  "157": "Constant -0.60",
-  "158": "Constant -0.58",
-  "159": "Constant -0.56",
-  "160": "Constant -0.54",
-  "161": "Constant -0.52",
-  "162": "Constant -0.50",
-  "163": "Constant -0.48",
-  "164": "Constant -0.46",
-  "165": "Constant -0.44",
-  "166": "Constant -0.42",
-  "167": "Constant -0.40",
-  "168": "Constant -0.38",
-  "169": "Constant -0.36",
-  "170": "Constant -0.34",
-  "171": "Constant -0.32",
-  "172": "Constant -0.30",
-  "173": "Constant -0.28",
-  "174": "Constant -0.26",
-  "175": "Constant -0.24",
-  "176": "Constant -0.22",
-  "177": "Constant -0.20",
-  "178": "Constant -0.18",
-  "179": "Constant -0.16",
-  "180": "Constant -0.14",
-  "181": "Constant -0.12",
-  "182": "Constant -0.10",
-  "183": "Constant -0.09",
-  "184": "Constant -0.08",
-  "185": "Constant -0.07",
-  "186": "Constant -0.06",
-  "187": "Constant -0.05",
-  "188": "Constant -0.04",
-  "189": "Constant -0.03",
-  "190": "Constant -0.02",
-  "191": "Constant -0.01",
-  "192": "Constant 0.00",
-  "193": "Constant 0.01",
-  "194": "Constant 0.02",
-  "195": "Constant 0.03",
-  "196": "Constant 0.04",
-  "197": "Constant 0.05",
-  "198": "Constant 0.06",
-  "199": "Constant 0.07",
-  "200": "Constant 0.08",
-  "201": "Constant 0.09",
-  "202": "Constant 0.10",
-  "203": "Constant 0.12",
-  "204": "Constant 0.14",
-  "205": "Constant 0.16",
-  "206": "Constant 0.18",
-  "207": "Constant 0.20",
-  "208": "Constant 0.22",
-  "209": "Constant 0.24",
-  "210": "Constant 0.26",
-  "211": "Constant 0.28",
-  "212": "Constant 0.30",
-  "213": "Constant 0.32",
-  "214": "Constant 0.34",
-  "215": "Constant 0.36",
-  "216": "Constant 0.38",
-  "217": "Constant 0.40",
-  "218": "Constant 0.42",
-  "219": "Constant 0.44",
-  "220": "Constant 0.46",
-  "221": "Constant 0.48",
-  "222": "Constant 0.50",
-  "223": "Constant 0.52",
-  "224": "Constant 0.54",
-  "225": "Constant 0.56",
-  "226": "Constant 0.58",
-  "227": "Constant 0.60",
-  "228": "Constant 0.62",
-  "229": "Constant 0.64",
-  "230": "Constant 0.66",
-  "231": "Constant 0.68",
-  "232": "Constant 0.70",
-  "233": "Constant 0.72",
-  "234": "Constant 0.74",
-  "235": "Constant 0.76",
-  "236": "Constant 0.78",
-  "237": "Constant 0.80",
-  "238": "Constant 0.82",
-  "239": "Constant 0.84",
-  "240": "Constant 0.86",
-  "241": "Constant 0.88",
-  "242": "Constant 0.90",
-  "243": "Constant 0.91",
-  "244": "Constant 0.92",
-  "245": "Constant 0.93",
-  "246": "Constant 0.94",
-  "247": "Constant 0.95",
-  "248": "Constant 0.96",
-  "249": "Constant 0.97",
-  "250": "Constant 0.98",
-  "251": "Constant 0.99",
-  "256": "Constant OFF"
+  "32": {
+    "label": "Channel State (Chan St)",
+    "details": "Chan St refers to whether any notes are currently active on a given MIDI channel.\nChan St switches on whenever a note is started, and switches off when a Note Off\nhas been received for each current note on that channel, even if notes are sustained."
+  },
+  "33": {
+    "label": "Mono Pressure (MPress)",
+    "details": "This is the same as the MPress control source in the MIDI Control Source list, but is\nassigned by entering 33 on the alphanumeric pad when used with a parameter that\ntakes its values from the Main Control Source list."
+  },
+  "34": {
+    "label": "Bipolar Mono Pressure (BMPress)",
+    "details": "This control source generates a control signal of -1 when the value of the control to\nwhich it’s assigned is at its minimum, and +1 when the control is at its maximum.\nFor example, if you had the MPress control assignment parameter assigned to send\nBMPress, and you had Src1 on a program layer’s PITCH page assigned to BMPress,\nwith its depth parameter set to 1200 cents, then the layer would be transposed\ndown an octave when no pressure (value 0) was applied to your controller’s keys\n(assuming it sends mono pressure). Maximum pressure (value 127) would\ntranspose the layer up an octave, while a pressure level of 64 would leave the pitch\nunchanged."
+  },
+  "35": {
+    "label": "Pitch Wheel Message (PWheel)",
+    "details": "The K2600 is hard-wired to respond to this message. Any parameter with PWheel\nassigned as its value will be affected when your MIDI controller’s Pitch Wheel is\nmoved."
+  },
+  "36": {
+    "label": "Bipolar Mod Wheel (Bi-Mwl)",
+    "details": "This control source will always respond to MIDI controller 01 (MWheel). Control\nsource parameters set to this value will generate control signals of -1 when the MIDI\nController 01 message value is 0, and will generate a control signal of +1 when the\nMIDI Controller 01 message is at 127, scaling all values in between. For example,\nyou might set Src1 on a program layer’s PITCH page to a value of Bi-Mwl, and its\ndepth parameter to 1200 cents. Then as long as the MWhl control assignment\nparameter is set to a value of MWheel, your controller’s Mod Wheel will be bipolar;\nin this case it will bend the layer’s pitch down as you move the Mod Wheel toward\nminimum, and bend the pitch up as you move the Mod Wheel toward maximum."
+  },
+  "37": {
+    "label": "Absolute Value of Pitch Wheel (AbsPwl)",
+    "details": "This control source always responds to movement of your MIDI controller’s Pitch\nWheel, but makes the Pitch Wheel unipolar. Whereas pulling the Pitch Wheel fully\ndown usually generates a control signal value of -1, this control source generates a\nvalue of +1 when the Pitch Wheel is pulled fully down."
+  },
+  "38": {
+    "label": "Global ASR (GASR2)",
+    "details": "When the Globals parameter on the COMMON page is turned on, ASR2 becomes\nglobal, and is labeled GASR2. The functions of ASRs are explained on page 6-42 of\nthe Musician’s Guide. This control source does not appear in the Control Source list\nfor parameters whose functions are local."
+  },
+  "39": {
+    "label": "Global FUN2 (GFUN2)",
+    "details": "When the Globals parameter on the COMMON page is turned on, FUN2 becomes\nglobal, and is labeled GFUN2. The functions of FUNs are explained in Chapter 17 of\nthe Musician’s Guide. This control source does not appear in the Control Source list\nfor parameters whose functions are local."
+  },
+  "40": {
+    "label": "Global LFO (GLFO2)",
+    "details": "When the Globals parameter on the COMMON page is turned on, LFO2 becomes\nglobal, and is labeled GLFO2. The functions of LFOs are explained on page 6-40 of\nthe Musician’s Guide. This control source does not appear in the Control Source list\nfor parameters whose functions are local."
+  },
+  "41": {
+    "label": "Global LFO Phase (GLFO2ph)",
+    "details": "When the Globals parameter on the COMMON page is turned on, LFO2 becomes\nglobal, and is labeled GLFO2. The functions of LFOs are explained on page 6-40 of\nthe Musician’s Guide. This control source does not appear in the Control Source list\nfor parameters whose functions are local."
+  },
+  "42": {
+    "label": "Global FUN 4 (GFUN4)",
+    "details": "When the Globals parameter on the COMMON page is turned on, FUN 4 becomes\nglobal, and is labeled GFUN4. This control source does not appear in the Control\nSource list for parameters whose functions are local."
+  },
+  "43": {
+    "label": "Volume Control (VolCtl)",
+    "details": "This control source will always respond to MIDI Controller 07 messages. Assign this\nvalue to a parameter when you want MIDI volume messages to affect the\nparameter."
+  },
+  "44": {
+    "label": "Pan Control (PanCtl)",
+    "details": "This control source always responds to MIDI Controller 10 messages. Assign this\nvalue to a parameter when you want MIDI pan messages to affect the parameter."
+  },
+  "45": {
+    "label": "Balance Control (BalCtl)",
+    "details": "This control source will always respond to MIDI Controller 08 messages. Assign this\nvalue to a parameter when you want MIDI balance messages to affect the\nparameter."
+  },
+  "46": {
+    "label": "Channel Count (ChanCnt)",
+    "details": "This control source keeps track of the total number of active voice channels (how\nmany notes are playing), and converts the number into a control signal between 0\nand +1. The control signal’s value is 1 when all 48 voice channels are active, and 0\nwhen no voice channels are active.\nYou can use this control source in several ways. One example is to limit the volume\nof each note so that you have a more nearly constant volume regardless of how\nmany notes you’re playing (this is independent of the effect of attack velocity on\nvolume). To set this up, you would go to the F4 AMP page in the Program Editor,\nand set the Src1 parameter to a value of ChanCnt. Then set the Depth parameter to\na negative value. This will decrease the overall amplitude of each note as you play\nmore simultaneous notes. This example works best with short-release sounds. It’s\ngreat for an organ program, for example.\nChannel count is also useful for controlling the modulation applied to a sound. For\nexample, you may have a sound that you use both as a lead and for rhythm.\nSuppose you want a deep vibrato when you’re soloing, but less vibrato when you’re\nplaying chords. Set up the vibrato by using LFO1 as the value for the Src2\nparameter on the PITCH page in the Program Editor. Set the MinDpt parameter to"
+  },
+  "55": {
+    "label": "Sync State (SyncSt)",
+    "details": "This unipolar control source responds to MIDI clock messages received from an\nexternal MIDI device. Sync State switches on (+1) at each clock start, and switches\noff (0) with each clock stop."
+  },
+  "56": {
+    "label": "A Clock",
+    "details": "This is a unipolar square wave that responds to MIDI clock messages. It switches to\n+1 and back to 0 with every clock beat. This control source looks first for externally\nreceived MIDI clock messages, and if none is received, it responds to the K2600’s\ninternal clock, which is always running. The internal clock speed is set with the\nTempo parameter in Song mode."
+  },
+  "57": {
+    "label": "Negative A Clock (~A Clock)",
+    "details": "This is the opposite of A clock, that is, it switches from 0 to +1 with every clock beat\n(the square wave is 180 degrees out of phase with that of A Clock)."
+  },
+  "58": {
+    "label": "B Clock",
+    "details": "beat.\nThis is similar to A Clock, but it’s bipolar—it switches from +1 to -1 with every clock"
+  },
+  "59": {
+    "label": "Negative B Clock (~B Clock)",
+    "details": "The opposite of B Clock, this bipolar control source switches from -1 to +1 with\nevery clock beat (the square wave is 180 degrees out of phase with that of B Clock)."
+  },
+  "60": {
+    "label": "Global Phase 1 and 2 (G Phase 1, G Phase 2)",
+    "details": "These bipolar global control sources are both rising sawtooth waves that rise from -\n1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
+  },
+  "61": {
+    "label": "Global Phase 1 and 2 (G Phase 1, G Phase 2)",
+    "details": "These bipolar global control sources are both rising sawtooth waves that rise from -\n1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
+  },
+  "62": {
+    "label": "Global Random Variant 1 and 2 (GRandV 1, GRandV 2)",
+    "details": "These are also bipolar and global, and generate random control signal values\nbetween -1 and +1 when assigned to a control source parameter. There is a subtle\ndifference in the randomness of the signals they generate, therefore choosing\nbetween them is a matter of preference."
+  },
+  "63": {
+    "label": "Global Random Variant 1 and 2 (GRandV 1, GRandV 2)",
+    "details": "These are also bipolar and global, and generate random control signal values\nbetween -1 and +1 when assigned to a control source parameter. There is a subtle\ndifference in the randomness of the signals they generate, therefore choosing\nbetween them is a matter of preference."
+  },
+  "72": {
+    "label": "cts, and the MaxDpt parameter to 12 cts. Then set the value of the DptCtl",
+    "details": "parameter to ChanCnt, and You’ll get maximum vibrato depth when only one note\nis active. (Channel count outputs a control signal of 0 when no notes are playing, so\nwith only one note playing, its value is near 0, which causes the DptCtl parameter to\ngenerate a value near its minimum: 72 cents in this case.)\nIf you want to increase the depth of the vibrato as you increase the number of active\nnotes, set the value of the MaxDpt parameter higher than that of the MinDpt\nparameter.\nNote: There are no control sources that correspond to the numeric entries 47—54."
+  },
+  "96": {
+    "label": "Note State (Note St)",
+    "details": "At any moment, any given note is either on or off; this is its Note State. Note State\ncan be used as a unipolar control source that responds to each note that’s played. It\nswitches to +1 when the note starts, and stays on as long as the note is held on (by\nthe sustain pedal, for example), or by holding down the trigger for that note. It\nswitches to 0 when the note is no longer sustained by any means. For example, if\nyou play a note, then hold it with the sustain pedal, its Note State is still on (+1)\neven if you’ve released the key that triggered the note. As soon as you release the\nsustain pedal, the note’s Note State switches to off (0), even if it has a long release\nand you can still hear the release section of the note."
+  },
+  "97": {
+    "label": "Key State (Key St)",
+    "details": "This is a unipolar control source that responds to the motion of your MIDI source’s\nkeys (or other note trigger). It switches to +1 when a key is pressed, and switches\nto 0 when the key is released. Its effect differs from Note State in that when the key\nthat switched it on is released, it will switch off even if the note is sustained. If\nyou’re using a non-keyboard MIDI source, Key State switches to 0 when the\nequivalent of a key release is sent."
+  },
+  "98": {
+    "label": "Key Number (KeyNum)",
+    "details": "This is a unipolar control source that generates its signal value based on the MIDI\nkey number of each note triggered. That is, it generates a value of 0 in response to\nMIDI key number 0, a value of 64 in response to MIDI key number 64, and so on.\nNote that some parameters, such as Enable Sense on the Program Editor Layer\nPage, will not accept this parameter. GKeyNum, controller number 129, would be\nacceptable however."
+  },
+  "99": {
+    "label": "Bipolar Key Number (BKeyNum)",
+    "details": "This is like KeyNum, but generates a signal value of -1 in response to MIDI key\nnumber 0, a value of 0 in response to MIDI key number 64, and a value of +1 in\nresponse to MIDI key number 127."
+  },
+  "100": {
+    "label": "Attack Velocity (AttVel)",
+    "details": "This unipolar control source responds to Attack velocity values received at the\nK2600’s MIDI In port. Velocity values of 0 cause it to generate a signal value of 0,\nwhile velocity values of 127 will generate a value of +1. All other velocity values\nwill result in signal values proportionally scaled between 0 and +1. Note that some\nparameters, such as Enable Sense on the Program Editor Layer Page, will not accept\nthis control source. GAttVel, controller number 130, would be acceptable however."
+  },
+  "101": {
+    "label": "Inverse Attack Velocity (InvAttVel)",
+    "details": "This is the opposite of AttVel, generating a signal value of 0 in response to attack\nvelocity values of 127."
+  },
+  "102": {
+    "label": "Polyphonic Pressure (PPress)",
+    "details": "This unipolar control source responds to poly pressure (aftertouch) messages\nreceived via MIDI. It generates a signal value scaled from 0 to +1 based on the poly\npressure value range of 0—127."
+  },
+  "103": {
+    "label": "Bipolar Polyphonic Pressure (BPPress)",
+    "details": "This is like PPress, but scales its signal value from -1 to +1."
+  },
+  "104": {
+    "label": "Release Velocity (RelVel)",
+    "details": "Also unipolar, this control source scales its signal value from 0 to +1 in response to\nrelease velocity values from 0—127."
+  },
+  "105": {
+    "label": "Bipolar Attack Velocity (Bi-AVel)",
+    "details": "This is similar to AttVel, but scales its signal values from -1 to +1."
+  },
+  "106": {
+    "label": "Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)",
+    "details": "These unipolar control sources are switch controls, that is, they generate signal\nvalues of either 0 or +1. These must be programmed in order to have an effect; their\nprogramming parameters are found on the VTRIG page in the Program Editor.\nWhen a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note\nplays at a dynamic level exceeding the dynamic level set for its Level parameter. See\npage 6-44 of the Musician’s Guide for more information."
+  },
+  "107": {
+    "label": "Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)",
+    "details": "These unipolar control sources are switch controls, that is, they generate signal\nvalues of either 0 or +1. These must be programmed in order to have an effect; their\nprogramming parameters are found on the VTRIG page in the Program Editor.\nWhen a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note\nplays at a dynamic level exceeding the dynamic level set for its Level parameter. See\npage 6-44 of the Musician’s Guide for more information."
+  },
+  "108": {
+    "label": "Random Variants 1 and 2 (RandV1, RandV2)",
+    "details": "These are similar to GRandV1 and GRandV2, but are local, so will affect each\ncontrol source parameter independently."
+  },
+  "109": {
+    "label": "Random Variants 1 and 2 (RandV1, RandV2)",
+    "details": "These are similar to GRandV1 and GRandV2, but are local, so will affect each\ncontrol source parameter independently."
+  },
+  "110": {
+    "label": "ASR1, ASR2",
+    "details": "These are programmable envelopes with three segments, Attack, Sustain, and\nRelease. Their control source signals are unipolar. See page 6-42 of the Musician’s\nGuide for a thorough explanation."
+  },
+  "111": {
+    "label": "ASR1, ASR2",
+    "details": "These are programmable envelopes with three segments, Attack, Sustain, and\nRelease. Their control source signals are unipolar. See page 6-42 of the Musician’s\nGuide for a thorough explanation."
+  },
+  "112": {
+    "label": "FUN1, FUN2",
+    "details": "These generate their control source signals by combining the control signal values\nof two programmable inputs, and performing a mathematical function on the\nresult. Their control signals can be unipolar or bipolar, depending on the control\nsources assigned as their inputs. See page 6-43 of the Musician’s Guide. FUN2\nbecomes global (GFUN2) when the Globals parameter on the COMMON page in\nthe Program Editor is set to On."
+  },
+  "113": {
+    "label": "FUN1, FUN2",
+    "details": "These generate their control source signals by combining the control signal values\nof two programmable inputs, and performing a mathematical function on the\nresult. Their control signals can be unipolar or bipolar, depending on the control\nsources assigned as their inputs. See page 6-43 of the Musician’s Guide. FUN2\nbecomes global (GFUN2) when the Globals parameter on the COMMON page in\nthe Program Editor is set to On."
+  },
+  "114": {
+    "label": "LFO1",
+    "details": "LFO1 can be unipolar or bipolar depending on the value set for the Shape\nparameter on its programming page. See page 6-40 of the Musician’s Guide."
+  },
+  "115": {
+    "label": "LFO1 Phase (LFO1ph)",
+    "details": "This bipolar control source generates it signal based on the cycle of LFO1. When the\nphase of LFO1 is 0 degrees, the signal value of LFO1ph is 0. When the phase of\nLFO1 is 90 degrees, the signal value of LFO1ph is 1. When the phase of LFO1 is 180\ndegrees, the signal value of LFO1ph is 0. When the phase of LFO1 is 270 degrees, the\nsignal value of LFO1ph is -1."
+  },
+  "116": {
+    "label": "LFO2",
+    "details": "This functions exactly the same as LFO1, when the Globals parameter is set to Off\n(on the COMMON page in the Program Editor). When the Globals parameter is set\nto On, LFO2 becomes global (GLFO2)."
+  },
+  "117": {
+    "label": "LFO2 Phase (LFO2ph)",
+    "details": "This functions exactly the same as LFO1ph, responding to the cycle of LFO2."
+  },
+  "118": {
+    "label": "FUN3, FUN4",
+    "details": "These function exactly the same as FUNs 1 and 2, when the Globals parameter is set\nto Off (on the COMMON page in the Program Editor). When the Globals parameter\nis set to On, FUN4 becomes global (GFUN4)."
+  },
+  "119": {
+    "label": "FUN3, FUN4",
+    "details": "These function exactly the same as FUNs 1 and 2, when the Globals parameter is set\nto Off (on the COMMON page in the Program Editor). When the Globals parameter\nis set to On, FUN4 becomes global (GFUN4)."
+  },
+  "120": {
+    "label": "Amplitude Envelope (AMPENV)",
+    "details": "This programmable unipolar control source lets you vary the effect of a control\nsource parameter over time. See page 6-35 of the Musician’s Guide."
+  },
+  "121": {
+    "label": "Envelopes 2 and 3 (ENV2, ENV3)",
+    "details": "These are programmed in the same way as AMPENV, but they can be bipolar."
+  },
+  "122": {
+    "label": "Envelopes 2 and 3 (ENV2, ENV3)",
+    "details": "These are programmed in the same way as AMPENV, but they can be bipolar."
+  },
+  "123": {
+    "label": "Loop State (Loop St)",
+    "details": "This unipolar control source switches to +1 when the currently playing sample\nreaches its LoopStart point. If you’ve programmed a sound with a User amplitude\nenvelope, Loop St will always be on (+1) for that sound. See page 14-17 of the\nMusician’s Guide for more about sample loops."
+  },
+  "124": {
+    "label": "Sample Playback Rate (PB Rate)",
+    "details": "The signal value of this bipolar control source is determined by the sample playback\nrate of each note. The playback rate is a function of the amount of transposition\napplied to a sample root to play it at the proper pitch for each note. If you trigger a\nnote where a sample root is assigned, the PB Rate signal value for that note is 0. If\nthe note is above the sample root, the sample is transposed upward, and its\nplayback rate is higher than that of the sample root. Consequently the PB Rate\nsignal value for that note will be positive. If the note is below the sample root, the\nPB Rate signal value will be negative."
+  },
+  "125": {
+    "label": "Attack State (Atk State)",
+    "details": "This unipolar control source switches to +1 and back to 0 very quickly with each\nnote start."
+  },
+  "126": {
+    "label": "Release State (Rel State)",
+    "details": "This unipolar control source switches to +1 when a note is released, and stays on\nuntil the note has completed its release (faded to silence), then it switches to 0. It\nwill stay on if a note is sustained, even if its trigger (key, string, whatever) is\nreleased."
+  },
+  "127": {
+    "label": "ON",
+    "details": "This generates a constant control signal value of +1."
+  },
+  "128": {
+    "label": "-ON",
+    "details": "This generates a constant control signal value of -1 (the numeric entry 128 selects a\nvalue of OFF in the MIDI Control Source list)."
+  },
+  "129": {
+    "label": "GKeyNum",
+    "details": "Uses the key number (global) to modify whatever it is patched into. Higher notes\nwill have a very different effect than will lower notes. Users can use this new Source\nto control any K2600 parameters, or to scale amplitude or pitch."
+  },
+  "130": {
+    "label": "GAttVel",
+    "details": "This is updated every time you strike another key (kind of a multi- trigger function).\nIn addition to enabling (triggering) layers from any controller (works like an on/off\nswitch), you can set the assigned controller’s threshold (value, or range of values\nfrom 0-127), thus defining the controller’s active range where it will enable the\nlayer.\nFor example, you could create a 32-layer nylon guitar in which each layer is\nassigned to a different VAST algorithm and each layer is enabled by discrete narrow\nvelocity ranges. This would produce 32 different sounding layers with 32 cross\nswitch points emulating a picked guitar where no two attacks are exactly alike. If\nthe layers' velocity ranges were very close together yet not overlapping, you could\ncreate very subtle nonrepeating changes. This kind of power usually eludes most\nsample playback devices, as this technique uses only one layer of polyphony, due to\ncross switching versus cross fading."
+  },
+  "131": {
+    "label": "GHiKey, GLoKey",
+    "details": "These control sources work the same as GKeyNum except that they track the\nhighest key currently held and the lowest key currently held respectively. By using\none of these as the only source for pitch tracking, you can create monophonic-like\nlayers within a polyphonic program."
+  },
+  "132": {
+    "label": "GHiKey, GLoKey",
+    "details": "These control sources work the same as GKeyNum except that they track the\nhighest key currently held and the lowest key currently held respectively. By using\none of these as the only source for pitch tracking, you can create monophonic-like\nlayers within a polyphonic program."
+  },
+  "133": {
+    "label": "Constant -0.99"
+  },
+  "134": {
+    "label": "Constant -0.98"
+  },
+  "135": {
+    "label": "Constant -0.97"
+  },
+  "136": {
+    "label": "Constant -0.96"
+  },
+  "137": {
+    "label": "Constant -0.95"
+  },
+  "138": {
+    "label": "Constant -0.94"
+  },
+  "139": {
+    "label": "Constant -0.93"
+  },
+  "140": {
+    "label": "Constant -0.92"
+  },
+  "141": {
+    "label": "Constant -0.91"
+  },
+  "142": {
+    "label": "Constant -0.90"
+  },
+  "143": {
+    "label": "Constant -0.88"
+  },
+  "144": {
+    "label": "Constant -0.86"
+  },
+  "145": {
+    "label": "Constant -0.84"
+  },
+  "146": {
+    "label": "Constant -0.82"
+  },
+  "147": {
+    "label": "Constant -0.80"
+  },
+  "148": {
+    "label": "Constant -0.78"
+  },
+  "149": {
+    "label": "Constant -0.76"
+  },
+  "150": {
+    "label": "Constant -0.74"
+  },
+  "151": {
+    "label": "Constant -0.72"
+  },
+  "152": {
+    "label": "Constant -0.70"
+  },
+  "153": {
+    "label": "Constant -0.68"
+  },
+  "154": {
+    "label": "Constant -0.66"
+  },
+  "155": {
+    "label": "Constant -0.64"
+  },
+  "156": {
+    "label": "Constant -0.62"
+  },
+  "157": {
+    "label": "Constant -0.60"
+  },
+  "158": {
+    "label": "Constant -0.58"
+  },
+  "159": {
+    "label": "Constant -0.56"
+  },
+  "160": {
+    "label": "Constant -0.54"
+  },
+  "161": {
+    "label": "Constant -0.52"
+  },
+  "162": {
+    "label": "Constant -0.50"
+  },
+  "163": {
+    "label": "Constant -0.48"
+  },
+  "164": {
+    "label": "Constant -0.46"
+  },
+  "165": {
+    "label": "Constant -0.44"
+  },
+  "166": {
+    "label": "Constant -0.42"
+  },
+  "167": {
+    "label": "Constant -0.40"
+  },
+  "168": {
+    "label": "Constant -0.38"
+  },
+  "169": {
+    "label": "Constant -0.36"
+  },
+  "170": {
+    "label": "Constant -0.34"
+  },
+  "171": {
+    "label": "Constant -0.32"
+  },
+  "172": {
+    "label": "Constant -0.30"
+  },
+  "173": {
+    "label": "Constant -0.28"
+  },
+  "174": {
+    "label": "Constant -0.26"
+  },
+  "175": {
+    "label": "Constant -0.24"
+  },
+  "176": {
+    "label": "Constant -0.22"
+  },
+  "177": {
+    "label": "Constant -0.20"
+  },
+  "178": {
+    "label": "Constant -0.18"
+  },
+  "179": {
+    "label": "Constant -0.16"
+  },
+  "180": {
+    "label": "Constant -0.14"
+  },
+  "181": {
+    "label": "Constant -0.12"
+  },
+  "182": {
+    "label": "Constant -0.10"
+  },
+  "183": {
+    "label": "Constant -0.09"
+  },
+  "184": {
+    "label": "Constant -0.08"
+  },
+  "185": {
+    "label": "Constant -0.07"
+  },
+  "186": {
+    "label": "Constant -0.06"
+  },
+  "187": {
+    "label": "Constant -0.05"
+  },
+  "188": {
+    "label": "Constant -0.04"
+  },
+  "189": {
+    "label": "Constant -0.03"
+  },
+  "190": {
+    "label": "Constant -0.02"
+  },
+  "191": {
+    "label": "Constant -0.01"
+  },
+  "192": {
+    "label": "Constant 0.00"
+  },
+  "193": {
+    "label": "Constant 0.01"
+  },
+  "194": {
+    "label": "Constant 0.02"
+  },
+  "195": {
+    "label": "Constant 0.03"
+  },
+  "196": {
+    "label": "Constant 0.04"
+  },
+  "197": {
+    "label": "Constant 0.05"
+  },
+  "198": {
+    "label": "Constant 0.06"
+  },
+  "199": {
+    "label": "Constant 0.07"
+  },
+  "200": {
+    "label": "Constant 0.08"
+  },
+  "201": {
+    "label": "Constant 0.09"
+  },
+  "202": {
+    "label": "Constant 0.10"
+  },
+  "203": {
+    "label": "Constant 0.12"
+  },
+  "204": {
+    "label": "Constant 0.14"
+  },
+  "205": {
+    "label": "Constant 0.16"
+  },
+  "206": {
+    "label": "Constant 0.18"
+  },
+  "207": {
+    "label": "Constant 0.20"
+  },
+  "208": {
+    "label": "Constant 0.22"
+  },
+  "209": {
+    "label": "Constant 0.24"
+  },
+  "210": {
+    "label": "Constant 0.26"
+  },
+  "211": {
+    "label": "Constant 0.28"
+  },
+  "212": {
+    "label": "Constant 0.30"
+  },
+  "213": {
+    "label": "Constant 0.32"
+  },
+  "214": {
+    "label": "Constant 0.34"
+  },
+  "215": {
+    "label": "Constant 0.36"
+  },
+  "216": {
+    "label": "Constant 0.38"
+  },
+  "217": {
+    "label": "Constant 0.40"
+  },
+  "218": {
+    "label": "Constant 0.42"
+  },
+  "219": {
+    "label": "Constant 0.44"
+  },
+  "220": {
+    "label": "Constant 0.46"
+  },
+  "221": {
+    "label": "Constant 0.48"
+  },
+  "222": {
+    "label": "Constant 0.50"
+  },
+  "223": {
+    "label": "Constant 0.52"
+  },
+  "224": {
+    "label": "Constant 0.54"
+  },
+  "225": {
+    "label": "Constant 0.56"
+  },
+  "226": {
+    "label": "Constant 0.58"
+  },
+  "227": {
+    "label": "Constant 0.60"
+  },
+  "228": {
+    "label": "Constant 0.62"
+  },
+  "229": {
+    "label": "Constant 0.64"
+  },
+  "230": {
+    "label": "Constant 0.66"
+  },
+  "231": {
+    "label": "Constant 0.68"
+  },
+  "232": {
+    "label": "Constant 0.70"
+  },
+  "233": {
+    "label": "Constant 0.72"
+  },
+  "234": {
+    "label": "Constant 0.74"
+  },
+  "235": {
+    "label": "Constant 0.76"
+  },
+  "236": {
+    "label": "Constant 0.78"
+  },
+  "237": {
+    "label": "Constant 0.80"
+  },
+  "238": {
+    "label": "Constant 0.82"
+  },
+  "239": {
+    "label": "Constant 0.84"
+  },
+  "240": {
+    "label": "Constant 0.86"
+  },
+  "241": {
+    "label": "Constant 0.88"
+  },
+  "242": {
+    "label": "Constant 0.90"
+  },
+  "243": {
+    "label": "Constant 0.91"
+  },
+  "244": {
+    "label": "Constant 0.92"
+  },
+  "245": {
+    "label": "Constant 0.93"
+  },
+  "246": {
+    "label": "Constant 0.94"
+  },
+  "247": {
+    "label": "Constant 0.95"
+  },
+  "248": {
+    "label": "Constant 0.96"
+  },
+  "249": {
+    "label": "Constant 0.97"
+  },
+  "250": {
+    "label": "Constant 0.98"
+  },
+  "251": {
+    "label": "Constant 0.99"
+  },
+  "256": {
+    "label": "Constant OFF"
+  }
 }
