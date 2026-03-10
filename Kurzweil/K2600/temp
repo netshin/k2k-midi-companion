@@ -1,154 +1,272 @@
-700 New Classical 1
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Adds distance
-    MIDI: 67 Soft pedal
-    information: The most realistic sound for classical pieces
-
-701 New Classical 2
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Adds distance
-    MIDI: 67 Soft pedal
-    information: For “big” classical playing
-
-702 Classical Grand3
-    MIDI: 25 Wetter
-    MIDI: 67 Soft pedal
-
-
-703 DynGrand ClosMic
-    MIDI: 25 Wetter
-    MIDI: 67 Soft pedal
-    information: Close-mic dynamic grand; exaggerated filter on softest strikes, for extended dynamic range
-
-704 Jazz Grand
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Bigger hall
-    MIDI: 67 Soft pedal
-    information: Sounds nice in a jazz combo setting
-
-705 Bright Grand
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 22 Treble EQ boost
-    MIDI; 25 Adds distance
-    MIDI: 67 Soft pedal
-    information: Sounds like a relatively brightly-voiced piano
-
-
-706 Songwriter’s Pno
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Wetter
-    MIDI: 67 Soft pedal
-    information: Play simple block chords to accompany a pop or rock song
-
-707 Soft Grand
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Wetter
-708 Ballad Grand
-    Mod Wheel Pitch modulation
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Adds chorusing in the reverb
-    information: For long sustaining chords in a rock band setting
-
-709 FM & Grand
-    Mod Wheel Tremolo
-    MIDI: 6 Disables synth layer
-    MIDI: 22 Timbre Control
-    MIDI: 23 Octave in bass
-    MIDI: 24 Fades frequency-modulation layers
-    MIDI: 25 Wetter
-    MIDI: 26 Chorus wet
-    MIDI: 27 Chorus feedback
-
-710 Hardhammer Piano
-    MIDI: 6 More highs
-    MIDI: 25 Wetter
-
-711 Stage Grand St
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Wetter
-    MIDI: 67 Soft pedal
-    information: Compressor in studio 749 controls dynamics in live settings
-
-712 Jazz Grand Mono
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Reverb time
-    information: For use with a mono PA system
-
-713 Rock Grand Mono
-    MIDI: 6 Disables sympathetic vibrations
-    MIDI: 25 Reverb time
-    For use with a mono PA system
-
-714 GrPno & Strings
-    Mod Wheel Lowpass filter on strings
-    MIDI: 6 Strings forward
-    MIDI: 25 Piano delays
-    MIDI: 26 Feedback control (tails longer)
-
-715 GrPno & Pad
-    Mod Wheel Fades pad
-    MIDI: 6 Envelope control on pad
-    MIDI: 25 Wetter
-716 Grand & Rich Pad
-    MIDI: 26 Feedback control (tails longer)
-    information: Velocity controls each note's effects send; accents sound nice sustained
-
-717 Dyn Pno&Pad
-    MIDI: 22 Disables String 1
-    MIDI: 26 Feedback control (tails longer)
-    MIDI: 29 Enables String 2
-    information: Velocity controls each note’s send to the feedback flangers
-
-718 In Canyon w/Str
-    MIDI: 6 Fades String layer
-    MIDI: 25 Flange wet
-    MIDI: 26 Increases reverb time
-
-719 Mello w/Voxpad
-    Mod Wheel Pitch modulation
-    MIDI: 6 Fades string layer
-    MIDI: 25 Flange wet
-    MIDI: 26 Increases reverb time
-
-720 String Chaser
-    Mod Wheel Pitch modulation
-    MIDI: 6 Filter
-    MIDI: 25 Adds distance
-    MIDI: 26 Decreases reverb time
-
-721 Bowed Piano
-    MIDI: 6 Fades to bowed layer only
-    MIDI: 25 Controls send to flanger
-722 GPno & Puff
-    MIDI: 25 Wetter
-    MIDI: 67 Soft pedal
-    For percussive playing
-
-723 SynGrand & EPno
-    Mod Wheel Manual wah-wah
-    MIDI: 25 Wetter
-
-724 Twang Grand
-    Mod Wheel Detune
-    MIDI: 6 Layer balance
-
-725 AlternativePiano
-    Mod Wheel Pitch modulation
-    MIDI: 6 Timbre control
-
-726 Affected Grand
-    Mod Wheel Filter modulation
-    
-727 Robot Grand
-    MIDI: 6 Disables the per-note sample & hold
-    information: For staccato repetitive playing (with the arpeggiator, for example)
-    
-728 Distorted Grand
-    MIDI: 6 Hipass filter, program-wide
-729 Way in the Grand
-    Mod Wheel Pitch modulation on layers
-    MIDI: 6 Enables third layer
-    MIDI: 25 Pitch modulation on the reverb
-    MIDI: 26 Drier
-    information: Play sparsely!
-
+32 Channel State (Chan St)
+Chan St refers to whether any notes are currently active on a given MIDI channel.
+Chan St switches on whenever a note is started, and switches off when a Note Off
+has been received for each current note on that channel, even if notes are sustained.
+33 Mono Pressure (MPress)
+This is the same as the MPress control source in the MIDI Control Source list, but is
+assigned by entering 33 on the alphanumeric pad when used with a parameter that
+takes its values from the Main Control Source list.
+34 Bipolar Mono Pressure (BMPress)
+This control source generates a control signal of -1 when the value of the control to
+which it’s assigned is at its minimum, and +1 when the control is at its maximum.
+For example, if you had the MPress control assignment parameter assigned to send
+BMPress, and you had Src1 on a program layer’s PITCH page assigned to BMPress,
+with its depth parameter set to 1200 cents, then the layer would be transposed
+down an octave when no pressure (value 0) was applied to your controller’s keys
+(assuming it sends mono pressure). Maximum pressure (value 127) would
+transpose the layer up an octave, while a pressure level of 64 would leave the pitch
+unchanged.
+35 Pitch Wheel Message (PWheel)
+The K2600 is hard-wired to respond to this message. Any parameter with PWheel
+assigned as its value will be affected when your MIDI controller’s Pitch Wheel is
+moved.
+36 Bipolar Mod Wheel (Bi-Mwl)
+This control source will always respond to MIDI controller 01 (MWheel). Control
+source parameters set to this value will generate control signals of -1 when the MIDI
+Controller 01 message value is 0, and will generate a control signal of +1 when the
+MIDI Controller 01 message is at 127, scaling all values in between. For example,
+you might set Src1 on a program layer’s PITCH page to a value of Bi-Mwl, and its
+depth parameter to 1200 cents. Then as long as the MWhl control assignment
+parameter is set to a value of MWheel, your controller’s Mod Wheel will be bipolar;
+in this case it will bend the layer’s pitch down as you move the Mod Wheel toward
+minimum, and bend the pitch up as you move the Mod Wheel toward maximum.
+37 Absolute Value of Pitch Wheel (AbsPwl)
+This control source always responds to movement of your MIDI controller’s Pitch
+Wheel, but makes the Pitch Wheel unipolar. Whereas pulling the Pitch Wheel fully
+down usually generates a control signal value of -1, this control source generates a
+value of +1 when the Pitch Wheel is pulled fully down.
+38 Global ASR (GASR2)
+When the Globals parameter on the COMMON page is turned on, ASR2 becomes
+global, and is labeled GASR2. The functions of ASRs are explained on page 6-42 of
+the Musician’s Guide. This control source does not appear in the Control Source list
+for parameters whose functions are local.
+39 Global FUN2 (GFUN2)
+When the Globals parameter on the COMMON page is turned on, FUN2 becomes
+global, and is labeled GFUN2. The functions of FUNs are explained in Chapter 17 of
+the Musician’s Guide. This control source does not appear in the Control Source list
+for parameters whose functions are local.
+40 Global LFO (GLFO2)
+When the Globals parameter on the COMMON page is turned on, LFO2 becomes
+global, and is labeled GLFO2. The functions of LFOs are explained on page 6-40 of
+the Musician’s Guide. This control source does not appear in the Control Source list
+for parameters whose functions are local.
+41 Global LFO Phase (GLFO2ph)
+When the Globals parameter on the COMMON page is turned on, LFO2 becomes
+global, and is labeled GLFO2. The functions of LFOs are explained on page 6-40 of
+the Musician’s Guide. This control source does not appear in the Control Source list
+for parameters whose functions are local.
+42 Global FUN 4 (GFUN4)
+When the Globals parameter on the COMMON page is turned on, FUN 4 becomes
+global, and is labeled GFUN4. This control source does not appear in the Control
+Source list for parameters whose functions are local.
+43 Volume Control (VolCtl)
+This control source will always respond to MIDI Controller 07 messages. Assign this
+value to a parameter when you want MIDI volume messages to affect the
+parameter.
+44 Pan Control (PanCtl)
+This control source always responds to MIDI Controller 10 messages. Assign this
+value to a parameter when you want MIDI pan messages to affect the parameter.
+45 Balance Control (BalCtl)
+This control source will always respond to MIDI Controller 08 messages. Assign this
+value to a parameter when you want MIDI balance messages to affect the
+parameter.
+46 Channel Count (ChanCnt)
+This control source keeps track of the total number of active voice channels (how
+many notes are playing), and converts the number into a control signal between 0
+and +1. The control signal’s value is 1 when all 48 voice channels are active, and 0
+when no voice channels are active.
+You can use this control source in several ways. One example is to limit the volume
+of each note so that you have a more nearly constant volume regardless of how
+many notes you’re playing (this is independent of the effect of attack velocity on
+volume). To set this up, you would go to the F4 AMP page in the Program Editor,
+and set the Src1 parameter to a value of ChanCnt. Then set the Depth parameter to
+a negative value. This will decrease the overall amplitude of each note as you play
+more simultaneous notes. This example works best with short-release sounds. It’s
+great for an organ program, for example.
+Channel count is also useful for controlling the modulation applied to a sound. For
+example, you may have a sound that you use both as a lead and for rhythm.
+Suppose you want a deep vibrato when you’re soloing, but less vibrato when you’re
+playing chords. Set up the vibrato by using LFO1 as the value for the Src2
+parameter on the PITCH page in the Program Editor. Set the MinDpt parameter to
+72 cts, and the MaxDpt parameter to 12 cts. Then set the value of the DptCtl
+parameter to ChanCnt, and You’ll get maximum vibrato depth when only one note
+is active. (Channel count outputs a control signal of 0 when no notes are playing, so
+with only one note playing, its value is near 0, which causes the DptCtl parameter to
+generate a value near its minimum: 72 cents in this case.)
+If you want to increase the depth of the vibrato as you increase the number of active
+notes, set the value of the MaxDpt parameter higher than that of the MinDpt
+parameter.
+Note: There are no control sources that correspond to the numeric entries 47—54.
+55 Sync State (SyncSt)
+This unipolar control source responds to MIDI clock messages received from an
+external MIDI device. Sync State switches on (+1) at each clock start, and switches
+off (0) with each clock stop.
+56 A Clock
+This is a unipolar square wave that responds to MIDI clock messages. It switches to
++1 and back to 0 with every clock beat. This control source looks first for externally
+received MIDI clock messages, and if none is received, it responds to the K2600’s
+internal clock, which is always running. The internal clock speed is set with the
+Tempo parameter in Song mode.
+57 Negative A Clock (~A Clock)
+This is the opposite of A clock, that is, it switches from 0 to +1 with every clock beat
+(the square wave is 180 degrees out of phase with that of A Clock).
+58 B Clock
+beat.
+This is similar to A Clock, but it’s bipolar—it switches from +1 to -1 with every clock
+59 Negative B Clock (~B Clock)
+The opposite of B Clock, this bipolar control source switches from -1 to +1 with
+every clock beat (the square wave is 180 degrees out of phase with that of B Clock).
+60, 61 Global Phase 1 and 2 (G Phase 1, G Phase 2)
+These bipolar global control sources are both rising sawtooth waves that rise from -
+1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an
+external clock signal, and if none is received, they respond to the K2600’s internal
+clock.
+62, 63 Global Random Variant 1 and 2 (GRandV 1, GRandV 2)
+These are also bipolar and global, and generate random control signal values
+between -1 and +1 when assigned to a control source parameter. There is a subtle
+difference in the randomness of the signals they generate, therefore choosing
+between them is a matter of preference.
+96 Note State (Note St)
+At any moment, any given note is either on or off; this is its Note State. Note State
+can be used as a unipolar control source that responds to each note that’s played. It
+switches to +1 when the note starts, and stays on as long as the note is held on (by
+the sustain pedal, for example), or by holding down the trigger for that note. It
+switches to 0 when the note is no longer sustained by any means. For example, if
+you play a note, then hold it with the sustain pedal, its Note State is still on (+1)
+even if you’ve released the key that triggered the note. As soon as you release the
+sustain pedal, the note’s Note State switches to off (0), even if it has a long release
+and you can still hear the release section of the note.
+97 Key State (Key St)
+This is a unipolar control source that responds to the motion of your MIDI source’s
+keys (or other note trigger). It switches to +1 when a key is pressed, and switches
+to 0 when the key is released. Its effect differs from Note State in that when the key
+that switched it on is released, it will switch off even if the note is sustained. If
+you’re using a non-keyboard MIDI source, Key State switches to 0 when the
+equivalent of a key release is sent.
+98 Key Number (KeyNum)
+This is a unipolar control source that generates its signal value based on the MIDI
+key number of each note triggered. That is, it generates a value of 0 in response to
+MIDI key number 0, a value of 64 in response to MIDI key number 64, and so on.
+Note that some parameters, such as Enable Sense on the Program Editor Layer
+Page, will not accept this parameter. GKeyNum, controller number 129, would be
+acceptable however.
+99 Bipolar Key Number (BKeyNum)
+This is like KeyNum, but generates a signal value of -1 in response to MIDI key
+number 0, a value of 0 in response to MIDI key number 64, and a value of +1 in
+response to MIDI key number 127.
+100 Attack Velocity (AttVel)
+This unipolar control source responds to Attack velocity values received at the
+K2600’s MIDI In port. Velocity values of 0 cause it to generate a signal value of 0,
+while velocity values of 127 will generate a value of +1. All other velocity values
+will result in signal values proportionally scaled between 0 and +1. Note that some
+parameters, such as Enable Sense on the Program Editor Layer Page, will not accept
+this control source. GAttVel, controller number 130, would be acceptable however.
+101 Inverse Attack Velocity (InvAttVel)
+This is the opposite of AttVel, generating a signal value of 0 in response to attack
+velocity values of 127.
+102 Polyphonic Pressure (PPress)
+This unipolar control source responds to poly pressure (aftertouch) messages
+received via MIDI. It generates a signal value scaled from 0 to +1 based on the poly
+pressure value range of 0—127.
+103 Bipolar Polyphonic Pressure (BPPress)
+This is like PPress, but scales its signal value from -1 to +1.
+104 Release Velocity (RelVel)
+Also unipolar, this control source scales its signal value from 0 to +1 in response to
+release velocity values from 0—127.
+105 Bipolar Attack Velocity (Bi-AVel)
+This is similar to AttVel, but scales its signal values from -1 to +1.
+106, 107 Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)
+These unipolar control sources are switch controls, that is, they generate signal
+values of either 0 or +1. These must be programmed in order to have an effect; their
+programming parameters are found on the VTRIG page in the Program Editor.
+When a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note
+plays at a dynamic level exceeding the dynamic level set for its Level parameter. See
+page 6-44 of the Musician’s Guide for more information.
+108, 109 Random Variants 1 and 2 (RandV1, RandV2)
+These are similar to GRandV1 and GRandV2, but are local, so will affect each
+control source parameter independently.
+110, 111 ASR1, ASR2
+These are programmable envelopes with three segments, Attack, Sustain, and
+Release. Their control source signals are unipolar. See page 6-42 of the Musician’s
+Guide for a thorough explanation.
+112, 113 FUN1, FUN2
+These generate their control source signals by combining the control signal values
+of two programmable inputs, and performing a mathematical function on the
+result. Their control signals can be unipolar or bipolar, depending on the control
+sources assigned as their inputs. See page 6-43 of the Musician’s Guide. FUN2
+becomes global (GFUN2) when the Globals parameter on the COMMON page in
+the Program Editor is set to On.
+114 LFO1
+LFO1 can be unipolar or bipolar depending on the value set for the Shape
+parameter on its programming page. See page 6-40 of the Musician’s Guide.
+115 LFO1 Phase (LFO1ph)
+This bipolar control source generates it signal based on the cycle of LFO1. When the
+phase of LFO1 is 0 degrees, the signal value of LFO1ph is 0. When the phase of
+LFO1 is 90 degrees, the signal value of LFO1ph is 1. When the phase of LFO1 is 180
+degrees, the signal value of LFO1ph is 0. When the phase of LFO1 is 270 degrees, the
+signal value of LFO1ph is -1.
+116 LFO2
+This functions exactly the same as LFO1, when the Globals parameter is set to Off
+(on the COMMON page in the Program Editor). When the Globals parameter is set
+to On, LFO2 becomes global (GLFO2).
+117 LFO2 Phase (LFO2ph)
+This functions exactly the same as LFO1ph, responding to the cycle of LFO2.
+118, 119 FUN3, FUN4
+These function exactly the same as FUNs 1 and 2, when the Globals parameter is set
+to Off (on the COMMON page in the Program Editor). When the Globals parameter
+is set to On, FUN4 becomes global (GFUN4).
+120 Amplitude Envelope (AMPENV)
+This programmable unipolar control source lets you vary the effect of a control
+source parameter over time. See page 6-35 of the Musician’s Guide.
+121, 122 Envelopes 2 and 3 (ENV2, ENV3)
+These are programmed in the same way as AMPENV, but they can be bipolar.
+123 Loop State (Loop St)
+This unipolar control source switches to +1 when the currently playing sample
+reaches its LoopStart point. If you’ve programmed a sound with a User amplitude
+envelope, Loop St will always be on (+1) for that sound. See page 14-17 of the
+Musician’s Guide for more about sample loops.
+124 Sample Playback Rate (PB Rate)
+The signal value of this bipolar control source is determined by the sample playback
+rate of each note. The playback rate is a function of the amount of transposition
+applied to a sample root to play it at the proper pitch for each note. If you trigger a
+note where a sample root is assigned, the PB Rate signal value for that note is 0. If
+the note is above the sample root, the sample is transposed upward, and its
+playback rate is higher than that of the sample root. Consequently the PB Rate
+signal value for that note will be positive. If the note is below the sample root, the
+PB Rate signal value will be negative.
+125 Attack State (Atk State)
+This unipolar control source switches to +1 and back to 0 very quickly with each
+note start.
+126 Release State (Rel State)
+This unipolar control source switches to +1 when a note is released, and stays on
+until the note has completed its release (faded to silence), then it switches to 0. It
+will stay on if a note is sustained, even if its trigger (key, string, whatever) is
+released.
+127 ON
+This generates a constant control signal value of +1.
+128 -ON
+This generates a constant control signal value of -1 (the numeric entry 128 selects a
+value of OFF in the MIDI Control Source list).
+129 GKeyNum
+Uses the key number (global) to modify whatever it is patched into. Higher notes
+will have a very different effect than will lower notes. Users can use this new Source
+to control any K2600 parameters, or to scale amplitude or pitch.
+130 GAttVel
+This is updated every time you strike another key (kind of a multi- trigger function).
+In addition to enabling (triggering) layers from any controller (works like an on/off
+switch), you can set the assigned controller’s threshold (value, or range of values
+from 0-127), thus defining the controller’s active range where it will enable the
+layer.
+For example, you could create a 32-layer nylon guitar in which each layer is
+assigned to a different VAST algorithm and each layer is enabled by discrete narrow
+velocity ranges. This would produce 32 different sounding layers with 32 cross
+switch points emulating a picked guitar where no two attacks are exactly alike. If
+the layers' velocity ranges were very close together yet not overlapping, you could
+create very subtle nonrepeating changes. This kind of power usually eludes most
+sample playback devices, as this technique uses only one layer of polyphony, due to
+cross switching versus cross fading.
+131, 132 GHiKey, GLoKey
+These control sources work the same as GKeyNum except that they track the
+highest key currently held and the lowest key currently held respectively. By using
+one of these as the only source for pitch tracking, you can create monophonic-like
+layers within a polyphonic program.

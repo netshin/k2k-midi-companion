@@ -1,6 +1,7 @@
 const CONFIG = {
 
   appName: "K2600 MIDI Companion",
+  appVersion: "1.1.1",
   modelsIndexPath: "models/index.json",
   selectedModelKey: "kurzweil-k2600",
   manufacturer: "Kurzweil",

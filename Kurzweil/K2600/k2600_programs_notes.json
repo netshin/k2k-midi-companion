@@ -6,25 +6,5 @@
   "793": {
     "previous_name": "Funky Piano",
     "note": "Replaced from Orchestral ROM PDF import"
-  },
-  "800": {
-    "qa_flag": "QA_REVIEW_FIXED",
-    "source": "contemporary_program_controllers.pdf",
-    "note": "Wrapped narrative split into MIDI 1 + Info; artifact chars removed"
-  },
-  "808": {
-    "qa_flag": "QA_REVIEW_FIXED",
-    "source": "contemporary_program_controllers.pdf",
-    "note": "Narrative kept as Info only (no explicit control assignment text)"
-  },
-  "843": {
-    "qa_flag": "QA_REVIEW_FIXED",
-    "source": "contemporary_program_controllers.pdf",
-    "note": "Split into MIDI 6 + Info based on \"Data slider\" sentence"
-  },
-  "844": {
-    "qa_flag": "QA_REVIEW_FIXED",
-    "source": "contemporary_program_controllers.pdf",
-    "note": "Split into MIDI 1 + MPress + Info from sentence semantics"
   }
 }

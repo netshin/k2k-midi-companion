@@ -6,7 +6,8 @@ console.log("starting app.js");
 
 let patches = {};
 let setups = {};
-let controllers = {};
+let midiControllers = {};
+let modSources = {};
 let kdfxLookup = null;
 let synthModel = null;
 let selectedModelEntry = null;
@@ -22,6 +23,19 @@ const NEEDS_MIDI_MESSAGE = "Configure a MIDI Interface...";
 const WAITING_MESSAGE = "Waiting...";
 
 
+function withCacheVersion(path) {
+
+  const version = CONFIG?.appVersion;
+
+  if (!version || typeof path !== "string" || path.trim() === "") {
+    return path;
+  }
+
+  const sep = path.includes("?") ? "&" : "?";
+  return `${path}${sep}v=${encodeURIComponent(version)}`;
+}
+
+
 /* ============================
    LOAD DATA FILES
 ============================ */
@@ -29,7 +43,7 @@ const WAITING_MESSAGE = "Waiting...";
 async function loadData() {
 
   const modelConfigPath = await resolveModelConfigPathFromIndex();
-  const modelResponse = await fetch(modelConfigPath);
+  const modelResponse = await fetch(withCacheVersion(modelConfigPath));
 
   if (!modelResponse.ok) {
     throw new Error(`Failed to load model config: ${modelConfigPath}`);
@@ -38,19 +52,27 @@ async function loadData() {
   synthModel = await modelResponse.json();
   modelBasePath = dirname(modelConfigPath);
 
-  const patchResponse = await fetch(resolveModelPath(synthModel.patchDataPath));
+  const patchResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.patchDataPath)));
   patches = await patchResponse.json();
 
-  const controllerResponse = await fetch(resolveModelPath(synthModel.controllerDataPath));
-  controllers = await controllerResponse.json();
+  const midiCcPath = synthModel.midiCcDataPath || synthModel.controllerDataPath;
+  const midiCcResponse = await fetch(withCacheVersion(resolveModelPath(midiCcPath)));
+  midiControllers = await midiCcResponse.json();
+
+  if (synthModel.modSourceDataPath) {
+    const modSourceResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.modSourceDataPath)));
+    modSources = await modSourceResponse.json();
+  } else {
+    modSources = {};
+  }
 
   if (synthModel.setupDataPath) {
-    const setupResponse = await fetch(resolveModelPath(synthModel.setupDataPath));
+    const setupResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.setupDataPath)));
     setups = await setupResponse.json();
   }
 
   if (synthModel.kdfxLookupDataPath) {
-    const kdfxResponse = await fetch(resolveModelPath(synthModel.kdfxLookupDataPath));
+    const kdfxResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.kdfxLookupDataPath)));
     if (kdfxResponse.ok) {
       kdfxLookup = await kdfxResponse.json();
     }
@@ -62,7 +84,7 @@ async function loadData() {
 async function resolveModelConfigPathFromIndex() {
 
   const indexPath = CONFIG?.modelsIndexPath || "models/index.json";
-  const response = await fetch(indexPath);
+  const response = await fetch(withCacheVersion(indexPath));
 
   if (!response.ok) {
     throw new Error(`Failed to load models index: ${indexPath}`);
@@ -395,7 +417,7 @@ function renderProgramNotes(patch) {
       const isMPress = control.type === "MPress";
       const ctrlName = isMPress
         ? "MPress"
-        : (controllers[control.number] || `CC ${control.number}`);
+        : (midiControllers[control.number] || `CC ${control.number}`);
       const ctrlNameClass = isMPress ? "ctrl-name ctrl-name-mpress" : "ctrl-name";
 
       notesHtml +=
@@ -471,7 +493,9 @@ function setupKdfxButton() {
 
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
+  const modSourcesButton = document.getElementById("modSourcesButton");
   const kdfxButton = document.getElementById("kdfxButton");
+  const modSourceSearch = document.getElementById("modSourceSearch");
   const searchInput = document.getElementById("kdfxSearch");
 
   if (programsButton) {
@@ -488,6 +512,19 @@ function setupKdfxButton() {
         showView("setups");
       });
     }
+  }
+
+  if (modSourcesButton) {
+    modSourcesButton.addEventListener("click", () => {
+      showView("modsources");
+      renderModSources(modSourceSearch?.value || "");
+    });
+  }
+
+  if (modSourceSearch) {
+    modSourceSearch.addEventListener("input", () => {
+      renderModSources(modSourceSearch.value);
+    });
   }
 
   if (!kdfxButton) return;
@@ -513,37 +550,89 @@ function setupKdfxButton() {
 function showView(viewId) {
 
   const mainView = document.getElementById("mainView");
+  const modSourcesView = document.getElementById("modSourcesView");
   const kdfxView = document.getElementById("kdfxView");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
+  const modSourcesButton = document.getElementById("modSourcesButton");
   const kdfxButton = document.getElementById("kdfxButton");
 
   if (viewId === "kdfx") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
+    modSourcesView?.classList.add("hidden");
     kdfxView?.classList.remove("hidden");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
+    modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.add("active");
+    return;
+  }
+
+  if (viewId === "modsources") {
+    selectedMode = "programs";
+    mainView?.classList.add("hidden");
+    modSourcesView?.classList.remove("hidden");
+    kdfxView?.classList.add("hidden");
+    programsButton?.classList.remove("active");
+    setupsButton?.classList.remove("active");
+    modSourcesButton?.classList.add("active");
+    kdfxButton?.classList.remove("active");
     return;
   }
 
   if (viewId === "setups") {
     selectedMode = "setups";
     mainView?.classList.remove("hidden");
+    modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     programsButton?.classList.remove("active");
     setupsButton?.classList.add("active");
+    modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
     return;
   }
 
   selectedMode = "programs";
   mainView?.classList.remove("hidden");
+  modSourcesView?.classList.add("hidden");
   kdfxView?.classList.add("hidden");
   programsButton?.classList.add("active");
   setupsButton?.classList.remove("active");
+  modSourcesButton?.classList.remove("active");
   kdfxButton?.classList.remove("active");
+}
+
+function renderModSources(query = "") {
+
+  const list = document.getElementById("modSourceList");
+
+  if (!list) return;
+
+  const text = query.trim().toLowerCase();
+
+  const rows = Object.entries(modSources || {})
+    .map(([assignedValue, source]) => ({
+      assignedValue: Number(assignedValue),
+      source: String(source || ""),
+    }))
+    .sort((a, b) => a.assignedValue - b.assignedValue)
+    .filter(row => {
+      if (!text) return true;
+      return String(row.assignedValue).includes(text) || row.source.toLowerCase().includes(text);
+    });
+
+  if (rows.length === 0) {
+    list.textContent = "No modulation sources match the search.";
+    return;
+  }
+
+  list.innerHTML = rows
+    .map(row =>
+      `<div class="modsrc-row"><span class="modsrc-id">${row.assignedValue}</span><span class="modsrc-name">${row.source}</span></div>`
+    )
+    .join("");
+
 }
 
 function renderKdfxList(query = "") {

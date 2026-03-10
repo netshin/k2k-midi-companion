@@ -58,6 +58,7 @@
 <div class="topButtons">
   <div id="programsButton" class="programsButton k2600-button" title="Display Details about ROM Programs">Programs</div>
   <div id="setupsButton" class="setupsButton k2600-button" title="Display Details about Setups">Setups</div>
+  <div id="modSourcesButton" class="modSourcesButton k2600-button" title="Display Modulation Sources and Constants">Mod Sources</div>
   <div id="kdfxButton" class="kdfxButton k2600-button" title="Display Details about KDFX Studio structure">KDFX Studios</div>
   <div id="settingsButton" class="settingsButton k2600-button" title="Configure Application">Config</div>
   <div id="webButton" class="webButton k2600-button" title="Visit support for your synth">Web</div>
@@ -107,6 +108,27 @@
         <div id="kdfxStudioDetail" class="kdfx-detail">
           Select a studio to view routing details.
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MOD SOURCES VIEW -->
+
+<div id="modSourcesView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="kdfx-header">
+      <div class="kdfx-title">Mod Sources</div>
+      <input id="modSourceSearch" type="text" placeholder="Search value/source..." />
+    </div>
+
+    <div class="kdfx-detail-panel">
+      <div class="modsrc-legend">
+        <span>Assigned Value</span>
+        <span>Source</span>
+      </div>
+      <div id="modSourceList" class="kdfx-detail">
+        Loading modulation sources...
       </div>
     </div>
   </div>

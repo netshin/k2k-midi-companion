@@ -15,7 +15,9 @@
         "k2600_kdfx_studios.json",
         "k2600_kdfx presets.json",
         "k2600_kdfx_algorithems.json",
-        "k2600_kdfx_lookup.json"
+        "k2600_kdfx_lookup.json",
+        "k2600_midi_cc.json",
+        "k2600_mod_sources.json"
       ]
     }
   ]
