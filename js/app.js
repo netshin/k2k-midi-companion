@@ -1395,6 +1395,57 @@ okButton.addEventListener("click", saveSettings);
 
 cancelButton.addEventListener("click", cancelSettings);
 
+function setupKeyboardShortcuts() {
+
+  document.addEventListener("keydown", e => {
+
+    if (!e.altKey || e.ctrlKey || e.metaKey || e.shiftKey) {
+      return;
+    }
+
+    if (modal.style.display !== "none") {
+      return;
+    }
+
+    const code = e.code;
+
+    if (code === "KeyR") {
+      e.preventDefault();
+      showView("search");
+      renderSearchResults(getPatchSearchQuery());
+      return;
+    }
+
+    if (code === "KeyP") {
+      e.preventDefault();
+      showView("main");
+      return;
+    }
+
+    if (code === "KeyS") {
+      const setupsButton = document.getElementById("setupsButton");
+      if (setupsButton?.classList.contains("hidden")) {
+        return;
+      }
+      e.preventDefault();
+      showView("setups");
+      return;
+    }
+
+    if (code === "KeyM") {
+      e.preventDefault();
+      showView("modsources");
+      renderModSources(document.getElementById("modSourceSearch")?.value || "");
+      return;
+    }
+
+    if (code === "KeyC") {
+      e.preventDefault();
+      showDeviceModal();
+    }
+  });
+}
+
 
 /* ===============================
    KEYBOARD SHORTCUTS
@@ -1435,6 +1486,7 @@ async function startApp() {
   setupSettingsButton();
   setupWebButton();
   setupKdfxButton();
+  setupKeyboardShortcuts();
   showView("main");
 
 }
