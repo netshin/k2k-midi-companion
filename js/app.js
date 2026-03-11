@@ -17,6 +17,14 @@ let selectedMidiInput = null;
 let selectedMode = "programs";
 let selectedKdfxStudioId = null;
 let modSourceTooltipHideTimer = null;
+let selectedProgramNumber = null;
+let selectedSetupNumber = null;
+let currentDisplayedType = "programs";
+let currentDisplayedNumber = null;
+let searchFilters = {
+  programs: true,
+  setups: true,
+};
 
 let myBankMSB = 0;
 let myBankLSB = 0;
@@ -358,43 +366,7 @@ function attachMidiListeners() {
 function handleProgramChange(myBankMSB, myBankLSB, programNumber) {
 
   const itemNumber = computeItemNumber(myBankMSB, myBankLSB, programNumber, selectedMode);
-  const location = formatPatchLocation(itemNumber, selectedMode);
-
-  if (selectedMode === "programs") {
-    const requiredRomCard = getRequiredRomCardForPatch(itemNumber);
-
-    if (requiredRomCard && !isRomCardEnabled(requiredRomCard)) {
-      setDisplayText("ROM Not Enabled", location);
-      document.getElementById("notes").textContent =
-        `Enable "${requiredRomCard.label}" in Config to use this patch location.`;
-      return;
-    }
-
-    const patch = patches[itemNumber];
-
-    if (!patch) {
-      setDisplayText("Unknown Patch", location);
-      document.getElementById("notes").textContent = "";
-      return;
-    }
-
-    setDisplayText(patch.name, location);
-    renderProgramNotes(patch);
-    return;
-  }
-
-  if (selectedMode === "setups") {
-    const setup = resolveSetupByNumber(itemNumber);
-
-    if (!setup) {
-      setDisplayText("Unknown Setup", location);
-      document.getElementById("notes").textContent = "";
-      return;
-    }
-
-    setDisplayText(setup.name, location);
-    renderSetupNotes(setup);
-  }
+  displayCatalogItem(selectedMode, itemNumber);
 }
 
 function resolveSetupByNumber(setupNumber) {
@@ -456,6 +428,265 @@ function renderSetupNotes(setup) {
     </div>`;
 }
 
+function displayCatalogItem(modeId, itemNumber) {
+
+  const location = formatPatchLocation(itemNumber, modeId);
+  const notes = document.getElementById("notes");
+  currentDisplayedType = modeId;
+  currentDisplayedNumber = itemNumber;
+
+  if (modeId === "programs") {
+    selectedProgramNumber = itemNumber;
+
+    const requiredRomCard = getRequiredRomCardForPatch(itemNumber);
+
+    if (requiredRomCard && !isRomCardEnabled(requiredRomCard)) {
+      setDisplayText("ROM Not Enabled", location);
+      if (notes) {
+        notes.textContent = `Enable "${requiredRomCard.label}" in Config to use this patch location.`;
+      }
+      renderSearchResults(getPatchSearchQuery());
+      return;
+    }
+
+    const patch = patches[itemNumber];
+
+    if (!patch) {
+      setDisplayText("Unknown Patch", location);
+      if (notes) {
+        notes.textContent = "";
+      }
+      renderSearchResults(getPatchSearchQuery());
+      return;
+    }
+
+    setDisplayText(patch.name, location);
+    renderProgramNotes(patch);
+    renderSearchResults(getPatchSearchQuery());
+    return;
+  }
+
+  if (modeId === "setups") {
+    selectedSetupNumber = itemNumber;
+
+    const setup = resolveSetupByNumber(itemNumber);
+
+    if (!setup) {
+      setDisplayText("Unknown Setup", location);
+      if (notes) {
+        notes.textContent = "";
+      }
+      renderSearchResults(getPatchSearchQuery());
+      return;
+    }
+
+    setDisplayText(setup.name, location);
+    renderSetupNotes(setup);
+    renderSearchResults(getPatchSearchQuery());
+  }
+}
+
+function getPatchSearchQuery() {
+  return document.getElementById("patchSearch")?.value || "";
+}
+
+function focusPatchSearch() {
+  focusInputById("patchSearch");
+}
+
+function focusInputById(inputId) {
+
+  const input = document.getElementById(inputId);
+
+  if (!input) return;
+
+  requestAnimationFrame(() => {
+    input.focus();
+    input.select();
+  });
+}
+
+function getProgramSearchEntries() {
+
+  return Object.entries(patches || {})
+    .map(([key, patch]) => {
+      const number = Number(key);
+      const controls = Array.isArray(patch?.controls) ? patch.controls : [];
+      const controlText = controls.map(control => {
+        const ctrlName = control.type === "MIDI"
+          ? (midiControllers[control.number] || `CC ${control.number}`)
+          : control.type;
+        return `${ctrlName} ${control.description || ""}`.trim();
+      });
+
+      return {
+        number,
+        type: "programs",
+        typeLabel: "Program",
+        name: String(patch?.name || "Unnamed Program"),
+        location: formatPatchLocation(number, "programs"),
+        meta: controlText.slice(0, 2).join(" | ") || "No notes",
+        searchText: [
+          number,
+          formatPatchLocation(number, "programs"),
+          patch?.name || "",
+          ...controlText,
+        ].join(" ").toLowerCase(),
+      };
+    })
+    .sort((a, b) => a.number - b.number);
+}
+
+function getSetupSearchEntries() {
+
+  return Object.keys(setups || {})
+    .map(key => {
+      const number = Number(key);
+      const setup = resolveSetupByNumber(number);
+      const ribbonText = setup?.longRibbonFunction || "No setup notes available";
+
+      return {
+        number,
+        type: "setups",
+        typeLabel: "Setup",
+        name: String(setup?.name || "Unnamed Setup"),
+        location: formatPatchLocation(number, "setups"),
+        meta: `Long Ribbon: ${ribbonText}`,
+        searchText: [
+          number,
+          formatPatchLocation(number, "setups"),
+          setup?.name || "",
+          ribbonText,
+        ].join(" ").toLowerCase(),
+      };
+    })
+    .filter(entry => entry.name)
+    .sort((a, b) => a.number - b.number);
+}
+
+function getCombinedSearchEntries() {
+  return [...getProgramSearchEntries(), ...getSetupSearchEntries()]
+    .sort((a, b) => {
+      const byName = a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+      if (byName !== 0) return byName;
+      const byType = a.typeLabel.localeCompare(b.typeLabel, undefined, { sensitivity: "base" });
+      if (byType !== 0) return byType;
+      return a.number - b.number;
+    });
+}
+
+function updateSearchFilterButtons() {
+
+  const programsButton = document.getElementById("filterProgramsButton");
+  const setupsButton = document.getElementById("filterSetupsButton");
+
+  programsButton?.classList.toggle("active", searchFilters.programs);
+  setupsButton?.classList.toggle("active", searchFilters.setups);
+}
+
+function toggleSearchFilter(filterKey) {
+
+  if (!(filterKey in searchFilters)) return;
+
+  const nextValue = !searchFilters[filterKey];
+  const activeCount = Object.values(searchFilters).filter(Boolean).length;
+
+  if (!nextValue && activeCount === 1) {
+    return;
+  }
+
+  searchFilters[filterKey] = nextValue;
+  updateSearchFilterButtons();
+  renderSearchResults(getPatchSearchQuery());
+}
+
+function openSearchResult(entry) {
+
+  if (!entry) return;
+
+  if (entry.type === "setups") {
+    showView("setups");
+    displayCatalogItem("setups", entry.number);
+    return;
+  }
+
+  showView("main");
+  displayCatalogItem("programs", entry.number);
+}
+
+function renderSearchResults(query = "") {
+
+  const container = document.getElementById("patchSearchResults");
+  const summary = document.getElementById("patchSearchSummary");
+
+  if (!container) return;
+
+  const text = query.trim().toLowerCase();
+  const entries = getCombinedSearchEntries();
+  const filteredEntries = entries.filter(entry => {
+    if (!searchFilters[entry.type]) {
+      return false;
+    }
+
+    return !text || entry.searchText.includes(text);
+  });
+
+  if (summary) {
+    summary.textContent = `${filteredEntries.length} shown`;
+  }
+
+  container.textContent = "";
+
+  if (filteredEntries.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "browser-empty";
+    empty.textContent = "No programs or setups match the search.";
+    container.appendChild(empty);
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  filteredEntries.forEach(entry => {
+    const item = document.createElement("div");
+    item.className = "browser-item";
+    item.dataset.type = entry.type;
+
+    if (currentDisplayedType === entry.type && currentDisplayedNumber === entry.number) {
+      item.classList.add("active");
+    }
+
+    const location = document.createElement("div");
+    location.className = "browser-item-location";
+    location.textContent = entry.location;
+
+    const type = document.createElement("div");
+    type.className = "browser-item-type";
+    type.textContent = entry.typeLabel;
+
+    const body = document.createElement("div");
+    body.className = "browser-item-body";
+
+    const name = document.createElement("div");
+    name.className = "browser-item-name";
+    name.textContent = entry.name;
+
+    const meta = document.createElement("div");
+    meta.className = "browser-item-meta";
+    meta.textContent = entry.meta;
+
+    body.appendChild(name);
+    body.appendChild(meta);
+    item.appendChild(location);
+    item.appendChild(type);
+    item.appendChild(body);
+    item.addEventListener("click", () => openSearchResult(entry));
+    fragment.appendChild(item);
+  });
+
+  container.appendChild(fragment);
+}
+
 
 /* ============================
    SETTINGS BUTTON (COG)
@@ -492,12 +723,23 @@ function setupWebButton() {
 
 function setupKdfxButton() {
 
+  const searchButton = document.getElementById("searchButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
   const modSourcesButton = document.getElementById("modSourcesButton");
   const kdfxButton = document.getElementById("kdfxButton");
   const modSourceSearch = document.getElementById("modSourceSearch");
   const searchInput = document.getElementById("kdfxSearch");
+  const patchSearch = document.getElementById("patchSearch");
+  const filterProgramsButton = document.getElementById("filterProgramsButton");
+  const filterSetupsButton = document.getElementById("filterSetupsButton");
+
+  if (searchButton) {
+    searchButton.addEventListener("click", () => {
+      showView("search");
+      renderSearchResults(getPatchSearchQuery());
+    });
+  }
 
   if (programsButton) {
     programsButton.addEventListener("click", () => {
@@ -528,6 +770,26 @@ function setupKdfxButton() {
     });
   }
 
+  if (patchSearch) {
+    patchSearch.addEventListener("input", () => {
+      renderSearchResults(patchSearch.value);
+    });
+  }
+
+  if (filterProgramsButton) {
+    filterProgramsButton.addEventListener("click", () => {
+      toggleSearchFilter("programs");
+    });
+  }
+
+  if (filterSetupsButton) {
+    filterSetupsButton.addEventListener("click", () => {
+      toggleSearchFilter("setups");
+    });
+  }
+
+  updateSearchFilterButtons();
+
   if (!kdfxButton) return;
 
   if (!kdfxLookup?.studiosById) {
@@ -551,8 +813,10 @@ function setupKdfxButton() {
 function showView(viewId) {
 
   const mainView = document.getElementById("mainView");
+  const searchView = document.getElementById("searchView");
   const modSourcesView = document.getElementById("modSourcesView");
   const kdfxView = document.getElementById("kdfxView");
+  const searchButton = document.getElementById("searchButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
   const modSourcesButton = document.getElementById("modSourcesButton");
@@ -560,35 +824,57 @@ function showView(viewId) {
 
   hideModSourceTooltip();
 
+  if (viewId === "search") {
+    mainView?.classList.add("hidden");
+    searchView?.classList.remove("hidden");
+    modSourcesView?.classList.add("hidden");
+    kdfxView?.classList.add("hidden");
+    searchButton?.classList.add("active");
+    programsButton?.classList.remove("active");
+    setupsButton?.classList.remove("active");
+    modSourcesButton?.classList.remove("active");
+    kdfxButton?.classList.remove("active");
+    focusPatchSearch();
+    return;
+  }
+
   if (viewId === "kdfx") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
+    searchView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.remove("hidden");
+    searchButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.add("active");
+    focusInputById("kdfxSearch");
     return;
   }
 
   if (viewId === "modsources") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
+    searchView?.classList.add("hidden");
     modSourcesView?.classList.remove("hidden");
     kdfxView?.classList.add("hidden");
+    searchButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     modSourcesButton?.classList.add("active");
     kdfxButton?.classList.remove("active");
+    focusInputById("modSourceSearch");
     return;
   }
 
   if (viewId === "setups") {
     selectedMode = "setups";
     mainView?.classList.remove("hidden");
+    searchView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
+    searchButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.add("active");
     modSourcesButton?.classList.remove("active");
@@ -598,8 +884,10 @@ function showView(viewId) {
 
   selectedMode = "programs";
   mainView?.classList.remove("hidden");
+  searchView?.classList.add("hidden");
   modSourcesView?.classList.add("hidden");
   kdfxView?.classList.add("hidden");
+  searchButton?.classList.remove("active");
   programsButton?.classList.add("active");
   setupsButton?.classList.remove("active");
   modSourcesButton?.classList.remove("active");

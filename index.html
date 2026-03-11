@@ -56,6 +56,7 @@
 <!-- TOP BUTTONS -->
 
 <div class="topButtons">
+  <div id="searchButton" class="searchButton k2600-button" title="Search Programs and Setups">Search</div>
   <div id="programsButton" class="programsButton k2600-button" title="Display Details about ROM Programs">Programs</div>
   <div id="setupsButton" class="setupsButton k2600-button" title="Display Details about Setups">Setups</div>
   <div id="modSourcesButton" class="modSourcesButton k2600-button" title="Display Modulation Sources and Constants">Mod Sources</div>
@@ -71,7 +72,6 @@
 <div id="mainView" class="rack">
 
   <div class="panel">
-
     <div class="lcd-frame">
       <div id="display">Waiting...</div>
     </div>
@@ -84,6 +84,29 @@
 
   </div>
 
+</div>
+
+<!-- SEARCH VIEW -->
+
+<div id="searchView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="browser-header">
+      <div class="kdfx-title">Search</div>
+      <input id="patchSearch" type="text" placeholder="Search programs and setups by name, location, or notes..." />
+    </div>
+
+    <div class="browser-toolbar">
+      <div id="patchSearchSummary" class="browser-summary" aria-live="polite"></div>
+      <div class="browser-filters">
+        <button id="filterProgramsButton" class="k2600-button active" type="button">Programs</button>
+        <button id="filterSetupsButton" class="k2600-button active" type="button">Setups</button>
+      </div>
+    </div>
+
+    <div id="patchSearchResults" class="browser-results">
+      Loading search...
+    </div>
+  </div>
 </div>
 
 <!-- KDFX STUDIOS VIEW -->

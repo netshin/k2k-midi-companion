@@ -187,6 +187,101 @@ body {
   box-sizing:border-box;
 }
 
+.browser-header {
+  display:flex;
+  gap:14px;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.browser-toolbar {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:16px;
+}
+
+.browser-summary {
+  min-width:96px;
+  color:#9fd0ff;
+  font-size:12px;
+  letter-spacing:0.7px;
+  text-align:left;
+}
+
+.browser-filters {
+  display:flex;
+  justify-content:flex-end;
+  gap:10px;
+  margin-left:auto;
+}
+
+.browser-filters .k2600-button {
+  min-width:96px;
+}
+
+.browser-results {
+  background:#101822;
+  border:1px solid #1e2c3b;
+  padding:6px;
+  min-height:500px;
+  max-height:calc(65vh + 88px);
+  overflow:auto;
+}
+
+.browser-item {
+  display:grid;
+  grid-template-columns:90px 76px minmax(0, 1fr);
+  column-gap:12px;
+  align-items:start;
+  padding:10px 12px;
+  border-bottom:1px solid #1e2c3b;
+  cursor:pointer;
+}
+
+.browser-item:hover,
+.browser-item.active {
+  background:#15314d;
+}
+
+.browser-item-location {
+  color:#ffd84d;
+  font-size:13px;
+  letter-spacing:0.7px;
+}
+
+.browser-item-body {
+  min-width:0;
+}
+
+.browser-item-type {
+  color:#7df0ff;
+  font-size:12px;
+  letter-spacing:0.8px;
+  text-transform:uppercase;
+}
+
+.browser-item-name {
+  color:#e7f7ff;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+.browser-item-meta {
+  margin-top:4px;
+  color:#90abc3;
+  font-size:12px;
+  line-height:1.35;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
+.browser-empty {
+  color:#90abc3;
+  padding:12px;
+}
+
 #notes {
   width:100%;
   max-width:100%;
@@ -364,7 +459,8 @@ body {
 }
 
 #kdfxSearch,
-#modSourceSearch {
+#modSourceSearch,
+#patchSearch {
   flex:1;
   height:40px;
   padding:0 12px;
@@ -534,14 +630,36 @@ body {
     grid-template-columns:1fr;
   }
 
+  .browser-results,
   .kdfx-list,
   .kdfx-detail {
     min-height:280px;
   }
 
+  .browser-header,
   .kdfx-header {
     flex-direction:column;
     align-items:stretch;
+  }
+
+  .browser-toolbar {
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .browser-item {
+    grid-template-columns:1fr;
+    row-gap:4px;
+  }
+
+  .browser-summary {
+    min-width:0;
+    text-align:left;
+  }
+
+  .browser-filters {
+    margin-left:0;
+    justify-content:flex-start;
   }
 
   .kdfx-line,
