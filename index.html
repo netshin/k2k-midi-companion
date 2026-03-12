@@ -59,6 +59,7 @@
   <div id="searchButton" class="searchButton k2600-button" title="Search Programs and Setups (Alt+R)">Search</div>
   <div id="programsButton" class="programsButton k2600-button" title="Display Details about ROM Programs (Alt+P)">Programs</div>
   <div id="setupsButton" class="setupsButton k2600-button" title="Display Details about Setups (Alt+S)">Setups</div>
+  <div id="dspButton" class="dspButton k2600-button" title="Display DSP Algorithms">DSP Algorithms</div>
   <div id="modSourcesButton" class="modSourcesButton k2600-button" title="Display Modulation Sources and Constants (Alt+M)">Mod Sources</div>
   <div id="kdfxButton" class="kdfxButton k2600-button" title="Display Details about KDFX Studio structure">KDFX Studios</div>
   <div id="settingsButton" class="settingsButton k2600-button" title="Configure Application (Alt+C)">Config</div>
@@ -105,6 +106,27 @@
 
     <div id="patchSearchResults" class="browser-results">
       Loading search...
+    </div>
+  </div>
+</div>
+
+<!-- DSP ALGORITHMS VIEW -->
+
+<div id="dspView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="kdfx-header">
+      <div class="kdfx-title">DSP Algorithms</div>
+      <input id="dspSearch" type="text" placeholder="Search algorithm number or block..." />
+    </div>
+
+    <div class="kdfx-grid">
+      <div id="dspAlgorithmList" class="kdfx-list"></div>
+      <div class="kdfx-detail-panel">
+        <div id="dspAlgorithmMeta" class="dsp-meta"></div>
+        <div id="dspAlgorithmDetail" class="kdfx-detail dsp-detail">
+          Select an algorithm to view its stages.
+        </div>
+      </div>
     </div>
   </div>
 </div>

@@ -6,6 +6,7 @@
   "patchDataPath": "k2600_programs.json",
   "setupDataPath": "k2600_setups.json",
   "kdfxLookupDataPath": "k2600_kdfx_lookup.json",
+  "dspAlgorithmDataPath": "k2600_dsp_algorithms.json",
   "controllerDataPath": "k2600_controllers.json",
   "locationDigits": 3,
   "setupLocationDigits": 2,

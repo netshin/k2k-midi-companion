@@ -17,7 +17,8 @@
         "k2600_kdfx_algorithems.json",
         "k2600_kdfx_lookup.json",
         "k2600_midi_cc.json",
-        "k2600_mod_sources.json"
+        "k2600_mod_sources.json",
+        "k2600_dsp_algorithms.json"
       ]
     }
   ]

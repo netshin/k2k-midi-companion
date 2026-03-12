@@ -9,6 +9,7 @@ let setups = {};
 let midiControllers = {};
 let modSources = {};
 let kdfxLookup = null;
+let dspAlgorithms = null;
 let synthModel = null;
 let selectedModelEntry = null;
 let modelBasePath = "";
@@ -16,6 +17,7 @@ let mySynth = null;
 let selectedMidiInput = null;
 let selectedMode = "programs";
 let selectedKdfxStudioId = null;
+let selectedDspAlgorithmId = null;
 let modSourceTooltipHideTimer = null;
 let selectedProgramNumber = null;
 let selectedSetupNumber = null;
@@ -84,6 +86,13 @@ async function loadData() {
     const kdfxResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.kdfxLookupDataPath)));
     if (kdfxResponse.ok) {
       kdfxLookup = await kdfxResponse.json();
+    }
+  }
+
+  if (synthModel.dspAlgorithmDataPath) {
+    const dspResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.dspAlgorithmDataPath)));
+    if (dspResponse.ok) {
+      dspAlgorithms = await dspResponse.json();
     }
   }
 
@@ -726,8 +735,10 @@ function setupKdfxButton() {
   const searchButton = document.getElementById("searchButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
+  const dspButton = document.getElementById("dspButton");
   const modSourcesButton = document.getElementById("modSourcesButton");
   const kdfxButton = document.getElementById("kdfxButton");
+  const dspSearch = document.getElementById("dspSearch");
   const modSourceSearch = document.getElementById("modSourceSearch");
   const searchInput = document.getElementById("kdfxSearch");
   const patchSearch = document.getElementById("patchSearch");
@@ -767,6 +778,23 @@ function setupKdfxButton() {
   if (modSourceSearch) {
     modSourceSearch.addEventListener("input", () => {
       renderModSources(modSourceSearch.value);
+    });
+  }
+
+  if (dspButton) {
+    if (!dspAlgorithms?.algorithmsById) {
+      dspButton.classList.add("hidden");
+    } else {
+      dspButton.addEventListener("click", () => {
+        showView("dsp");
+        renderDspAlgorithmList(dspSearch?.value || "");
+      });
+    }
+  }
+
+  if (dspSearch) {
+    dspSearch.addEventListener("input", () => {
+      renderDspAlgorithmList(dspSearch.value);
     });
   }
 
@@ -814,11 +842,13 @@ function showView(viewId) {
 
   const mainView = document.getElementById("mainView");
   const searchView = document.getElementById("searchView");
+  const dspView = document.getElementById("dspView");
   const modSourcesView = document.getElementById("modSourcesView");
   const kdfxView = document.getElementById("kdfxView");
   const searchButton = document.getElementById("searchButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
+  const dspButton = document.getElementById("dspButton");
   const modSourcesButton = document.getElementById("modSourcesButton");
   const kdfxButton = document.getElementById("kdfxButton");
 
@@ -827,14 +857,33 @@ function showView(viewId) {
   if (viewId === "search") {
     mainView?.classList.add("hidden");
     searchView?.classList.remove("hidden");
+    dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.add("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
+    dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
     focusPatchSearch();
+    return;
+  }
+
+  if (viewId === "dsp") {
+    selectedMode = "programs";
+    mainView?.classList.add("hidden");
+    searchView?.classList.add("hidden");
+    dspView?.classList.remove("hidden");
+    modSourcesView?.classList.add("hidden");
+    kdfxView?.classList.add("hidden");
+    searchButton?.classList.remove("active");
+    programsButton?.classList.remove("active");
+    setupsButton?.classList.remove("active");
+    dspButton?.classList.add("active");
+    modSourcesButton?.classList.remove("active");
+    kdfxButton?.classList.remove("active");
+    focusInputById("dspSearch");
     return;
   }
 
@@ -842,11 +891,13 @@ function showView(viewId) {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
+    dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.remove("hidden");
     searchButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
+    dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.add("active");
     focusInputById("kdfxSearch");
@@ -857,11 +908,13 @@ function showView(viewId) {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
+    dspView?.classList.add("hidden");
     modSourcesView?.classList.remove("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
+    dspButton?.classList.remove("active");
     modSourcesButton?.classList.add("active");
     kdfxButton?.classList.remove("active");
     focusInputById("modSourceSearch");
@@ -872,11 +925,13 @@ function showView(viewId) {
     selectedMode = "setups";
     mainView?.classList.remove("hidden");
     searchView?.classList.add("hidden");
+    dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.add("active");
+    dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
     return;
@@ -885,11 +940,13 @@ function showView(viewId) {
   selectedMode = "programs";
   mainView?.classList.remove("hidden");
   searchView?.classList.add("hidden");
+  dspView?.classList.add("hidden");
   modSourcesView?.classList.add("hidden");
   kdfxView?.classList.add("hidden");
   searchButton?.classList.remove("active");
   programsButton?.classList.add("active");
   setupsButton?.classList.remove("active");
+  dspButton?.classList.remove("active");
   modSourcesButton?.classList.remove("active");
   kdfxButton?.classList.remove("active");
 }
@@ -1141,6 +1198,157 @@ function renderKdfxDetail(studioId) {
   });
 
   detail.innerHTML = `<h3>${String(studio.id).padStart(3, "0")} ${studio.name}</h3>${lines.join("")}`;
+}
+
+function getDspAlgorithmEntries() {
+
+  if (!dspAlgorithms?.algorithmsById) {
+    return [];
+  }
+
+  return Object.values(dspAlgorithms.algorithmsById)
+    .map(algorithm => {
+      const stages = Array.isArray(algorithm.stages) ? algorithm.stages : [];
+      const blockLabels = stages.flatMap(stage => {
+        const optionSet = dspAlgorithms.optionSetsById?.[stage.optionSetId];
+        const blockIds = Array.isArray(optionSet?.blockIds) ? optionSet.blockIds : [];
+        return blockIds.map(blockId => dspAlgorithms.blocksById?.[blockId]?.label || blockId);
+      });
+
+      return {
+        id: Number(algorithm.algorithmId),
+        stageCount: stages.length,
+        labels: blockLabels,
+        sourcePage: algorithm.sourcePage || "",
+        searchText: [
+          algorithm.algorithmId,
+          algorithm.sourcePage || "",
+          ...blockLabels,
+        ].join(" ").toLowerCase(),
+      };
+    })
+    .sort((a, b) => a.id - b.id);
+}
+
+function renderDspAlgorithmList(query = "") {
+
+  if (!dspAlgorithms?.algorithmsById) return;
+
+  const container = document.getElementById("dspAlgorithmList");
+  if (!container) return;
+
+  const text = query.trim().toLowerCase();
+  const entries = getDspAlgorithmEntries()
+    .filter(entry => !text || entry.searchText.includes(text));
+
+  container.textContent = "";
+
+  if (entries.length === 0) {
+    container.textContent = "No DSP algorithms match the search.";
+    renderDspAlgorithmDetail(null);
+    return;
+  }
+
+  const visibleSelected = entries.some(entry => entry.id === selectedDspAlgorithmId);
+  if (!visibleSelected) {
+    selectedDspAlgorithmId = entries[0].id;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  entries.forEach(entry => {
+    const item = document.createElement("div");
+    item.className = "kdfx-list-item";
+
+    if (selectedDspAlgorithmId === entry.id) {
+      item.classList.add("active");
+    }
+
+    const title = document.createElement("div");
+    title.textContent = `Algorithm ${entry.id}`;
+
+    const meta = document.createElement("span");
+    meta.className = "dsp-list-item-meta";
+    meta.textContent = `${entry.stageCount} stages | ${entry.labels.slice(0, 3).join(" | ")}`;
+
+    item.appendChild(title);
+    item.appendChild(meta);
+    item.addEventListener("click", () => {
+      selectedDspAlgorithmId = entry.id;
+      renderDspAlgorithmDetail(entry.id);
+      renderDspAlgorithmList(query);
+    });
+    fragment.appendChild(item);
+  });
+
+  container.appendChild(fragment);
+  renderDspAlgorithmDetail(selectedDspAlgorithmId);
+}
+
+function renderDspAlgorithmDetail(algorithmId) {
+
+  const meta = document.getElementById("dspAlgorithmMeta");
+  const detail = document.getElementById("dspAlgorithmDetail");
+
+  if (!detail) return;
+
+  if (!algorithmId || !dspAlgorithms?.algorithmsById?.[String(algorithmId)]) {
+    if (meta) {
+      meta.textContent = "";
+    }
+    detail.textContent = "Select an algorithm to view its stages.";
+    return;
+  }
+
+  const algorithm = dspAlgorithms.algorithmsById[String(algorithmId)];
+  const stages = Array.isArray(algorithm.stages) ? algorithm.stages : [];
+
+  detail.textContent = "";
+
+  const heading = document.createElement("h3");
+  heading.textContent = `Algorithm ${algorithm.algorithmId}`;
+  detail.appendChild(heading);
+
+  if (meta) {
+    meta.textContent = `${stages.length} stages | Source: ${algorithm.sourcePage || "Unknown page"}`;
+  }
+
+  const grid = document.createElement("div");
+  grid.className = "dsp-stage-grid";
+
+  stages.forEach((stage, index) => {
+    const optionSet = dspAlgorithms.optionSetsById?.[stage.optionSetId];
+    const blockIds = Array.isArray(optionSet?.blockIds) ? optionSet.blockIds : [];
+
+    const card = document.createElement("div");
+    card.className = `dsp-stage dsp-stage-${stage.kind === "fixed" ? "fixed" : "choice"}`;
+
+    const title = document.createElement("div");
+    title.className = "dsp-stage-title";
+    title.textContent = `Stage ${index + 1}`;
+
+    const kind = document.createElement("span");
+    kind.className = "dsp-stage-kind";
+    kind.textContent = stage.kind === "fixed" ? "Fixed Block" : "Selectable Blocks";
+
+    const options = document.createElement("div");
+    options.className = "dsp-stage-options";
+
+    blockIds.forEach(blockId => {
+      const block = dspAlgorithms.blocksById?.[blockId];
+      const option = document.createElement("span");
+      option.className = "dsp-option";
+      option.textContent = block?.label || blockId;
+      options.appendChild(option);
+    });
+
+    card.appendChild(title);
+    card.appendChild(kind);
+    card.appendChild(options);
+    grid.appendChild(card);
+  });
+
+  detail.appendChild(grid);
 }
 
 
