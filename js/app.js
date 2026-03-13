@@ -10,6 +10,7 @@ let midiControllers = {};
 let modSources = {};
 let kdfxLookup = null;
 let dspAlgorithms = null;
+let dspBlockDetails = {};
 let synthModel = null;
 let selectedModelEntry = null;
 let modelBasePath = "";
@@ -19,6 +20,7 @@ let selectedMode = "programs";
 let selectedKdfxStudioId = null;
 let selectedDspAlgorithmId = null;
 let modSourceTooltipHideTimer = null;
+let dspTooltipHideTimer = null;
 let selectedProgramNumber = null;
 let selectedSetupNumber = null;
 let currentDisplayedType = "programs";
@@ -93,6 +95,13 @@ async function loadData() {
     const dspResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.dspAlgorithmDataPath)));
     if (dspResponse.ok) {
       dspAlgorithms = await dspResponse.json();
+    }
+  }
+
+  if (synthModel.dspBlockDetailDataPath) {
+    const dspBlockResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.dspBlockDetailDataPath)));
+    if (dspBlockResponse.ok) {
+      dspBlockDetails = await dspBlockResponse.json();
     }
   }
 
@@ -853,6 +862,7 @@ function showView(viewId) {
   const kdfxButton = document.getElementById("kdfxButton");
 
   hideModSourceTooltip();
+  hideDspTooltip();
 
   if (viewId === "search") {
     mainView?.classList.add("hidden");
@@ -1056,6 +1066,25 @@ function hideModSourceTooltip() {
   tooltip.classList.add("hidden");
 }
 
+function clearDspTooltipHideTimer() {
+  if (!dspTooltipHideTimer) return;
+  clearTimeout(dspTooltipHideTimer);
+  dspTooltipHideTimer = null;
+}
+
+function hideDspTooltip() {
+  const tooltip = document.getElementById("dspTooltip");
+  if (!tooltip) return;
+  tooltip.classList.add("hidden");
+}
+
+function scheduleHideDspTooltip() {
+  clearDspTooltipHideTimer();
+  dspTooltipHideTimer = setTimeout(() => {
+    hideDspTooltip();
+  }, 180);
+}
+
 function scheduleHideModSourceTooltip() {
   clearHideModSourceTooltipTimer();
   modSourceTooltipHideTimer = setTimeout(() => {
@@ -1092,6 +1121,114 @@ function showModSourceTooltip(text, anchorEl) {
 
   tooltip.style.left = `${left}px`;
   tooltip.style.top = `${top}px`;
+}
+
+function showDspTooltip(content, anchorEl) {
+
+  const tooltip = document.getElementById("dspTooltip");
+  if (!tooltip || !anchorEl) return;
+
+  clearDspTooltipHideTimer();
+
+  tooltip.textContent = "";
+  tooltip.classList.remove("hidden");
+  tooltip.onmouseenter = () => clearDspTooltipHideTimer();
+  tooltip.onmouseleave = () => scheduleHideDspTooltip();
+
+  const headerText = String(content?.header || "").trim();
+  const bodyText = String(content?.body || "").trim();
+
+  if (headerText) {
+    const header = document.createElement("span");
+    header.className = "tooltip-header";
+    header.textContent = headerText;
+    tooltip.appendChild(header);
+  }
+
+  if (bodyText) {
+    const lines = bodyText
+      .split("\n")
+      .map(line => line.trim().replace(/\.\s*$/, ""))
+      .filter(Boolean);
+
+    if (lines.length > 0) {
+      const list = document.createElement("ul");
+      list.className = "tooltip-body tooltip-list";
+
+      lines.forEach(line => {
+        const item = document.createElement("li");
+        item.textContent = line;
+        list.appendChild(item);
+      });
+
+      tooltip.appendChild(list);
+    }
+  }
+
+  const rect = anchorEl.getBoundingClientRect();
+  const tipRect = tooltip.getBoundingClientRect();
+  const margin = 12;
+
+  let left = rect.left - tipRect.width - margin;
+  if (left < margin) {
+    left = Math.min(window.innerWidth - tipRect.width - margin, rect.right + margin);
+  }
+
+  let top = rect.top;
+  if (top + tipRect.height > window.innerHeight - margin) {
+    top = window.innerHeight - tipRect.height - margin;
+  }
+  if (top < margin) {
+    top = margin;
+  }
+
+  tooltip.style.left = `${left}px`;
+  tooltip.style.top = `${top}px`;
+}
+
+function getDspBlockDetail(blockId) {
+
+  const directDetail = dspBlockDetails?.[blockId];
+  const blockLabel = String(dspAlgorithms?.blocksById?.[blockId]?.label || "").trim();
+  const normalizedLabelKey = blockLabel
+    .toLowerCase()
+    .replace(/\+/g, " plus ")
+    .replace(/!/g, " bang ")
+    .replace(/&/g, " and ")
+    .replace(/\//g, " ")
+    .replace(/[^a-z0-9]+/g, "_")
+    .replace(/_+/g, "_")
+    .replace(/^_+|_+$/g, "");
+  const detail = directDetail || dspBlockDetails?.[normalizedLabelKey];
+
+  if (!detail) {
+    return null;
+  }
+
+  if (typeof detail === "string") {
+    const text = detail.trim();
+    if (!text) return null;
+    return {
+      header: "",
+      body: text,
+    };
+  }
+
+  if (typeof detail === "object") {
+    const explicitHeader = String(detail.header || "").trim();
+    const text = String(detail.details || detail.description || "").trim();
+
+    if (!explicitHeader && !text) {
+      return null;
+    }
+
+    return {
+      header: explicitHeader,
+      body: text,
+    };
+  }
+
+  return null;
 }
 
 function renderKdfxList(query = "") {
@@ -1336,9 +1473,42 @@ function renderDspAlgorithmDetail(algorithmId) {
 
     blockIds.forEach(blockId => {
       const block = dspAlgorithms.blocksById?.[blockId];
-      const option = document.createElement("span");
+      const blockDetail = getDspBlockDetail(blockId);
+      const option = document.createElement("div");
       option.className = "dsp-option";
-      option.textContent = block?.label || blockId;
+      
+      const optionLabel = document.createElement("span");
+      optionLabel.className = "dsp-option-label";
+      optionLabel.textContent = block?.label || blockId;
+      option.appendChild(optionLabel);
+
+      if (blockDetail) {
+        const info = document.createElement("span");
+        info.className = "modsrc-info";
+        info.textContent = "i";
+        info.title = "Show details";
+        info.tabIndex = 0;
+        info.setAttribute("role", "button");
+        info.setAttribute("aria-label", `Show details for ${block?.label || blockId}`);
+
+        const show = () => showDspTooltip(blockDetail, info);
+        const hide = () => scheduleHideDspTooltip();
+
+        info.addEventListener("mouseenter", show);
+        info.addEventListener("mouseleave", hide);
+        info.addEventListener("focus", show);
+        info.addEventListener("blur", hide);
+        info.addEventListener("click", show);
+        info.addEventListener("keydown", e => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            show();
+          }
+        });
+
+        option.appendChild(info);
+      }
+
       options.appendChild(option);
     });
 

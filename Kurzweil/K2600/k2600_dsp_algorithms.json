@@ -84,7 +84,7 @@
       "label": "HIPASS"
     },
     "alpass": {
-      "label": "ALPASS"
+      "label": "ALLPASS"
     },
     "gain": {
       "label": "GAIN"

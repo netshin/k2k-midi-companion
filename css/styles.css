@@ -591,6 +591,8 @@ body {
 .dsp-option {
   display:flex;
   align-items:center;
+  justify-content:space-between;
+  gap:10px;
   min-height:28px;
   padding:6px 8px;
   border:1px solid #3a556f;
@@ -602,9 +604,19 @@ body {
   line-height:1.25;
 }
 
+.dsp-option-label {
+  min-width:0;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
 .dsp-stage-fixed .dsp-option {
   border-color:#5e8fb1;
   color:#7df0ff;
+}
+
+.dsp-option .modsrc-info {
+  flex:0 0 auto;
 }
 
 .kdfx-line {
@@ -714,6 +726,26 @@ body {
   border-radius:6px;
   padding:10px 12px;
   box-shadow:0 12px 36px rgba(0,0,0,0.65), inset 0 0 10px rgba(0,0,0,0.45);
+}
+
+.tooltip-header {
+  display:block;
+  margin-bottom:8px;
+  color:#ffd84d;
+  font-weight:bold;
+}
+
+.tooltip-body {
+  display:block;
+}
+
+.tooltip-list {
+  margin:0;
+  padding-left:18px;
+}
+
+.tooltip-list li + li {
+  margin-top:6px;
 }
 
 @media (max-width: 920px) {

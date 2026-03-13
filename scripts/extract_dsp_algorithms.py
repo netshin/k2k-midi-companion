@@ -23,7 +23,8 @@ LINE_Y_TOLERANCE = 3
 
 
 def normalize_label(text: str) -> str:
-    return re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
+    label = re.sub(r"\s+", " ", text.replace("\n", " ")).strip()
+    return label.replace("ALPASS", "ALLPASS")
 
 
 def slugify_label(label: str) -> str:
