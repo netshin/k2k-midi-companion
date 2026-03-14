@@ -8,6 +8,7 @@
   "kdfxLookupDataPath": "k2600_kdfx_lookup.json",
   "dspAlgorithmDataPath": "k2600_dsp_algorithms.json",
   "dspBlockDetailDataPath": "k2600_dsp_block_details.json",
+  "keymapDataPath": "k2600_keymaps.json",
   "controllerDataPath": "k2600_controllers.json",
   "locationDigits": 3,
   "setupLocationDigits": 2,

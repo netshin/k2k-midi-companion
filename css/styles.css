@@ -510,7 +510,8 @@ body {
 #dspSearch,
 #modSourceSearch,
 #patchSearch,
-#favoritesSearch {
+#favoritesSearch,
+#keymapsSearch {
   flex:1;
   height:40px;
   padding:0 12px;

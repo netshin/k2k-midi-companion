@@ -72,9 +72,10 @@
   <div id="favoritesButton" class="favoritesButton k2600-button" title="Display Favorite Programs and Setups (Alt+F)">Favorites</div>
   <div id="programsButton" class="programsButton k2600-button" title="Display Details about ROM Programs (Alt+P)">Programs</div>
   <div id="setupsButton" class="setupsButton k2600-button" title="Display Details about Setups (Alt+S)">Setups</div>
-  <div id="dspButton" class="dspButton k2600-button" title="Display DSP Algorithms">DSP Algorithms</div>
+  <div id="keymapsButton" class="keymapsButton k2600-button" title="Display Keymaps">Keymaps</div>
   <div id="modSourcesButton" class="modSourcesButton k2600-button" title="Display Modulation Sources and Constants (Alt+M)">Mod Sources</div>
   <div id="kdfxButton" class="kdfxButton k2600-button" title="Display Details about KDFX Studio structure">KDFX Studios</div>
+  <div id="dspButton" class="dspButton k2600-button" title="Display DSP Algorithms">DSP Algorithms</div>
   <div id="settingsButton" class="settingsButton k2600-button" title="Configure Application (Alt+C)">Config</div>
   <div id="webButton" class="webButton k2600-button" title="Visit support for your synth">Web</div>
 </div>
@@ -144,6 +145,26 @@
 
     <div id="favoritesResults" class="browser-results">
       Loading favorites...
+    </div>
+  </div>
+</div>
+
+<!-- KEYMAPS VIEW -->
+
+<div id="keymapsView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="browser-header">
+      <div class="kdfx-title">Keymaps</div>
+      <input id="keymapsSearch" type="text" placeholder="Search keymaps by number, name, or category..." />
+    </div>
+
+    <div class="browser-toolbar">
+      <div id="keymapsSummary" class="browser-summary" aria-live="polite"></div>
+      <div id="keymapsFilters" class="browser-filters"></div>
+    </div>
+
+    <div id="keymapsResults" class="browser-results">
+      Loading keymaps...
     </div>
   </div>
 </div>

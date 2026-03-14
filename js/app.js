@@ -11,6 +11,7 @@ let modSources = {};
 let kdfxLookup = null;
 let dspAlgorithms = null;
 let dspBlockDetails = {};
+let keymapsData = null;
 let synthModel = null;
 let selectedModelEntry = null;
 let modelBasePath = "";
@@ -38,6 +39,7 @@ let favoritesState = {
   setups: [],
 };
 let favoritesSortMode = "type";
+let keymapFilters = {};
 
 let myBankMSB = 0;
 let myBankLSB = 0;
@@ -57,6 +59,19 @@ function withCacheVersion(path) {
   return `${path}${sep}v=${encodeURIComponent(version)}`;
 }
 
+async function fetchJson(path, label) {
+  const versionedPath = withCacheVersion(path);
+  const response = await fetch(versionedPath);
+
+  if (!response.ok) {
+    console.error(`[load] Failed ${label}: ${versionedPath} (${response.status})`);
+    throw new Error(`Failed to load ${label}: ${path}`);
+  }
+
+  console.log(`[load] ${label}: ${versionedPath}`);
+  return response.json();
+}
+
 
 /* ============================
    LOAD DATA FILES
@@ -65,53 +80,38 @@ function withCacheVersion(path) {
 async function loadData() {
 
   const modelConfigPath = await resolveModelConfigPathFromIndex();
-  const modelResponse = await fetch(withCacheVersion(modelConfigPath));
-
-  if (!modelResponse.ok) {
-    throw new Error(`Failed to load model config: ${modelConfigPath}`);
-  }
-
-  synthModel = await modelResponse.json();
+  synthModel = await fetchJson(modelConfigPath, "model config");
   modelBasePath = dirname(modelConfigPath);
 
-  const patchResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.patchDataPath)));
-  patches = await patchResponse.json();
+  patches = await fetchJson(resolveModelPath(synthModel.patchDataPath), "patch data");
 
   const midiCcPath = synthModel.midiCcDataPath || synthModel.controllerDataPath;
-  const midiCcResponse = await fetch(withCacheVersion(resolveModelPath(midiCcPath)));
-  midiControllers = await midiCcResponse.json();
+  midiControllers = await fetchJson(resolveModelPath(midiCcPath), "controller data");
 
   if (synthModel.modSourceDataPath) {
-    const modSourceResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.modSourceDataPath)));
-    modSources = await modSourceResponse.json();
+    modSources = await fetchJson(resolveModelPath(synthModel.modSourceDataPath), "mod source data");
   } else {
     modSources = {};
   }
 
   if (synthModel.setupDataPath) {
-    const setupResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.setupDataPath)));
-    setups = await setupResponse.json();
+    setups = await fetchJson(resolveModelPath(synthModel.setupDataPath), "setup data");
   }
 
   if (synthModel.kdfxLookupDataPath) {
-    const kdfxResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.kdfxLookupDataPath)));
-    if (kdfxResponse.ok) {
-      kdfxLookup = await kdfxResponse.json();
-    }
+    kdfxLookup = await fetchJson(resolveModelPath(synthModel.kdfxLookupDataPath), "kdfx lookup data");
   }
 
   if (synthModel.dspAlgorithmDataPath) {
-    const dspResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.dspAlgorithmDataPath)));
-    if (dspResponse.ok) {
-      dspAlgorithms = await dspResponse.json();
-    }
+    dspAlgorithms = await fetchJson(resolveModelPath(synthModel.dspAlgorithmDataPath), "dsp algorithm data");
   }
 
   if (synthModel.dspBlockDetailDataPath) {
-    const dspBlockResponse = await fetch(withCacheVersion(resolveModelPath(synthModel.dspBlockDetailDataPath)));
-    if (dspBlockResponse.ok) {
-      dspBlockDetails = await dspBlockResponse.json();
-    }
+    dspBlockDetails = await fetchJson(resolveModelPath(synthModel.dspBlockDetailDataPath), "dsp block detail data");
+  }
+
+  if (synthModel.keymapDataPath) {
+    keymapsData = await fetchJson(resolveModelPath(synthModel.keymapDataPath), "keymap data");
   }
 
   console.log("JSON loaded");
@@ -120,13 +120,7 @@ async function loadData() {
 async function resolveModelConfigPathFromIndex() {
 
   const indexPath = CONFIG?.modelsIndexPath || "models/index.json";
-  const response = await fetch(withCacheVersion(indexPath));
-
-  if (!response.ok) {
-    throw new Error(`Failed to load models index: ${indexPath}`);
-  }
-
-  const index = await response.json();
+  const index = await fetchJson(indexPath, "models index");
   const models = Array.isArray(index.models) ? index.models : [];
 
   if (models.length === 0) {
@@ -871,6 +865,161 @@ function renderFavoritesResults(query = "") {
   container.appendChild(fragment);
 }
 
+function getKeymapSearchQuery() {
+  return document.getElementById("keymapsSearch")?.value || "";
+}
+
+function focusKeymapsSearch() {
+  focusInputById("keymapsSearch");
+}
+
+function getKeymapCategories() {
+  const sourceCategories = Array.isArray(keymapsData?.source?.categories)
+    ? keymapsData.source.categories
+    : [];
+  const romCards = Array.isArray(synthModel?.romCards) ? synthModel.romCards : [];
+
+  return sourceCategories.map(category => {
+    if (category.id === "base_rom") {
+      return {
+        id: category.id,
+        label: "Base ROM",
+      };
+    }
+
+    const romCard = romCards.find(card => card.id === category.id);
+    return {
+      id: category.id,
+      label: romCard?.label || category.label || category.id,
+    };
+  });
+}
+
+function initializeKeymapFilters() {
+  const categories = getKeymapCategories();
+  keymapFilters = {};
+  categories.forEach(category => {
+    keymapFilters[category.id] = true;
+  });
+}
+
+function renderKeymapFilterButtons() {
+  const container = document.getElementById("keymapsFilters");
+
+  if (!container) return;
+
+  container.textContent = "";
+
+  getKeymapCategories().forEach(category => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "k2600-button";
+    button.textContent = category.label;
+    button.classList.toggle("active", keymapFilters[category.id] !== false);
+    button.addEventListener("click", () => {
+      toggleKeymapFilter(category.id);
+    });
+    container.appendChild(button);
+  });
+}
+
+function toggleKeymapFilter(categoryId) {
+  if (!(categoryId in keymapFilters)) return;
+
+  const nextValue = !keymapFilters[categoryId];
+  const activeCount = Object.values(keymapFilters).filter(Boolean).length;
+
+  if (!nextValue && activeCount === 1) {
+    return;
+  }
+
+  keymapFilters[categoryId] = nextValue;
+  renderKeymapFilterButtons();
+  renderKeymaps(getKeymapSearchQuery());
+}
+
+function getKeymapEntries() {
+  const categoriesById = Object.fromEntries(getKeymapCategories().map(category => [category.id, category.label]));
+
+  return Array.isArray(keymapsData?.keymaps)
+    ? keymapsData.keymaps.map(entry => ({
+        number: Number(entry.number),
+        name: String(entry.name || ""),
+        categoryId: String(entry.categoryId || ""),
+        categoryLabel: categoriesById[entry.categoryId] || String(entry.categoryLabel || entry.categoryId || ""),
+        location: formatPatchLocation(Number(entry.number), "programs"),
+        searchText: [
+          entry.number,
+          formatPatchLocation(Number(entry.number), "programs"),
+          entry.name || "",
+          categoriesById[entry.categoryId] || entry.categoryLabel || entry.categoryId || "",
+        ].join(" ").toLowerCase(),
+      }))
+      .sort((a, b) => a.number - b.number)
+    : [];
+}
+
+function renderKeymaps(query = "") {
+  const container = document.getElementById("keymapsResults");
+  const summary = document.getElementById("keymapsSummary");
+
+  if (!container) return;
+
+  const text = query.trim().toLowerCase();
+  const entries = getKeymapEntries();
+  const filteredEntries = entries.filter(entry => {
+    if (keymapFilters[entry.categoryId] === false) {
+      return false;
+    }
+
+    return !text || entry.searchText.includes(text);
+  });
+
+  if (summary) {
+    summary.textContent = `${filteredEntries.length} shown`;
+  }
+
+  container.textContent = "";
+
+  if (filteredEntries.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "browser-empty";
+    empty.textContent = "No keymaps match the search.";
+    container.appendChild(empty);
+    return;
+  }
+
+  const fragment = document.createDocumentFragment();
+
+  filteredEntries.forEach(entry => {
+    const item = document.createElement("div");
+    item.className = "browser-item";
+
+    const location = document.createElement("div");
+    location.className = "browser-item-location";
+    location.textContent = entry.location;
+
+    const type = document.createElement("div");
+    type.className = "browser-item-type";
+    type.textContent = entry.categoryLabel;
+
+    const body = document.createElement("div");
+    body.className = "browser-item-body";
+
+    const name = document.createElement("div");
+    name.className = "browser-item-name";
+    name.textContent = entry.name;
+
+    body.appendChild(name);
+    item.appendChild(location);
+    item.appendChild(type);
+    item.appendChild(body);
+    fragment.appendChild(item);
+  });
+
+  container.appendChild(fragment);
+}
+
 
 /* ============================
    SETTINGS BUTTON (COG)
@@ -916,6 +1065,7 @@ function setupKdfxButton() {
 
   const searchButton = document.getElementById("searchButton");
   const favoritesButton = document.getElementById("favoritesButton");
+  const keymapsButton = document.getElementById("keymapsButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
   const dspButton = document.getElementById("dspButton");
@@ -926,6 +1076,7 @@ function setupKdfxButton() {
   const searchInput = document.getElementById("kdfxSearch");
   const patchSearch = document.getElementById("patchSearch");
   const favoritesSearch = document.getElementById("favoritesSearch");
+  const keymapsSearch = document.getElementById("keymapsSearch");
   const filterProgramsButton = document.getElementById("filterProgramsButton");
   const filterSetupsButton = document.getElementById("filterSetupsButton");
   const favoritesFilterProgramsButton = document.getElementById("favoritesFilterProgramsButton");
@@ -945,6 +1096,17 @@ function setupKdfxButton() {
       showView("favorites");
       renderFavoritesResults(getFavoritesSearchQuery());
     });
+  }
+
+  if (keymapsButton) {
+    if (!Array.isArray(keymapsData?.keymaps) || keymapsData.keymaps.length === 0) {
+      keymapsButton.classList.add("hidden");
+    } else {
+      keymapsButton.addEventListener("click", () => {
+        showView("keymaps");
+        renderKeymaps(getKeymapSearchQuery());
+      });
+    }
   }
 
   if (programsButton) {
@@ -1005,6 +1167,12 @@ function setupKdfxButton() {
     });
   }
 
+  if (keymapsSearch) {
+    keymapsSearch.addEventListener("input", () => {
+      renderKeymaps(keymapsSearch.value);
+    });
+  }
+
   if (filterProgramsButton) {
     filterProgramsButton.addEventListener("click", () => {
       toggleSearchFilter("programs");
@@ -1049,6 +1217,7 @@ function setupKdfxButton() {
   updateFavoritesFilterButtons();
   updateFavoritesSortButton();
   updateFavoriteToggleButton();
+  renderKeymapFilterButtons();
 
   if (!kdfxButton) return;
 
@@ -1075,11 +1244,13 @@ function showView(viewId) {
   const mainView = document.getElementById("mainView");
   const searchView = document.getElementById("searchView");
   const favoritesView = document.getElementById("favoritesView");
+  const keymapsView = document.getElementById("keymapsView");
   const dspView = document.getElementById("dspView");
   const modSourcesView = document.getElementById("modSourcesView");
   const kdfxView = document.getElementById("kdfxView");
   const searchButton = document.getElementById("searchButton");
   const favoritesButton = document.getElementById("favoritesButton");
+  const keymapsButton = document.getElementById("keymapsButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
   const dspButton = document.getElementById("dspButton");
@@ -1093,11 +1264,13 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.remove("hidden");
     favoritesView?.classList.add("hidden");
+    keymapsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.add("active");
     favoritesButton?.classList.remove("active");
+    keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -1112,11 +1285,13 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.remove("hidden");
+    keymapsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.add("active");
+    keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -1126,16 +1301,39 @@ function showView(viewId) {
     return;
   }
 
+  if (viewId === "keymaps") {
+    selectedMode = "programs";
+    mainView?.classList.add("hidden");
+    searchView?.classList.add("hidden");
+    favoritesView?.classList.add("hidden");
+    keymapsView?.classList.remove("hidden");
+    dspView?.classList.add("hidden");
+    modSourcesView?.classList.add("hidden");
+    kdfxView?.classList.add("hidden");
+    searchButton?.classList.remove("active");
+    favoritesButton?.classList.remove("active");
+    keymapsButton?.classList.add("active");
+    programsButton?.classList.remove("active");
+    setupsButton?.classList.remove("active");
+    dspButton?.classList.remove("active");
+    modSourcesButton?.classList.remove("active");
+    kdfxButton?.classList.remove("active");
+    focusKeymapsSearch();
+    return;
+  }
+
   if (viewId === "dsp") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    keymapsView?.classList.add("hidden");
     dspView?.classList.remove("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.add("active");
@@ -1150,11 +1348,13 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    keymapsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.remove("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -1169,11 +1369,13 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    keymapsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.remove("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -1188,11 +1390,13 @@ function showView(viewId) {
     mainView?.classList.remove("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    keymapsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.add("active");
     dspButton?.classList.remove("active");
@@ -1205,11 +1409,13 @@ function showView(viewId) {
   mainView?.classList.remove("hidden");
   searchView?.classList.add("hidden");
   favoritesView?.classList.add("hidden");
+  keymapsView?.classList.add("hidden");
   dspView?.classList.add("hidden");
   modSourcesView?.classList.add("hidden");
   kdfxView?.classList.add("hidden");
   searchButton?.classList.remove("active");
   favoritesButton?.classList.remove("active");
+  keymapsButton?.classList.remove("active");
   programsButton?.classList.add("active");
   setupsButton?.classList.remove("active");
   dspButton?.classList.remove("active");
@@ -2341,6 +2547,7 @@ async function startApp() {
 
   await loadData();
   loadFavorites();
+  initializeKeymapFilters();
 
   if (synthModel?.manufacturer) {
     document.title = `${synthModel.manufacturer} ${synthModel.displayName} Patch Display`;
@@ -2353,6 +2560,7 @@ async function startApp() {
   setupKeyboardShortcuts();
   renderSearchResults(getPatchSearchQuery());
   renderFavoritesResults(getFavoritesSearchQuery());
+  renderKeymaps(getKeymapSearchQuery());
   showView("main");
 
 }
