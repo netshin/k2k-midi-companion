@@ -8,6 +8,7 @@
   "setupDataPath": "forte_multis.json",
   "kdfxLookupDataPath": "forte_effect_chains.json",
   "fxPresetDataPath": "forte_fx_presets.json",
+  "keymapDataPath": "forte_keymaps.json",
   "controllerDataPath": "forte_controllers.json",
   "programCategoryDataPath": "forte_program_categories.json",
   "locationDigits": 3,

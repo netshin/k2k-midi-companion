@@ -159,7 +159,7 @@ async function resolveModelConfigPathFromIndex() {
   const model = CONFIG?.model || null;
   const modelId = CONFIG?.modelId || null;
   const selectedModelKey = CONFIG?.selectedModelKey || null;
-  const savedModelKey = localStorage.getItem(getModelSelectionStorageKey()) || null;
+  const savedModelKey = getSavedModelSelectionKey() || null;
 
   let entry = null;
 
@@ -233,6 +233,14 @@ function getModelSelectionStorageKey() {
   return "selected_model_key";
 }
 
+function getSavedModelSelectionKey() {
+  return localStorage.getItem(getModelSelectionStorageKey()) || "";
+}
+
+function isFirstRunModelSelectionRequired() {
+  return !getSavedModelSelectionKey();
+}
+
 
 /* ============================
    MIDI STARTUP
@@ -285,6 +293,7 @@ function showDeviceModal() {
 
   const modal = document.getElementById("deviceModal");
   const container = document.getElementById("deviceTiles");
+  const needsModelSelection = isFirstRunModelSelectionRequired();
 
   container.innerHTML = "";
   selectedMidiInput = null;
@@ -296,6 +305,7 @@ function showDeviceModal() {
     buildRomSelector();
     restoreRomSelection();
     modal.style.display = "flex";
+    focusModelSelectorIfNeeded(needsModelSelection);
     return;
   }
 
@@ -322,6 +332,7 @@ function showDeviceModal() {
   buildRomSelector();
   restoreRomSelection();
   modal.style.display = "flex";
+  focusModelSelectorIfNeeded(needsModelSelection);
   
 }
 
@@ -337,19 +348,39 @@ function selectMidiInput(inputId) {
 
 function buildModelSelector() {
   const select = document.getElementById("modelSelect");
+  const savedModelKey = getSavedModelSelectionKey();
 
   if (!select) return;
 
   select.textContent = "";
 
+  const placeholder = document.createElement("option");
+  placeholder.value = "";
+  placeholder.textContent = "Select a model...";
+  placeholder.disabled = !isFirstRunModelSelectionRequired();
+  placeholder.hidden = !isFirstRunModelSelectionRequired();
+  placeholder.selected = !savedModelKey;
+  select.appendChild(placeholder);
+
   availableModels.forEach(model => {
     const option = document.createElement("option");
     option.value = model.key;
     option.textContent = `${model.manufacturer} ${model.model}`;
-    if (model.key === selectedModelEntry?.key) {
+    if (savedModelKey && model.key === selectedModelEntry?.key) {
       option.selected = true;
     }
     select.appendChild(option);
+  });
+}
+
+function focusModelSelectorIfNeeded(needsModelSelection) {
+  if (!needsModelSelection) return;
+
+  const select = document.getElementById("modelSelect");
+  if (!select) return;
+
+  requestAnimationFrame(() => {
+    select.focus();
   });
 }
 
@@ -1165,9 +1196,16 @@ function renderKeymapFilterButtons() {
 
   if (!container) return;
 
+  const categories = getKeymapCategories();
+
+  container.classList.toggle("hidden", categories.length <= 1);
   container.textContent = "";
 
-  getKeymapCategories().forEach(category => {
+  if (categories.length <= 1) {
+    return;
+  }
+
+  categories.forEach(category => {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "k2600-button";
@@ -2833,6 +2871,12 @@ function saveSettings() {
   const selectedModelKey = document.getElementById("modelSelect")?.value || selectedModelEntry?.key || "";
   const modelChanged = Boolean(selectedModelKey && selectedModelKey !== selectedModelEntry?.key);
 
+  if (!selectedModelKey) {
+    const select = document.getElementById("modelSelect");
+    select?.focus();
+    return;
+  }
+
   if (selectedModelKey) {
     localStorage.setItem(getModelSelectionStorageKey(), selectedModelKey);
   }
@@ -2979,6 +3023,10 @@ async function startApp() {
   renderFavoritesResults(getFavoritesSearchQuery());
   renderKeymaps(getKeymapSearchQuery());
   showView("main");
+
+  if (isFirstRunModelSelectionRequired()) {
+    showDeviceModal();
+  }
 
 }
 

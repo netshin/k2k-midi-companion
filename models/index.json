@@ -14,7 +14,8 @@
         "forte_controllers.json",
         "forte_program_categories.json",
         "forte_effect_chains.json",
-        "forte_fx_presets.json"
+        "forte_fx_presets.json",
+        "forte_keymaps.json"
       ]
     },
     {

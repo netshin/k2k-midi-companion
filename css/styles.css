@@ -4,12 +4,14 @@
 
 body {
   margin:0;
-  height:100vh;
+  min-height:100vh;
   background:#111;
 
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
+  padding:88px 24px 24px;
+  box-sizing:border-box;
 
   font-family:"Courier New", monospace;
 }
