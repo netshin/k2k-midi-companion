@@ -29,6 +29,15 @@ let searchFilters = {
   programs: true,
   setups: true,
 };
+let favoritesFilters = {
+  programs: true,
+  setups: true,
+};
+let favoritesState = {
+  programs: [],
+  setups: [],
+};
+let favoritesSortMode = "type";
 
 let myBankMSB = 0;
 let myBankLSB = 0;
@@ -452,6 +461,7 @@ function displayCatalogItem(modeId, itemNumber) {
   const notes = document.getElementById("notes");
   currentDisplayedType = modeId;
   currentDisplayedNumber = itemNumber;
+  updateFavoriteToggleButton();
 
   if (modeId === "programs") {
     selectedProgramNumber = itemNumber;
@@ -464,6 +474,7 @@ function displayCatalogItem(modeId, itemNumber) {
         notes.textContent = `Enable "${requiredRomCard.label}" in Config to use this patch location.`;
       }
       renderSearchResults(getPatchSearchQuery());
+      renderFavoritesResults(getFavoritesSearchQuery());
       return;
     }
 
@@ -475,12 +486,14 @@ function displayCatalogItem(modeId, itemNumber) {
         notes.textContent = "";
       }
       renderSearchResults(getPatchSearchQuery());
+      renderFavoritesResults(getFavoritesSearchQuery());
       return;
     }
 
     setDisplayText(patch.name, location);
     renderProgramNotes(patch);
     renderSearchResults(getPatchSearchQuery());
+    renderFavoritesResults(getFavoritesSearchQuery());
     return;
   }
 
@@ -495,12 +508,14 @@ function displayCatalogItem(modeId, itemNumber) {
         notes.textContent = "";
       }
       renderSearchResults(getPatchSearchQuery());
+      renderFavoritesResults(getFavoritesSearchQuery());
       return;
     }
 
     setDisplayText(setup.name, location);
     renderSetupNotes(setup);
     renderSearchResults(getPatchSearchQuery());
+    renderFavoritesResults(getFavoritesSearchQuery());
   }
 }
 
@@ -510,6 +525,14 @@ function getPatchSearchQuery() {
 
 function focusPatchSearch() {
   focusInputById("patchSearch");
+}
+
+function getFavoritesSearchQuery() {
+  return document.getElementById("favoritesSearch")?.value || "";
+}
+
+function focusFavoritesSearch() {
+  focusInputById("favoritesSearch");
 }
 
 function focusInputById(inputId) {
@@ -593,6 +616,32 @@ function getCombinedSearchEntries() {
     });
 }
 
+function compareEntriesByTypeThenName(a, b) {
+  const typeOrder = a.type.localeCompare(b.type, undefined, { sensitivity: "base" });
+  if (typeOrder !== 0) return typeOrder;
+
+  const byName = a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+  if (byName !== 0) return byName;
+
+  return a.number - b.number;
+}
+
+function compareEntriesByNameThenType(a, b) {
+  const byName = a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
+  if (byName !== 0) return byName;
+
+  const typeOrder = a.type.localeCompare(b.type, undefined, { sensitivity: "base" });
+  if (typeOrder !== 0) return typeOrder;
+
+  return a.number - b.number;
+}
+
+function getFavoriteEntries() {
+  return getCombinedSearchEntries()
+    .filter(entry => isFavorite(entry.type, entry.number))
+    .sort(favoritesSortMode === "name" ? compareEntriesByNameThenType : compareEntriesByTypeThenName);
+}
+
 function updateSearchFilterButtons() {
 
   const programsButton = document.getElementById("filterProgramsButton");
@@ -600,6 +649,26 @@ function updateSearchFilterButtons() {
 
   programsButton?.classList.toggle("active", searchFilters.programs);
   setupsButton?.classList.toggle("active", searchFilters.setups);
+}
+
+function updateFavoritesFilterButtons() {
+  const programsButton = document.getElementById("favoritesFilterProgramsButton");
+  const setupsButton = document.getElementById("favoritesFilterSetupsButton");
+
+  programsButton?.classList.toggle("active", favoritesFilters.programs);
+  setupsButton?.classList.toggle("active", favoritesFilters.setups);
+}
+
+function updateFavoritesSortButton() {
+  const sortButton = document.getElementById("favoritesSortButton");
+
+  if (!sortButton) return;
+
+  const isType = favoritesSortMode === "type";
+  sortButton.classList.toggle("active", isType);
+  sortButton.textContent = isType ? "Type" : "Name";
+  sortButton.title = isType ? "Sort favorites by type first" : "Sort favorites by name first";
+  sortButton.setAttribute("aria-label", sortButton.title);
 }
 
 function toggleSearchFilter(filterKey) {
@@ -618,6 +687,27 @@ function toggleSearchFilter(filterKey) {
   renderSearchResults(getPatchSearchQuery());
 }
 
+function toggleFavoritesFilter(filterKey) {
+  if (!(filterKey in favoritesFilters)) return;
+
+  const nextValue = !favoritesFilters[filterKey];
+  const activeCount = Object.values(favoritesFilters).filter(Boolean).length;
+
+  if (!nextValue && activeCount === 1) {
+    return;
+  }
+
+  favoritesFilters[filterKey] = nextValue;
+  updateFavoritesFilterButtons();
+  renderFavoritesResults(getFavoritesSearchQuery());
+}
+
+function toggleFavoritesSort() {
+  favoritesSortMode = favoritesSortMode === "type" ? "name" : "type";
+  updateFavoritesSortButton();
+  renderFavoritesResults(getFavoritesSearchQuery());
+}
+
 function openSearchResult(entry) {
 
   if (!entry) return;
@@ -630,6 +720,73 @@ function openSearchResult(entry) {
 
   showView("main");
   displayCatalogItem("programs", entry.number);
+}
+
+function createFavoriteToggle(type, number, labelText = "Toggle favorite") {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "favorite-toggle";
+  button.textContent = "★";
+
+  const updateState = () => {
+    const active = isFavorite(type, number);
+    const title = active ? `Remove ${labelText} from favorites` : `Add ${labelText} to favorites`;
+    button.classList.toggle("active", active);
+    button.title = title;
+    button.setAttribute("aria-label", title);
+  };
+
+  updateState();
+  button.addEventListener("click", event => {
+    event.stopPropagation();
+    toggleFavorite(type, number);
+    updateState();
+  });
+
+  return button;
+}
+
+function createBrowserItem(entry, onOpen) {
+  const item = document.createElement("div");
+  item.className = "browser-item";
+  item.dataset.type = entry.type;
+
+  if (currentDisplayedType === entry.type && currentDisplayedNumber === entry.number) {
+    item.classList.add("active");
+  }
+
+  const location = document.createElement("div");
+  location.className = "browser-item-location";
+  location.textContent = entry.location;
+
+  const type = document.createElement("div");
+  type.className = "browser-item-type";
+  type.textContent = entry.typeLabel;
+
+  const body = document.createElement("div");
+  body.className = "browser-item-body";
+
+  const name = document.createElement("div");
+  name.className = "browser-item-name";
+  name.textContent = entry.name;
+
+  const meta = document.createElement("div");
+  meta.className = "browser-item-meta";
+  meta.textContent = entry.meta;
+
+  const actions = document.createElement("div");
+  actions.className = "browser-item-actions";
+  actions.appendChild(createFavoriteToggle(entry.type, entry.number, `${entry.typeLabel.toLowerCase()} ${entry.location}`));
+
+  body.appendChild(name);
+  body.appendChild(meta);
+  item.appendChild(location);
+  item.appendChild(type);
+  item.appendChild(body);
+  item.appendChild(actions);
+  item.addEventListener("click", () => onOpen(entry));
+
+  return item;
 }
 
 function renderSearchResults(query = "") {
@@ -666,40 +823,48 @@ function renderSearchResults(query = "") {
   const fragment = document.createDocumentFragment();
 
   filteredEntries.forEach(entry => {
-    const item = document.createElement("div");
-    item.className = "browser-item";
-    item.dataset.type = entry.type;
+    fragment.appendChild(createBrowserItem(entry, openSearchResult));
+  });
 
-    if (currentDisplayedType === entry.type && currentDisplayedNumber === entry.number) {
-      item.classList.add("active");
+  container.appendChild(fragment);
+}
+
+function renderFavoritesResults(query = "") {
+  const container = document.getElementById("favoritesResults");
+  const summary = document.getElementById("favoritesSummary");
+
+  if (!container) return;
+
+  const text = query.trim().toLowerCase();
+  const entries = getFavoriteEntries();
+  const filteredEntries = entries.filter(entry => {
+    if (!favoritesFilters[entry.type]) {
+      return false;
     }
 
-    const location = document.createElement("div");
-    location.className = "browser-item-location";
-    location.textContent = entry.location;
+    return !text || entry.searchText.includes(text);
+  });
 
-    const type = document.createElement("div");
-    type.className = "browser-item-type";
-    type.textContent = entry.typeLabel;
+  if (summary) {
+    summary.textContent = `${filteredEntries.length} shown`;
+  }
 
-    const body = document.createElement("div");
-    body.className = "browser-item-body";
+  container.textContent = "";
 
-    const name = document.createElement("div");
-    name.className = "browser-item-name";
-    name.textContent = entry.name;
+  if (filteredEntries.length === 0) {
+    const empty = document.createElement("div");
+    empty.className = "browser-empty";
+    empty.textContent = entries.length === 0
+      ? "No favorites yet. Star a program or setup to collect it here."
+      : "No favorites match the search.";
+    container.appendChild(empty);
+    return;
+  }
 
-    const meta = document.createElement("div");
-    meta.className = "browser-item-meta";
-    meta.textContent = entry.meta;
+  const fragment = document.createDocumentFragment();
 
-    body.appendChild(name);
-    body.appendChild(meta);
-    item.appendChild(location);
-    item.appendChild(type);
-    item.appendChild(body);
-    item.addEventListener("click", () => openSearchResult(entry));
-    fragment.appendChild(item);
+  filteredEntries.forEach(entry => {
+    fragment.appendChild(createBrowserItem(entry, openSearchResult));
   });
 
   container.appendChild(fragment);
@@ -742,6 +907,7 @@ function setupWebButton() {
 function setupKdfxButton() {
 
   const searchButton = document.getElementById("searchButton");
+  const favoritesButton = document.getElementById("favoritesButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
   const dspButton = document.getElementById("dspButton");
@@ -751,13 +917,25 @@ function setupKdfxButton() {
   const modSourceSearch = document.getElementById("modSourceSearch");
   const searchInput = document.getElementById("kdfxSearch");
   const patchSearch = document.getElementById("patchSearch");
+  const favoritesSearch = document.getElementById("favoritesSearch");
   const filterProgramsButton = document.getElementById("filterProgramsButton");
   const filterSetupsButton = document.getElementById("filterSetupsButton");
+  const favoritesFilterProgramsButton = document.getElementById("favoritesFilterProgramsButton");
+  const favoritesFilterSetupsButton = document.getElementById("favoritesFilterSetupsButton");
+  const favoritesSortButton = document.getElementById("favoritesSortButton");
+  const favoriteToggleButton = document.getElementById("favoriteToggleButton");
 
   if (searchButton) {
     searchButton.addEventListener("click", () => {
       showView("search");
       renderSearchResults(getPatchSearchQuery());
+    });
+  }
+
+  if (favoritesButton) {
+    favoritesButton.addEventListener("click", () => {
+      showView("favorites");
+      renderFavoritesResults(getFavoritesSearchQuery());
     });
   }
 
@@ -813,6 +991,12 @@ function setupKdfxButton() {
     });
   }
 
+  if (favoritesSearch) {
+    favoritesSearch.addEventListener("input", () => {
+      renderFavoritesResults(favoritesSearch.value);
+    });
+  }
+
   if (filterProgramsButton) {
     filterProgramsButton.addEventListener("click", () => {
       toggleSearchFilter("programs");
@@ -825,7 +1009,38 @@ function setupKdfxButton() {
     });
   }
 
+  if (favoritesFilterProgramsButton) {
+    favoritesFilterProgramsButton.addEventListener("click", () => {
+      toggleFavoritesFilter("programs");
+    });
+  }
+
+  if (favoritesFilterSetupsButton) {
+    favoritesFilterSetupsButton.addEventListener("click", () => {
+      toggleFavoritesFilter("setups");
+    });
+  }
+
+  if (favoritesSortButton) {
+    favoritesSortButton.addEventListener("click", () => {
+      toggleFavoritesSort();
+    });
+  }
+
+  if (favoriteToggleButton) {
+    favoriteToggleButton.addEventListener("click", () => {
+      if (!Number.isFinite(currentDisplayedNumber)) {
+        return;
+      }
+
+      toggleFavorite(currentDisplayedType, currentDisplayedNumber);
+    });
+  }
+
   updateSearchFilterButtons();
+  updateFavoritesFilterButtons();
+  updateFavoritesSortButton();
+  updateFavoriteToggleButton();
 
   if (!kdfxButton) return;
 
@@ -851,10 +1066,12 @@ function showView(viewId) {
 
   const mainView = document.getElementById("mainView");
   const searchView = document.getElementById("searchView");
+  const favoritesView = document.getElementById("favoritesView");
   const dspView = document.getElementById("dspView");
   const modSourcesView = document.getElementById("modSourcesView");
   const kdfxView = document.getElementById("kdfxView");
   const searchButton = document.getElementById("searchButton");
+  const favoritesButton = document.getElementById("favoritesButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
   const dspButton = document.getElementById("dspButton");
@@ -867,10 +1084,12 @@ function showView(viewId) {
   if (viewId === "search") {
     mainView?.classList.add("hidden");
     searchView?.classList.remove("hidden");
+    favoritesView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.add("active");
+    favoritesButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -880,14 +1099,35 @@ function showView(viewId) {
     return;
   }
 
+  if (viewId === "favorites") {
+    selectedMode = "programs";
+    mainView?.classList.add("hidden");
+    searchView?.classList.add("hidden");
+    favoritesView?.classList.remove("hidden");
+    dspView?.classList.add("hidden");
+    modSourcesView?.classList.add("hidden");
+    kdfxView?.classList.add("hidden");
+    searchButton?.classList.remove("active");
+    favoritesButton?.classList.add("active");
+    programsButton?.classList.remove("active");
+    setupsButton?.classList.remove("active");
+    dspButton?.classList.remove("active");
+    modSourcesButton?.classList.remove("active");
+    kdfxButton?.classList.remove("active");
+    focusFavoritesSearch();
+    return;
+  }
+
   if (viewId === "dsp") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
+    favoritesView?.classList.add("hidden");
     dspView?.classList.remove("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
+    favoritesButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.add("active");
@@ -901,10 +1141,12 @@ function showView(viewId) {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
+    favoritesView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.remove("hidden");
     searchButton?.classList.remove("active");
+    favoritesButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -918,10 +1160,12 @@ function showView(viewId) {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
+    favoritesView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.remove("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
+    favoritesButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
     dspButton?.classList.remove("active");
@@ -935,10 +1179,12 @@ function showView(viewId) {
     selectedMode = "setups";
     mainView?.classList.remove("hidden");
     searchView?.classList.add("hidden");
+    favoritesView?.classList.add("hidden");
     dspView?.classList.add("hidden");
     modSourcesView?.classList.add("hidden");
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
+    favoritesButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.add("active");
     dspButton?.classList.remove("active");
@@ -950,10 +1196,12 @@ function showView(viewId) {
   selectedMode = "programs";
   mainView?.classList.remove("hidden");
   searchView?.classList.add("hidden");
+  favoritesView?.classList.add("hidden");
   dspView?.classList.add("hidden");
   modSourcesView?.classList.add("hidden");
   kdfxView?.classList.add("hidden");
   searchButton?.classList.remove("active");
+  favoritesButton?.classList.remove("active");
   programsButton?.classList.add("active");
   setupsButton?.classList.remove("active");
   dspButton?.classList.remove("active");
@@ -1680,6 +1928,105 @@ function getRomStorageKey() {
   return `${modelId}_roms`;
 }
 
+function getFavoritesStorageKey() {
+  const modelId = synthModel?.modelId || "default";
+  return `${modelId}_favorites`;
+}
+
+function normalizeFavoriteNumberList(value) {
+  if (!Array.isArray(value)) {
+    return [];
+  }
+
+  return [...new Set(
+    value
+      .map(item => Number(item))
+      .filter(item => Number.isFinite(item))
+  )].sort((a, b) => a - b);
+}
+
+function loadFavorites() {
+  const raw = localStorage.getItem(getFavoritesStorageKey());
+
+  if (!raw) {
+    favoritesState = {
+      programs: [],
+      setups: [],
+    };
+    return;
+  }
+
+  try {
+    const parsed = JSON.parse(raw);
+    favoritesState = {
+      programs: normalizeFavoriteNumberList(parsed?.programs),
+      setups: normalizeFavoriteNumberList(parsed?.setups),
+    };
+  } catch (error) {
+    console.warn("Failed to parse favorites, resetting", error);
+    favoritesState = {
+      programs: [],
+      setups: [],
+    };
+  }
+}
+
+function saveFavorites() {
+  localStorage.setItem(getFavoritesStorageKey(), JSON.stringify({
+    programs: favoritesState.programs,
+    setups: favoritesState.setups,
+  }));
+}
+
+function isFavorite(type, number) {
+  return favoritesState[type]?.includes(Number(number)) || false;
+}
+
+function toggleFavorite(type, number) {
+  if (!favoritesState[type]) {
+    return false;
+  }
+
+  const normalizedNumber = Number(number);
+  const current = favoritesState[type];
+  const next = current.includes(normalizedNumber)
+    ? current.filter(item => item !== normalizedNumber)
+    : [...current, normalizedNumber].sort((a, b) => a - b);
+
+  favoritesState = {
+    ...favoritesState,
+    [type]: next,
+  };
+
+  saveFavorites();
+  updateFavoriteToggleButton();
+  renderSearchResults(getPatchSearchQuery());
+  renderFavoritesResults(getFavoritesSearchQuery());
+  return favoritesState[type].includes(normalizedNumber);
+}
+
+function updateFavoriteToggleButton() {
+  const button = document.getElementById("favoriteToggleButton");
+
+  if (!button) return;
+
+  const isCatalogMode = currentDisplayedType === "programs" || currentDisplayedType === "setups";
+  const hasNumber = Number.isFinite(currentDisplayedNumber);
+
+  button.classList.toggle("hidden", !isCatalogMode || !hasNumber);
+
+  if (!isCatalogMode || !hasNumber) {
+    return;
+  }
+
+  const active = isFavorite(currentDisplayedType, currentDisplayedNumber);
+  const label = active ? "Remove current item from favorites" : "Add current item to favorites";
+
+  button.classList.toggle("active", active);
+  button.title = label;
+  button.setAttribute("aria-label", label);
+}
+
 function setDisplayText(mainText, locationText = null) {
 
   const display = document.getElementById("display");
@@ -1794,6 +2141,13 @@ function setupKeyboardShortcuts() {
       return;
     }
 
+    if (code === "KeyF") {
+      e.preventDefault();
+      showView("favorites");
+      renderFavoritesResults(getFavoritesSearchQuery());
+      return;
+    }
+
     if (code === "KeyP") {
       e.preventDefault();
       showView("main");
@@ -1855,6 +2209,7 @@ document.addEventListener("keydown", function(e) {
 async function startApp() {
 
   await loadData();
+  loadFavorites();
 
   if (synthModel?.manufacturer) {
     document.title = `${synthModel.manufacturer} ${synthModel.displayName} Patch Display`;
@@ -1865,6 +2220,8 @@ async function startApp() {
   setupWebButton();
   setupKdfxButton();
   setupKeyboardShortcuts();
+  renderSearchResults(getPatchSearchQuery());
+  renderFavoritesResults(getFavoritesSearchQuery());
   showView("main");
 
 }

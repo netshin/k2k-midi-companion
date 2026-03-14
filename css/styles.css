@@ -114,6 +114,42 @@ body {
   box-sizing:border-box;
 }
 
+.favorite-toggle {
+  width:28px;
+  height:28px;
+  border:1px solid #7f6a21;
+  border-radius:50%;
+  background:linear-gradient(180deg,#423312,#241b08);
+  color:#8b7a3a;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  font-size:15px;
+  line-height:1;
+  cursor:pointer;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,0.08), 0 2px 5px rgba(0,0,0,0.35);
+  transition:color 120ms ease, border-color 120ms ease, box-shadow 120ms ease, transform 120ms ease;
+}
+
+.favorite-toggle:hover {
+  border-color:#e7ca58;
+  color:#e7ca58;
+  box-shadow:0 0 8px rgba(255,216,77,0.35), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.favorite-toggle.active {
+  color:#ffd84d;
+  border-color:#ffd84d;
+  box-shadow:0 0 10px rgba(255,216,77,0.4), inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+.favorite-toggle-main {
+  position:absolute;
+  top:10px;
+  right:10px;
+  z-index:2;
+}
+
 
 /* ==============================
    LCD DISPLAY
@@ -232,7 +268,7 @@ body {
 
 .browser-item {
   display:grid;
-  grid-template-columns:90px 76px minmax(0, 1fr);
+  grid-template-columns:90px 76px minmax(0, 1fr) 32px;
   column-gap:12px;
   align-items:start;
   padding:10px 12px;
@@ -275,6 +311,18 @@ body {
   line-height:1.35;
   overflow-wrap:anywhere;
   word-break:break-word;
+}
+
+.browser-item-actions {
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-start;
+}
+
+.browser-item .favorite-toggle {
+  width:24px;
+  height:24px;
+  font-size:13px;
 }
 
 .browser-empty {
@@ -461,7 +509,8 @@ body {
 #kdfxSearch,
 #dspSearch,
 #modSourceSearch,
-#patchSearch {
+#patchSearch,
+#favoritesSearch {
   flex:1;
   height:40px;
   padding:0 12px;
@@ -773,6 +822,10 @@ body {
   .browser-item {
     grid-template-columns:1fr;
     row-gap:4px;
+  }
+
+  .browser-item-actions {
+    justify-content:flex-start;
   }
 
   .browser-summary {

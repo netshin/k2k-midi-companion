@@ -58,6 +58,7 @@
 
 <div class="topButtons">
   <div id="searchButton" class="searchButton k2600-button" title="Search Programs and Setups (Alt+R)">Search</div>
+  <div id="favoritesButton" class="favoritesButton k2600-button" title="Display Favorite Programs and Setups (Alt+F)">Favorites</div>
   <div id="programsButton" class="programsButton k2600-button" title="Display Details about ROM Programs (Alt+P)">Programs</div>
   <div id="setupsButton" class="setupsButton k2600-button" title="Display Details about Setups (Alt+S)">Setups</div>
   <div id="dspButton" class="dspButton k2600-button" title="Display DSP Algorithms">DSP Algorithms</div>
@@ -75,6 +76,7 @@
 
   <div class="panel">
     <div class="lcd-frame">
+      <button id="favoriteToggleButton" class="favorite-toggle favorite-toggle-main hidden" type="button" title="Add current item to favorites" aria-label="Add current item to favorites">★</button>
       <div id="display">Waiting...</div>
     </div>
 
@@ -107,6 +109,30 @@
 
     <div id="patchSearchResults" class="browser-results">
       Loading search...
+    </div>
+  </div>
+</div>
+
+<!-- FAVORITES VIEW -->
+
+<div id="favoritesView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="browser-header">
+      <div class="kdfx-title">Favorites</div>
+      <input id="favoritesSearch" type="text" placeholder="Search favorite programs and setups by name, location, or notes..." />
+    </div>
+
+    <div class="browser-toolbar">
+      <div id="favoritesSummary" class="browser-summary" aria-live="polite"></div>
+      <div class="browser-filters">
+        <button id="favoritesSortButton" class="k2600-button" type="button" title="Sort favorites by type first">Type</button>
+        <button id="favoritesFilterProgramsButton" class="k2600-button active" type="button">Programs</button>
+        <button id="favoritesFilterSetupsButton" class="k2600-button active" type="button">Setups</button>
+      </div>
+    </div>
+
+    <div id="favoritesResults" class="browser-results">
+      Loading favorites...
     </div>
   </div>
 </div>
