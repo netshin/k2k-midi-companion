@@ -33,6 +33,17 @@
     <h2>Installed Options</h2>
     <div id="romTiles"></div>
 
+    <h2>Favorites</h2>
+    <div class="favorites-transfer">
+      <div id="favoritesTransferSummary" class="favorites-transfer-summary">No favorites saved.</div>
+      <div class="favorites-transfer-actions">
+        <button id="exportFavoritesButton" class="k2600-button" type="button">Export</button>
+        <button id="importFavoritesMergeButton" class="k2600-button" type="button">Import Merge</button>
+        <button id="importFavoritesReplaceButton" class="k2600-button" type="button">Import Replace</button>
+      </div>
+      <input id="favoritesImportInput" type="file" accept="application/json,.json" class="hidden" />
+    </div>
+
     <div class="modal-actions">
 
   <button class="k2600-button cancelButton">

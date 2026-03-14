@@ -258,6 +258,7 @@ function showDeviceModal() {
 
   container.innerHTML = "";
   selectedMidiInput = null;
+  updateFavoritesTransferSummary();
 
   if (WebMidi.inputs.length === 0) {
     container.innerHTML = '<div class="tile tile-disabled">No Interface Detected</div>';
@@ -878,14 +879,21 @@ function renderFavoritesResults(query = "") {
 function setupSettingsButton() {
 
   const settings = document.getElementById("settingsButton");
+  const exportFavoritesButton = document.getElementById("exportFavoritesButton");
+  const importFavoritesMergeButton = document.getElementById("importFavoritesMergeButton");
+  const importFavoritesReplaceButton = document.getElementById("importFavoritesReplaceButton");
+  const favoritesImportInput = document.getElementById("favoritesImportInput");
 
-  if (!settings) return;
+  if (settings) {
+    settings.addEventListener("click", () => {
+      showDeviceModal();
+    });
+  }
 
-  settings.addEventListener("click", () => {
-
-    showDeviceModal();
-
-  });
+  exportFavoritesButton?.addEventListener("click", downloadFavoritesFile);
+  importFavoritesMergeButton?.addEventListener("click", () => beginFavoritesImport("merge"));
+  importFavoritesReplaceButton?.addEventListener("click", () => beginFavoritesImport("replace"));
+  favoritesImportInput?.addEventListener("change", handleFavoritesImportSelection);
 
 }
 
@@ -1976,6 +1984,129 @@ function saveFavorites() {
     programs: favoritesState.programs,
     setups: favoritesState.setups,
   }));
+  updateFavoritesTransferSummary();
+}
+
+function createFavoritesExportPayload() {
+  return {
+    modelId: synthModel?.modelId || "default",
+    manufacturer: synthModel?.manufacturer || "",
+    model: synthModel?.model || "",
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    favorites: {
+      programs: favoritesState.programs,
+      setups: favoritesState.setups,
+    },
+  };
+}
+
+function updateFavoritesTransferSummary(message = "") {
+  const summary = document.getElementById("favoritesTransferSummary");
+
+  if (!summary) return;
+
+  const totalCount = favoritesState.programs.length + favoritesState.setups.length;
+
+  summary.textContent = message || `${totalCount} favorite${totalCount === 1 ? "" : "s"} saved (${favoritesState.programs.length} programs, ${favoritesState.setups.length} setups).`;
+}
+
+function refreshFavoritesUi() {
+  updateFavoriteToggleButton();
+  updateFavoritesTransferSummary();
+  renderSearchResults(getPatchSearchQuery());
+  renderFavoritesResults(getFavoritesSearchQuery());
+}
+
+function downloadFavoritesFile() {
+  const payload = createFavoritesExportPayload();
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  const modelId = synthModel?.modelId || "favorites";
+
+  link.href = url;
+  link.download = `${modelId}-favorites.json`;
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+  updateFavoritesTransferSummary(`Exported ${payload.favorites.programs.length + payload.favorites.setups.length} favorites.`);
+}
+
+function parseFavoritesImportPayload(text) {
+  const parsed = JSON.parse(text);
+  const modelId = synthModel?.modelId || "default";
+
+  if (!parsed || typeof parsed !== "object") {
+    throw new Error("Import file is not a valid favorites object.");
+  }
+
+  if (parsed.modelId && parsed.modelId !== modelId) {
+    throw new Error(`Import file is for model "${parsed.modelId}", expected "${modelId}".`);
+  }
+
+  const favoriteRoot = parsed.favorites && typeof parsed.favorites === "object"
+    ? parsed.favorites
+    : parsed;
+
+  return {
+    programs: normalizeFavoriteNumberList(favoriteRoot.programs),
+    setups: normalizeFavoriteNumberList(favoriteRoot.setups),
+  };
+}
+
+function applyImportedFavorites(importedFavorites, mode = "merge") {
+  const nextPrograms = mode === "replace"
+    ? importedFavorites.programs
+    : normalizeFavoriteNumberList([...favoritesState.programs, ...importedFavorites.programs]);
+
+  const nextSetups = mode === "replace"
+    ? importedFavorites.setups
+    : normalizeFavoriteNumberList([...favoritesState.setups, ...importedFavorites.setups]);
+
+  favoritesState = {
+    programs: nextPrograms,
+    setups: nextSetups,
+  };
+
+  saveFavorites();
+  refreshFavoritesUi();
+
+  const totalCount = nextPrograms.length + nextSetups.length;
+  updateFavoritesTransferSummary(`${mode === "replace" ? "Replaced" : "Merged"} favorites. ${totalCount} total.`);
+}
+
+function beginFavoritesImport(mode = "merge") {
+  const input = document.getElementById("favoritesImportInput");
+
+  if (!input) return;
+
+  input.dataset.importMode = mode;
+  input.value = "";
+  input.click();
+}
+
+async function handleFavoritesImportSelection(event) {
+  const input = event.target;
+  const file = input?.files?.[0];
+
+  if (!file) {
+    return;
+  }
+
+  const mode = input.dataset.importMode === "replace" ? "replace" : "merge";
+
+  try {
+    const text = await file.text();
+    const importedFavorites = parseFavoritesImportPayload(text);
+    applyImportedFavorites(importedFavorites, mode);
+  } catch (error) {
+    console.error("Failed to import favorites", error);
+    updateFavoritesTransferSummary(error instanceof Error ? error.message : "Failed to import favorites.");
+  } finally {
+    input.value = "";
+  }
 }
 
 function isFavorite(type, number) {
