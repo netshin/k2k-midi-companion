@@ -1,11 +1,28 @@
 {
   "models": [
     {
+      "key": "kurzweil-forte",
+      "manufacturer": "Kurzweil",
+      "model": "Forte",
+      "modelId": "forte",
+      "default": true,
+      "configPath": "Kurzweil/Forte/forte_model.json",
+      "allowedDataFiles": [
+        "forte_model.json",
+        "forte_programs.json",
+        "forte_multis.json",
+        "forte_controllers.json",
+        "forte_program_categories.json",
+        "forte_effect_chains.json",
+        "forte_fx_presets.json"
+      ]
+    },
+    {
       "key": "kurzweil-k2600",
       "manufacturer": "Kurzweil",
       "model": "K2600",
       "modelId": "k2600",
-      "default": true,
+      "default": false,
       "configPath": "Kurzweil/K2600/k2600_model.json",
       "allowedDataFiles": [
         "k2600_model.json",

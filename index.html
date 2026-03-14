@@ -5,7 +5,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>K2600 Patch Display</title>
+<title>Kurzweil Patch Display</title>
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
 <link rel="stylesheet" href="css/styles.css">
@@ -27,6 +27,12 @@
 
 <div id="deviceModal" class="modal">
   <div class="modal-content">
+    <h2>Model</h2>
+    <div class="model-selector">
+      <label class="model-selector-label" for="modelSelect">Keyboard Model</label>
+      <select id="modelSelect" class="model-select"></select>
+    </div>
+
     <h2>Select MIDI Interface</h2>
     <div id="deviceTiles"></div>
 
@@ -75,6 +81,7 @@
   <div id="keymapsButton" class="keymapsButton k2600-button" title="Display Keymaps">Keymaps</div>
   <div id="modSourcesButton" class="modSourcesButton k2600-button" title="Display Modulation Sources and Constants (Alt+M)">Mod Sources</div>
   <div id="kdfxButton" class="kdfxButton k2600-button" title="Display Details about KDFX Studio structure">KDFX Studios</div>
+  <div id="fxPresetsButton" class="fxPresetsButton k2600-button" title="Display FX Presets">FX Presets</div>
   <div id="dspButton" class="dspButton k2600-button" title="Display DSP Algorithms">DSP Algorithms</div>
   <div id="settingsButton" class="settingsButton k2600-button" title="Configure Application (Alt+C)">Config</div>
   <div id="webButton" class="webButton k2600-button" title="Visit support for your synth">Web</div>
@@ -118,6 +125,8 @@
         <button id="filterSetupsButton" class="k2600-button active" type="button">Setups</button>
       </div>
     </div>
+
+    <div id="programCategoryFilters" class="browser-subfilters hidden"></div>
 
     <div id="patchSearchResults" class="browser-results">
       Loading search...
@@ -195,14 +204,14 @@
 <div id="kdfxView" class="rack kdfx-view hidden">
   <div class="panel">
     <div class="kdfx-header">
-      <div class="kdfx-title">KDFX Studios</div>
+      <div id="kdfxViewTitle" class="kdfx-title">KDFX Studios</div>
       <input id="kdfxSearch" type="text" placeholder="Search studio/preset/algorithm..." />
     </div>
 
     <div class="kdfx-grid">
       <div id="kdfxStudioList" class="kdfx-list"></div>
       <div class="kdfx-detail-panel">
-        <div class="kdfx-legend">
+        <div id="kdfxLegend" class="kdfx-legend">
           <span class="kdfx-bus">Bus</span>
           <span class="kdfx-preset">Preset</span>
           <span class="kdfx-preset-id">[Preset Number]</span>
@@ -213,6 +222,25 @@
           Select a studio to view routing details.
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
+<!-- FX PRESETS VIEW -->
+
+<div id="fxPresetsView" class="rack kdfx-view hidden">
+  <div class="panel">
+    <div class="browser-header">
+      <div class="kdfx-title">FX Presets</div>
+      <input id="fxPresetsSearch" type="text" placeholder="Search FX presets by ID or name..." />
+    </div>
+
+    <div class="browser-toolbar">
+      <div id="fxPresetsSummary" class="browser-summary" aria-live="polite"></div>
+    </div>
+
+    <div id="fxPresetsResults" class="browser-results">
+      Loading FX presets...
     </div>
   </div>
 </div>

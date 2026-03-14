@@ -1,0 +1,27 @@
+{
+  "modelId": "forte",
+  "model": "Forte",
+  "displayName": "Forte",
+  "manufacturer": "Kurzweil",
+  "supportUrl": "https://kurzweil.com/forte/",
+  "patchDataPath": "forte_programs.json",
+  "setupDataPath": "forte_multis.json",
+  "kdfxLookupDataPath": "forte_effect_chains.json",
+  "fxPresetDataPath": "forte_fx_presets.json",
+  "controllerDataPath": "forte_controllers.json",
+  "programCategoryDataPath": "forte_program_categories.json",
+  "locationDigits": 3,
+  "setupLocationDigits": 3,
+  "programLabelSingular": "Program",
+  "programLabelPlural": "Programs",
+  "setupLabelSingular": "Multi",
+  "setupLabelPlural": "Multis",
+  "kdfxLabelSingular": "Effects Chain",
+  "kdfxLabelPlural": "Effects Chains",
+  "setupIndex": {
+    "formula": "program_plus_1"
+  },
+  "programIndex": {
+    "formula": "program_plus_1"
+  }
+}

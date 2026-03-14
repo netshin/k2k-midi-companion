@@ -1,0 +1,84 @@
+{
+  "categories": [
+    {
+      "id": "piano",
+      "label": "PIANO"
+    },
+    {
+      "id": "e_piano",
+      "label": "E. PIANO"
+    },
+    {
+      "id": "clav",
+      "label": "CLAV"
+    },
+    {
+      "id": "organ",
+      "label": "ORGAN"
+    },
+    {
+      "id": "leads",
+      "label": "LEADS"
+    },
+    {
+      "id": "pads",
+      "label": "PADS"
+    },
+    {
+      "id": "synths",
+      "label": "SYNTHS"
+    },
+    {
+      "id": "synth_bass",
+      "label": "SYNTH BASS"
+    },
+    {
+      "id": "strings",
+      "label": "STRINGS"
+    },
+    {
+      "id": "brass",
+      "label": "BRASS"
+    },
+    {
+      "id": "winds",
+      "label": "WINDS"
+    },
+    {
+      "id": "ensemble",
+      "label": "ENSEMBLE"
+    },
+    {
+      "id": "guitar",
+      "label": "GUITAR"
+    },
+    {
+      "id": "bass",
+      "label": "BASS"
+    },
+    {
+      "id": "drums",
+      "label": "DRUMS"
+    },
+    {
+      "id": "percussion",
+      "label": "PERCUSSION"
+    },
+    {
+      "id": "voices",
+      "label": "VOICES"
+    },
+    {
+      "id": "mallets",
+      "label": "MALLETS"
+    },
+    {
+      "id": "hybrid",
+      "label": "HYBRID"
+    },
+    {
+      "id": "miscellaneous",
+      "label": "MISCELLANEOUS"
+    }
+  ]
+}

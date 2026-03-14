@@ -1,0 +1,1964 @@
+{
+  "1": {
+    "name": "Rich 9ft Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "2": {
+    "name": "Rich 7ft Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "3": {
+    "name": "Bright 9ft Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "4": {
+    "name": "Bright 7ft Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "5": {
+    "name": "Solo 9ft Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "6": {
+    "name": "Solo 7ft Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "7": {
+    "name": "Vintage Upright",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "8": {
+    "name": "Vintage Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "9": {
+    "name": "Elegant Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "10": {
+    "name": "New Orleans",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "11": {
+    "name": "Dark & Distant",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "12": {
+    "name": "Piano & Pad",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "13": {
+    "name": "Piano & Strings",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "14": {
+    "name": "Punchy Edge",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "15": {
+    "name": "R&B Stack",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "16": {
+    "name": "SuperPop",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "17": {
+    "name": "70's Album",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "18": {
+    "name": "Artis Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "19": {
+    "name": "Legacy Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "20": {
+    "name": "New Age",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "21": {
+    "name": "Piano & Harp",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "22": {
+    "name": "Piano & Choir",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "23": {
+    "name": "Mood Ring",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "24": {
+    "name": "Ambience",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "25": {
+    "name": "Film Piano",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "26": {
+    "name": "Soul Piano",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "27": {
+    "name": "Pub Piano",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "28": {
+    "name": "Double Grand",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "29": {
+    "name": "Mono Upright",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "30": {
+    "name": "Double Squash",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "31": {
+    "name": "Vintage Squash",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "32": {
+    "name": "House Piano",
+    "categoryId": "piano",
+    "categoryLabel": "PIANO",
+    "controls": []
+  },
+  "33": {
+    "name": "Rooftop EP Tine",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "34": {
+    "name": "Steely Dyno 77",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "35": {
+    "name": "VintAmp ReedEP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "36": {
+    "name": "Amped Bell 73",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "37": {
+    "name": "BarkDist EP Tine",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "38": {
+    "name": "Beck\u2019s Retro EP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "39": {
+    "name": "Phasey EP Tine",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "40": {
+    "name": "Mr. SparkleTop73",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "41": {
+    "name": "Aged Tolex 77",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "42": {
+    "name": "Smooth 70s 73",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "43": {
+    "name": "FusionChorDyno73",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "44": {
+    "name": "Chorus EP Tine",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "45": {
+    "name": "73/77StereoBells",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "46": {
+    "name": "Env Filter EP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "47": {
+    "name": "Ray\u2019s EP Reed",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "48": {
+    "name": "DeepFuzz Reed EP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "49": {
+    "name": "T-Bone Reed EP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "50": {
+    "name": "Phase Dist EP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "51": {
+    "name": "BrightFuzzReedEP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "52": {
+    "name": "TrampAmpReedEP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "53": {
+    "name": "FM EP 1",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "54": {
+    "name": "FM EP 2",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "55": {
+    "name": "Rhotary EP Tine",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "56": {
+    "name": "Elec Grand Stack",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "57": {
+    "name": "BrightRMI Pn/Hrp",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "58": {
+    "name": "Tight Bright FM",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "59": {
+    "name": "Gabriel's Melt",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "60": {
+    "name": "CP80 Enhanced",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "61": {
+    "name": "VideoKilledRadio",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "62": {
+    "name": "UK Pop CP70",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "63": {
+    "name": "MistyMountain EP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "64": {
+    "name": "No Quarter Pnt",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "65": {
+    "name": "Black Friday",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "66": {
+    "name": "Sly Ballad",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "67": {
+    "name": "RoyalKingWakeman",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "68": {
+    "name": "StageTines Soft",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "69": {
+    "name": "Suitcase Tines",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "70": {
+    "name": "RealTouch73 Suit",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "71": {
+    "name": "RealTouch77 Suit",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "72": {
+    "name": "RealTouch ReedEP",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "994": {
+    "name": "FM EPiano Templ",
+    "categoryId": "e_piano",
+    "categoryLabel": "E. PIANO",
+    "controls": []
+  },
+  "73": {
+    "name": "Chaka Clav",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "74": {
+    "name": "SupaStevie(CB)",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "75": {
+    "name": "Funkadelic Relic",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "76": {
+    "name": "ZEP Clav",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "77": {
+    "name": "HeartbreakerWAH",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "79": {
+    "name": "Stevie Fuzz Amp",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "80": {
+    "name": "OutOfPhasPickups",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "81": {
+    "name": "Fr Harpsi L84U8",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "82": {
+    "name": "Fr Harpsi L48",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "83": {
+    "name": "Fr Harpsi Lute",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "84": {
+    "name": "Fr Harpsi L8",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "85": {
+    "name": "Fr Harpsi U8",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "78": {
+    "name": "Chameleon Wah",
+    "categoryId": "clav",
+    "categoryLabel": "CLAV",
+    "controls": []
+  },
+  "89": {
+    "name": "Classic B3",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "90": {
+    "name": "Funky Perc",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "91": {
+    "name": "Soul Perc",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "92": {
+    "name": "First Three",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "93": {
+    "name": "PerfectStrangers",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "94": {
+    "name": "70s Drawbars",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "95": {
+    "name": "Progbars",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "96": {
+    "name": "Ezra II",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "97": {
+    "name": "Ezra's Burner",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "98": {
+    "name": "Classic Traffic",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "99": {
+    "name": "Mr Smith",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "100": {
+    "name": "HotTubeGospel",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "101": {
+    "name": "VASTBars1-3,8&9",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "102": {
+    "name": "Doors Vox",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "103": {
+    "name": "Animals Vox",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "104": {
+    "name": "Farfisa",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "327": {
+    "name": "Magic Carpet B3",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "105": {
+    "name": "All Stops",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "106": {
+    "name": "AllStops AllVox",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "107": {
+    "name": "Pipe Stops",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "108": {
+    "name": "Chapel Organ",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "109": {
+    "name": "Pipes & Voices",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "110": {
+    "name": "16' Open Flute",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "111": {
+    "name": "16' Ped Reed",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "112": {
+    "name": "16' Reed A",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "113": {
+    "name": "16' Viol",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "114": {
+    "name": "LateNighter",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "115": {
+    "name": "Testify",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "116": {
+    "name": "The Ninth Bar",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "117": {
+    "name": "Blues Harmonica",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "118": {
+    "name": "ParisCmboAccordn",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "119": {
+    "name": "MellowAccordion",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "120": {
+    "name": "BrazilAccordion",
+    "categoryId": "organ",
+    "categoryLabel": "ORGAN",
+    "controls": []
+  },
+  "121": {
+    "name": "Press Lead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "122": {
+    "name": "Cars Square Lead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "123": {
+    "name": "Keytar Hero(Wah)",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "124": {
+    "name": "Voyage Lead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "125": {
+    "name": "SimpleHipHopLead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "126": {
+    "name": "SquareChirpLead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "127": {
+    "name": "Vector Lead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "128": {
+    "name": "80's Lead Synth",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "129": {
+    "name": "Dark Wobbles",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "130": {
+    "name": "Daft Lead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "131": {
+    "name": "Minipulse 4Pole",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "132": {
+    "name": "FrankensteinWah",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "133": {
+    "name": "Candy*O SyncLead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "134": {
+    "name": "Raw & Bleedin'",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "135": {
+    "name": "Dist Filter Lead",
+    "categoryId": "leads",
+    "categoryLabel": "LEADS",
+    "controls": []
+  },
+  "137": {
+    "name": "Film Score Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "138": {
+    "name": "Majestic Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "139": {
+    "name": "So Lush Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "140": {
+    "name": "Bladerunner ARP",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "141": {
+    "name": "CrotaleScape Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "142": {
+    "name": "Undercurrents",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "143": {
+    "name": "Fairlight Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "144": {
+    "name": "Phase Shimmer",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "145": {
+    "name": "Evolving Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "332": {
+    "name": "5th-Scape",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "146": {
+    "name": "Lush Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "147": {
+    "name": "Deeper Water",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "148": {
+    "name": "Lush Rhythm Pad",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "149": {
+    "name": "Cosmic Sus Pedal",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "150": {
+    "name": "Slo Syn Orch",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "151": {
+    "name": "Add A Pad 1",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "152": {
+    "name": "Add a Pad 2",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "330": {
+    "name": "Reverse Universe",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "331": {
+    "name": "Pan Strings 3",
+    "categoryId": "pads",
+    "categoryLabel": "PADS",
+    "controls": []
+  },
+  "153": {
+    "name": "Super Saw",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "154": {
+    "name": "Bright Vector",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "155": {
+    "name": "Classic SynBrass",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "156": {
+    "name": "MW S&H Filt",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "157": {
+    "name": "80's Heaven",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "158": {
+    "name": "PolySynth Stack",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "159": {
+    "name": "Chillwave Chords",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "160": {
+    "name": "Classic Saws",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "340": {
+    "name": "SyncoDeMayo",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "161": {
+    "name": "Big Old Jupiter",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "162": {
+    "name": "Punchy Synth",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "163": {
+    "name": "Touch Trance",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "164": {
+    "name": "Square Bell",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "165": {
+    "name": "Perc Vector",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "166": {
+    "name": "Tesla Coil",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "167": {
+    "name": "Warbly Pong SQR",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "168": {
+    "name": "Gangsta Wrap",
+    "categoryId": "synths",
+    "categoryLabel": "SYNTHS",
+    "controls": []
+  },
+  "169": {
+    "name": "Woodhouse Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "170": {
+    "name": "Aggro OctoBass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "171": {
+    "name": "KneeDeepMinimoog",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "172": {
+    "name": "Squeeze Mini",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "173": {
+    "name": "Iceman Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "174": {
+    "name": "ANGRYBass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "175": {
+    "name": "Big Synth Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "176": {
+    "name": "Noise Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "177": {
+    "name": "The Way It Is",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "178": {
+    "name": "Dolby Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "350": {
+    "name": "Leviathan Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "351": {
+    "name": "Decepticon Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "352": {
+    "name": "Latch Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "353": {
+    "name": "APG-ish Bass",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "993": {
+    "name": "FM Bass Templ",
+    "categoryId": "synth_bass",
+    "categoryLabel": "SYNTH BASS",
+    "controls": []
+  },
+  "179": {
+    "name": "Adagio Strings",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "180": {
+    "name": "Big LA Strings",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "181": {
+    "name": "Fast Strings",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "182": {
+    "name": "Slow String Trem",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "183": {
+    "name": "AdagioTutti 8ves",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "184": {
+    "name": "Adagio Octaves",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "185": {
+    "name": "NashvilleStrings",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "186": {
+    "name": "Poltergeist Pad",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "187": {
+    "name": "Full Pizzicato",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "188": {
+    "name": "Lead Violins II",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "189": {
+    "name": "AggressDivisiStr",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "190": {
+    "name": "Yesesis Tron Str",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "191": {
+    "name": "Moby TurntblTron",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "192": {
+    "name": "Solo Violin fast",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "193": {
+    "name": "Solo Cello fast",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "194": {
+    "name": "Arpegg/Solo Harp",
+    "categoryId": "strings",
+    "categoryLabel": "STRINGS",
+    "controls": []
+  },
+  "195": {
+    "name": "Session Hornz",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "196": {
+    "name": "High-End Horns",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "197": {
+    "name": "Split SectionSW",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "198": {
+    "name": "Mancini Brass",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "199": {
+    "name": "GB Hornz+Syn",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "200": {
+    "name": "Super-8 Brass",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "201": {
+    "name": "Brass Fanfare",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "202": {
+    "name": "Low Orch Brass",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "203": {
+    "name": "Lead Trumpet",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "204": {
+    "name": "Solo Trombone",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "205": {
+    "name": "Jubilee Trumpets",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "206": {
+    "name": "Wah Trumpet",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "207": {
+    "name": "Mr. West Horns",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "208": {
+    "name": "Bullit Brass",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "209": {
+    "name": "Dr. StAb'N SwEll",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "210": {
+    "name": "MiamiBrassSectns",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "992": {
+    "name": "FM Brass Templ",
+    "categoryId": "brass",
+    "categoryLabel": "BRASS",
+    "controls": []
+  },
+  "211": {
+    "name": "Mostly Saxes",
+    "categoryId": "winds",
+    "categoryLabel": "WINDS",
+    "controls": []
+  },
+  "212": {
+    "name": "UniSaxSection",
+    "categoryId": "winds",
+    "categoryLabel": "WINDS",
+    "controls": []
+  },
+  "213": {
+    "name": "Bassoon/Oboe",
+    "categoryId": "winds",
+    "categoryLabel": "WINDS",
+    "controls": []
+  },
+  "214": {
+    "name": "Solo Alto Sax",
+    "categoryId": "winds",
+    "categoryLabel": "WINDS",
+    "controls": []
+  },
+  "219": {
+    "name": "Gothic Climax",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "220": {
+    "name": "Winds & Strings",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "221": {
+    "name": "3Way Split Mltrn",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "215": {
+    "name": "Solo Tenor Sax",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "216": {
+    "name": "Clarinet/Flute",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "217": {
+    "name": "Solo Bari Sax",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "218": {
+    "name": "StrawberryFlutes",
+    "categoryId": "ensemble",
+    "categoryLabel": "ENSEMBLE",
+    "controls": []
+  },
+  "227": {
+    "name": "Rich 'Caster",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "228": {
+    "name": "Rich Les",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "229": {
+    "name": "Studio 'Caster",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "230": {
+    "name": "Phase Pick Les",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "231": {
+    "name": "TimeWarpCaster",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "232": {
+    "name": "Kinda Krunchy",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "233": {
+    "name": "Brown Sound",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "234": {
+    "name": "Stompbox Les",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "235": {
+    "name": "SuperflyWahCast",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "236": {
+    "name": "Jack the Ripper",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "237": {
+    "name": "Boutique Six Str",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "238": {
+    "name": "Boutique 12 Str",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "239": {
+    "name": "Real Nylon",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "240": {
+    "name": "Mandolin Plus",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "241": {
+    "name": "Banjo Plus",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "242": {
+    "name": "Dulciliere",
+    "categoryId": "guitar",
+    "categoryLabel": "GUITAR",
+    "controls": []
+  },
+  "243": {
+    "name": "P-Bass",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "244": {
+    "name": "Motown Bass",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "245": {
+    "name": "Finger Bass",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "246": {
+    "name": "Flea/Bootsy",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "247": {
+    "name": "Jaco Fretless",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "248": {
+    "name": "AC Buzzer Bass",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "249": {
+    "name": "Beasties Bass",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "250": {
+    "name": "Levin/GabrlFrtls",
+    "categoryId": "bass",
+    "categoryLabel": "BASS",
+    "controls": []
+  },
+  "251": {
+    "name": "Kit 1 Open Rock",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "252": {
+    "name": "Kit 2 J Geils",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "253": {
+    "name": "Kit 3 West Boxy",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "254": {
+    "name": "Kit 4 SquashRock",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "255": {
+    "name": "Kit 5 Beatbox101",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "256": {
+    "name": "Kit 6 Full Room",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "257": {
+    "name": "Kit 7 Brush",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "258": {
+    "name": "Kit 8 CopperRing",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "259": {
+    "name": "Kit 9 Big Buzz",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "260": {
+    "name": "Kit 10 DeadRockr",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "261": {
+    "name": "Kit 11 Low Rock",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "262": {
+    "name": "Kit 12 GaddsLair",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "263": {
+    "name": "Kit 13 KirkeeB",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "264": {
+    "name": "Kit 14 ModernRok",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "265": {
+    "name": "Kit 15 Drum&Bass",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "266": {
+    "name": "Kit 16 Skrlx",
+    "categoryId": "drums",
+    "categoryLabel": "DRUMS",
+    "controls": []
+  },
+  "267": {
+    "name": "Celeste",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "268": {
+    "name": "Octave Celeste",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "269": {
+    "name": "Bells",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "270": {
+    "name": "Carillon",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "271": {
+    "name": "Basic Orch Perc     n",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "272": {
+    "name": "Orch Timpani",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "273": {
+    "name": "Natural Perc",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "274": {
+    "name": "Percussionist",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "275": {
+    "name": "BongoConga",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "276": {
+    "name": "TalkingDrum",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "277": {
+    "name": "Perc Accessory",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "278": {
+    "name": "Carnival Perc",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "279": {
+    "name": "Vocal Percussio",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "280": {
+    "name": "Rogers Celeste",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "996": {
+    "name": "Click Track",
+    "categoryId": "percussion",
+    "categoryLabel": "PERCUSSION",
+    "controls": []
+  },
+  "283": {
+    "name": "Mixed Choir",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "284": {
+    "name": "Manhattan Voices",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "285": {
+    "name": "Choir Complete",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "286": {
+    "name": "NYC in LA",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "287": {
+    "name": "Crystal Voices",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "288": {
+    "name": "Cathedral Vox",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "289": {
+    "name": "Silent Sorrow",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "290": {
+    "name": "Swept Tron Voice",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "291": {
+    "name": "Slo Orch Chorus",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "292": {
+    "name": "Aaah Vocals",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "293": {
+    "name": "Jazzy Ballad Vox",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "294": {
+    "name": "Bright Syn Vox",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "295": {
+    "name": "AntiqueAhhChorus",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "296": {
+    "name": "Vox Orgel",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "297": {
+    "name": "Aaahlicious",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "298": {
+    "name": "PolyTechnobreath",
+    "categoryId": "voices",
+    "categoryLabel": "VOICES",
+    "controls": []
+  },
+  "299": {
+    "name": "Glockenspiel",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "300": {
+    "name": "Real Vibes",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "301": {
+    "name": "Stereo Marimba",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "302": {
+    "name": "Xylophone",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "303": {
+    "name": "XHarmonicStlDrum",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "309": {
+    "name": "CelesteGlockHarp",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "304": {
+    "name": "Chimes",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "305": {
+    "name": "Bigger Chimes",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "306": {
+    "name": "Crotales Hits",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "307": {
+    "name": "Metal Marimba",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "308": {
+    "name": "SteamPunkMallets",
+    "categoryId": "mallets",
+    "categoryLabel": "MALLETS",
+    "controls": []
+  },
+  "315": {
+    "name": "Celeste Palette",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "316": {
+    "name": "Bellestrum VTrg",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "317": {
+    "name": "Toy Piano",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "318": {
+    "name": "Bunch of Bells",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "319": {
+    "name": "Synthy 73",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "320": {
+    "name": "Wurzzicato",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "321": {
+    "name": "Comp Cro + Pad",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "322": {
+    "name": "Clavestrum",
+    "categoryId": "hybrid",
+    "categoryLabel": "HYBRID",
+    "controls": []
+  },
+  "323": {
+    "name": "Bowed Crotales",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "324": {
+    "name": "Bells and Bows",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "325": {
+    "name": "Bass Pedal",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "326": {
+    "name": "Bubbles!",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "995": {
+    "name": "FM Template",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "997": {
+    "name": "Silent Program",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "998": {
+    "name": "Editor Template",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  },
+  "999": {
+    "name": "Clear Program",
+    "categoryId": "miscellaneous",
+    "categoryLabel": "MISCELLANEOUS",
+    "controls": []
+  }
+}

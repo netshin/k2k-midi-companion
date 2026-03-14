@@ -1,0 +1,1960 @@
+{
+  "source": {
+    "input": "temp",
+    "count": 488
+  },
+  "presets": [
+    {
+      "id": 1,
+      "name": "Small Wood Booth"
+    },
+    {
+      "id": 2,
+      "name": "Natural Room"
+    },
+    {
+      "id": 3,
+      "name": "PrettySmallPlace"
+    },
+    {
+      "id": 4,
+      "name": "NiceLittleBooth"
+    },
+    {
+      "id": 5,
+      "name": "Sun Room"
+    },
+    {
+      "id": 6,
+      "name": "Soundboard"
+    },
+    {
+      "id": 7,
+      "name": "Add More Air"
+    },
+    {
+      "id": 8,
+      "name": "Standard Booth"
+    },
+    {
+      "id": 9,
+      "name": "A Distance Away"
+    },
+    {
+      "id": 10,
+      "name": "Live Place"
+    },
+    {
+      "id": 11,
+      "name": "Viewing Booth"
+    },
+    {
+      "id": 12,
+      "name": "Small Closet"
+    },
+    {
+      "id": 13,
+      "name": "Add Ambience"
+    },
+    {
+      "id": 14,
+      "name": "With A Mic"
+    },
+    {
+      "id": 15,
+      "name": "BrightSmallRoom"
+    },
+    {
+      "id": 16,
+      "name": "Bassy Room"
+    },
+    {
+      "id": 17,
+      "name": "Percussive Room"
+    },
+    {
+      "id": 18,
+      "name": "SmallStudioRoom"
+    },
+    {
+      "id": 19,
+      "name": "ClassRoom"
+    },
+    {
+      "id": 20,
+      "name": "Utility Room"
+    },
+    {
+      "id": 21,
+      "name": "Thick Room"
+    },
+    {
+      "id": 22,
+      "name": "The Real Room"
+    },
+    {
+      "id": 23,
+      "name": "Small Drum Room"
+    },
+    {
+      "id": 24,
+      "name": "Real Big Room"
+    },
+    {
+      "id": 25,
+      "name": "The Comfy Club"
+    },
+    {
+      "id": 26,
+      "name": "Spitty Drum Room"
+    },
+    {
+      "id": 27,
+      "name": "Stall One"
+    },
+    {
+      "id": 28,
+      "name": "Green Room"
+    },
+    {
+      "id": 29,
+      "name": "Tabla Room"
+    },
+    {
+      "id": 30,
+      "name": "Large Room"
+    },
+    {
+      "id": 31,
+      "name": "Platey Room"
+    },
+    {
+      "id": 32,
+      "name": "Bathroom"
+    },
+    {
+      "id": 33,
+      "name": "Drum Room"
+    },
+    {
+      "id": 34,
+      "name": "Small Dark Room"
+    },
+    {
+      "id": 35,
+      "name": "Real Room"
+    },
+    {
+      "id": 36,
+      "name": "Brt Empty Room"
+    },
+    {
+      "id": 37,
+      "name": "Med Large Room"
+    },
+    {
+      "id": 38,
+      "name": "Bigger Perc Room"
+    },
+    {
+      "id": 39,
+      "name": "Sizzly Drum Room"
+    },
+    {
+      "id": 40,
+      "name": "Live Chamber"
+    },
+    {
+      "id": 41,
+      "name": "Brass Chamber"
+    },
+    {
+      "id": 42,
+      "name": "Sax Chamber"
+    },
+    {
+      "id": 43,
+      "name": "Plebe Chamber"
+    },
+    {
+      "id": 44,
+      "name": "JudgeJudyChamber"
+    },
+    {
+      "id": 45,
+      "name": "Bloom Chamber"
+    },
+    {
+      "id": 46,
+      "name": "ClassicalChamber"
+    },
+    {
+      "id": 47,
+      "name": "In The Studio"
+    },
+    {
+      "id": 48,
+      "name": "My Garage"
+    },
+    {
+      "id": 49,
+      "name": "Cool Dark Place"
+    },
+    {
+      "id": 50,
+      "name": "Small Hall"
+    },
+    {
+      "id": 51,
+      "name": "Medium Hall"
+    },
+    {
+      "id": 52,
+      "name": "Real Niceverb"
+    },
+    {
+      "id": 53,
+      "name": "Opera House"
+    },
+    {
+      "id": 54,
+      "name": "Mosque Room"
+    },
+    {
+      "id": 55,
+      "name": "Grandiose Hall"
+    },
+    {
+      "id": 56,
+      "name": "Elegant Hall"
+    },
+    {
+      "id": 57,
+      "name": "Bright Hall"
+    },
+    {
+      "id": 58,
+      "name": "Ballroom"
+    },
+    {
+      "id": 59,
+      "name": "Spacious Hall"
+    },
+    {
+      "id": 60,
+      "name": "Classic Chapel"
+    },
+    {
+      "id": 61,
+      "name": "Semisweet Hall"
+    },
+    {
+      "id": 62,
+      "name": "Pipes Hall"
+    },
+    {
+      "id": 63,
+      "name": "Reflective Hall"
+    },
+    {
+      "id": 64,
+      "name": "Smoooth Hall"
+    },
+    {
+      "id": 65,
+      "name": "Empty Stage"
+    },
+    {
+      "id": 66,
+      "name": "Pad Space"
+    },
+    {
+      "id": 67,
+      "name": "Bob'sDiffuseHall"
+    },
+    {
+      "id": 68,
+      "name": "Abbey Piano Hall"
+    },
+    {
+      "id": 69,
+      "name": "Short Hall"
+    },
+    {
+      "id": 70,
+      "name": "The Long Haul"
+    },
+    {
+      "id": 71,
+      "name": "Predelay Hall"
+    },
+    {
+      "id": 72,
+      "name": "Sweeter Hall"
+    },
+    {
+      "id": 73,
+      "name": "The Piano Hall"
+    },
+    {
+      "id": 74,
+      "name": "Bloom Hall"
+    },
+    {
+      "id": 75,
+      "name": "Recital Hall"
+    },
+    {
+      "id": 76,
+      "name": "Generic Hall"
+    },
+    {
+      "id": 77,
+      "name": "Burst Space"
+    },
+    {
+      "id": 78,
+      "name": "Real Dense Hall"
+    },
+    {
+      "id": 79,
+      "name": "Concert Hall"
+    },
+    {
+      "id": 80,
+      "name": "Standing Ovation"
+    },
+    {
+      "id": 81,
+      "name": "Flinty Hall"
+    },
+    {
+      "id": 82,
+      "name": "HighSchool Gym"
+    },
+    {
+      "id": 83,
+      "name": "My Dreamy 481!!"
+    },
+    {
+      "id": 84,
+      "name": "Deep Hall"
+    },
+    {
+      "id": 85,
+      "name": "Sweet Hall"
+    },
+    {
+      "id": 86,
+      "name": "Soundbrd/rvb"
+    },
+    {
+      "id": 87,
+      "name": "Long & Narrow"
+    },
+    {
+      "id": 88,
+      "name": "Long PreDly Hall"
+    },
+    {
+      "id": 89,
+      "name": "School Stairwell"
+    },
+    {
+      "id": 90,
+      "name": "Real Plate"
+    },
+    {
+      "id": 91,
+      "name": "Bright Plate"
+    },
+    {
+      "id": 92,
+      "name": "Medm Warm Plate"
+    },
+    {
+      "id": 93,
+      "name": "Bloom Plate"
+    },
+    {
+      "id": 94,
+      "name": "Clean Plate"
+    },
+    {
+      "id": 95,
+      "name": "Plate Mail"
+    },
+    {
+      "id": 96,
+      "name": "RealSmoothPlate"
+    },
+    {
+      "id": 97,
+      "name": "Classic Plate"
+    },
+    {
+      "id": 98,
+      "name": "Weighty Platey"
+    },
+    {
+      "id": 99,
+      "name": "Huge Tight Plate"
+    },
+    {
+      "id": 100,
+      "name": "Immense Mosque"
+    },
+    {
+      "id": 101,
+      "name": "Dreamverb"
+    },
+    {
+      "id": 102,
+      "name": "Splendid Palace"
+    },
+    {
+      "id": 103,
+      "name": "Big Gym"
+    },
+    {
+      "id": 104,
+      "name": "Huge Batcave"
+    },
+    {
+      "id": 105,
+      "name": "Reverse Reverb 1"
+    },
+    {
+      "id": 106,
+      "name": "Reverse Reverb 2"
+    },
+    {
+      "id": 107,
+      "name": "Reverse Reverb 3"
+    },
+    {
+      "id": 108,
+      "name": "Gated Reverb"
+    },
+    {
+      "id": 109,
+      "name": "Gate Plate"
+    },
+    {
+      "id": 110,
+      "name": "Vocal Room"
+    },
+    {
+      "id": 111,
+      "name": "Vocal Stage"
+    },
+    {
+      "id": 112,
+      "name": "Reverb>Compress"
+    },
+    {
+      "id": 113,
+      "name": "Reverb>Compress2"
+    },
+    {
+      "id": 114,
+      "name": "Drum Comprs>Rvb"
+    },
+    {
+      "id": 115,
+      "name": "Rvrb Compression"
+    },
+    {
+      "id": 116,
+      "name": "Snappy Drum Room"
+    },
+    {
+      "id": 117,
+      "name": "Roomitizer"
+    },
+    {
+      "id": 118,
+      "name": "Live To Tape"
+    },
+    {
+      "id": 119,
+      "name": "L:SmlRm  R:Hall"
+    },
+    {
+      "id": 120,
+      "name": "Non-Linear 1"
+    },
+    {
+      "id": 121,
+      "name": "Non-Linear 2"
+    },
+    {
+      "id": 122,
+      "name": "Non-Linear 3"
+    },
+    {
+      "id": 123,
+      "name": "Exponent Booth"
+    },
+    {
+      "id": 124,
+      "name": "Drum Latch 1"
+    },
+    {
+      "id": 125,
+      "name": "Drum Latch 2"
+    },
+    {
+      "id": 126,
+      "name": "Diffuse Gate"
+    },
+    {
+      "id": 127,
+      "name": "Acid Trip Room"
+    },
+    {
+      "id": 128,
+      "name": "Ringy Drum Plate"
+    },
+    {
+      "id": 129,
+      "name": "Oil Tank"
+    },
+    {
+      "id": 130,
+      "name": "Wobbly Plate"
+    },
+    {
+      "id": 131,
+      "name": "Pitcher Hall"
+    },
+    {
+      "id": 132,
+      "name": "DistantTVRoom"
+    },
+    {
+      "id": 133,
+      "name": "Drum Neurezonate"
+    },
+    {
+      "id": 134,
+      "name": "Growler"
+    },
+    {
+      "id": 135,
+      "name": "LaserVerb"
+    },
+    {
+      "id": 136,
+      "name": "Laserwaves"
+    },
+    {
+      "id": 137,
+      "name": "Cheap LaserVerb"
+    },
+    {
+      "id": 138,
+      "name": "Gated LaserVerb"
+    },
+    {
+      "id": 139,
+      "name": "Rvrs LaserVerb"
+    },
+    {
+      "id": 140,
+      "name": "LazerfazerEchoes"
+    },
+    {
+      "id": 141,
+      "name": "Simple LaserVerb"
+    },
+    {
+      "id": 142,
+      "name": "Crystallizer"
+    },
+    {
+      "id": 143,
+      "name": "Spry Young Boy"
+    },
+    {
+      "id": 144,
+      "name": "Gunshot Verb"
+    },
+    {
+      "id": 145,
+      "name": "Slapverb"
+    },
+    {
+      "id": 146,
+      "name": "Far Bloom"
+    },
+    {
+      "id": 147,
+      "name": "Room + Delay"
+    },
+    {
+      "id": 148,
+      "name": "New Hall w/Delay"
+    },
+    {
+      "id": 149,
+      "name": "Delay Big Hall"
+    },
+    {
+      "id": 150,
+      "name": "Basic Delay 1/8"
+    },
+    {
+      "id": 151,
+      "name": "Basic Dly 250ms"
+    },
+    {
+      "id": 152,
+      "name": "Simple Slap 60ms"
+    },
+    {
+      "id": 153,
+      "name": "TightSlapbk 30ms"
+    },
+    {
+      "id": 154,
+      "name": "MedSlapback 76ms"
+    },
+    {
+      "id": 155,
+      "name": "LongishSlap 95ms"
+    },
+    {
+      "id": 156,
+      "name": "Wide Slapbk 76ms"
+    },
+    {
+      "id": 157,
+      "name": "TiteSlapAmb 50ms"
+    },
+    {
+      "id": 158,
+      "name": "33ms Ambience"
+    },
+    {
+      "id": 159,
+      "name": "17ms Ambience"
+    },
+    {
+      "id": 160,
+      "name": "Stereo Delay ms"
+    },
+    {
+      "id": 161,
+      "name": "StereoFlamDelay"
+    },
+    {
+      "id": 163,
+      "name": "Better Tape Echo"
+    },
+    {
+      "id": 164,
+      "name": "Stereo Tape Slap"
+    },
+    {
+      "id": 165,
+      "name": "Dub Delay ms"
+    },
+    {
+      "id": 166,
+      "name": "4-Tap Delay BPM"
+    },
+    {
+      "id": 167,
+      "name": "4-Tap Dly Pan ms"
+    },
+    {
+      "id": 168,
+      "name": "SemiCircle 4-Tap"
+    },
+    {
+      "id": 169,
+      "name": "8-Tap Delay BPM"
+    },
+    {
+      "id": 170,
+      "name": "Multitaps ms"
+    },
+    {
+      "id": 171,
+      "name": "Diffuse Slaps"
+    },
+    {
+      "id": 172,
+      "name": "OffbeatFlamDelay"
+    },
+    {
+      "id": 173,
+      "name": "Sloppy Echoes"
+    },
+    {
+      "id": 174,
+      "name": "Pad Psychosis"
+    },
+    {
+      "id": 175,
+      "name": "500ms BehindSrce"
+    },
+    {
+      "id": 176,
+      "name": "Dub Skanque Dly"
+    },
+    {
+      "id": 177,
+      "name": "Electronica Slap"
+    },
+    {
+      "id": 178,
+      "name": "Spectral 4-Tap"
+    },
+    {
+      "id": 179,
+      "name": "Astral Taps"
+    },
+    {
+      "id": 180,
+      "name": "SpectraShapeTaps"
+    },
+    {
+      "id": 181,
+      "name": "Fanfare In Gmaj"
+    },
+    {
+      "id": 182,
+      "name": "Ecko Plecks BPM"
+    },
+    {
+      "id": 183,
+      "name": "Ecko Plecks ms"
+    },
+    {
+      "id": 184,
+      "name": "Degenerator"
+    },
+    {
+      "id": 185,
+      "name": "Nanobot Feedback"
+    },
+    {
+      "id": 186,
+      "name": "Takes a while..."
+    },
+    {
+      "id": 187,
+      "name": "Wait for UFO"
+    },
+    {
+      "id": 188,
+      "name": "News Update"
+    },
+    {
+      "id": 189,
+      "name": "Timbre Taps"
+    },
+    {
+      "id": 190,
+      "name": "LaserDelay->Rvb"
+    },
+    {
+      "id": 191,
+      "name": "Furbelows"
+    },
+    {
+      "id": 192,
+      "name": "Festoons"
+    },
+    {
+      "id": 193,
+      "name": "Ducked Delay"
+    },
+    {
+      "id": 194,
+      "name": "Drum+Bass Zapper"
+    },
+    {
+      "id": 195,
+      "name": "3BandDly Drums"
+    },
+    {
+      "id": 196,
+      "name": "Warped Echoes"
+    },
+    {
+      "id": 197,
+      "name": "Ween-vox"
+    },
+    {
+      "id": 198,
+      "name": "L:Flange R:Delay"
+    },
+    {
+      "id": 199,
+      "name": "2Dlys 1Chr 1Flng"
+    },
+    {
+      "id": 200,
+      "name": "Basic Chorus"
+    },
+    {
+      "id": 201,
+      "name": "Smooth Chorus"
+    },
+    {
+      "id": 202,
+      "name": "Chorusier"
+    },
+    {
+      "id": 203,
+      "name": "Ordinary Chorus"
+    },
+    {
+      "id": 204,
+      "name": "SlowSpinChorus"
+    },
+    {
+      "id": 205,
+      "name": "Chorus Morris"
+    },
+    {
+      "id": 206,
+      "name": "Everyday Chorus"
+    },
+    {
+      "id": 207,
+      "name": "Thick Chorus"
+    },
+    {
+      "id": 208,
+      "name": "Soft Chorus"
+    },
+    {
+      "id": 209,
+      "name": "Rock Chorus"
+    },
+    {
+      "id": 210,
+      "name": "Sm Stereo Chorus"
+    },
+    {
+      "id": 211,
+      "name": "Lg Stereo Chorus"
+    },
+    {
+      "id": 212,
+      "name": "Full Chorus"
+    },
+    {
+      "id": 213,
+      "name": "Dense Gtr Chorus"
+    },
+    {
+      "id": 214,
+      "name": "Standrd Gtr Chor"
+    },
+    {
+      "id": 215,
+      "name": "Bass Chorus"
+    },
+    {
+      "id": 216,
+      "name": "Stereo Chorus"
+    },
+    {
+      "id": 217,
+      "name": "Chorus Fastback"
+    },
+    {
+      "id": 218,
+      "name": "Wide Chorus"
+    },
+    {
+      "id": 219,
+      "name": "Nickel Chorus"
+    },
+    {
+      "id": 220,
+      "name": "Rich Noodle"
+    },
+    {
+      "id": 221,
+      "name": "PinchChorusDelay"
+    },
+    {
+      "id": 222,
+      "name": "StChorus+Delay"
+    },
+    {
+      "id": 223,
+      "name": "StChor+3vs2Delay"
+    },
+    {
+      "id": 224,
+      "name": "CDR for Lead Gtr"
+    },
+    {
+      "id": 225,
+      "name": "Big Slow Flange"
+    },
+    {
+      "id": 226,
+      "name": "Squeeze Flange"
+    },
+    {
+      "id": 227,
+      "name": "Sweet Flange"
+    },
+    {
+      "id": 228,
+      "name": "Throaty Flange"
+    },
+    {
+      "id": 229,
+      "name": "PseudoAnaGtrFlng"
+    },
+    {
+      "id": 230,
+      "name": "Flanger Double"
+    },
+    {
+      "id": 231,
+      "name": "Wetlip Flange"
+    },
+    {
+      "id": 232,
+      "name": "Simply Flange"
+    },
+    {
+      "id": 233,
+      "name": "Analog Flanger"
+    },
+    {
+      "id": 234,
+      "name": "Soft Edge Flange"
+    },
+    {
+      "id": 235,
+      "name": "Ned Flangers"
+    },
+    {
+      "id": 236,
+      "name": "Wispy Flange"
+    },
+    {
+      "id": 237,
+      "name": "Crystal Flange"
+    },
+    {
+      "id": 238,
+      "name": "NarrowResFlange"
+    },
+    {
+      "id": 239,
+      "name": "TightSlapFlange"
+    },
+    {
+      "id": 240,
+      "name": "Flanged Taps"
+    },
+    {
+      "id": 241,
+      "name": "StFlange+Delay"
+    },
+    {
+      "id": 242,
+      "name": "StFlng+3vs2Delay"
+    },
+    {
+      "id": 243,
+      "name": "Singing Flanger"
+    },
+    {
+      "id": 244,
+      "name": "DampedEchoFlange"
+    },
+    {
+      "id": 245,
+      "name": "Stereo Flanger"
+    },
+    {
+      "id": 246,
+      "name": "Gulp Flange"
+    },
+    {
+      "id": 247,
+      "name": "Splat Flange"
+    },
+    {
+      "id": 248,
+      "name": "Spread Flange"
+    },
+    {
+      "id": 249,
+      "name": "CacophonousFlng"
+    },
+    {
+      "id": 250,
+      "name": "Slow Deep Phaser"
+    },
+    {
+      "id": 251,
+      "name": "Circles"
+    },
+    {
+      "id": 252,
+      "name": "Saucepan Phaser"
+    },
+    {
+      "id": 253,
+      "name": "ThunderPhaser"
+    },
+    {
+      "id": 254,
+      "name": "Fast Phaser"
+    },
+    {
+      "id": 255,
+      "name": "Vibrato Phaser"
+    },
+    {
+      "id": 256,
+      "name": "Fast&Slow Phaser"
+    },
+    {
+      "id": 257,
+      "name": "Wawawawawawawawa"
+    },
+    {
+      "id": 258,
+      "name": "Slow Swish Phase"
+    },
+    {
+      "id": 259,
+      "name": "Slippery Slope"
+    },
+    {
+      "id": 260,
+      "name": "Static Phaser 1"
+    },
+    {
+      "id": 261,
+      "name": "Static Phaser 2"
+    },
+    {
+      "id": 262,
+      "name": "Static Phaser 3"
+    },
+    {
+      "id": 263,
+      "name": "Static Phaser 4"
+    },
+    {
+      "id": 264,
+      "name": "Static Phaser 5"
+    },
+    {
+      "id": 265,
+      "name": "Slow Riser"
+    },
+    {
+      "id": 266,
+      "name": "BarberPole Notch"
+    },
+    {
+      "id": 267,
+      "name": "BarberPole Peak"
+    },
+    {
+      "id": 268,
+      "name": "All The Way Down"
+    },
+    {
+      "id": 269,
+      "name": "Westward Waves"
+    },
+    {
+      "id": 270,
+      "name": "Tremolo BPM"
+    },
+    {
+      "id": 271,
+      "name": "Fast Tremolo BPM"
+    },
+    {
+      "id": 272,
+      "name": "Tremolo in Hz"
+    },
+    {
+      "id": 273,
+      "name": "FastPulseTremolo"
+    },
+    {
+      "id": 274,
+      "name": "Simple Panner"
+    },
+    {
+      "id": 275,
+      "name": "Dual Panner"
+    },
+    {
+      "id": 276,
+      "name": "Widespread"
+    },
+    {
+      "id": 277,
+      "name": "Widener Mn->St"
+    },
+    {
+      "id": 278,
+      "name": "Dynam Stereoizer"
+    },
+    {
+      "id": 280,
+      "name": "CleanRotors fast"
+    },
+    {
+      "id": 281,
+      "name": "CleanRotors slow"
+    },
+    {
+      "id": 282,
+      "name": "CleanRotors f C1"
+    },
+    {
+      "id": 283,
+      "name": "CleanRotors f V1"
+    },
+    {
+      "id": 284,
+      "name": "CleanRotors f Hi"
+    },
+    {
+      "id": 285,
+      "name": "CleanRotors s Hi"
+    },
+    {
+      "id": 286,
+      "name": "SlightDstRotor f"
+    },
+    {
+      "id": 287,
+      "name": "SlightDstRotor s"
+    },
+    {
+      "id": 288,
+      "name": "DirtyRotors fast"
+    },
+    {
+      "id": 289,
+      "name": "DirtyRotors slow"
+    },
+    {
+      "id": 290,
+      "name": "MoreDistRotor f"
+    },
+    {
+      "id": 291,
+      "name": "MoreDistRotor s"
+    },
+    {
+      "id": 292,
+      "name": "HeavyDistRotor f"
+    },
+    {
+      "id": 293,
+      "name": "HeavyDistRotor s"
+    },
+    {
+      "id": 294,
+      "name": "Res Rotor1 fast"
+    },
+    {
+      "id": 295,
+      "name": "Res Rotor1 slow"
+    },
+    {
+      "id": 296,
+      "name": "FullRotors4 fast"
+    },
+    {
+      "id": 297,
+      "name": "FullRotors4 slow"
+    },
+    {
+      "id": 298,
+      "name": "VibChorStortCab"
+    },
+    {
+      "id": 299,
+      "name": "Hi Lo Roto KB3"
+    },
+    {
+      "id": 300,
+      "name": "Classic Gtr Dist"
+    },
+    {
+      "id": 301,
+      "name": "Crunch Guitar"
+    },
+    {
+      "id": 302,
+      "name": "SaturatedGtrDist"
+    },
+    {
+      "id": 303,
+      "name": "Mean 70'sFunkGtr"
+    },
+    {
+      "id": 304,
+      "name": "Blown Speaker"
+    },
+    {
+      "id": 305,
+      "name": "Synth Distortion"
+    },
+    {
+      "id": 306,
+      "name": "Superphasulate"
+    },
+    {
+      "id": 307,
+      "name": "Dist Cab EPiano"
+    },
+    {
+      "id": 308,
+      "name": "Distortion+EQ"
+    },
+    {
+      "id": 309,
+      "name": "Burnt Transistor"
+    },
+    {
+      "id": 310,
+      "name": "SubtleDistortion"
+    },
+    {
+      "id": 311,
+      "name": "A little dirty"
+    },
+    {
+      "id": 312,
+      "name": "Slight Overload"
+    },
+    {
+      "id": 313,
+      "name": "ODriveGtrLd DlCh"
+    },
+    {
+      "id": 314,
+      "name": "Krazy Gtr Comper"
+    },
+    {
+      "id": 315,
+      "name": "MildGtrOD+Dly+Fl"
+    },
+    {
+      "id": 316,
+      "name": "LeadGtr Dly Flng"
+    },
+    {
+      "id": 317,
+      "name": "Drum Shaper"
+    },
+    {
+      "id": 318,
+      "name": "SubtleDrumShape"
+    },
+    {
+      "id": 319,
+      "name": "SuperShaper"
+    },
+    {
+      "id": 320,
+      "name": "3 Band Shaper"
+    },
+    {
+      "id": 321,
+      "name": "New3BandShaper"
+    },
+    {
+      "id": 322,
+      "name": "Shaper->Flange"
+    },
+    {
+      "id": 323,
+      "name": "Shaper->Reverb"
+    },
+    {
+      "id": 329,
+      "name": "Aliaser"
+    },
+    {
+      "id": 330,
+      "name": "HKCompressor 3:1"
+    },
+    {
+      "id": 331,
+      "name": "HKCompressor 5:1"
+    },
+    {
+      "id": 332,
+      "name": "SK FB Comprs 6:1"
+    },
+    {
+      "id": 333,
+      "name": "SKCompressor 9:1"
+    },
+    {
+      "id": 334,
+      "name": "SKCompressr 12:1"
+    },
+    {
+      "id": 336,
+      "name": "Compress w/SC EQ"
+    },
+    {
+      "id": 337,
+      "name": "Compress/Expand"
+    },
+    {
+      "id": 338,
+      "name": "Comprs/Expnd +EQ"
+    },
+    {
+      "id": 339,
+      "name": "Expander"
+    },
+    {
+      "id": 340,
+      "name": "Simple Gate"
+    },
+    {
+      "id": 341,
+      "name": "Gate w/ SC EQ"
+    },
+    {
+      "id": 342,
+      "name": "3Band Compressor"
+    },
+    {
+      "id": 343,
+      "name": "3Band Compress2"
+    },
+    {
+      "id": 344,
+      "name": "Mid Compressor"
+    },
+    {
+      "id": 345,
+      "name": "OddHarmSuppress"
+    },
+    {
+      "id": 346,
+      "name": "60Hz Buzz Kill"
+    },
+    {
+      "id": 347,
+      "name": "Dual SK Compress"
+    },
+    {
+      "id": 348,
+      "name": "Dual Comprs SCEQ"
+    },
+    {
+      "id": 350,
+      "name": "AM Radio"
+    },
+    {
+      "id": 351,
+      "name": "U-Shaped EQ"
+    },
+    {
+      "id": 352,
+      "name": "5 Band EQ Flat"
+    },
+    {
+      "id": 353,
+      "name": "Graphic EQ Flat"
+    },
+    {
+      "id": 354,
+      "name": "Dual Graphic EQ"
+    },
+    {
+      "id": 355,
+      "name": "Dual 5 Band EQ"
+    },
+    {
+      "id": 356,
+      "name": "Basic Env Filter"
+    },
+    {
+      "id": 357,
+      "name": "Phunk Env Filter"
+    },
+    {
+      "id": 358,
+      "name": "Synth Env Filter"
+    },
+    {
+      "id": 359,
+      "name": "Bass Env Filter"
+    },
+    {
+      "id": 360,
+      "name": "EPno Env Filter"
+    },
+    {
+      "id": 362,
+      "name": "LFO Sweep Filter"
+    },
+    {
+      "id": 363,
+      "name": "DoubleRiseFilter"
+    },
+    {
+      "id": 364,
+      "name": "Circle Bandsweep"
+    },
+    {
+      "id": 365,
+      "name": "TripFilter"
+    },
+    {
+      "id": 366,
+      "name": "Resonant Filter"
+    },
+    {
+      "id": 367,
+      "name": "Dual Res Filter"
+    },
+    {
+      "id": 368,
+      "name": "2 Band Enhancer"
+    },
+    {
+      "id": 369,
+      "name": "3 Band Enhancer"
+    },
+    {
+      "id": 370,
+      "name": "Extreem Enhancer"
+    },
+    {
+      "id": 371,
+      "name": "HF Stimulator"
+    },
+    {
+      "id": 372,
+      "name": "Ring Modulator"
+    },
+    {
+      "id": 373,
+      "name": "PitcherA"
+    },
+    {
+      "id": 374,
+      "name": "PitcherB"
+    },
+    {
+      "id": 375,
+      "name": "PolyPtVoxChanger"
+    },
+    {
+      "id": 376,
+      "name": "HollowPolyPitchr"
+    },
+    {
+      "id": 377,
+      "name": "Pitcher+Chorus"
+    },
+    {
+      "id": 378,
+      "name": "Pitcher+Flange"
+    },
+    {
+      "id": 379,
+      "name": "Pitcher+Chor+Dly"
+    },
+    {
+      "id": 380,
+      "name": "Pitcher+Flng+Dly"
+    },
+    {
+      "id": 381,
+      "name": "Ring Linger"
+    },
+    {
+      "id": 382,
+      "name": "Waterford"
+    },
+    {
+      "id": 383,
+      "name": "Hip Hop Aura"
+    },
+    {
+      "id": 384,
+      "name": "Woodenize"
+    },
+    {
+      "id": 385,
+      "name": "Marimbafication"
+    },
+    {
+      "id": 386,
+      "name": "Frequency Offset"
+    },
+    {
+      "id": 387,
+      "name": "Drum Loosener"
+    },
+    {
+      "id": 388,
+      "name": "Drum Tightener"
+    },
+    {
+      "id": 389,
+      "name": "Vox Honker"
+    },
+    {
+      "id": 390,
+      "name": "EQ Morpher ah-oo"
+    },
+    {
+      "id": 391,
+      "name": "EQ Morpher ee-aa"
+    },
+    {
+      "id": 392,
+      "name": "EQ Morpher aw-er"
+    },
+    {
+      "id": 395,
+      "name": "Contact"
+    },
+    {
+      "id": 396,
+      "name": "Drum Frightener"
+    },
+    {
+      "id": 397,
+      "name": "Mad Hatter"
+    },
+    {
+      "id": 398,
+      "name": "Fallout"
+    },
+    {
+      "id": 399,
+      "name": "Ascension"
+    },
+    {
+      "id": 400,
+      "name": "BasicChorusDelay"
+    },
+    {
+      "id": 401,
+      "name": "Chorus PanDelay"
+    },
+    {
+      "id": 402,
+      "name": "Chorus & Echo"
+    },
+    {
+      "id": 403,
+      "name": "CDR Lead"
+    },
+    {
+      "id": 404,
+      "name": "CDR Lead 2"
+    },
+    {
+      "id": 405,
+      "name": "Chorus Delay 2"
+    },
+    {
+      "id": 406,
+      "name": "Doubler & Echo"
+    },
+    {
+      "id": 407,
+      "name": "Chorus Booth"
+    },
+    {
+      "id": 408,
+      "name": "ChorusSmallRoom"
+    },
+    {
+      "id": 409,
+      "name": "ChorusMedChamber"
+    },
+    {
+      "id": 410,
+      "name": "Chorus MiniHall"
+    },
+    {
+      "id": 411,
+      "name": "Chorus HiCeiling"
+    },
+    {
+      "id": 412,
+      "name": "ChorBigBrtPlate"
+    },
+    {
+      "id": 413,
+      "name": "CathedralChorus"
+    },
+    {
+      "id": 414,
+      "name": "Flam Dly Bckgrnd"
+    },
+    {
+      "id": 415,
+      "name": "CDHall Halo"
+    },
+    {
+      "id": 416,
+      "name": "CrackedPorcelain"
+    },
+    {
+      "id": 417,
+      "name": "Rich Delay"
+    },
+    {
+      "id": 418,
+      "name": "FastChorusDouble"
+    },
+    {
+      "id": 419,
+      "name": "MultiTap Chorus"
+    },
+    {
+      "id": 420,
+      "name": "Chorused Taps"
+    },
+    {
+      "id": 421,
+      "name": "MultiEchoChorus"
+    },
+    {
+      "id": 422,
+      "name": "DeepChorDlyHall"
+    },
+    {
+      "id": 423,
+      "name": "ClassicEP ChorRm"
+    },
+    {
+      "id": 424,
+      "name": "Chorus Slow Hall"
+    },
+    {
+      "id": 425,
+      "name": "SoftChorus Hall"
+    },
+    {
+      "id": 426,
+      "name": "Chorus Air"
+    },
+    {
+      "id": 427,
+      "name": "PsiloChorusHall"
+    },
+    {
+      "id": 428,
+      "name": "SpeeChorusDeep"
+    },
+    {
+      "id": 429,
+      "name": "Chorus Room"
+    },
+    {
+      "id": 430,
+      "name": "Chorus Smallhall"
+    },
+    {
+      "id": 431,
+      "name": "Chorus Med Hall"
+    },
+    {
+      "id": 432,
+      "name": "Chorus Big Hall"
+    },
+    {
+      "id": 433,
+      "name": "Chorus Echoverb"
+    },
+    {
+      "id": 434,
+      "name": "Chorus Bass Room"
+    },
+    {
+      "id": 435,
+      "name": "New Chorus Hall"
+    },
+    {
+      "id": 436,
+      "name": "Floyd Hall"
+    },
+    {
+      "id": 437,
+      "name": "Into The Abyss"
+    },
+    {
+      "id": 438,
+      "name": "BroadRevSlapback"
+    },
+    {
+      "id": 439,
+      "name": "Carlsbad Cavern"
+    },
+    {
+      "id": 440,
+      "name": "Chr->GtrDst->Chr"
+    },
+    {
+      "id": 441,
+      "name": "That's No Moon!!"
+    },
+    {
+      "id": 442,
+      "name": "Laser Amalgam"
+    },
+    {
+      "id": 443,
+      "name": "Cut it out!! CDR"
+    },
+    {
+      "id": 444,
+      "name": "Chor-Delay Booth"
+    },
+    {
+      "id": 445,
+      "name": "Chor Tin Room"
+    },
+    {
+      "id": 446,
+      "name": "Boiler Plate"
+    },
+    {
+      "id": 447,
+      "name": "O.T.T. Pad"
+    },
+    {
+      "id": 448,
+      "name": "TheChorusCloset"
+    },
+    {
+      "id": 449,
+      "name": "C-D"
+    },
+    {
+      "id": 450,
+      "name": "Flange + Delay"
+    },
+    {
+      "id": 451,
+      "name": "ThroatyFlangeDly"
+    },
+    {
+      "id": 452,
+      "name": "Slapback Flange"
+    },
+    {
+      "id": 453,
+      "name": "Flange Booth"
+    },
+    {
+      "id": 454,
+      "name": "FlangeVerb Clav"
+    },
+    {
+      "id": 455,
+      "name": "Flange Amb Smack"
+    },
+    {
+      "id": 456,
+      "name": "Flange Dly 3-D"
+    },
+    {
+      "id": 457,
+      "name": "Fl Dl Large Hall"
+    },
+    {
+      "id": 458,
+      "name": "Flanged Edge"
+    },
+    {
+      "id": 459,
+      "name": "Flange + 4Tap"
+    },
+    {
+      "id": 460,
+      "name": "FlangeDelayHall"
+    },
+    {
+      "id": 461,
+      "name": "SloFlangeDlyRoom"
+    },
+    {
+      "id": 462,
+      "name": "Flange Hall"
+    },
+    {
+      "id": 463,
+      "name": "FlangeDlyBigHall"
+    },
+    {
+      "id": 464,
+      "name": "Flange Theatre"
+    },
+    {
+      "id": 465,
+      "name": "FlangeTap Synth"
+    },
+    {
+      "id": 466,
+      "name": "Flange Room"
+    },
+    {
+      "id": 467,
+      "name": "Flange Echo"
+    },
+    {
+      "id": 468,
+      "name": "Flange 4 Tap"
+    },
+    {
+      "id": 469,
+      "name": "Flange Hall 2"
+    },
+    {
+      "id": 470,
+      "name": "Flange-Dly Hall"
+    },
+    {
+      "id": 471,
+      "name": "Flange Delay"
+    },
+    {
+      "id": 472,
+      "name": "Mecha-Godzilla"
+    },
+    {
+      "id": 473,
+      "name": "Industro-Flange"
+    },
+    {
+      "id": 474,
+      "name": "Panning FDRoom"
+    },
+    {
+      "id": 475,
+      "name": "Drum&Bass FlgDly"
+    },
+    {
+      "id": 476,
+      "name": "Laserflange"
+    },
+    {
+      "id": 477,
+      "name": "Pewter FlangeVrb"
+    },
+    {
+      "id": 478,
+      "name": "WeirdFlangePlate"
+    },
+    {
+      "id": 479,
+      "name": "F-D Hall"
+    },
+    {
+      "id": 480,
+      "name": "SyntheticRmFlg"
+    },
+    {
+      "id": 481,
+      "name": "Space Flanger"
+    },
+    {
+      "id": 482,
+      "name": "Lazertag Flange"
+    },
+    {
+      "id": 483,
+      "name": "Flange->Pitcher"
+    },
+    {
+      "id": 484,
+      "name": "Flange->Shaper"
+    },
+    {
+      "id": 485,
+      "name": "Pitch Spinner"
+    },
+    {
+      "id": 486,
+      "name": "FD Lead Madness"
+    },
+    {
+      "id": 487,
+      "name": "Brite Rippleverb"
+    },
+    {
+      "id": 488,
+      "name": "Rotary Club"
+    },
+    {
+      "id": 489,
+      "name": "Flangey Hall"
+    },
+    {
+      "id": 490,
+      "name": "Flg->GtrDst->Chr"
+    },
+    {
+      "id": 491,
+      "name": "MyGtrAteYo'Momma"
+    },
+    {
+      "id": 492,
+      "name": "Glacial Canyon"
+    },
+    {
+      "id": 494,
+      "name": "Ultima Thule Pad"
+    },
+    {
+      "id": 495,
+      "name": "Dr. Who"
+    },
+    {
+      "id": 500,
+      "name": "Gate+TTubeAmp3"
+    },
+    {
+      "id": 501,
+      "name": "MonoDistT + EQ"
+    },
+    {
+      "id": 502,
+      "name": "TTubeAmp3"
+    },
+    {
+      "id": 580,
+      "name": "VibChorCabT"
+    },
+    {
+      "id": 600,
+      "name": "String Resonance"
+    },
+    {
+      "id": 799,
+      "name": "Pass-through"
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 const CONFIG = {
 
-  appName: "K2600 MIDI Companion",
-  appVersion: "1.1.5",
+  appName: "Kurzweil MIDI Companion",
+  appVersion: "1.1.6",
   modelsIndexPath: "models/index.json",
-  selectedModelKey: "kurzweil-k2600",
+  selectedModelKey: "kurzweil-forte",
   manufacturer: "Kurzweil",
-  model: "K2600",
-  modelId: "k2600",
-  modelConfigPath: "Kurzweil/K2600/k2600_model.json",
+  model: "Forte",
+  modelId: "forte",
+  modelConfigPath: "Kurzweil/Forte/forte_model.json",
 
   midi: {
     autoConnect: "Kurzweil",

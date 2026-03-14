@@ -1,0 +1,8855 @@
+{
+  "source": {
+    "pdf": "Forte-Musicians_Guide_revH-FX_only.pdf",
+    "count": 1769
+  },
+  "studiosById": {
+    "1": {
+      "id": 1,
+      "name": "Little Booth",
+      "buses": {}
+    },
+    "2": {
+      "id": 2,
+      "name": "Soundboard",
+      "buses": {}
+    },
+    "3": {
+      "id": 3,
+      "name": "Small Dark Room",
+      "buses": {}
+    },
+    "4": {
+      "id": 4,
+      "name": "Sax Chamber",
+      "buses": {}
+    },
+    "5": {
+      "id": 5,
+      "name": "Small Hall",
+      "buses": {}
+    },
+    "6": {
+      "id": 6,
+      "name": "Medium Hall",
+      "buses": {}
+    },
+    "7": {
+      "id": 7,
+      "name": "Green Room",
+      "buses": {}
+    },
+    "8": {
+      "id": 8,
+      "name": "Opera House",
+      "buses": {}
+    },
+    "9": {
+      "id": 9,
+      "name": "Real Nice Verb",
+      "buses": {}
+    },
+    "10": {
+      "id": 10,
+      "name": "Empty Stage",
+      "buses": {}
+    },
+    "11": {
+      "id": 11,
+      "name": "Med Drum Room",
+      "buses": {}
+    },
+    "12": {
+      "id": 12,
+      "name": "AbbeyPianoHall",
+      "buses": {}
+    },
+    "13": {
+      "id": 13,
+      "name": "Predelay Hall",
+      "buses": {}
+    },
+    "14": {
+      "id": 14,
+      "name": "Sweeter Hall",
+      "buses": {}
+    },
+    "15": {
+      "id": 15,
+      "name": "Concert Hall",
+      "buses": {}
+    },
+    "16": {
+      "id": 16,
+      "name": "Symphony Hall",
+      "buses": {}
+    },
+    "17": {
+      "id": 17,
+      "name": "Cathedral Chorus",
+      "buses": {}
+    },
+    "18": {
+      "id": 18,
+      "name": "DeepChorsDlyHall",
+      "buses": {}
+    },
+    "19": {
+      "id": 19,
+      "name": "Omni Stage",
+      "buses": {}
+    },
+    "20": {
+      "id": 20,
+      "name": "Classic Plate",
+      "buses": {}
+    },
+    "21": {
+      "id": 21,
+      "name": "MediumWarm Plate",
+      "buses": {}
+    },
+    "22": {
+      "id": 22,
+      "name": "Real Plate",
+      "buses": {}
+    },
+    "23": {
+      "id": 23,
+      "name": "Smooth Plate",
+      "buses": {}
+    },
+    "24": {
+      "id": 24,
+      "name": "Gated Plate",
+      "buses": {}
+    },
+    "25": {
+      "id": 25,
+      "name": "Basic Delay 1/8",
+      "buses": {}
+    },
+    "26": {
+      "id": 26,
+      "name": "4-Tap Delay BPM",
+      "buses": {}
+    },
+    "27": {
+      "id": 27,
+      "name": "Echo Plecks BPM",
+      "buses": {}
+    },
+    "28": {
+      "id": 28,
+      "name": "Timbered Taps",
+      "buses": {}
+    },
+    "29": {
+      "id": 29,
+      "name": "Dub Delay",
+      "buses": {}
+    },
+    "30": {
+      "id": 30,
+      "name": "Sm Stereo Chorus",
+      "buses": {}
+    },
+    "31": {
+      "id": 31,
+      "name": "Chorusier",
+      "buses": {}
+    },
+    "32": {
+      "id": 32,
+      "name": "Stereo Chorus",
+      "buses": {}
+    },
+    "33": {
+      "id": 33,
+      "name": "Dense Chorus",
+      "buses": {}
+    },
+    "34": {
+      "id": 34,
+      "name": "Soft Flange",
+      "buses": {}
+    },
+    "35": {
+      "id": 35,
+      "name": "Wetlip Flange",
+      "buses": {}
+    },
+    "36": {
+      "id": 36,
+      "name": "Flanged Taps",
+      "buses": {}
+    },
+    "37": {
+      "id": 37,
+      "name": "Slow Deep Phaser",
+      "buses": {}
+    },
+    "38": {
+      "id": 38,
+      "name": "Fast&Slow Phaser",
+      "buses": {}
+    },
+    "39": {
+      "id": 39,
+      "name": "Phaser EGT",
+      "buses": {}
+    },
+    "40": {
+      "id": 40,
+      "name": "Thin Phase Sweep",
+      "buses": {}
+    },
+    "41": {
+      "id": 41,
+      "name": "Tremolo BPM",
+      "buses": {}
+    },
+    "42": {
+      "id": 42,
+      "name": "Simple Panner",
+      "buses": {}
+    },
+    "43": {
+      "id": 43,
+      "name": "Thin Phase Sweep",
+      "buses": {}
+    },
+    "44": {
+      "id": 44,
+      "name": "Leslie start",
+      "buses": {}
+    },
+    "45": {
+      "id": 45,
+      "name": "SubtleDistortion",
+      "buses": {}
+    },
+    "46": {
+      "id": 46,
+      "name": "EPiano Distortzn",
+      "buses": {}
+    },
+    "47": {
+      "id": 47,
+      "name": "Distortion + EQ",
+      "buses": {}
+    },
+    "48": {
+      "id": 48,
+      "name": "Ray's EP",
+      "buses": {}
+    },
+    "49": {
+      "id": 49,
+      "name": "Scooped Distort",
+      "buses": {}
+    },
+    "50": {
+      "id": 50,
+      "name": "Burning Tubes!",
+      "buses": {}
+    },
+    "51": {
+      "id": 51,
+      "name": "3BandDrumComp",
+      "buses": {}
+    },
+    "52": {
+      "id": 52,
+      "name": "Snare Compressor",
+      "buses": {}
+    },
+    "53": {
+      "id": 53,
+      "name": "Snare Cmp w/Rvb",
+      "buses": {}
+    },
+    "54": {
+      "id": 54,
+      "name": "Kick Compressor",
+      "buses": {}
+    },
+    "55": {
+      "id": 55,
+      "name": "Hard Knee Comprs",
+      "buses": {}
+    },
+    "56": {
+      "id": 56,
+      "name": "Bass Comp Mutrn",
+      "buses": {}
+    },
+    "57": {
+      "id": 57,
+      "name": "PnoEnhancement",
+      "buses": {}
+    },
+    "58": {
+      "id": 58,
+      "name": "LA2A for Strings",
+      "buses": {}
+    },
+    "59": {
+      "id": 59,
+      "name": "Resonant Filter",
+      "buses": {}
+    },
+    "60": {
+      "id": 60,
+      "name": "Aux Echoplex",
+      "buses": {}
+    },
+    "61": {
+      "id": 61,
+      "name": "Bandsweep Filter",
+      "buses": {}
+    },
+    "62": {
+      "id": 62,
+      "name": "Hi FrequencyStim",
+      "buses": {}
+    },
+    "63": {
+      "id": 63,
+      "name": "Ring Modulation",
+      "buses": {}
+    },
+    "64": {
+      "id": 64,
+      "name": "Frequency Offset",
+      "buses": {}
+    },
+    "65": {
+      "id": 65,
+      "name": "Lazer Tag Flange",
+      "buses": {}
+    },
+    "66": {
+      "id": 66,
+      "name": "Fallout PitchLFO",
+      "buses": {}
+    },
+    "67": {
+      "id": 67,
+      "name": "Reverse Reverb",
+      "buses": {}
+    },
+    "68": {
+      "id": 68,
+      "name": "Reverse Reverb 2",
+      "buses": {}
+    },
+    "69": {
+      "id": 69,
+      "name": "Oil Tank Reverb",
+      "buses": {}
+    },
+    "70": {
+      "id": 70,
+      "name": "Laser Reverb",
+      "buses": {}
+    },
+    "71": {
+      "id": 71,
+      "name": "Gated Laserverb",
+      "buses": {}
+    },
+    "72": {
+      "id": 72,
+      "name": "ReverseLaserverb",
+      "buses": {}
+    },
+    "73": {
+      "id": 73,
+      "name": "Envelope Followr",
+      "buses": {}
+    },
+    "74": {
+      "id": 74,
+      "name": "Envelope Filter2",
+      "buses": {}
+    },
+    "75": {
+      "id": 75,
+      "name": "Trip Filter",
+      "buses": {}
+    },
+    "76": {
+      "id": 76,
+      "name": "Stereoizer",
+      "buses": {}
+    },
+    "77": {
+      "id": 77,
+      "name": "Barberpole Phzr",
+      "buses": {}
+    },
+    "78": {
+      "id": 78,
+      "name": "Laser Dly Reverb",
+      "buses": {}
+    },
+    "79": {
+      "id": 79,
+      "name": "Degenerator",
+      "buses": {}
+    },
+    "80": {
+      "id": 80,
+      "name": "Basic Delay 1/8",
+      "buses": {}
+    },
+    "81": {
+      "id": 81,
+      "name": "Arp Delay Loop",
+      "buses": {}
+    },
+    "82": {
+      "id": 82,
+      "name": "HipHop Piano DDL",
+      "buses": {}
+    },
+    "121": {
+      "id": 121,
+      "name": "Sly Leslie K",
+      "buses": {}
+    },
+    "129": {
+      "id": 129,
+      "name": "Basic Delay 1/8",
+      "buses": {}
+    },
+    "147": {
+      "id": 147,
+      "name": "Deeper Water",
+      "buses": {}
+    },
+    "176": {
+      "id": 176,
+      "name": "Lead EGT6",
+      "buses": {}
+    },
+    "193": {
+      "id": 193,
+      "name": "LitePad2",
+      "buses": {}
+    },
+    "199": {
+      "id": 199,
+      "name": "KRZFXTemplate",
+      "buses": {}
+    },
+    "203": {
+      "id": 203,
+      "name": "PhaseDly1",
+      "buses": {}
+    },
+    "204": {
+      "id": 204,
+      "name": "ThinphaseSweep",
+      "buses": {}
+    },
+    "206": {
+      "id": 206,
+      "name": "hhpitchr1",
+      "buses": {}
+    },
+    "209": {
+      "id": 209,
+      "name": "Snarcmp1",
+      "buses": {}
+    },
+    "210": {
+      "id": 210,
+      "name": "SymphonyHall 1",
+      "buses": {}
+    },
+    "211": {
+      "id": 211,
+      "name": "SymphonyHall 2",
+      "buses": {}
+    },
+    "212": {
+      "id": 212,
+      "name": "SymphonyHall 3",
+      "buses": {}
+    },
+    "213": {
+      "id": 213,
+      "name": "Jazz Stage",
+      "buses": {}
+    },
+    "214": {
+      "id": 214,
+      "name": "Live Room",
+      "buses": {}
+    },
+    "215": {
+      "id": 215,
+      "name": "String Chamber",
+      "buses": {}
+    },
+    "216": {
+      "id": 216,
+      "name": "Fife Stage",
+      "buses": {}
+    },
+    "217": {
+      "id": 217,
+      "name": "Live RecitalHall",
+      "buses": {}
+    },
+    "218": {
+      "id": 218,
+      "name": "AbbeyBrasHall2",
+      "buses": {}
+    },
+    "219": {
+      "id": 219,
+      "name": "Smooth Long Hall",
+      "buses": {}
+    },
+    "220": {
+      "id": 220,
+      "name": "kickcmp3",
+      "buses": {}
+    },
+    "223": {
+      "id": 223,
+      "name": "kickcmp4",
+      "buses": {}
+    },
+    "224": {
+      "id": 224,
+      "name": "snarcmp4",
+      "buses": {}
+    },
+    "226": {
+      "id": 226,
+      "name": "kickcmp5",
+      "buses": {}
+    },
+    "229": {
+      "id": 229,
+      "name": "Bright Hat Room",
+      "buses": {}
+    },
+    "230": {
+      "id": 230,
+      "name": "BrightFlange",
+      "buses": {}
+    },
+    "233": {
+      "id": 233,
+      "name": "snarshaper6",
+      "buses": {}
+    },
+    "240": {
+      "id": 240,
+      "name": "Reverb2",
+      "buses": {}
+    },
+    "241": {
+      "id": 241,
+      "name": "500msDelay K",
+      "buses": {}
+    },
+    "242": {
+      "id": 242,
+      "name": "Organ Chamber1",
+      "buses": {}
+    },
+    "243": {
+      "id": 243,
+      "name": "TapChorusLes LE2",
+      "buses": {}
+    },
+    "244": {
+      "id": 244,
+      "name": "Organ Latch 1/8",
+      "buses": {}
+    },
+    "245": {
+      "id": 245,
+      "name": "Organ Phaser",
+      "buses": {}
+    },
+    "246": {
+      "id": 246,
+      "name": "Organ CDR 1",
+      "buses": {}
+    },
+    "247": {
+      "id": 247,
+      "name": "nuLeslie122K",
+      "buses": {}
+    },
+    "248": {
+      "id": 248,
+      "name": "Mitch's Leslie K",
+      "buses": {}
+    },
+    "249": {
+      "id": 249,
+      "name": "TapChorusLes K2",
+      "buses": {}
+    },
+    "255": {
+      "id": 255,
+      "name": "Flange+Delay",
+      "buses": {}
+    },
+    "257": {
+      "id": 257,
+      "name": "Empty Stage II",
+      "buses": {}
+    },
+    "258": {
+      "id": 258,
+      "name": "AbbeyPianoHall 2",
+      "buses": {}
+    },
+    "259": {
+      "id": 259,
+      "name": "Opera House II",
+      "buses": {}
+    },
+    "260": {
+      "id": 260,
+      "name": "Vintage Strings2",
+      "buses": {}
+    },
+    "261": {
+      "id": 261,
+      "name": "Classic Plate II",
+      "buses": {}
+    },
+    "262": {
+      "id": 262,
+      "name": "Recital Hall II",
+      "buses": {}
+    },
+    "263": {
+      "id": 263,
+      "name": "Small Hall II",
+      "buses": {}
+    },
+    "264": {
+      "id": 264,
+      "name": "Real Niceverb II",
+      "buses": {}
+    },
+    "265": {
+      "id": 265,
+      "name": "Medium Hall II",
+      "buses": {}
+    },
+    "266": {
+      "id": 266,
+      "name": "Small Dark Room2",
+      "buses": {}
+    },
+    "267": {
+      "id": 267,
+      "name": "PnoRvb II",
+      "buses": {}
+    },
+    "268": {
+      "id": 268,
+      "name": "ShortPnoRvb III",
+      "buses": {}
+    },
+    "269": {
+      "id": 269,
+      "name": "PnoEnhancRvb3",
+      "buses": {}
+    },
+    "270": {
+      "id": 270,
+      "name": "RevComp5",
+      "buses": {}
+    },
+    "271": {
+      "id": 271,
+      "name": "Clunker II",
+      "buses": {}
+    },
+    "272": {
+      "id": 272,
+      "name": "St CHDly II",
+      "buses": {}
+    },
+    "273": {
+      "id": 273,
+      "name": "OmniStage",
+      "buses": {}
+    },
+    "274": {
+      "id": 274,
+      "name": "OmniStage",
+      "buses": {}
+    },
+    "275": {
+      "id": 275,
+      "name": "gshot vrb",
+      "buses": {}
+    },
+    "276": {
+      "id": 276,
+      "name": "deep part1",
+      "buses": {}
+    },
+    "277": {
+      "id": 277,
+      "name": "DblSloFlangeCmp",
+      "buses": {}
+    },
+    "278": {
+      "id": 278,
+      "name": "alphacentauri1",
+      "buses": {}
+    },
+    "279": {
+      "id": 279,
+      "name": "Timbered Taps 2",
+      "buses": {}
+    },
+    "300": {
+      "id": 300,
+      "name": "GospelDistLes K",
+      "buses": {}
+    },
+    "301": {
+      "id": 301,
+      "name": "GimmeSumLeslieK",
+      "buses": {}
+    },
+    "302": {
+      "id": 302,
+      "name": "DF OrganRoom",
+      "buses": {}
+    },
+    "303": {
+      "id": 303,
+      "name": "GimmeSomeLesl",
+      "buses": {}
+    },
+    "304": {
+      "id": 304,
+      "name": "GimmeSomeLesl2",
+      "buses": {}
+    },
+    "305": {
+      "id": 305,
+      "name": "500msDelay K",
+      "buses": {}
+    },
+    "306": {
+      "id": 306,
+      "name": "Organ Chamber1",
+      "buses": {}
+    },
+    "307": {
+      "id": 307,
+      "name": "Organ Latch 1/8",
+      "buses": {}
+    },
+    "308": {
+      "id": 308,
+      "name": "Organ Phaser",
+      "buses": {}
+    },
+    "309": {
+      "id": 309,
+      "name": "Organ CDR 1",
+      "buses": {}
+    },
+    "310": {
+      "id": 310,
+      "name": "AcceleratLes2 K",
+      "buses": {}
+    },
+    "312": {
+      "id": 312,
+      "name": "ExpressLeslie K",
+      "buses": {}
+    },
+    "313": {
+      "id": 313,
+      "name": "Leslie 122 a K",
+      "buses": {}
+    },
+    "314": {
+      "id": 314,
+      "name": "Mitch's LeslieK",
+      "buses": {}
+    },
+    "315": {
+      "id": 315,
+      "name": "Melvin'sLeslieK",
+      "buses": {}
+    },
+    "316": {
+      "id": 316,
+      "name": "Greg's Leslie K",
+      "buses": {}
+    },
+    "317": {
+      "id": 317,
+      "name": "RoomyLeslie122K",
+      "buses": {}
+    },
+    "318": {
+      "id": 318,
+      "name": "SoftLeslie122 K",
+      "buses": {}
+    },
+    "319": {
+      "id": 319,
+      "name": "CrnchLesli147 K",
+      "buses": {}
+    },
+    "320": {
+      "id": 320,
+      "name": "Thimmer Leslie",
+      "buses": {}
+    },
+    "321": {
+      "id": 321,
+      "name": "Jimmy's Leslie 2",
+      "buses": {}
+    },
+    "323": {
+      "id": 323,
+      "name": "Organ Taps",
+      "buses": {}
+    },
+    "324": {
+      "id": 324,
+      "name": "Leslie Clean K",
+      "buses": {}
+    },
+    "325": {
+      "id": 325,
+      "name": "Leslie 122 K",
+      "buses": {}
+    },
+    "326": {
+      "id": 326,
+      "name": "Jimmy'sBrake",
+      "buses": {}
+    },
+    "327": {
+      "id": 327,
+      "name": "Jimmy'sBrake K",
+      "buses": {}
+    },
+    "328": {
+      "id": 328,
+      "name": "Greg's LatcherK",
+      "buses": {}
+    },
+    "329": {
+      "id": 329,
+      "name": "Nice Leslie K",
+      "buses": {}
+    },
+    "330": {
+      "id": 330,
+      "name": "Clean Leslie K",
+      "buses": {}
+    },
+    "331": {
+      "id": 331,
+      "name": "Warm Leslie K",
+      "buses": {}
+    },
+    "332": {
+      "id": 332,
+      "name": "NewLord 1 K",
+      "buses": {}
+    },
+    "333": {
+      "id": 333,
+      "name": "CrunchLesl122 K",
+      "buses": {}
+    },
+    "334": {
+      "id": 334,
+      "name": "HotLeslie122b K",
+      "buses": {}
+    },
+    "335": {
+      "id": 335,
+      "name": "BostonLeslieK",
+      "buses": {}
+    },
+    "336": {
+      "id": 336,
+      "name": "CrunchLesl122 K",
+      "buses": {}
+    },
+    "337": {
+      "id": 337,
+      "name": "Hot Leslie 122e",
+      "buses": {}
+    },
+    "338": {
+      "id": 338,
+      "name": "HotLeslie122f K",
+      "buses": {}
+    },
+    "339": {
+      "id": 339,
+      "name": "Soul Leslie122 4",
+      "buses": {}
+    },
+    "340": {
+      "id": 340,
+      "name": "Leslie B 122 K",
+      "buses": {}
+    },
+    "341": {
+      "id": 341,
+      "name": "JoeyLeslie122 K",
+      "buses": {}
+    },
+    "342": {
+      "id": 342,
+      "name": "HotLeslie122g K",
+      "buses": {}
+    },
+    "343": {
+      "id": 343,
+      "name": "HotLeslie122h K",
+      "buses": {}
+    },
+    "344": {
+      "id": 344,
+      "name": "TapChorusLes K",
+      "buses": {}
+    },
+    "345": {
+      "id": 345,
+      "name": "SlwPhasdLeslieK",
+      "buses": {}
+    },
+    "363": {
+      "id": 363,
+      "name": "NonKB3 A K",
+      "buses": {}
+    },
+    "364": {
+      "id": 364,
+      "name": "Warm Leslie12 K",
+      "buses": {}
+    },
+    "365": {
+      "id": 365,
+      "name": "WrmDstlLes1dwK",
+      "buses": {}
+    },
+    "366": {
+      "id": 366,
+      "name": "BrighDistlLes1K",
+      "buses": {}
+    },
+    "367": {
+      "id": 367,
+      "name": "DistleratLes6 K",
+      "buses": {}
+    },
+    "368": {
+      "id": 368,
+      "name": "BrightDistlLesK",
+      "buses": {}
+    },
+    "369": {
+      "id": 369,
+      "name": "DistlLes HotGs",
+      "buses": {}
+    },
+    "370": {
+      "id": 370,
+      "name": "Prog Leslie1K",
+      "buses": {}
+    },
+    "371": {
+      "id": 371,
+      "name": "LightDistlLes2K",
+      "buses": {}
+    },
+    "372": {
+      "id": 372,
+      "name": "DW Leslie13 K",
+      "buses": {}
+    },
+    "373": {
+      "id": 373,
+      "name": "LeeMichaels 1 K",
+      "buses": {}
+    },
+    "374": {
+      "id": 374,
+      "name": "NonKB3 A K",
+      "buses": {}
+    },
+    "375": {
+      "id": 375,
+      "name": "DWLeslie12 K",
+      "buses": {}
+    },
+    "376": {
+      "id": 376,
+      "name": "DistlLes 5 K",
+      "buses": {}
+    },
+    "377": {
+      "id": 377,
+      "name": "Sly Leslie K",
+      "buses": {}
+    },
+    "378": {
+      "id": 378,
+      "name": "LightDistlLes K",
+      "buses": {}
+    },
+    "379": {
+      "id": 379,
+      "name": "FisherLeslie",
+      "buses": {}
+    },
+    "380": {
+      "id": 380,
+      "name": "SoulLeslie122 K",
+      "buses": {}
+    },
+    "381": {
+      "id": 381,
+      "name": "Big Pop PianoCmp",
+      "buses": {}
+    },
+    "382": {
+      "id": 382,
+      "name": "PianoVerb1",
+      "buses": {}
+    },
+    "383": {
+      "id": 383,
+      "name": "Pro Piano Cmp",
+      "buses": {}
+    },
+    "384": {
+      "id": 384,
+      "name": "DistlLes HotGs",
+      "buses": {}
+    },
+    "385": {
+      "id": 385,
+      "name": "NewLord 1",
+      "buses": {}
+    },
+    "386": {
+      "id": 386,
+      "name": "SystemTemp Tap",
+      "buses": {}
+    },
+    "387": {
+      "id": 387,
+      "name": "WaterDistSynth",
+      "buses": {}
+    },
+    "388": {
+      "id": 388,
+      "name": "FlangeVoiceHall",
+      "buses": {}
+    },
+    "389": {
+      "id": 389,
+      "name": "BrightFlangeHall",
+      "buses": {}
+    },
+    "390": {
+      "id": 390,
+      "name": "SoulLeslie122 K",
+      "buses": {}
+    },
+    "391": {
+      "id": 391,
+      "name": "FlngRecitalHall",
+      "buses": {}
+    },
+    "392": {
+      "id": 392,
+      "name": "Med Drum Room",
+      "buses": {}
+    },
+    "393": {
+      "id": 393,
+      "name": "Dual Filters +",
+      "buses": {}
+    },
+    "394": {
+      "id": 394,
+      "name": "Dual Filterzz",
+      "buses": {}
+    },
+    "395": {
+      "id": 395,
+      "name": "Cathedral Vx",
+      "buses": {}
+    },
+    "396": {
+      "id": 396,
+      "name": "BurningTubes5",
+      "buses": {}
+    },
+    "397": {
+      "id": 397,
+      "name": "PunchBassAmp",
+      "buses": {}
+    },
+    "399": {
+      "id": 399,
+      "name": "RevverLeslie",
+      "buses": {}
+    },
+    "400": {
+      "id": 400,
+      "name": "Bradley's Barn 1",
+      "buses": {}
+    },
+    "401": {
+      "id": 401,
+      "name": "Bradley's Barn 2",
+      "buses": {}
+    },
+    "403": {
+      "id": 403,
+      "name": "LA2A for Strings",
+      "buses": {}
+    },
+    "405": {
+      "id": 405,
+      "name": "DrmCDR 1",
+      "buses": {}
+    },
+    "406": {
+      "id": 406,
+      "name": "DrumFatty",
+      "buses": {}
+    },
+    "407": {
+      "id": 407,
+      "name": "DrumFattyDry",
+      "buses": {}
+    },
+    "408": {
+      "id": 408,
+      "name": "AS Drum Room2",
+      "buses": {}
+    },
+    "409": {
+      "id": 409,
+      "name": "DrumFattyRoom",
+      "buses": {}
+    },
+    "410": {
+      "id": 410,
+      "name": "RealDrmComp2",
+      "buses": {}
+    },
+    "411": {
+      "id": 411,
+      "name": "ChrsDly",
+      "buses": {}
+    },
+    "412": {
+      "id": 412,
+      "name": "RealDrmComp",
+      "buses": {}
+    },
+    "413": {
+      "id": 413,
+      "name": "DrumSlap Sys",
+      "buses": {}
+    },
+    "414": {
+      "id": 414,
+      "name": "RealDrmComp2",
+      "buses": {}
+    },
+    "415": {
+      "id": 415,
+      "name": "TiteDrmComp",
+      "buses": {}
+    },
+    "416": {
+      "id": 416,
+      "name": "Marimba Hall",
+      "buses": {}
+    },
+    "417": {
+      "id": 417,
+      "name": "Gated Plate 144m",
+      "buses": {}
+    },
+    "418": {
+      "id": 418,
+      "name": "AS Dub Delay",
+      "buses": {}
+    },
+    "419": {
+      "id": 419,
+      "name": "HipHop Hall",
+      "buses": {}
+    },
+    "420": {
+      "id": 420,
+      "name": "AGT Reverb",
+      "buses": {}
+    },
+    "421": {
+      "id": 421,
+      "name": "Gated Plate2144m",
+      "buses": {}
+    },
+    "422": {
+      "id": 422,
+      "name": "WarmCruncher",
+      "buses": {}
+    },
+    "423": {
+      "id": 423,
+      "name": "DrumFatty3",
+      "buses": {}
+    },
+    "424": {
+      "id": 424,
+      "name": "Fierce Lead",
+      "buses": {}
+    },
+    "425": {
+      "id": 425,
+      "name": "CompTrem",
+      "buses": {}
+    },
+    "426": {
+      "id": 426,
+      "name": "12StWarmCrunch",
+      "buses": {}
+    },
+    "427": {
+      "id": 427,
+      "name": "Phaser EGT",
+      "buses": {}
+    },
+    "428": {
+      "id": 428,
+      "name": "SnareComp1",
+      "buses": {}
+    },
+    "429": {
+      "id": 429,
+      "name": "ASDrumComp1",
+      "buses": {}
+    },
+    "430": {
+      "id": 430,
+      "name": "KickComp1",
+      "buses": {}
+    },
+    "431": {
+      "id": 431,
+      "name": "60's BigDrumRoom",
+      "buses": {}
+    },
+    "432": {
+      "id": 432,
+      "name": "AS SynthDist2",
+      "buses": {}
+    },
+    "433": {
+      "id": 433,
+      "name": "AS CmpVerb4Drms",
+      "buses": {}
+    },
+    "434": {
+      "id": 434,
+      "name": "AGT EnhCD",
+      "buses": {}
+    },
+    "435": {
+      "id": 435,
+      "name": "CDRecitalHall",
+      "buses": {}
+    },
+    "436": {
+      "id": 436,
+      "name": "Nylon EnhCD",
+      "buses": {}
+    },
+    "437": {
+      "id": 437,
+      "name": "RealDrmComp3",
+      "buses": {}
+    },
+    "439": {
+      "id": 439,
+      "name": "ChrsDblRoom",
+      "buses": {}
+    },
+    "440": {
+      "id": 440,
+      "name": "EnhcBassAmp",
+      "buses": {}
+    },
+    "441": {
+      "id": 441,
+      "name": "FlangVoiceHall2",
+      "buses": {}
+    },
+    "442": {
+      "id": 442,
+      "name": "Vocals w FXnMic",
+      "buses": {}
+    },
+    "443": {
+      "id": 443,
+      "name": "RealDrmComp4",
+      "buses": {}
+    },
+    "445": {
+      "id": 445,
+      "name": "Harpolicious",
+      "buses": {}
+    },
+    "446": {
+      "id": 446,
+      "name": "ChrsDly",
+      "buses": {}
+    },
+    "447": {
+      "id": 447,
+      "name": "EGT Hall",
+      "buses": {}
+    },
+    "448": {
+      "id": 448,
+      "name": "Burning Tubes",
+      "buses": {}
+    },
+    "449": {
+      "id": 449,
+      "name": "Chorus AGT",
+      "buses": {}
+    },
+    "450": {
+      "id": 450,
+      "name": "SynthLead",
+      "buses": {}
+    },
+    "451": {
+      "id": 451,
+      "name": "SynthBassAmp",
+      "buses": {}
+    },
+    "452": {
+      "id": 452,
+      "name": "MosqueySwirl",
+      "buses": {}
+    },
+    "454": {
+      "id": 454,
+      "name": "PadFX2",
+      "buses": {}
+    },
+    "455": {
+      "id": 455,
+      "name": "PadFX1",
+      "buses": {}
+    },
+    "456": {
+      "id": 456,
+      "name": "Chr & Echo",
+      "buses": {}
+    },
+    "457": {
+      "id": 457,
+      "name": "Vocals w FX",
+      "buses": {}
+    },
+    "458": {
+      "id": 458,
+      "name": "DrySynthCDR",
+      "buses": {}
+    },
+    "459": {
+      "id": 459,
+      "name": "WetSynthCDR",
+      "buses": {}
+    },
+    "461": {
+      "id": 461,
+      "name": "VibesRoom",
+      "buses": {}
+    },
+    "462": {
+      "id": 462,
+      "name": "PercussionRoom",
+      "buses": {}
+    },
+    "463": {
+      "id": 463,
+      "name": "CagesRoom",
+      "buses": {}
+    },
+    "464": {
+      "id": 464,
+      "name": "CmpRecitalHall",
+      "buses": {}
+    },
+    "465": {
+      "id": 465,
+      "name": "StrRecitalHall1",
+      "buses": {}
+    },
+    "466": {
+      "id": 466,
+      "name": "StrRecitalHall2",
+      "buses": {}
+    },
+    "467": {
+      "id": 467,
+      "name": "RecitalHall",
+      "buses": {}
+    },
+    "468": {
+      "id": 468,
+      "name": "MyJacoART",
+      "buses": {}
+    },
+    "469": {
+      "id": 469,
+      "name": "UprightBassRoom",
+      "buses": {}
+    },
+    "470": {
+      "id": 470,
+      "name": "Levin Chorus",
+      "buses": {}
+    },
+    "472": {
+      "id": 472,
+      "name": "Bright Room",
+      "buses": {}
+    },
+    "473": {
+      "id": 473,
+      "name": "Med Dark Room",
+      "buses": {}
+    },
+    "474": {
+      "id": 474,
+      "name": "BasicReverb",
+      "buses": {}
+    },
+    "477": {
+      "id": 477,
+      "name": "Medium Hall 4U",
+      "buses": {}
+    },
+    "478": {
+      "id": 478,
+      "name": "KickComp2",
+      "buses": {}
+    },
+    "479": {
+      "id": 479,
+      "name": "ColdPliano 2",
+      "buses": {}
+    },
+    "480": {
+      "id": 480,
+      "name": "FDR PercRoom",
+      "buses": {}
+    },
+    "482": {
+      "id": 482,
+      "name": "NylonAgtVerb",
+      "buses": {}
+    },
+    "483": {
+      "id": 483,
+      "name": "3BandDrumComp",
+      "buses": {}
+    },
+    "484": {
+      "id": 484,
+      "name": "KikComp 4:1",
+      "buses": {}
+    },
+    "485": {
+      "id": 485,
+      "name": "ToxicStrings",
+      "buses": {}
+    },
+    "486": {
+      "id": 486,
+      "name": "3BandDrumComp2",
+      "buses": {}
+    },
+    "487": {
+      "id": 487,
+      "name": "Scoopd Dist EGT2",
+      "buses": {}
+    },
+    "488": {
+      "id": 488,
+      "name": "NotScoopd Dist",
+      "buses": {}
+    },
+    "489": {
+      "id": 489,
+      "name": "HeavyBuckers",
+      "buses": {}
+    },
+    "491": {
+      "id": 491,
+      "name": "ProBassComp",
+      "buses": {}
+    },
+    "492": {
+      "id": 492,
+      "name": "NYCTripStrings",
+      "buses": {}
+    },
+    "493": {
+      "id": 493,
+      "name": "ProBassComp2",
+      "buses": {}
+    },
+    "496": {
+      "id": 496,
+      "name": "DirtLordAmp LE",
+      "buses": {}
+    },
+    "500": {
+      "id": 500,
+      "name": "Setup Aux Verb",
+      "buses": {}
+    },
+    "501": {
+      "id": 501,
+      "name": "Setup Aux DDL",
+      "buses": {}
+    },
+    "517": {
+      "id": 517,
+      "name": "Early Re\ufb02ection",
+      "buses": {}
+    },
+    "518": {
+      "id": 518,
+      "name": "Pad Depth Pt1",
+      "buses": {}
+    },
+    "519": {
+      "id": 519,
+      "name": "Gunshot Verb",
+      "buses": {}
+    },
+    "520": {
+      "id": 520,
+      "name": "AlphaCentauri 1",
+      "buses": {}
+    },
+    "521": {
+      "id": 521,
+      "name": "BasicCDR",
+      "buses": {}
+    },
+    "522": {
+      "id": 522,
+      "name": "Synthorc BPM",
+      "buses": {}
+    },
+    "523": {
+      "id": 523,
+      "name": "BPM Flange Dly",
+      "buses": {}
+    },
+    "524": {
+      "id": 524,
+      "name": "DblSloFlangeCmp",
+      "buses": {}
+    },
+    "525": {
+      "id": 525,
+      "name": "Deep ChorusVerb",
+      "buses": {}
+    },
+    "526": {
+      "id": 526,
+      "name": "ChorDlyWet26-28",
+      "buses": {}
+    },
+    "527": {
+      "id": 527,
+      "name": "Light ChorusVerb",
+      "buses": {}
+    },
+    "528": {
+      "id": 528,
+      "name": "Chor Delay 26 27",
+      "buses": {}
+    },
+    "529": {
+      "id": 529,
+      "name": "Pitcher Slider A",
+      "buses": {}
+    },
+    "530": {
+      "id": 530,
+      "name": "Pad Depth Pt1",
+      "buses": {}
+    },
+    "531": {
+      "id": 531,
+      "name": "PolyPitcher 2",
+      "buses": {}
+    },
+    "532": {
+      "id": 532,
+      "name": "LFO Pitcher",
+      "buses": {}
+    },
+    "533": {
+      "id": 533,
+      "name": "Wet Hall for Pad",
+      "buses": {}
+    },
+    "534": {
+      "id": 534,
+      "name": "DrmCMP4PrgFX2",
+      "buses": {}
+    },
+    "535": {
+      "id": 535,
+      "name": "Kick Compressor2",
+      "buses": {}
+    },
+    "536": {
+      "id": 536,
+      "name": "Snare Compresso2",
+      "buses": {}
+    },
+    "537": {
+      "id": 537,
+      "name": "DrmCMP4PrgFX",
+      "buses": {}
+    },
+    "538": {
+      "id": 538,
+      "name": "Kick Compressor2",
+      "buses": {}
+    },
+    "539": {
+      "id": 539,
+      "name": "Snare Compresso3",
+      "buses": {}
+    },
+    "540": {
+      "id": 540,
+      "name": "Snare Compresso4",
+      "buses": {}
+    },
+    "541": {
+      "id": 541,
+      "name": "HOP Drum Reverb5",
+      "buses": {}
+    },
+    "542": {
+      "id": 542,
+      "name": "Stereoizer2/Verb",
+      "buses": {}
+    },
+    "543": {
+      "id": 543,
+      "name": "CmPhDiRe4Drms2",
+      "buses": {}
+    },
+    "544": {
+      "id": 544,
+      "name": "Stereoizer3/Verb",
+      "buses": {}
+    },
+    "545": {
+      "id": 545,
+      "name": "Stereoizer5/Verb",
+      "buses": {}
+    },
+    "546": {
+      "id": 546,
+      "name": "DrmCMP4PrgFX5",
+      "buses": {}
+    },
+    "547": {
+      "id": 547,
+      "name": "HOP Drum Reverb5",
+      "buses": {}
+    },
+    "548": {
+      "id": 548,
+      "name": "Stereoizer6/Verb",
+      "buses": {}
+    },
+    "549": {
+      "id": 549,
+      "name": "DrmCMP4PrgFX6",
+      "buses": {}
+    },
+    "550": {
+      "id": 550,
+      "name": "CmPhDiRe4Drms2",
+      "buses": {}
+    },
+    "551": {
+      "id": 551,
+      "name": "CmPhDiRe4Drms3",
+      "buses": {}
+    },
+    "552": {
+      "id": 552,
+      "name": "DrumFXcmpdly1a",
+      "buses": {}
+    },
+    "553": {
+      "id": 553,
+      "name": "CmEqDeRe4DrmsST2",
+      "buses": {}
+    },
+    "554": {
+      "id": 554,
+      "name": "GatePltPhs3bnd2",
+      "buses": {}
+    },
+    "555": {
+      "id": 555,
+      "name": "SynthDist4Drms2",
+      "buses": {}
+    },
+    "556": {
+      "id": 556,
+      "name": "CmPhDiRe4Drms4",
+      "buses": {}
+    },
+    "557": {
+      "id": 557,
+      "name": "DirtLordAmp 2",
+      "buses": {}
+    },
+    "558": {
+      "id": 558,
+      "name": "JADrumAmp2a",
+      "buses": {}
+    },
+    "559": {
+      "id": 559,
+      "name": "CmEqDeRe4DrmsST3",
+      "buses": {}
+    },
+    "560": {
+      "id": 560,
+      "name": "CmPhDiRe4Drms5",
+      "buses": {}
+    },
+    "561": {
+      "id": 561,
+      "name": "JADrumAmp2b",
+      "buses": {}
+    },
+    "562": {
+      "id": 562,
+      "name": "DrmFatener/ Ech2",
+      "buses": {}
+    },
+    "563": {
+      "id": 563,
+      "name": "DrmCMP4PrgFX7",
+      "buses": {}
+    },
+    "564": {
+      "id": 564,
+      "name": "EnhCD4DRUMS2",
+      "buses": {}
+    },
+    "565": {
+      "id": 565,
+      "name": "Little Booth2",
+      "buses": {}
+    },
+    "566": {
+      "id": 566,
+      "name": "DrmFlngDlyVrbCm2",
+      "buses": {}
+    },
+    "567": {
+      "id": 567,
+      "name": "CmEqDeRe4DrmsSTa",
+      "buses": {}
+    },
+    "568": {
+      "id": 568,
+      "name": "CmEqDeRe4DrmsSTb",
+      "buses": {}
+    },
+    "569": {
+      "id": 569,
+      "name": "DrumFattyDry2",
+      "buses": {}
+    },
+    "570": {
+      "id": 570,
+      "name": "DrumFattyDry3",
+      "buses": {}
+    },
+    "571": {
+      "id": 571,
+      "name": "AS Drum Room2a",
+      "buses": {}
+    },
+    "572": {
+      "id": 572,
+      "name": "Gated Plate2144b",
+      "buses": {}
+    },
+    "573": {
+      "id": 573,
+      "name": "DrumFatty4",
+      "buses": {}
+    },
+    "574": {
+      "id": 574,
+      "name": "DrumFattyRoom3",
+      "buses": {}
+    },
+    "575": {
+      "id": 575,
+      "name": "ASDrumComp1a",
+      "buses": {}
+    },
+    "576": {
+      "id": 576,
+      "name": "AS Drum Room2a",
+      "buses": {}
+    },
+    "577": {
+      "id": 577,
+      "name": "DrumFatty3a",
+      "buses": {}
+    },
+    "578": {
+      "id": 578,
+      "name": "AS SynthDist2b",
+      "buses": {}
+    },
+    "579": {
+      "id": 579,
+      "name": "HipHop Hall2",
+      "buses": {}
+    },
+    "580": {
+      "id": 580,
+      "name": "AS CmpVerb4Drms4",
+      "buses": {}
+    },
+    "581": {
+      "id": 581,
+      "name": "DrumFattyRoom4",
+      "buses": {}
+    },
+    "582": {
+      "id": 582,
+      "name": "DrumFattyRoom5",
+      "buses": {}
+    },
+    "583": {
+      "id": 583,
+      "name": "AbbeyBrushHall",
+      "buses": {}
+    },
+    "584": {
+      "id": 584,
+      "name": "HOP Drum Reverb6",
+      "buses": {}
+    },
+    "585": {
+      "id": 585,
+      "name": "HOP Drum Reverb7",
+      "buses": {}
+    },
+    "586": {
+      "id": 586,
+      "name": "CmPhDiRe4Drms",
+      "buses": {}
+    },
+    "587": {
+      "id": 587,
+      "name": "DrmFatener/ Ech2",
+      "buses": {}
+    },
+    "588": {
+      "id": 588,
+      "name": "Tuna Hall",
+      "buses": {}
+    },
+    "589": {
+      "id": 589,
+      "name": "Gated Plywood",
+      "buses": {}
+    },
+    "590": {
+      "id": 590,
+      "name": "PlywoodDrumFuzz",
+      "buses": {}
+    },
+    "591": {
+      "id": 591,
+      "name": "AnvilDrumFuzz",
+      "buses": {}
+    },
+    "592": {
+      "id": 592,
+      "name": "Drum Pad Reverb1",
+      "buses": {}
+    },
+    "600": {
+      "id": 600,
+      "name": "DrumFuzz",
+      "buses": {}
+    },
+    "601": {
+      "id": 601,
+      "name": "Snare Comp/EQ",
+      "buses": {}
+    },
+    "602": {
+      "id": 602,
+      "name": "hhpitchrja",
+      "buses": {}
+    },
+    "603": {
+      "id": 603,
+      "name": "Gated Plate",
+      "buses": {}
+    },
+    "604": {
+      "id": 604,
+      "name": "JAJazzCmps",
+      "buses": {}
+    },
+    "605": {
+      "id": 605,
+      "name": "JA Rl Nce Verb",
+      "buses": {}
+    },
+    "606": {
+      "id": 606,
+      "name": "JADrumAmp1",
+      "buses": {}
+    },
+    "607": {
+      "id": 607,
+      "name": "JADrumAmp2",
+      "buses": {}
+    },
+    "608": {
+      "id": 608,
+      "name": "DrumFXcmpdly1",
+      "buses": {}
+    },
+    "609": {
+      "id": 609,
+      "name": "Drum Freq Offset",
+      "buses": {}
+    },
+    "610": {
+      "id": 610,
+      "name": "CheapDrmDist",
+      "buses": {}
+    },
+    "611": {
+      "id": 611,
+      "name": "SynthDist4Drms",
+      "buses": {}
+    },
+    "612": {
+      "id": 612,
+      "name": "DrmCMP4PrgFX4",
+      "buses": {}
+    },
+    "613": {
+      "id": 613,
+      "name": "DrmThnphseSweep",
+      "buses": {}
+    },
+    "614": {
+      "id": 614,
+      "name": "StereoizerW/Verb",
+      "buses": {}
+    },
+    "615": {
+      "id": 615,
+      "name": "DrmCMP4PrgFX2",
+      "buses": {}
+    },
+    "616": {
+      "id": 616,
+      "name": "CmPhDiRe4Drms",
+      "buses": {}
+    },
+    "617": {
+      "id": 617,
+      "name": "CmPhDeRe4Drms",
+      "buses": {}
+    },
+    "618": {
+      "id": 618,
+      "name": "CmEqDeRe4Drms",
+      "buses": {}
+    },
+    "619": {
+      "id": 619,
+      "name": "CmEqDeRe4DrmsST",
+      "buses": {}
+    },
+    "620": {
+      "id": 620,
+      "name": "DrmFatener/ Ech",
+      "buses": {}
+    },
+    "621": {
+      "id": 621,
+      "name": "DrmPhaseVerb",
+      "buses": {}
+    },
+    "622": {
+      "id": 622,
+      "name": "DrmFlngDlyVrbCmp",
+      "buses": {}
+    },
+    "623": {
+      "id": 623,
+      "name": "Drum VerbW/Ster",
+      "buses": {}
+    },
+    "624": {
+      "id": 624,
+      "name": "Verb/Str/Cmp",
+      "buses": {}
+    },
+    "625": {
+      "id": 625,
+      "name": "Verb/Str/Dist",
+      "buses": {}
+    },
+    "626": {
+      "id": 626,
+      "name": "EnhCD4DRUMS",
+      "buses": {}
+    },
+    "627": {
+      "id": 627,
+      "name": "GatePltPhs3bnd",
+      "buses": {}
+    },
+    "628": {
+      "id": 628,
+      "name": "RevVrbFlgV",
+      "buses": {}
+    },
+    "629": {
+      "id": 629,
+      "name": "DrmCMPVb4PrgFX2",
+      "buses": {}
+    },
+    "630": {
+      "id": 630,
+      "name": "3BndCmp4Snr",
+      "buses": {}
+    },
+    "631": {
+      "id": 631,
+      "name": "HOP Drum Reverb1",
+      "buses": {}
+    },
+    "632": {
+      "id": 632,
+      "name": "StereoW/VerbHFD",
+      "buses": {}
+    },
+    "633": {
+      "id": 633,
+      "name": "SnrFatener& Ech",
+      "buses": {}
+    },
+    "634": {
+      "id": 634,
+      "name": "Warm Drum Plate",
+      "buses": {}
+    },
+    "635": {
+      "id": 635,
+      "name": "Dly/vrb BPM",
+      "buses": {}
+    },
+    "636": {
+      "id": 636,
+      "name": "Drm vrb Long",
+      "buses": {}
+    },
+    "637": {
+      "id": 637,
+      "name": "Real drm plate",
+      "buses": {}
+    },
+    "638": {
+      "id": 638,
+      "name": "Deep Fuzz Vrb",
+      "buses": {}
+    },
+    "639": {
+      "id": 639,
+      "name": "Flange+Delay",
+      "buses": {}
+    },
+    "640": {
+      "id": 640,
+      "name": "MySynthDist",
+      "buses": {}
+    },
+    "641": {
+      "id": 641,
+      "name": "DrmphseDlySweep",
+      "buses": {}
+    },
+    "642": {
+      "id": 642,
+      "name": "CmDeRe4Drms",
+      "buses": {}
+    },
+    "643": {
+      "id": 643,
+      "name": "Sweet drum Hall",
+      "buses": {}
+    },
+    "644": {
+      "id": 644,
+      "name": "StevieTrem EP 1",
+      "buses": {}
+    },
+    "645": {
+      "id": 645,
+      "name": "Beater EP1",
+      "buses": {}
+    },
+    "646": {
+      "id": 646,
+      "name": "Jamerson1",
+      "buses": {}
+    },
+    "648": {
+      "id": 648,
+      "name": "SlyBASSComp1",
+      "buses": {}
+    },
+    "651": {
+      "id": 651,
+      "name": "Trampler 1",
+      "buses": {}
+    },
+    "652": {
+      "id": 652,
+      "name": "HipHop Drms1",
+      "buses": {}
+    },
+    "654": {
+      "id": 654,
+      "name": "HipHop Drms2",
+      "buses": {}
+    },
+    "655": {
+      "id": 655,
+      "name": "TOP Drum Reverb1",
+      "buses": {}
+    },
+    "656": {
+      "id": 656,
+      "name": "HOP Drum Reverb1",
+      "buses": {}
+    },
+    "657": {
+      "id": 657,
+      "name": "HopKickcmp1",
+      "buses": {}
+    },
+    "658": {
+      "id": 658,
+      "name": "NoQuarter",
+      "buses": {}
+    },
+    "659": {
+      "id": 659,
+      "name": "TechnoHHDly 1/8",
+      "buses": {}
+    },
+    "660": {
+      "id": 660,
+      "name": "HOP Drum Reverb3",
+      "buses": {}
+    },
+    "661": {
+      "id": 661,
+      "name": "HopKickcmp7",
+      "buses": {}
+    },
+    "662": {
+      "id": 662,
+      "name": "Roomverb1",
+      "buses": {}
+    },
+    "663": {
+      "id": 663,
+      "name": "Kickcmp6",
+      "buses": {}
+    },
+    "664": {
+      "id": 664,
+      "name": "Snarcmp11",
+      "buses": {}
+    },
+    "665": {
+      "id": 665,
+      "name": "Reverb3",
+      "buses": {}
+    },
+    "666": {
+      "id": 666,
+      "name": "Small Dark Room",
+      "buses": {}
+    },
+    "667": {
+      "id": 667,
+      "name": "Snarcmp12",
+      "buses": {}
+    },
+    "668": {
+      "id": 668,
+      "name": "Kickcmp13",
+      "buses": {}
+    },
+    "670": {
+      "id": 670,
+      "name": "BeastieDrums",
+      "buses": {}
+    },
+    "671": {
+      "id": 671,
+      "name": "Clunker13",
+      "buses": {}
+    },
+    "675": {
+      "id": 675,
+      "name": "Funksnare9",
+      "buses": {}
+    },
+    "676": {
+      "id": 676,
+      "name": "Funksnare8",
+      "buses": {}
+    },
+    "680": {
+      "id": 680,
+      "name": "EPDistPhase1",
+      "buses": {}
+    },
+    "681": {
+      "id": 681,
+      "name": "RayEP 1",
+      "buses": {}
+    },
+    "682": {
+      "id": 682,
+      "name": "Deep Fuzz 1",
+      "buses": {}
+    },
+    "685": {
+      "id": 685,
+      "name": "Deep Fuzz 31",
+      "buses": {}
+    },
+    "687": {
+      "id": 687,
+      "name": "ReverseVerb1",
+      "buses": {}
+    },
+    "690": {
+      "id": 690,
+      "name": "Acid\ufb02ute",
+      "buses": {}
+    },
+    "691": {
+      "id": 691,
+      "name": "Blueman1",
+      "buses": {}
+    },
+    "692": {
+      "id": 692,
+      "name": "CompDelay12",
+      "buses": {}
+    },
+    "694": {
+      "id": 694,
+      "name": "SmallDarkRoom3",
+      "buses": {}
+    },
+    "695": {
+      "id": 695,
+      "name": "PlainComp15",
+      "buses": {}
+    },
+    "696": {
+      "id": 696,
+      "name": "RevComp4",
+      "buses": {}
+    },
+    "697": {
+      "id": 697,
+      "name": "EP RotoAmp12",
+      "buses": {}
+    },
+    "700": {
+      "id": 700,
+      "name": "HiMutron 1",
+      "buses": {}
+    },
+    "701": {
+      "id": 701,
+      "name": "Sax Chamber 21",
+      "buses": {}
+    },
+    "702": {
+      "id": 702,
+      "name": "BigDarkRoomDW",
+      "buses": {}
+    },
+    "703": {
+      "id": 703,
+      "name": "New Gtr 31",
+      "buses": {}
+    },
+    "704": {
+      "id": 704,
+      "name": "PnoRvb 14",
+      "buses": {}
+    },
+    "705": {
+      "id": 705,
+      "name": "Small Hall11",
+      "buses": {}
+    },
+    "706": {
+      "id": 706,
+      "name": "PnoRvb21",
+      "buses": {}
+    },
+    "707": {
+      "id": 707,
+      "name": "Empty Stage 11",
+      "buses": {}
+    },
+    "708": {
+      "id": 708,
+      "name": "Mutron 2",
+      "buses": {}
+    },
+    "709": {
+      "id": 709,
+      "name": "Double Leslie 12",
+      "buses": {}
+    },
+    "710": {
+      "id": 710,
+      "name": "Double Leslie 5",
+      "buses": {}
+    },
+    "711": {
+      "id": 711,
+      "name": "PlainComp12",
+      "buses": {}
+    },
+    "712": {
+      "id": 712,
+      "name": "Double Leslie 11",
+      "buses": {}
+    },
+    "713": {
+      "id": 713,
+      "name": "CDR Synth",
+      "buses": {}
+    },
+    "714": {
+      "id": 714,
+      "name": "SynthFlangenDely",
+      "buses": {}
+    },
+    "715": {
+      "id": 715,
+      "name": "QuantzEnhanceSyn",
+      "buses": {}
+    },
+    "716": {
+      "id": 716,
+      "name": "BladerunnrRvb",
+      "buses": {}
+    },
+    "717": {
+      "id": 717,
+      "name": "Deep FuzzBass 1",
+      "buses": {}
+    },
+    "718": {
+      "id": 718,
+      "name": "Eber Bass",
+      "buses": {}
+    },
+    "719": {
+      "id": 719,
+      "name": "SynFatener& Ech2",
+      "buses": {}
+    },
+    "720": {
+      "id": 720,
+      "name": "CP80Enhanc1",
+      "buses": {}
+    },
+    "721": {
+      "id": 721,
+      "name": "Fisher'sHarm Mic",
+      "buses": {}
+    },
+    "722": {
+      "id": 722,
+      "name": "AbbeyPianoHall2",
+      "buses": {}
+    },
+    "723": {
+      "id": 723,
+      "name": "Medium Hall 2",
+      "buses": {}
+    },
+    "724": {
+      "id": 724,
+      "name": "Fagen Phaser",
+      "buses": {}
+    },
+    "725": {
+      "id": 725,
+      "name": "Double Leslie 10",
+      "buses": {}
+    },
+    "726": {
+      "id": 726,
+      "name": "Small EP Reed",
+      "buses": {}
+    },
+    "727": {
+      "id": 727,
+      "name": "Basic EP Reed",
+      "buses": {}
+    },
+    "728": {
+      "id": 728,
+      "name": "Double Leslie 13",
+      "buses": {}
+    },
+    "729": {
+      "id": 729,
+      "name": "Cheese Horns",
+      "buses": {}
+    },
+    "730": {
+      "id": 730,
+      "name": "BasicChorusDly 2",
+      "buses": {}
+    },
+    "731": {
+      "id": 731,
+      "name": "Double Leslie 8",
+      "buses": {}
+    },
+    "732": {
+      "id": 732,
+      "name": "Wall\ufb02ower Ch",
+      "buses": {}
+    },
+    "733": {
+      "id": 733,
+      "name": "ChPanDlyComp",
+      "buses": {}
+    },
+    "734": {
+      "id": 734,
+      "name": "CheeseChorus",
+      "buses": {}
+    },
+    "735": {
+      "id": 735,
+      "name": "Double Leslie 14",
+      "buses": {}
+    },
+    "736": {
+      "id": 736,
+      "name": "CompDelay",
+      "buses": {}
+    },
+    "737": {
+      "id": 737,
+      "name": "SynFatener& Ech3",
+      "buses": {}
+    },
+    "738": {
+      "id": 738,
+      "name": "BIGCompDelay",
+      "buses": {}
+    },
+    "739": {
+      "id": 739,
+      "name": "UprightPiano",
+      "buses": {}
+    },
+    "740": {
+      "id": 740,
+      "name": "SitarCmpRvb",
+      "buses": {}
+    },
+    "741": {
+      "id": 741,
+      "name": "AC Bass 3",
+      "buses": {}
+    },
+    "742": {
+      "id": 742,
+      "name": "VoxKB3",
+      "buses": {}
+    },
+    "743": {
+      "id": 743,
+      "name": "Blackfriday",
+      "buses": {}
+    },
+    "744": {
+      "id": 744,
+      "name": "Blackestfriday",
+      "buses": {}
+    },
+    "745": {
+      "id": 745,
+      "name": "Flange 4",
+      "buses": {}
+    },
+    "746": {
+      "id": 746,
+      "name": "DoubldistLslie20",
+      "buses": {}
+    },
+    "747": {
+      "id": 747,
+      "name": "Double Leslie15",
+      "buses": {}
+    },
+    "750": {
+      "id": 750,
+      "name": "Good Leslie1",
+      "buses": {}
+    },
+    "754": {
+      "id": 754,
+      "name": "Good Leslie4",
+      "buses": {}
+    },
+    "756": {
+      "id": 756,
+      "name": "GoodLeslie 6",
+      "buses": {}
+    },
+    "757": {
+      "id": 757,
+      "name": "WhitrShadeLeslie",
+      "buses": {}
+    },
+    "758": {
+      "id": 758,
+      "name": "Inagadadavita",
+      "buses": {}
+    },
+    "759": {
+      "id": 759,
+      "name": "GoodLordLeslie",
+      "buses": {}
+    },
+    "760": {
+      "id": 760,
+      "name": "Small HallComp1",
+      "buses": {}
+    },
+    "762": {
+      "id": 762,
+      "name": "GoodLeslie 5",
+      "buses": {}
+    },
+    "764": {
+      "id": 764,
+      "name": "ShortPnoRvb31",
+      "buses": {}
+    },
+    "765": {
+      "id": 765,
+      "name": "St CHDly",
+      "buses": {}
+    },
+    "766": {
+      "id": 766,
+      "name": "Synphase1",
+      "buses": {}
+    },
+    "768": {
+      "id": 768,
+      "name": "St CHDly",
+      "buses": {}
+    },
+    "771": {
+      "id": 771,
+      "name": "Walrus EP",
+      "buses": {}
+    },
+    "772": {
+      "id": 772,
+      "name": "EPChr16",
+      "buses": {}
+    },
+    "773": {
+      "id": 773,
+      "name": "Siberia",
+      "buses": {}
+    },
+    "775": {
+      "id": 775,
+      "name": "Deep Fuzz 5",
+      "buses": {}
+    },
+    "780": {
+      "id": 780,
+      "name": "Flange Echo 2",
+      "buses": {}
+    },
+    "781": {
+      "id": 781,
+      "name": "ARPMosque Room",
+      "buses": {}
+    },
+    "782": {
+      "id": 782,
+      "name": "Chr & Echo",
+      "buses": {}
+    },
+    "784": {
+      "id": 784,
+      "name": "Mutron Clav 2",
+      "buses": {}
+    },
+    "785": {
+      "id": 785,
+      "name": "Siberia II",
+      "buses": {}
+    },
+    "786": {
+      "id": 786,
+      "name": "EnhanceComp1",
+      "buses": {}
+    },
+    "787": {
+      "id": 787,
+      "name": "Shaper->Reverb2",
+      "buses": {}
+    },
+    "788": {
+      "id": 788,
+      "name": "Clav Phase1",
+      "buses": {}
+    },
+    "790": {
+      "id": 790,
+      "name": "SynlaserFlange 1",
+      "buses": {}
+    },
+    "792": {
+      "id": 792,
+      "name": "RockyRaccoon",
+      "buses": {}
+    },
+    "793": {
+      "id": 793,
+      "name": "Squire",
+      "buses": {}
+    },
+    "794": {
+      "id": 794,
+      "name": "Flange 4",
+      "buses": {}
+    },
+    "795": {
+      "id": 795,
+      "name": "Deep Fuzz Clav",
+      "buses": {}
+    },
+    "797": {
+      "id": 797,
+      "name": "Clav Comp1",
+      "buses": {}
+    },
+    "798": {
+      "id": 798,
+      "name": "SmallClav",
+      "buses": {}
+    },
+    "799": {
+      "id": 799,
+      "name": "Synth Shimmer",
+      "buses": {}
+    },
+    "801": {
+      "id": 801,
+      "name": "PhaseDly1",
+      "buses": {}
+    },
+    "802": {
+      "id": 802,
+      "name": "Shredlead1",
+      "buses": {}
+    },
+    "803": {
+      "id": 803,
+      "name": "ThinphaseSweep",
+      "buses": {}
+    },
+    "804": {
+      "id": 804,
+      "name": "EnvComp41",
+      "buses": {}
+    },
+    "805": {
+      "id": 805,
+      "name": "MoogBASSComp11",
+      "buses": {}
+    },
+    "806": {
+      "id": 806,
+      "name": "SynFatener& Ech4",
+      "buses": {}
+    },
+    "807": {
+      "id": 807,
+      "name": "Shredlead15",
+      "buses": {}
+    },
+    "808": {
+      "id": 808,
+      "name": "PlainComp21",
+      "buses": {}
+    },
+    "809": {
+      "id": 809,
+      "name": "Garth",
+      "buses": {}
+    },
+    "810": {
+      "id": 810,
+      "name": "BassFleaCompMu",
+      "buses": {}
+    },
+    "811": {
+      "id": 811,
+      "name": "Chr & Echo 2",
+      "buses": {}
+    },
+    "812": {
+      "id": 812,
+      "name": "BasicCDR2",
+      "buses": {}
+    },
+    "813": {
+      "id": 813,
+      "name": "ShaperFuzzLead 2",
+      "buses": {}
+    },
+    "814": {
+      "id": 814,
+      "name": "AM Big Band",
+      "buses": {}
+    },
+    "815": {
+      "id": 815,
+      "name": "Clunker20",
+      "buses": {}
+    },
+    "816": {
+      "id": 816,
+      "name": "PadFX3",
+      "buses": {}
+    },
+    "817": {
+      "id": 817,
+      "name": "SynFatener& Ech5",
+      "buses": {}
+    },
+    "818": {
+      "id": 818,
+      "name": "MarleyClav1",
+      "buses": {}
+    },
+    "819": {
+      "id": 819,
+      "name": "Flange Echo 4",
+      "buses": {}
+    },
+    "820": {
+      "id": 820,
+      "name": "Deep Fuzz Clav 3",
+      "buses": {}
+    },
+    "821": {
+      "id": 821,
+      "name": "GetBack1",
+      "buses": {}
+    },
+    "822": {
+      "id": 822,
+      "name": "Deep Fuzz Clav 5",
+      "buses": {}
+    },
+    "823": {
+      "id": 823,
+      "name": "ChrsDly4",
+      "buses": {}
+    },
+    "824": {
+      "id": 824,
+      "name": "Leslie Basic",
+      "buses": {}
+    },
+    "825": {
+      "id": 825,
+      "name": "MoogBASSComp5",
+      "buses": {}
+    },
+    "827": {
+      "id": 827,
+      "name": "EPChr1 Dyno",
+      "buses": {}
+    },
+    "828": {
+      "id": 828,
+      "name": "Synphase17",
+      "buses": {}
+    },
+    "829": {
+      "id": 829,
+      "name": "Leslie Comp 1",
+      "buses": {}
+    },
+    "830": {
+      "id": 830,
+      "name": "PhaseDly104",
+      "buses": {}
+    },
+    "831": {
+      "id": 831,
+      "name": "GoodLeslie 52",
+      "buses": {}
+    },
+    "832": {
+      "id": 832,
+      "name": "CPChrRvb1",
+      "buses": {}
+    },
+    "833": {
+      "id": 833,
+      "name": "DistLeslie Basic",
+      "buses": {}
+    },
+    "834": {
+      "id": 834,
+      "name": "CompKit111",
+      "buses": {}
+    },
+    "835": {
+      "id": 835,
+      "name": "CarlosSyn",
+      "buses": {}
+    },
+    "836": {
+      "id": 836,
+      "name": "MaroonSynbass",
+      "buses": {}
+    },
+    "838": {
+      "id": 838,
+      "name": "FloydEP1",
+      "buses": {}
+    },
+    "839": {
+      "id": 839,
+      "name": "PnoCmpSndBoard 1",
+      "buses": {}
+    },
+    "840": {
+      "id": 840,
+      "name": "SuperTrmpPhase",
+      "buses": {}
+    },
+    "841": {
+      "id": 841,
+      "name": "EP Reed 1",
+      "buses": {}
+    },
+    "842": {
+      "id": 842,
+      "name": "ShortPlate4EPs",
+      "buses": {}
+    },
+    "843": {
+      "id": 843,
+      "name": "ShortPlate4EPs2",
+      "buses": {}
+    },
+    "844": {
+      "id": 844,
+      "name": "Aux Dark Room 2",
+      "buses": {}
+    },
+    "845": {
+      "id": 845,
+      "name": "Elton1",
+      "buses": {}
+    },
+    "846": {
+      "id": 846,
+      "name": "Aux Chamber",
+      "buses": {}
+    },
+    "847": {
+      "id": 847,
+      "name": "BowiePno1",
+      "buses": {}
+    },
+    "848": {
+      "id": 848,
+      "name": "BluesPnoCmpRvb 1",
+      "buses": {}
+    },
+    "849": {
+      "id": 849,
+      "name": "New Gtr 31",
+      "buses": {}
+    },
+    "850": {
+      "id": 850,
+      "name": "Soundboard 3",
+      "buses": {}
+    },
+    "851": {
+      "id": 851,
+      "name": "OmniStage",
+      "buses": {}
+    },
+    "852": {
+      "id": 852,
+      "name": "Double Leslie",
+      "buses": {}
+    },
+    "853": {
+      "id": 853,
+      "name": "MedPlateJazFlute",
+      "buses": {}
+    },
+    "854": {
+      "id": 854,
+      "name": "MistyMntn EP 2",
+      "buses": {}
+    },
+    "855": {
+      "id": 855,
+      "name": "PnoEnhanc22",
+      "buses": {}
+    },
+    "856": {
+      "id": 856,
+      "name": "ClavPhase1",
+      "buses": {}
+    },
+    "857": {
+      "id": 857,
+      "name": "MedRoom10",
+      "buses": {}
+    },
+    "858": {
+      "id": 858,
+      "name": "EPChr11",
+      "buses": {}
+    },
+    "859": {
+      "id": 859,
+      "name": "EP Tine Hard",
+      "buses": {}
+    },
+    "860": {
+      "id": 860,
+      "name": "PnoEnhancement",
+      "buses": {}
+    },
+    "861": {
+      "id": 861,
+      "name": "Little Mu",
+      "buses": {}
+    },
+    "862": {
+      "id": 862,
+      "name": "SmallHornChamber",
+      "buses": {}
+    },
+    "863": {
+      "id": 863,
+      "name": "OmniStageDW",
+      "buses": {}
+    },
+    "864": {
+      "id": 864,
+      "name": "Clunker50",
+      "buses": {}
+    },
+    "865": {
+      "id": 865,
+      "name": "PnoEQCmp3",
+      "buses": {}
+    },
+    "866": {
+      "id": 866,
+      "name": "Comp4",
+      "buses": {}
+    },
+    "867": {
+      "id": 867,
+      "name": "3DogEP 1",
+      "buses": {}
+    },
+    "868": {
+      "id": 868,
+      "name": "CompDelay",
+      "buses": {}
+    },
+    "869": {
+      "id": 869,
+      "name": "PnoEnhanc22",
+      "buses": {}
+    },
+    "870": {
+      "id": 870,
+      "name": "cheap Chamber",
+      "buses": {}
+    },
+    "871": {
+      "id": 871,
+      "name": "EPChr11",
+      "buses": {}
+    },
+    "872": {
+      "id": 872,
+      "name": "Old Chamber",
+      "buses": {}
+    },
+    "873": {
+      "id": 873,
+      "name": "ChefAid 1",
+      "buses": {}
+    },
+    "874": {
+      "id": 874,
+      "name": "Zep Fuzz 1",
+      "buses": {}
+    },
+    "875": {
+      "id": 875,
+      "name": "Bernie Clav",
+      "buses": {}
+    },
+    "876": {
+      "id": 876,
+      "name": "ClavRotoAmp",
+      "buses": {}
+    },
+    "877": {
+      "id": 877,
+      "name": "Dark Niceverb",
+      "buses": {}
+    },
+    "878": {
+      "id": 878,
+      "name": "Basic RayEP 3",
+      "buses": {}
+    },
+    "879": {
+      "id": 879,
+      "name": "LatinHornCmp",
+      "buses": {}
+    },
+    "880": {
+      "id": 880,
+      "name": "Basic RayEP 2",
+      "buses": {}
+    },
+    "881": {
+      "id": 881,
+      "name": "Raffas DX7",
+      "buses": {}
+    },
+    "882": {
+      "id": 882,
+      "name": "EPChr6",
+      "buses": {}
+    },
+    "883": {
+      "id": 883,
+      "name": "PnoEnhanc3",
+      "buses": {}
+    },
+    "884": {
+      "id": 884,
+      "name": "SynEnhancement",
+      "buses": {}
+    },
+    "885": {
+      "id": 885,
+      "name": "CompKik11",
+      "buses": {}
+    },
+    "886": {
+      "id": 886,
+      "name": "VintChamber",
+      "buses": {}
+    },
+    "887": {
+      "id": 887,
+      "name": "Small EP Reed 2",
+      "buses": {}
+    },
+    "888": {
+      "id": 888,
+      "name": "Deep FuzzPnt 1",
+      "buses": {}
+    },
+    "889": {
+      "id": 889,
+      "name": "Comp70",
+      "buses": {}
+    },
+    "890": {
+      "id": 890,
+      "name": "FooldAgainVox",
+      "buses": {}
+    },
+    "891": {
+      "id": 891,
+      "name": "CompKik111",
+      "buses": {}
+    },
+    "892": {
+      "id": 892,
+      "name": "Vintage Horns 3",
+      "buses": {}
+    },
+    "893": {
+      "id": 893,
+      "name": "Leslie Gospl",
+      "buses": {}
+    },
+    "894": {
+      "id": 894,
+      "name": "EPChr60",
+      "buses": {}
+    },
+    "895": {
+      "id": 895,
+      "name": "Syn Lead A",
+      "buses": {}
+    },
+    "896": {
+      "id": 896,
+      "name": "Deep Fuzz 51",
+      "buses": {}
+    },
+    "897": {
+      "id": 897,
+      "name": "4-Tap Delay BPM2",
+      "buses": {}
+    },
+    "898": {
+      "id": 898,
+      "name": "Shredlead3",
+      "buses": {}
+    },
+    "899": {
+      "id": 899,
+      "name": "Synphase1",
+      "buses": {}
+    },
+    "900": {
+      "id": 900,
+      "name": "Synphase2",
+      "buses": {}
+    },
+    "901": {
+      "id": 901,
+      "name": "SynthTrem2",
+      "buses": {}
+    },
+    "902": {
+      "id": 902,
+      "name": "DWAuxRvb1",
+      "buses": {}
+    },
+    "903": {
+      "id": 903,
+      "name": "Small Dark Room2",
+      "buses": {}
+    },
+    "904": {
+      "id": 904,
+      "name": "Sax Chamber2",
+      "buses": {}
+    },
+    "905": {
+      "id": 905,
+      "name": "Small Hall2",
+      "buses": {}
+    },
+    "906": {
+      "id": 906,
+      "name": "Medium Hall2",
+      "buses": {}
+    },
+    "907": {
+      "id": 907,
+      "name": "Real Niceverb",
+      "buses": {}
+    },
+    "908": {
+      "id": 908,
+      "name": "Opera House2",
+      "buses": {}
+    },
+    "909": {
+      "id": 909,
+      "name": "Mosque Room2",
+      "buses": {}
+    },
+    "910": {
+      "id": 910,
+      "name": "Bright Hall",
+      "buses": {}
+    },
+    "911": {
+      "id": 911,
+      "name": "Echplex 1",
+      "buses": {}
+    },
+    "912": {
+      "id": 912,
+      "name": "AbbeyPianoHall",
+      "buses": {}
+    },
+    "913": {
+      "id": 913,
+      "name": "Recital Hall 2",
+      "buses": {}
+    },
+    "914": {
+      "id": 914,
+      "name": "Echplex 2",
+      "buses": {}
+    },
+    "915": {
+      "id": 915,
+      "name": "Medm Warm Plate2",
+      "buses": {}
+    },
+    "916": {
+      "id": 916,
+      "name": "EQVelMorph",
+      "buses": {}
+    },
+    "917": {
+      "id": 917,
+      "name": "Aux Echplex",
+      "buses": {}
+    },
+    "918": {
+      "id": 918,
+      "name": "Far\ufb01sa1",
+      "buses": {}
+    },
+    "919": {
+      "id": 919,
+      "name": "Good Leslie33",
+      "buses": {}
+    },
+    "920": {
+      "id": 920,
+      "name": "Zep Leslie",
+      "buses": {}
+    },
+    "921": {
+      "id": 921,
+      "name": "Snarcmp801",
+      "buses": {}
+    },
+    "922": {
+      "id": 922,
+      "name": "kickcmp401",
+      "buses": {}
+    },
+    "923": {
+      "id": 923,
+      "name": "Deep Fuzz 6",
+      "buses": {}
+    },
+    "924": {
+      "id": 924,
+      "name": "SynEnv4",
+      "buses": {}
+    },
+    "925": {
+      "id": 925,
+      "name": "SmallComp9",
+      "buses": {}
+    },
+    "926": {
+      "id": 926,
+      "name": "KickComp201",
+      "buses": {}
+    },
+    "927": {
+      "id": 927,
+      "name": "GoodLeslie 9",
+      "buses": {}
+    },
+    "928": {
+      "id": 928,
+      "name": "Falgor Gtr",
+      "buses": {}
+    },
+    "929": {
+      "id": 929,
+      "name": "KickComp701",
+      "buses": {}
+    },
+    "930": {
+      "id": 930,
+      "name": "Good Leslie34",
+      "buses": {}
+    },
+    "931": {
+      "id": 931,
+      "name": "Syncblip",
+      "buses": {}
+    },
+    "932": {
+      "id": 932,
+      "name": "CompDelay3",
+      "buses": {}
+    },
+    "933": {
+      "id": 933,
+      "name": "Cheese Horns2",
+      "buses": {}
+    },
+    "934": {
+      "id": 934,
+      "name": "SynthCDR20",
+      "buses": {}
+    },
+    "935": {
+      "id": 935,
+      "name": "Vintage Horns 2",
+      "buses": {}
+    },
+    "936": {
+      "id": 936,
+      "name": "Chorus Pan Delay",
+      "buses": {}
+    },
+    "937": {
+      "id": 937,
+      "name": "Snarcmp101",
+      "buses": {}
+    },
+    "938": {
+      "id": 938,
+      "name": "Filter1",
+      "buses": {}
+    },
+    "939": {
+      "id": 939,
+      "name": "Syncpulsedw",
+      "buses": {}
+    },
+    "940": {
+      "id": 940,
+      "name": "Kickcmp501",
+      "buses": {}
+    },
+    "941": {
+      "id": 941,
+      "name": "Snarshaper601",
+      "buses": {}
+    },
+    "942": {
+      "id": 942,
+      "name": "ProBassComp3",
+      "buses": {}
+    },
+    "943": {
+      "id": 943,
+      "name": "SynEnv5",
+      "buses": {}
+    },
+    "944": {
+      "id": 944,
+      "name": "SnareComp101",
+      "buses": {}
+    },
+    "945": {
+      "id": 945,
+      "name": "BostonLeslie2",
+      "buses": {}
+    },
+    "946": {
+      "id": 946,
+      "name": "Kickcmp104",
+      "buses": {}
+    },
+    "947": {
+      "id": 947,
+      "name": "Leslie MShoals",
+      "buses": {}
+    },
+    "948": {
+      "id": 948,
+      "name": "Snarcmp121",
+      "buses": {}
+    },
+    "949": {
+      "id": 949,
+      "name": "WhitrShadeLesli3",
+      "buses": {}
+    },
+    "950": {
+      "id": 950,
+      "name": "Snarcmp112",
+      "buses": {}
+    },
+    "951": {
+      "id": 951,
+      "name": "Snarcmp113",
+      "buses": {}
+    },
+    "952": {
+      "id": 952,
+      "name": "EnvKickcmp1",
+      "buses": {}
+    },
+    "953": {
+      "id": 953,
+      "name": "Kickcmp602",
+      "buses": {}
+    },
+    "954": {
+      "id": 954,
+      "name": "Snarcmp112",
+      "buses": {}
+    },
+    "955": {
+      "id": 955,
+      "name": "HipHop Drms101",
+      "buses": {}
+    },
+    "956": {
+      "id": 956,
+      "name": "PnoCmpSndBoard10",
+      "buses": {}
+    },
+    "957": {
+      "id": 957,
+      "name": "Epicsnare1",
+      "buses": {}
+    },
+    "958": {
+      "id": 958,
+      "name": "JumpSynth",
+      "buses": {}
+    },
+    "959": {
+      "id": 959,
+      "name": "Funksnare88",
+      "buses": {}
+    },
+    "960": {
+      "id": 960,
+      "name": "Kickcmp441",
+      "buses": {}
+    },
+    "961": {
+      "id": 961,
+      "name": "Upright3",
+      "buses": {}
+    },
+    "962": {
+      "id": 962,
+      "name": "HopKickcmp701",
+      "buses": {}
+    },
+    "963": {
+      "id": 963,
+      "name": "Leslie Comp 2",
+      "buses": {}
+    },
+    "964": {
+      "id": 964,
+      "name": "Kickcmp301",
+      "buses": {}
+    },
+    "965": {
+      "id": 965,
+      "name": "PnoRvb 1",
+      "buses": {}
+    },
+    "966": {
+      "id": 966,
+      "name": "PnoRvb2",
+      "buses": {}
+    },
+    "967": {
+      "id": 967,
+      "name": "HipHop Drms201",
+      "buses": {}
+    },
+    "968": {
+      "id": 968,
+      "name": "Breakdrums1",
+      "buses": {}
+    },
+    "969": {
+      "id": 969,
+      "name": "Blackfriday2",
+      "buses": {}
+    },
+    "970": {
+      "id": 970,
+      "name": "CompDelay101",
+      "buses": {}
+    },
+    "971": {
+      "id": 971,
+      "name": "Sax Chamber 2",
+      "buses": {}
+    },
+    "972": {
+      "id": 972,
+      "name": "Clunker501",
+      "buses": {}
+    },
+    "973": {
+      "id": 973,
+      "name": "Horn Plate 1",
+      "buses": {}
+    },
+    "974": {
+      "id": 974,
+      "name": "Vintage Horns",
+      "buses": {}
+    },
+    "975": {
+      "id": 975,
+      "name": "BrightFlange2",
+      "buses": {}
+    },
+    "976": {
+      "id": 976,
+      "name": "ThinphaseSweep2",
+      "buses": {}
+    },
+    "977": {
+      "id": 977,
+      "name": "Small Comp102",
+      "buses": {}
+    },
+    "978": {
+      "id": 978,
+      "name": "EPPhase1",
+      "buses": {}
+    },
+    "979": {
+      "id": 979,
+      "name": "NonKB3LesliePdl2",
+      "buses": {}
+    },
+    "980": {
+      "id": 980,
+      "name": "FlangeComp3",
+      "buses": {}
+    },
+    "981": {
+      "id": 981,
+      "name": "Mutron Clav 201",
+      "buses": {}
+    },
+    "982": {
+      "id": 982,
+      "name": "SynChorusDly202",
+      "buses": {}
+    },
+    "983": {
+      "id": 983,
+      "name": "RayEP 1",
+      "buses": {}
+    },
+    "984": {
+      "id": 984,
+      "name": "EnhanceComp121",
+      "buses": {}
+    },
+    "985": {
+      "id": 985,
+      "name": "Clunker IIa",
+      "buses": {}
+    },
+    "986": {
+      "id": 986,
+      "name": "Pad Depth Pt1",
+      "buses": {}
+    },
+    "987": {
+      "id": 987,
+      "name": "AuxChorusHall",
+      "buses": {}
+    },
+    "988": {
+      "id": 988,
+      "name": "TechnoSyn1",
+      "buses": {}
+    },
+    "989": {
+      "id": 989,
+      "name": "Synphase102",
+      "buses": {}
+    },
+    "990": {
+      "id": 990,
+      "name": "CompDelay",
+      "buses": {}
+    },
+    "991": {
+      "id": 991,
+      "name": "CompMeltrn",
+      "buses": {}
+    },
+    "992": {
+      "id": 992,
+      "name": "ARP",
+      "buses": {}
+    },
+    "993": {
+      "id": 993,
+      "name": "Triplet delay",
+      "buses": {}
+    },
+    "994": {
+      "id": 994,
+      "name": "Bigverb",
+      "buses": {}
+    },
+    "995": {
+      "id": 995,
+      "name": "Syncpulse",
+      "buses": {}
+    },
+    "996": {
+      "id": 996,
+      "name": "compbass 2",
+      "buses": {}
+    },
+    "997": {
+      "id": 997,
+      "name": "CompDelay3",
+      "buses": {}
+    },
+    "998": {
+      "id": 998,
+      "name": "Comp501",
+      "buses": {}
+    },
+    "999": {
+      "id": 999,
+      "name": "RMIPhase1",
+      "buses": {}
+    },
+    "1000": {
+      "id": 1000,
+      "name": "Joey Leslie 122",
+      "buses": {}
+    },
+    "1001": {
+      "id": 1001,
+      "name": "SynChorusDlydw2",
+      "buses": {}
+    },
+    "1003": {
+      "id": 1003,
+      "name": "ECello2",
+      "buses": {}
+    },
+    "1004": {
+      "id": 1004,
+      "name": "violin2",
+      "buses": {}
+    },
+    "1005": {
+      "id": 1005,
+      "name": "Small StringRoom",
+      "buses": {}
+    },
+    "1006": {
+      "id": 1006,
+      "name": "Viola2",
+      "buses": {}
+    },
+    "1007": {
+      "id": 1007,
+      "name": "Cello2",
+      "buses": {}
+    },
+    "1008": {
+      "id": 1008,
+      "name": "FalgorwahGtr",
+      "buses": {}
+    },
+    "1009": {
+      "id": 1009,
+      "name": "Accdn Booth",
+      "buses": {}
+    },
+    "1010": {
+      "id": 1010,
+      "name": "BRASS EQ/Comp",
+      "buses": {}
+    },
+    "1011": {
+      "id": 1011,
+      "name": "SynTrem",
+      "buses": {}
+    },
+    "1012": {
+      "id": 1012,
+      "name": "In\ufb01nSynCathedr",
+      "buses": {}
+    },
+    "1013": {
+      "id": 1013,
+      "name": "Delay + Plate1",
+      "buses": {}
+    },
+    "1014": {
+      "id": 1014,
+      "name": "SEM TRIdw",
+      "buses": {}
+    },
+    "1015": {
+      "id": 1015,
+      "name": "SynthLeaddw",
+      "buses": {}
+    },
+    "1016": {
+      "id": 1016,
+      "name": "SynPadDW",
+      "buses": {}
+    },
+    "1017": {
+      "id": 1017,
+      "name": "AGT EnhCDdw",
+      "buses": {}
+    },
+    "1018": {
+      "id": 1018,
+      "name": "CasterTremdw",
+      "buses": {}
+    },
+    "1019": {
+      "id": 1019,
+      "name": "LesTremdw",
+      "buses": {}
+    },
+    "1020": {
+      "id": 1020,
+      "name": "StdioCasterRigdw",
+      "buses": {}
+    },
+    "1021": {
+      "id": 1021,
+      "name": "PercVerb1",
+      "buses": {}
+    },
+    "2050": {
+      "id": 2050,
+      "name": "Concert Piano FX",
+      "buses": {}
+    },
+    "2051": {
+      "id": 2051,
+      "name": "Studio Piano FX",
+      "buses": {}
+    },
+    "2052": {
+      "id": 2052,
+      "name": "Dampers Up Forte",
+      "buses": {}
+    },
+    "2053": {
+      "id": 2053,
+      "name": "Pad Depth Forte",
+      "buses": {}
+    },
+    "2054": {
+      "id": 2054,
+      "name": "ChorVerb for Pad",
+      "buses": {}
+    },
+    "2055": {
+      "id": 2055,
+      "name": "Symphony Harpsi",
+      "buses": {}
+    },
+    "2101": {
+      "id": 2101,
+      "name": "ChoDistDly2",
+      "buses": {}
+    },
+    "2102": {
+      "id": 2102,
+      "name": "Dark Room 2",
+      "buses": {}
+    },
+    "2103": {
+      "id": 2103,
+      "name": "Carrot Rev",
+      "buses": {}
+    },
+    "2104": {
+      "id": 2104,
+      "name": "Carrot 1a",
+      "buses": {}
+    },
+    "2107": {
+      "id": 2107,
+      "name": "Cabbage 1a",
+      "buses": {}
+    },
+    "2108": {
+      "id": 2108,
+      "name": "Cab-Reverb",
+      "buses": {}
+    },
+    "2110": {
+      "id": 2110,
+      "name": "PithrFlngDistDly",
+      "buses": {}
+    },
+    "2150": {
+      "id": 2150,
+      "name": "MarquisPiano3",
+      "buses": {}
+    },
+    "2200": {
+      "id": 2200,
+      "name": "BluesPnoCmpRvb 1",
+      "buses": {}
+    },
+    "2201": {
+      "id": 2201,
+      "name": "BluesPnoCmpRvb 2",
+      "buses": {}
+    },
+    "2202": {
+      "id": 2202,
+      "name": "BluesPnoCmpRvb 3",
+      "buses": {}
+    },
+    "2203": {
+      "id": 2203,
+      "name": "ArtEQDW1",
+      "buses": {}
+    },
+    "2204": {
+      "id": 2204,
+      "name": "ArtEQCMPDW5",
+      "buses": {}
+    },
+    "2205": {
+      "id": 2205,
+      "name": "ArtEQCMPDW6",
+      "buses": {}
+    },
+    "2206": {
+      "id": 2206,
+      "name": "ChessRecords1",
+      "buses": {}
+    },
+    "2207": {
+      "id": 2207,
+      "name": "ArtEQCMPDW7",
+      "buses": {}
+    },
+    "2208": {
+      "id": 2208,
+      "name": "MarquisPiano1",
+      "buses": {}
+    },
+    "2209": {
+      "id": 2209,
+      "name": "MarquisPiano2",
+      "buses": {}
+    },
+    "2210": {
+      "id": 2210,
+      "name": "Rachverb",
+      "buses": {}
+    },
+    "2211": {
+      "id": 2211,
+      "name": "MarquisPiano5",
+      "buses": {}
+    },
+    "2212": {
+      "id": 2212,
+      "name": "ChessRecords2",
+      "buses": {}
+    },
+    "2300": {
+      "id": 2300,
+      "name": "JK FX Template",
+      "buses": {}
+    },
+    "2303": {
+      "id": 2303,
+      "name": "jk AUX1",
+      "buses": {}
+    },
+    "2500": {
+      "id": 2500,
+      "name": "Pianarma EQ+Cmp",
+      "buses": {}
+    },
+    "2501": {
+      "id": 2501,
+      "name": "Pianarama! verb",
+      "buses": {}
+    },
+    "2502": {
+      "id": 2502,
+      "name": "KikComp 4:1",
+      "buses": {}
+    },
+    "2560": {
+      "id": 2560,
+      "name": "MarimbDelay BPM",
+      "buses": {}
+    },
+    "3200": {
+      "id": 3200,
+      "name": "SEM TRI",
+      "buses": {}
+    },
+    "3201": {
+      "id": 3201,
+      "name": "RAVE WIND",
+      "buses": {}
+    },
+    "3202": {
+      "id": 3202,
+      "name": "Chroma FM",
+      "buses": {}
+    },
+    "3203": {
+      "id": 3203,
+      "name": "Chroma FM2",
+      "buses": {}
+    },
+    "3204": {
+      "id": 3204,
+      "name": "Iceman Bass",
+      "buses": {}
+    },
+    "3205": {
+      "id": 3205,
+      "name": "Mandocaster",
+      "buses": {}
+    },
+    "3206": {
+      "id": 3206,
+      "name": "Daft Lead",
+      "buses": {}
+    },
+    "3207": {
+      "id": 3207,
+      "name": "Tenor Sax",
+      "buses": {}
+    },
+    "3208": {
+      "id": 3208,
+      "name": "GANGsta Wrap",
+      "buses": {}
+    },
+    "3209": {
+      "id": 3209,
+      "name": "Basic Delay 3/16",
+      "buses": {}
+    },
+    "3210": {
+      "id": 3210,
+      "name": "DblSloFlangeCmp",
+      "buses": {}
+    },
+    "3211": {
+      "id": 3211,
+      "name": "Pan Trem BPM",
+      "buses": {}
+    },
+    "3212": {
+      "id": 3212,
+      "name": "Pan Trem BPM OOP",
+      "buses": {}
+    },
+    "3213": {
+      "id": 3213,
+      "name": "BPM Pad ChDeRv",
+      "buses": {}
+    },
+    "3214": {
+      "id": 3214,
+      "name": "supersaw 2",
+      "buses": {}
+    },
+    "3215": {
+      "id": 3215,
+      "name": "Slow Phase",
+      "buses": {}
+    },
+    "3216": {
+      "id": 3216,
+      "name": "BPM Trance",
+      "buses": {}
+    },
+    "3217": {
+      "id": 3217,
+      "name": "Lazer DUB",
+      "buses": {}
+    },
+    "3218": {
+      "id": 3218,
+      "name": "Krafty Monks",
+      "buses": {}
+    },
+    "3219": {
+      "id": 3219,
+      "name": "dist Booth",
+      "buses": {}
+    },
+    "3220": {
+      "id": 3220,
+      "name": "Delay + Plate",
+      "buses": {}
+    },
+    "3221": {
+      "id": 3221,
+      "name": "Dist Booth Dly",
+      "buses": {}
+    },
+    "3222": {
+      "id": 3222,
+      "name": "Sonny More | )",
+      "buses": {}
+    },
+    "3223": {
+      "id": 3223,
+      "name": "JSP Synth CDL",
+      "buses": {}
+    },
+    "3224": {
+      "id": 3224,
+      "name": "Synker1",
+      "buses": {}
+    },
+    "3225": {
+      "id": 3225,
+      "name": "SynCompMu1",
+      "buses": {}
+    },
+    "3226": {
+      "id": 3226,
+      "name": "Shred Gtr",
+      "buses": {}
+    },
+    "3227": {
+      "id": 3227,
+      "name": "Shred Gtr Wah",
+      "buses": {}
+    },
+    "3228": {
+      "id": 3228,
+      "name": "Chunky G 1",
+      "buses": {}
+    },
+    "3229": {
+      "id": 3229,
+      "name": "AuxGtrEchplex",
+      "buses": {}
+    },
+    "3230": {
+      "id": 3230,
+      "name": "Synth Delay 1/4",
+      "buses": {}
+    },
+    "3231": {
+      "id": 3231,
+      "name": "Bari Sax",
+      "buses": {}
+    },
+    "3232": {
+      "id": 3232,
+      "name": "Electric Mermaid",
+      "buses": {}
+    },
+    "3233": {
+      "id": 3233,
+      "name": "Solo Trumpet",
+      "buses": {}
+    },
+    "3234": {
+      "id": 3234,
+      "name": "FLIP'n Chorus!",
+      "buses": {}
+    },
+    "3235": {
+      "id": 3235,
+      "name": "FLIP'n Delay!",
+      "buses": {}
+    },
+    "3236": {
+      "id": 3236,
+      "name": "RedHot Dst/Cho",
+      "buses": {}
+    },
+    "3237": {
+      "id": 3237,
+      "name": "RedHot Reverb",
+      "buses": {}
+    },
+    "3238": {
+      "id": 3238,
+      "name": "RedHot Delay",
+      "buses": {}
+    },
+    "3239": {
+      "id": 3239,
+      "name": "Miami Gated Room",
+      "buses": {}
+    },
+    "3240": {
+      "id": 3240,
+      "name": "Miami Plate Rvb",
+      "buses": {}
+    },
+    "3241": {
+      "id": 3241,
+      "name": "SnarkyDimplix Rb",
+      "buses": {}
+    },
+    "3242": {
+      "id": 3242,
+      "name": "FLIP'n Distortn!",
+      "buses": {}
+    },
+    "3243": {
+      "id": 3243,
+      "name": "Synth Brass Env",
+      "buses": {}
+    },
+    "3244": {
+      "id": 3244,
+      "name": "Van BrownSound",
+      "buses": {}
+    },
+    "3245": {
+      "id": 3245,
+      "name": "Van Reverb",
+      "buses": {}
+    },
+    "3246": {
+      "id": 3246,
+      "name": "Gated Plate",
+      "buses": {}
+    },
+    "3247": {
+      "id": 3247,
+      "name": "Van EQ",
+      "buses": {}
+    },
+    "3248": {
+      "id": 3248,
+      "name": "WarmCruncher2",
+      "buses": {}
+    },
+    "3249": {
+      "id": 3249,
+      "name": "Scorb4Tap/Rv BPM",
+      "buses": {}
+    },
+    "3250": {
+      "id": 3250,
+      "name": "Scorb-olo BPM",
+      "buses": {}
+    },
+    "3251": {
+      "id": 3251,
+      "name": "Here Lil' Boy!",
+      "buses": {}
+    },
+    "3252": {
+      "id": 3252,
+      "name": "DiPulsulator",
+      "buses": {}
+    },
+    "3253": {
+      "id": 3253,
+      "name": "PadmePlecks BPM",
+      "buses": {}
+    },
+    "3254": {
+      "id": 3254,
+      "name": "ToodleTrem",
+      "buses": {}
+    },
+    "3255": {
+      "id": 3255,
+      "name": "ToodleDelay 1/8",
+      "buses": {}
+    },
+    "3256": {
+      "id": 3256,
+      "name": "Zap Chamber",
+      "buses": {}
+    },
+    "3257": {
+      "id": 3257,
+      "name": "CasterTrem",
+      "buses": {}
+    },
+    "3258": {
+      "id": 3258,
+      "name": "LesTrem",
+      "buses": {}
+    },
+    "3259": {
+      "id": 3259,
+      "name": "AS Laser Reverb",
+      "buses": {}
+    },
+    "3260": {
+      "id": 3260,
+      "name": "as Laser Reverb",
+      "buses": {}
+    },
+    "3261": {
+      "id": 3261,
+      "name": "NuBeautyDist",
+      "buses": {}
+    },
+    "3262": {
+      "id": 3262,
+      "name": "AmbientPanner",
+      "buses": {}
+    },
+    "3263": {
+      "id": 3263,
+      "name": "NuBeautyDist2",
+      "buses": {}
+    },
+    "3264": {
+      "id": 3264,
+      "name": "HammerDulceComp",
+      "buses": {}
+    },
+    "3265": {
+      "id": 3265,
+      "name": "Dulcimer Chorus",
+      "buses": {}
+    },
+    "3266": {
+      "id": 3266,
+      "name": "HammerDulceRoom3",
+      "buses": {}
+    },
+    "3267": {
+      "id": 3267,
+      "name": "HammerDulceComp2",
+      "buses": {}
+    },
+    "3268": {
+      "id": 3268,
+      "name": "LesChorus",
+      "buses": {}
+    },
+    "3269": {
+      "id": 3269,
+      "name": "EGT Multi 1",
+      "buses": {}
+    },
+    "3270": {
+      "id": 3270,
+      "name": "Kinda Krunchy2",
+      "buses": {}
+    },
+    "3271": {
+      "id": 3271,
+      "name": "Pan Trem BPM OOP",
+      "buses": {}
+    },
+    "3272": {
+      "id": 3272,
+      "name": "SEM Shape",
+      "buses": {}
+    },
+    "3273": {
+      "id": 3273,
+      "name": "Bright Syn Pad",
+      "buses": {}
+    },
+    "3274": {
+      "id": 3274,
+      "name": "Synth Delay/RVB",
+      "buses": {}
+    },
+    "3275": {
+      "id": 3275,
+      "name": "Syn Chor DDL",
+      "buses": {}
+    },
+    "3276": {
+      "id": 3276,
+      "name": "Syn Dist/Delay",
+      "buses": {}
+    },
+    "3277": {
+      "id": 3277,
+      "name": "huge space 2",
+      "buses": {}
+    },
+    "3278": {
+      "id": 3278,
+      "name": "SynPad",
+      "buses": {}
+    },
+    "3279": {
+      "id": 3279,
+      "name": "Synth Bass CDR",
+      "buses": {}
+    },
+    "3280": {
+      "id": 3280,
+      "name": "BOC Deverb",
+      "buses": {}
+    },
+    "3281": {
+      "id": 3281,
+      "name": "Gtr Niceverb",
+      "buses": {}
+    },
+    "3282": {
+      "id": 3282,
+      "name": "TripleCaster1",
+      "buses": {}
+    },
+    "3283": {
+      "id": 3283,
+      "name": "TripleCaster2",
+      "buses": {}
+    },
+    "3284": {
+      "id": 3284,
+      "name": "TripleCaster3",
+      "buses": {}
+    },
+    "3285": {
+      "id": 3285,
+      "name": "TripleCaster4",
+      "buses": {}
+    },
+    "3286": {
+      "id": 3286,
+      "name": "TripleCaster5",
+      "buses": {}
+    },
+    "3287": {
+      "id": 3287,
+      "name": "TripleCaster6",
+      "buses": {}
+    },
+    "3288": {
+      "id": 3288,
+      "name": "TripleCasterWah",
+      "buses": {}
+    },
+    "3289": {
+      "id": 3289,
+      "name": "TripleCasterEQ",
+      "buses": {}
+    },
+    "3290": {
+      "id": 3290,
+      "name": "TripleCaster31",
+      "buses": {}
+    },
+    "3291": {
+      "id": 3291,
+      "name": "TrumpetWah",
+      "buses": {}
+    },
+    "3292": {
+      "id": 3292,
+      "name": "E-Bow",
+      "buses": {}
+    },
+    "3293": {
+      "id": 3293,
+      "name": "1/2-1/4DlyBPM",
+      "buses": {}
+    },
+    "3294": {
+      "id": 3294,
+      "name": "Phase",
+      "buses": {}
+    },
+    "3295": {
+      "id": 3295,
+      "name": "EQVelMorph L",
+      "buses": {}
+    },
+    "3296": {
+      "id": 3296,
+      "name": "EQVelMorph R",
+      "buses": {}
+    },
+    "3297": {
+      "id": 3297,
+      "name": "HF Stim",
+      "buses": {}
+    },
+    "3298": {
+      "id": 3298,
+      "name": "InstantHillbilly",
+      "buses": {}
+    },
+    "3299": {
+      "id": 3299,
+      "name": "HoRnYFlAnGePaRtY",
+      "buses": {}
+    },
+    "3300": {
+      "id": 3300,
+      "name": "BRASS EQ/Comp",
+      "buses": {}
+    },
+    "3301": {
+      "id": 3301,
+      "name": "MouthyFilter",
+      "buses": {}
+    },
+    "3302": {
+      "id": 3302,
+      "name": "Super8 Horn Dly",
+      "buses": {}
+    },
+    "3303": {
+      "id": 3303,
+      "name": "BrassMod+AMRadio",
+      "buses": {}
+    },
+    "3304": {
+      "id": 3304,
+      "name": "7thHeaven Plate",
+      "buses": {}
+    },
+    "3305": {
+      "id": 3305,
+      "name": "7thHeavenCmpSlap",
+      "buses": {}
+    },
+    "3306": {
+      "id": 3306,
+      "name": "Bullitt PDlyHall",
+      "buses": {}
+    },
+    "3307": {
+      "id": 3307,
+      "name": "Bunny Delay 3",
+      "buses": {}
+    },
+    "3308": {
+      "id": 3308,
+      "name": "Van Brown LITE",
+      "buses": {}
+    },
+    "3309": {
+      "id": 3309,
+      "name": "Van ChDly LITE",
+      "buses": {}
+    },
+    "3310": {
+      "id": 3310,
+      "name": "Sax-susolo Plate",
+      "buses": {}
+    },
+    "3311": {
+      "id": 3311,
+      "name": "THX",
+      "buses": {}
+    },
+    "3312": {
+      "id": 3312,
+      "name": "StdioCasterFXRig",
+      "buses": {}
+    },
+    "3313": {
+      "id": 3313,
+      "name": "BonzoCompLTE",
+      "buses": {}
+    },
+    "3314": {
+      "id": 3314,
+      "name": "BonzoLTE GateRvb",
+      "buses": {}
+    },
+    "3315": {
+      "id": 3315,
+      "name": "Syn Brass Plate",
+      "buses": {}
+    },
+    "3316": {
+      "id": 3316,
+      "name": "Syn Str Hall",
+      "buses": {}
+    },
+    "3317": {
+      "id": 3317,
+      "name": "E-Bow 1",
+      "buses": {}
+    },
+    "3318": {
+      "id": 3318,
+      "name": "THX",
+      "buses": {}
+    },
+    "3319": {
+      "id": 3319,
+      "name": "WorldCDR1",
+      "buses": {}
+    },
+    "3320": {
+      "id": 3320,
+      "name": "WarmCDR",
+      "buses": {}
+    },
+    "3321": {
+      "id": 3321,
+      "name": "Chunky G 1",
+      "buses": {}
+    },
+    "3322": {
+      "id": 3322,
+      "name": "OBI 1",
+      "buses": {}
+    },
+    "3323": {
+      "id": 3323,
+      "name": "SYnBassCompMu",
+      "buses": {}
+    },
+    "3324": {
+      "id": 3324,
+      "name": "MarimbDelay BPM",
+      "buses": {}
+    },
+    "3325": {
+      "id": 3325,
+      "name": "DW GatedLaserver",
+      "buses": {}
+    },
+    "3326": {
+      "id": 3326,
+      "name": "Chillwave Chords",
+      "buses": {}
+    },
+    "3327": {
+      "id": 3327,
+      "name": "Burning Keys 3",
+      "buses": {}
+    },
+    "3328": {
+      "id": 3328,
+      "name": "EnhanceSyn",
+      "buses": {}
+    },
+    "3329": {
+      "id": 3329,
+      "name": "Burning Keys 6",
+      "buses": {}
+    },
+    "3330": {
+      "id": 3330,
+      "name": "StTaps1",
+      "buses": {}
+    },
+    "3331": {
+      "id": 3331,
+      "name": "Flange Mayhem2",
+      "buses": {}
+    },
+    "3332": {
+      "id": 3332,
+      "name": "Mute Gtr1",
+      "buses": {}
+    },
+    "3333": {
+      "id": 3333,
+      "name": "SynthCDR",
+      "buses": {}
+    },
+    "3334": {
+      "id": 3334,
+      "name": "3str Gtr Wah2",
+      "buses": {}
+    },
+    "3335": {
+      "id": 3335,
+      "name": "WorldMandolinCDR",
+      "buses": {}
+    },
+    "3336": {
+      "id": 3336,
+      "name": "Padme's lil' Pal",
+      "buses": {}
+    },
+    "3337": {
+      "id": 3337,
+      "name": "Squeeze Cmp",
+      "buses": {}
+    },
+    "3338": {
+      "id": 3338,
+      "name": "Klockwork",
+      "buses": {}
+    },
+    "3339": {
+      "id": 3339,
+      "name": "Bass Fishing",
+      "buses": {}
+    },
+    "3340": {
+      "id": 3340,
+      "name": "Wave Rider",
+      "buses": {}
+    },
+    "3341": {
+      "id": 3341,
+      "name": "TripleCaster6",
+      "buses": {}
+    },
+    "3342": {
+      "id": 3342,
+      "name": "TripleCasterWah",
+      "buses": {}
+    },
+    "3343": {
+      "id": 3343,
+      "name": "Mr.West Horns",
+      "buses": {}
+    },
+    "3344": {
+      "id": 3344,
+      "name": "TripleCaster31",
+      "buses": {}
+    },
+    "3345": {
+      "id": 3345,
+      "name": "SynPnoPhase1",
+      "buses": {}
+    },
+    "3346": {
+      "id": 3346,
+      "name": "PBS on VHS",
+      "buses": {}
+    },
+    "3347": {
+      "id": 3347,
+      "name": "Attack Trance",
+      "buses": {}
+    },
+    "3348": {
+      "id": 3348,
+      "name": "HPF Drum Taps",
+      "buses": {}
+    },
+    "3349": {
+      "id": 3349,
+      "name": "Lectro Plate",
+      "buses": {}
+    },
+    "3350": {
+      "id": 3350,
+      "name": "Nasty Syn Brass",
+      "buses": {}
+    },
+    "3351": {
+      "id": 3351,
+      "name": "Syn Str Hall",
+      "buses": {}
+    },
+    "3352": {
+      "id": 3352,
+      "name": "BOC Deverb",
+      "buses": {}
+    },
+    "3353": {
+      "id": 3353,
+      "name": "Popcorn Plate",
+      "buses": {}
+    },
+    "3354": {
+      "id": 3354,
+      "name": "Plantasia Plate",
+      "buses": {}
+    },
+    "3355": {
+      "id": 3355,
+      "name": "New Horns 1",
+      "buses": {}
+    },
+    "3356": {
+      "id": 3356,
+      "name": "Phase DW",
+      "buses": {}
+    },
+    "3357": {
+      "id": 3357,
+      "name": "SynChor&Dly1",
+      "buses": {}
+    },
+    "3358": {
+      "id": 3358,
+      "name": "Mando EQ",
+      "buses": {}
+    },
+    "3359": {
+      "id": 3359,
+      "name": "WorldMandolnCDR1",
+      "buses": {}
+    },
+    "3360": {
+      "id": 3360,
+      "name": "Dist Booth Dly",
+      "buses": {}
+    },
+    "3361": {
+      "id": 3361,
+      "name": "Synth Bass CDR",
+      "buses": {}
+    },
+    "3362": {
+      "id": 3362,
+      "name": "In\ufb01n Cathedral",
+      "buses": {}
+    },
+    "3363": {
+      "id": 3363,
+      "name": "Forte Pad Insert",
+      "buses": {}
+    },
+    "3364": {
+      "id": 3364,
+      "name": "Punch-a-ghost",
+      "buses": {}
+    },
+    "3365": {
+      "id": 3365,
+      "name": "ElecMandolin",
+      "buses": {}
+    },
+    "3366": {
+      "id": 3366,
+      "name": "Gallo Dist+ EQ",
+      "buses": {}
+    },
+    "3367": {
+      "id": 3367,
+      "name": "UnderCurrnts",
+      "buses": {}
+    },
+    "3368": {
+      "id": 3368,
+      "name": "UnderCurAux",
+      "buses": {}
+    },
+    "3369": {
+      "id": 3369,
+      "name": "DW Laser Reverb",
+      "buses": {}
+    },
+    "3370": {
+      "id": 3370,
+      "name": "Cathedral ChorDW",
+      "buses": {}
+    },
+    "3456": {
+      "id": 3456,
+      "name": "BreakdrumsNEWKIK",
+      "buses": {}
+    },
+    "3457": {
+      "id": 3457,
+      "name": "Lil' Drum Booth",
+      "buses": {}
+    },
+    "3458": {
+      "id": 3458,
+      "name": "Small Drum Space",
+      "buses": {}
+    },
+    "3459": {
+      "id": 3459,
+      "name": "Small Cmpsd Spce",
+      "buses": {}
+    },
+    "3460": {
+      "id": 3460,
+      "name": "More Drum Air",
+      "buses": {}
+    },
+    "3461": {
+      "id": 3461,
+      "name": "Full Drum Room",
+      "buses": {}
+    },
+    "3462": {
+      "id": 3462,
+      "name": "Brite Drum Space",
+      "buses": {}
+    },
+    "3463": {
+      "id": 3463,
+      "name": "Garage Drums",
+      "buses": {}
+    },
+    "3464": {
+      "id": 3464,
+      "name": "Expandn'DrumHall",
+      "buses": {}
+    },
+    "3465": {
+      "id": 3465,
+      "name": "Expandn'Drum 481",
+      "buses": {}
+    },
+    "3466": {
+      "id": 3466,
+      "name": "Expandn'DrumPLTE",
+      "buses": {}
+    },
+    "3467": {
+      "id": 3467,
+      "name": "Expandn'Drum GYM",
+      "buses": {}
+    },
+    "3468": {
+      "id": 3468,
+      "name": "SnappyDrumCmpVrb",
+      "buses": {}
+    },
+    "3469": {
+      "id": 3469,
+      "name": "Drum Enhancer",
+      "buses": {}
+    },
+    "3470": {
+      "id": 3470,
+      "name": "DrumComp subtle",
+      "buses": {}
+    },
+    "3471": {
+      "id": 3471,
+      "name": "Snare Enhancer",
+      "buses": {}
+    },
+    "3472": {
+      "id": 3472,
+      "name": "SnrEnhanceComp",
+      "buses": {}
+    },
+    "3473": {
+      "id": 3473,
+      "name": "NewKickComp 1",
+      "buses": {}
+    },
+    "3474": {
+      "id": 3474,
+      "name": "CmpVerb4Drms2",
+      "buses": {}
+    },
+    "3475": {
+      "id": 3475,
+      "name": "DistCompRev4Drms",
+      "buses": {}
+    },
+    "3476": {
+      "id": 3476,
+      "name": "DrmCMP4PrgNew",
+      "buses": {}
+    },
+    "3477": {
+      "id": 3477,
+      "name": "Ricochet Verb",
+      "buses": {}
+    },
+    "3478": {
+      "id": 3478,
+      "name": "VerbW/Stereo 2",
+      "buses": {}
+    },
+    "3479": {
+      "id": 3479,
+      "name": "DubDelayer",
+      "buses": {}
+    },
+    "3480": {
+      "id": 3480,
+      "name": "DarkDrumSlap Sys",
+      "buses": {}
+    },
+    "3481": {
+      "id": 3481,
+      "name": "ExpStereoDrmHall",
+      "buses": {}
+    },
+    "3482": {
+      "id": 3482,
+      "name": "Snr Enhnce HiCut",
+      "buses": {}
+    },
+    "3483": {
+      "id": 3483,
+      "name": "Trans DrmComp",
+      "buses": {}
+    },
+    "3484": {
+      "id": 3484,
+      "name": "CmEqDeRe4DrmsSTb",
+      "buses": {}
+    },
+    "3485": {
+      "id": 3485,
+      "name": "CmpDistRev4Drms",
+      "buses": {}
+    },
+    "3486": {
+      "id": 3486,
+      "name": "VinylDistImage",
+      "buses": {}
+    },
+    "3487": {
+      "id": 3487,
+      "name": "Dub hall",
+      "buses": {}
+    },
+    "3488": {
+      "id": 3488,
+      "name": "JK Timbered Taps",
+      "buses": {}
+    },
+    "3489": {
+      "id": 3489,
+      "name": "JK GatedLaserver",
+      "buses": {}
+    },
+    "3490": {
+      "id": 3490,
+      "name": "JK Marimba Hall",
+      "buses": {}
+    },
+    "3491": {
+      "id": 3491,
+      "name": "JK Green Room",
+      "buses": {}
+    },
+    "3492": {
+      "id": 3492,
+      "name": "JK Laser Reverb",
+      "buses": {}
+    },
+    "3493": {
+      "id": 3493,
+      "name": "Dubstep Drumz",
+      "buses": {}
+    },
+    "3494": {
+      "id": 3494,
+      "name": "DubDelayer",
+      "buses": {}
+    },
+    "4001": {
+      "id": 4001,
+      "name": "Rich 9 Ft Grand",
+      "buses": {}
+    },
+    "4002": {
+      "id": 4002,
+      "name": "Rich 7 Ft Grand",
+      "buses": {}
+    },
+    "4003": {
+      "id": 4003,
+      "name": "Rock 9 Ft Grand",
+      "buses": {}
+    },
+    "4004": {
+      "id": 4004,
+      "name": "Bright 7ft Grand",
+      "buses": {}
+    },
+    "4005": {
+      "id": 4005,
+      "name": "Solo 9 Ft Grand",
+      "buses": {}
+    },
+    "4006": {
+      "id": 4006,
+      "name": "Solo 7 Ft Grand",
+      "buses": {}
+    },
+    "4007": {
+      "id": 4007,
+      "name": "Vintage Upright",
+      "buses": {}
+    },
+    "4008": {
+      "id": 4008,
+      "name": "Vintage Grand",
+      "buses": {}
+    },
+    "4009": {
+      "id": 4009,
+      "name": "Elegant Grand",
+      "buses": {}
+    },
+    "4010": {
+      "id": 4010,
+      "name": "New Orleans",
+      "buses": {}
+    },
+    "4011": {
+      "id": 4011,
+      "name": "Dark & Distant",
+      "buses": {}
+    },
+    "4012": {
+      "id": 4012,
+      "name": "Piano + Pad",
+      "buses": {}
+    },
+    "4013": {
+      "id": 4013,
+      "name": "Piano & Strings",
+      "buses": {}
+    },
+    "4014": {
+      "id": 4014,
+      "name": "Punchy Edge",
+      "buses": {}
+    },
+    "4015": {
+      "id": 4015,
+      "name": "R&B Stack",
+      "buses": {}
+    },
+    "4016": {
+      "id": 4016,
+      "name": "Super Pop",
+      "buses": {}
+    },
+    "4017": {
+      "id": 4017,
+      "name": "70s Album",
+      "buses": {}
+    },
+    "4018": {
+      "id": 4018,
+      "name": "Artis Grand",
+      "buses": {}
+    },
+    "4019": {
+      "id": 4019,
+      "name": "Legacy Grand",
+      "buses": {}
+    },
+    "4020": {
+      "id": 4020,
+      "name": "New Age Grand",
+      "buses": {}
+    },
+    "4021": {
+      "id": 4021,
+      "name": "Piano & Harp",
+      "buses": {}
+    },
+    "4022": {
+      "id": 4022,
+      "name": "Piano & Choir",
+      "buses": {}
+    },
+    "4023": {
+      "id": 4023,
+      "name": "Mood Ring",
+      "buses": {}
+    },
+    "4024": {
+      "id": 4024,
+      "name": "Ambience",
+      "buses": {}
+    },
+    "4025": {
+      "id": 4025,
+      "name": "Film Piano",
+      "buses": {}
+    },
+    "4026": {
+      "id": 4026,
+      "name": "Soul Piano",
+      "buses": {}
+    },
+    "4027": {
+      "id": 4027,
+      "name": "Pub Piano",
+      "buses": {}
+    },
+    "4028": {
+      "id": 4028,
+      "name": "Double Grand",
+      "buses": {}
+    },
+    "4029": {
+      "id": 4029,
+      "name": "Mono Upright",
+      "buses": {}
+    },
+    "4030": {
+      "id": 4030,
+      "name": "Double Squash",
+      "buses": {}
+    },
+    "4031": {
+      "id": 4031,
+      "name": "Vintage Squash",
+      "buses": {}
+    },
+    "4032": {
+      "id": 4032,
+      "name": "House Piano",
+      "buses": {}
+    },
+    "4033": {
+      "id": 4033,
+      "name": "Rooftop 73 Tine",
+      "buses": {}
+    },
+    "4034": {
+      "id": 4034,
+      "name": "Steely Dyno 77",
+      "buses": {}
+    },
+    "4035": {
+      "id": 4035,
+      "name": "Vint Amp EP Reed",
+      "buses": {}
+    },
+    "4036": {
+      "id": 4036,
+      "name": "Amped Bell 73",
+      "buses": {}
+    },
+    "4037": {
+      "id": 4037,
+      "name": "BarkDist 77 Tine",
+      "buses": {}
+    },
+    "4038": {
+      "id": 4038,
+      "name": "BecksRetro EP",
+      "buses": {}
+    },
+    "4039": {
+      "id": 4039,
+      "name": "Phasey 73 Tine",
+      "buses": {}
+    },
+    "4040": {
+      "id": 4040,
+      "name": "Mr. SparkleTop73",
+      "buses": {}
+    },
+    "4041": {
+      "id": 4041,
+      "name": "Aged Tolex 77",
+      "buses": {}
+    },
+    "4042": {
+      "id": 4042,
+      "name": "Smooth 70's 73",
+      "buses": {}
+    },
+    "4043": {
+      "id": 4043,
+      "name": "FusionChorDyno73",
+      "buses": {}
+    },
+    "4044": {
+      "id": 4044,
+      "name": "Chorus 77 Tine",
+      "buses": {}
+    },
+    "4045": {
+      "id": 4045,
+      "name": "73/77 StereoBels",
+      "buses": {}
+    },
+    "4046": {
+      "id": 4046,
+      "name": "EnvFlt 73 Tine",
+      "buses": {}
+    },
+    "4047": {
+      "id": 4047,
+      "name": "Ray's EP Reed",
+      "buses": {}
+    },
+    "4048": {
+      "id": 4048,
+      "name": "DeepFuzz EP Reed",
+      "buses": {}
+    },
+    "4049": {
+      "id": 4049,
+      "name": "T-Bone EP Reed",
+      "buses": {}
+    },
+    "4050": {
+      "id": 4050,
+      "name": "PhaseDist EP",
+      "buses": {}
+    },
+    "4051": {
+      "id": 4051,
+      "name": "BrightFuzz EP",
+      "buses": {}
+    },
+    "4052": {
+      "id": 4052,
+      "name": "TrampAmp EP Reed",
+      "buses": {}
+    },
+    "4053": {
+      "id": 4053,
+      "name": "FM EP 1",
+      "buses": {}
+    },
+    "4054": {
+      "id": 4054,
+      "name": "FM EP 2",
+      "buses": {}
+    },
+    "4055": {
+      "id": 4055,
+      "name": "Rotary 73 Tine",
+      "buses": {}
+    },
+    "4056": {
+      "id": 4056,
+      "name": "Elec Grand Stack",
+      "buses": {}
+    },
+    "4057": {
+      "id": 4057,
+      "name": "BrightRMI Pn/Hrp",
+      "buses": {}
+    },
+    "4058": {
+      "id": 4058,
+      "name": "Tight Bright FM",
+      "buses": {}
+    },
+    "4059": {
+      "id": 4059,
+      "name": "Gabriel's Melt",
+      "buses": {}
+    },
+    "4060": {
+      "id": 4060,
+      "name": "CP80 Enhanced",
+      "buses": {}
+    },
+    "4061": {
+      "id": 4061,
+      "name": "VideoKilledRadio",
+      "buses": {}
+    },
+    "4062": {
+      "id": 4062,
+      "name": "UK Pop CP70",
+      "buses": {}
+    },
+    "4063": {
+      "id": 4063,
+      "name": "MistyMountain EP",
+      "buses": {}
+    },
+    "4064": {
+      "id": 4064,
+      "name": "No Quarter Pnt",
+      "buses": {}
+    },
+    "4065": {
+      "id": 4065,
+      "name": "Black Friday",
+      "buses": {}
+    },
+    "4066": {
+      "id": 4066,
+      "name": "Sly Ballad",
+      "buses": {}
+    },
+    "4067": {
+      "id": 4067,
+      "name": "RoyalKingWakeman",
+      "buses": {}
+    },
+    "4068": {
+      "id": 4068,
+      "name": "StageTines Soft",
+      "buses": {}
+    },
+    "4069": {
+      "id": 4069,
+      "name": "Suitcase Tines",
+      "buses": {}
+    },
+    "4070": {
+      "id": 4070,
+      "name": "Rooftop 73 Tine2",
+      "buses": {}
+    },
+    "4071": {
+      "id": 4071,
+      "name": "Suitcase EP",
+      "buses": {}
+    },
+    "4072": {
+      "id": 4072,
+      "name": "EP Reed 200",
+      "buses": {}
+    },
+    "4073": {
+      "id": 4073,
+      "name": "Chaka Clav",
+      "buses": {}
+    },
+    "4074": {
+      "id": 4074,
+      "name": "SupaStevie CB",
+      "buses": {}
+    },
+    "4075": {
+      "id": 4075,
+      "name": "Funkadelic Relic",
+      "buses": {}
+    },
+    "4076": {
+      "id": 4076,
+      "name": "ZEP Clav",
+      "buses": {}
+    },
+    "4077": {
+      "id": 4077,
+      "name": "HeartbreakerWAH",
+      "buses": {}
+    },
+    "4078": {
+      "id": 4078,
+      "name": "Chameleon Wah",
+      "buses": {}
+    },
+    "4079": {
+      "id": 4079,
+      "name": "Stevie Fuzz Amp",
+      "buses": {}
+    },
+    "4080": {
+      "id": 4080,
+      "name": "OutOfPhasPickups",
+      "buses": {}
+    },
+    "4081": {
+      "id": 4081,
+      "name": "Fr Harpsi L84U8",
+      "buses": {}
+    },
+    "4082": {
+      "id": 4082,
+      "name": "Fr Harpsi L48",
+      "buses": {}
+    },
+    "4083": {
+      "id": 4083,
+      "name": "Fr Harpsi Lute",
+      "buses": {}
+    },
+    "4084": {
+      "id": 4084,
+      "name": "Fr Harpsi L8",
+      "buses": {}
+    },
+    "4085": {
+      "id": 4085,
+      "name": "Fr Harpsi U8",
+      "buses": {}
+    },
+    "4089": {
+      "id": 4089,
+      "name": "ClassicBLesFstvX",
+      "buses": {}
+    },
+    "4090": {
+      "id": 4090,
+      "name": "FunkyPerc Les X",
+      "buses": {}
+    },
+    "4091": {
+      "id": 4091,
+      "name": "SoulPerc Les X",
+      "buses": {}
+    },
+    "4092": {
+      "id": 4092,
+      "name": "FirstThree LesX",
+      "buses": {}
+    },
+    "4093": {
+      "id": 4093,
+      "name": "PerfectStrLes X",
+      "buses": {}
+    },
+    "4094": {
+      "id": 4094,
+      "name": "70s Drwbars LesX",
+      "buses": {}
+    },
+    "4095": {
+      "id": 4095,
+      "name": "Prog Bars Les X",
+      "buses": {}
+    },
+    "4096": {
+      "id": 4096,
+      "name": "Ezra II Les X",
+      "buses": {}
+    },
+    "4097": {
+      "id": 4097,
+      "name": "CrunchLesl122 X",
+      "buses": {}
+    },
+    "4098": {
+      "id": 4098,
+      "name": "SoulLeslie122 X",
+      "buses": {}
+    },
+    "4099": {
+      "id": 4099,
+      "name": "Jimmy'sBrakeX",
+      "buses": {}
+    },
+    "4100": {
+      "id": 4100,
+      "name": "DistlLes HotGsX",
+      "buses": {}
+    },
+    "4101": {
+      "id": 4101,
+      "name": "NonKB3 A KX 2",
+      "buses": {}
+    },
+    "4102": {
+      "id": 4102,
+      "name": "VoxKB3",
+      "buses": {}
+    },
+    "4103": {
+      "id": 4103,
+      "name": "VoxKB3",
+      "buses": {}
+    },
+    "4104": {
+      "id": 4104,
+      "name": "Far\ufb01sa1",
+      "buses": {}
+    },
+    "4105": {
+      "id": 4105,
+      "name": "All Stops",
+      "buses": {}
+    },
+    "4106": {
+      "id": 4106,
+      "name": "AllStopsAllVox",
+      "buses": {}
+    },
+    "4107": {
+      "id": 4107,
+      "name": "Pipe Stops",
+      "buses": {}
+    },
+    "4108": {
+      "id": 4108,
+      "name": "Chapel Organ",
+      "buses": {}
+    },
+    "4109": {
+      "id": 4109,
+      "name": "Pipes & Voices",
+      "buses": {}
+    },
+    "4110": {
+      "id": 4110,
+      "name": "16' Open Flute",
+      "buses": {}
+    },
+    "4111": {
+      "id": 4111,
+      "name": "16' Ped Reed",
+      "buses": {}
+    },
+    "4112": {
+      "id": 4112,
+      "name": "16' Reed A",
+      "buses": {}
+    },
+    "4113": {
+      "id": 4113,
+      "name": "16' Viol",
+      "buses": {}
+    },
+    "4114": {
+      "id": 4114,
+      "name": "Leslie 122 K X",
+      "buses": {}
+    },
+    "4115": {
+      "id": 4115,
+      "name": "LightDistlLes KX",
+      "buses": {}
+    },
+    "4116": {
+      "id": 4116,
+      "name": "Clean Leslie KX",
+      "buses": {}
+    },
+    "4117": {
+      "id": 4117,
+      "name": "Fisher'sHarm Mic",
+      "buses": {}
+    },
+    "4118": {
+      "id": 4118,
+      "name": "ParisCmboAccordn",
+      "buses": {}
+    },
+    "4119": {
+      "id": 4119,
+      "name": "Mellow Accordion",
+      "buses": {}
+    },
+    "4120": {
+      "id": 4120,
+      "name": "BrasilAccordion",
+      "buses": {}
+    },
+    "4121": {
+      "id": 4121,
+      "name": "Press Lead",
+      "buses": {}
+    },
+    "4122": {
+      "id": 4122,
+      "name": "Cars Square Lead",
+      "buses": {}
+    },
+    "4123": {
+      "id": 4123,
+      "name": "Keytar Hero(Wah)",
+      "buses": {}
+    },
+    "4124": {
+      "id": 4124,
+      "name": "Voyage Lead",
+      "buses": {}
+    },
+    "4125": {
+      "id": 4125,
+      "name": "SimpleHipHopLead",
+      "buses": {}
+    },
+    "4126": {
+      "id": 4126,
+      "name": "SquareChirpLead",
+      "buses": {}
+    },
+    "4127": {
+      "id": 4127,
+      "name": "Vector Lead",
+      "buses": {}
+    },
+    "4128": {
+      "id": 4128,
+      "name": "80s Lead Synth",
+      "buses": {}
+    },
+    "4129": {
+      "id": 4129,
+      "name": "Dark Wobbles",
+      "buses": {}
+    },
+    "4130": {
+      "id": 4130,
+      "name": "Daft Lead",
+      "buses": {}
+    },
+    "4131": {
+      "id": 4131,
+      "name": "Minipulse 4Pole",
+      "buses": {}
+    },
+    "4132": {
+      "id": 4132,
+      "name": "Frankenstein Wah",
+      "buses": {}
+    },
+    "4133": {
+      "id": 4133,
+      "name": "Candy*O Sync",
+      "buses": {}
+    },
+    "4134": {
+      "id": 4134,
+      "name": "Raw & Bleedin",
+      "buses": {}
+    },
+    "4135": {
+      "id": 4135,
+      "name": "Dist Filter Lead",
+      "buses": {}
+    },
+    "4137": {
+      "id": 4137,
+      "name": "Film Score Pad",
+      "buses": {}
+    },
+    "4138": {
+      "id": 4138,
+      "name": "Majestic Pad",
+      "buses": {}
+    },
+    "4139": {
+      "id": 4139,
+      "name": "So Lush Pad",
+      "buses": {}
+    },
+    "4140": {
+      "id": 4140,
+      "name": "Bladerunner ARP",
+      "buses": {}
+    },
+    "4141": {
+      "id": 4141,
+      "name": "CrotaleScape Pad",
+      "buses": {}
+    },
+    "4142": {
+      "id": 4142,
+      "name": "UnderCurrents",
+      "buses": {}
+    },
+    "4143": {
+      "id": 4143,
+      "name": "Fairlight Pad",
+      "buses": {}
+    },
+    "4144": {
+      "id": 4144,
+      "name": "Phase Shimmer",
+      "buses": {}
+    },
+    "4145": {
+      "id": 4145,
+      "name": "Evolving Pad",
+      "buses": {}
+    },
+    "4146": {
+      "id": 4146,
+      "name": "Lush Pad",
+      "buses": {}
+    },
+    "4147": {
+      "id": 4147,
+      "name": "Deeper Water",
+      "buses": {}
+    },
+    "4148": {
+      "id": 4148,
+      "name": "Lush Rhythm Pad",
+      "buses": {}
+    },
+    "4149": {
+      "id": 4149,
+      "name": "Cosmic Sus Pedal",
+      "buses": {}
+    },
+    "4150": {
+      "id": 4150,
+      "name": "Solo Syn Orch",
+      "buses": {}
+    },
+    "4151": {
+      "id": 4151,
+      "name": "Add A Pad 1",
+      "buses": {}
+    },
+    "4152": {
+      "id": 4152,
+      "name": "Add A Pad 2",
+      "buses": {}
+    },
+    "4153": {
+      "id": 4153,
+      "name": "Super Saw",
+      "buses": {}
+    },
+    "4154": {
+      "id": 4154,
+      "name": "Bright Vector",
+      "buses": {}
+    },
+    "4155": {
+      "id": 4155,
+      "name": "Classic SynBrass",
+      "buses": {}
+    },
+    "4156": {
+      "id": 4156,
+      "name": "MW S&H Filt",
+      "buses": {}
+    },
+    "4157": {
+      "id": 4157,
+      "name": "80's Heaven",
+      "buses": {}
+    },
+    "4158": {
+      "id": 4158,
+      "name": "PolySynth Stack",
+      "buses": {}
+    },
+    "4159": {
+      "id": 4159,
+      "name": "Chillwave Chords",
+      "buses": {}
+    },
+    "4160": {
+      "id": 4160,
+      "name": "Classic Saws",
+      "buses": {}
+    },
+    "4161": {
+      "id": 4161,
+      "name": "Big Old Jupiter",
+      "buses": {}
+    },
+    "4162": {
+      "id": 4162,
+      "name": "Punchy Synth",
+      "buses": {}
+    },
+    "4163": {
+      "id": 4163,
+      "name": "Touch Trance",
+      "buses": {}
+    },
+    "4164": {
+      "id": 4164,
+      "name": "Square Bell",
+      "buses": {}
+    },
+    "4165": {
+      "id": 4165,
+      "name": "Perc Vector",
+      "buses": {}
+    },
+    "4166": {
+      "id": 4166,
+      "name": "Tesla Coil",
+      "buses": {}
+    },
+    "4167": {
+      "id": 4167,
+      "name": "Warbly Pong SQR",
+      "buses": {}
+    },
+    "4168": {
+      "id": 4168,
+      "name": "Gangsta Wrap",
+      "buses": {}
+    },
+    "4169": {
+      "id": 4169,
+      "name": "Woodhouse Bass",
+      "buses": {}
+    },
+    "4170": {
+      "id": 4170,
+      "name": "Aggro OctoBass",
+      "buses": {}
+    },
+    "4171": {
+      "id": 4171,
+      "name": "KneeDeepMiniMoog",
+      "buses": {}
+    },
+    "4172": {
+      "id": 4172,
+      "name": "Squeeze Mini",
+      "buses": {}
+    },
+    "4173": {
+      "id": 4173,
+      "name": "Iceman Bass",
+      "buses": {}
+    },
+    "4174": {
+      "id": 4174,
+      "name": "ANGRY Bass",
+      "buses": {}
+    },
+    "4175": {
+      "id": 4175,
+      "name": "Big Synth Bass",
+      "buses": {}
+    },
+    "4176": {
+      "id": 4176,
+      "name": "Noise Bass",
+      "buses": {}
+    },
+    "4177": {
+      "id": 4177,
+      "name": "The Way It Is",
+      "buses": {}
+    },
+    "4178": {
+      "id": 4178,
+      "name": "Dolby Bass",
+      "buses": {}
+    },
+    "4179": {
+      "id": 4179,
+      "name": "Adagio Strings",
+      "buses": {}
+    },
+    "4180": {
+      "id": 4180,
+      "name": "Big LA Strings",
+      "buses": {}
+    },
+    "4181": {
+      "id": 4181,
+      "name": "Fast Strings",
+      "buses": {}
+    },
+    "4182": {
+      "id": 4182,
+      "name": "Slow String Trem",
+      "buses": {}
+    },
+    "4183": {
+      "id": 4183,
+      "name": "AdagioTutti 8ves",
+      "buses": {}
+    },
+    "4184": {
+      "id": 4184,
+      "name": "Adagio Octaves",
+      "buses": {}
+    },
+    "4185": {
+      "id": 4185,
+      "name": "NashvilleStrings",
+      "buses": {}
+    },
+    "4186": {
+      "id": 4186,
+      "name": "Poltergeist Pad",
+      "buses": {}
+    },
+    "4187": {
+      "id": 4187,
+      "name": "Full Pizzicato",
+      "buses": {}
+    },
+    "4188": {
+      "id": 4188,
+      "name": "Lead Violins II",
+      "buses": {}
+    },
+    "4189": {
+      "id": 4189,
+      "name": "AggressDivisiStr",
+      "buses": {}
+    },
+    "4190": {
+      "id": 4190,
+      "name": "Yesesis Tron Str",
+      "buses": {}
+    },
+    "4191": {
+      "id": 4191,
+      "name": "Moby TurntblTron",
+      "buses": {}
+    },
+    "4192": {
+      "id": 4192,
+      "name": "Solo Violin Fast",
+      "buses": {}
+    },
+    "4193": {
+      "id": 4193,
+      "name": "Solo Cello Fast",
+      "buses": {}
+    },
+    "4194": {
+      "id": 4194,
+      "name": "Solo Harp",
+      "buses": {}
+    },
+    "4195": {
+      "id": 4195,
+      "name": "Session Hornz",
+      "buses": {}
+    },
+    "4196": {
+      "id": 4196,
+      "name": "High-End Horns",
+      "buses": {}
+    },
+    "4197": {
+      "id": 4197,
+      "name": "Split SectionSW",
+      "buses": {}
+    },
+    "4198": {
+      "id": 4198,
+      "name": "Mancini Brass",
+      "buses": {}
+    },
+    "4199": {
+      "id": 4199,
+      "name": "GB Hornz+Syn",
+      "buses": {}
+    },
+    "4200": {
+      "id": 4200,
+      "name": "Super-8 Horn Dly",
+      "buses": {}
+    },
+    "4201": {
+      "id": 4201,
+      "name": "Brass Fanfare",
+      "buses": {}
+    },
+    "4202": {
+      "id": 4202,
+      "name": "Low Orch Brass",
+      "buses": {}
+    },
+    "4203": {
+      "id": 4203,
+      "name": "Lead Trumpet",
+      "buses": {}
+    },
+    "4204": {
+      "id": 4204,
+      "name": "Solo Trombone",
+      "buses": {}
+    },
+    "4205": {
+      "id": 4205,
+      "name": "Jubilee Trumpets",
+      "buses": {}
+    },
+    "4206": {
+      "id": 4206,
+      "name": "Wah Trumpet",
+      "buses": {}
+    },
+    "4207": {
+      "id": 4207,
+      "name": "Mr. West Horns",
+      "buses": {}
+    },
+    "4208": {
+      "id": 4208,
+      "name": "Bullit Brass",
+      "buses": {}
+    },
+    "4209": {
+      "id": 4209,
+      "name": "Dr. Stab'N SwEll",
+      "buses": {}
+    },
+    "4210": {
+      "id": 4210,
+      "name": "MiamiBrassSectns",
+      "buses": {}
+    },
+    "4211": {
+      "id": 4211,
+      "name": "Mostly Saxes",
+      "buses": {}
+    },
+    "4212": {
+      "id": 4212,
+      "name": "UniSaxSection",
+      "buses": {}
+    },
+    "4213": {
+      "id": 4213,
+      "name": "Bassoon/Oboe",
+      "buses": {}
+    },
+    "4214": {
+      "id": 4214,
+      "name": "Solo Alto Sax",
+      "buses": {}
+    },
+    "4215": {
+      "id": 4215,
+      "name": "Solo Tenor Sax",
+      "buses": {}
+    },
+    "4216": {
+      "id": 4216,
+      "name": "Flute/Clarinet",
+      "buses": {}
+    },
+    "4217": {
+      "id": 4217,
+      "name": "Solo Bari Sax",
+      "buses": {}
+    },
+    "4218": {
+      "id": 4218,
+      "name": "StrawberryFlutes",
+      "buses": {}
+    },
+    "4219": {
+      "id": 4219,
+      "name": "Gothic Climax",
+      "buses": {}
+    },
+    "4220": {
+      "id": 4220,
+      "name": "Winds & Strings",
+      "buses": {}
+    },
+    "4221": {
+      "id": 4221,
+      "name": "3Way Split Mltrn",
+      "buses": {}
+    },
+    "4227": {
+      "id": 4227,
+      "name": "Rich 'Caster",
+      "buses": {}
+    },
+    "4228": {
+      "id": 4228,
+      "name": "Rich Les",
+      "buses": {}
+    },
+    "4229": {
+      "id": 4229,
+      "name": "Studio 'Caster",
+      "buses": {}
+    },
+    "4230": {
+      "id": 4230,
+      "name": "Phaser Elec Gtrs",
+      "buses": {}
+    },
+    "4231": {
+      "id": 4231,
+      "name": "TimeWarpCaster",
+      "buses": {}
+    },
+    "4232": {
+      "id": 4232,
+      "name": "Kinda Krunchy",
+      "buses": {}
+    },
+    "4233": {
+      "id": 4233,
+      "name": "Brown Sound LTE",
+      "buses": {}
+    },
+    "4234": {
+      "id": 4234,
+      "name": "Stompbox Les",
+      "buses": {}
+    },
+    "4235": {
+      "id": 4235,
+      "name": "SuperFlyWahCast",
+      "buses": {}
+    },
+    "4236": {
+      "id": 4236,
+      "name": "Jack the Ripper",
+      "buses": {}
+    },
+    "4237": {
+      "id": 4237,
+      "name": "Boutique Six Str",
+      "buses": {}
+    },
+    "4238": {
+      "id": 4238,
+      "name": "Boutique 12 Str",
+      "buses": {}
+    },
+    "4239": {
+      "id": 4239,
+      "name": "Real Nylon",
+      "buses": {}
+    },
+    "4240": {
+      "id": 4240,
+      "name": "Mandolin Plus",
+      "buses": {}
+    },
+    "4241": {
+      "id": 4241,
+      "name": "Banjo Plus",
+      "buses": {}
+    },
+    "4242": {
+      "id": 4242,
+      "name": "Dulciere",
+      "buses": {}
+    },
+    "4243": {
+      "id": 4243,
+      "name": "P-Bass",
+      "buses": {}
+    },
+    "4244": {
+      "id": 4244,
+      "name": "Motown Bass",
+      "buses": {}
+    },
+    "4245": {
+      "id": 4245,
+      "name": "Finger Bass",
+      "buses": {}
+    },
+    "4246": {
+      "id": 4246,
+      "name": "Flea/Bootsy",
+      "buses": {}
+    },
+    "4247": {
+      "id": 4247,
+      "name": "Jaco Fretless",
+      "buses": {}
+    },
+    "4248": {
+      "id": 4248,
+      "name": "AC Buzzer Bass",
+      "buses": {}
+    },
+    "4249": {
+      "id": 4249,
+      "name": "Beasties Bass",
+      "buses": {}
+    },
+    "4250": {
+      "id": 4250,
+      "name": "Levin/Gabrlfrtls",
+      "buses": {}
+    },
+    "4258": {
+      "id": 4258,
+      "name": "Motown Bass",
+      "buses": {}
+    },
+    "4259": {
+      "id": 4259,
+      "name": "Finger Bass",
+      "buses": {}
+    },
+    "4260": {
+      "id": 4260,
+      "name": "Flea/Bootsy",
+      "buses": {}
+    },
+    "4267": {
+      "id": 4267,
+      "name": "Celeste",
+      "buses": {}
+    },
+    "4268": {
+      "id": 4268,
+      "name": "Octave Celeste",
+      "buses": {}
+    },
+    "4269": {
+      "id": 4269,
+      "name": "Bells",
+      "buses": {}
+    },
+    "4270": {
+      "id": 4270,
+      "name": "Carillon",
+      "buses": {}
+    },
+    "4271": {
+      "id": 4271,
+      "name": "Basic Orch Perc",
+      "buses": {}
+    },
+    "4272": {
+      "id": 4272,
+      "name": "Orch Timpani",
+      "buses": {}
+    },
+    "4273": {
+      "id": 4273,
+      "name": "Natural Perc",
+      "buses": {}
+    },
+    "4274": {
+      "id": 4274,
+      "name": "Percussionist",
+      "buses": {}
+    },
+    "4275": {
+      "id": 4275,
+      "name": "Bongo Conga",
+      "buses": {}
+    },
+    "4276": {
+      "id": 4276,
+      "name": "Talking Drum",
+      "buses": {}
+    },
+    "4277": {
+      "id": 4277,
+      "name": "Accessory",
+      "buses": {}
+    },
+    "4278": {
+      "id": 4278,
+      "name": "Carnival Perc",
+      "buses": {}
+    },
+    "4279": {
+      "id": 4279,
+      "name": "Vocal Percussion",
+      "buses": {}
+    },
+    "4280": {
+      "id": 4280,
+      "name": "Celeste",
+      "buses": {}
+    },
+    "4283": {
+      "id": 4283,
+      "name": "Mixed Choir",
+      "buses": {}
+    },
+    "4284": {
+      "id": 4284,
+      "name": "Manhattan Voices",
+      "buses": {}
+    },
+    "4285": {
+      "id": 4285,
+      "name": "Choir Complete",
+      "buses": {}
+    },
+    "4286": {
+      "id": 4286,
+      "name": "NYC in LA",
+      "buses": {}
+    },
+    "4287": {
+      "id": 4287,
+      "name": "Crystal Voices",
+      "buses": {}
+    },
+    "4288": {
+      "id": 4288,
+      "name": "Cathedral Vox",
+      "buses": {}
+    },
+    "4289": {
+      "id": 4289,
+      "name": "Silent Sorrow",
+      "buses": {}
+    },
+    "4290": {
+      "id": 4290,
+      "name": "Swept Tron Voice",
+      "buses": {}
+    },
+    "4291": {
+      "id": 4291,
+      "name": "Slo Orch Chorus",
+      "buses": {}
+    },
+    "4292": {
+      "id": 4292,
+      "name": "Aaah Vocals",
+      "buses": {}
+    },
+    "4293": {
+      "id": 4293,
+      "name": "Jazzy Ballad Vox",
+      "buses": {}
+    },
+    "4294": {
+      "id": 4294,
+      "name": "Bright Syn Vox",
+      "buses": {}
+    },
+    "4295": {
+      "id": 4295,
+      "name": "AntiqueAhhChorus",
+      "buses": {}
+    },
+    "4296": {
+      "id": 4296,
+      "name": "Vox Angel",
+      "buses": {}
+    },
+    "4297": {
+      "id": 4297,
+      "name": "Aaahlicious",
+      "buses": {}
+    },
+    "4298": {
+      "id": 4298,
+      "name": "PolyTechnobreath",
+      "buses": {}
+    },
+    "4299": {
+      "id": 4299,
+      "name": "Glockenspiel",
+      "buses": {}
+    },
+    "4300": {
+      "id": 4300,
+      "name": "Real Vibes",
+      "buses": {}
+    },
+    "4301": {
+      "id": 4301,
+      "name": "Stereo Marimba",
+      "buses": {}
+    },
+    "4302": {
+      "id": 4302,
+      "name": "Xylophone",
+      "buses": {}
+    },
+    "4303": {
+      "id": 4303,
+      "name": "XHarmonicStlDrum",
+      "buses": {}
+    },
+    "4304": {
+      "id": 4304,
+      "name": "Chimes",
+      "buses": {}
+    },
+    "4305": {
+      "id": 4305,
+      "name": "Bigger Chimes",
+      "buses": {}
+    },
+    "4306": {
+      "id": 4306,
+      "name": "Crotales Hits",
+      "buses": {}
+    },
+    "4307": {
+      "id": 4307,
+      "name": "Metal Marimba",
+      "buses": {}
+    },
+    "4308": {
+      "id": 4308,
+      "name": "SteamPunkMallets",
+      "buses": {}
+    },
+    "4309": {
+      "id": 4309,
+      "name": "CeleseGlockHarp",
+      "buses": {}
+    },
+    "4315": {
+      "id": 4315,
+      "name": "Celeste Palette",
+      "buses": {}
+    },
+    "4316": {
+      "id": 4316,
+      "name": "Bellestrum VTrg",
+      "buses": {}
+    },
+    "4317": {
+      "id": 4317,
+      "name": "Toy Piano",
+      "buses": {}
+    },
+    "4318": {
+      "id": 4318,
+      "name": "Bunch of Bells",
+      "buses": {}
+    },
+    "4319": {
+      "id": 4319,
+      "name": "Synthy 73",
+      "buses": {}
+    },
+    "4320": {
+      "id": 4320,
+      "name": "Wurzzicato",
+      "buses": {}
+    },
+    "4321": {
+      "id": 4321,
+      "name": "Comp Cro + Pad",
+      "buses": {}
+    },
+    "4322": {
+      "id": 4322,
+      "name": "Clavestrum",
+      "buses": {}
+    },
+    "4323": {
+      "id": 4323,
+      "name": "Bowed Crotales",
+      "buses": {}
+    },
+    "4324": {
+      "id": 4324,
+      "name": "Bells and Bows",
+      "buses": {}
+    },
+    "4325": {
+      "id": 4325,
+      "name": "Bass Pedal",
+      "buses": {}
+    },
+    "4326": {
+      "id": 4326,
+      "name": "Clav Template",
+      "buses": {}
+    },
+    "4327": {
+      "id": 4327,
+      "name": "RockLesl122 X",
+      "buses": {}
+    },
+    "4330": {
+      "id": 4330,
+      "name": "Reverse Universe",
+      "buses": {}
+    },
+    "4331": {
+      "id": 4331,
+      "name": "Pan Strings 3",
+      "buses": {}
+    },
+    "4332": {
+      "id": 4332,
+      "name": "5th-Scape",
+      "buses": {}
+    },
+    "4340": {
+      "id": 4340,
+      "name": "SyncoDeMayo",
+      "buses": {}
+    },
+    "4350": {
+      "id": 4350,
+      "name": "Power Bottom",
+      "buses": {}
+    },
+    "4351": {
+      "id": 4351,
+      "name": "Deception Bass",
+      "buses": {}
+    },
+    "4352": {
+      "id": 4352,
+      "name": "Latch Bass",
+      "buses": {}
+    },
+    "4353": {
+      "id": 4353,
+      "name": "APG-ish Bass",
+      "buses": {}
+    },
+    "5000": {
+      "id": 5000,
+      "name": "Small Hall",
+      "buses": {}
+    },
+    "5001": {
+      "id": 5001,
+      "name": "ShortPlate4EPs",
+      "buses": {}
+    },
+    "5002": {
+      "id": 5002,
+      "name": "Sax Chamber",
+      "buses": {}
+    },
+    "5003": {
+      "id": 5003,
+      "name": "EP Tine Aux",
+      "buses": {}
+    },
+    "5004": {
+      "id": 5004,
+      "name": "Real Nice Verb",
+      "buses": {}
+    },
+    "5005": {
+      "id": 5005,
+      "name": "Opera House",
+      "buses": {}
+    },
+    "5006": {
+      "id": 5006,
+      "name": "EP Tine Rm Aux",
+      "buses": {}
+    },
+    "5007": {
+      "id": 5007,
+      "name": "Opera House2",
+      "buses": {}
+    },
+    "5008": {
+      "id": 5008,
+      "name": "Medm Warm Plate2",
+      "buses": {}
+    },
+    "5009": {
+      "id": 5009,
+      "name": "Sax Chamber2",
+      "buses": {}
+    },
+    "5010": {
+      "id": 5010,
+      "name": "Mosque Room2",
+      "buses": {}
+    },
+    "5011": {
+      "id": 5011,
+      "name": "ShortPlate4EPs2",
+      "buses": {}
+    },
+    "5012": {
+      "id": 5012,
+      "name": "Small Hall2",
+      "buses": {}
+    },
+    "5013": {
+      "id": 5013,
+      "name": "Medium Hall2",
+      "buses": {}
+    },
+    "5014": {
+      "id": 5014,
+      "name": "Tines Aux Rev",
+      "buses": {}
+    },
+    "5015": {
+      "id": 5015,
+      "name": "Little Booth",
+      "buses": {}
+    },
+    "5016": {
+      "id": 5016,
+      "name": "Clav Chamber",
+      "buses": {}
+    },
+    "5017": {
+      "id": 5017,
+      "name": "Green Room",
+      "buses": {}
+    },
+    "5018": {
+      "id": 5018,
+      "name": "AbbeyBrasHall2",
+      "buses": {}
+    },
+    "5019": {
+      "id": 5019,
+      "name": "MedRoom10",
+      "buses": {}
+    },
+    "5020": {
+      "id": 5020,
+      "name": "Medium Hall",
+      "buses": {}
+    },
+    "5021": {
+      "id": 5021,
+      "name": "CDR Just Reverb",
+      "buses": {}
+    },
+    "5022": {
+      "id": 5022,
+      "name": "Real Niceverb",
+      "buses": {}
+    },
+    "5023": {
+      "id": 5023,
+      "name": "Small Hall",
+      "buses": {}
+    },
+    "5024": {
+      "id": 5024,
+      "name": "Mosque w/Inf Rev",
+      "buses": {}
+    },
+    "5025": {
+      "id": 5025,
+      "name": "CDR Aux Reverb",
+      "buses": {}
+    },
+    "5026": {
+      "id": 5026,
+      "name": "Live RecitalHall",
+      "buses": {}
+    },
+    "5027": {
+      "id": 5027,
+      "name": "MosqueySwirl Aux",
+      "buses": {}
+    },
+    "5028": {
+      "id": 5028,
+      "name": "BladerunnrRvb",
+      "buses": {}
+    },
+    "5029": {
+      "id": 5029,
+      "name": "Dark Room 2",
+      "buses": {}
+    },
+    "5030": {
+      "id": 5030,
+      "name": "UnderCurAux",
+      "buses": {}
+    },
+    "5031": {
+      "id": 5031,
+      "name": "AbbeyPianoHall2",
+      "buses": {}
+    },
+    "5032": {
+      "id": 5032,
+      "name": "JK GatedLaserver",
+      "buses": {}
+    },
+    "5033": {
+      "id": 5033,
+      "name": "SymphonyHall 1",
+      "buses": {}
+    },
+    "5034": {
+      "id": 5034,
+      "name": "Gunshot Verb",
+      "buses": {}
+    },
+    "5035": {
+      "id": 5035,
+      "name": "SuperSaw Aux",
+      "buses": {}
+    },
+    "5036": {
+      "id": 5036,
+      "name": "7ft Aux Verb1",
+      "buses": {}
+    },
+    "5037": {
+      "id": 5037,
+      "name": "Cathedral Chorus",
+      "buses": {}
+    },
+    "5038": {
+      "id": 5038,
+      "name": "SymphonyHall Aux",
+      "buses": {}
+    },
+    "5039": {
+      "id": 5039,
+      "name": "Bradley's Barn 1",
+      "buses": {}
+    },
+    "5040": {
+      "id": 5040,
+      "name": "SymphonyHall 2",
+      "buses": {}
+    },
+    "5041": {
+      "id": 5041,
+      "name": "Empty Stage II",
+      "buses": {}
+    },
+    "5042": {
+      "id": 5042,
+      "name": "AbbeyPianoHall 2",
+      "buses": {}
+    },
+    "5043": {
+      "id": 5043,
+      "name": "Sax Chamber 21",
+      "buses": {}
+    },
+    "5044": {
+      "id": 5044,
+      "name": "Smooth Long Hall",
+      "buses": {}
+    },
+    "5045": {
+      "id": 5045,
+      "name": "Horn Plate 1",
+      "buses": {}
+    },
+    "5046": {
+      "id": 5046,
+      "name": "Super8 Horn Dly",
+      "buses": {}
+    },
+    "5047": {
+      "id": 5047,
+      "name": "Solo Trumpet",
+      "buses": {}
+    },
+    "5048": {
+      "id": 5048,
+      "name": "Predelay Hall",
+      "buses": {}
+    },
+    "5049": {
+      "id": 5049,
+      "name": "Gtr Niceverb",
+      "buses": {}
+    },
+    "5050": {
+      "id": 5050,
+      "name": "Bullitt PDlyHall",
+      "buses": {}
+    },
+    "5051": {
+      "id": 5051,
+      "name": "7thHeaven Plate",
+      "buses": {}
+    },
+    "5052": {
+      "id": 5052,
+      "name": "Miami Gated Room",
+      "buses": {}
+    },
+    "5053": {
+      "id": 5053,
+      "name": "Miami Plate Rvb",
+      "buses": {}
+    },
+    "5054": {
+      "id": 5054,
+      "name": "Tenor Sax",
+      "buses": {}
+    },
+    "5055": {
+      "id": 5055,
+      "name": "Bari Sax",
+      "buses": {}
+    },
+    "5056": {
+      "id": 5056,
+      "name": "Small Dark Room2",
+      "buses": {}
+    },
+    "5057": {
+      "id": 5057,
+      "name": "Small Hall II",
+      "buses": {}
+    },
+    "5058": {
+      "id": 5058,
+      "name": "Omni Stage",
+      "buses": {}
+    },
+    "5059": {
+      "id": 5059,
+      "name": "DeepChorsDlyHall",
+      "buses": {}
+    },
+    "5060": {
+      "id": 5060,
+      "name": "AGT Reverb",
+      "buses": {}
+    },
+    "5061": {
+      "id": 5061,
+      "name": "NylonAgtVerb",
+      "buses": {}
+    },
+    "5062": {
+      "id": 5062,
+      "name": "Small Dark Room",
+      "buses": {}
+    },
+    "5063": {
+      "id": 5063,
+      "name": "HammerDulceRoom3",
+      "buses": {}
+    },
+    "5064": {
+      "id": 5064,
+      "name": "AbbeyPianoHall",
+      "buses": {}
+    },
+    "5065": {
+      "id": 5065,
+      "name": "Lil' Drum Booth",
+      "buses": {}
+    },
+    "5066": {
+      "id": 5066,
+      "name": "Gated Plate 144m",
+      "buses": {}
+    },
+    "5067": {
+      "id": 5067,
+      "name": "SnappyDrumCmpVrb",
+      "buses": {}
+    },
+    "5068": {
+      "id": 5068,
+      "name": "More Drum Air",
+      "buses": {}
+    },
+    "5069": {
+      "id": 5069,
+      "name": "Full Drum Room",
+      "buses": {}
+    },
+    "5070": {
+      "id": 5070,
+      "name": "Expandn'DrumHall",
+      "buses": {}
+    },
+    "5071": {
+      "id": 5071,
+      "name": "DrmCMPVb4PrgFX2",
+      "buses": {}
+    },
+    "5072": {
+      "id": 5072,
+      "name": "Aux Dark Room 2",
+      "buses": {}
+    },
+    "5073": {
+      "id": 5073,
+      "name": "CmpVerb4Drms2",
+      "buses": {}
+    },
+    "5074": {
+      "id": 5074,
+      "name": "Garage Drums",
+      "buses": {}
+    },
+    "5075": {
+      "id": 5075,
+      "name": "SymphonyHall 3",
+      "buses": {}
+    },
+    "5076": {
+      "id": 5076,
+      "name": "Med Drum Room",
+      "buses": {}
+    },
+    "5077": {
+      "id": 5077,
+      "name": "PercussionRoom",
+      "buses": {}
+    },
+    "5078": {
+      "id": 5078,
+      "name": "PercVerb1",
+      "buses": {}
+    },
+    "5079": {
+      "id": 5079,
+      "name": "Med Drum Room",
+      "buses": {}
+    },
+    "5080": {
+      "id": 5080,
+      "name": "Elegant Hall Aux",
+      "buses": {}
+    },
+    "5081": {
+      "id": 5081,
+      "name": "FlangVoXHall2Aux",
+      "buses": {}
+    },
+    "5082": {
+      "id": 5082,
+      "name": "Cathedral Vx Aux",
+      "buses": {}
+    },
+    "5083": {
+      "id": 5083,
+      "name": "Classic Plate II",
+      "buses": {}
+    },
+    "5084": {
+      "id": 5084,
+      "name": "Real Niceverb II",
+      "buses": {}
+    },
+    "5085": {
+      "id": 5085,
+      "name": "BigDarkRoomDW",
+      "buses": {}
+    },
+    "5086": {
+      "id": 5086,
+      "name": "Empty Stage 11",
+      "buses": {}
+    },
+    "5087": {
+      "id": 5087,
+      "name": "Cab-Reverb",
+      "buses": {}
+    },
+    "5088": {
+      "id": 5088,
+      "name": "jk AUX1",
+      "buses": {}
+    },
+    "5089": {
+      "id": 5089,
+      "name": "Empty Stage",
+      "buses": {}
+    },
+    "5090": {
+      "id": 5090,
+      "name": "DF OrganRoom",
+      "buses": {}
+    },
+    "5091": {
+      "id": 5091,
+      "name": "KB3 Aux2 Booth",
+      "buses": {}
+    },
+    "5092": {
+      "id": 5092,
+      "name": "KB3 Aux2 Booth 2",
+      "buses": {}
+    },
+    "5093": {
+      "id": 5093,
+      "name": "Organ Chamber2",
+      "buses": {}
+    },
+    "5094": {
+      "id": 5094,
+      "name": "KB3 Cab 1",
+      "buses": {}
+    },
+    "5095": {
+      "id": 5095,
+      "name": "KB3 Cab 2",
+      "buses": {}
+    },
+    "5096": {
+      "id": 5096,
+      "name": "Plebe Chamber",
+      "buses": {}
+    },
+    "5097": {
+      "id": 5097,
+      "name": "1.6ms Hall",
+      "buses": {}
+    },
+    "5098": {
+      "id": 5098,
+      "name": "Artis KHall",
+      "buses": {}
+    },
+    "5099": {
+      "id": 5099,
+      "name": "2.0ms Hall",
+      "buses": {}
+    },
+    "5100": {
+      "id": 5100,
+      "name": "Sweet PnoHall 2",
+      "buses": {}
+    },
+    "5101": {
+      "id": 5101,
+      "name": "FM Hall",
+      "buses": {}
+    },
+    "5102": {
+      "id": 5102,
+      "name": ".78ms Hall",
+      "buses": {}
+    },
+    "5103": {
+      "id": 5103,
+      "name": "Album Plate",
+      "buses": {}
+    },
+    "5104": {
+      "id": 5104,
+      "name": "OmniStage",
+      "buses": {}
+    },
+    "5105": {
+      "id": 5105,
+      "name": "Artis LrgKHall",
+      "buses": {}
+    },
+    "5106": {
+      "id": 5106,
+      "name": "Sweet PnoHall 2",
+      "buses": {}
+    },
+    "5107": {
+      "id": 5107,
+      "name": "Lrg Ambience l",
+      "buses": {}
+    },
+    "5108": {
+      "id": 5108,
+      "name": "Upright Room",
+      "buses": {}
+    },
+    "5109": {
+      "id": 5109,
+      "name": "Upright Room",
+      "buses": {}
+    },
+    "5110": {
+      "id": 5110,
+      "name": ".78ms Hall",
+      "buses": {}
+    },
+    "5111": {
+      "id": 5111,
+      "name": "OmniStage 200",
+      "buses": {}
+    },
+    "5112": {
+      "id": 5112,
+      "name": "Omni Stage Short",
+      "buses": {}
+    },
+    "5113": {
+      "id": 5113,
+      "name": "Omni Stage 3",
+      "buses": {}
+    },
+    "5131": {
+      "id": 5131,
+      "name": "Dampers Up 2.5ms",
+      "buses": {}
+    },
+    "5132": {
+      "id": 5132,
+      "name": "damperverb 4unit",
+      "buses": {}
+    },
+    "5133": {
+      "id": 5133,
+      "name": "Dampers Up Forte",
+      "buses": {}
+    },
+    "5134": {
+      "id": 5134,
+      "name": "damper verb",
+      "buses": {}
+    },
+    "6025": {
+      "id": 6025,
+      "name": "EP Tine FX1",
+      "buses": {}
+    },
+    "6026": {
+      "id": 6026,
+      "name": "Small Hall",
+      "buses": {}
+    },
+    "6027": {
+      "id": 6027,
+      "name": "Tweet piano",
+      "buses": {}
+    },
+    "6028": {
+      "id": 6028,
+      "name": "Y Grand EQ 2",
+      "buses": {}
+    },
+    "6029": {
+      "id": 6029,
+      "name": "Soundboard 3",
+      "buses": {}
+    },
+    "6030": {
+      "id": 6030,
+      "name": "9-Ft Piano FX2",
+      "buses": {}
+    },
+    "6031": {
+      "id": 6031,
+      "name": "77DWVintAmp2hi",
+      "buses": {}
+    },
+    "6032": {
+      "id": 6032,
+      "name": "Tremolo BPM",
+      "buses": {}
+    },
+    "6033": {
+      "id": 6033,
+      "name": "Pianarama! verb",
+      "buses": {}
+    },
+    "6034": {
+      "id": 6034,
+      "name": "Solaris",
+      "buses": {}
+    },
+    "6035": {
+      "id": 6035,
+      "name": "SolarisGateLazer",
+      "buses": {}
+    },
+    "6036": {
+      "id": 6036,
+      "name": "Existential Taps",
+      "buses": {}
+    },
+    "6037": {
+      "id": 6037,
+      "name": "URage_CmpRvb",
+      "buses": {}
+    },
+    "6038": {
+      "id": 6038,
+      "name": "77DWDYNOAmp1",
+      "buses": {}
+    },
+    "6039": {
+      "id": 6039,
+      "name": "LintBuster LD",
+      "buses": {}
+    },
+    "6040": {
+      "id": 6040,
+      "name": "RSessionGTR",
+      "buses": {}
+    },
+    "6041": {
+      "id": 6041,
+      "name": "77DWDYNOAmp2",
+      "buses": {}
+    },
+    "6042": {
+      "id": 6042,
+      "name": "77DWDYNOAmp3",
+      "buses": {}
+    },
+    "6043": {
+      "id": 6043,
+      "name": "Y DW Rock EQ",
+      "buses": {}
+    },
+    "6044": {
+      "id": 6044,
+      "name": "Y DW Rock EQ2",
+      "buses": {}
+    },
+    "6045": {
+      "id": 6045,
+      "name": "Heartbreaker",
+      "buses": {}
+    },
+    "6046": {
+      "id": 6046,
+      "name": "S DW AlbumEQ1",
+      "buses": {}
+    },
+    "6047": {
+      "id": 6047,
+      "name": "DynoChor73",
+      "buses": {}
+    },
+    "6048": {
+      "id": 6048,
+      "name": "73DWPHASE2",
+      "buses": {}
+    },
+    "6049": {
+      "id": 6049,
+      "name": "Double Grand3",
+      "buses": {}
+    },
+    "6050": {
+      "id": 6050,
+      "name": "Dampers Up Forte",
+      "buses": {}
+    },
+    "6051": {
+      "id": 6051,
+      "name": "ChorVerb for Pad",
+      "buses": {}
+    },
+    "6052": {
+      "id": 6052,
+      "name": "dyn77Template",
+      "buses": {}
+    },
+    "6053": {
+      "id": 6053,
+      "name": "SynChor&Dly1",
+      "buses": {}
+    },
+    "6054": {
+      "id": 6054,
+      "name": "Dampers Up Forte",
+      "buses": {}
+    },
+    "6055": {
+      "id": 6055,
+      "name": "German Grand4",
+      "buses": {}
+    },
+    "6056": {
+      "id": 6056,
+      "name": "Ezra II Les X",
+      "buses": {}
+    },
+    "6057": {
+      "id": 6057,
+      "name": "tmbshiftComp",
+      "buses": {}
+    },
+    "6100": {
+      "id": 6100,
+      "name": "Small Hall",
+      "buses": {}
+    },
+    "6101": {
+      "id": 6101,
+      "name": "steincoNcert2",
+      "buses": {}
+    },
+    "6102": {
+      "id": 6102,
+      "name": "steincoNcert3",
+      "buses": {}
+    },
+    "6103": {
+      "id": 6103,
+      "name": "warm stein1",
+      "buses": {}
+    },
+    "6104": {
+      "id": 6104,
+      "name": "9ft ppp",
+      "buses": {}
+    },
+    "6105": {
+      "id": 6105,
+      "name": "Studio Piano as",
+      "buses": {}
+    },
+    "6106": {
+      "id": 6106,
+      "name": "dancestudioyam1",
+      "buses": {}
+    },
+    "6107": {
+      "id": 6107,
+      "name": "Slo Attack Hall",
+      "buses": {}
+    },
+    "6108": {
+      "id": 6108,
+      "name": "7-Ft Piano asFN",
+      "buses": {}
+    },
+    "6109": {
+      "id": 6109,
+      "name": "big stein 1",
+      "buses": {}
+    },
+    "6110": {
+      "id": 6110,
+      "name": "77ClikFix01",
+      "buses": {}
+    },
+    "6111": {
+      "id": 6111,
+      "name": "crtalsdelay 1",
+      "buses": {}
+    },
+    "6112": {
+      "id": 6112,
+      "name": "brtpunch yam",
+      "buses": {}
+    },
+    "6113": {
+      "id": 6113,
+      "name": "7ft RockVerb1",
+      "buses": {}
+    },
+    "6114": {
+      "id": 6114,
+      "name": "7Ft Vintage Rock",
+      "buses": {}
+    },
+    "6115": {
+      "id": 6115,
+      "name": "Vintage Class C",
+      "buses": {}
+    },
+    "6116": {
+      "id": 6116,
+      "name": "Dance Studio",
+      "buses": {}
+    },
+    "6117": {
+      "id": 6117,
+      "name": "DanceStudioVerb",
+      "buses": {}
+    },
+    "6118": {
+      "id": 6118,
+      "name": "OldSquashed D",
+      "buses": {}
+    },
+    "6119": {
+      "id": 6119,
+      "name": "New Age Stn 1",
+      "buses": {}
+    },
+    "6120": {
+      "id": 6120,
+      "name": "big warm stein",
+      "buses": {}
+    },
+    "6121": {
+      "id": 6121,
+      "name": "big warm C",
+      "buses": {}
+    },
+    "6122": {
+      "id": 6122,
+      "name": "Darker D",
+      "buses": {}
+    },
+    "6124": {
+      "id": 6124,
+      "name": "damperverb 2unit",
+      "buses": {}
+    },
+    "6125": {
+      "id": 6125,
+      "name": "7ft Solo",
+      "buses": {}
+    },
+    "6126": {
+      "id": 6126,
+      "name": "D TMP \ufb02at EQ",
+      "buses": {}
+    },
+    "6127": {
+      "id": 6127,
+      "name": "7ft Squashed",
+      "buses": {}
+    },
+    "6128": {
+      "id": 6128,
+      "name": "7ft Warm Jazz",
+      "buses": {}
+    },
+    "6129": {
+      "id": 6129,
+      "name": "9ft Classic",
+      "buses": {}
+    },
+    "6130": {
+      "id": 6130,
+      "name": "EP Tine Multi",
+      "buses": {}
+    },
+    "6131": {
+      "id": 6131,
+      "name": "77ClikFix02",
+      "buses": {}
+    },
+    "6132": {
+      "id": 6132,
+      "name": "7ft Smooth",
+      "buses": {}
+    },
+    "6133": {
+      "id": 6133,
+      "name": "9ft w Strings",
+      "buses": {}
+    },
+    "6134": {
+      "id": 6134,
+      "name": "German Grand",
+      "buses": {}
+    },
+    "6135": {
+      "id": 6135,
+      "name": "Concert Grand",
+      "buses": {}
+    },
+    "6136": {
+      "id": 6136,
+      "name": "Warm Grand 1",
+      "buses": {}
+    },
+    "6137": {
+      "id": 6137,
+      "name": "D Template 3",
+      "buses": {}
+    },
+    "6138": {
+      "id": 6138,
+      "name": "Rich 7 ft Grand",
+      "buses": {}
+    },
+    "6139": {
+      "id": 6139,
+      "name": "7ft Vintage Rock",
+      "buses": {}
+    },
+    "6140": {
+      "id": 6140,
+      "name": "Darker D",
+      "buses": {}
+    },
+    "6141": {
+      "id": 6141,
+      "name": "Oscar's Grand eq",
+      "buses": {}
+    },
+    "6142": {
+      "id": 6142,
+      "name": "7ft Squashed2",
+      "buses": {}
+    },
+    "6143": {
+      "id": 6143,
+      "name": "Clear 9ft Grand",
+      "buses": {}
+    },
+    "6144": {
+      "id": 6144,
+      "name": "2.0ms Hall",
+      "buses": {}
+    },
+    "6145": {
+      "id": 6145,
+      "name": "Warm 7ft Grand",
+      "buses": {}
+    },
+    "6146": {
+      "id": 6146,
+      "name": ".78ms Hall",
+      "buses": {}
+    },
+    "6147": {
+      "id": 6147,
+      "name": "House 7ft Grand",
+      "buses": {}
+    },
+    "6148": {
+      "id": 6148,
+      "name": "New Age Grand",
+      "buses": {}
+    },
+    "6149": {
+      "id": 6149,
+      "name": "EP Tine Multi2",
+      "buses": {}
+    },
+    "6150": {
+      "id": 6150,
+      "name": "EP Tine Verb",
+      "buses": {}
+    },
+    "6151": {
+      "id": 6151,
+      "name": "EP Tine Multi3",
+      "buses": {}
+    },
+    "6152": {
+      "id": 6152,
+      "name": "EP Tine Verb2",
+      "buses": {}
+    },
+    "6153": {
+      "id": 6153,
+      "name": "1.6ms Hall",
+      "buses": {}
+    },
+    "6154": {
+      "id": 6154,
+      "name": "1.6ms Plate",
+      "buses": {}
+    },
+    "6155": {
+      "id": 6155,
+      "name": "9ft Solo Grand",
+      "buses": {}
+    },
+    "6156": {
+      "id": 6156,
+      "name": "9ft DarkDistant",
+      "buses": {}
+    },
+    "6157": {
+      "id": 6157,
+      "name": "7ft C",
+      "buses": {}
+    },
+    "6158": {
+      "id": 6158,
+      "name": "9ft Bright Grand",
+      "buses": {}
+    },
+    "6159": {
+      "id": 6159,
+      "name": "7ft Bright Grand",
+      "buses": {}
+    },
+    "6160": {
+      "id": 6160,
+      "name": "Harpsichord 1",
+      "buses": {}
+    },
+    "6161": {
+      "id": 6161,
+      "name": "Harpsichord 2",
+      "buses": {}
+    },
+    "6162": {
+      "id": 6162,
+      "name": "Vintage Squashed",
+      "buses": {}
+    },
+    "6163": {
+      "id": 6163,
+      "name": "House 9ft Grand",
+      "buses": {}
+    },
+    "6164": {
+      "id": 6164,
+      "name": "Super Pop eq",
+      "buses": {}
+    },
+    "6165": {
+      "id": 6165,
+      "name": "Scoop 9ft Grand",
+      "buses": {}
+    },
+    "6166": {
+      "id": 6166,
+      "name": "Brt Scoop 9ft",
+      "buses": {}
+    },
+    "6167": {
+      "id": 6167,
+      "name": "Brt Scoop 7ft",
+      "buses": {}
+    },
+    "6168": {
+      "id": 6168,
+      "name": "ARTISCncertPnAS1",
+      "buses": {}
+    },
+    "6169": {
+      "id": 6169,
+      "name": "9ft Solo Grand2",
+      "buses": {}
+    },
+    "6170": {
+      "id": 6170,
+      "name": "Dampers Upright",
+      "buses": {}
+    },
+    "6171": {
+      "id": 6171,
+      "name": "German Grand2",
+      "buses": {}
+    },
+    "6172": {
+      "id": 6172,
+      "name": "Double Grand1",
+      "buses": {}
+    },
+    "6173": {
+      "id": 6173,
+      "name": "Piano + Pad",
+      "buses": {}
+    },
+    "6174": {
+      "id": 6174,
+      "name": "9ft w Strings2",
+      "buses": {}
+    },
+    "6175": {
+      "id": 6175,
+      "name": "FM n K EQ2",
+      "buses": {}
+    },
+    "6176": {
+      "id": 6176,
+      "name": "Artis Pluck EQ2",
+      "buses": {}
+    },
+    "6177": {
+      "id": 6177,
+      "name": "German Grand3",
+      "buses": {}
+    },
+    "6178": {
+      "id": 6178,
+      "name": "Double Grand3",
+      "buses": {}
+    },
+    "6179": {
+      "id": 6179,
+      "name": "German Grand4",
+      "buses": {}
+    },
+    "6181": {
+      "id": 6181,
+      "name": "Mono Upright",
+      "buses": {}
+    },
+    "6182": {
+      "id": 6182,
+      "name": "CMartPiano 1",
+      "buses": {}
+    },
+    "6184": {
+      "id": 6184,
+      "name": "Brt Upright7ft",
+      "buses": {}
+    },
+    "6185": {
+      "id": 6185,
+      "name": "Concert GrandEQ7",
+      "buses": {}
+    },
+    "6200": {
+      "id": 6200,
+      "name": "JSP Comp & EQ",
+      "buses": {}
+    },
+    "6201": {
+      "id": 6201,
+      "name": "Album Plate",
+      "buses": {}
+    },
+    "6202": {
+      "id": 6202,
+      "name": "DW 70s AlbumEQ1",
+      "buses": {}
+    },
+    "6203": {
+      "id": 6203,
+      "name": "Y DW Elton EQ2",
+      "buses": {}
+    },
+    "6204": {
+      "id": 6204,
+      "name": "DW70sAlbumEQSoft",
+      "buses": {}
+    },
+    "6205": {
+      "id": 6205,
+      "name": "Ghost EQ Soft",
+      "buses": {}
+    },
+    "6206": {
+      "id": 6206,
+      "name": "DarkUpright EQ",
+      "buses": {}
+    },
+    "6207": {
+      "id": 6207,
+      "name": "BriteUpright EQ",
+      "buses": {}
+    },
+    "6208": {
+      "id": 6208,
+      "name": "Upright Room",
+      "buses": {}
+    },
+    "6209": {
+      "id": 6209,
+      "name": "70s Blues 7ft",
+      "buses": {}
+    },
+    "6210": {
+      "id": 6210,
+      "name": "Tramp Amp",
+      "buses": {}
+    },
+    "6211": {
+      "id": 6211,
+      "name": "EP Tine Soft",
+      "buses": {}
+    },
+    "6212": {
+      "id": 6212,
+      "name": "EP Tine Soft2",
+      "buses": {}
+    },
+    "6213": {
+      "id": 6213,
+      "name": "EP Tine StTrem",
+      "buses": {}
+    },
+    "6214": {
+      "id": 6214,
+      "name": "73SparkleTop",
+      "buses": {}
+    },
+    "6230": {
+      "id": 6230,
+      "name": "Supa Clav",
+      "buses": {}
+    },
+    "6231": {
+      "id": 6231,
+      "name": "Heartbreaker",
+      "buses": {}
+    },
+    "6232": {
+      "id": 6232,
+      "name": "Relic Clav",
+      "buses": {}
+    },
+    "6233": {
+      "id": 6233,
+      "name": "Steely Fuzz",
+      "buses": {}
+    },
+    "6234": {
+      "id": 6234,
+      "name": "Stevie Fuzz",
+      "buses": {}
+    },
+    "6235": {
+      "id": 6235,
+      "name": "Trampler",
+      "buses": {}
+    },
+    "6236": {
+      "id": 6236,
+      "name": "Trampler2",
+      "buses": {}
+    },
+    "6237": {
+      "id": 6237,
+      "name": "OutaPhasePickups",
+      "buses": {}
+    },
+    "6238": {
+      "id": 6238,
+      "name": "Chaka Wah",
+      "buses": {}
+    },
+    "6239": {
+      "id": 6239,
+      "name": "ChameleonWah",
+      "buses": {}
+    },
+    "6240": {
+      "id": 6240,
+      "name": "Beck EP Reed",
+      "buses": {}
+    },
+    "6241": {
+      "id": 6241,
+      "name": "BlkCrows EP Reed",
+      "buses": {}
+    },
+    "6242": {
+      "id": 6242,
+      "name": "Clav Chamber",
+      "buses": {}
+    },
+    "6300": {
+      "id": 6300,
+      "name": "Weapon Chain",
+      "buses": {}
+    },
+    "6301": {
+      "id": 6301,
+      "name": "Double Chorus",
+      "buses": {}
+    },
+    "6400": {
+      "id": 6400,
+      "name": "73DWPHASE1",
+      "buses": {}
+    },
+    "6401": {
+      "id": 6401,
+      "name": "77NAMMChor1",
+      "buses": {}
+    },
+    "6402": {
+      "id": 6402,
+      "name": "77NAMMChor2",
+      "buses": {}
+    },
+    "6403": {
+      "id": 6403,
+      "name": "73NAMMPHASDist1",
+      "buses": {}
+    },
+    "6404": {
+      "id": 6404,
+      "name": "77DWDstTrem1Wah",
+      "buses": {}
+    },
+    "6405": {
+      "id": 6405,
+      "name": "73DWStTrem1",
+      "buses": {}
+    },
+    "6406": {
+      "id": 6406,
+      "name": "73NAMMStTremDst1",
+      "buses": {}
+    },
+    "6407": {
+      "id": 6407,
+      "name": "73NAMMStTremDst2",
+      "buses": {}
+    },
+    "6408": {
+      "id": 6408,
+      "name": "77NAMMVintAmp1",
+      "buses": {}
+    },
+    "6409": {
+      "id": 6409,
+      "name": "EPReedVintAmp",
+      "buses": {}
+    },
+    "6410": {
+      "id": 6410,
+      "name": "EPReed Ray Amp",
+      "buses": {}
+    },
+    "6411": {
+      "id": 6411,
+      "name": "NAMMSuperTrmpPha",
+      "buses": {}
+    },
+    "6412": {
+      "id": 6412,
+      "name": "EPReedPhasDst1",
+      "buses": {}
+    },
+    "6413": {
+      "id": 6413,
+      "name": "EPReedBriteAmp1",
+      "buses": {}
+    },
+    "6414": {
+      "id": 6414,
+      "name": "EPReedDeepFuzz",
+      "buses": {}
+    },
+    "6415": {
+      "id": 6415,
+      "name": "EPReedDeepFuzz2",
+      "buses": {}
+    },
+    "6416": {
+      "id": 6416,
+      "name": "NAMMClavTrampler",
+      "buses": {}
+    },
+    "6417": {
+      "id": 6417,
+      "name": "NAMMClavFuzz1",
+      "buses": {}
+    },
+    "6418": {
+      "id": 6418,
+      "name": "ClavNAMMPhasDst1",
+      "buses": {}
+    },
+    "6419": {
+      "id": 6419,
+      "name": "ClavNAMMPhasDst2",
+      "buses": {}
+    },
+    "6420": {
+      "id": 6420,
+      "name": "73DWPHASE2",
+      "buses": {}
+    },
+    "6421": {
+      "id": 6421,
+      "name": "77DWChor2",
+      "buses": {}
+    },
+    "6422": {
+      "id": 6422,
+      "name": "73DWPHASDist1",
+      "buses": {}
+    },
+    "6423": {
+      "id": 6423,
+      "name": "73DWPHASDist2",
+      "buses": {}
+    },
+    "6424": {
+      "id": 6424,
+      "name": "73DWPHASDistWah",
+      "buses": {}
+    },
+    "6425": {
+      "id": 6425,
+      "name": "77DWPHASDstWah1",
+      "buses": {}
+    },
+    "6426": {
+      "id": 6426,
+      "name": "73DWPHASDistWah2",
+      "buses": {}
+    },
+    "6427": {
+      "id": 6427,
+      "name": "73DWVintamp2",
+      "buses": {}
+    },
+    "6428": {
+      "id": 6428,
+      "name": "77DWVintAmpWah",
+      "buses": {}
+    },
+    "6429": {
+      "id": 6429,
+      "name": "DampersUp",
+      "buses": {}
+    },
+    "6430": {
+      "id": 6430,
+      "name": "Sweet PnoHall",
+      "buses": {}
+    },
+    "6431": {
+      "id": 6431,
+      "name": "77 cdr g1 t",
+      "buses": {}
+    },
+    "6432": {
+      "id": 6432,
+      "name": "Sweet PnoHall 2",
+      "buses": {}
+    },
+    "6440": {
+      "id": 6440,
+      "name": "DeepFuzz EPReed2",
+      "buses": {}
+    },
+    "6500": {
+      "id": 6500,
+      "name": "Rds AuxVerb Long",
+      "buses": {}
+    },
+    "6501": {
+      "id": 6501,
+      "name": "Comp Piano FX",
+      "buses": {}
+    },
+    "6502": {
+      "id": 6502,
+      "name": "Piano MultiFX 1",
+      "buses": {}
+    },
+    "6503": {
+      "id": 6503,
+      "name": "Dist Clav FX",
+      "buses": {}
+    },
+    "6504": {
+      "id": 6504,
+      "name": "Dist Clav CB FX",
+      "buses": {}
+    },
+    "6505": {
+      "id": 6505,
+      "name": "Synth HF Stim",
+      "buses": {}
+    },
+    "6506": {
+      "id": 6506,
+      "name": "Synth HF Stim 2",
+      "buses": {}
+    },
+    "6507": {
+      "id": 6507,
+      "name": "SuperSaw Aux",
+      "buses": {}
+    },
+    "6508": {
+      "id": 6508,
+      "name": "SuperSaw",
+      "buses": {}
+    },
+    "6509": {
+      "id": 6509,
+      "name": "Chroma FM3",
+      "buses": {}
+    },
+    "6510": {
+      "id": 6510,
+      "name": "KB3 Aux2 Booth",
+      "buses": {}
+    },
+    "6511": {
+      "id": 6511,
+      "name": "GANGsta Wrap 2",
+      "buses": {}
+    },
+    "6512": {
+      "id": 6512,
+      "name": "KB3 Aux2 Booth 2",
+      "buses": {}
+    },
+    "6513": {
+      "id": 6513,
+      "name": "Organ Chamber2",
+      "buses": {}
+    },
+    "6514": {
+      "id": 6514,
+      "name": "NonKB3 A KX 2",
+      "buses": {}
+    },
+    "6520": {
+      "id": 6520,
+      "name": "String Multi FX1",
+      "buses": {}
+    },
+    "6521": {
+      "id": 6521,
+      "name": "SymphonyHall Aux",
+      "buses": {}
+    },
+    "6522": {
+      "id": 6522,
+      "name": "MltiFX for Stngs",
+      "buses": {}
+    },
+    "6530": {
+      "id": 6530,
+      "name": "EP Tine Chorus",
+      "buses": {}
+    },
+    "6531": {
+      "id": 6531,
+      "name": "EP Tine Flange",
+      "buses": {}
+    },
+    "6532": {
+      "id": 6532,
+      "name": "EP Tine Phaser",
+      "buses": {}
+    },
+    "6533": {
+      "id": 6533,
+      "name": "EP Tine Rotary",
+      "buses": {}
+    },
+    "6534": {
+      "id": 6534,
+      "name": "EP Tine Env\ufb01lt",
+      "buses": {}
+    },
+    "6550": {
+      "id": 6550,
+      "name": "EP Tine Aux2",
+      "buses": {}
+    },
+    "6551": {
+      "id": 6551,
+      "name": "EP Tine Rm Aux",
+      "buses": {}
+    },
+    "6552": {
+      "id": 6552,
+      "name": "DampersUp",
+      "buses": {}
+    },
+    "6553": {
+      "id": 6553,
+      "name": "Tines FX",
+      "buses": {}
+    },
+    "6554": {
+      "id": 6554,
+      "name": "9-Ft Piano FX",
+      "buses": {}
+    },
+    "6555": {
+      "id": 6555,
+      "name": "DampersUp",
+      "buses": {}
+    },
+    "6556": {
+      "id": 6556,
+      "name": "Sweet PnoHall",
+      "buses": {}
+    },
+    "6557": {
+      "id": 6557,
+      "name": "Sweet PnoHall 2",
+      "buses": {}
+    },
+    "6558": {
+      "id": 6558,
+      "name": "Tines FX",
+      "buses": {}
+    },
+    "6559": {
+      "id": 6559,
+      "name": "9-Ft Piano FX",
+      "buses": {}
+    },
+    "6606": {
+      "id": 6606,
+      "name": "Artis KHall",
+      "buses": {}
+    },
+    "6610": {
+      "id": 6610,
+      "name": "Artis LrgKHall",
+      "buses": {}
+    },
+    "6611": {
+      "id": 6611,
+      "name": "Upright EQ",
+      "buses": {}
+    },
+    "6612": {
+      "id": 6612,
+      "name": "Artis LrgKHall",
+      "buses": {}
+    },
+    "6613": {
+      "id": 6613,
+      "name": "ConcertGrand1",
+      "buses": {}
+    },
+    "6617": {
+      "id": 6617,
+      "name": "ModJazz Plate 1",
+      "buses": {}
+    },
+    "6619": {
+      "id": 6619,
+      "name": "Punch Room",
+      "buses": {}
+    },
+    "6627": {
+      "id": 6627,
+      "name": "Concert Grand EQ",
+      "buses": {}
+    },
+    "6628": {
+      "id": 6628,
+      "name": "Y Grand EQ 2",
+      "buses": {}
+    },
+    "6630": {
+      "id": 6630,
+      "name": "Bright Y EQ2",
+      "buses": {}
+    },
+    "6632": {
+      "id": 6632,
+      "name": "Artis K Pop EQ",
+      "buses": {}
+    },
+    "6633": {
+      "id": 6633,
+      "name": "Dark n Distant",
+      "buses": {}
+    },
+    "6634": {
+      "id": 6634,
+      "name": "Artis Pluck EQ1",
+      "buses": {}
+    },
+    "6635": {
+      "id": 6635,
+      "name": "Artis Y EQ",
+      "buses": {}
+    },
+    "6640": {
+      "id": 6640,
+      "name": "Bebop Piano",
+      "buses": {}
+    },
+    "6643": {
+      "id": 6643,
+      "name": "ModJazz K1",
+      "buses": {}
+    },
+    "6648": {
+      "id": 6648,
+      "name": "Piano + Pad",
+      "buses": {}
+    },
+    "6649": {
+      "id": 6649,
+      "name": "Delay Piano",
+      "buses": {}
+    },
+    "6650": {
+      "id": 6650,
+      "name": "Mono EQ",
+      "buses": {}
+    },
+    "6651": {
+      "id": 6651,
+      "name": "RecitalHall",
+      "buses": {}
+    },
+    "6655": {
+      "id": 6655,
+      "name": "BigChorusPiano2",
+      "buses": {}
+    },
+    "6656": {
+      "id": 6656,
+      "name": "Lrg Ambience l",
+      "buses": {}
+    },
+    "6657": {
+      "id": 6657,
+      "name": "Ambient Pno EQ",
+      "buses": {}
+    },
+    "6658": {
+      "id": 6658,
+      "name": "Blown Spkr Ins",
+      "buses": {}
+    },
+    "6659": {
+      "id": 6659,
+      "name": "Recital Piano3",
+      "buses": {}
+    },
+    "6660": {
+      "id": 6660,
+      "name": "FM n K EQ",
+      "buses": {}
+    },
+    "6661": {
+      "id": 6661,
+      "name": "FM Hall",
+      "buses": {}
+    },
+    "6662": {
+      "id": 6662,
+      "name": "ConcertK lite1",
+      "buses": {}
+    },
+    "6663": {
+      "id": 6663,
+      "name": "ConcertK lite2",
+      "buses": {}
+    },
+    "6664": {
+      "id": 6664,
+      "name": "Soundboard as",
+      "buses": {}
+    },
+    "6665": {
+      "id": 6665,
+      "name": "ConcertK 4sc",
+      "buses": {}
+    },
+    "6667": {
+      "id": 6667,
+      "name": "ConcertK EQonly",
+      "buses": {}
+    },
+    "6668": {
+      "id": 6668,
+      "name": "Artis Y Grand2a",
+      "buses": {}
+    },
+    "6669": {
+      "id": 6669,
+      "name": "Artis YHall 2",
+      "buses": {}
+    },
+    "6670": {
+      "id": 6670,
+      "name": "Upright Room",
+      "buses": {}
+    },
+    "6671": {
+      "id": 6671,
+      "name": "ParlorPianoEQ",
+      "buses": {}
+    },
+    "6672": {
+      "id": 6672,
+      "name": "ParlorVerb",
+      "buses": {}
+    },
+    "6673": {
+      "id": 6673,
+      "name": "PianoTmplateEQ1",
+      "buses": {}
+    },
+    "6674": {
+      "id": 6674,
+      "name": "ModJazz K2",
+      "buses": {}
+    },
+    "6675": {
+      "id": 6675,
+      "name": "Brgt Soundboard",
+      "buses": {}
+    },
+    "6676": {
+      "id": 6676,
+      "name": "Recital EQ",
+      "buses": {}
+    },
+    "6677": {
+      "id": 6677,
+      "name": "Radio Pop EQ",
+      "buses": {}
+    },
+    "6680": {
+      "id": 6680,
+      "name": "Concert GrandEQ4",
+      "buses": {}
+    },
+    "6681": {
+      "id": 6681,
+      "name": "Soundboard 4",
+      "buses": {}
+    },
+    "6682": {
+      "id": 6682,
+      "name": "ModJazz K3",
+      "buses": {}
+    },
+    "6683": {
+      "id": 6683,
+      "name": "Upright EQ2",
+      "buses": {}
+    },
+    "6684": {
+      "id": 6684,
+      "name": "Pianarma EQ+Cm4",
+      "buses": {}
+    },
+    "6685": {
+      "id": 6685,
+      "name": "JSP Comp & EQ2",
+      "buses": {}
+    },
+    "6686": {
+      "id": 6686,
+      "name": "Recital Piano 3",
+      "buses": {}
+    },
+    "6687": {
+      "id": 6687,
+      "name": "ArtEQCMPas2",
+      "buses": {}
+    },
+    "6688": {
+      "id": 6688,
+      "name": "Weapon Chain2",
+      "buses": {}
+    },
+    "6689": {
+      "id": 6689,
+      "name": "MarquisPiano3",
+      "buses": {}
+    },
+    "6692": {
+      "id": 6692,
+      "name": "ClassicBLesFstv4",
+      "buses": {}
+    },
+    "6693": {
+      "id": 6693,
+      "name": "Concert GrandEQ6",
+      "buses": {}
+    },
+    "6694": {
+      "id": 6694,
+      "name": "ClassicBLesFstv4",
+      "buses": {}
+    },
+    "6696": {
+      "id": 6696,
+      "name": "ClassicBLesFstvX",
+      "buses": {}
+    },
+    "6700": {
+      "id": 6700,
+      "name": "kb3 cab1",
+      "buses": {}
+    },
+    "6701": {
+      "id": 6701,
+      "name": "FunkyPerc Les 01",
+      "buses": {}
+    },
+    "6702": {
+      "id": 6702,
+      "name": "SoulPerc Les 01",
+      "buses": {}
+    },
+    "6703": {
+      "id": 6703,
+      "name": "PerfectStrLes01",
+      "buses": {}
+    },
+    "6704": {
+      "id": 6704,
+      "name": "70s Drwbars Les1",
+      "buses": {}
+    },
+    "6705": {
+      "id": 6705,
+      "name": "Prog Bars Les01",
+      "buses": {}
+    },
+    "6706": {
+      "id": 6706,
+      "name": "FirstThree Les03",
+      "buses": {}
+    },
+    "6707": {
+      "id": 6707,
+      "name": "Ezra II Les 01",
+      "buses": {}
+    },
+    "6708": {
+      "id": 6708,
+      "name": "kb3 cab1",
+      "buses": {}
+    },
+    "6709": {
+      "id": 6709,
+      "name": "FunkyPerc Les 01",
+      "buses": {}
+    },
+    "6710": {
+      "id": 6710,
+      "name": "SoulPerc Les 01",
+      "buses": {}
+    },
+    "6711": {
+      "id": 6711,
+      "name": "FunkyPerc Les X",
+      "buses": {}
+    },
+    "6712": {
+      "id": 6712,
+      "name": "70s Drwbars Les1",
+      "buses": {}
+    },
+    "6713": {
+      "id": 6713,
+      "name": "Prog Bars Les01",
+      "buses": {}
+    },
+    "6714": {
+      "id": 6714,
+      "name": "FirstThree Les03",
+      "buses": {}
+    },
+    "6715": {
+      "id": 6715,
+      "name": "Ezra II Les 01",
+      "buses": {}
+    },
+    "6716": {
+      "id": 6716,
+      "name": "SoulPerc Les X",
+      "buses": {}
+    },
+    "6717": {
+      "id": 6717,
+      "name": "FirstThree LesX",
+      "buses": {}
+    },
+    "6718": {
+      "id": 6718,
+      "name": "PerfectStrLes X",
+      "buses": {}
+    },
+    "6719": {
+      "id": 6719,
+      "name": "70s Drwbars LesX",
+      "buses": {}
+    },
+    "6720": {
+      "id": 6720,
+      "name": "Prog Bars Les X",
+      "buses": {}
+    },
+    "6721": {
+      "id": 6721,
+      "name": "Ezra II Les X",
+      "buses": {}
+    },
+    "6722": {
+      "id": 6722,
+      "name": "CrunchLesl122 X",
+      "buses": {}
+    },
+    "6723": {
+      "id": 6723,
+      "name": "SoulLeslie122 X",
+      "buses": {}
+    },
+    "6724": {
+      "id": 6724,
+      "name": "Jimmy'sBrakeX",
+      "buses": {}
+    },
+    "6725": {
+      "id": 6725,
+      "name": "DistlLes HotGsX",
+      "buses": {}
+    },
+    "6726": {
+      "id": 6726,
+      "name": "NonKB3 A KX",
+      "buses": {}
+    },
+    "6727": {
+      "id": 6727,
+      "name": "Leslie 122 K X",
+      "buses": {}
+    },
+    "6728": {
+      "id": 6728,
+      "name": "LightDistlLes KX",
+      "buses": {}
+    },
+    "6729": {
+      "id": 6729,
+      "name": "Clean Leslie KX",
+      "buses": {}
+    },
+    "6800": {
+      "id": 6800,
+      "name": "EP Reed Template",
+      "buses": {}
+    },
+    "6802": {
+      "id": 6802,
+      "name": "EP Tine AuxHuge",
+      "buses": {}
+    },
+    "6803": {
+      "id": 6803,
+      "name": "7ft Aux Verb1",
+      "buses": {}
+    },
+    "6804": {
+      "id": 6804,
+      "name": "9-Ft Piano FX",
+      "buses": {}
+    },
+    "6805": {
+      "id": 6805,
+      "name": "Yam ppp",
+      "buses": {}
+    },
+    "6806": {
+      "id": 6806,
+      "name": "CDR Aux Reverb",
+      "buses": {}
+    },
+    "6807": {
+      "id": 6807,
+      "name": "Dark Wobbles",
+      "buses": {}
+    },
+    "6808": {
+      "id": 6808,
+      "name": "Tines Aux Rev",
+      "buses": {}
+    },
+    "6809": {
+      "id": 6809,
+      "name": "Synth Dist CDly",
+      "buses": {}
+    },
+    "6810": {
+      "id": 6810,
+      "name": "Mosque w/Inf Rev",
+      "buses": {}
+    },
+    "6811": {
+      "id": 6811,
+      "name": "MosqueySwirl Aux",
+      "buses": {}
+    },
+    "6812": {
+      "id": 6812,
+      "name": "Forte Lead Insrt",
+      "buses": {}
+    },
+    "6813": {
+      "id": 6813,
+      "name": "Comp Lead Insert",
+      "buses": {}
+    },
+    "6814": {
+      "id": 6814,
+      "name": "CDR Just Reverb",
+      "buses": {}
+    },
+    "6815": {
+      "id": 6815,
+      "name": "Wah Synth Insert",
+      "buses": {}
+    },
+    "6816": {
+      "id": 6816,
+      "name": "Forte Lead GTR",
+      "buses": {}
+    },
+    "6817": {
+      "id": 6817,
+      "name": "Phase+CH+Delay",
+      "buses": {}
+    },
+    "6818": {
+      "id": 6818,
+      "name": "Dist/Wah Insert",
+      "buses": {}
+    },
+    "6819": {
+      "id": 6819,
+      "name": "Comp Plex Insert",
+      "buses": {}
+    },
+    "6820": {
+      "id": 6820,
+      "name": "Comp Mu Aliaser",
+      "buses": {}
+    },
+    "6821": {
+      "id": 6821,
+      "name": "Elegant Hall Aux",
+      "buses": {}
+    },
+    "6822": {
+      "id": 6822,
+      "name": "FlangVoXHall2Aux",
+      "buses": {}
+    },
+    "6823": {
+      "id": 6823,
+      "name": "FlangVoiceInsert",
+      "buses": {}
+    },
+    "6824": {
+      "id": 6824,
+      "name": "Cathedral Vx Aux",
+      "buses": {}
+    },
+    "6921": {
+      "id": 6921,
+      "name": "MarquisPiano3",
+      "buses": {}
+    },
+    "7000": {
+      "id": 7000,
+      "name": "GM Reverb",
+      "buses": {}
+    },
+    "7001": {
+      "id": 7001,
+      "name": "GM Chorus",
+      "buses": {}
+    },
+    "7002": {
+      "id": 7002,
+      "name": "Indie Piano",
+      "buses": {}
+    },
+    "7003": {
+      "id": 7003,
+      "name": "BluesPnoCmpRvb 2",
+      "buses": {}
+    },
+    "7004": {
+      "id": 7004,
+      "name": "ArtEQ3",
+      "buses": {}
+    },
+    "7005": {
+      "id": 7005,
+      "name": "ArtEQDW4",
+      "buses": {}
+    },
+    "7006": {
+      "id": 7006,
+      "name": "ArtEQDW5",
+      "buses": {}
+    },
+    "7007": {
+      "id": 7007,
+      "name": "ArtEQDW7",
+      "buses": {}
+    },
+    "7008": {
+      "id": 7008,
+      "name": "ArtEQDW8",
+      "buses": {}
+    },
+    "7009": {
+      "id": 7009,
+      "name": "ArtOddHarm",
+      "buses": {}
+    },
+    "7010": {
+      "id": 7010,
+      "name": "SoftPnoCmpRvb 1",
+      "buses": {}
+    },
+    "7011": {
+      "id": 7011,
+      "name": "SterPnoCmpRvb 2",
+      "buses": {}
+    },
+    "7012": {
+      "id": 7012,
+      "name": "SoftPnoCmpRvb 2",
+      "buses": {}
+    },
+    "7013": {
+      "id": 7013,
+      "name": "SterPnoCmpRvb 3",
+      "buses": {}
+    }
+  },
+  "presetsById": {},
+  "algorithmsById": {}
+}

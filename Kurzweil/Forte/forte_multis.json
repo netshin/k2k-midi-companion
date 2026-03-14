@@ -1,0 +1,746 @@
+{
+  "1": {
+    "name": "Gospel B3 & Pno",
+    "longRibbonFunction": ""
+  },
+  "2": {
+    "name": "Min Ho Worship",
+    "longRibbonFunction": ""
+  },
+  "3": {
+    "name": "Celestial Palace",
+    "longRibbonFunction": ""
+  },
+  "4": {
+    "name": "Universe Pad",
+    "longRibbonFunction": ""
+  },
+  "5": {
+    "name": "Triumphant!",
+    "longRibbonFunction": ""
+  },
+  "6": {
+    "name": "Massive Mono",
+    "longRibbonFunction": ""
+  },
+  "7": {
+    "name": "Sea Breeze",
+    "longRibbonFunction": ""
+  },
+  "8": {
+    "name": "The Shire w Oboe",
+    "longRibbonFunction": ""
+  },
+  "9": {
+    "name": "Futurescape",
+    "longRibbonFunction": ""
+  },
+  "10": {
+    "name": "Vox n Glox",
+    "longRibbonFunction": ""
+  },
+  "11": {
+    "name": "Jazz Combo Split",
+    "longRibbonFunction": ""
+  },
+  "12": {
+    "name": "Triggered Comper",
+    "longRibbonFunction": ""
+  },
+  "13": {
+    "name": "Blues Harp Jam",
+    "longRibbonFunction": ""
+  },
+  "14": {
+    "name": "Trancendental",
+    "longRibbonFunction": ""
+  },
+  "15": {
+    "name": "MassivePitchBend",
+    "longRibbonFunction": ""
+  },
+  "16": {
+    "name": "Parisian Night",
+    "longRibbonFunction": ""
+  },
+  "17": {
+    "name": "Acid Brass Group",
+    "longRibbonFunction": ""
+  },
+  "18": {
+    "name": "BaroquePipeOrgan",
+    "longRibbonFunction": ""
+  },
+  "19": {
+    "name": "Mwl SuperStrings",
+    "longRibbonFunction": ""
+  },
+  "20": {
+    "name": "Cloudwalk Keys",
+    "longRibbonFunction": ""
+  },
+  "21": {
+    "name": "Glitter Glue",
+    "longRibbonFunction": ""
+  },
+  "22": {
+    "name": "Hollow Keys",
+    "longRibbonFunction": ""
+  },
+  "23": {
+    "name": "Liquid Pad",
+    "longRibbonFunction": ""
+  },
+  "24": {
+    "name": "Sus Pedal Rave",
+    "longRibbonFunction": ""
+  },
+  "25": {
+    "name": "Gtr/Bass Ballad",
+    "longRibbonFunction": ""
+  },
+  "26": {
+    "name": "Quad Pad",
+    "longRibbonFunction": ""
+  },
+  "27": {
+    "name": "Piano, Steel+Pad",
+    "longRibbonFunction": ""
+  },
+  "28": {
+    "name": "Funky Bass Split",
+    "longRibbonFunction": ""
+  },
+  "29": {
+    "name": "Cartoon Pizz",
+    "longRibbonFunction": ""
+  },
+  "30": {
+    "name": "Hip Hop Thirds",
+    "longRibbonFunction": ""
+  },
+  "31": {
+    "name": "Loaded Switches",
+    "longRibbonFunction": ""
+  },
+  "32": {
+    "name": "Euro Chords",
+    "longRibbonFunction": ""
+  },
+  "33": {
+    "name": "Distorted Stack",
+    "longRibbonFunction": ""
+  },
+  "34": {
+    "name": "CP, FM & Pad",
+    "longRibbonFunction": ""
+  },
+  "35": {
+    "name": "Piano +Gtr +Pad",
+    "longRibbonFunction": ""
+  },
+  "106": {
+    "name": "Pedal Drummer!",
+    "longRibbonFunction": ""
+  },
+  "107": {
+    "name": "EP & Pedal Pads",
+    "longRibbonFunction": ""
+  },
+  "108": {
+    "name": "3Octave Pno/Bass",
+    "longRibbonFunction": ""
+  },
+  "109": {
+    "name": "Piano Vel Brass",
+    "longRibbonFunction": ""
+  },
+  "110": {
+    "name": "EP Sweetness",
+    "longRibbonFunction": ""
+  },
+  "111": {
+    "name": "Double Drummer",
+    "longRibbonFunction": ""
+  },
+  "112": {
+    "name": "VelocityBell Pad",
+    "longRibbonFunction": ""
+  },
+  "113": {
+    "name": "Piano Lesson",
+    "longRibbonFunction": ""
+  },
+  "114": {
+    "name": "Fuzzy EP/Bass",
+    "longRibbonFunction": ""
+  },
+  "115": {
+    "name": "Trem ReedEPLayer",
+    "longRibbonFunction": ""
+  },
+  "116": {
+    "name": "Clavinorgethizer",
+    "longRibbonFunction": ""
+  },
+  "117": {
+    "name": "Quad Stack 1",
+    "longRibbonFunction": ""
+  },
+  "118": {
+    "name": "Quad Stack 2",
+    "longRibbonFunction": ""
+  },
+  "119": {
+    "name": "MW Orch Strings",
+    "longRibbonFunction": ""
+  },
+  "120": {
+    "name": "Cathedral Organ",
+    "longRibbonFunction": ""
+  },
+  "121": {
+    "name": "BaroqueEnsembles",
+    "longRibbonFunction": ""
+  },
+  "122": {
+    "name": "PipeOrgnVox&Orch",
+    "longRibbonFunction": ""
+  },
+  "123": {
+    "name": "Island Girl",
+    "longRibbonFunction": ""
+  },
+  "124": {
+    "name": "Ice Age",
+    "longRibbonFunction": ""
+  },
+  "125": {
+    "name": "Janet's Strut",
+    "longRibbonFunction": ""
+  },
+  "126": {
+    "name": "Windy Pad",
+    "longRibbonFunction": ""
+  },
+  "127": {
+    "name": "Wurly/Horns",
+    "longRibbonFunction": ""
+  },
+  "128": {
+    "name": "Vocal Organ",
+    "longRibbonFunction": ""
+  },
+  "129": {
+    "name": "Full Blast Horns",
+    "longRibbonFunction": ""
+  },
+  "130": {
+    "name": "Clocks",
+    "longRibbonFunction": ""
+  },
+  "131": {
+    "name": "Enchanted Forest",
+    "longRibbonFunction": ""
+  },
+  "132": {
+    "name": "Sleepy Hollow",
+    "longRibbonFunction": ""
+  },
+  "133": {
+    "name": "Klezmer",
+    "longRibbonFunction": ""
+  },
+  "134": {
+    "name": "Kurzland Report",
+    "longRibbonFunction": ""
+  },
+  "135": {
+    "name": "Why Am I Here?",
+    "longRibbonFunction": ""
+  },
+  "136": {
+    "name": "Voyager",
+    "longRibbonFunction": ""
+  },
+  "137": {
+    "name": "Year oftheDragon",
+    "longRibbonFunction": ""
+  },
+  "138": {
+    "name": "Bring It MW",
+    "longRibbonFunction": ""
+  },
+  "139": {
+    "name": "Reflections",
+    "longRibbonFunction": ""
+  },
+  "140": {
+    "name": "Hybrid Clavier",
+    "longRibbonFunction": ""
+  },
+  "141": {
+    "name": "Gabriel's Keys",
+    "longRibbonFunction": ""
+  },
+  "142": {
+    "name": "Boz Low Down",
+    "longRibbonFunction": ""
+  },
+  "143": {
+    "name": "Prog Split",
+    "longRibbonFunction": ""
+  },
+  "144": {
+    "name": "Don't Stop",
+    "longRibbonFunction": ""
+  },
+  "36": {
+    "name": "Endless Dream",
+    "longRibbonFunction": ""
+  },
+  "37": {
+    "name": "EP & Synbass",
+    "longRibbonFunction": ""
+  },
+  "38": {
+    "name": "Chill Kit/Chords",
+    "longRibbonFunction": ""
+  },
+  "39": {
+    "name": "Daydream EP",
+    "longRibbonFunction": ""
+  },
+  "40": {
+    "name": "Big Choir 5ths",
+    "longRibbonFunction": ""
+  },
+  "41": {
+    "name": "Plucked Sus Strs",
+    "longRibbonFunction": ""
+  },
+  "42": {
+    "name": "Alien Choir",
+    "longRibbonFunction": ""
+  },
+  "43": {
+    "name": "Synth & Strings",
+    "longRibbonFunction": ""
+  },
+  "44": {
+    "name": "Pizz & Glock",
+    "longRibbonFunction": ""
+  },
+  "45": {
+    "name": "Burning Lead",
+    "longRibbonFunction": ""
+  },
+  "46": {
+    "name": "Jungle Marimba",
+    "longRibbonFunction": ""
+  },
+  "47": {
+    "name": "ClavWithBenefits",
+    "longRibbonFunction": ""
+  },
+  "48": {
+    "name": "Introspektakular",
+    "longRibbonFunction": ""
+  },
+  "49": {
+    "name": "Pad Organ",
+    "longRibbonFunction": ""
+  },
+  "50": {
+    "name": "Organ and EP",
+    "longRibbonFunction": ""
+  },
+  "51": {
+    "name": "Choir Beckons",
+    "longRibbonFunction": ""
+  },
+  "52": {
+    "name": "The 9th Circle",
+    "longRibbonFunction": ""
+  },
+  "53": {
+    "name": "Celestial Mallet",
+    "longRibbonFunction": ""
+  },
+  "54": {
+    "name": "Bellsy Galore",
+    "longRibbonFunction": ""
+  },
+  "55": {
+    "name": "Mohawk Monophono",
+    "longRibbonFunction": ""
+  },
+  "56": {
+    "name": "Lefty EP/Organ",
+    "longRibbonFunction": ""
+  },
+  "57": {
+    "name": "Composite EP",
+    "longRibbonFunction": ""
+  },
+  "58": {
+    "name": "Far Out EP",
+    "longRibbonFunction": ""
+  },
+  "59": {
+    "name": "Dreamy Piano",
+    "longRibbonFunction": ""
+  },
+  "60": {
+    "name": "Folk String Band",
+    "longRibbonFunction": ""
+  },
+  "61": {
+    "name": "Hybrid Pad/Lead",
+    "longRibbonFunction": ""
+  },
+  "62": {
+    "name": "VelBrassSalsaJam",
+    "longRibbonFunction": ""
+  },
+  "63": {
+    "name": "Rock On!",
+    "longRibbonFunction": ""
+  },
+  "64": {
+    "name": "ABs/Brs & MWStrg",
+    "longRibbonFunction": ""
+  },
+  "65": {
+    "name": "BsKik&Snare\\Orgn",
+    "longRibbonFunction": ""
+  },
+  "66": {
+    "name": "Vel Orchestra",
+    "longRibbonFunction": ""
+  },
+  "67": {
+    "name": "Dream Catcher",
+    "longRibbonFunction": ""
+  },
+  "68": {
+    "name": "Strummer",
+    "longRibbonFunction": ""
+  },
+  "69": {
+    "name": "70's Ballad",
+    "longRibbonFunction": ""
+  },
+  "70": {
+    "name": "80's Power Rock",
+    "longRibbonFunction": ""
+  },
+  "145": {
+    "name": "Aero Dream",
+    "longRibbonFunction": ""
+  },
+  "146": {
+    "name": "Str/Cel/Vox/Glok",
+    "longRibbonFunction": ""
+  },
+  "147": {
+    "name": "Sparkler",
+    "longRibbonFunction": ""
+  },
+  "148": {
+    "name": "Guitar+Synth",
+    "longRibbonFunction": ""
+  },
+  "149": {
+    "name": "Neo-Baroque",
+    "longRibbonFunction": ""
+  },
+  "150": {
+    "name": "Dirty Funk Split",
+    "longRibbonFunction": ""
+  },
+  "151": {
+    "name": "Mystical Synth",
+    "longRibbonFunction": ""
+  },
+  "152": {
+    "name": "Stacked Organ",
+    "longRibbonFunction": ""
+  },
+  "153": {
+    "name": "Glitzy Keys",
+    "longRibbonFunction": ""
+  },
+  "154": {
+    "name": "Phat Horns",
+    "longRibbonFunction": ""
+  },
+  "155": {
+    "name": "Buggin Bells",
+    "longRibbonFunction": ""
+  },
+  "156": {
+    "name": "Breathy Synth",
+    "longRibbonFunction": ""
+  },
+  "157": {
+    "name": "Clean Lead",
+    "longRibbonFunction": ""
+  },
+  "158": {
+    "name": "Piano+Strings",
+    "longRibbonFunction": ""
+  },
+  "159": {
+    "name": "SlurpyPad-O",
+    "longRibbonFunction": ""
+  },
+  "160": {
+    "name": "DramaPad",
+    "longRibbonFunction": ""
+  },
+  "161": {
+    "name": "Mercury Rise",
+    "longRibbonFunction": ""
+  },
+  "162": {
+    "name": "Static Pad",
+    "longRibbonFunction": ""
+  },
+  "163": {
+    "name": "Windy City",
+    "longRibbonFunction": ""
+  },
+  "164": {
+    "name": "Square Coil",
+    "longRibbonFunction": ""
+  },
+  "165": {
+    "name": "French Nylon",
+    "longRibbonFunction": ""
+  },
+  "166": {
+    "name": "Psychedelic Pad",
+    "longRibbonFunction": ""
+  },
+  "167": {
+    "name": "Floating Pad",
+    "longRibbonFunction": ""
+  },
+  "168": {
+    "name": "Brass Pad",
+    "longRibbonFunction": ""
+  },
+  "169": {
+    "name": "String Pad",
+    "longRibbonFunction": ""
+  },
+  "170": {
+    "name": "Large Choir",
+    "longRibbonFunction": ""
+  },
+  "171": {
+    "name": "Medieval Ages",
+    "longRibbonFunction": ""
+  },
+  "172": {
+    "name": "Gamelan",
+    "longRibbonFunction": ""
+  },
+  "173": {
+    "name": "Pure Imagination",
+    "longRibbonFunction": ""
+  },
+  "174": {
+    "name": "DnB Split",
+    "longRibbonFunction": ""
+  },
+  "175": {
+    "name": "Dub Reggae",
+    "longRibbonFunction": ""
+  },
+  "176": {
+    "name": "Toxic Split",
+    "longRibbonFunction": ""
+  },
+  "177": {
+    "name": "Jazzy Key Trigs",
+    "longRibbonFunction": ""
+  },
+  "178": {
+    "name": "Motion Synth/Pad",
+    "longRibbonFunction": ""
+  },
+  "179": {
+    "name": "SloStrCelesta",
+    "longRibbonFunction": ""
+  },
+  "180": {
+    "name": "SloStr/Cel/EP",
+    "longRibbonFunction": ""
+  },
+  "181": {
+    "name": "Disklosure Split",
+    "longRibbonFunction": ""
+  },
+  "182": {
+    "name": "Game ofTrombones",
+    "longRibbonFunction": ""
+  },
+  "253": {
+    "name": "Split Default",
+    "longRibbonFunction": ""
+  },
+  "71": {
+    "name": "Controlled Synth",
+    "longRibbonFunction": ""
+  },
+  "72": {
+    "name": "FM-Disco Pop",
+    "longRibbonFunction": ""
+  },
+  "73": {
+    "name": "Bossa Me",
+    "longRibbonFunction": ""
+  },
+  "74": {
+    "name": "Prepared Marimba",
+    "longRibbonFunction": ""
+  },
+  "75": {
+    "name": "EBass/FMEP & Pad",
+    "longRibbonFunction": ""
+  },
+  "76": {
+    "name": "Cool Vibes",
+    "longRibbonFunction": ""
+  },
+  "77": {
+    "name": "Funked Up MWheel",
+    "longRibbonFunction": ""
+  },
+  "78": {
+    "name": "Harpsichord&Orch",
+    "longRibbonFunction": ""
+  },
+  "79": {
+    "name": "BaroqOrgan&Strgs",
+    "longRibbonFunction": ""
+  },
+  "80": {
+    "name": "E Bass/B3 Perc",
+    "longRibbonFunction": ""
+  },
+  "81": {
+    "name": "Dual Manuals",
+    "longRibbonFunction": ""
+  },
+  "82": {
+    "name": "Tron Vox/MW Tron",
+    "longRibbonFunction": ""
+  },
+  "83": {
+    "name": "Multi Percussion",
+    "longRibbonFunction": ""
+  },
+  "84": {
+    "name": "Open Doors",
+    "longRibbonFunction": ""
+  },
+  "85": {
+    "name": "Keyboard Arsenal",
+    "longRibbonFunction": ""
+  },
+  "86": {
+    "name": "Shimmering Pad",
+    "longRibbonFunction": ""
+  },
+  "87": {
+    "name": "Clav Lead",
+    "longRibbonFunction": ""
+  },
+  "88": {
+    "name": "Trumpet/Flute",
+    "longRibbonFunction": ""
+  },
+  "89": {
+    "name": "LiteBrite",
+    "longRibbonFunction": ""
+  },
+  "90": {
+    "name": "Distorted Keys",
+    "longRibbonFunction": ""
+  },
+  "91": {
+    "name": "Maximalist Organ",
+    "longRibbonFunction": ""
+  },
+  "92": {
+    "name": "Multi Strings",
+    "longRibbonFunction": ""
+  },
+  "93": {
+    "name": "Multi Harpsichrd",
+    "longRibbonFunction": ""
+  },
+  "94": {
+    "name": "Fierce Mono Lead",
+    "longRibbonFunction": ""
+  },
+  "95": {
+    "name": "PolySaw Synth",
+    "longRibbonFunction": ""
+  },
+  "96": {
+    "name": "Spider's Silk",
+    "longRibbonFunction": ""
+  },
+  "97": {
+    "name": "Fairy Tale Glock",
+    "longRibbonFunction": ""
+  },
+  "98": {
+    "name": "Epic Pad",
+    "longRibbonFunction": ""
+  },
+  "99": {
+    "name": "Plucked Ambience",
+    "longRibbonFunction": ""
+  },
+  "100": {
+    "name": "Dubly Bass&Piano",
+    "longRibbonFunction": ""
+  },
+  "101": {
+    "name": "Betty Boop",
+    "longRibbonFunction": ""
+  },
+  "102": {
+    "name": "70's Prog Fusion",
+    "longRibbonFunction": ""
+  },
+  "103": {
+    "name": "EnvloProg Fusion",
+    "longRibbonFunction": ""
+  },
+  "104": {
+    "name": "EP Tine Surprise",
+    "longRibbonFunction": ""
+  },
+  "105": {
+    "name": "Piano Trio Ped2",
+    "longRibbonFunction": ""
+  },
+  "254": {
+    "name": "Layer Default",
+    "longRibbonFunction": ""
+  },
+  "255": {
+    "name": "Forte Control",
+    "longRibbonFunction": ""
+  },
+  "256": {
+    "name": "Clear Multi",
+    "longRibbonFunction": ""
+  }
+}
