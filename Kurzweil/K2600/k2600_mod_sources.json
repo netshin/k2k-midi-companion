@@ -57,7 +57,7 @@
   },
   "46": {
     "label": "Channel Count (ChanCnt)",
-    "details": "This control source keeps track of the total number of active voice channels (how\nmany notes are playing), and converts the number into a control signal between 0\nand +1. The control signal’s value is 1 when all 48 voice channels are active, and 0\nwhen no voice channels are active.\nYou can use this control source in several ways. One example is to limit the volume\nof each note so that you have a more nearly constant volume regardless of how\nmany notes you’re playing (this is independent of the effect of attack velocity on\nvolume). To set this up, you would go to the F4 AMP page in the Program Editor,\nand set the Src1 parameter to a value of ChanCnt. Then set the Depth parameter to\na negative value. This will decrease the overall amplitude of each note as you play\nmore simultaneous notes. This example works best with short-release sounds. It’s\ngreat for an organ program, for example.\nChannel count is also useful for controlling the modulation applied to a sound. For\nexample, you may have a sound that you use both as a lead and for rhythm.\nSuppose you want a deep vibrato when you’re soloing, but less vibrato when you’re\nplaying chords. Set up the vibrato by using LFO1 as the value for the Src2\nparameter on the PITCH page in the Program Editor. Set the MinDpt parameter to"
+    "details": "This control source keeps track of the total number of active voice channels (how\nmany notes are playing), and converts the number into a control signal between 0 and +1\nThe control signal’s value is 1 when all 48 voice channels are active, and 0 when no voice channels are active"
   },
   "55": {
     "label": "Sync State (SyncSt)",
@@ -80,24 +80,20 @@
     "details": "The opposite of B Clock, this bipolar control source switches from -1 to +1 with\nevery clock beat (the square wave is 180 degrees out of phase with that of B Clock)."
   },
   "60": {
-    "label": "Global Phase 1 and 2 (G Phase 1, G Phase 2)",
+    "label": "Global Phase 1",
     "details": "These bipolar global control sources are both rising sawtooth waves that rise from -\n1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
   },
   "61": {
-    "label": "Global Phase 1 and 2 (G Phase 1, G Phase 2)",
+    "label": "Global Phase 2",
     "details": "These bipolar global control sources are both rising sawtooth waves that rise from -\n1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
   },
   "62": {
-    "label": "Global Random Variant 1 and 2 (GRandV 1, GRandV 2)",
+    "label": "Global Random Variant 1",
     "details": "These are also bipolar and global, and generate random control signal values\nbetween -1 and +1 when assigned to a control source parameter. There is a subtle\ndifference in the randomness of the signals they generate, therefore choosing\nbetween them is a matter of preference."
   },
   "63": {
-    "label": "Global Random Variant 1 and 2 (GRandV 1, GRandV 2)",
+    "label": "Global Random Variant 2",
     "details": "These are also bipolar and global, and generate random control signal values\nbetween -1 and +1 when assigned to a control source parameter. There is a subtle\ndifference in the randomness of the signals they generate, therefore choosing\nbetween them is a matter of preference."
-  },
-  "72": {
-    "label": "cts, and the MaxDpt parameter to 12 cts. Then set the value of the DptCtl",
-    "details": "parameter to ChanCnt, and You’ll get maximum vibrato depth when only one note\nis active. (Channel count outputs a control signal of 0 when no notes are playing, so\nwith only one note playing, its value is near 0, which causes the DptCtl parameter to\ngenerate a value near its minimum: 72 cents in this case.)\nIf you want to increase the depth of the vibrato as you increase the number of active\nnotes, set the value of the MaxDpt parameter higher than that of the MinDpt\nparameter.\nNote: There are no control sources that correspond to the numeric entries 47—54."
   },
   "96": {
     "label": "Note State (Note St)",
@@ -140,35 +136,35 @@
     "details": "This is similar to AttVel, but scales its signal values from -1 to +1."
   },
   "106": {
-    "label": "Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)",
+    "label": "Velocity Triggers 1",
     "details": "These unipolar control sources are switch controls, that is, they generate signal\nvalues of either 0 or +1. These must be programmed in order to have an effect; their\nprogramming parameters are found on the VTRIG page in the Program Editor.\nWhen a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note\nplays at a dynamic level exceeding the dynamic level set for its Level parameter. See\npage 6-44 of the Musician’s Guide for more information."
   },
   "107": {
-    "label": "Velocity Triggers 1 and 2 (VTRIG1, VTRIG2)",
+    "label": "Velocity Triggers 2",
     "details": "These unipolar control sources are switch controls, that is, they generate signal\nvalues of either 0 or +1. These must be programmed in order to have an effect; their\nprogramming parameters are found on the VTRIG page in the Program Editor.\nWhen a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note\nplays at a dynamic level exceeding the dynamic level set for its Level parameter. See\npage 6-44 of the Musician’s Guide for more information."
   },
   "108": {
-    "label": "Random Variants 1 and 2 (RandV1, RandV2)",
+    "label": "Random Variants 1",
     "details": "These are similar to GRandV1 and GRandV2, but are local, so will affect each\ncontrol source parameter independently."
   },
   "109": {
-    "label": "Random Variants 1 and 2 (RandV1, RandV2)",
+    "label": "Random Variants 2",
     "details": "These are similar to GRandV1 and GRandV2, but are local, so will affect each\ncontrol source parameter independently."
   },
   "110": {
-    "label": "ASR1, ASR2",
+    "label": "ASR1",
     "details": "These are programmable envelopes with three segments, Attack, Sustain, and\nRelease. Their control source signals are unipolar. See page 6-42 of the Musician’s\nGuide for a thorough explanation."
   },
   "111": {
-    "label": "ASR1, ASR2",
+    "label": "ASR2",
     "details": "These are programmable envelopes with three segments, Attack, Sustain, and\nRelease. Their control source signals are unipolar. See page 6-42 of the Musician’s\nGuide for a thorough explanation."
   },
   "112": {
-    "label": "FUN1, FUN2",
+    "label": "FUN1",
     "details": "These generate their control source signals by combining the control signal values\nof two programmable inputs, and performing a mathematical function on the\nresult. Their control signals can be unipolar or bipolar, depending on the control\nsources assigned as their inputs. See page 6-43 of the Musician’s Guide. FUN2\nbecomes global (GFUN2) when the Globals parameter on the COMMON page in\nthe Program Editor is set to On."
   },
   "113": {
-    "label": "FUN1, FUN2",
+    "label": "FUN2",
     "details": "These generate their control source signals by combining the control signal values\nof two programmable inputs, and performing a mathematical function on the\nresult. Their control signals can be unipolar or bipolar, depending on the control\nsources assigned as their inputs. See page 6-43 of the Musician’s Guide. FUN2\nbecomes global (GFUN2) when the Globals parameter on the COMMON page in\nthe Program Editor is set to On."
   },
   "114": {
@@ -188,11 +184,11 @@
     "details": "This functions exactly the same as LFO1ph, responding to the cycle of LFO2."
   },
   "118": {
-    "label": "FUN3, FUN4",
+    "label": "FUN3",
     "details": "These function exactly the same as FUNs 1 and 2, when the Globals parameter is set\nto Off (on the COMMON page in the Program Editor). When the Globals parameter\nis set to On, FUN4 becomes global (GFUN4)."
   },
   "119": {
-    "label": "FUN3, FUN4",
+    "label": "FUN4",
     "details": "These function exactly the same as FUNs 1 and 2, when the Globals parameter is set\nto Off (on the COMMON page in the Program Editor). When the Globals parameter\nis set to On, FUN4 becomes global (GFUN4)."
   },
   "120": {
@@ -200,11 +196,11 @@
     "details": "This programmable unipolar control source lets you vary the effect of a control\nsource parameter over time. See page 6-35 of the Musician’s Guide."
   },
   "121": {
-    "label": "Envelopes 2 and 3 (ENV2, ENV3)",
+    "label": "Envelopes 2",
     "details": "These are programmed in the same way as AMPENV, but they can be bipolar."
   },
   "122": {
-    "label": "Envelopes 2 and 3 (ENV2, ENV3)",
+    "label": "Envelopes 3",
     "details": "These are programmed in the same way as AMPENV, but they can be bipolar."
   },
   "123": {
@@ -240,11 +236,11 @@
     "details": "This is updated every time you strike another key (kind of a multi- trigger function).\nIn addition to enabling (triggering) layers from any controller (works like an on/off\nswitch), you can set the assigned controller’s threshold (value, or range of values\nfrom 0-127), thus defining the controller’s active range where it will enable the\nlayer.\nFor example, you could create a 32-layer nylon guitar in which each layer is\nassigned to a different VAST algorithm and each layer is enabled by discrete narrow\nvelocity ranges. This would produce 32 different sounding layers with 32 cross\nswitch points emulating a picked guitar where no two attacks are exactly alike. If\nthe layers' velocity ranges were very close together yet not overlapping, you could\ncreate very subtle nonrepeating changes. This kind of power usually eludes most\nsample playback devices, as this technique uses only one layer of polyphony, due to\ncross switching versus cross fading."
   },
   "131": {
-    "label": "GHiKey, GLoKey",
+    "label": "GHiKey",
     "details": "These control sources work the same as GKeyNum except that they track the\nhighest key currently held and the lowest key currently held respectively. By using\none of these as the only source for pitch tracking, you can create monophonic-like\nlayers within a polyphonic program."
   },
   "132": {
-    "label": "GHiKey, GLoKey",
+    "label": "GLoKey",
     "details": "These control sources work the same as GKeyNum except that they track the\nhighest key currently held and the lowest key currently held respectively. By using\none of these as the only source for pitch tracking, you can create monophonic-like\nlayers within a polyphonic program."
   },
   "133": {
