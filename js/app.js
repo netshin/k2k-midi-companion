@@ -1246,8 +1246,8 @@ function applyModelLabels() {
   }
 
   const title = document.querySelector("title");
-  if (title && synthModel?.manufacturer && synthModel?.displayName) {
-    title.textContent = `${synthModel.manufacturer} ${synthModel.displayName} Patch Display`;
+  if (title) {
+    title.textContent = CONFIG?.appName || "K2k-MIDI-Companion";
   }
 
   const webButton = document.getElementById("webButton");
