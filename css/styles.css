@@ -387,27 +387,6 @@ body {
 
 
 /* ==============================
-   PANEL SCREWS
-============================== */
-
-.screw {
-  width:14px;
-  height:14px;
-
-  background:radial-gradient(circle at 30% 30%,#666,#222);
-
-  border-radius:50%;
-
-  position:absolute;
-}
-
-.tl { top:15px; left:15px; }
-.tr { top:15px; right:15px; }
-.bl { bottom:15px; left:15px; }
-.br { bottom:15px; right:15px; }
-
-
-/* ==============================
    K2600 RUBBER BUTTON
 ============================== */
 
