@@ -1,0 +1,3300 @@
+{
+  "source": {
+    "sourceFile": "K2500 KDFX Presets.pdf",
+    "count": 444,
+    "sourceFiles": [
+      "K2500 KDFX Presets.pdf",
+      "K2500 KDFXv2 additions.pdf"
+    ]
+  },
+  "presets": [
+    {
+      "id": 1,
+      "name": "NiceLittleBooth",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 2,
+      "name": "Small Wood Booth",
+      "algorithmId": 4,
+      "algorithmName": "Classic Place",
+      "size": 2
+    },
+    {
+      "id": 3,
+      "name": "Natural Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 4,
+      "name": "PrettySmallPlace",
+      "algorithmId": 4,
+      "algorithmName": "Classic Place",
+      "size": 2
+    },
+    {
+      "id": 5,
+      "name": "Sun Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 6,
+      "name": "Soundboard",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 7,
+      "name": "Add More Air",
+      "algorithmId": 10,
+      "algorithmName": "OmniPlace",
+      "size": 3
+    },
+    {
+      "id": 8,
+      "name": "Standard Booth",
+      "algorithmId": 8,
+      "algorithmName": "Diffuse Place",
+      "size": 3
+    },
+    {
+      "id": 9,
+      "name": "A Distance Away",
+      "algorithmId": 6,
+      "algorithmName": "TQ Place",
+      "size": 3
+    },
+    {
+      "id": 10,
+      "name": "Live Place",
+      "algorithmId": 8,
+      "algorithmName": "Diffuse Place",
+      "size": 3
+    },
+    {
+      "id": 11,
+      "name": "Viewing Booth",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 15,
+      "name": "BrightSmallRoom",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 16,
+      "name": "Bassy Room",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 17,
+      "name": "Percussive Room",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 18,
+      "name": "SmallStudioRoom",
+      "algorithmId": 4,
+      "algorithmName": "Classic Place",
+      "size": 2
+    },
+    {
+      "id": 19,
+      "name": "ClassRoom",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 20,
+      "name": "Utility Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 21,
+      "name": "Thick Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 22,
+      "name": "The Real Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 23,
+      "name": "Sizzly Drum Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 24,
+      "name": "Real Big Room",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 25,
+      "name": "The Comfy Club",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 26,
+      "name": "Spitty Drum Room",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 27,
+      "name": "Stall One",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 28,
+      "name": "Green Room",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 29,
+      "name": "Tabla Room",
+      "algorithmId": 12,
+      "algorithmName": "Panaural Room",
+      "size": 3
+    },
+    {
+      "id": 30,
+      "name": "Large Room",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 31,
+      "name": "Platey Room",
+      "algorithmId": 14,
+      "algorithmName": "Grand Plate",
+      "size": 3
+    },
+    {
+      "id": 40,
+      "name": "SmallDrumChamber",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 41,
+      "name": "Brass Chamber",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 42,
+      "name": "Sax Chamber",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 43,
+      "name": "Plebe Chamber",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 44,
+      "name": "In The Studio",
+      "algorithmId": 4,
+      "algorithmName": "Classic Place",
+      "size": 2
+    },
+    {
+      "id": 45,
+      "name": "My Garage",
+      "algorithmId": 4,
+      "algorithmName": "Classic Place",
+      "size": 2
+    },
+    {
+      "id": 46,
+      "name": "School Stairwell",
+      "algorithmId": 4,
+      "algorithmName": "Classic Place",
+      "size": 2
+    },
+    {
+      "id": 47,
+      "name": "JudgeJudyChamber",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 48,
+      "name": "Bloom Chamber",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 55,
+      "name": "Grandiose Hall",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 56,
+      "name": "Elegant Hall",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 57,
+      "name": "Bright Hall",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 58,
+      "name": "Ballroom",
+      "algorithmId": 1,
+      "algorithmName": "MiniVerb",
+      "size": 1
+    },
+    {
+      "id": 59,
+      "name": "Spacious Hall",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 60,
+      "name": "Classic Chapel",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 61,
+      "name": "Semisweet Hall",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 62,
+      "name": "Pipes Hall",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 63,
+      "name": "Reflective Hall",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 64,
+      "name": "Smoooth Hall",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 65,
+      "name": "Splendid Palace",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 66,
+      "name": "Pad Space",
+      "algorithmId": 11,
+      "algorithmName": "OmniVerb",
+      "size": 3
+    },
+    {
+      "id": 67,
+      "name": "Bob'sDiffuseHall",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 68,
+      "name": "Abbey Piano Hall",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 69,
+      "name": "Short Hall",
+      "algorithmId": 13,
+      "algorithmName": "Stereo Hall",
+      "size": 3
+    },
+    {
+      "id": 70,
+      "name": "The Long Haul",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 71,
+      "name": "Predelay Hall",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 72,
+      "name": "Sweeter Hall",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 73,
+      "name": "The Piano Hall",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 74,
+      "name": "Bloom Hall",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 75,
+      "name": "Recital Hall",
+      "algorithmId": 12,
+      "algorithmName": "Panaural Room",
+      "size": 3
+    },
+    {
+      "id": 76,
+      "name": "Generic Hall",
+      "algorithmId": 12,
+      "algorithmName": "Panaural Room",
+      "size": 3
+    },
+    {
+      "id": 77,
+      "name": "Burst Space",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 78,
+      "name": "Real Dense Hall",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 79,
+      "name": "Concert Hall",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 80,
+      "name": "Standing Ovation",
+      "algorithmId": 11,
+      "algorithmName": "OmniVerb",
+      "size": 3
+    },
+    {
+      "id": 81,
+      "name": "Flinty Hall",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 82,
+      "name": "HighSchool Gym",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 83,
+      "name": "My Dreamy 481!!",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 84,
+      "name": "Deep Hall",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 85,
+      "name": "Immense Mosque",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 86,
+      "name": "Dreamverb",
+      "algorithmId": 10,
+      "algorithmName": "OmniPlace",
+      "size": 3
+    },
+    {
+      "id": 87,
+      "name": "Huge Batcave",
+      "algorithmId": 12,
+      "algorithmName": "Panaural Room",
+      "size": 3
+    },
+    {
+      "id": 95,
+      "name": "Classic Plate",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 96,
+      "name": "Weighty Platey",
+      "algorithmId": 5,
+      "algorithmName": "Classic Verb",
+      "size": 2
+    },
+    {
+      "id": 97,
+      "name": "Medm Warm Plate",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 98,
+      "name": "Bloom Plate",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 99,
+      "name": "Clean Plate",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 100,
+      "name": "Plate Mail",
+      "algorithmId": 11,
+      "algorithmName": "OmniVerb",
+      "size": 3
+    },
+    {
+      "id": 101,
+      "name": "RealSmoothPlate",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 102,
+      "name": "Huge Tight Plate",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 103,
+      "name": "BigPredelayPlate",
+      "algorithmId": 7,
+      "algorithmName": "TQ Verb",
+      "size": 3
+    },
+    {
+      "id": 104,
+      "name": "Cool Dark Place",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 105,
+      "name": "Gunshot Verb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 106,
+      "name": "Rvrb Compression",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 107,
+      "name": "Snappy Drum Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 108,
+      "name": "Roomitizer",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 109,
+      "name": "Live To Tape",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 110,
+      "name": "L:SmlRm R:LrgRm",
+      "algorithmId": 2,
+      "algorithmName": "Dual MiniVerb",
+      "size": 2
+    },
+    {
+      "id": 111,
+      "name": "L:SmlRm R:Hall",
+      "algorithmId": 2,
+      "algorithmName": "Dual MiniVerb",
+      "size": 2
+    },
+    {
+      "id": 112,
+      "name": "Gated Reverb",
+      "algorithmId": 3,
+      "algorithmName": "Gated MiniVerb",
+      "size": 2
+    },
+    {
+      "id": 113,
+      "name": "Gate Plate",
+      "algorithmId": 3,
+      "algorithmName": "Gated MiniVerb",
+      "size": 2
+    },
+    {
+      "id": 114,
+      "name": "Exponent Booth",
+      "algorithmId": 10,
+      "algorithmName": "OmniPlace",
+      "size": 3
+    },
+    {
+      "id": 115,
+      "name": "Drum Latch1",
+      "algorithmId": 10,
+      "algorithmName": "OmniPlace",
+      "size": 3
+    },
+    {
+      "id": 116,
+      "name": "Drum Latch2",
+      "algorithmId": 10,
+      "algorithmName": "OmniPlace",
+      "size": 3
+    },
+    {
+      "id": 117,
+      "name": "Diffuse Gate",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 118,
+      "name": "Acid Trip Room",
+      "algorithmId": 10,
+      "algorithmName": "OmniPlace",
+      "size": 3
+    },
+    {
+      "id": 119,
+      "name": "Furbelows",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 120,
+      "name": "Festoons",
+      "algorithmId": 9,
+      "algorithmName": "Diffuse Verb",
+      "size": 3
+    },
+    {
+      "id": 121,
+      "name": "Reverse Reverb",
+      "algorithmId": 15,
+      "algorithmName": "Finite Verb",
+      "size": 3
+    },
+    {
+      "id": 122,
+      "name": "Reverse Reverb 2",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 123,
+      "name": "Rvrs Laserverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 124,
+      "name": "Growler",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 125,
+      "name": "Ringy Drum Plate",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 126,
+      "name": "Oil Tank",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 127,
+      "name": "Wobbly Plate",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 128,
+      "name": "Pitcher Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 129,
+      "name": "DistantPitchRoom",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 130,
+      "name": "Guitar Echo",
+      "algorithmId": 130,
+      "algorithmName": "Complex Echo",
+      "size": 1
+    },
+    {
+      "id": 131,
+      "name": "Stereo Echoes1",
+      "algorithmId": 130,
+      "algorithmName": "Complex Echo",
+      "size": 1
+    },
+    {
+      "id": 132,
+      "name": "Stereo Echoes2",
+      "algorithmId": 130,
+      "algorithmName": "Complex Echo",
+      "size": 1
+    },
+    {
+      "id": 133,
+      "name": "4-Tap Delay",
+      "algorithmId": 132,
+      "algorithmName": "4-Tap Delay BPM",
+      "size": 1
+    },
+    {
+      "id": 134,
+      "name": "OffbeatFlamDelay",
+      "algorithmId": 132,
+      "algorithmName": "4-Tap Delay BPM",
+      "size": 1
+    },
+    {
+      "id": 135,
+      "name": "8-Tap Delay",
+      "algorithmId": 134,
+      "algorithmName": "8-Tap Delay BPM",
+      "size": 2
+    },
+    {
+      "id": 136,
+      "name": "Spectral 4-Tap",
+      "algorithmId": 135,
+      "algorithmName": "Spectral 4-Tap",
+      "size": 2
+    },
+    {
+      "id": 137,
+      "name": "Astral Taps",
+      "algorithmId": 135,
+      "algorithmName": "Spectral 4-Tap",
+      "size": 2
+    },
+    {
+      "id": 138,
+      "name": "SpectraShapeTaps",
+      "algorithmId": 136,
+      "algorithmName": "Spectral 6-Tap",
+      "size": 3
+    },
+    {
+      "id": 139,
+      "name": "Fanfare In Gmaj",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 140,
+      "name": "Basic Delay 1/8",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 141,
+      "name": "Diffuse Slaps",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 142,
+      "name": "Multitaps ms",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 143,
+      "name": "Timbre Taps",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 144,
+      "name": "Ecko Plecks",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 145,
+      "name": "Degenerator",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 146,
+      "name": "Nanobot Feedback",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 147,
+      "name": "Takes a while...",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 148,
+      "name": "Wait for UFO",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 149,
+      "name": "News Update",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 150,
+      "name": "Basic Chorus",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 151,
+      "name": "Chorus Comeback",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 152,
+      "name": "Chorusier",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 153,
+      "name": "Ordinary Chorus",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 154,
+      "name": "SlowSpinChorus",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 155,
+      "name": "Chorus Morris",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 156,
+      "name": "Everyday Chorus",
+      "algorithmId": 152,
+      "algorithmName": "Dual Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 157,
+      "name": "Thick Chorus",
+      "algorithmId": 153,
+      "algorithmName": "Dual Chorus 2",
+      "size": 2
+    },
+    {
+      "id": 158,
+      "name": "Soft Chorus",
+      "algorithmId": 153,
+      "algorithmName": "Dual Chorus 2",
+      "size": 2
+    },
+    {
+      "id": 159,
+      "name": "Rock Chorus",
+      "algorithmId": 153,
+      "algorithmName": "Dual Chorus 2",
+      "size": 2
+    },
+    {
+      "id": 160,
+      "name": "Sm Stereo Chorus",
+      "algorithmId": 150,
+      "algorithmName": "Chorus 1",
+      "size": 1
+    },
+    {
+      "id": 161,
+      "name": "Lg Stereo Chorus",
+      "algorithmId": 151,
+      "algorithmName": "Chorus 2",
+      "size": 2
+    },
+    {
+      "id": 162,
+      "name": "Full Chorus",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 163,
+      "name": "Dense Gtr Chorus",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 164,
+      "name": "Standrd Gtr Chor",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 165,
+      "name": "Bass Chorus",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 166,
+      "name": "StChorus+Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 167,
+      "name": "StChor+3vs2Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 168,
+      "name": "CDR for Lead Gtr",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 169,
+      "name": "PinchChorusDelay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 170,
+      "name": "Big Slow Flange",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 171,
+      "name": "Wetlip Flange",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 172,
+      "name": "Sweet Flange",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 173,
+      "name": "Throaty Flange",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 174,
+      "name": "Delirium Tremens",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 175,
+      "name": "Flanger Double",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 176,
+      "name": "Squeeze Flange",
+      "algorithmId": 154,
+      "algorithmName": "Flanger 1",
+      "size": 1
+    },
+    {
+      "id": 177,
+      "name": "Simply Flange",
+      "algorithmId": 155,
+      "algorithmName": "Flanger 2",
+      "size": 2
+    },
+    {
+      "id": 178,
+      "name": "Analog Flanger",
+      "algorithmId": 155,
+      "algorithmName": "Flanger 2",
+      "size": 2
+    },
+    {
+      "id": 179,
+      "name": "Soft Edge Flange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 180,
+      "name": "Ned Flangers",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 181,
+      "name": "Wispy Flange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 182,
+      "name": "Crystal Flange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 183,
+      "name": "NarrowResFlange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 184,
+      "name": "TightSlapFlange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 185,
+      "name": "Flanged Taps",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 186,
+      "name": "StFlange+Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 187,
+      "name": "StFlng+3vs2Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 188,
+      "name": "Singing Flanger",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 189,
+      "name": "DampedEchoFlange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 190,
+      "name": "Circles",
+      "algorithmId": 156,
+      "algorithmName": "LFO Phaser",
+      "size": 1
+    },
+    {
+      "id": 191,
+      "name": "Slow Deep Phaser",
+      "algorithmId": 157,
+      "algorithmName": "LFO Phaser Twin",
+      "size": 1
+    },
+    {
+      "id": 192,
+      "name": "Manual Phaser",
+      "algorithmId": 158,
+      "algorithmName": "Manual Phaser",
+      "size": 1
+    },
+    {
+      "id": 193,
+      "name": "Vibrato Phaser",
+      "algorithmId": 159,
+      "algorithmName": "Vibrato Phaser",
+      "size": 1
+    },
+    {
+      "id": 194,
+      "name": "ThunderPhaser",
+      "algorithmId": 159,
+      "algorithmName": "Vibrato Phaser",
+      "size": 1
+    },
+    {
+      "id": 195,
+      "name": "Saucepan Phaser",
+      "algorithmId": 160,
+      "algorithmName": "SingleLFO Phaser",
+      "size": 1
+    },
+    {
+      "id": 196,
+      "name": "Static Phaser",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 197,
+      "name": "Slippery Slope",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 198,
+      "name": "Westward Waves",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 199,
+      "name": "No Effect",
+      "algorithmId": 0,
+      "algorithmName": "",
+      "size": null
+    },
+    {
+      "id": 700,
+      "name": "Chorus Delay",
+      "algorithmId": 700,
+      "algorithmName": "Chorus+Delay",
+      "size": 1
+    },
+    {
+      "id": 701,
+      "name": "Chorus PanDelay",
+      "algorithmId": 700,
+      "algorithmName": "Chorus+Delay",
+      "size": 1
+    },
+    {
+      "id": 702,
+      "name": "Doubler & Echo",
+      "algorithmId": 700,
+      "algorithmName": "Chorus+Delay",
+      "size": 1
+    },
+    {
+      "id": 703,
+      "name": "Chorus VryLngDly",
+      "algorithmId": 700,
+      "algorithmName": "Chorus+Delay",
+      "size": 1
+    },
+    {
+      "id": 704,
+      "name": "FastChorusDouble",
+      "algorithmId": 700,
+      "algorithmName": "Chorus+Delay",
+      "size": 1
+    },
+    {
+      "id": 705,
+      "name": "BasicChorusDelay",
+      "algorithmId": 700,
+      "algorithmName": "Chorus+Delay",
+      "size": 1
+    },
+    {
+      "id": 706,
+      "name": "MultiTap Chorus",
+      "algorithmId": 701,
+      "algorithmName": "Chorus+4Tap",
+      "size": 1
+    },
+    {
+      "id": 707,
+      "name": "ThickChorus no4T",
+      "algorithmId": 701,
+      "algorithmName": "Chorus+4Tap",
+      "size": 1
+    },
+    {
+      "id": 708,
+      "name": "Chorused Taps",
+      "algorithmId": 702,
+      "algorithmName": "Chorus<>4Tap",
+      "size": 2
+    },
+    {
+      "id": 709,
+      "name": "Chorus Slapbacks",
+      "algorithmId": 705,
+      "algorithmName": "Chorus<>LasrDly",
+      "size": 2
+    },
+    {
+      "id": 710,
+      "name": "MultiEchoChorus",
+      "algorithmId": 705,
+      "algorithmName": "Chorus<>LasrDly",
+      "size": 2
+    },
+    {
+      "id": 711,
+      "name": "ChorusDelayHall",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 712,
+      "name": "ChorDlyRvb Lead",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 713,
+      "name": "ChorDlyRvb Lead2",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 714,
+      "name": "Fluid ChorDlyRvb",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 715,
+      "name": "ChorLite DlyHall",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 716,
+      "name": "ChorusSmallRoom",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 717,
+      "name": "DeepChorDlyHall",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 718,
+      "name": "Chorus PercHall",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 719,
+      "name": "Chorus Booth",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 720,
+      "name": "ClassicEP ChorRm",
+      "algorithmId": 703,
+      "algorithmName": "Chor+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 721,
+      "name": "ChorusMedChamber",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 722,
+      "name": "Vanilla ChorRvb",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 723,
+      "name": "Chorus Slow Hall",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 724,
+      "name": "SoftChorus Hall",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 725,
+      "name": "ChorBigBrtPlate",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 726,
+      "name": "Chorus Air",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 727,
+      "name": "Chorus HiCeiling",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 728,
+      "name": "Chorus MiniHall",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 729,
+      "name": "CathedralChorus",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 730,
+      "name": "PsiloChorusHall",
+      "algorithmId": 704,
+      "algorithmName": "Chorus<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 731,
+      "name": "GuitarChorLsrDly",
+      "algorithmId": 705,
+      "algorithmName": "Chorus<>LasrDly",
+      "size": 2
+    },
+    {
+      "id": 732,
+      "name": "Flange + Delay",
+      "algorithmId": 706,
+      "algorithmName": "Flange+Delay",
+      "size": 1
+    },
+    {
+      "id": 733,
+      "name": "ThroatyFlangeDly",
+      "algorithmId": 706,
+      "algorithmName": "Flange+Delay",
+      "size": 1
+    },
+    {
+      "id": 734,
+      "name": "Flange + 4Tap",
+      "algorithmId": 707,
+      "algorithmName": "Flange+4Tap",
+      "size": 1
+    },
+    {
+      "id": 735,
+      "name": "Bap ba-da-dap",
+      "algorithmId": 707,
+      "algorithmName": "Flange+4Tap",
+      "size": 1
+    },
+    {
+      "id": 736,
+      "name": "Slapback Flange",
+      "algorithmId": 706,
+      "algorithmName": "Flange+Delay",
+      "size": 1
+    },
+    {
+      "id": 737,
+      "name": "Quantize+Flange",
+      "algorithmId": 714,
+      "algorithmName": "Quantize+Flange",
+      "size": 1
+    },
+    {
+      "id": 738,
+      "name": "FlangeDelayHall",
+      "algorithmId": 709,
+      "algorithmName": "Flan+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 739,
+      "name": "FlangeDelayRoom",
+      "algorithmId": 709,
+      "algorithmName": "Flan+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 740,
+      "name": "SloFlangeDlyRoom",
+      "algorithmId": 709,
+      "algorithmName": "Flan+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 741,
+      "name": "FlangeDlyBigHall",
+      "algorithmId": 709,
+      "algorithmName": "Flan+Dly+Reverb",
+      "size": 2
+    },
+    {
+      "id": 742,
+      "name": "Flange Theatre",
+      "algorithmId": 710,
+      "algorithmName": "Flange<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 743,
+      "name": "FlangeVerb Clav",
+      "algorithmId": 710,
+      "algorithmName": "Flange<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 744,
+      "name": "FlangeVerb Gtr",
+      "algorithmId": 710,
+      "algorithmName": "Flange<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 745,
+      "name": "Flange Hall",
+      "algorithmId": 710,
+      "algorithmName": "Flange<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 746,
+      "name": "Flange Booth",
+      "algorithmId": 710,
+      "algorithmName": "Flange<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 747,
+      "name": "Flange->LaserDly",
+      "algorithmId": 711,
+      "algorithmName": "Flange<>LasrDly",
+      "size": 2
+    },
+    {
+      "id": 748,
+      "name": "FlangeTap Synth",
+      "algorithmId": 708,
+      "algorithmName": "Flange<>4Tap",
+      "size": 2
+    },
+    {
+      "id": 749,
+      "name": "Lazertag Flange",
+      "algorithmId": 711,
+      "algorithmName": "Flange<>LasrDly",
+      "size": 2
+    },
+    {
+      "id": 750,
+      "name": "Flange->Pitcher",
+      "algorithmId": 712,
+      "algorithmName": "Flange<>Pitcher",
+      "size": 2
+    },
+    {
+      "id": 751,
+      "name": "Flange->Shaper",
+      "algorithmId": 713,
+      "algorithmName": "Flange<>Shaper",
+      "size": 2
+    },
+    {
+      "id": 752,
+      "name": "Shaper->Flange",
+      "algorithmId": 713,
+      "algorithmName": "Flange<>Shaper",
+      "size": 2
+    },
+    {
+      "id": 753,
+      "name": "Warped Echoes",
+      "algorithmId": 715,
+      "algorithmName": "Dual MovDelay",
+      "size": 1
+    },
+    {
+      "id": 754,
+      "name": "L:Flange R:Delay",
+      "algorithmId": 715,
+      "algorithmName": "Dual MovDelay",
+      "size": 1
+    },
+    {
+      "id": 755,
+      "name": "StereoFlamDelay",
+      "algorithmId": 715,
+      "algorithmName": "Dual MovDelay",
+      "size": 1
+    },
+    {
+      "id": 756,
+      "name": "2Dlys Ch Fl Mono",
+      "algorithmId": 716,
+      "algorithmName": "Quad MovDelay",
+      "size": 2
+    },
+    {
+      "id": 757,
+      "name": "LaserDelay->Rvb",
+      "algorithmId": 717,
+      "algorithmName": "LasrDly<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 758,
+      "name": "Shaper->Reverb",
+      "algorithmId": 718,
+      "algorithmName": "Shaper<>Reverb",
+      "size": 2
+    },
+    {
+      "id": 759,
+      "name": "MnPitcher+Chorus",
+      "algorithmId": 720,
+      "algorithmName": "MonoPitcher+Chor",
+      "size": 2
+    },
+    {
+      "id": 760,
+      "name": "MnPitcher+Flange",
+      "algorithmId": 721,
+      "algorithmName": "MonoPitcher+Flan",
+      "size": 2
+    },
+    {
+      "id": 761,
+      "name": "Pitcher+Chor+Dly",
+      "algorithmId": 722,
+      "algorithmName": "Pitcher+Chor+Dly",
+      "size": 2
+    },
+    {
+      "id": 762,
+      "name": "Pitcher+Flng+Dly",
+      "algorithmId": 723,
+      "algorithmName": "Pitcher+Flan+Dly",
+      "size": 2
+    },
+    {
+      "id": 763,
+      "name": "SubtleDistortion",
+      "algorithmId": 724,
+      "algorithmName": "Mono Distortion",
+      "size": 1
+    },
+    {
+      "id": 764,
+      "name": "Synth Distortion",
+      "algorithmId": 727,
+      "algorithmName": "PolyDistort + EQ",
+      "size": 2
+    },
+    {
+      "id": 765,
+      "name": "Dist Cab EPiano",
+      "algorithmId": 725,
+      "algorithmName": "MonoDistort+Cab",
+      "size": 2
+    },
+    {
+      "id": 766,
+      "name": "Distortion+EQ",
+      "algorithmId": 726,
+      "algorithmName": "MonoDistort + EQ",
+      "size": 2
+    },
+    {
+      "id": 767,
+      "name": "Burnt Transistor",
+      "algorithmId": 728,
+      "algorithmName": "StereoDistort+EQ",
+      "size": 3
+    },
+    {
+      "id": 768,
+      "name": "TubeAmp DlyChor",
+      "algorithmId": 729,
+      "algorithmName": "TubeAmp<>MD>Chor",
+      "size": 3
+    },
+    {
+      "id": 769,
+      "name": "TubeAmp DlyChor2",
+      "algorithmId": 729,
+      "algorithmName": "TubeAmp<>MD>Chor",
+      "size": 3
+    },
+    {
+      "id": 770,
+      "name": "TubeAmp DlyFlnge",
+      "algorithmId": 730,
+      "algorithmName": "TubeAmp<>MD>Flan",
+      "size": 3
+    },
+    {
+      "id": 771,
+      "name": "TubeAmp Flange",
+      "algorithmId": 730,
+      "algorithmName": "TubeAmp<>MD>Flan",
+      "size": 3
+    },
+    {
+      "id": 772,
+      "name": "PolyAmp Chorus",
+      "algorithmId": 731,
+      "algorithmName": "PolyAmp<>MD>Chor",
+      "size": 3
+    },
+    {
+      "id": 773,
+      "name": "PolyAmp DlyFlnge",
+      "algorithmId": 732,
+      "algorithmName": "PolyAmp<>MD>Flan",
+      "size": 3
+    },
+    {
+      "id": 774,
+      "name": "VibrChor Rotors",
+      "algorithmId": 733,
+      "algorithmName": "VibChor+Rotor 2",
+      "size": 2
+    },
+    {
+      "id": 775,
+      "name": "SlightDistRotors",
+      "algorithmId": 734,
+      "algorithmName": "Distort + Rotary",
+      "size": 2
+    },
+    {
+      "id": 776,
+      "name": "Rotostort",
+      "algorithmId": 734,
+      "algorithmName": "Distort + Rotary",
+      "size": 2
+    },
+    {
+      "id": 777,
+      "name": "VibrChor Rotors2",
+      "algorithmId": 733,
+      "algorithmName": "VibChor+Rotor 2",
+      "size": 2
+    },
+    {
+      "id": 778,
+      "name": "Full VbCh Rotors",
+      "algorithmId": 737,
+      "algorithmName": "VibChor+Rotor 4",
+      "size": 4
+    },
+    {
+      "id": 779,
+      "name": "KB3 FXBus",
+      "algorithmId": 735,
+      "algorithmName": "KB3 FXBus",
+      "size": 4
+    },
+    {
+      "id": 780,
+      "name": "KB3 AuxFX",
+      "algorithmId": 736,
+      "algorithmName": "KB3 AuxFX",
+      "size": 3
+    },
+    {
+      "id": 782,
+      "name": "VibrChrDstRotor1",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 783,
+      "name": "VibrChrDstRotor2",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 784,
+      "name": "VibChrDstRotor3",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 785,
+      "name": "FullVbChTubeRotr",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 786,
+      "name": "ChorDlyHall 2",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 787,
+      "name": "Flange Hall 2",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 788,
+      "name": "SpeeChorusDeep",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 789,
+      "name": "Fluid Wash",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 790,
+      "name": "VC+DistRotor",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 791,
+      "name": "Slow Res Rotor",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 792,
+      "name": "Smooth Rotors",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 793,
+      "name": "Very Nazty Rotor",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 794,
+      "name": "80's Funk Guitar",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 795,
+      "name": "Mean 70'sFunkGtr",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 796,
+      "name": "Crunch Guitar",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 797,
+      "name": "Classic Gtr Dist",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 798,
+      "name": "SaturatedGtrDist",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 799,
+      "name": "TubeDist DlyChor",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 800,
+      "name": "Sweet Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 801,
+      "name": "Small Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 802,
+      "name": "Medium Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 803,
+      "name": "Large Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 804,
+      "name": "Big Gym",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 805,
+      "name": "Bright Plate 1",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 806,
+      "name": "Opera House",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 807,
+      "name": "Live Chamber",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 808,
+      "name": "Bathroom",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 809,
+      "name": "Med Large Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 810,
+      "name": "Real Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 811,
+      "name": "Drum Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 812,
+      "name": "Small Dark Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 813,
+      "name": "Small Closet",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 814,
+      "name": "Add Ambience",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 815,
+      "name": "Gated Reverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 816,
+      "name": "Reverse Reverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 817,
+      "name": "Non-Linear",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 818,
+      "name": "Slapverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 819,
+      "name": "Full Bass",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 820,
+      "name": "Room + Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 821,
+      "name": "Delay Big Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 822,
+      "name": "Chorus Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 823,
+      "name": "Chorus Smallhall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 824,
+      "name": "Chorus Med Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 825,
+      "name": "Chorus Big Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 826,
+      "name": "Chor-Delay Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 827,
+      "name": "Chor-Delay Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 828,
+      "name": "Flange-Dly Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 829,
+      "name": "Flange-Dly Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 830,
+      "name": "Stereo Chorus",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 831,
+      "name": "Stereo Flanger",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 832,
+      "name": "Stereo Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 833,
+      "name": "4-Tap Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 834,
+      "name": "Chorus Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 835,
+      "name": "Flange Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 836,
+      "name": "Chorus 4-Tap",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 837,
+      "name": "Flange 4 Tap",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 838,
+      "name": "Chorus Echo",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 839,
+      "name": "Chorus Echoverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 840,
+      "name": "Fast Flange",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 841,
+      "name": "Wash",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 842,
+      "name": "Into The Abyss",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 843,
+      "name": "Space Flanger",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 844,
+      "name": "Flange Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 845,
+      "name": "Predelay Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 846,
+      "name": "Flange Echo",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 847,
+      "name": "Rotary Club",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 848,
+      "name": "Rotary Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 849,
+      "name": "Chorus",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 850,
+      "name": "Soundbrd/rvb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 851,
+      "name": "Percussive Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 852,
+      "name": "Brt Empty Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 853,
+      "name": "Mosque Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 854,
+      "name": "New Gated",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 855,
+      "name": "Chorus Slap Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 856,
+      "name": "Chorus Bass Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 857,
+      "name": "New Chorus Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 858,
+      "name": "Spacious",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 859,
+      "name": "Wash Lead",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 860,
+      "name": "New Hall w/Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 861,
+      "name": "Rich Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 862,
+      "name": "Glass Delay",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 863,
+      "name": "Real Plate",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 864,
+      "name": "Real Niceverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 865,
+      "name": "ClassicalChamber",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 866,
+      "name": "Empty Stage",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 867,
+      "name": "Long & Narrow",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 868,
+      "name": "Far Bloom",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 869,
+      "name": "Floyd Hall",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 870,
+      "name": "With A Mic",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 900,
+      "name": "Basic Env Filter",
+      "algorithmId": 900,
+      "algorithmName": "Env Follow Filt",
+      "size": 2
+    },
+    {
+      "id": 901,
+      "name": "Phunk Env Filter",
+      "algorithmId": 900,
+      "algorithmName": "Env Follow Filt",
+      "size": 2
+    },
+    {
+      "id": 902,
+      "name": "Synth Env Filter",
+      "algorithmId": 900,
+      "algorithmName": "Env Follow Filt",
+      "size": 2
+    },
+    {
+      "id": 903,
+      "name": "Bass Env Filter",
+      "algorithmId": 900,
+      "algorithmName": "Env Follow Filt",
+      "size": 2
+    },
+    {
+      "id": 904,
+      "name": "EPno Env Filter",
+      "algorithmId": 900,
+      "algorithmName": "Env Follow Filt",
+      "size": 2
+    },
+    {
+      "id": 905,
+      "name": "Trig Env Filter",
+      "algorithmId": 901,
+      "algorithmName": "TrigEnvelopeFilt",
+      "size": 2
+    },
+    {
+      "id": 906,
+      "name": "LFO Sweep Filter",
+      "algorithmId": 902,
+      "algorithmName": "LFO Sweep Filter",
+      "size": 2
+    },
+    {
+      "id": 907,
+      "name": "DoubleRiseFilter",
+      "algorithmId": 902,
+      "algorithmName": "LFO Sweep Filter",
+      "size": 2
+    },
+    {
+      "id": 908,
+      "name": "Circle Bandsweep",
+      "algorithmId": 902,
+      "algorithmName": "LFO Sweep Filter",
+      "size": 2
+    },
+    {
+      "id": 909,
+      "name": "Resonant Filter",
+      "algorithmId": 903,
+      "algorithmName": "Resonant Filter",
+      "size": 1
+    },
+    {
+      "id": 910,
+      "name": "Dual Res Filter",
+      "algorithmId": 904,
+      "algorithmName": "Dual Res Filter",
+      "size": 1
+    },
+    {
+      "id": 911,
+      "name": "EQ Morpher",
+      "algorithmId": 905,
+      "algorithmName": "EQ Morpher",
+      "size": 4
+    },
+    {
+      "id": 912,
+      "name": "Mono EQ Morpher",
+      "algorithmId": 906,
+      "algorithmName": "Mono EQ Morpher",
+      "size": 2
+    },
+    {
+      "id": 913,
+      "name": "Ring Modulator",
+      "algorithmId": 907,
+      "algorithmName": "Ring Modulator",
+      "size": 1
+    },
+    {
+      "id": 914,
+      "name": "PitcherA",
+      "algorithmId": 908,
+      "algorithmName": "Pitcher",
+      "size": 1
+    },
+    {
+      "id": 915,
+      "name": "PitcherB",
+      "algorithmId": 908,
+      "algorithmName": "Pitcher",
+      "size": 1
+    },
+    {
+      "id": 916,
+      "name": "SuperShaper",
+      "algorithmId": 909,
+      "algorithmName": "Super Shaper",
+      "size": 1
+    },
+    {
+      "id": 917,
+      "name": "SubtleDrumShape",
+      "algorithmId": 910,
+      "algorithmName": "3 Band Shaper",
+      "size": 2
+    },
+    {
+      "id": 918,
+      "name": "3 Band Shaper",
+      "algorithmId": 910,
+      "algorithmName": "3 Band Shaper",
+      "size": 2
+    },
+    {
+      "id": 919,
+      "name": "LaserVerb",
+      "algorithmId": 913,
+      "algorithmName": "LaserVerb",
+      "size": 3
+    },
+    {
+      "id": 920,
+      "name": "Laserwaves",
+      "algorithmId": 913,
+      "algorithmName": "LaserVerb",
+      "size": 3
+    },
+    {
+      "id": 921,
+      "name": "Crystallizer",
+      "algorithmId": 913,
+      "algorithmName": "LaserVerb",
+      "size": 3
+    },
+    {
+      "id": 922,
+      "name": "Spry Young Boy",
+      "algorithmId": 912,
+      "algorithmName": "LaserVerb Lite",
+      "size": 2
+    },
+    {
+      "id": 923,
+      "name": "Cheap LaserVerb",
+      "algorithmId": 912,
+      "algorithmName": "LaserVerb Lite",
+      "size": 2
+    },
+    {
+      "id": 924,
+      "name": "Drum Neurezonate",
+      "algorithmId": 911,
+      "algorithmName": "Mono LaserVerb",
+      "size": 1
+    },
+    {
+      "id": 925,
+      "name": "LazerfazerEchoes",
+      "algorithmId": 911,
+      "algorithmName": "Mono LaserVerb",
+      "size": 1
+    },
+    {
+      "id": 926,
+      "name": "Simple Lazerverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 927,
+      "name": "TripFilter",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 928,
+      "name": "Gated Laserverb",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 929,
+      "name": "Waterford",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 930,
+      "name": "A little dirty",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 931,
+      "name": "Slight Overload",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 932,
+      "name": "Blown Speaker",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 933,
+      "name": "Ring Linger",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 934,
+      "name": "Drum Shaper",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 935,
+      "name": "Aliaser",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 936,
+      "name": "Quantize+Alias1",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 937,
+      "name": "Quantize+Alias2",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 938,
+      "name": "Drum Mortar",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 939,
+      "name": "Superphasulate",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 940,
+      "name": "Rich Noodle",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 941,
+      "name": "Nickel Chorus",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 942,
+      "name": "HF Stimulator",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 943,
+      "name": "OddHarmSuppress",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 944,
+      "name": "AM Radio",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 945,
+      "name": "U-Shaped EQ",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 946,
+      "name": "Drum Crusher",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 947,
+      "name": "Vocal Room",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 948,
+      "name": "Vocal Stage",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 949,
+      "name": "Mid Compressor",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 950,
+      "name": "HKCompressor 3:1",
+      "algorithmId": 950,
+      "algorithmName": "HardKneeCompress",
+      "size": 1
+    },
+    {
+      "id": 951,
+      "name": "DrumKompress 5:1",
+      "algorithmId": 950,
+      "algorithmName": "HardKneeCompress",
+      "size": 1
+    },
+    {
+      "id": 952,
+      "name": "SK FB Comprs 6:1",
+      "algorithmId": 951,
+      "algorithmName": "SoftKneeCompress",
+      "size": 1
+    },
+    {
+      "id": 953,
+      "name": "SKCompressor 9:1",
+      "algorithmId": 951,
+      "algorithmName": "SoftKneeCompress",
+      "size": 1
+    },
+    {
+      "id": 954,
+      "name": "SKCompressr 12:1",
+      "algorithmId": 951,
+      "algorithmName": "SoftKneeCompress",
+      "size": 1
+    },
+    {
+      "id": 955,
+      "name": "Compress w/SC EQ",
+      "algorithmId": 953,
+      "algorithmName": "Compress w/SC EQ",
+      "size": 2
+    },
+    {
+      "id": 956,
+      "name": "Compress/Expand",
+      "algorithmId": 954,
+      "algorithmName": "Compress/Expand",
+      "size": 2
+    },
+    {
+      "id": 957,
+      "name": "Comprs/Expnd +EQ",
+      "algorithmId": 955,
+      "algorithmName": "Comp/Exp + EQ",
+      "size": 3
+    },
+    {
+      "id": 958,
+      "name": "Reverb>Compress",
+      "algorithmId": 719,
+      "algorithmName": "Reverb<>Compress",
+      "size": 3
+    },
+    {
+      "id": 959,
+      "name": "Reverb>Compress2",
+      "algorithmId": 719,
+      "algorithmName": "Reverb<>Compress",
+      "size": 3
+    },
+    {
+      "id": 960,
+      "name": "Drum Comprs>Rvb",
+      "algorithmId": 719,
+      "algorithmName": "Reverb<>Compress",
+      "size": 3
+    },
+    {
+      "id": 961,
+      "name": "Expander",
+      "algorithmId": 952,
+      "algorithmName": "Expander",
+      "size": 1
+    },
+    {
+      "id": 962,
+      "name": "3Band Compressor",
+      "algorithmId": 956,
+      "algorithmName": "Compress 3 Band",
+      "size": 4
+    },
+    {
+      "id": 963,
+      "name": "Simple Gate",
+      "algorithmId": 957,
+      "algorithmName": "Gate",
+      "size": 1
+    },
+    {
+      "id": 964,
+      "name": "Gate w/ SC EQ",
+      "algorithmId": 958,
+      "algorithmName": "Super Gate",
+      "size": 2
+    },
+    {
+      "id": 965,
+      "name": "Graphic EQ",
+      "algorithmId": 968,
+      "algorithmName": "Graphic EQ",
+      "size": 3
+    },
+    {
+      "id": 966,
+      "name": "5 Band EQ",
+      "algorithmId": 970,
+      "algorithmName": "5 Band EQ",
+      "size": 3
+    },
+    {
+      "id": 967,
+      "name": "ContourGraphicEQ",
+      "algorithmId": 969,
+      "algorithmName": "Dual Graphic EQ",
+      "size": 3
+    },
+    {
+      "id": 968,
+      "name": "Dance GraphicEQ",
+      "algorithmId": 969,
+      "algorithmName": "Dual Graphic EQ",
+      "size": 3
+    },
+    {
+      "id": 969,
+      "name": "OldPianoEnhancer",
+      "algorithmId": 959,
+      "algorithmName": "2 Band Enhancer",
+      "size": 1
+    },
+    {
+      "id": 970,
+      "name": "3 Band Enhancer",
+      "algorithmId": 960,
+      "algorithmName": "3 Band Enhancer",
+      "size": 2
+    },
+    {
+      "id": 971,
+      "name": "3 Band Enhancer2",
+      "algorithmId": 960,
+      "algorithmName": "3 Band Enhancer",
+      "size": 2
+    },
+    {
+      "id": 972,
+      "name": "Extreem Enhancer",
+      "algorithmId": 960,
+      "algorithmName": "3 Band Enhancer",
+      "size": 2
+    },
+    {
+      "id": 973,
+      "name": "Tremolo",
+      "algorithmId": 962,
+      "algorithmName": "Tremolo BPM",
+      "size": 1
+    },
+    {
+      "id": 974,
+      "name": "Dual Panner",
+      "algorithmId": 964,
+      "algorithmName": "Dual AutoPanner",
+      "size": 2
+    },
+    {
+      "id": 975,
+      "name": "SRS",
+      "algorithmId": 965,
+      "algorithmName": "SRS",
+      "size": 1
+    },
+    {
+      "id": 976,
+      "name": "Widespread",
+      "algorithmId": 966,
+      "algorithmName": "Stereo Image",
+      "size": 1
+    },
+    {
+      "id": 977,
+      "name": "Mono->Stereo",
+      "algorithmId": 967,
+      "algorithmName": "Mono -> Stereo",
+      "size": 1
+    },
+    {
+      "id": 979,
+      "name": "Simple Panner",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 980,
+      "name": "Big Bass EQ",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 981,
+      "name": "Poly Pitcher",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 982,
+      "name": "CheapVoxChanger",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 983,
+      "name": "Hip Hop Aura",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 984,
+      "name": "Woodenize",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 985,
+      "name": "Marimbafication",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 986,
+      "name": "Frequency Offset",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 987,
+      "name": "Drum Loosener",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 988,
+      "name": "Drum Tightener",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 989,
+      "name": "Vox Honker",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 990,
+      "name": "Glacial Canyon",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 991,
+      "name": "Spring Thing",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 992,
+      "name": "Contact",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 993,
+      "name": "Drum Frightener",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 994,
+      "name": "Mad Hatter",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 995,
+      "name": "Fallout",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 996,
+      "name": "Ascension",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 997,
+      "name": "60Hz Buzz Kill",
+      "algorithmId": null,
+      "algorithmName": "TBD",
+      "size": null,
+      "source": "K2500 KDFXv2 additions.pdf"
+    },
+    {
+      "id": 998,
+      "name": "Stereo Analyze",
+      "algorithmId": 999,
+      "algorithmName": "Stereo Analyze",
+      "size": 1
+    },
+    {
+      "id": 999,
+      "name": "FX Mod Diag",
+      "algorithmId": 998,
+      "algorithmName": "FXMod Diagnostic",
+      "size": 1
+    }
+  ]
+}

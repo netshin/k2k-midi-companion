@@ -12,8 +12,8 @@
     "details": "This control source generates a control signal of -1 when the value of the control to\nwhich it’s assigned is at its minimum, and +1 when the control is at its maximum.\nFor example, if you had the MPress control assignment parameter assigned to send\nBMPress, and you had Src1 on a program layer’s PITCH page assigned to BMPress,\nwith its depth parameter set to 1200 cents, then the layer would be transposed\ndown an octave when no pressure (value 0) was applied to your controller’s keys\n(assuming it sends mono pressure). Maximum pressure (value 127) would\ntranspose the layer up an octave, while a pressure level of 64 would leave the pitch\nunchanged."
   },
   "35": {
-    "label": "Pitch Wheel Message (PWheel)",
-    "details": "The K2600 is hard-wired to respond to this message. Any parameter with PWheel\nassigned as its value will be affected when your MIDI controller’s Pitch Wheel is\nmoved."
+    "label": "Pitch Wheel Message",
+    "details": "The K2600 is hard-wired to respond to this message. Any parameter with Pitch Wheel\nassigned as its value will be affected when your MIDI controller’s Pitch Wheel is\nmoved."
   },
   "36": {
     "label": "Bipolar Mod Wheel (Bi-Mwl)",

@@ -40,6 +40,27 @@
         "k2600_dsp_block_details.json",
         "k2600_keymaps.json"
       ]
+    },
+    {
+      "key": "kurzweil-k2500",
+      "manufacturer": "Kurzweil",
+      "model": "K2500",
+      "modelId": "k2500",
+      "default": false,
+      "configPath": "Kurzweil/K2500/k2500_model.json",
+      "allowedDataFiles": [
+        "k2500_model.json",
+        "k2500_programs.json",
+        "k2500_setups.json",
+        "k2500_controllers.json",
+        "k2500_mod_sources.json",
+        "k2500_kdfx_algorithms.json",
+        "k2500_kdfx_presets.json",
+        "k2500_kdfx_studios.json",
+        "k2500_kdfx_lookup.json",
+        "k2500_keymaps.json",
+        "k2500_fx_presets.json"
+      ]
     }
   ]
 }

@@ -121,7 +121,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Chorus LFODepth+Rate, (aux) Plate Level cut+PreDly adjustment"
+        "description": "Chorus LFO Depth+Rate, (aux) Plate Level cut+Predelay adjustment"
       },
       {
         "type": "MIDI",
@@ -131,7 +131,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Chorus LFODepth"
+        "description": "Chorus LFO Depth"
       },
       {
         "type": "MIDI",
@@ -366,7 +366,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Drawbar 4, EnvCtl: Imp"
+        "description": "Drawbar 4, Envelope control: Impact"
       },
       {
         "type": "MIDI",
@@ -391,7 +391,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Vib/Chorus I/O"
+        "description": "toggle: Vib/Chorus in/out"
       },
       {
         "type": "Breath",
@@ -440,17 +440,17 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "HFDamp, Perc Decay"
+        "description": "HF damping, Perc Decay"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Cabinet Dist Drive + Lopass adjustment"
+        "description": "Cabinet Dist Drive + Low-pass adjustment"
       },
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: VibeChorus I/O"
+        "description": "toggle: VibeChorus in/out"
       }
     ]
   },
@@ -495,17 +495,17 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "HFDamp, Perc Decay"
+        "description": "HF damping, Perc Decay"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Cabinet Dist Drive+Lopass adjustment"
+        "description": "Cabinet Dist Drive+Low-pass adjustment"
       },
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: VibeChorus I/O"
+        "description": "toggle: VibeChorus in/out"
       }
     ]
   },
@@ -565,7 +565,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "All Pass Frequency"
+        "description": "All-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -575,7 +575,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "InEQ: Treblele"
+        "description": "InEQ: Treble"
       },
       {
         "type": "MIDI",
@@ -630,7 +630,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Lo Pass Res Filter Cut Off (duller)"
+        "description": "Lo Pass Resonance Filter Cut Off (duller)"
       },
       {
         "type": "MIDI",
@@ -640,12 +640,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lo Pass Res Filter Cut Off (Brighter)"
+        "description": "Lo Pass Resonance Filter Cut Off (Brighter)"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Envelope Atk Control"
+        "description": "Envelope Attack Control"
       },
       {
         "type": "MIDI",
@@ -789,7 +789,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Cutoff"
+        "description": "Low-pass Cutoff"
       },
       {
         "type": "MIDI",
@@ -824,12 +824,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Bandpass Center Frequency"
+        "description": "Band-pass Center Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Bandpass Width"
+        "description": "Band-pass Width"
       },
       {
         "type": "MIDI",
@@ -849,7 +849,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "(Aux) Treblele Shelf Frequency"
+        "description": "(Aux) Treble Shelf Frequency"
       }
     ]
   },
@@ -869,12 +869,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Att, LoPass Frequency, Xfade Lo/Hi Vox(8veV)"
+        "description": "Envelope control: Att, Low-pass Frequency, Xfade Lo/Hi Vox(8veV)"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Rel, Panner pos, 8ve jump(CathV)"
+        "description": "Envelope control: Release, Panner pos, octave jump(CathV)"
       },
       {
         "type": "MIDI",
@@ -913,17 +913,17 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency cut+Res (string)"
+        "description": "Low-pass Frequency cut+Resonance (string)"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency cut (vox)"
+        "description": "Low-pass Frequency cut (vox)"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Lyr detune, LoPass Res"
+        "description": "Layer detune, Low-pass Resonance"
       },
       {
         "type": "MIDI",
@@ -957,7 +957,7 @@
       },
       {
         "type": "MPress",
-        "description": "InEQ Bass & Treblele"
+        "description": "InEQ Bass & Treble"
       }
     ]
   },
@@ -1086,17 +1086,17 @@
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(aux) rvb Levels, Wet/Dry"
+        "description": "(aux) reverb Levels, Wet/Dry"
       },
       {
         "type": "MIDI",
         "number": 26,
-        "description": "SRS Parameters (guitar Lyrs)"
+        "description": "SRS Parameters (guitar Layers)"
       },
       {
         "type": "MIDI",
         "number": 27,
-        "description": "(aux) rvb Times"
+        "description": "(aux) reverb Times"
       },
       {
         "type": "MIDI",
@@ -1145,22 +1145,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr Enable"
+        "description": "Layer Enable"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att+Dec"
+        "description": "Envelope control: Att+Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -1175,7 +1175,7 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "Chamber HFDamp"
+        "description": "Chamber HF damping"
       },
       {
         "type": "MIDI",
@@ -1185,7 +1185,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Pitch I/O"
+        "description": "toggle: Pitch in/out"
       }
     ]
   },
@@ -1325,7 +1325,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall Time+HFDamp, Chorus Wet/Dry"
+        "description": "Hall Time+HF damping, Chorus Wet/Dry"
       },
       {
         "type": "MIDI",
@@ -1438,17 +1438,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp+Att"
+        "description": "Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Dec"
+        "description": "Envelope control: Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -1458,7 +1458,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall PreDly+Time"
+        "description": "Hall Predelay+Time"
       },
       {
         "type": "MIDI",
@@ -1521,7 +1521,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr Enable"
+        "description": "Layer Enable"
       },
       {
         "type": "MIDI",
@@ -1536,7 +1536,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Dec+Rel"
+        "description": "Envelope control: Decay+Release"
       },
       {
         "type": "MIDI",
@@ -1565,7 +1565,7 @@
       },
       {
         "type": "MPress",
-        "description": "Lyr Balance"
+        "description": "Layer Balance"
       }
     ]
   },
@@ -1614,7 +1614,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Treblele EQ (KDFX)"
+        "description": "Treble EQ (KDFX)"
       },
       {
         "type": "MIDI",
@@ -1638,22 +1638,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "toggle: Lyrs"
+        "description": "toggle: Layers"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass adjustment, Shaper amt, EnvCtl: Imp+Att"
+        "description": "Low-pass adjustment, Shaper amt, Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp, ParaBass+HighPass Frequency"
+        "description": "Envelope control: Impact, ParaBass+High-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel, InEQ: Bass"
+        "description": "Envelope control: Release, InEQ: Bass"
       },
       {
         "type": "MIDI",
@@ -1673,7 +1673,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Comp: Att+Rel Time"
+        "description": "Comp: Att+Release Time"
       },
       {
         "type": "MIDI",
@@ -1697,7 +1697,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Shaper, Para Treblele boost"
+        "description": "Shaper, Para Treble boost"
       },
       {
         "type": "MIDI",
@@ -1765,12 +1765,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res"
+        "description": "Low-pass Resonance"
       },
       {
         "type": "MIDI",
@@ -1800,7 +1800,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Room HFDamp, Enhc Drive adjustment"
+        "description": "Room HF damping, Enhc Drive adjustment"
       },
       {
         "type": "MIDI",
@@ -1824,12 +1824,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency, Impact"
+        "description": "Low-pass Frequency, Impact"
       },
       {
         "type": "MIDI",
@@ -1882,27 +1882,27 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Res"
+        "description": "Low-pass Resonance"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -1946,17 +1946,17 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency, Low Pass Separation, Envelope Decay Control"
+        "description": "Low-pass Frequency, Low-pass Separation, Envelope Decay Control"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Resonance"
+        "description": "Low-pass Resonance"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Low Pass Separation"
+        "description": "Low-pass Separation"
       },
       {
         "type": "MIDI",
@@ -1995,7 +1995,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Saw+Shp Pitch, Atk Control"
+        "description": "Saw+Shp Pitch, Attack Control"
       },
       {
         "type": "MIDI",
@@ -2049,12 +2049,12 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Kicks, Snares, Toms, Cymbal"
+        "description": "Envelope control: Kicks, Snares, Toms, Cymbal"
       },
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(FX1)-(aux) Hall Level, (FX2) Plate PreDly"
+        "description": "(FX1)-(aux) Hall Level, (FX2) Plate Predelay"
       },
       {
         "type": "MIDI",
@@ -2158,7 +2158,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Kicks+Snares"
+        "description": "Envelope control: Kicks+Snares"
       },
       {
         "type": "MIDI",
@@ -2267,12 +2267,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Kicks, Toms"
+        "description": "Envelope control: Kicks, Toms"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Snares, HiHats, Crash2, NoizeToms"
+        "description": "Envelope control: Snares, HiHats, Crash2, NoizeToms"
       },
       {
         "type": "MIDI",
@@ -2287,7 +2287,7 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "Hall Time, Room Decay Time+HFDamp"
+        "description": "Hall Time, Room Decay Time+HF damping"
       },
       {
         "type": "MIDI",
@@ -2297,7 +2297,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: 8-Tap I/O (Sys), Room Level adjustment"
+        "description": "toggle: 8-Tap in/out (Sys), Room Level adjustment"
       }
     ]
   },
@@ -2396,7 +2396,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "InEQ: Treblele"
+        "description": "InEQ: Treble"
       },
       {
         "type": "MIDI",
@@ -2406,7 +2406,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "(Aux) Reverb Time, Treblele Shelf Gain"
+        "description": "(Aux) Reverb Time, Treble Shelf Gain"
       },
       {
         "type": "MIDI",
@@ -2426,7 +2426,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "EnvCtl: Rel, Tremolo"
+        "description": "Envelope control: Release, Tremolo"
       },
       {
         "type": "MIDI",
@@ -2436,7 +2436,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LP / HPass Frequency, HFStim Drive"
+        "description": "LP / High-pass Frequency, HFStim Drive"
       },
       {
         "type": "MIDI",
@@ -2456,7 +2456,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Room + Compressor/Hall ^ Room I/O"
+        "description": "toggle: Room + Compressor/Hall ^ Room in/out"
       }
     ]
   },
@@ -2506,27 +2506,27 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, LoPass Frequency"
+        "description": "Vibrato, Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr enable"
+        "description": "Layer enable"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr AltCtl, LoPass Frequency, Notch Frequency, ParaTreble Frequency"
+        "description": "Layer Alternate control, Low-pass Frequency, Notch Frequency, ParaTreble Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Notch Width, LoPass Res, EnvCtl: Imp+Att"
+        "description": "Notch Width, Low-pass Resonance, Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Dec+Rel"
+        "description": "Envelope control: Decay+Release"
       },
       {
         "type": "MIDI",
@@ -2536,7 +2536,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall HFDamp+Decay Time"
+        "description": "Hall HF damping+Decay Time"
       },
       {
         "type": "MIDI",
@@ -2551,15 +2551,15 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Hall PreDly + room size adjustment"
+        "description": "Hall Predelay + room size adjustment"
       },
       {
         "type": "MPress",
-        "description": "Vibrato, LoPass Frequency+Res, Shape adjustment"
+        "description": "Vibrato, Low-pass Frequency+Resonance, Shape adjustment"
       },
       {
-        "type": "ChanSt",
-        "description": "Lyr AltCtl, EnvCtl: Rel"
+        "type": "Channel State",
+        "description": "Layer Alternate control, Envelope control: Release"
       }
     ]
   },
@@ -2569,7 +2569,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, Envelope Control Atk"
+        "description": "Vibrato, Envelope Control Attack"
       },
       {
         "type": "MIDI",
@@ -2603,17 +2603,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency+Res"
+        "description": "Low-pass Frequency+Resonance"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp, InEQ: Bass"
+        "description": "Envelope control: Impact, InEQ: Bass"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel, InEQ: Treble"
+        "description": "Envelope control: Release, InEQ: Treble"
       },
       {
         "type": "MIDI",
@@ -2628,12 +2628,12 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "Chamb + Room HFDamp, Dist Drive"
+        "description": "Chamb + Room HF damping, Dist Drive"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Dist LoPass Frequency"
+        "description": "Dist Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -2657,12 +2657,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Bandpass Center Frequency"
+        "description": "Band-pass Center Frequency"
       },
       {
         "type": "MIDI",
@@ -2672,7 +2672,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Treblele Shelf EQ Gain (KDFX)"
+        "description": "Treble Shelf EQ Gain (KDFX)"
       },
       {
         "type": "MIDI",
@@ -2706,7 +2706,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -2735,7 +2735,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "LoPass adjustment"
+        "description": "Low-pass adjustment"
       },
       {
         "type": "MIDI",
@@ -2750,17 +2750,17 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "Room PreDly"
+        "description": "Room Predelay"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Room HFDamp"
+        "description": "Room HF damping"
       },
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Enhc I/O"
+        "description": "Enhc in/out"
       },
       {
         "type": "MPress",
@@ -2779,7 +2779,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -2799,7 +2799,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Sweep Filt I/O"
+        "description": "Sweep Filt in/out"
       },
       {
         "type": "MPress",
@@ -2818,7 +2818,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "InEQ: Bass, LoPass Frequency"
+        "description": "InEQ: Bass, Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -2828,12 +2828,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp, Att+Dec"
+        "description": "Envelope control: Impact, Att+Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -2843,7 +2843,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Room Wet/Dry + HFDamp, InEQ: Treble Frequency"
+        "description": "Room Wet/Dry + HF damping, InEQ: Treble Frequency"
       },
       {
         "type": "MIDI",
@@ -2858,7 +2858,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Dist+EQ I/O, Room type"
+        "description": "toggle: Dist+EQ in/out, Room type"
       },
       {
         "type": "MPress",
@@ -2935,7 +2935,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -3000,7 +3000,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, LoPass sep (expression / dynamic Control)"
+        "description": "Vibrato, Low-pass sep (expression / dynamic Control)"
       },
       {
         "type": "MIDI",
@@ -3010,7 +3010,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency+Res cut"
+        "description": "Low-pass Frequency+Resonance cut"
       },
       {
         "type": "MIDI",
@@ -3020,7 +3020,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Ens Strings EnvCtl: Att"
+        "description": "Ens Strings Envelope control: Att"
       },
       {
         "type": "MIDI",
@@ -3045,19 +3045,19 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: (Lyr 3+4)"
+        "description": "toggle: (Layer 3+4)"
       },
       {
         "type": "Info",
-        "description": "Chapel+Hall, (Lyr 1) Hall+Chapel"
+        "description": "Chapel+Hall, (Layer 1) Hall+Chapel"
       },
       {
         "type": "MPress",
         "description": "Ens Strings Vibrato"
       },
       {
-        "type": "SostPd",
-        "description": "toggle: Solo Strg I/O"
+        "type": "Sostenuto Pedal",
+        "description": "toggle: Solo Strg in/out"
       }
     ]
   },
@@ -3136,22 +3136,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "toggle: Lyr 1 ^ Lyr 3"
+        "description": "toggle: Layer 1 ^ Layer 3"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr 1 up p5th ^ Lyr 3 up 8ve"
+        "description": "Layer 1 up p5th ^ Layer 3 up octave"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Imp+Rel"
+        "description": "Envelope control: Impact+Release"
       },
       {
         "type": "MIDI",
@@ -3240,7 +3240,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency,Envelope Control Attack & Release"
+        "description": "Low-pass Frequency,Envelope Control Attack & Release"
       },
       {
         "type": "MIDI",
@@ -3289,12 +3289,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency, EnvCtl: Att+Rel"
+        "description": "Low-pass Frequency, Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res"
+        "description": "Low-pass Resonance"
       },
       {
         "type": "MIDI",
@@ -3338,22 +3338,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "EnvCtl: Att, Notch Frequency"
+        "description": "Envelope control: Att, Notch Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "saw 8ve jump (Lyr 1)"
+        "description": "saw octave jump (Layer 1)"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Impact"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -3373,7 +3373,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Chorus Feedback; Dist cab LoPass"
+        "description": "Chorus Feedback; Dist cab Low-pass"
       },
       {
         "type": "MIDI",
@@ -3397,12 +3397,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency+Res"
+        "description": "Low-pass Frequency+Resonance"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency cut"
+        "description": "Low-pass Frequency cut"
       },
       {
         "type": "MIDI",
@@ -3422,7 +3422,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall PreDly+HFDamp"
+        "description": "Hall Predelay+HF damping"
       },
       {
         "type": "MIDI",
@@ -3441,7 +3441,7 @@
       },
       {
         "type": "Breath",
-        "description": "LoPass Frequency+Res adjustment"
+        "description": "Low-pass Frequency+Resonance adjustment"
       },
       {
         "type": "MPress",
@@ -3470,7 +3470,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Envelope Control, attack  & decay"
+        "description": "Envelope Control, attack & decay"
       },
       {
         "type": "MIDI",
@@ -3519,7 +3519,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -3568,7 +3568,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency & Res"
+        "description": "Low-pass Frequency & Resonance"
       },
       {
         "type": "MIDI",
@@ -3617,12 +3617,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "4P Low Pass Separation and Resonance"
+        "description": "4P Low-pass Separation and Resonance"
       },
       {
         "type": "MIDI",
@@ -3651,12 +3651,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr 1 Octave Pitch Shift"
+        "description": "Layer 1 Octave Pitch Shift"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr 2 Low Pass Frequency"
+        "description": "Layer 2 Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -3666,7 +3666,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Treblele Shelf EQ Gain (KDFX)"
+        "description": "Treble Shelf EQ Gain (KDFX)"
       },
       {
         "type": "MIDI",
@@ -3720,7 +3720,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Envelope Control Atk Rate, Decay Rate"
+        "description": "Envelope Control Attack Rate, Decay Rate"
       },
       {
         "type": "MIDI",
@@ -3740,7 +3740,7 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "(Aux) Delay level, Delay Feedback leve"
+        "description": "(Aux) Delay level, Delay Feedback level"
       },
       {
         "type": "MIDI",
@@ -3832,7 +3832,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Envelope Control: Atk Rate, Dec Rate"
+        "description": "Envelope Control: Attack Rate, Decay Rate"
       },
       {
         "type": "MIDI",
@@ -3925,7 +3925,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "High Pass Frequency"
+        "description": "High-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -3970,12 +3970,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "All Pass Frequency, Lyr 2 Detune"
+        "description": "All-pass Frequency, Layer 2 Detune"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr 3 Pan Position"
+        "description": "Layer 3 Pan Position"
       },
       {
         "type": "MIDI",
@@ -4004,7 +4004,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -4034,7 +4034,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -4074,7 +4074,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Hall Time+PreDly adjustment"
+        "description": "Hall Time+Predelay adjustment"
       },
       {
         "type": "MPress",
@@ -4093,7 +4093,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -4103,12 +4103,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "4P Low Pass Separation"
+        "description": "4P Low-pass Separation"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Octave Shift Lyr 1"
+        "description": "Octave Shift Layer 1"
       },
       {
         "type": "MIDI",
@@ -4158,7 +4158,7 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "FX2 Frequencyuency, Out Gain"
+        "description": "FX2 Frequency, Out Gain"
       },
       {
         "type": "MIDI",
@@ -4182,22 +4182,22 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Band Pass Frequency, Width, Amplitude"
+        "description": "Band-pass Frequency, Width, Amplitude"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr enable"
+        "description": "Layer enable"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "BandPass Frequency + Width - Lyr 2"
+        "description": "Band-pass Frequency + Width - Layer 2"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "BandPass Width - Lyr 3"
+        "description": "Band-pass Width - Layer 3"
       },
       {
         "type": "MIDI",
@@ -4231,7 +4231,7 @@
       },
       {
         "type": "MPress",
-        "description": "BandPass Frequency"
+        "description": "Band-pass Frequency"
       }
     ]
   },
@@ -4251,12 +4251,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "4P Low Pass Separation"
+        "description": "4P Low-pass Separation"
       },
       {
         "type": "MIDI",
@@ -4311,7 +4311,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -4321,7 +4321,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "LP2 Res Gain"
+        "description": "LP2 Resonance Gain"
       },
       {
         "type": "MIDI",
@@ -4341,7 +4341,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -4591,7 +4591,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Soundboard Rvb Enable"
+        "description": "Soundboard reverb Enable"
       },
       {
         "type": "Info",
@@ -4618,7 +4618,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Soundboard Rvb Enable"
+        "description": "Soundboard reverb Enable"
       },
       {
         "type": "Info",
@@ -4690,12 +4690,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Envelope Control: Atk"
+        "description": "Envelope Control: Attack"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel, Bass EQ (KDFX)"
+        "description": "Envelope control: Release, Bass EQ (KDFX)"
       },
       {
         "type": "MIDI",
@@ -4720,7 +4720,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "4Tap I/O"
+        "description": "4Tap in/out"
       }
     ]
   },
@@ -4744,7 +4744,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -4784,12 +4784,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Modulator Pitch Lyr 2"
+        "description": "Modulator Pitch Layer 2"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Modulator Pitch Lyr 3"
+        "description": "Modulator Pitch Layer 3"
       },
       {
         "type": "MIDI",
@@ -4833,7 +4833,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency & Res"
+        "description": "Low-pass Frequency & Resonance"
       },
       {
         "type": "MIDI",
@@ -4943,17 +4943,17 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "HFDamp, Perc Decay"
+        "description": "HF damping, Perc Decay"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Cabinet Dist Drive+Lopass"
+        "description": "Cabinet Dist Drive+Low-pass"
       },
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: VibeChorus I/O"
+        "description": "toggle: VibeChorus in/out"
       }
     ]
   },
@@ -5018,7 +5018,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Disable Layer 3, Para EQ Width Lyr 2"
+        "description": "Disable Layer 3, Para EQ Width Layer 2"
       },
       {
         "type": "MIDI",
@@ -5028,7 +5028,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Hi Pass Resonance, Envelope Control: Atk"
+        "description": "Hi Pass Resonance, Envelope Control: Attack"
       },
       {
         "type": "MIDI",
@@ -5048,7 +5048,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "Treblele Shelve Frequency"
+        "description": "Treble Shelve Frequency"
       }
     ]
   },
@@ -5063,7 +5063,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -5093,7 +5093,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Chorus I/O, Hall HFDamp+PreDly"
+        "description": "toggle: Chorus in/out, Hall HF damping+Predelay"
       }
     ]
   },
@@ -5133,7 +5133,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Treblele Shelve EQ"
+        "description": "Treble Shelve EQ"
       },
       {
         "type": "MIDI",
@@ -5163,7 +5163,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Treblele Shelf EQ"
+        "description": "Treble Shelf EQ"
       },
       {
         "type": "MIDI",
@@ -5213,12 +5213,12 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "4P Low Pass Separation"
+        "description": "4P Low-pass Separation"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency, Resonance"
+        "description": "Low-pass Frequency, Resonance"
       },
       {
         "type": "MIDI",
@@ -5306,7 +5306,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -5345,7 +5345,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Envelope Control: Atk & Release"
+        "description": "Envelope Control: Attack & Release"
       },
       {
         "type": "MIDI",
@@ -5365,12 +5365,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr XFade"
+        "description": "Layer XFade"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Rel, Notch + ParaTreble Frequency"
+        "description": "Envelope control: Release, Notch + ParaTreble Frequency"
       },
       {
         "type": "MIDI",
@@ -5434,7 +5434,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Treblele EQ (KDFX)"
+        "description": "Treble EQ (KDFX)"
       },
       {
         "type": "MIDI",
@@ -5556,17 +5556,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp+Att"
+        "description": "Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Dec"
+        "description": "Envelope control: Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -5576,7 +5576,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall Time+HFDamp"
+        "description": "Hall Time+HF damping"
       },
       {
         "type": "MIDI",
@@ -5620,12 +5620,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -5635,7 +5635,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall HFDamp, InEQ: Bass+Treble (Abercrmbie)"
+        "description": "Hall HF damping, InEQ: Bass+Treble (Abercrmbie)"
       },
       {
         "type": "MIDI",
@@ -5657,7 +5657,7 @@
         "description": "Vibrato"
       },
       {
-        "type": "PWheel",
+        "type": "Pitch Wheel",
         "description": "Simulates Fretboard Slide (ES335)"
       }
     ]
@@ -5678,22 +5678,22 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(aux) Hall Level, (Fx3) Rvb Time"
+        "description": "(aux) Hall Level, (Fx3) reverb Time"
       },
       {
         "type": "MIDI",
@@ -5791,7 +5791,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Treblele Shelf EQ Gain"
+        "description": "Treble Shelf EQ Gain"
       },
       {
         "type": "MIDI",
@@ -5830,7 +5830,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Enables Dist Gtr Lyrs"
+        "description": "Enables Dist Gtr Layers"
       },
       {
         "type": "MIDI",
@@ -5840,17 +5840,17 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp, Dist Drive"
+        "description": "Envelope control: Impact, Dist Drive"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(aux) FDR Hall Level, Rvb Time"
+        "description": "(aux) FDR Hall Level, reverb Time"
       },
       {
         "type": "MIDI",
@@ -5877,8 +5877,8 @@
         "description": "Vibrato, Harmonics Level"
       },
       {
-        "type": "PWheel",
-        "description": "(Dist Lyr) +2/-12 Pitch Bend"
+        "type": "Pitch Wheel",
+        "description": "(Dist Layer) +2/-12 Pitch Bend"
       }
     ]
   },
@@ -5893,22 +5893,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "EnvCtl: Att, LoPass Frequency+Res"
+        "description": "Envelope control: Att, Low-pass Frequency+Resonance"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lopass Frequency+Res, Steep Bass Frequency"
+        "description": "Low-pass Frequency+Resonance, Steep Bass Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -5918,7 +5918,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall Time+HFDamp, Chorus Feedback"
+        "description": "Hall Time+HF damping, Chorus Feedback"
       },
       {
         "type": "MIDI",
@@ -5937,7 +5937,7 @@
       },
       {
         "type": "MPress",
-        "description": "Vibrato, Lyr Enable (Harmonics)"
+        "description": "Vibrato, Layer Enable (Harmonics)"
       }
     ]
   },
@@ -5982,7 +5982,7 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "Treblele Tone"
+        "description": "Treble Tone"
       },
       {
         "type": "MIDI",
@@ -6011,27 +6011,27 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(aux) Hall Level, (Fx3) Rvb Time"
+        "description": "(aux) Hall Level, (Fx3) reverb Time"
       },
       {
         "type": "MIDI",
@@ -6090,17 +6090,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Dec, BandPass adjustment, ParaTreble"
+        "description": "Envelope control: Decay, Band-pass adjustment, ParaTreble"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl : Att+Imp"
+        "description": "Envelope control : Att+Impact"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -6144,17 +6144,17 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "BandPass Frequency+Width, EnvCtl: Imp, LoPass adjustment"
+        "description": "Band-pass Frequency+Width, Envelope control: Impact, Low-pass adjustment"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -6169,7 +6169,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Comp Rel Time"
+        "description": "Comp Release Time"
       },
       {
         "type": "MIDI",
@@ -6184,7 +6184,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Comp I/O, (aux) Room I/O"
+        "description": "toggle: Comp in/out, (aux) Room in/out"
       },
       {
         "type": "MPress",
@@ -6203,7 +6203,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6218,7 +6218,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Comp Rel Time"
+        "description": "Comp Release Time"
       },
       {
         "type": "MIDI",
@@ -6258,12 +6258,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -6322,7 +6322,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Kicks, Snares, Toms"
+        "description": "Envelope control: Kicks, Snares, Toms"
       },
       {
         "type": "MIDI",
@@ -6337,12 +6337,12 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "Room HFDamp"
+        "description": "Room HF damping"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "toggle: Enhancer HiDrive, Room PreDly"
+        "description": "toggle: Enhancer HiDrive, Room Predelay"
       },
       {
         "type": "MIDI",
@@ -6376,12 +6376,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Kicks, Toms"
+        "description": "Envelope control: Kicks, Toms"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Snares, HiHats"
+        "description": "Envelope control: Snares, HiHats"
       },
       {
         "type": "MIDI",
@@ -6406,7 +6406,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: (aux) Room type, Lopass adjustment"
+        "description": "toggle: (aux) Room type, Low-pass adjustment"
       }
     ]
   },
@@ -6474,7 +6474,7 @@
       },
       {
         "type": "Info",
-        "description": "EnvCtl / ASR Amp Env: Kicks"
+        "description": "Envelope control / ASR Amp Env: Kicks"
       },
       {
         "type": "Info",
@@ -6498,7 +6498,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "(FX1) Compressor Ratio+Threshold+Rel Time"
+        "description": "(FX1) Compressor Ratio+Threshold+Release Time"
       },
       {
         "type": "MIDI",
@@ -6533,7 +6533,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: most elements"
+        "description": "Envelope control: most elements"
       },
       {
         "type": "MIDI",
@@ -6573,12 +6573,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency Snare"
+        "description": "Low-pass Frequency Snare"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EP Chord Low Pass Frequency"
+        "description": "EP Chord Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6725,7 +6725,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6763,13 +6763,13 @@
     "name": "Trumpet Flourish",
     "controls": [
       {
-        "type": "Wheel",
+        "type": "Modulation Wheel",
         "description": "Shaper"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6794,22 +6794,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res"
+        "description": "Low-pass Resonance"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Att+Rel"
+        "description": "Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
@@ -6853,7 +6853,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6863,12 +6863,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -6878,7 +6878,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Room HFDamp"
+        "description": "Room HF damping"
       },
       {
         "type": "MIDI",
@@ -6893,7 +6893,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "EQMorph I/O"
+        "description": "EQMorph in/out"
       },
       {
         "type": "MPress",
@@ -6907,12 +6907,12 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, Low Pass Frequency"
+        "description": "Vibrato, Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6922,7 +6922,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Treblele Shelf EQ"
+        "description": "Treble Shelf EQ"
       },
       {
         "type": "MIDI",
@@ -6951,7 +6951,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -6961,12 +6961,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -6976,7 +6976,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Chamber Time+HFDamp"
+        "description": "Chamber Time+HF damping"
       },
       {
         "type": "MIDI",
@@ -6991,7 +6991,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Chorus I/O"
+        "description": "Chorus in/out"
       },
       {
         "type": "MPress",
@@ -7005,7 +7005,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Low Pass Frequency - Flute"
+        "description": "Low-pass Frequency - Flute"
       },
       {
         "type": "MIDI",
@@ -7054,7 +7054,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7088,7 +7088,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7117,7 +7117,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7161,7 +7161,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "InEQ: Treblele"
+        "description": "InEQ: Treble"
       },
       {
         "type": "MIDI",
@@ -7176,7 +7176,7 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "FX2 Center Frequency, LFO Dpth"
+        "description": "FX2 Center Frequency, LFO Depth"
       },
       {
         "type": "MIDI",
@@ -7205,7 +7205,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency, Envelope Control: Att, Dec"
+        "description": "Low-pass Frequency, Envelope Control: Att, Decay"
       },
       {
         "type": "MIDI",
@@ -7264,22 +7264,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Attack, Release"
+        "description": "Envelope control: Attack, Release"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Impact"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
@@ -7363,7 +7363,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7373,12 +7373,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Decay"
+        "description": "Envelope control: Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Release"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -7422,7 +7422,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7461,7 +7461,7 @@
       },
       {
         "type": "MPress",
-        "description": "Low Pass Frequency Lyr 1"
+        "description": "Low-pass Frequency Layer 1"
       }
     ]
   },
@@ -7476,7 +7476,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency, Impact"
+        "description": "Low-pass Frequency, Impact"
       },
       {
         "type": "MIDI",
@@ -7535,7 +7535,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res"
+        "description": "Low-pass Resonance"
       },
       {
         "type": "MIDI",
@@ -7545,7 +7545,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Att+Rel"
+        "description": "Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
@@ -7624,7 +7624,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "(Aux) Treblele Shelf Frequency"
+        "description": "(Aux) Treble Shelf Frequency"
       }
     ]
   },
@@ -7649,7 +7649,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Bandpass Width"
+        "description": "Band-pass Width"
       },
       {
         "type": "MIDI",
@@ -7689,7 +7689,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7743,7 +7743,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -7753,7 +7753,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "(aux) Hall HFDamp+PreDly"
+        "description": "(aux) Hall HF damping+Predelay"
       },
       {
         "type": "MIDI",
@@ -7787,7 +7787,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7836,17 +7836,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency, fade Layer 1"
+        "description": "Low-pass Frequency, fade Layer 1"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -7875,7 +7875,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7914,7 +7914,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7963,12 +7963,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Bandpass Frequency"
+        "description": "Band-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -7978,7 +7978,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -8013,22 +8013,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr disable(up); LoPass Res"
+        "description": "Layer disable(up); Low-pass Resonance"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "BandPass Frequency; LoPass Frequency"
+        "description": "Band-pass Frequency; Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "LoPass Frequency+Res, Hipass Frequency, Treble boost"
+        "description": "Low-pass Frequency+Resonance, Hipass Frequency, Treble boost"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Att+Rel"
+        "description": "Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
@@ -8048,7 +8048,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Room+Phaser(Lyr 1+3), Phaser+CDR(Lyr 2+4)"
+        "description": "toggle: Room+Phaser(Layer 1+3), Phaser+CDR(Layer 2+4)"
       },
       {
         "type": "MPress",
@@ -8097,12 +8097,12 @@
       {
         "type": "MIDI",
         "number": 27,
-        "description": "(aux) Hall adjustment, Phase Center Frequency+LFODepth"
+        "description": "(aux) Hall adjustment, Phase Center Frequency+LFO Depth"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": "(aux) Hall HFDamp"
+        "description": "(aux) Hall HF damping"
       },
       {
         "type": "MIDI",
@@ -8194,7 +8194,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Non Lin Gain, Low Pass Frequency"
+        "description": "Non Lin Gain, Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -8228,17 +8228,17 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency + Res"
+        "description": "Low-pass Frequency + Resonance"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "HFstim adjustment, Lyr Pitch adjustment"
+        "description": "HFstim adjustment, Layer Pitch adjustment"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Bandpass Frequency"
+        "description": "Band-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -8248,7 +8248,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Flang Wet/Dry ^ Minivrb Time + PreDly"
+        "description": "Flang Wet/Dry ^ Minivrb Time + Predelay"
       },
       {
         "type": "MIDI",
@@ -8381,7 +8381,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr Xfade"
+        "description": "Layer Xfade"
       },
       {
         "type": "MIDI",
@@ -8391,7 +8391,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "InEQ: Treble, EnvCtl: Att+Rel"
+        "description": "InEQ: Treble, Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
@@ -8401,7 +8401,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall PreDly"
+        "description": "Hall Predelay"
       },
       {
         "type": "MIDI",
@@ -8416,7 +8416,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Hall HFDamp"
+        "description": "Hall HF damping"
       },
       {
         "type": "MPress",
@@ -8435,27 +8435,27 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Panner LFO Rate, Lyr Delay, Lyr Xfade"
+        "description": "Panner LFO Rate, Layer Delay, Layer Xfade"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp+Att"
+        "description": "Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "InEQ: Bass, EnvCtl: Dec"
+        "description": "InEQ: Bass, Envelope control: Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "InEQ: Treble, EnvCtl: Rel"
+        "description": "InEQ: Treble, Envelope control: Release"
       },
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(aux) Hall Time+PreDly+HFDamp"
+        "description": "(aux) Hall Time+Predelay+HF damping"
       },
       {
         "type": "MIDI",
@@ -8475,7 +8475,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Hall PreDly adjustment"
+        "description": "Hall Predelay adjustment"
       },
       {
         "type": "MPress",
@@ -8483,7 +8483,7 @@
       },
       {
         "type": "Tempo",
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       }
     ]
   },
@@ -8498,12 +8498,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "High Pass Frequency"
+        "description": "High-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "All Pass Frequency"
+        "description": "All-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -8548,7 +8548,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -8612,12 +8612,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Envelope Control: Att, Rel"
+        "description": "Envelope Control: Att, Release"
       },
       {
         "type": "MIDI",
@@ -8642,7 +8642,7 @@
       {
         "type": "MIDI",
         "number": 28,
-        "description": "(Aux) Treblele Shelf Frequency"
+        "description": "(Aux) Treble Shelf Frequency"
       },
       {
         "type": "MPress",
@@ -8751,7 +8751,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -9449,7 +9449,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Kicks, Snares"
+        "description": "Envelope control: Kicks, Snares"
       },
       {
         "type": "MIDI",
@@ -9512,7 +9512,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: assorted kinds of control on many elements"
+        "description": "Envelope control: assorted kinds of control on many elements"
       },
       {
         "type": "MIDI",
@@ -9571,7 +9571,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Kicks, Snares (not G#1-A1), Ride, Choke Cym"
+        "description": "Envelope control: Kicks, Snares (not G#1-A1), Ride, Choke Cym"
       },
       {
         "type": "MIDI",
@@ -9596,7 +9596,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: GateRvb HFDamp+Gate Threshold"
+        "description": "toggle: GateRvb HF damping+Gate Threshold"
       }
     ]
   },
@@ -9638,7 +9638,7 @@
       },
       {
         "type": "Info",
-        "description": "EnvCtl: most Kicks, Snares, Toms, Shaker, Elec HiHat LFO Rate: SFX (A6-B6)"
+        "description": "Envelope control: most Kicks, Snares, Toms, Shaker, Elec HiHat LFO Rate: SFX (A6-B6)"
       },
       {
         "type": "MIDI",
@@ -9716,17 +9716,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Gate+Freq, EnvCtl: Imp+Att"
+        "description": "Low-pass Gate+Freq, Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att+Dec, Saw Pitch adjustment"
+        "description": "Envelope control: Att+Decay, Saw Pitch adjustment"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -9770,22 +9770,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Gate"
+        "description": "Low-pass Gate"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Lyr Enable, EnvCtl: Dec+Rel"
+        "description": "Layer Enable, Envelope control: Decay+Release"
       },
       {
         "type": "MIDI",
@@ -9824,7 +9824,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, LoPass Frequency"
+        "description": "Vibrato, Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -9834,12 +9834,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "BandPass Frequency+Width, EnvCtl: Imp, LoPass adjustment"
+        "description": "Band-pass Frequency+Width, Envelope control: Impact, Low-pass adjustment"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -9854,7 +9854,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Comp Rel Time"
+        "description": "Comp Release Time"
       },
       {
         "type": "MIDI",
@@ -9869,7 +9869,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Comp I/O, (aux) Room I/O"
+        "description": "toggle: Comp in/out, (aux) Room in/out"
       },
       {
         "type": "MPress",
@@ -9893,17 +9893,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Pulse Width+Freq, Pitch adjustment, EnvCtl: Imp+Att"
+        "description": "Pulse Width+Freq, Pitch adjustment, Envelope control: Impact+Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Dist Drive adjustment, EnvCtl: Dec"
+        "description": "Dist Drive adjustment, Envelope control: Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -9935,8 +9935,8 @@
         "description": "Vibrato"
       },
       {
-        "type": "AttVel",
-        "description": "LoPass gate"
+        "type": "Attack Velocity",
+        "description": "Low-pass gate"
       },
       {
         "type": "Info",
@@ -9964,17 +9964,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass+BandPass Frequency+Width"
+        "description": "Low-pass+Band-pass Frequency+Width"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att, LoPass Res"
+        "description": "Envelope control: Att, Low-pass Resonance"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -9984,7 +9984,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Filt Res, Chorus Feedback"
+        "description": "Filt Resonance, Chorus Feedback"
       },
       {
         "type": "MIDI",
@@ -9999,7 +9999,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Res Filt + ChorDelay (Mellostr only)"
+        "description": "toggle: Resonance Filt + ChorDelay (Mellostr only)"
       },
       {
         "type": "MPress",
@@ -10023,17 +10023,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr Pitch adjustment ^ LoPass adjustment"
+        "description": "Layer Pitch adjustment ^ Low-pass adjustment"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "LoPass Frequency ^ Saw Pitch, Lyr detune"
+        "description": "Low-pass Frequency ^ Saw Pitch, Layer detune"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Lyr Pitch adjustment, Lyr Xfade"
+        "description": "Layer Pitch adjustment, Layer Xfade"
       },
       {
         "type": "MIDI",
@@ -10058,7 +10058,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "ChorusDelay I/O (sys), InEQ: Treble boost"
+        "description": "ChorusDelay in/out (sys), InEQ: Treble boost"
       },
       {
         "type": "MPress",
@@ -10082,7 +10082,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -10117,7 +10117,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Hall Time+PreDly adjustment"
+        "description": "Hall Time+Predelay adjustment"
       },
       {
         "type": "MPress",
@@ -10146,12 +10146,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "InEQ: Bass, Lyr Xfade"
+        "description": "InEQ: Bass, Layer Xfade"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "InEQ: Treble, Pan adjustment, EnvCtl: Rel"
+        "description": "InEQ: Treble, Pan adjustment, Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -10161,7 +10161,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall Decay Time+PreDly"
+        "description": "Hall Decay Time+Predelay"
       },
       {
         "type": "MIDI",
@@ -10183,8 +10183,8 @@
         "description": "Vibrato"
       },
       {
-        "type": "AttVel",
-        "description": "AltCtl"
+        "type": "Attack Velocity",
+        "description": "Alternate control"
       }
     ]
   },
@@ -10194,7 +10194,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, LoPass Res"
+        "description": "Vibrato, Low-pass Resonance"
       },
       {
         "type": "MIDI",
@@ -10204,17 +10204,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency+Res, HiPass Frequency"
+        "description": "Low-pass Frequency+Resonance, HiPass Frequency"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "LoPass Frequency, HiPass Res+Freq, Lyr Levels"
+        "description": "Low-pass Frequency, HiPass Resonance+Freq, Layer Levels"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Att+Rel"
+        "description": "Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
@@ -10224,7 +10224,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall Times+HFDamp"
+        "description": "Hall Times+HF damping"
       },
       {
         "type": "MIDI",
@@ -10258,12 +10258,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr 3 volume (ride cymbal)"
+        "description": "Layer 3 volume (ride cymbal)"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "BandPass Width, HiPass Res"
+        "description": "Band-pass Width, HiPass Resonance"
       },
       {
         "type": "MIDI",
@@ -10302,11 +10302,11 @@
       },
       {
         "type": "MPress",
-        "description": "Vibrato, BandPass Frequency KeyNum EnvCtl: Att+Dec GKeyNum Pitcher Pitch+Weights"
+        "description": "Vibrato, Band-pass Frequency KeyNum Envelope control: Att+Decay GKeyNum Pitcher Pitch+Weights"
       },
       {
-        "type": "PWheel",
-        "description": "BandPass Frequency"
+        "type": "Pitch Wheel",
+        "description": "Band-pass Frequency"
       }
     ]
   },
@@ -10321,7 +10321,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -10331,7 +10331,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Low Pass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -10356,7 +10356,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "FX3 Flange Mix, Rvb Mix"
+        "description": "FX3 Flange Mix, reverb Mix"
       },
       {
         "type": "MPress",
@@ -10375,22 +10375,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "EnvCtl: Imp"
+        "description": "Envelope control: Impact"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Att"
+        "description": "Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Dec"
+        "description": "Envelope control: Decay"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -10415,11 +10415,11 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "FlgDelayrvb I/O"
+        "description": "FlgDelayrvb in/out"
       },
       {
         "type": "MPress",
-        "description": "Vibrato, Lyr detune, LoPass Frequency, Flange XCurs + Feedback"
+        "description": "Vibrato, Layer detune, Low-pass Frequency, Flange XCurs + Feedback"
       }
     ]
   },
@@ -10443,12 +10443,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "P5th jump ^ LoPass Frequency, EnvCtl: Att+Rel"
+        "description": "P5th jump ^ Low-pass Frequency, Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Notch Frequency ^ Dist drv, EnvCtl: Imp"
+        "description": "Notch Frequency ^ Dist drv, Envelope control: Impact"
       },
       {
         "type": "MIDI",
@@ -10497,12 +10497,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass LFO Rate, Shaper amt, EnvCtl: Att+Dec"
+        "description": "Low-pass LFO Rate, Shaper amt, Envelope control: Att+Decay"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -10517,7 +10517,7 @@
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(aux) Hall Level+PreDly+Time+HFDamp"
+        "description": "(aux) Hall Level+Predelay+Time+HF damping"
       },
       {
         "type": "MIDI",
@@ -10537,7 +10537,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Delay I/O"
+        "description": "toggle: Delay in/out"
       },
       {
         "type": "MPress",
@@ -10561,12 +10561,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "ParaMid and LoPass Frequency, Shaper Drive"
+        "description": "ParaMid and Low-pass Frequency, Shaper Drive"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Shaper amt, LoPass Frequency"
+        "description": "Shaper amt, Low-pass Frequency"
       },
       {
         "type": "MIDI",
@@ -10588,8 +10588,8 @@
         "description": "(DynOrch) Volume swell, shaper amt"
       },
       {
-        "type": "SostPd",
-        "description": "Lyr enable, Room Time"
+        "type": "Sostenuto Pedal",
+        "description": "Layer enable, Room Time"
       }
     ]
   },
@@ -10614,12 +10614,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "InEQ: Treble, LoPass Frequency"
+        "description": "InEQ: Treble, Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Imp + Rel"
+        "description": "Envelope control: Impact + Release"
       },
       {
         "type": "MIDI",
@@ -10644,7 +10644,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Hall PreDly, Pan I/O"
+        "description": "Hall Predelay, Pan in/out"
       },
       {
         "type": "MPress",
@@ -10658,17 +10658,17 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, Pan adjustment, LoPass Res"
+        "description": "Vibrato, Pan adjustment, Low-pass Resonance"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "toggle: Synth Bells 1 + 2, AltCtl adjustment"
+        "description": "toggle: Synth Bells 1 + 2, Alternate control adjustment"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res, BandPass Width, EnvCtl: Rel"
+        "description": "Low-pass Resonance, Band-pass Width, Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -10688,7 +10688,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Hall HFDamp+Time, Chapel Time"
+        "description": "Hall HF damping+Time, Chapel Time"
       },
       {
         "type": "MIDI",
@@ -10703,7 +10703,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Chapel + SRS BKeyNu EnvCtl: Att+Dec+Rel"
+        "description": "toggle: Chapel + SRS BKeyNu Envelope control: Att+Decay+Release"
       },
       {
         "type": "MPress",
@@ -10727,17 +10727,17 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "ShapeMod osc Pitch, Shape amt ^ LoPass Frequency, Pitch adjustment"
+        "description": "ShapeMod osc Pitch, Shape amt ^ Low-pass Frequency, Pitch adjustment"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "LoPass Res, EnvCtl: Att"
+        "description": "Low-pass Resonance, Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -10747,7 +10747,7 @@
       {
         "type": "MIDI",
         "number": 26,
-        "description": "Room Decay Time+HFDamp"
+        "description": "Room Decay Time+HF damping"
       },
       {
         "type": "MIDI",
@@ -10767,7 +10767,7 @@
       {
         "type": "MIDI",
         "number": 70,
-        "description": "Lyr AltCtl"
+        "description": "Layer Alternate control"
       }
     ]
   },
@@ -10787,7 +10787,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Pitch jump, HFStim ^ EnvCtl: Att+Dec"
+        "description": "Pitch jump, HFStim ^ Envelope control: Att+Decay"
       },
       {
         "type": "MIDI",
@@ -10797,7 +10797,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "DSP XFade, Pitch adjustment, EnvCtl: Rel"
+        "description": "DSP XFade, Pitch adjustment, Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -10822,15 +10822,15 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "Distortion I/O"
+        "description": "Distortion in/out"
       },
       {
         "type": "MPress",
         "description": "Vibrato, Tremolo"
       },
       {
-        "type": "AttVel",
-        "description": "EnvCtl: Rel"
+        "type": "Attack Velocity",
+        "description": "Envelope control: Release"
       }
     ]
   },
@@ -10840,7 +10840,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Vibrato, Lyr detune(Sol)"
+        "description": "Vibrato, Layer detune(Sol)"
       },
       {
         "type": "MIDI",
@@ -10850,12 +10850,12 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "EnvCtl: Att+Rel"
+        "description": "Envelope control: Att+Release"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Dec ^ Ptch mod, Notch LFO Rate"
+        "description": "Envelope control: Decay ^ Ptch mod, Notch LFO Rate"
       },
       {
         "type": "MIDI",
@@ -10885,7 +10885,7 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Spin I/O, Room HFDamp+Time"
+        "description": "toggle: Spin in/out, Room HF damping+Time"
       },
       {
         "type": "MPress",
@@ -10903,7 +10903,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "3-way toggle: Ens Strg, Solo Strg(dwn 8ve), Flute"
+        "description": "3-way toggle: Ens Strg, Solo Strg(dwn octave), Flute"
       },
       {
         "type": "MIDI",
@@ -10913,7 +10913,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Frequency; ParaTreble Frequency ; HiFreqStim Frequency"
+        "description": "Low-pass Frequency; ParaTreble Frequency ; HiFreqStim Frequency"
       },
       {
         "type": "MIDI",
@@ -10957,12 +10957,12 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Shaper amt, LoPass Frequency cut"
+        "description": "Shaper amt, Low-pass Frequency cut"
       },
       {
         "type": "MIDI",
@@ -10972,7 +10972,7 @@
       {
         "type": "MIDI",
         "number": 24,
-        "description": "(Lyr 1+3) 8ve drop"
+        "description": "(Layer 1+3) octave drop"
       },
       {
         "type": "MIDI",
@@ -10997,11 +10997,11 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Envelope Filt - BandPass and HiPass"
+        "description": "toggle: Envelope Filt - Band-pass and HiPass"
       },
       {
         "type": "MPress",
-        "description": "Vibrato, Lyr detune"
+        "description": "Vibrato, Layer detune"
       }
     ]
   },
@@ -11016,22 +11016,22 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res cut, Dist Drive cut"
+        "description": "Low-pass Resonance cut, Dist Drive cut"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "EnvCtl: Att, Flange LFO"
+        "description": "Envelope control: Att, Flange LFO"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel, Flange L/R phase"
+        "description": "Envelope control: Release, Flange L/R phase"
       },
       {
         "type": "MIDI",
@@ -11060,7 +11060,7 @@
       },
       {
         "type": "MPress",
-        "description": "LoPass Frequency"
+        "description": "Low-pass Frequency"
       }
     ]
   },
@@ -11070,7 +11070,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Lyr Balance"
+        "description": "Layer Balance"
       },
       {
         "type": "MIDI",
@@ -11224,7 +11224,7 @@
         "description": "Vibrato (Strings)"
       },
       {
-        "type": "SostPed",
+        "type": "Sostenuto Pedal",
         "description": "Disables Strings"
       }
     ]
@@ -11240,7 +11240,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Pitch (Sine+) adjustment, BandPass Frequency, Dist amt"
+        "description": "Pitch (Sine+) adjustment, Band-pass Frequency, Dist amt"
       },
       {
         "type": "MIDI",
@@ -11250,12 +11250,12 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "LoPass + HiPass Frequency, EnvCtl: Att"
+        "description": "Low-pass + HiPass Frequency, Envelope control: Att"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "EnvCtl: Rel"
+        "description": "Envelope control: Release"
       },
       {
         "type": "MIDI",
@@ -11287,7 +11287,7 @@
         "description": "Vibrato, Pitch LFO adjustment"
       },
       {
-        "type": "PWheel",
+        "type": "Pitch Wheel",
         "description": "Shaper adjustment"
       },
       {
@@ -11317,7 +11317,7 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Pitch adjustment, LoPass Frequency, BandPass Frequency+Width"
+        "description": "Pitch adjustment, Low-pass Frequency, Band-pass Frequency+Width"
       },
       {
         "type": "MIDI",
@@ -11327,7 +11327,7 @@
       {
         "type": "MIDI",
         "number": 25,
-        "description": "Chorus Level, rvb Level, CDR Wet/Dry"
+        "description": "Chorus Level, reverb Level, CDR Wet/Dry"
       },
       {
         "type": "MIDI",
@@ -11356,7 +11356,7 @@
       {
         "type": "MIDI",
         "number": 70,
-        "description": "AltCtl"
+        "description": "Alternate control"
       }
     ]
   },
@@ -11366,7 +11366,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "LoPass Frequency+Res"
+        "description": "Low-pass Frequency+Resonance"
       },
       {
         "type": "MIDI",
@@ -11376,7 +11376,7 @@
       {
         "type": "MIDI",
         "number": 22,
-        "description": "LoPass Res, Pan adjustment"
+        "description": "Low-pass Resonance, Pan adjustment"
       },
       {
         "type": "MIDI",
@@ -11406,19 +11406,19 @@
       {
         "type": "MIDI",
         "number": 29,
-        "description": "toggle: Pitcher I/O"
+        "description": "toggle: Pitcher in/out"
       },
       {
         "type": "MPress",
-        "description": "LoPass Frequency, Pan LFO"
+        "description": "Low-pass Frequency, Pan LFO"
       },
       {
-        "type": "ChanS",
-        "description": "EnvCtl: Rel"
+        "type": "Channel State",
+        "description": "Envelope control: Release"
       },
       {
         "type": "Breath",
-        "description": "LoPass adjustment"
+        "description": "Low-pass adjustment"
       }
     ]
   },
@@ -11428,27 +11428,27 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Lyr Pitch, LoPass Frequency+Res, Wrap adjustment"
+        "description": "Layer Pitch, Low-pass Frequency+Resonance, Wrap adjustment"
       },
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Lyr Pitch, LoPass LFO adjustment"
+        "description": "Layer Pitch, Low-pass LFO adjustment"
       },
       {
         "type": "MIDI",
         "number": 22,
-        "description": "Lyr Pitch, Pitch (Sine) adjustment"
+        "description": "Layer Pitch, Pitch (Sine) adjustment"
       },
       {
         "type": "MIDI",
         "number": 23,
-        "description": "Lyr Pitch adjustment"
+        "description": "Layer Pitch adjustment"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": "Lyr Pitch, Wrap adjustment"
+        "description": "Layer Pitch, Wrap adjustment"
       },
       {
         "type": "MIDI",
@@ -11490,7 +11490,6 @@
         "number": 6,
         "description": "Enables \"screamers\" on G5-C6"
       },
-            
       {
         "type": "Info",
         "description": "Related articulations found at equal distances above and below D4, with extras outside the center region"
@@ -11603,7 +11602,8 @@
         "type": "MIDI",
         "number": 6,
         "description": "Wet/Dry mix"
-      },      {
+      },
+      {
         "type": "Info",
         "description": "LH drone may be played as broken chord C2, G2, C3, G3 and held with sustain or sostenuto"
       },
@@ -12976,7 +12976,7 @@
       },
       {
         "type": "Info",
-        "description": "Sost ped disables brass"
+        "description": "Sostenuto pedal disables brass"
       }
     ]
   },
@@ -13983,7 +13983,7 @@
       },
       {
         "type": "Info",
-        "description": "Sost ped enables stacato envelope"
+        "description": "Sostenuto pedal enables stacato envelope"
       }
     ]
   },
@@ -14017,7 +14017,7 @@
       },
       {
         "type": "MPress",
-        "description": "Vibrato rate & depth Sost ped disables ride cymbal"
+        "description": "Vibrato rate & depth Sostenuto pedal disables ride cymbal"
       }
     ]
   },
@@ -14115,7 +14115,7 @@
       },
       {
         "type": "Info",
-        "description": "Sus ped enables key-up layer (for rolls)"
+        "description": "Sustain pedal enables key-up layer (for rolls)"
       }
     ]
   },
@@ -14134,7 +14134,7 @@
       },
       {
         "type": "Info",
-        "description": "Sus ped enables key-up layer (for rolls)"
+        "description": "Sustain pedal enables key-up layer (for rolls)"
       }
     ]
   },
@@ -14178,7 +14178,7 @@
       },
       {
         "type": "Info",
-        "description": "Sus ped enables key-up layer (for rolls)"
+        "description": "Sustain pedal enables key-up layer (for rolls)"
       }
     ]
   },
@@ -14192,7 +14192,7 @@
       },
       {
         "type": "Info",
-        "description": "Sost ped enables bass drum. Sus ped dampens."
+        "description": "Sostenuto pedal enables bass drum. Sustain pedal dampens."
       }
     ]
   },
@@ -14206,7 +14206,7 @@
       },
       {
         "type": "Info",
-        "description": "Sost ped switches layers. Sus ped dampens."
+        "description": "Sostenuto pedal switches layers. Sustain pedal dampens."
       }
     ]
   },
@@ -14220,7 +14220,7 @@
       },
       {
         "type": "Info",
-        "description": "Sus ped dampens"
+        "description": "Sustain pedal dampens"
       }
     ]
   },
@@ -14234,7 +14234,7 @@
       },
       {
         "type": "Info",
-        "description": "Sus ped dampens"
+        "description": "Sustain pedal dampens"
       }
     ]
   },
@@ -14304,7 +14304,7 @@
       {
         "type": "MIDI",
         "number": 1,
-        "description": "Tunes drums, alt attack  on snares"
+        "description": "Tunes drums, alt attack on snares"
       },
       {
         "type": "MIDI",

@@ -1,0 +1,873 @@
+{
+  "source": {
+    "sourceFile": "K2500 KDFX Algs.pdf", 
+    "count": 137, 
+    "sourceFiles": [
+      "K2500 KDFX Algs.pdf", 
+      "K2500 KDFXv2 additions.pdf", 
+      "kdfxv2_b.pdf"
+    ]
+  }, 
+  "categories": [
+    {
+      "id": "reverb", 
+      "label": "Reverb"
+    }, 
+    {
+      "id": "delay", 
+      "label": "Delay"
+    }, 
+    {
+      "id": "chorus_flange_phaser", 
+      "label": "Chorus/Flange/Phaser"
+    }, 
+    {
+      "id": "combination", 
+      "label": "Combination"
+    }, 
+    {
+      "id": "distortion", 
+      "label": "Distortion"
+    }, 
+    {
+      "id": "tone_wheel_organ", 
+      "label": "Tone Wheel Organ"
+    }, 
+    {
+      "id": "special_fx", 
+      "label": "Special FX"
+    }, 
+    {
+      "id": "studio_mixdown_fx", 
+      "label": "Studio/Mixdown FX"
+    }, 
+    {
+      "id": "tools", 
+      "label": "Tools"
+    }
+  ], 
+  "algorithms": [
+    {
+      "id": 1, 
+      "name": "MiniVerb", 
+      "size": 1, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 2, 
+      "name": "Dual MiniVerb", 
+      "size": 2, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 3, 
+      "name": "Gated MiniVerb", 
+      "size": 2, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 4, 
+      "name": "Classic Place", 
+      "size": 2, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 5, 
+      "name": "Classic Verb", 
+      "size": 2, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 6, 
+      "name": "TQ Place", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 7, 
+      "name": "TQ Verb", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 8, 
+      "name": "Diffuse Place", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 9, 
+      "name": "Diffuse Verb", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 10, 
+      "name": "OmniPlace", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 11, 
+      "name": "OmniVerb", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 12, 
+      "name": "Panaural Room", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 13, 
+      "name": "Stereo Hall", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 14, 
+      "name": "Grand Plate", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 15, 
+      "name": "Finite Verb", 
+      "size": 3, 
+      "categoryId": "reverb"
+    }, 
+    {
+      "id": 130, 
+      "name": "Complex Echo", 
+      "size": 1, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 131, 
+      "name": "4-Tap Delay", 
+      "size": 1, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 132, 
+      "name": "4-Tap Delay BPM", 
+      "size": 1, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 133, 
+      "name": "8-Tap Delay", 
+      "size": 2, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 134, 
+      "name": "8-Tap Delay BPM", 
+      "size": 2, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 135, 
+      "name": "Spectral 4-Tap", 
+      "size": 2, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 136, 
+      "name": "Spectral 6-Tap", 
+      "size": 3, 
+      "categoryId": "delay"
+    }, 
+    {
+      "id": 138, 
+      "name": "Degen Regen BPM", 
+      "categoryId": "delay", 
+      "size": 4
+    }, 
+    {
+      "id": 139, 
+      "name": "Switch Loops", 
+      "categoryId": "delay", 
+      "size": 2
+    }, 
+    {
+      "id": 140, 
+      "name": "Moving Delay", 
+      "categoryId": "delay", 
+      "size": 1
+    }, 
+    {
+      "id": 150, 
+      "name": "Chorus 1", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 151, 
+      "name": "Chorus 2", 
+      "size": 2, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 152, 
+      "name": "Dual Chorus 1", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 153, 
+      "name": "Dual Chorus 2", 
+      "size": 2, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 154, 
+      "name": "Flanger 1", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 155, 
+      "name": "Flanger 2", 
+      "size": 2, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 156, 
+      "name": "LFO Phaser", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 157, 
+      "name": "LFO Phaser Twin", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 158, 
+      "name": "Manual Phaser", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 159, 
+      "name": "Vibrato Phaser", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 160, 
+      "name": "SingleLFO Phaser", 
+      "size": 1, 
+      "categoryId": "chorus_flange_phaser"
+    }, 
+    {
+      "id": 161, 
+      "name": "Allpass Phaser 3", 
+      "categoryId": "chorus_flange_phaser", 
+      "size": 3
+    }, 
+    {
+      "id": 700, 
+      "name": "Chorus+Delay", 
+      "size": 1, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 701, 
+      "name": "Chorus+4Tap", 
+      "size": 1, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 702, 
+      "name": "Chorus<>4Tap", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 703, 
+      "name": "Chor+Dly+Reverb", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 704, 
+      "name": "Chorus<>Reverb", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 705, 
+      "name": "Chorus<>LasrDly", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 706, 
+      "name": "Flange+Delay", 
+      "size": 1, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 707, 
+      "name": "Flange+4Tap", 
+      "size": 1, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 708, 
+      "name": "Flange<>4Tap", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 709, 
+      "name": "Flan+Dly+Reverb", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 710, 
+      "name": "Flange<>Reverb", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 711, 
+      "name": "Flange<>LasrDly", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 712, 
+      "name": "Flange<>Pitcher", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 713, 
+      "name": "Flange<>Shaper", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 714, 
+      "name": "Quantize+Flange", 
+      "size": 1, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 715, 
+      "name": "Dual MovDelay", 
+      "size": 1, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 716, 
+      "name": "Quad MovDelay", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 717, 
+      "name": "LasrDly<>Reverb", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 718, 
+      "name": "Shaper<>Reverb", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 719, 
+      "name": "Reverb<>Compress", 
+      "size": 3, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 720, 
+      "name": "MonoPitcher+Chor", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 721, 
+      "name": "MonoPitcher+Flan", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 722, 
+      "name": "Pitcher+Chor+Dly", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 723, 
+      "name": "Pitcher+Flan+Dly", 
+      "size": 2, 
+      "categoryId": "combination"
+    }, 
+    {
+      "id": 724, 
+      "name": "Mono Distortion", 
+      "size": 1, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 725, 
+      "name": "MonoDistort+Cab", 
+      "size": 2, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 726, 
+      "name": "MonoDistort + EQ", 
+      "size": 2, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 727, 
+      "name": "PolyDistort + EQ", 
+      "size": 2, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 728, 
+      "name": "StereoDistort+EQ", 
+      "size": 3, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 729, 
+      "name": "TubeAmp<>MD>Chor", 
+      "size": 3, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 730, 
+      "name": "TubeAmp<>MD>Flan", 
+      "size": 3, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 731, 
+      "name": "PolyAmp<>MD>Chor", 
+      "size": 3, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 732, 
+      "name": "PolyAmp<>MD>Flan", 
+      "size": 3, 
+      "categoryId": "distortion"
+    }, 
+    {
+      "id": 733, 
+      "name": "VibChor+Rotor 2", 
+      "size": 2, 
+      "categoryId": "tone_wheel_organ"
+    }, 
+    {
+      "id": 734, 
+      "name": "Distort + Rotary", 
+      "size": 2, 
+      "categoryId": "tone_wheel_organ"
+    }, 
+    {
+      "id": 735, 
+      "name": "KB3 FXBus", 
+      "size": 4, 
+      "categoryId": "tone_wheel_organ"
+    }, 
+    {
+      "id": 736, 
+      "name": "KB3 AuxFX", 
+      "size": 3, 
+      "categoryId": "tone_wheel_organ"
+    }, 
+    {
+      "id": 737, 
+      "name": "VibChor+Rotor 4", 
+      "size": 4, 
+      "categoryId": "tone_wheel_organ"
+    }, 
+    {
+      "id": 738, 
+      "name": "VC+Dist+1Rotor 2", 
+      "categoryId": "tone_wheel_organ", 
+      "size": 2
+    }, 
+    {
+      "id": 739, 
+      "name": "VC+Dist+HiLoRotr", 
+      "categoryId": "tone_wheel_organ", 
+      "size": 2
+    }, 
+    {
+      "id": 740, 
+      "name": "VC+Tube+Rotor 4", 
+      "categoryId": "tone_wheel_organ", 
+      "size": 4
+    }, 
+    {
+      "id": 741, 
+      "name": "Rotor 1", 
+      "categoryId": "tone_wheel_organ", 
+      "size": 1
+    }, 
+    {
+      "id": 742, 
+      "name": "VC+Dist+HiLoRot2", 
+      "categoryId": "tone_wheel_organ", 
+      "size": 2
+    }, 
+    {
+      "id": 743, 
+      "name": "Subtle Distort", 
+      "categoryId": "distortion", 
+      "size": 1
+    }, 
+    {
+      "id": 744, 
+      "name": "Quantize+Alias", 
+      "categoryId": "special_fx", 
+      "size": 1
+    }, 
+    {
+      "id": 745, 
+      "name": "Pitcher+Miniverb", 
+      "categoryId": "combination", 
+      "size": 2
+    }, 
+    {
+      "id": 746, 
+      "name": "Reverb+Compress", 
+      "categoryId": "combination", 
+      "size": 2
+    }, 
+    {
+      "id": 781, 
+      "name": "St Chorus+Delay", 
+      "categoryId": "combination", 
+      "size": 1
+    }, 
+    {
+      "id": 784, 
+      "name": "St Flange+Delay", 
+      "categoryId": "combination", 
+      "size": 1
+    }, 
+    {
+      "id": 790, 
+      "name": "Gate+Cmp[EQ]+Vrb", 
+      "categoryId": "combination", 
+      "size": 4
+    }, 
+    {
+      "id": 792, 
+      "name": "Gate+TubeAmp", 
+      "categoryId": "distortion", 
+      "size": 3
+    }, 
+    {
+      "id": 900, 
+      "name": "Env Follow Filt", 
+      "size": 2, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 901, 
+      "name": "TrigEnvelopeFilt", 
+      "size": 2, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 902, 
+      "name": "LFO Sweep Filter", 
+      "size": 2, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 903, 
+      "name": "Resonant Filter", 
+      "size": 1, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 904, 
+      "name": "Dual Res Filter", 
+      "size": 1, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 905, 
+      "name": "EQ Morpher", 
+      "size": 4, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 906, 
+      "name": "Mono EQ Morpher", 
+      "size": 2, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 907, 
+      "name": "Ring Modulator", 
+      "size": 1, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 908, 
+      "name": "Pitcher", 
+      "size": 1, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 909, 
+      "name": "Super Shaper", 
+      "size": 1, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 910, 
+      "name": "3 Band Shaper", 
+      "size": 2, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 911, 
+      "name": "Mono LaserVerb", 
+      "size": 1, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 912, 
+      "name": "LaserVerb Lite", 
+      "size": 2, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 913, 
+      "name": "LaserVerb", 
+      "size": 3, 
+      "categoryId": "special_fx"
+    }, 
+    {
+      "id": 914, 
+      "name": "Reverse LaserVrb", 
+      "categoryId": "special_fx", 
+      "size": 4
+    }, 
+    {
+      "id": 915, 
+      "name": "Gated LaserVerb", 
+      "categoryId": "special_fx", 
+      "size": 3
+    }, 
+    {
+      "id": 916, 
+      "name": "Poly Pitcher", 
+      "categoryId": "special_fx", 
+      "size": 2
+    }, 
+    {
+      "id": 917, 
+      "name": "Frequency Offset", 
+      "categoryId": "special_fx", 
+      "size": 2
+    }, 
+    {
+      "id": 918, 
+      "name": "MutualFreqOffset", 
+      "categoryId": "special_fx", 
+      "size": 2
+    }, 
+    {
+      "id": 919, 
+      "name": "WackedPitchLFO", 
+      "categoryId": "special_fx", 
+      "size": 3
+    }, 
+    {
+      "id": 920, 
+      "name": "Chaos!", 
+      "categoryId": "special_fx", 
+      "size": 2
+    }, 
+    {
+      "id": 948, 
+      "name": "Band Compress", 
+      "categoryId": "studio_mixdown_fx", 
+      "size": 3
+    }, 
+    {
+      "id": 949, 
+      "name": "CompressDualTime", 
+      "categoryId": "studio_mixdown_fx", 
+      "size": 2
+    }, 
+    {
+      "id": 950, 
+      "name": "HardKneeCompress", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 951, 
+      "name": "SoftKneeCompress", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 952, 
+      "name": "Expander", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 953, 
+      "name": "Compress w/SC EQ", 
+      "size": 2, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 954, 
+      "name": "Compress/Expand", 
+      "size": 2, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 955, 
+      "name": "Comp/Exp + EQ", 
+      "size": 3, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 956, 
+      "name": "Compress 3 Band", 
+      "size": 4, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 957, 
+      "name": "Gate", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 958, 
+      "name": "Super Gate", 
+      "size": 2, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 959, 
+      "name": "2 Band Enhancer", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 960, 
+      "name": "3 Band Enhancer", 
+      "size": 2, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 961, 
+      "name": "Tremolo", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 962, 
+      "name": "Tremolo BPM", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 963, 
+      "name": "AutoPanner", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 964, 
+      "name": "Dual AutoPanner", 
+      "size": 2, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 965, 
+      "name": "SRS", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 966, 
+      "name": "Stereo Image", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 967, 
+      "name": "Mono -> Stereo", 
+      "size": 1, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 968, 
+      "name": "Graphic EQ", 
+      "size": 3, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 969, 
+      "name": "Dual Graphic EQ", 
+      "size": 3, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 970, 
+      "name": "5 Band EQ", 
+      "size": 3, 
+      "categoryId": "studio_mixdown_fx"
+    }, 
+    {
+      "id": 971, 
+      "name": "3 Band EQ", 
+      "categoryId": "studio_mixdown_fx", 
+      "size": 1
+    }, 
+    {
+      "id": 972, 
+      "name": "HF Stimulate 1", 
+      "categoryId": "studio_mixdown_fx", 
+      "size": 1
+    }, 
+    {
+      "id": 975, 
+      "name": "HarmonicSuppress", 
+      "categoryId": "studio_mixdown_fx", 
+      "size": 2
+    }, 
+    {
+      "id": 998, 
+      "name": "FXMod Diagnostic", 
+      "size": 1, 
+      "categoryId": "tools"
+    }, 
+    {
+      "id": 999, 
+      "name": "Stereo Analyze", 
+      "size": 1, 
+      "categoryId": "tools"
+    }
+  ]
+}

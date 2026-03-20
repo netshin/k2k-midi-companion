@@ -1,0 +1,21 @@
+{
+  "0": "Bank Select MSB",
+  "1": "Modulation Wheel",
+  "2": "Breath Controller",
+  "4": "Foot Pedal",
+  "5": "Portamento Time",
+  "6": "Data Entry",
+  "7": "Volume",
+  "8": "Balance",
+  "10": "Pan",
+  "11": "Expression Pedal",
+  "64": "Sustain",
+  "65": "Portamento Switch",
+  "66": "Sostenuto",
+  "67": "Soft Pedal",
+  "69": "Hold 2",
+  "91": "Effects Depth",
+  "96": "Data Increment",
+  "97": "Data Decrement",
+  "123": "All Notes Off"
+}

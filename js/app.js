@@ -18,6 +18,7 @@ let synthModel = null;
 let selectedModelEntry = null;
 let availableModels = [];
 let modelBasePath = "";
+const modelConfigCache = new Map();
 let mySynth = null;
 let selectedMidiInput = null;
 let selectedMode = "programs";
@@ -302,8 +303,7 @@ function showDeviceModal() {
 
   if (WebMidi.inputs.length === 0) {
     container.innerHTML = '<div class="tile tile-disabled">No Interface Detected</div>';
-    buildRomSelector();
-    restoreRomSelection();
+    refreshModalModelPreview();
     modal.style.display = "flex";
     focusModelSelectorIfNeeded(needsModelSelection);
     return;
@@ -329,8 +329,7 @@ function showDeviceModal() {
 
   });
 
-  buildRomSelector();
-  restoreRomSelection();
+  refreshModalModelPreview();
   modal.style.display = "flex";
   focusModelSelectorIfNeeded(needsModelSelection);
   
@@ -371,6 +370,10 @@ function buildModelSelector() {
     }
     select.appendChild(option);
   });
+
+  select.onchange = () => {
+    refreshModalModelPreview();
+  };
 }
 
 function focusModelSelectorIfNeeded(needsModelSelection) {
@@ -490,37 +493,46 @@ function resolveSetupByNumber(setupNumber) {
 function renderProgramNotes(patch) {
 
   let notesHtml = "";
+  const controls = Array.isArray(patch?.controls) ? patch.controls : [];
+  const visibleControls = controls.filter(control => !isKdfxStudioInfoControl(control));
+  const primaryControls = visibleControls.filter(control => control.type !== "Info" && control.type !== "MPress");
+  const mpressControls = visibleControls.filter(control => control.type === "MPress");
+  const infoControls = visibleControls.filter(control => control.type === "Info");
 
-  patch.controls.forEach(control => {
+  primaryControls.forEach(control => {
 
-    if (control.type === "MIDI" || control.type === "MPress") {
-
-      const isMPress = control.type === "MPress";
-      const ctrlName = isMPress
-        ? "MPress"
-        : (midiControllers[control.number] || `CC ${control.number}`);
-      const ctrlNameClass = isMPress ? "ctrl-name ctrl-name-mpress" : "ctrl-name";
+    if (control.type === "MIDI") {
 
       notesHtml +=
         `<div class="ctrl-row">
-          <span class="${ctrlNameClass}">${ctrlName}</span>
-          <span class="ctrl-desc">${control.description}</span>
+          <span class="ctrl-name">${midiControllers[control.number] || `CC ${control.number}`}</span>
+          <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
         </div>`;
-
-    }
-
-    else if (control.type === "Info") {
-
-      notesHtml += `<div class="meta">${control.description}</div>`;
 
     }
 
     else {
 
-      notesHtml += `<div class="meta">${control.type} — ${control.description}</div>`;
+      notesHtml +=
+        `<div class="ctrl-row">
+          <span class="ctrl-name">${formatControlTypeLabel(control.type)}</span>
+          <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
+        </div>`;
 
     }
 
+  });
+
+  mpressControls.forEach(control => {
+    notesHtml +=
+      `<div class="ctrl-row">
+        <span class="ctrl-name ctrl-name-mpress">MPress</span>
+        <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
+      </div>`;
+  });
+
+  infoControls.forEach(control => {
+    notesHtml += `<div class="meta">${formatDisplayedNoteText(control.description)}</div>`;
   });
 
   document.getElementById("notes").innerHTML = notesHtml;
@@ -529,14 +541,432 @@ function renderProgramNotes(patch) {
 function renderSetupNotes(setup) {
 
   const secondarySingular = getSecondaryLabelSingular().toLowerCase();
+  const structuredRows = Array.isArray(setup.controls) ? setup.controls : [];
+
+  if (structuredRows.length > 0) {
+    const notesHtml = structuredRows.map(row => {
+      if (!row.label) {
+        return `<div class="meta">${row.description}</div>`;
+      }
+
+      return `<div class="ctrl-row">
+        <span class="ctrl-name">${row.label}</span>
+        <span class="ctrl-desc">${row.description}</span>
+      </div>`;
+    }).join("");
+
+    document.getElementById("notes").innerHTML = notesHtml;
+    return;
+  }
+
   const hasRibbonText = Boolean(setup.longRibbonFunction);
-  const text = setup.longRibbonFunction || `No ${secondarySingular} notes available`;
-  const label = hasRibbonText ? "Long Ribbon" : "Notes";
-  document.getElementById("notes").innerHTML =
-    `<div class="ctrl-row">
-      <span class="ctrl-name">${label}</span>
-      <span class="ctrl-desc">${text}</span>
+  const text = stripKdfxStudioText(setup.longRibbonFunction) || `No ${secondarySingular} notes available`;
+  const rows = parseSetupNoteRows(text);
+
+  if (rows.length === 0) {
+    const label = hasRibbonText ? "Long Ribbon" : "Notes";
+    document.getElementById("notes").innerHTML =
+      `<div class="ctrl-row">
+        <span class="ctrl-name">${label}</span>
+        <span class="ctrl-desc">${formatDisplayedNoteText(formatSetupNotesText(text))}</span>
+      </div>`;
+    return;
+  }
+
+  const notesHtml = rows.map(row => {
+    if (!row.label) {
+      return `<div class="meta">${formatDisplayedNoteText(row.description)}</div>`;
+    }
+
+    return `<div class="ctrl-row">
+      <span class="ctrl-name">${row.label}</span>
+      <span class="ctrl-desc">${formatDisplayedNoteText(row.description)}</span>
     </div>`;
+  }).join("");
+
+  document.getElementById("notes").innerHTML = notesHtml;
+}
+
+function formatControlTypeLabel(type) {
+
+  if (typeof type !== "string") {
+    return String(type || "");
+  }
+
+  const sliderLabels = new Set(["A", "B", "C", "D", "E", "F", "G", "H", "D,E", "E/F"]);
+
+  if (sliderLabels.has(type)) {
+    return `Slider ${type}`;
+  }
+
+  return type;
+}
+
+function isKdfxStudioInfoControl(control) {
+
+  return control?.type === "Info"
+    && typeof control?.description === "string"
+    && control.description.startsWith("KDFX studio: ");
+}
+
+function stripKdfxStudioText(text) {
+
+  if (typeof text !== "string" || text.length === 0) {
+    return text;
+  }
+
+  return text
+    .split(" | ")
+    .map(section => section.trim())
+    .filter(section => section.length > 0)
+    .map(section => {
+      const parts = section
+        .split("; ")
+        .map(part => part.trim())
+        .filter(part => part.length > 0 && !part.startsWith("KDFX studio: "));
+
+      return parts.join("; ");
+    })
+    .filter(section => section.length > 0)
+    .join(" | ");
+}
+
+function formatSetupNotesText(text) {
+
+  if (typeof text !== "string" || text.length === 0) {
+    return text;
+  }
+
+  const withSliderLabels = text.replace(
+    /(^|; )(A|B|C|D|E|F|G|H|D,E|E\/F): /g,
+    (match, prefix, label) => `${prefix}${formatControlTypeLabel(label)}: `
+  );
+
+  return withSliderLabels.replaceAll(" | ", "<br>");
+}
+
+function parseSetupNoteRows(text) {
+
+  if (typeof text !== "string" || text.trim() === "") {
+    return [];
+  }
+
+  const tokens = text
+    .replaceAll(" | ", "; ")
+    .split("; ")
+    .map(token => token.trim())
+    .filter(Boolean);
+
+  const rows = [];
+
+  tokens.forEach(token => {
+    const parsed = parseSetupNoteToken(token);
+
+    if (!parsed) {
+      if (rows.length > 0) {
+        rows[rows.length - 1].description = `${rows[rows.length - 1].description}; ${token}`.trim();
+      } else {
+        rows.push({ label: "", description: token });
+      }
+      return;
+    }
+
+    const expanded = expandSetupNoteRow(parsed);
+    rows.push(...expanded);
+  });
+
+  return rows
+    .map((row, index) => ({ ...row, originalIndex: index }))
+    .sort(compareSetupNoteRows)
+    .map(({ originalIndex, ...row }) => row);
+}
+
+function parseSetupNoteToken(token) {
+
+  const normalizedToken = token.trim();
+
+  if (!normalizedToken) {
+    return null;
+  }
+
+  const colonMatch = normalizedToken.match(/^([^:]+):\s*(.+)$/);
+  if (colonMatch) {
+    return {
+      label: formatSetupControlLabel(colonMatch[1].trim()),
+      description: colonMatch[2].trim(),
+    };
+  }
+
+  const labelMatch = normalizedToken.match(/^(ModWhl|Mod Wh|ModWh|PSw ?\d?|PSw|FootSw\d*|FootSw|Lg Rib(?: sec \d)?|LgRbn|L Rib(?: Sect\d)?|L Rib|LRbn|Sm Rib Press|SmRbn|S Rib|MW\/SftP|MW|MPress|Press|Breath|Tempo|Sustain|Chan S|GAttVel|GKeyNum|KeyNum|AttVel|Velocity)\s+(.+)$/);
+
+  if (labelMatch) {
+    return {
+      label: formatSetupControlLabel(labelMatch[1].trim()),
+      description: labelMatch[2].trim(),
+    };
+  }
+
+  return null;
+}
+
+function formatSetupControlLabel(label) {
+
+  if (typeof label !== "string") {
+    return String(label || "");
+  }
+
+  const compact = label.replace(/\s+/g, " ").trim();
+
+  if (/^[A-H]$/.test(compact) || compact === "D,E" || compact === "E/F") {
+    return formatControlTypeLabel(compact);
+  }
+
+  if (/^Slider[A-H]$/i.test(compact)) {
+    return compact.replace(/^Slider([A-H])$/i, "Slider $1");
+  }
+
+  const aliases = {
+    "Mod Wh": "Modulation Wheel",
+    "ModWh": "Modulation Wheel",
+    "ModWhl": "Modulation Wheel",
+    "MW": "Modulation Wheel",
+    "L Rib": "Large Ribbon",
+    "L Rib Sect1": "Large Ribbon Section 1",
+    "L Rib Sect2": "Large Ribbon Section 2",
+    "L Rib Sect3": "Large Ribbon Section 3",
+    "LgRbn": "Large Ribbon",
+    "LRbn": "Large Ribbon",
+    "Lg Rib": "Large Ribbon",
+    "Lg Rib sec 1": "Large Ribbon Section 1",
+    "Lg Rib sec 2": "Large Ribbon Section 2",
+    "Lg Rib sec 3": "Large Ribbon Section 3",
+    "S Rib": "Small Ribbon",
+    "SmRbn": "Small Ribbon",
+    "Sm Rib": "Small Ribbon",
+    "Sm Rib Press": "Small Ribbon Press",
+  };
+
+  return aliases[compact] || compact;
+}
+
+function expandSetupNoteRow(row) {
+
+  if (!row?.label || typeof row.description !== "string") {
+    return [row];
+  }
+
+  if (row.label === "Sliders") {
+    const expanded = expandGroupedSliderDescription(row.description);
+    return expanded.length > 0 ? expanded : [row];
+  }
+
+  const sliderRangeMatch = row.label.match(/^Sliders ([A-H])-([A-H])$/);
+  if (sliderRangeMatch) {
+    return expandSliderLetters(
+      getLetterRange(sliderRangeMatch[1], sliderRangeMatch[2]),
+      row.description
+    );
+  }
+
+  return [row];
+}
+
+function expandGroupedSliderDescription(description) {
+
+  const manualRows = getManualSetupSliderRows(description);
+  if (manualRows.length > 0) {
+    return manualRows;
+  }
+
+  const clauses = description
+    .split(/\s*,\s*/)
+    .map(clause => clause.trim())
+    .filter(Boolean);
+
+  const rows = [];
+
+  for (const clause of clauses) {
+    const expanded = expandSliderClause(clause);
+    if (expanded.length === 0) {
+      return [];
+    }
+    rows.push(...expanded);
+  }
+
+  return rows;
+}
+
+function getManualSetupSliderRows(description) {
+
+  const normalized = description.replace(/\s+/g, " ").trim();
+
+  const manualRowsByDescription = {
+    "A-C group faders, PSw2: group mute": [
+      { label: "Slider A", description: "group fader" },
+      { label: "Slider B", description: "group fader" },
+      { label: "Slider C", description: "group fader" },
+    ],
+    "A-C zone faders for zones 2-4, D detune piano & increase volume of pad, FootSw1: arp latch, L Rib: zone fader for arpeggiated zone": [
+      { label: "Slider A", description: "zone 2 fader" },
+      { label: "Slider B", description: "zone 3 fader" },
+      { label: "Slider C", description: "zone 4 fader" },
+      { label: "Slider D", description: "detune piano & increase volume of pad" },
+    ],
+    "A-B group faders, C decay time (flute), timbre (RH lead), L Rib: vibrato": [
+      { label: "Slider A", description: "group fader" },
+      { label: "Slider B", description: "group fader" },
+      { label: "Slider C", description: "decay time (flute), timbre (RH lead)" },
+    ],
+    "A-B group faders, PSw1: arp latch": [
+      { label: "Slider A", description: "group fader" },
+      { label: "Slider B", description: "group fader" },
+    ],
+    "A key vel, timbre, B group fader, C mod rate, D wind key num, E zone fader": [
+      { label: "Slider A", description: "key velocity, timbre" },
+      { label: "Slider B", description: "group fader" },
+      { label: "Slider C", description: "mod rate" },
+      { label: "Slider D", description: "wind key num" },
+      { label: "Slider E", description: "zone fader" },
+    ],
+  };
+
+  return manualRowsByDescription[normalized] || [];
+}
+
+function expandSliderClause(clause) {
+
+  const rangeMatch = clause.match(/^([A-H])-([A-H])\s+(.+)$/);
+  if (rangeMatch) {
+    return expandSliderLetters(
+      getLetterRange(rangeMatch[1], rangeMatch[2]),
+      rangeMatch[3]
+    );
+  }
+
+  const andMatch = clause.match(/^([A-H])\s*&\s*([A-H])\s+(.+)$/);
+  if (andMatch) {
+    return expandSliderLetters(
+      [andMatch[1], andMatch[2]],
+      andMatch[3]
+    );
+  }
+
+  const singleMatch = clause.match(/^([A-H])\s+(.+)$/);
+  if (singleMatch) {
+    return expandSliderLetters([singleMatch[1]], singleMatch[2]);
+  }
+
+  return [];
+}
+
+function expandSliderLetters(letters, description) {
+
+  return letters.map(letter => ({
+    label: `Slider ${letter}`,
+    description: description.trim(),
+  }));
+}
+
+function getLetterRange(start, end) {
+
+  const alphabet = "ABCDEFGH";
+  const startIndex = alphabet.indexOf(start);
+  const endIndex = alphabet.indexOf(end);
+
+  if (startIndex === -1 || endIndex === -1 || endIndex < startIndex) {
+    return [];
+  }
+
+  return alphabet.slice(startIndex, endIndex + 1).split("");
+}
+
+function formatDisplayedNoteText(text) {
+
+  if (typeof text !== "string" || text.length === 0) {
+    return text;
+  }
+
+  return text
+    .replace(/[;,\s]+$/, "")
+    .replace(/\bLg Rib\b/g, "Large Ribbon")
+    .replace(/\bL Rib\b/g, "Large Ribbon")
+    .replace(/\bLgRbn\b/g, "Large Ribbon")
+    .replace(/\bLRbn\b/g, "Large Ribbon")
+    .replace(/\bS Rib\b/g, "Small Ribbon")
+    .replace(/\bSm Rib\b/g, "Small Ribbon")
+    .replace(/\bSmRbn\b/g, "Small Ribbon")
+    .replace(/\bMod Wh\b/g, "Modulation Wheel")
+    .replace(/\bModWhl\b/g, "Modulation Wheel")
+    .replace(/\bModWh\b/g, "Modulation Wheel")
+    .replace(/\bMW\b/g, "Modulation Wheel")
+    .replace(/\brvbs\b/gi, "reverbs")
+    .replace(/\brvb\b/gi, "reverb")
+    .replace(/\blvls\b/gi, "levels")
+    .replace(/\blvl\b/gi, "level")
+    .replace(/\bw\/d\b/gi, "wet/dry")
+    .replace(/\bdly\b/gi, "delay")
+    .replace(/\bfb\b/gi, "feedback")
+    .replace(/\bfreq\b/gi, "frequency")
+    .replace(/\bfilt\b/gi, "filter")
+    .replace(/\benv\b/gi, "envelope")
+    .replace(/\bvel\b/gi, "velocity")
+    .replace(/\bctl\b/gi, "control")
+    .replace(/\bpredly\b/gi, "predelay")
+    .replace(/\s{2,}/g, " ")
+    .trim();
+}
+
+function compareSetupNoteRows(a, b) {
+
+  const priorityA = getSetupNoteRowPriority(a);
+  const priorityB = getSetupNoteRowPriority(b);
+
+  if (priorityA !== priorityB) {
+    return priorityA - priorityB;
+  }
+
+  if (priorityA === 0 || priorityA === 1) {
+    const orderA = getSliderLabelSortKey(a.label);
+    const orderB = getSliderLabelSortKey(b.label);
+    if (orderA !== orderB) {
+      return orderA - orderB;
+    }
+  }
+
+  return (a.originalIndex || 0) - (b.originalIndex || 0);
+}
+
+function getSetupNoteRowPriority(row) {
+
+  const label = typeof row?.label === "string" ? row.label : "";
+
+  if (label === "Sliders" || /^Sliders\b/.test(label)) {
+    return 0;
+  }
+
+  if (/^Slider\b/.test(label)) {
+    return 1;
+  }
+
+  if (!label) {
+    return 99;
+  }
+
+  return 10;
+}
+
+function getSliderLabelSortKey(label) {
+
+  if (typeof label !== "string") {
+    return 999;
+  }
+
+  const match = label.match(/\b([A-H])\b/);
+  if (!match) {
+    return 0;
+  }
+
+  return "ABCDEFGH".indexOf(match[1]) + 1;
 }
 
 function displayCatalogItem(modeId, itemNumber) {
@@ -550,7 +980,7 @@ function displayCatalogItem(modeId, itemNumber) {
   if (modeId === "programs") {
     selectedProgramNumber = itemNumber;
 
-    const requiredRomCard = getRequiredRomCardForPatch(itemNumber);
+    const requiredRomCard = getRequiredRomCardForCatalogItem("programs", itemNumber);
 
     if (requiredRomCard && !isRomCardEnabled(requiredRomCard)) {
       setDisplayText("ROM Not Enabled", location);
@@ -583,6 +1013,17 @@ function displayCatalogItem(modeId, itemNumber) {
 
   if (modeId === "setups") {
     selectedSetupNumber = itemNumber;
+    const requiredRomCard = getRequiredRomCardForCatalogItem("setups", itemNumber);
+
+    if (requiredRomCard && !isRomCardEnabled(requiredRomCard)) {
+      setDisplayText("ROM Not Enabled", location);
+      if (notes) {
+        notes.textContent = `Enable "${requiredRomCard.label}" in Config to use this patch location.`;
+      }
+      renderSearchResults(getPatchSearchQuery());
+      renderFavoritesResults(getFavoritesSearchQuery());
+      return;
+    }
 
     const setup = resolveSetupByNumber(itemNumber);
 
@@ -814,9 +1255,14 @@ function applyModelLabels() {
     webButton.title = `Visit support for your ${synthModel.displayName}`;
   }
 
-  const settingsHeading = document.querySelector("#deviceModal h2:nth-of-type(3)");
-  if (settingsHeading) {
-    settingsHeading.textContent = "Favorites";
+  const romSettingsHeading = document.getElementById("romSettingsHeading");
+  if (romSettingsHeading) {
+    romSettingsHeading.textContent = "Installed ROMs";
+  }
+
+  const favoritesSettingsHeading = document.getElementById("favoritesSettingsHeading");
+  if (favoritesSettingsHeading) {
+    favoritesSettingsHeading.textContent = "Favorites";
   }
 }
 
@@ -2208,6 +2654,18 @@ function renderKdfxDetail(studioId) {
 
   const lines = [];
   const buses = studio.buses || {};
+  const formatKdfxBusLabel = busKey => {
+    if (busKey === "aux") {
+      return "AUX";
+    }
+
+    const match = /^bus(\d+)$/i.exec(busKey);
+    if (match) {
+      return `BUS${match[1]}`;
+    }
+
+    return String(busKey || "").toUpperCase();
+  };
 
   Object.entries(buses).forEach(([busKey, bus]) => {
     const presetId = bus.presetId;
@@ -2216,7 +2674,7 @@ function renderKdfxDetail(studioId) {
       ? kdfxLookup.algorithmsById?.[String(preset.algorithmId)]
       : null;
 
-    const busLabel = busKey.toUpperCase();
+    const busLabel = formatKdfxBusLabel(busKey);
     const presetName = bus.presetName || "N/A";
     const algorithmName = algorithm?.name || (preset?.algorithmName || "Unknown");
     const presetIdLabel = presetId ? `P${String(presetId).padStart(3, "0")}` : "P---";
@@ -2430,10 +2888,17 @@ ROM CARD SELECTION
 ======================= */
 function getRequiredRomCardForPatch(patchNumber) {
 
-  const rules = synthModel?.patchAccessRules || [];
+  return getRequiredRomCardForCatalogItem("programs", patchNumber);
+}
+
+function getRequiredRomCardForCatalogItem(modeId, itemNumber) {
+
+  const rules = modeId === "setups"
+    ? (synthModel?.setupAccessRules || [])
+    : (synthModel?.patchAccessRules || []);
 
   for (const rule of rules) {
-    if (patchNumber >= rule.start && patchNumber <= rule.end) {
+    if (itemNumber >= rule.start && itemNumber <= rule.end) {
       const rom = (synthModel.romCards || []).find(card => card.id === rule.requiresRomId);
       return rom || null;
     }
@@ -2451,11 +2916,29 @@ function isRomCardEnabled(card) {
 
 function buildRomSelector() {
 
-  const container = document.getElementById("romTiles");
+  return buildRomSelectorForModel(synthModel);
+}
 
+function buildRomSelectorForModel(modelConfig) {
+
+  const container = document.getElementById("romTiles");
+  const heading = document.getElementById("romSettingsHeading");
+
+  if (!container) return;
   container.innerHTML = "";
 
-  const romCards = synthModel?.romCards || [];
+  const romCards = modelConfig?.romCards || [];
+
+  if (heading) {
+    heading.textContent = "Installed ROMs";
+    heading.classList.toggle("hidden", romCards.length === 0);
+  }
+
+  container.classList.toggle("hidden", romCards.length === 0);
+
+  if (romCards.length === 0) {
+    return;
+  }
 
   romCards.forEach(card => {
 
@@ -2476,18 +2959,18 @@ function buildRomSelector() {
 
 }
 
-function saveRomSelection() {
+function saveRomSelection(modelConfig = synthModel) {
 
   const active = [...document.querySelectorAll(".romTile.active")]
       .map(el => el.dataset.romId);
 
-  localStorage.setItem(getRomStorageKey(), JSON.stringify(active));
+  localStorage.setItem(getRomStorageKey(modelConfig), JSON.stringify(active));
 
 }
 
-function restoreRomSelection() {
+function restoreRomSelection(modelConfig = synthModel) {
 
-  const saved = getSavedRomIds();
+  const saved = getSavedRomIds(modelConfig);
 
   document.querySelectorAll(".romTile").forEach(tile => {
 
@@ -2499,10 +2982,10 @@ function restoreRomSelection() {
 
 }
 
-function getSavedRomIds() {
+function getSavedRomIds(modelConfig = synthModel) {
 
-  const romCards = synthModel?.romCards || [];
-  const savedByModel = localStorage.getItem(getRomStorageKey());
+  const romCards = modelConfig?.romCards || [];
+  const savedByModel = localStorage.getItem(getRomStorageKey(modelConfig));
   const savedLegacy = localStorage.getItem("k2600_roms");
   const saved = JSON.parse(savedByModel || savedLegacy || "[]");
 
@@ -2534,10 +3017,40 @@ function getSavedRomIds() {
   const normalized = [...new Set(ids)];
 
   if (!savedByModel && normalized.length > 0) {
-    localStorage.setItem(getRomStorageKey(), JSON.stringify(normalized));
+    localStorage.setItem(getRomStorageKey(modelConfig), JSON.stringify(normalized));
   }
 
   return normalized;
+}
+
+async function getModelConfigForEntry(entry) {
+  if (!entry?.configPath) {
+    return null;
+  }
+
+  if (entry.key === selectedModelEntry?.key) {
+    return synthModel;
+  }
+
+  if (modelConfigCache.has(entry.key)) {
+    return modelConfigCache.get(entry.key);
+  }
+
+  const config = await fetchJson(entry.configPath, `${entry.model} model config`);
+  modelConfigCache.set(entry.key, config);
+  return config;
+}
+
+async function refreshModalModelPreview() {
+  const select = document.getElementById("modelSelect");
+  const selectedKey = select?.value || selectedModelEntry?.key || "";
+  const entry = availableModels.find(model => model.key === selectedKey) || selectedModelEntry || null;
+  const modelConfig = await getModelConfigForEntry(entry);
+
+  buildRomSelectorForModel(modelConfig);
+  restoreRomSelection(modelConfig);
+
+  return modelConfig;
 }
 
 function formatPatchLocation(patchNumber, modeId = selectedMode) {
@@ -2578,8 +3091,8 @@ function getMidiStorageKey() {
   return `${modelId}_preferredMidiInput`;
 }
 
-function getRomStorageKey() {
-  const modelId = synthModel?.modelId || "default";
+function getRomStorageKey(modelConfig = synthModel) {
+  const modelId = modelConfig?.modelId || "default";
   return `${modelId}_roms`;
 }
 
@@ -2867,7 +3380,7 @@ function closeModal() {
    SAVE SETTINGS
 ================================ */
 
-function saveSettings() {
+async function saveSettings() {
   const selectedModelKey = document.getElementById("modelSelect")?.value || selectedModelEntry?.key || "";
   const modelChanged = Boolean(selectedModelKey && selectedModelKey !== selectedModelEntry?.key);
 
@@ -2881,13 +3394,16 @@ function saveSettings() {
     localStorage.setItem(getModelSelectionStorageKey(), selectedModelKey);
   }
 
+  const selectedModelEntryForSave = availableModels.find(model => model.key === selectedModelKey) || selectedModelEntry || null;
+  const selectedModelConfig = await getModelConfigForEntry(selectedModelEntryForSave) || synthModel;
+
   if (selectedMidiInput) {
     connectDevice(selectedMidiInput);
   } else if (!mySynth) {
     setNeedsMidiDisplay();
   }
 
-  saveRomSelection();
+  saveRomSelection(selectedModelConfig);
 
   console.log("Settings saved");
 

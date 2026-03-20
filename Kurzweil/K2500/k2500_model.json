@@ -1,0 +1,74 @@
+{
+  "modelId": "k2500",
+  "displayName": "K2500",
+  "manufacturer": "Kurzweil",
+  "supportUrl": "https://kurzweil.com/k2500/",
+  "patchDataPath": "k2500_programs.json",
+  "setupDataPath": "k2500_setups.json",
+  "controllerDataPath": "k2500_controllers.json",
+  "modSourceDataPath": "k2500_mod_sources.json",
+  "kdfxLookupDataPath": "k2500_kdfx_lookup.json",
+  "keymapDataPath": "k2500_keymaps.json",
+  "fxPresetDataPath": "k2500_fx_presets.json",
+  "locationDigits": 3,
+  "setupLocationDigits": 2,
+  "setupIndex": {
+    "formula": "program_plus_1"
+  },
+  "programIndex": {
+    "formula": "lsb_times_100_plus_program"
+  },
+  "romCards": [
+    {
+      "id": "contemporary",
+      "label": "Contemporary",
+      "aliases": [
+        "Contemporary"
+      ]
+    },
+    {
+      "id": "orchestral",
+      "label": "Orchestral",
+      "aliases": [
+        "Orchestral"
+      ]
+    },
+    {
+      "id": "piano",
+      "label": "SD Piano",
+      "aliases": [
+        "Piano",
+        "Stereo Dynamic Piano"
+      ]
+    }
+  ],
+  "patchAccessRules": [
+    {
+      "start": 770,
+      "end": 799,
+      "requiresRomId": "piano"
+    },
+    {
+      "start": 800,
+      "end": 899,
+      "requiresRomId": "contemporary"
+    },
+    {
+      "start": 900,
+      "end": 999,
+      "requiresRomId": "orchestral"
+    }
+  ],
+  "setupAccessRules": [
+    {
+      "start": 800,
+      "end": 850,
+      "requiresRomId": "contemporary"
+    },
+    {
+      "start": 900,
+      "end": 950,
+      "requiresRomId": "orchestral"
+    }
+  ]
+}
