@@ -54,6 +54,8 @@
         "k2500_setups.json",
         "k2500_controllers.json",
         "k2500_mod_sources.json",
+        "k2500_dsp_algorithms.json",
+        "k2500_dsp_block_details.json",
         "k2500_kdfx_algorithms.json",
         "k2500_kdfx_presets.json",
         "k2500_kdfx_studios.json",

@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 import re
+import sys
 from collections import OrderedDict
 from pathlib import Path
 
@@ -11,8 +12,8 @@ import fitz
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PDF_PATH = ROOT / "K2600 DSP Algs.pdf"
-OUTPUT_PATH = ROOT / "Kurzweil" / "K2600" / "k2600_dsp_algorithms.json"
+DEFAULT_PDF_PATH = ROOT / "K2600 DSP Algs.pdf"
+DEFAULT_OUTPUT_PATH = ROOT / "Kurzweil" / "K2600" / "k2600_dsp_algorithms.json"
 
 PANEL_MIN_WIDTH = 200
 PANEL_MIN_HEIGHT = 60
@@ -182,8 +183,8 @@ def ensure_unique_slug(base_slug: str, used_slugs: set[str]) -> str:
     return slug
 
 
-def build_dataset() -> dict:
-    pdf = fitz.open(PDF_PATH)
+def build_dataset(pdf_path: Path) -> dict:
+    pdf = fitz.open(pdf_path)
     blocks_by_id: OrderedDict[str, dict] = OrderedDict()
     option_sets_by_key: OrderedDict[tuple[str, ...], str] = OrderedDict()
     algorithms_by_id: OrderedDict[str, dict] = OrderedDict()
@@ -257,7 +258,7 @@ def build_dataset() -> dict:
 
     return {
         "source": {
-            "pdf": PDF_PATH.name,
+            "pdf": pdf_path.name,
             "pageCount": pdf.page_count,
             "algorithmCount": len(algorithms_by_id),
         },
@@ -268,9 +269,18 @@ def build_dataset() -> dict:
 
 
 def main() -> None:
-    dataset = build_dataset()
-    OUTPUT_PATH.write_text(json.dumps(dataset, indent=2) + "\n", encoding="utf-8")
-    print(f"Wrote {OUTPUT_PATH.relative_to(ROOT)}")
+    pdf_path = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else DEFAULT_PDF_PATH
+    output_path = Path(sys.argv[2]).resolve() if len(sys.argv) > 2 else DEFAULT_OUTPUT_PATH
+
+    dataset = build_dataset(pdf_path)
+    output_path.write_text(json.dumps(dataset, indent=2) + "\n", encoding="utf-8")
+
+    try:
+        display_path = output_path.relative_to(ROOT)
+    except ValueError:
+        display_path = output_path
+
+    print(f"Wrote {display_path}")
     print(f"Algorithms: {dataset['source']['algorithmCount']}")
     print(f"Blocks: {len(dataset['blocksById'])}")
     print(f"Option sets: {len(dataset['optionSetsById'])}")
