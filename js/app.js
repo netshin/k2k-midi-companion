@@ -38,10 +38,12 @@ let searchProgramCategoryFilters = {};
 let favoritesFilters = {
   programs: true,
   setups: true,
+  kdfx: true,
 };
 let favoritesState = {
   programs: [],
   setups: [],
+  kdfx: [],
 };
 let favoritesSortMode = "type";
 let keymapFilters = {};
@@ -1060,6 +1062,10 @@ function focusFavoritesSearch() {
   focusInputById("favoritesSearch");
 }
 
+function getKdfxSearchQuery() {
+  return document.getElementById("kdfxSearch")?.value || "";
+}
+
 function focusInputById(inputId) {
 
   const input = document.getElementById(inputId);
@@ -1102,6 +1108,14 @@ function getFxPresetSearchQuery() {
 
 function focusFxPresetsSearch() {
   focusInputById("fxPresetsSearch");
+}
+
+function getFavoritesCategoryLabels() {
+  return {
+    programs: getProgramLabelPlural().toLowerCase(),
+    setups: getSecondaryLabelPlural().toLowerCase(),
+    kdfx: getKdfxLabelPlural().toLowerCase(),
+  };
 }
 
 function getProgramCategories() {
@@ -1198,6 +1212,7 @@ function applyModelLabels() {
   setText("filterSetupsButton", secondaryPlural);
   setText("favoritesFilterProgramsButton", programPlural);
   setText("favoritesFilterSetupsButton", secondaryPlural);
+  setText("favoritesFilterKdfxButton", getKdfxLabelPlural());
 
   const searchButton = document.getElementById("searchButton");
   if (searchButton) {
@@ -1206,7 +1221,7 @@ function applyModelLabels() {
 
   const favoritesButton = document.getElementById("favoritesButton");
   if (favoritesButton) {
-    favoritesButton.title = `Display Favorite ${programPlural} and ${secondaryPlural} (Alt+F)`;
+    favoritesButton.title = "Display favorites (Alt+F)";
   }
 
   const programsButton = document.getElementById("programsButton");
@@ -1242,7 +1257,7 @@ function applyModelLabels() {
 
   const favoritesSearch = document.getElementById("favoritesSearch");
   if (favoritesSearch) {
-    favoritesSearch.placeholder = `Search favorite ${programPlural.toLowerCase()} and ${secondaryPlural.toLowerCase()} by name, location, or notes...`;
+    favoritesSearch.placeholder = `Search favorites across ${programPlural.toLowerCase()}, ${secondaryPlural.toLowerCase()}, and ${getKdfxLabelPlural().toLowerCase()}...`;
   }
 
   const title = document.querySelector("title");
@@ -1362,7 +1377,10 @@ function compareEntriesByNameThenType(a, b) {
 }
 
 function getFavoriteEntries() {
-  return getCombinedSearchEntries()
+  return [
+    ...getCombinedSearchEntries(),
+    ...getKdfxFavoriteEntries(),
+  ]
     .filter(entry => isFavorite(entry.type, entry.number))
     .sort(favoritesSortMode === "name" ? compareEntriesByNameThenType : compareEntriesByTypeThenName);
 }
@@ -1379,9 +1397,11 @@ function updateSearchFilterButtons() {
 function updateFavoritesFilterButtons() {
   const programsButton = document.getElementById("favoritesFilterProgramsButton");
   const setupsButton = document.getElementById("favoritesFilterSetupsButton");
+  const kdfxButton = document.getElementById("favoritesFilterKdfxButton");
 
   programsButton?.classList.toggle("active", favoritesFilters.programs);
   setupsButton?.classList.toggle("active", favoritesFilters.setups);
+  kdfxButton?.classList.toggle("active", favoritesFilters.kdfx);
 }
 
 function updateFavoritesSortButton() {
@@ -1436,6 +1456,14 @@ function toggleFavoritesSort() {
 function openSearchResult(entry) {
 
   if (!entry) return;
+
+  if (entry.type === "kdfx") {
+    selectedKdfxStudioId = entry.number;
+    showView("kdfx");
+    renderKdfxList(getKdfxSearchQuery());
+    renderKdfxDetail(entry.number);
+    return;
+  }
 
   if (entry.type === "setups") {
     showView("setups");
@@ -1584,7 +1612,7 @@ function renderFavoritesResults(query = "") {
     const empty = document.createElement("div");
     empty.className = "browser-empty";
     empty.textContent = entries.length === 0
-      ? `No favorites yet. Star a ${getProgramLabelSingular().toLowerCase()} or ${getSecondaryLabelSingular().toLowerCase()} to collect it here.`
+      ? `No favorites yet. Star a ${getProgramLabelSingular().toLowerCase()}, ${getSecondaryLabelSingular().toLowerCase()}, or ${getKdfxLabelSingular().toLowerCase()} to collect it here.`
       : "No favorites match the search.";
     container.appendChild(empty);
     return;
@@ -1896,6 +1924,7 @@ function setupKdfxButton() {
   const filterSetupsButton = document.getElementById("filterSetupsButton");
   const favoritesFilterProgramsButton = document.getElementById("favoritesFilterProgramsButton");
   const favoritesFilterSetupsButton = document.getElementById("favoritesFilterSetupsButton");
+  const favoritesFilterKdfxButton = document.getElementById("favoritesFilterKdfxButton");
   const favoritesSortButton = document.getElementById("favoritesSortButton");
   const favoriteToggleButton = document.getElementById("favoriteToggleButton");
 
@@ -2030,6 +2059,12 @@ function setupKdfxButton() {
   if (favoritesFilterSetupsButton) {
     favoritesFilterSetupsButton.addEventListener("click", () => {
       toggleFavoritesFilter("setups");
+    });
+  }
+
+  if (favoritesFilterKdfxButton) {
+    favoritesFilterKdfxButton.addEventListener("click", () => {
+      toggleFavoritesFilter("kdfx");
     });
   }
 
@@ -2579,45 +2614,41 @@ function renderKdfxList(query = "") {
   if (!container) return;
 
   const text = query.trim().toLowerCase();
-  const studios = Object.values(kdfxLookup.studiosById)
+  const studios = getKdfxFavoriteEntries()
     .sort((a, b) => a.id - b.id)
-    .filter(studio => {
-      if (!text) return true;
-
-      const busTokens = studio.buses
-        ? Object.values(studio.buses).flatMap(bus => {
-            const presetId = bus.presetId;
-            const preset = presetId ? kdfxLookup.presetsById?.[String(presetId)] : null;
-            const algorithmId = preset?.algorithmId || bus.algorithmId || null;
-            const algorithm = algorithmId ? kdfxLookup.algorithmsById?.[String(algorithmId)] : null;
-
-            return [
-              bus.presetName || "",
-              `${presetId || ""}`,
-              preset?.name || "",
-              `${algorithmId || ""}`,
-              algorithm?.name || "",
-            ];
-          })
-        : [];
-
-      const haystack = [`${studio.id}`, studio.name, ...busTokens]
-        .join(" ")
-        .toLowerCase();
-
-      return haystack.includes(text);
-    });
+    .filter(studio => !text || studio.searchText.includes(text));
 
   container.innerHTML = "";
 
   studios.forEach(studio => {
     const item = document.createElement("div");
     item.className = "kdfx-list-item";
-    item.textContent = `${String(studio.id).padStart(3, "0")}  ${studio.name}`;
 
     if (selectedKdfxStudioId === studio.id) {
       item.classList.add("active");
     }
+
+    const main = document.createElement("div");
+    main.className = "kdfx-list-item-main";
+
+    const title = document.createElement("div");
+    title.className = "kdfx-list-item-title";
+    title.textContent = `${String(studio.id).padStart(3, "0")}  ${studio.name}`;
+
+    const meta = document.createElement("span");
+    meta.className = "kdfx-list-item-meta";
+    meta.textContent = studio.meta;
+
+    const actions = document.createElement("div");
+    actions.className = "kdfx-list-item-actions";
+    actions.appendChild(createFavoriteToggle("kdfx", studio.id, `${getKdfxLabelSingular().toLowerCase()} ${String(studio.id).padStart(3, "0")}`));
+
+    main.appendChild(title);
+    if (studio.meta) {
+      main.appendChild(meta);
+    }
+    item.appendChild(main);
+    item.appendChild(actions);
 
     item.onclick = () => {
       selectedKdfxStudioId = studio.id;
@@ -2628,7 +2659,12 @@ function renderKdfxList(query = "") {
     container.appendChild(item);
   });
 
-  if (!selectedKdfxStudioId && studios.length > 0) {
+  if (selectedKdfxStudioId && studios.some(studio => studio.id === selectedKdfxStudioId)) {
+    renderKdfxDetail(selectedKdfxStudioId);
+  }
+
+  const visibleSelected = studios.some(studio => studio.id === selectedKdfxStudioId);
+  if (!visibleSelected && studios.length > 0) {
     selectedKdfxStudioId = studios[0].id;
     renderKdfxDetail(selectedKdfxStudioId);
     renderKdfxList(query);
@@ -2636,7 +2672,45 @@ function renderKdfxList(query = "") {
 
   if (studios.length === 0) {
     document.getElementById("kdfxStudioDetail").textContent = `No ${getKdfxLabelPlural().toLowerCase()} match the search.`;
+    selectedKdfxStudioId = null;
   }
+}
+
+function getKdfxFavoriteEntries() {
+  if (!kdfxLookup?.studiosById) {
+    return [];
+  }
+
+  return Object.values(kdfxLookup.studiosById).map(studio => {
+    const busCount = studio.buses ? Object.keys(studio.buses).length : 0;
+    const busTokens = studio.buses
+      ? Object.values(studio.buses).flatMap(bus => {
+          const presetId = bus.presetId;
+          const preset = presetId ? kdfxLookup.presetsById?.[String(presetId)] : null;
+          const algorithmId = preset?.algorithmId || bus.algorithmId || null;
+          const algorithm = algorithmId ? kdfxLookup.algorithmsById?.[String(algorithmId)] : null;
+
+          return [
+            bus.presetName || "",
+            `${presetId || ""}`,
+            preset?.name || "",
+            `${algorithmId || ""}`,
+            algorithm?.name || "",
+          ];
+        })
+      : [];
+
+    return {
+      id: Number(studio.id),
+      type: "kdfx",
+      number: Number(studio.id),
+      location: String(studio.id).padStart(3, "0"),
+      typeLabel: getKdfxLabelSingular(),
+      name: String(studio.name || ""),
+      meta: busCount > 0 ? `${busCount} bus${busCount === 1 ? "" : "es"}` : "Top-level entry",
+      searchText: [`${studio.id}`, studio.name, ...busTokens].join(" ").toLowerCase(),
+    };
+  });
 }
 
 function renderKdfxDetail(studioId) {
@@ -2762,15 +2836,20 @@ function renderDspAlgorithmList(query = "") {
       item.classList.add("active");
     }
 
+    const main = document.createElement("div");
+    main.className = "kdfx-list-item-main";
+
     const title = document.createElement("div");
+    title.className = "kdfx-list-item-title";
     title.textContent = `Algorithm ${entry.id}`;
 
     const meta = document.createElement("span");
     meta.className = "dsp-list-item-meta";
     meta.textContent = `${entry.stageCount} stages | ${entry.labels.slice(0, 3).join(" | ")}`;
 
-    item.appendChild(title);
-    item.appendChild(meta);
+    main.appendChild(title);
+    main.appendChild(meta);
+    item.appendChild(main);
     item.addEventListener("click", () => {
       selectedDspAlgorithmId = entry.id;
       renderDspAlgorithmDetail(entry.id);
@@ -3120,6 +3199,7 @@ function loadFavorites() {
     favoritesState = {
       programs: [],
       setups: [],
+      kdfx: [],
     };
     return;
   }
@@ -3129,12 +3209,14 @@ function loadFavorites() {
     favoritesState = {
       programs: normalizeFavoriteNumberList(parsed?.programs),
       setups: normalizeFavoriteNumberList(parsed?.setups),
+      kdfx: normalizeFavoriteNumberList(parsed?.kdfx),
     };
   } catch (error) {
     console.warn("Failed to parse favorites, resetting", error);
     favoritesState = {
       programs: [],
       setups: [],
+      kdfx: [],
     };
   }
 }
@@ -3143,6 +3225,7 @@ function saveFavorites() {
   localStorage.setItem(getFavoritesStorageKey(), JSON.stringify({
     programs: favoritesState.programs,
     setups: favoritesState.setups,
+    kdfx: favoritesState.kdfx,
   }));
   updateFavoritesTransferSummary();
 }
@@ -3152,11 +3235,12 @@ function createFavoritesExportPayload() {
     modelId: synthModel?.modelId || "default",
     manufacturer: synthModel?.manufacturer || "",
     model: synthModel?.model || "",
-    version: 1,
+    version: 2,
     exportedAt: new Date().toISOString(),
     favorites: {
       programs: favoritesState.programs,
       setups: favoritesState.setups,
+      kdfx: favoritesState.kdfx,
     },
   };
 }
@@ -3166,10 +3250,9 @@ function updateFavoritesTransferSummary(message = "") {
 
   if (!summary) return;
 
-  const totalCount = favoritesState.programs.length + favoritesState.setups.length;
-  const programPlural = getProgramLabelPlural().toLowerCase();
-  const secondaryPlural = getSecondaryLabelPlural().toLowerCase();
-  summary.textContent = message || `${totalCount} favorite${totalCount === 1 ? "" : "s"} saved (${favoritesState.programs.length} ${programPlural}, ${favoritesState.setups.length} ${secondaryPlural}).`;
+  const labels = getFavoritesCategoryLabels();
+  const totalCount = favoritesState.programs.length + favoritesState.setups.length + favoritesState.kdfx.length;
+  summary.textContent = message || `${totalCount} favorite${totalCount === 1 ? "" : "s"} saved (${favoritesState.programs.length} ${labels.programs}, ${favoritesState.setups.length} ${labels.setups}, ${favoritesState.kdfx.length} ${labels.kdfx}).`;
 }
 
 function refreshFavoritesUi() {
@@ -3177,6 +3260,7 @@ function refreshFavoritesUi() {
   updateFavoritesTransferSummary();
   renderSearchResults(getPatchSearchQuery());
   renderFavoritesResults(getFavoritesSearchQuery());
+  renderKdfxList(getKdfxSearchQuery());
 }
 
 function downloadFavoritesFile() {
@@ -3192,7 +3276,8 @@ function downloadFavoritesFile() {
   link.click();
   link.remove();
   URL.revokeObjectURL(url);
-  updateFavoritesTransferSummary(`Exported ${payload.favorites.programs.length + payload.favorites.setups.length} favorites.`);
+  const totalCount = payload.favorites.programs.length + payload.favorites.setups.length + payload.favorites.kdfx.length;
+  updateFavoritesTransferSummary(`Exported ${totalCount} favorites.`);
 }
 
 function parseFavoritesImportPayload(text) {
@@ -3214,6 +3299,7 @@ function parseFavoritesImportPayload(text) {
   return {
     programs: normalizeFavoriteNumberList(favoriteRoot.programs),
     setups: normalizeFavoriteNumberList(favoriteRoot.setups),
+    kdfx: normalizeFavoriteNumberList(favoriteRoot.kdfx),
   };
 }
 
@@ -3226,15 +3312,20 @@ function applyImportedFavorites(importedFavorites, mode = "merge") {
     ? importedFavorites.setups
     : normalizeFavoriteNumberList([...favoritesState.setups, ...importedFavorites.setups]);
 
+  const nextKdfx = mode === "replace"
+    ? importedFavorites.kdfx
+    : normalizeFavoriteNumberList([...favoritesState.kdfx, ...importedFavorites.kdfx]);
+
   favoritesState = {
     programs: nextPrograms,
     setups: nextSetups,
+    kdfx: nextKdfx,
   };
 
   saveFavorites();
   refreshFavoritesUi();
 
-  const totalCount = nextPrograms.length + nextSetups.length;
+  const totalCount = nextPrograms.length + nextSetups.length + nextKdfx.length;
   updateFavoritesTransferSummary(`${mode === "replace" ? "Replaced" : "Merged"} favorites. ${totalCount} total.`);
 }
 
@@ -3294,6 +3385,7 @@ function toggleFavorite(type, number) {
   updateFavoriteToggleButton();
   renderSearchResults(getPatchSearchQuery());
   renderFavoritesResults(getFavoritesSearchQuery());
+  renderKdfxList(getKdfxSearchQuery());
   return favoritesState[type].includes(normalizedNumber);
 }
 
