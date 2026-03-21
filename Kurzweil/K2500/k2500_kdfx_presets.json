@@ -136,6 +136,7 @@
       "algorithmId": 1,
       "algorithmName": "MiniVerb",
       "size": 1,
+      "possibleDuplicate": 851,
       "v1": true,
       "v2": false
     },
@@ -496,6 +497,7 @@
       "algorithmId": 9,
       "algorithmName": "Diffuse Verb",
       "size": 3,
+      "possibleDuplicate": 845,
       "v1": true,
       "v2": false
     },
@@ -808,6 +810,7 @@
       "algorithmId": 3,
       "algorithmName": "Gated MiniVerb",
       "size": 2,
+      "possibleDuplicate": 815,
       "v1": true,
       "v2": false
     },
@@ -889,6 +892,7 @@
       "algorithmId": 15,
       "algorithmName": "Finite Verb",
       "size": 3,
+      "possibleDuplicate": 816,
       "v1": true,
       "v2": false
     },
@@ -1005,6 +1009,7 @@
       "algorithmId": 132,
       "algorithmName": "4-Tap Delay BPM",
       "size": 1,
+      "possibleDuplicate": 833,
       "v1": true,
       "v2": false
     },
@@ -1641,6 +1646,7 @@
       "algorithmId": 700,
       "algorithmName": "Chorus+Delay",
       "size": 1,
+      "possibleDuplicate": 834,
       "v1": true,
       "v2": false
     },
@@ -2709,6 +2715,7 @@
       "algorithmId": null,
       "algorithmName": "TBD",
       "size": null,
+      "possibleDuplicate": 112,
       "source": "K2500 KDFXv2 additions.pdf",
       "v1": false,
       "v2": true
@@ -2719,6 +2726,7 @@
       "algorithmId": null,
       "algorithmName": "TBD",
       "size": null,
+      "possibleDuplicate": 121,
       "source": "K2500 KDFXv2 additions.pdf",
       "v1": false,
       "v2": true
@@ -2889,6 +2897,7 @@
       "algorithmId": null,
       "algorithmName": "TBD",
       "size": null,
+      "possibleDuplicate": 133,
       "source": "K2500 KDFXv2 additions.pdf",
       "v1": false,
       "v2": true
@@ -2899,6 +2908,7 @@
       "algorithmId": null,
       "algorithmName": "TBD",
       "size": null,
+      "possibleDuplicate": 700,
       "source": "K2500 KDFXv2 additions.pdf",
       "v1": false,
       "v2": true
@@ -3009,6 +3019,7 @@
       "algorithmId": null,
       "algorithmName": "TBD",
       "size": null,
+      "possibleDuplicate": 71,
       "source": "K2500 KDFXv2 additions.pdf",
       "v1": false,
       "v2": true
@@ -3069,6 +3080,7 @@
       "algorithmId": null,
       "algorithmName": "TBD",
       "size": null,
+      "possibleDuplicate": 17,
       "source": "K2500 KDFXv2 additions.pdf",
       "v1": false,
       "v2": true
