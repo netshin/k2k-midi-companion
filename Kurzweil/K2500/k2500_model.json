@@ -11,7 +11,7 @@
   "dspAlgorithmDataPath": "k2500_dsp_algorithms.json",
   "dspBlockDetailDataPath": "k2500_dsp_block_details.json",
   "keymapDataPath": "k2500_keymaps.json",
-  "fxPresetDataPath": "k2500_fx_presets.json",
+  "fxPresetDataPath": "k2500_kdfx_presets.json",
   "locationDigits": 3,
   "setupLocationDigits": 2,
   "setupIndex": {
