@@ -208,6 +208,9 @@
       <div id="kdfxViewTitle" class="kdfx-title">KDFX Studios</div>
       <input id="kdfxSearch" type="text" placeholder="Search studio/preset/algorithm..." />
     </div>
+    <div class="browser-toolbar">
+      <div id="kdfxSummary" class="browser-summary" aria-live="polite"></div>
+    </div>
 
     <div class="kdfx-grid">
       <div id="kdfxStudioList" class="kdfx-list"></div>
@@ -240,8 +243,15 @@
       <div id="fxPresetsSummary" class="browser-summary" aria-live="polite"></div>
     </div>
 
-    <div id="fxPresetsResults" class="browser-results">
-      Loading FX presets...
+    <div class="fx-presets-grid">
+      <div id="fxPresetsResults" class="fx-presets-list">
+        Loading FX presets...
+      </div>
+      <div class="kdfx-detail-panel">
+        <div id="fxPresetsDetail" class="kdfx-detail">
+          Select an FX preset to view details.
+        </div>
+      </div>
     </div>
   </div>
 </div>

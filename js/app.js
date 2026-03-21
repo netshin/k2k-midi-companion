@@ -23,6 +23,7 @@ let mySynth = null;
 let selectedMidiInput = null;
 let selectedMode = "programs";
 let selectedKdfxStudioId = null;
+let selectedFxPresetId = null;
 let selectedDspAlgorithmId = null;
 let modSourceTooltipHideTimer = null;
 let dspTooltipHideTimer = null;
@@ -1795,10 +1796,22 @@ function getFxPresetEntries() {
       .map(entry => ({
         id: Number(entry.id),
         name: String(entry.name || ""),
-        searchText: `${entry.id} ${entry.name || ""}`.toLowerCase(),
+        algorithmId: entry.algorithmId ?? null,
+        algorithmName: entry.algorithmName || "",
+        size: entry.size ?? null,
+        v1: entry.v1 === true,
+        v2: entry.v2 === true,
+        source: entry.source || null,
+        possibleDuplicate: entry.possibleDuplicate || null,
+        badges: getObjectMetadataBadges(entry),
+        searchText: `${entry.id} ${entry.name || ""} ${entry.algorithmName || ""}`.toLowerCase(),
       }))
       .sort((a, b) => a.id - b.id)
     : [];
+}
+
+function shouldShowFxPresetsView() {
+  return synthModel?.showFxPresetsView !== false;
 }
 
 function renderFxPresets(query = "") {
@@ -1822,22 +1835,28 @@ function renderFxPresets(query = "") {
     empty.className = "browser-empty";
     empty.textContent = "No FX presets match the search.";
     container.appendChild(empty);
+    renderFxPresetDetail(null);
     return;
+  }
+
+  const visibleSelected = filteredEntries.some(entry => entry.id === selectedFxPresetId);
+  if (!visibleSelected) {
+    selectedFxPresetId = filteredEntries[0].id;
   }
 
   const fragment = document.createDocumentFragment();
 
   filteredEntries.forEach(entry => {
     const item = document.createElement("div");
-    item.className = "browser-item";
+    item.className = "fx-presets-item";
+
+    if (selectedFxPresetId === entry.id) {
+      item.classList.add("active");
+    }
 
     const location = document.createElement("div");
     location.className = "browser-item-location";
     location.textContent = String(entry.id).padStart(3, "0");
-
-    const type = document.createElement("div");
-    type.className = "browser-item-type";
-    type.textContent = "FX Preset";
 
     const body = document.createElement("div");
     body.className = "browser-item-body";
@@ -1847,13 +1866,67 @@ function renderFxPresets(query = "") {
     name.textContent = entry.name;
 
     body.appendChild(name);
+
+    const badges = buildMetadataBadgeRow(entry.badges);
+    if (badges) {
+      body.appendChild(badges);
+    }
+
     item.appendChild(location);
-    item.appendChild(type);
     item.appendChild(body);
+    item.addEventListener("click", () => {
+      selectedFxPresetId = entry.id;
+      renderFxPresetDetail(entry.id);
+      renderFxPresets(query);
+    });
     fragment.appendChild(item);
   });
 
   container.appendChild(fragment);
+  renderFxPresetDetail(selectedFxPresetId);
+}
+
+function renderFxPresetDetail(presetId) {
+  const detail = document.getElementById("fxPresetsDetail");
+  if (!detail) return;
+
+  const entries = getFxPresetEntries();
+  const entry = entries.find(item => item.id === presetId);
+
+  if (!entry) {
+    detail.textContent = "Select an FX preset to view details.";
+    return;
+  }
+
+  detail.textContent = "";
+
+  const heading = document.createElement("h3");
+  heading.textContent = `${String(entry.id).padStart(3, "0")} ${entry.name}`;
+  detail.appendChild(heading);
+
+  const badges = buildMetadataBadgeRow(entry.badges);
+  if (badges) {
+    detail.appendChild(badges);
+  }
+
+  const meta = document.createElement("div");
+  meta.className = "kdfx-detail-meta";
+  const algorithmLabel = entry.algorithmId ? `A${String(entry.algorithmId).padStart(3, "0")} ${entry.algorithmName || ""}` : "Algorithm unknown";
+  const sizeLabel = entry.size != null ? `${entry.size} PAU${entry.size === 1 ? "" : "s"}` : "PAUs unknown";
+  meta.textContent = `${algorithmLabel} | ${sizeLabel}`;
+  detail.appendChild(meta);
+
+  const notes = buildObjectNoteBlock(buildObjectNotes(entry, "preset"));
+  if (notes) {
+    detail.appendChild(notes);
+  }
+
+  if (entry.source) {
+    const source = document.createElement("div");
+    source.className = "meta";
+    source.textContent = `Source: ${entry.source}`;
+    detail.appendChild(source);
+  }
 }
 
 
@@ -1954,7 +2027,7 @@ function setupKdfxButton() {
   }
 
   if (fxPresetsButton) {
-    if (!Array.isArray(fxPresetsData?.presets) || fxPresetsData.presets.length === 0) {
+    if (!shouldShowFxPresetsView() || !Array.isArray(fxPresetsData?.presets) || fxPresetsData.presets.length === 0) {
       fxPresetsButton.classList.add("hidden");
     } else {
       fxPresetsButton.addEventListener("click", () => {
@@ -2611,12 +2684,17 @@ function renderKdfxList(query = "") {
   if (!kdfxLookup?.studiosById) return;
 
   const container = document.getElementById("kdfxStudioList");
+  const summary = document.getElementById("kdfxSummary");
   if (!container) return;
 
   const text = query.trim().toLowerCase();
   const studios = getKdfxFavoriteEntries()
     .sort((a, b) => a.id - b.id)
     .filter(studio => !text || studio.searchText.includes(text));
+
+  if (summary) {
+    summary.textContent = `${studios.length} shown`;
+  }
 
   container.innerHTML = "";
 
@@ -2639,6 +2717,8 @@ function renderKdfxList(query = "") {
     meta.className = "kdfx-list-item-meta";
     meta.textContent = studio.meta;
 
+    const badges = buildMetadataBadgeRow(studio.badges);
+
     const actions = document.createElement("div");
     actions.className = "kdfx-list-item-actions";
     actions.appendChild(createFavoriteToggle("kdfx", studio.id, `${getKdfxLabelSingular().toLowerCase()} ${String(studio.id).padStart(3, "0")}`));
@@ -2646,6 +2726,9 @@ function renderKdfxList(query = "") {
     main.appendChild(title);
     if (studio.meta) {
       main.appendChild(meta);
+    }
+    if (badges) {
+      main.appendChild(badges);
     }
     item.appendChild(main);
     item.appendChild(actions);
@@ -2708,9 +2791,98 @@ function getKdfxFavoriteEntries() {
       typeLabel: getKdfxLabelSingular(),
       name: String(studio.name || ""),
       meta: busCount > 0 ? `${busCount} bus${busCount === 1 ? "" : "es"}` : "Top-level entry",
+      badges: getObjectMetadataBadges(studio),
       searchText: [`${studio.id}`, studio.name, ...busTokens].join(" ").toLowerCase(),
     };
   });
+}
+
+function getObjectMetadataBadges(entry) {
+  if (!entry || typeof entry !== "object") {
+    return [];
+  }
+
+  const badges = [];
+  const hasV1 = entry.v1 === true;
+  const hasV2 = entry.v2 === true;
+
+  if (hasV1 && hasV2) {
+    badges.push({ label: "V1+V2", tone: "version" });
+  } else if (hasV2) {
+    badges.push({ label: "V2 only", tone: "version" });
+  }
+
+  if (entry.possibleDuplicate) {
+    badges.push({ label: "Possible Duplicate", tone: "duplicate" });
+  }
+
+  if ((Object.prototype.hasOwnProperty.call(entry, "algorithmId") && entry.algorithmId == null)
+      || (Object.prototype.hasOwnProperty.call(entry, "size") && entry.size == null)) {
+    badges.push({ label: "Incomplete", tone: "incomplete" });
+  }
+
+  return badges;
+}
+
+function buildMetadataBadgeRow(badges) {
+  if (!Array.isArray(badges) || badges.length === 0) {
+    return null;
+  }
+
+  const row = document.createElement("div");
+  row.className = "metadata-badges";
+
+  badges.forEach(badge => {
+    const chip = document.createElement("span");
+    chip.className = `metadata-badge metadata-badge-${badge.tone || "default"}`;
+    chip.textContent = badge.label;
+    row.appendChild(chip);
+  });
+
+  return row;
+}
+
+function buildObjectNotes(entry, objectLabel) {
+  if (!entry || typeof entry !== "object") {
+    return [];
+  }
+
+  const notes = [];
+
+  if (entry.possibleDuplicate) {
+    notes.push({
+      tone: "duplicate",
+      text: `Possible duplicate of ${objectLabel} ${String(entry.possibleDuplicate).padStart(3, "0")}. Match not yet verified.`,
+    });
+  }
+
+  if ((Object.prototype.hasOwnProperty.call(entry, "algorithmId") && entry.algorithmId == null)
+      || (Object.prototype.hasOwnProperty.call(entry, "size") && entry.size == null)) {
+    notes.push({
+      tone: "incomplete",
+      text: "Some fields are unavailable in the current source material.",
+    });
+  }
+
+  return notes;
+}
+
+function buildObjectNoteBlock(notes) {
+  if (!Array.isArray(notes) || notes.length === 0) {
+    return null;
+  }
+
+  const container = document.createElement("div");
+  container.className = "kdfx-notes";
+
+  notes.forEach(note => {
+    const item = document.createElement("div");
+    item.className = `kdfx-note kdfx-note-${note.tone || "default"}`;
+    item.textContent = note.text;
+    container.appendChild(item);
+  });
+
+  return container;
 }
 
 function renderKdfxDetail(studioId) {
@@ -2726,8 +2898,33 @@ function renderKdfxDetail(studioId) {
     return;
   }
 
-  const lines = [];
+  detail.textContent = "";
+
+  const heading = document.createElement("h3");
+  heading.textContent = `${String(studio.id).padStart(3, "0")} ${studio.name}`;
+  detail.appendChild(heading);
+
+  const studioBadges = buildMetadataBadgeRow(getObjectMetadataBadges(studio));
+  if (studioBadges) {
+    detail.appendChild(studioBadges);
+  }
+
   const buses = studio.buses || {};
+  const busCount = Object.keys(buses).length;
+
+  const meta = document.createElement("div");
+  meta.className = "kdfx-detail-meta";
+  meta.textContent = busCount > 0
+    ? `${busCount} bus${busCount === 1 ? "" : "es"} configured`
+    : "No details available.";
+  detail.appendChild(meta);
+
+  const notes = buildObjectNoteBlock(buildObjectNotes(studio, getKdfxLabelSingular().toLowerCase()));
+  if (notes) {
+    detail.appendChild(notes);
+  }
+
+  const lines = [];
   const formatKdfxBusLabel = busKey => {
     if (busKey === "aux") {
       return "AUX";
@@ -2765,11 +2962,10 @@ function renderKdfxDetail(studioId) {
   legend?.classList.toggle("hidden", !hasRouting);
 
   if (!hasRouting) {
-    detail.innerHTML = `<h3>${String(studio.id).padStart(3, "0")} ${studio.name}</h3><div class="meta">Top-level ${getKdfxLabelSingular().toLowerCase()} entry.</div>`;
     return;
   }
 
-  detail.innerHTML = `<h3>${String(studio.id).padStart(3, "0")} ${studio.name}</h3>${lines.join("")}`;
+  detail.innerHTML += lines.join("");
 }
 
 function getDspAlgorithmEntries() {

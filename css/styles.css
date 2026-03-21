@@ -279,6 +279,36 @@ body {
   overflow:auto;
 }
 
+.fx-presets-grid {
+  display:grid;
+  grid-template-columns:320px 1fr;
+  gap:16px;
+}
+
+.fx-presets-list {
+  background:#101822;
+  border:1px solid #1e2c3b;
+  padding:6px;
+  min-height:500px;
+  max-height:65vh;
+  overflow:auto;
+}
+
+.fx-presets-item {
+  display:grid;
+  grid-template-columns:72px minmax(0, 1fr);
+  column-gap:12px;
+  align-items:start;
+  padding:10px 12px;
+  border-bottom:1px solid #1e2c3b;
+  cursor:pointer;
+}
+
+.fx-presets-item:hover,
+.fx-presets-item.active {
+  background:#15314d;
+}
+
 .browser-item {
   display:grid;
   grid-template-columns:90px 76px minmax(0, 1fr) 32px;
@@ -324,6 +354,16 @@ body {
   line-height:1.35;
   overflow-wrap:anywhere;
   word-break:break-word;
+}
+
+.browser-item.active .browser-item-meta,
+.browser-item:hover .browser-item-meta {
+  color:#9fd0ff;
+}
+
+.fx-presets-item.active .browser-item-meta,
+.fx-presets-item:hover .browser-item-meta {
+  color:#9fd0ff;
 }
 
 .browser-item-actions {
@@ -607,6 +647,73 @@ body {
   margin:0 0 8px 0;
 }
 
+.metadata-badges {
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+  margin:6px 0 0 0;
+}
+
+.metadata-badge {
+  display:inline-flex;
+  align-items:center;
+  padding:2px 7px;
+  border:1px solid #375168;
+  border-radius:999px;
+  background:#132231;
+  color:#b9d7ee;
+  font-size:11px;
+  letter-spacing:0.5px;
+  line-height:1.2;
+  text-transform:uppercase;
+}
+
+.metadata-badge-version {
+  border-color:#3c6d8b;
+  color:#7df0ff;
+}
+
+.metadata-badge-incomplete {
+  border-color:#7c6540;
+  color:#ffd84d;
+}
+
+.metadata-badge-duplicate {
+  border-color:#7a4967;
+  color:#ff9fcb;
+}
+
+.kdfx-detail-meta {
+  color:#9fd0ff;
+  margin:0 0 8px 0;
+  line-height:1.45;
+}
+
+.kdfx-notes {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:10px;
+}
+
+.kdfx-note {
+  color:#d6e9f7;
+  background:#0f2234;
+  border:1px solid #2a475d;
+  padding:8px 10px;
+  line-height:1.4;
+}
+
+.kdfx-note-duplicate {
+  border-color:#7a4967;
+  color:#ffd3e9;
+}
+
+.kdfx-note-incomplete {
+  border-color:#7c6540;
+  color:#ffe6a8;
+}
+
 .dsp-meta {
   color:#9fd0ff;
   letter-spacing:0.5px;
@@ -835,7 +942,12 @@ body {
     grid-template-columns:1fr;
   }
 
+  .fx-presets-grid {
+    grid-template-columns:1fr;
+  }
+
   .browser-results,
+  .fx-presets-list,
   .kdfx-list,
   .kdfx-detail {
     min-height:280px;
