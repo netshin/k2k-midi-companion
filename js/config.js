@@ -11,7 +11,8 @@ const CONFIG = {
 
   midi: {
     autoConnect: "Kurzweil",
-    preferredPort: 0
+    preferredPort: 0,
+    debugEnabled: false
   },
 
   debug: true

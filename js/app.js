@@ -297,12 +297,29 @@ function showDeviceModal() {
 
   const modal = document.getElementById("deviceModal");
   const container = document.getElementById("deviceTiles");
+  const midiDebugEnabled = document.getElementById("midiDebugEnabled");
+  const midiChannelSelect = document.getElementById("midiChannelSelect");
   const needsModelSelection = isFirstRunModelSelectionRequired();
 
   container.innerHTML = "";
   selectedMidiInput = null;
   buildModelSelector();
   updateFavoritesTransferSummary();
+  if (midiDebugEnabled) {
+    midiDebugEnabled.checked = isMidiDebugEnabled();
+  }
+  if (midiChannelSelect) {
+    midiChannelSelect.textContent = "";
+    for (let channel = 1; channel <= 16; channel += 1) {
+      const option = document.createElement("option");
+      option.value = String(channel);
+      option.textContent = String(channel);
+      if (channel === getSelectedMidiChannel()) {
+        option.selected = true;
+      }
+      midiChannelSelect.appendChild(option);
+    }
+  }
 
   if (WebMidi.inputs.length === 0) {
     container.innerHTML = '<div class="tile tile-disabled">No Interface Detected</div>';
@@ -423,51 +440,52 @@ function attachMidiListeners() {
 
   if (!mySynth) return;
 
-  const channel = mySynth.channels[1];
+  for (let channelNumber = 1; channelNumber <= 16; channelNumber += 1) {
+    const cleanupChannel = mySynth.channels[channelNumber];
+    cleanupChannel.removeListener("noteon");
+    cleanupChannel.removeListener("controlchange");
+    cleanupChannel.removeListener("programchange");
+  }
 
-  /* remove previous listeners if user reconnects */
+  const channelNumber = getSelectedMidiChannel();
+  const channel = mySynth.channels[channelNumber];
 
-  channel.removeListener("noteon");
-  channel.removeListener("controlchange");
-  channel.removeListener("programchange");
-
-
-  /* NOTE EVENTS */
+  midiDebugLog(`Listening on MIDI channel ${channelNumber}`);
 
   channel.addListener("noteon", e => {
-    console.log("Note:", e.note.name);
+    midiDebugLog(`CH${channelNumber} Note On`, {
+      note: e.note?.identifier || e.note?.name || null,
+      rawData: e.data || null,
+    });
   });
 
-
-  /* BANK SELECT */
-
   channel.addListener("controlchange", e => {
+    midiDebugLog(`CH${channelNumber} Control Change`, {
+      controller: e.controller?.number ?? null,
+      value: e.rawValue,
+      rawData: e.data || null,
+    });
 
     if (e.controller.number === 0) {
       myBankMSB = e.rawValue;
-      console.log("Bank MSB:", myBankMSB);
+      midiDebugLog(`CH${channelNumber} Bank MSB`, myBankMSB);
     }
 
     if (e.controller.number === 32) {
       myBankLSB = e.rawValue;
-      console.log("Bank LSB:", myBankLSB);
+      midiDebugLog(`CH${channelNumber} Bank LSB`, myBankLSB);
     }
-
   });
 
-
-  /* PROGRAM CHANGE */
-
   channel.addListener("programchange", e => {
-
-    console.log(
-      "Bank MSB:", myBankMSB,
-      "Bank LSB:", myBankLSB,
-      "Program:", e.value
-    );
+    midiDebugLog(`CH${channelNumber} Program Change`, {
+      bankMsb: myBankMSB,
+      bankLsb: myBankLSB,
+      program: e.value,
+      rawData: e.data || null,
+    });
 
     handleProgramChange(myBankMSB, myBankLSB, e.value);
-
   });
 
 }
@@ -3366,6 +3384,58 @@ function getMidiStorageKey() {
   return `${modelId}_preferredMidiInput`;
 }
 
+function getMidiDebugStorageKey() {
+  const modelId = synthModel?.modelId || "default";
+  return `${modelId}_midiDebugEnabled`;
+}
+
+function getMidiChannelStorageKey() {
+  const modelId = synthModel?.modelId || "default";
+  return `${modelId}_midiReceiveChannel`;
+}
+
+function isMidiDebugEnabled() {
+  const stored = localStorage.getItem(getMidiDebugStorageKey());
+
+  if (stored === "true") {
+    return true;
+  }
+
+  if (stored === "false") {
+    return false;
+  }
+
+  return CONFIG?.midi?.debugEnabled === true;
+}
+
+function setMidiDebugEnabled(enabled) {
+  localStorage.setItem(getMidiDebugStorageKey(), enabled ? "true" : "false");
+}
+
+function getSelectedMidiChannel() {
+  const stored = Number(localStorage.getItem(getMidiChannelStorageKey()));
+
+  if (Number.isInteger(stored) && stored >= 1 && stored <= 16) {
+    return stored;
+  }
+
+  return 1;
+}
+
+function setSelectedMidiChannel(channel) {
+  const normalized = Number(channel);
+  const nextChannel = Number.isInteger(normalized) && normalized >= 1 && normalized <= 16 ? normalized : 1;
+  localStorage.setItem(getMidiChannelStorageKey(), String(nextChannel));
+}
+
+function midiDebugLog(...args) {
+  if (!isMidiDebugEnabled()) {
+    return;
+  }
+
+  console.log("[MIDI DEBUG]", ...args);
+}
+
 function getRomStorageKey(modelConfig = synthModel) {
   const modelId = modelConfig?.modelId || "default";
   return `${modelId}_roms`;
@@ -3670,6 +3740,8 @@ function closeModal() {
 
 async function saveSettings() {
   const selectedModelKey = document.getElementById("modelSelect")?.value || selectedModelEntry?.key || "";
+  const midiDebugEnabled = document.getElementById("midiDebugEnabled")?.checked === true;
+  const midiChannel = Number(document.getElementById("midiChannelSelect")?.value || getSelectedMidiChannel());
   const modelChanged = Boolean(selectedModelKey && selectedModelKey !== selectedModelEntry?.key);
 
   if (!selectedModelKey) {
@@ -3681,6 +3753,9 @@ async function saveSettings() {
   if (selectedModelKey) {
     localStorage.setItem(getModelSelectionStorageKey(), selectedModelKey);
   }
+
+  setMidiDebugEnabled(midiDebugEnabled);
+  setSelectedMidiChannel(midiChannel);
 
   const selectedModelEntryForSave = availableModels.find(model => model.key === selectedModelKey) || selectedModelEntry || null;
   const selectedModelConfig = await getModelConfigForEntry(selectedModelEntryForSave) || synthModel;

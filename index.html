@@ -35,6 +35,10 @@
 
     <h2>Select MIDI Interface</h2>
     <div id="deviceTiles"></div>
+    <div class="midi-channel-settings">
+      <label class="model-selector-label" for="midiChannelSelect">Receive MIDI Channel</label>
+      <select id="midiChannelSelect" class="model-select"></select>
+    </div>
 
     <h2 id="romSettingsHeading">Installed ROMs</h2>
     <div id="romTiles"></div>
@@ -48,6 +52,15 @@
         <button id="importFavoritesReplaceButton" class="k2600-button" type="button">Import Replace</button>
       </div>
       <input id="favoritesImportInput" type="file" accept="application/json,.json" class="hidden" />
+    </div>
+
+    <h2>MIDI Debug</h2>
+    <div class="midi-debug-settings">
+      <label class="midi-debug-toggle">
+        <input id="midiDebugEnabled" type="checkbox" />
+        <span>Enable MIDI debug</span>
+      </label>
+      <div class="midi-debug-help">Use the Browser's Development Mode Console.</div>
     </div>
 
     <div class="modal-actions">
