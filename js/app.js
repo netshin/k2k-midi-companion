@@ -1494,6 +1494,19 @@ function openSearchResult(entry) {
   displayCatalogItem("programs", entry.number);
 }
 
+function isCatalogSearchEntryVisible(entry) {
+  if (!entry || typeof entry !== "object") {
+    return false;
+  }
+
+  if (entry.type !== "programs" && entry.type !== "setups") {
+    return true;
+  }
+
+  const requiredRomCard = getRequiredRomCardForCatalogItem(entry.type, entry.number);
+  return !requiredRomCard || isRomCardEnabled(requiredRomCard);
+}
+
 function createFavoriteToggle(type, number, labelText = "Toggle favorite") {
   const button = document.createElement("button");
   button.type = "button";
@@ -1575,6 +1588,10 @@ function renderSearchResults(query = "") {
       return false;
     }
 
+    if (!isCatalogSearchEntryVisible(entry)) {
+      return false;
+    }
+
     if (entry.type === "programs" && !isProgramCategoryVisible(entry.categoryId)) {
       return false;
     }
@@ -1615,6 +1632,10 @@ function renderFavoritesResults(query = "") {
   const entries = getFavoriteEntries();
   const filteredEntries = entries.filter(entry => {
     if (!favoritesFilters[entry.type]) {
+      return false;
+    }
+
+    if (!isCatalogSearchEntryVisible(entry)) {
       return false;
     }
 
@@ -1659,12 +1680,14 @@ function getKeymapCategories() {
     ? keymapsData.source.categories
     : [];
   const romCards = Array.isArray(synthModel?.romCards) ? synthModel.romCards : [];
+  const savedRomIds = getSavedRomIds();
 
   return sourceCategories.map(category => {
     if (category.id === "base_rom") {
       return {
         id: category.id,
         label: "Base ROM",
+        enabled: true,
       };
     }
 
@@ -1672,6 +1695,7 @@ function getKeymapCategories() {
     return {
       id: category.id,
       label: romCard?.label || category.label || category.id,
+      enabled: savedRomIds.includes(category.id),
     };
   });
 }
@@ -1680,7 +1704,7 @@ function initializeKeymapFilters() {
   const categories = getKeymapCategories();
   keymapFilters = {};
   categories.forEach(category => {
-    keymapFilters[category.id] = true;
+    keymapFilters[category.id] = category.enabled !== false;
   });
 }
 
@@ -1703,7 +1727,8 @@ function renderKeymapFilterButtons() {
     button.type = "button";
     button.className = "k2600-button";
     button.textContent = category.label;
-    button.classList.toggle("active", keymapFilters[category.id] !== false);
+    button.disabled = category.enabled === false;
+    button.classList.toggle("active", category.enabled !== false && keymapFilters[category.id] !== false);
     button.addEventListener("click", () => {
       toggleKeymapFilter(category.id);
     });
@@ -1713,6 +1738,11 @@ function renderKeymapFilterButtons() {
 
 function toggleKeymapFilter(categoryId) {
   if (!(categoryId in keymapFilters)) return;
+
+  const category = getKeymapCategories().find(entry => entry.id === categoryId);
+  if (category?.enabled === false) {
+    return;
+  }
 
   const nextValue = !keymapFilters[categoryId];
   const activeCount = Object.values(keymapFilters).filter(Boolean).length;
@@ -3185,6 +3215,14 @@ function getRequiredRomCardForPatch(patchNumber) {
 }
 
 function getRequiredRomCardForCatalogItem(modeId, itemNumber) {
+  const entry = modeId === "setups"
+    ? resolveSetupByNumber(itemNumber)
+    : patches?.[itemNumber];
+  const romId = entry?.romId || null;
+
+  if (romId) {
+    return (synthModel?.romCards || []).find(card => card.id === romId) || null;
+  }
 
   const rules = modeId === "setups"
     ? (synthModel?.setupAccessRules || [])
@@ -3280,7 +3318,14 @@ function getSavedRomIds(modelConfig = synthModel) {
   const romCards = modelConfig?.romCards || [];
   const savedByModel = localStorage.getItem(getRomStorageKey(modelConfig));
   const savedLegacy = localStorage.getItem("k2600_roms");
-  const saved = JSON.parse(savedByModel || savedLegacy || "[]");
+  let saved = [];
+
+  try {
+    saved = JSON.parse(savedByModel || savedLegacy || "[]");
+  } catch (error) {
+    console.warn("Ignoring invalid saved ROM selection", error);
+    saved = [];
+  }
 
   if (!Array.isArray(saved)) {
     return [];
@@ -3767,6 +3812,14 @@ async function saveSettings() {
   }
 
   saveRomSelection(selectedModelConfig);
+
+  if (!modelChanged) {
+    initializeKeymapFilters();
+    renderKeymapFilterButtons();
+    renderKeymaps(getKeymapSearchQuery());
+    renderSearchResults(getPatchSearchQuery());
+    renderFavoritesResults(getFavoritesSearchQuery());
+  }
 
   console.log("Settings saved");
 

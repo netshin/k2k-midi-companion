@@ -1,7 +1,7 @@
 const CONFIG = {
 
   appName: "K2k-MIDI-Companion",
-  appVersion: "1.1.13",
+  appVersion: "1.1.16",
   modelsIndexPath: "models/index.json",
   selectedModelKey: "kurzweil-forte",
   manufacturer: "Kurzweil",

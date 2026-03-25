@@ -8,8 +8,8 @@
     "counts": {
       "algorithms": 108,
       "presets": 264,
-      "studios": 164,
-      "unresolvedStudioPresetRefs": 0
+      "studios": 301,
+      "unresolvedStudioPresetRefs": 2
     }
   },
   "algorithmsById": {
@@ -8254,6 +8254,280 @@
         }
       }
     },
+    "163": {
+      "id": 163,
+      "name": "10Band StIm Hall",
+      "normalizedName": "10band stim hall",
+      "buses": {
+        "bus1": {
+          "presetName": "No Effect",
+          "presetId": 199,
+          "algorithmId": 0
+        },
+        "bus2": {
+          "presetName": "Graphic EQ",
+          "presetId": 965,
+          "algorithmId": 968
+        },
+        "bus3": {
+          "presetName": "Widespread",
+          "presetId": 976,
+          "algorithmId": 966
+        },
+        "aux": {
+          "presetName": "The Piano Hall",
+          "presetId": 73,
+          "algorithmId": 7
+        }
+      }
+    },
+    "164": {
+      "id": 164,
+      "name": "3BndCmp PtFl",
+      "normalizedName": "3bndcmp ptfl",
+      "buses": {
+        "bus1": {
+          "presetName": "Preset 978",
+          "presetId": null,
+          "algorithmId": null
+        },
+        "aux": {
+          "presetName": "Preset 781",
+          "presetId": null,
+          "algorithmId": null
+        }
+      }
+    },
+    "165": {
+      "id": 165,
+      "name": "AuxDst+Lsr Plt",
+      "normalizedName": "auxdst+lsr plt",
+      "buses": {
+        "bus2": {
+          "presetName": "TubeAmp DlyChor",
+          "presetId": 768,
+          "algorithmId": 729
+        },
+        "bus3": {
+          "presetName": "LazerfazerEchoes",
+          "presetId": 925,
+          "algorithmId": 911
+        },
+        "aux": {
+          "presetName": "BigPredelayPlate",
+          "presetId": 103,
+          "algorithmId": 7
+        }
+      }
+    },
+    "166": {
+      "id": 166,
+      "name": "AuxRsFltEnvSwFlt",
+      "normalizedName": "auxrsfltenvswflt",
+      "buses": {
+        "bus2": {
+          "presetName": "Resonant Filter",
+          "presetId": 909,
+          "algorithmId": 903
+        },
+        "bus3": {
+          "presetName": "Phunk Env Filter",
+          "presetId": 901,
+          "algorithmId": 900
+        },
+        "aux": {
+          "presetName": "LFO Sweep Filter",
+          "presetId": 906,
+          "algorithmId": 902
+        }
+      }
+    },
+    "167": {
+      "id": 167,
+      "name": "AuxChorEnvF Hall",
+      "normalizedName": "auxchorenvf hall",
+      "buses": {}
+    },
+    "168": {
+      "id": 168,
+      "name": "AuxChRvEncr Chor",
+      "normalizedName": "auxchrvencr chor",
+      "buses": {}
+    },
+    "169": {
+      "id": 169,
+      "name": "AuxChrDstEQ Room",
+      "normalizedName": "auxchrdsteq room",
+      "buses": {}
+    },
+    "170": {
+      "id": 170,
+      "name": "Aux ChDlSRS Hall",
+      "normalizedName": "aux chdlsrs hall",
+      "buses": {}
+    },
+    "171": {
+      "id": 171,
+      "name": "Aux EQFlng DstEQ",
+      "normalizedName": "aux eqflng dsteq",
+      "buses": {}
+    },
+    "172": {
+      "id": 172,
+      "name": "AuxFlngPhsr Lasr",
+      "normalizedName": "auxflngphsr lasr",
+      "buses": {}
+    },
+    "173": {
+      "id": 173,
+      "name": "AuxFlShQFlg Hall",
+      "normalizedName": "auxflshqflg hall",
+      "buses": {}
+    },
+    "174": {
+      "id": 174,
+      "name": "AuxFlgDist+ Room",
+      "normalizedName": "auxflgdist+ room",
+      "buses": {}
+    },
+    "175": {
+      "id": 175,
+      "name": "Aux GtVbFl4T Bth",
+      "normalizedName": "aux gtvbfl4t bth",
+      "buses": {}
+    },
+    "176": {
+      "id": 176,
+      "name": "AuxRvRvQFlg Hall",
+      "normalizedName": "auxrvrvqflg hall",
+      "buses": {}
+    },
+    "177": {
+      "id": 177,
+      "name": "AuxRvRbShapeChmb",
+      "normalizedName": "auxrvrbshapechmb",
+      "buses": {}
+    },
+    "178": {
+      "id": 178,
+      "name": "AuxSpinMDelay Room",
+      "normalizedName": "auxspinmdelay room",
+      "buses": {}
+    },
+    "179": {
+      "id": 179,
+      "name": "Aux SweepEchoBth",
+      "normalizedName": "aux sweepechobth",
+      "buses": {}
+    },
+    "180": {
+      "id": 180,
+      "name": "AuxRoto&DsFDRPlt",
+      "normalizedName": "auxroto&dsfdrplt",
+      "buses": {}
+    },
+    "181": {
+      "id": 181,
+      "name": "AuxRot&Ds2FDRPlt",
+      "normalizedName": "auxrot&ds2fdrplt",
+      "buses": {}
+    },
+    "182": {
+      "id": 182,
+      "name": "AuxFlgChDl Hall",
+      "normalizedName": "auxflgchdl hall",
+      "buses": {}
+    },
+    "183": {
+      "id": 183,
+      "name": "AuxDstLsr CDR",
+      "normalizedName": "auxdstlsr cdr",
+      "buses": {}
+    },
+    "184": {
+      "id": 184,
+      "name": "CPDlEnFltCmpGtRv",
+      "normalizedName": "cpdlenfltcmpgtrv",
+      "buses": {}
+    },
+    "185": {
+      "id": 185,
+      "name": "RotoOrgFX2 Hall",
+      "normalizedName": "rotoorgfx2 hall",
+      "buses": {}
+    },
+    "186": {
+      "id": 186,
+      "name": "ChDlFlPtLzVb Plt",
+      "normalizedName": "chdlflptlzvb plt",
+      "buses": {}
+    },
+    "187": {
+      "id": 187,
+      "name": "CDFlDelayPhRm Hall",
+      "normalizedName": "cdfldelayphrm hall",
+      "buses": {}
+    },
+    "188": {
+      "id": 188,
+      "name": "CDR FlgRvb Hall",
+      "normalizedName": "cdr flgrvb hall",
+      "buses": {}
+    },
+    "189": {
+      "id": 189,
+      "name": "DstPhsPnLzVb CDR",
+      "normalizedName": "dstphspnlzvb cdr",
+      "buses": {}
+    },
+    "190": {
+      "id": 190,
+      "name": "DistRoom GrphEQ",
+      "normalizedName": "distroom grpheq",
+      "buses": {}
+    },
+    "191": {
+      "id": 191,
+      "name": "Enh Ch 4T Hall",
+      "normalizedName": "enh ch 4t hall",
+      "buses": {}
+    },
+    "192": {
+      "id": 192,
+      "name": "FiltCmpExpFl CDR",
+      "normalizedName": "filtcmpexpfl cdr",
+      "buses": {}
+    },
+    "193": {
+      "id": 193,
+      "name": "LzVbFlDstEQ Room",
+      "normalizedName": "lzvbfldsteq room",
+      "buses": {}
+    },
+    "194": {
+      "id": 194,
+      "name": "PhseDist Room",
+      "normalizedName": "phsedist room",
+      "buses": {}
+    },
+    "195": {
+      "id": 195,
+      "name": "ChDelayRvFlRv Hall",
+      "normalizedName": "chdelayrvflrv hall",
+      "buses": {}
+    },
+    "196": {
+      "id": 196,
+      "name": "RmRotr&DstChrPlt",
+      "normalizedName": "rmrotr&dstchrplt",
+      "buses": {}
+    },
+    "197": {
+      "id": 197,
+      "name": "Clear Studio",
+      "normalizedName": "clear studio",
+      "buses": {}
+    },
     "198": {
       "id": 198,
       "name": "Digitech Studio",
@@ -8265,7 +8539,667 @@
       "name": "Default Studio",
       "normalizedName": "default studio",
       "buses": {}
+    },
+    "600": {
+      "id": 600,
+      "name": "ChorChorCDR Spac",
+      "normalizedName": "chorchorcdr spac",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "601": {
+      "id": 601,
+      "name": "Walrus Studio",
+      "normalizedName": "walrus studio",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "602": {
+      "id": 602,
+      "name": "DistCabEP Box",
+      "normalizedName": "distcabep box",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "603": {
+      "id": 603,
+      "name": "DistCabEnh Rm",
+      "normalizedName": "distcabenh rm",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "604": {
+      "id": 604,
+      "name": "Phase SmSpace",
+      "normalizedName": "phase smspace",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "605": {
+      "id": 605,
+      "name": "SuperROAR!",
+      "normalizedName": "superroar!",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "606": {
+      "id": 606,
+      "name": "WurlyEQ Amp rvb2",
+      "normalizedName": "wurlyeq amp rvb2",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "607": {
+      "id": 607,
+      "name": "auxEnvSp4T GtVrb",
+      "normalizedName": "auxenvsp4t gtvrb",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "608": {
+      "id": 608,
+      "name": "EP Amp",
+      "normalizedName": "ep amp",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "609": {
+      "id": 609,
+      "name": "EP AmpEchWah cmb",
+      "normalizedName": "ep ampechwah cmb",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "610": {
+      "id": 610,
+      "name": "Flaming Mtron",
+      "normalizedName": "flaming mtron",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "611": {
+      "id": 611,
+      "name": "WurlyEQ Amp Rvb1",
+      "normalizedName": "wurlyeq amp rvb1",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "612": {
+      "id": 612,
+      "name": "Obla-DCP80 6",
+      "normalizedName": "obla-dcp80 6",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "613": {
+      "id": 613,
+      "name": "Pnt Amp",
+      "normalizedName": "pnt amp",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "614": {
+      "id": 614,
+      "name": "CP80 Wallflower",
+      "normalizedName": "cp80 wallflower",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "615": {
+      "id": 615,
+      "name": "Rhds TrmCab",
+      "normalizedName": "rhds trmcab",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "616": {
+      "id": 616,
+      "name": "CP80 Simple",
+      "normalizedName": "cp80 simple",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "617": {
+      "id": 617,
+      "name": "PntEQ Amp Rvb",
+      "normalizedName": "pnteq amp rvb",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "618": {
+      "id": 618,
+      "name": "Joni's Wurly",
+      "normalizedName": "joni's wurly",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "619": {
+      "id": 619,
+      "name": "RealEchoPlx Rhds",
+      "normalizedName": "realechoplx rhds",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "620": {
+      "id": 620,
+      "name": "Rhds St Tremolo",
+      "normalizedName": "rhds st tremolo",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "621": {
+      "id": 621,
+      "name": "Chorus Studio",
+      "normalizedName": "chorus studio",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "622": {
+      "id": 622,
+      "name": "The Shape I'm In",
+      "normalizedName": "the shape i'm in",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "623": {
+      "id": 623,
+      "name": "NoQuarter2Phaser",
+      "normalizedName": "noquarter2phaser",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "624": {
+      "id": 624,
+      "name": "CP80 Wallflower2",
+      "normalizedName": "cp80 wallflower2",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "625": {
+      "id": 625,
+      "name": "Rhds TrmCab 2",
+      "normalizedName": "rhds trmcab 2",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "626": {
+      "id": 626,
+      "name": "PhaseCompDist",
+      "normalizedName": "phasecompdist",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "627": {
+      "id": 627,
+      "name": "RvrsRvbFlgAmp",
+      "normalizedName": "rvrsrvbflgamp",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "628": {
+      "id": 628,
+      "name": "Tony's MXR PHS90",
+      "normalizedName": "tony's mxr phs90",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "629": {
+      "id": 629,
+      "name": "Reverse ReverbSB",
+      "normalizedName": "reverse reverbsb",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "630": {
+      "id": 630,
+      "name": "Barking Amp",
+      "normalizedName": "barking amp",
+      "buses": {},
+      "romId": "vintage_keys"
+    },
+    "800": {
+      "id": 800,
+      "name": "Sweet Hall",
+      "normalizedName": "sweet hall",
+      "buses": {}
+    },
+    "801": {
+      "id": 801,
+      "name": "Small Hall",
+      "normalizedName": "small hall",
+      "buses": {}
+    },
+    "802": {
+      "id": 802,
+      "name": "Medium Hall",
+      "normalizedName": "medium hall",
+      "buses": {}
+    },
+    "803": {
+      "id": 803,
+      "name": "Large Hall",
+      "normalizedName": "large hall",
+      "buses": {}
+    },
+    "804": {
+      "id": 804,
+      "name": "Big Gym",
+      "normalizedName": "big gym",
+      "buses": {}
+    },
+    "805": {
+      "id": 805,
+      "name": "Bright Plate 1",
+      "normalizedName": "bright plate 1",
+      "buses": {}
+    },
+    "806": {
+      "id": 806,
+      "name": "Opera House",
+      "normalizedName": "opera house",
+      "buses": {}
+    },
+    "807": {
+      "id": 807,
+      "name": "Live Chamber",
+      "normalizedName": "live chamber",
+      "buses": {}
+    },
+    "808": {
+      "id": 808,
+      "name": "Bathroom",
+      "normalizedName": "bathroom",
+      "buses": {}
+    },
+    "809": {
+      "id": 809,
+      "name": "Med Large Room",
+      "normalizedName": "med large room",
+      "buses": {}
+    },
+    "810": {
+      "id": 810,
+      "name": "Real Room",
+      "normalizedName": "real room",
+      "buses": {}
+    },
+    "811": {
+      "id": 811,
+      "name": "Drum Room",
+      "normalizedName": "drum room",
+      "buses": {}
+    },
+    "812": {
+      "id": 812,
+      "name": "Small Dark Room",
+      "normalizedName": "small dark room",
+      "buses": {}
+    },
+    "813": {
+      "id": 813,
+      "name": "Small Closet",
+      "normalizedName": "small closet",
+      "buses": {}
+    },
+    "814": {
+      "id": 814,
+      "name": "Add Ambience",
+      "normalizedName": "add ambience",
+      "buses": {}
+    },
+    "815": {
+      "id": 815,
+      "name": "Gated Reverb",
+      "normalizedName": "gated reverb",
+      "buses": {}
+    },
+    "816": {
+      "id": 816,
+      "name": "Reverse Reverb",
+      "normalizedName": "reverse reverb",
+      "buses": {}
+    },
+    "817": {
+      "id": 817,
+      "name": "Non-Linear",
+      "normalizedName": "non-linear",
+      "buses": {}
+    },
+    "818": {
+      "id": 818,
+      "name": "Slapverb",
+      "normalizedName": "slapverb",
+      "buses": {}
+    },
+    "819": {
+      "id": 819,
+      "name": "Full Bass",
+      "normalizedName": "full bass",
+      "buses": {}
+    },
+    "820": {
+      "id": 820,
+      "name": "Room + Delay",
+      "normalizedName": "room + delay",
+      "buses": {}
+    },
+    "821": {
+      "id": 821,
+      "name": "Delay Big Hall",
+      "normalizedName": "delay big hall",
+      "buses": {}
+    },
+    "822": {
+      "id": 822,
+      "name": "Chorus Room",
+      "normalizedName": "chorus room",
+      "buses": {}
+    },
+    "823": {
+      "id": 823,
+      "name": "Chorus Smallhall",
+      "normalizedName": "chorus smallhall",
+      "buses": {}
+    },
+    "824": {
+      "id": 824,
+      "name": "Chorus Med Hall",
+      "normalizedName": "chorus med hall",
+      "buses": {}
+    },
+    "825": {
+      "id": 825,
+      "name": "Chorus Big Hall",
+      "normalizedName": "chorus big hall",
+      "buses": {}
+    },
+    "826": {
+      "id": 826,
+      "name": "Chor-Delay Room",
+      "normalizedName": "chor-delay room",
+      "buses": {}
+    },
+    "827": {
+      "id": 827,
+      "name": "Chor-Delay Hall",
+      "normalizedName": "chor-delay hall",
+      "buses": {}
+    },
+    "828": {
+      "id": 828,
+      "name": "Flange-Delay Room",
+      "normalizedName": "flange-delay room",
+      "buses": {}
+    },
+    "829": {
+      "id": 829,
+      "name": "Flange-Delay Hall",
+      "normalizedName": "flange-delay hall",
+      "buses": {}
+    },
+    "830": {
+      "id": 830,
+      "name": "Stereo Chorus",
+      "normalizedName": "stereo chorus",
+      "buses": {}
+    },
+    "831": {
+      "id": 831,
+      "name": "Stereo Flanger",
+      "normalizedName": "stereo flanger",
+      "buses": {}
+    },
+    "832": {
+      "id": 832,
+      "name": "Stereo Delay",
+      "normalizedName": "stereo delay",
+      "buses": {}
+    },
+    "833": {
+      "id": 833,
+      "name": "4-Tap Delay",
+      "normalizedName": "4-tap delay",
+      "buses": {}
+    },
+    "834": {
+      "id": 834,
+      "name": "Chorus Delay",
+      "normalizedName": "chorus delay",
+      "buses": {}
+    },
+    "835": {
+      "id": 835,
+      "name": "Flange Delay",
+      "normalizedName": "flange delay",
+      "buses": {}
+    },
+    "836": {
+      "id": 836,
+      "name": "Chorus 4-Tap",
+      "normalizedName": "chorus 4-tap",
+      "buses": {}
+    },
+    "837": {
+      "id": 837,
+      "name": "Flange 4 Tap",
+      "normalizedName": "flange 4 tap",
+      "buses": {}
+    },
+    "838": {
+      "id": 838,
+      "name": "Chorus Echo",
+      "normalizedName": "chorus echo",
+      "buses": {}
+    },
+    "839": {
+      "id": 839,
+      "name": "Chorus Echoverb",
+      "normalizedName": "chorus echoverb",
+      "buses": {}
+    },
+    "840": {
+      "id": 840,
+      "name": "Fast Flange",
+      "normalizedName": "fast flange",
+      "buses": {}
+    },
+    "841": {
+      "id": 841,
+      "name": "Wash",
+      "normalizedName": "wash",
+      "buses": {}
+    },
+    "842": {
+      "id": 842,
+      "name": "Into The Abyss",
+      "normalizedName": "into the abyss",
+      "buses": {}
+    },
+    "843": {
+      "id": 843,
+      "name": "Space Flanger",
+      "normalizedName": "space flanger",
+      "buses": {}
+    },
+    "844": {
+      "id": 844,
+      "name": "Flange Room",
+      "normalizedName": "flange room",
+      "buses": {}
+    },
+    "845": {
+      "id": 845,
+      "name": "Predelay Hall",
+      "normalizedName": "predelay hall",
+      "buses": {}
+    },
+    "846": {
+      "id": 846,
+      "name": "Flange Echo",
+      "normalizedName": "flange echo",
+      "buses": {}
+    },
+    "847": {
+      "id": 847,
+      "name": "Rotary Club",
+      "normalizedName": "rotary club",
+      "buses": {}
+    },
+    "848": {
+      "id": 848,
+      "name": "Rotary Hall",
+      "normalizedName": "rotary hall",
+      "buses": {}
+    },
+    "849": {
+      "id": 849,
+      "name": "Chorus",
+      "normalizedName": "chorus",
+      "buses": {}
+    },
+    "850": {
+      "id": 850,
+      "name": "Soundbrd/rvb",
+      "normalizedName": "soundbrd/rvb",
+      "buses": {}
+    },
+    "851": {
+      "id": 851,
+      "name": "Percussive Room",
+      "normalizedName": "percussive room",
+      "buses": {}
+    },
+    "852": {
+      "id": 852,
+      "name": "Brt Empty Room",
+      "normalizedName": "brt empty room",
+      "buses": {}
+    },
+    "853": {
+      "id": 853,
+      "name": "Mosque Room",
+      "normalizedName": "mosque room",
+      "buses": {}
+    },
+    "854": {
+      "id": 854,
+      "name": "New Gated",
+      "normalizedName": "new gated",
+      "buses": {}
+    },
+    "855": {
+      "id": 855,
+      "name": "Chorus Slap Room",
+      "normalizedName": "chorus slap room",
+      "buses": {}
+    },
+    "856": {
+      "id": 856,
+      "name": "Chorus Bass Room",
+      "normalizedName": "chorus bass room",
+      "buses": {}
+    },
+    "857": {
+      "id": 857,
+      "name": "New Chorus Hall",
+      "normalizedName": "new chorus hall",
+      "buses": {}
+    },
+    "858": {
+      "id": 858,
+      "name": "Spacious",
+      "normalizedName": "spacious",
+      "buses": {}
+    },
+    "859": {
+      "id": 859,
+      "name": "Wash Lead",
+      "normalizedName": "wash lead",
+      "buses": {}
+    },
+    "860": {
+      "id": 860,
+      "name": "New Hall Wet/Dryelay",
+      "normalizedName": "new hall wet/dryelay",
+      "buses": {}
+    },
+    "861": {
+      "id": 861,
+      "name": "Rich Delay",
+      "normalizedName": "rich delay",
+      "buses": {}
+    },
+    "862": {
+      "id": 862,
+      "name": "Glass Delay",
+      "normalizedName": "glass delay",
+      "buses": {}
+    },
+    "863": {
+      "id": 863,
+      "name": "Real Plate",
+      "normalizedName": "real plate",
+      "buses": {}
+    },
+    "864": {
+      "id": 864,
+      "name": "Real Niceverb",
+      "normalizedName": "real niceverb",
+      "buses": {}
+    },
+    "865": {
+      "id": 865,
+      "name": "ClassicalChamber",
+      "normalizedName": "classicalchamber",
+      "buses": {}
+    },
+    "866": {
+      "id": 866,
+      "name": "Empty Stage",
+      "normalizedName": "empty stage",
+      "buses": {}
+    },
+    "867": {
+      "id": 867,
+      "name": "Long & Narrow",
+      "normalizedName": "long & narrow",
+      "buses": {}
+    },
+    "868": {
+      "id": 868,
+      "name": "Far Bloom",
+      "normalizedName": "far bloom",
+      "buses": {}
+    },
+    "869": {
+      "id": 869,
+      "name": "Floyd Hall",
+      "normalizedName": "floyd hall",
+      "buses": {}
+    },
+    "870": {
+      "id": 870,
+      "name": "With A Mic",
+      "normalizedName": "with a mic",
+      "buses": {}
     }
   },
-  "unresolvedStudioPresetRefs": []
+  "unresolvedStudioPresetRefs": [
+    {
+      "studioId": 164,
+      "studioName": "3BndCmp PtFl",
+      "bus": "bus1",
+      "presetName": "Preset 978",
+      "reason": "not-found",
+      "matchedPresetIds": []
+    },
+    {
+      "studioId": 164,
+      "studioName": "3BndCmp PtFl",
+      "bus": "aux",
+      "presetName": "Preset 781",
+      "reason": "not-found",
+      "matchedPresetIds": []
+    }
+  ]
 }

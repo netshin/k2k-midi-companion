@@ -259,6 +259,13 @@ body {
   min-width:96px;
 }
 
+.browser-filters .k2600-button:disabled {
+  opacity:0.45;
+  cursor:not-allowed;
+  filter:saturate(0.35);
+  box-shadow:none;
+}
+
 .browser-subfilters {
   display:flex;
   flex-wrap:wrap;

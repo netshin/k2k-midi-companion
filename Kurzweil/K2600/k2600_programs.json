@@ -9279,7 +9279,8 @@
         "number": 26,
         "description": "Decreases reverb time"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "721": {
     "name": "Bowed Piano",
@@ -9294,7 +9295,8 @@
         "number": 25,
         "description": "Controls send to flanger"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "722": {
     "name": "GPno & Puff",
@@ -9313,7 +9315,8 @@
         "type": "Info",
         "description": "For percussive playing"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "723": {
     "name": "SynGrand & EPno",
@@ -9328,7 +9331,8 @@
         "number": 25,
         "description": "Wetter"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "724": {
     "name": "Twang Grand",
@@ -9343,7 +9347,8 @@
         "number": 6,
         "description": "Layer balance"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "725": {
     "name": "AlternativePiano",
@@ -9358,7 +9363,8 @@
         "number": 6,
         "description": "Timbre control"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "726": {
     "name": "Affected Grand",
@@ -9368,7 +9374,8 @@
         "number": 1,
         "description": "Filter modulation"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "727": {
     "name": "Robot Grand",
@@ -9382,7 +9389,8 @@
         "type": "Info",
         "description": "For staccato repetitive playing (with the arpeggiator, for example)"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "728": {
     "name": "Distorted Grand",
@@ -9392,7 +9400,8 @@
         "number": 6,
         "description": "Hipass filter, program-wide"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "729": {
     "name": "Way in the Grand",
@@ -9421,7 +9430,8 @@
         "type": "Info",
         "description": "Play sparsely!"
       }
-    ]
+    ],
+    "romId": "piano"
   },
   "730": {
     "name": "L'il Nipper Kit",
@@ -11494,7 +11504,8 @@
         "type": "Info",
         "description": "Related articulations found at equal distances above and below D4, with extras outside the center region"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "801": {
     "name": "Mbira Stack",
@@ -11504,7 +11515,8 @@
         "number": 1,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "802": {
     "name": "Ritual Metals",
@@ -11519,7 +11531,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "803": {
     "name": "Prepared Mbira",
@@ -11529,7 +11542,8 @@
         "number": 1,
         "description": "Pitch change"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "804": {
     "name": "Balinesque",
@@ -11539,7 +11553,8 @@
         "number": 1,
         "description": "Pan flute fade"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "805": {
     "name": "Ambient Bells",
@@ -11554,7 +11569,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "806": {
     "name": "World Jam 1",
@@ -11569,7 +11585,8 @@
         "number": 6,
         "description": "Mirror image drum mapping"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "807": {
     "name": "World Jam 2",
@@ -11588,7 +11605,8 @@
         "type": "MPress",
         "description": "Mirror image drum mapping"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "808": {
     "name": "India Jam",
@@ -11611,7 +11629,8 @@
         "type": "MPress",
         "description": "pitch for the bayan"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "809": {
     "name": "Slo Wood Flute",
@@ -11626,7 +11645,8 @@
         "number": 6,
         "description": "Filter control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "810": {
     "name": "Hybrid Pan Flute",
@@ -11641,7 +11661,8 @@
         "number": 6,
         "description": "Tremolo"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "811": {
     "name": "Chiff Brass Lead",
@@ -11660,7 +11681,8 @@
         "type": "MPress",
         "description": "Vibrato, Filter"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "812": {
     "name": "Bell Players",
@@ -11675,7 +11697,8 @@
         "number": 6,
         "description": "Tibetan cym envelope control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "813": {
     "name": "Prs Koto",
@@ -11684,11 +11707,13 @@
         "type": "MPress",
         "description": "Pitch mod"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "814": {
     "name": "Medicine Man",
-    "controls": []
+    "controls": [],
+    "romId": "contemporary"
   },
   "815": {
     "name": "Mbira",
@@ -11703,7 +11728,8 @@
         "number": 6,
         "description": "Tremolo"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "816": {
     "name": "Kotobira",
@@ -11713,7 +11739,8 @@
         "number": 1,
         "description": "Mbira balance"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "817": {
     "name": "Cartoon Perc",
@@ -11723,7 +11750,8 @@
         "number": 1,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "818": {
     "name": "CowGogiBell",
@@ -11738,7 +11766,8 @@
         "number": 6,
         "description": "Layer select"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "819": {
     "name": "Perc Pan Lead",
@@ -11748,7 +11777,8 @@
         "number": 1,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "820": {
     "name": "Trippy Organ",
@@ -11763,7 +11793,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "821": {
     "name": "Koto Followers",
@@ -11778,7 +11809,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "822": {
     "name": "Hybrid Horn",
@@ -11793,7 +11825,8 @@
         "number": 6,
         "description": "Timbre control, Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "823": {
     "name": "Dyno EP Lead",
@@ -11803,7 +11836,8 @@
         "number": 1,
         "description": "Tremolo, Env control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "824": {
     "name": "ParaKoto",
@@ -11813,7 +11847,8 @@
         "number": 1,
         "description": "Pad tremolo"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "825": {
     "name": "Super Clav",
@@ -11832,7 +11867,8 @@
         "type": "MPress",
         "description": "Filter rate"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "826": {
     "name": "StrataClav",
@@ -11847,7 +11883,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "827": {
     "name": "Touch Clav",
@@ -11866,11 +11903,13 @@
         "type": "MPress",
         "description": "Filter control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "828": {
     "name": "Bad Klav",
-    "controls": []
+    "controls": [],
+    "romId": "contemporary"
   },
   "829": {
     "name": "Rad Rotor",
@@ -11880,7 +11919,8 @@
         "number": 1,
         "description": "Rotary speaker"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "830": {
     "name": "B-2001",
@@ -11899,7 +11939,8 @@
         "type": "MPress",
         "description": "Rotary speaker"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "831": {
     "name": "Perc Organ",
@@ -11918,7 +11959,8 @@
         "type": "MPress",
         "description": "Rotary speaker"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "832": {
     "name": "Drawbar Organ CS",
@@ -11933,7 +11975,8 @@
         "number": 6,
         "description": "Filter control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "833": {
     "name": "Bebop Alto Sax",
@@ -11948,7 +11991,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "834": {
     "name": "Soft Alto Sax",
@@ -11957,7 +12001,8 @@
         "type": "MPress",
         "description": "Vibrato, Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "835": {
     "name": "Soprano Sax",
@@ -11972,7 +12017,8 @@
         "number": 6,
         "description": "Vibrato, Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "836": {
     "name": "Low Soft Sax",
@@ -11981,7 +12027,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "837": {
     "name": "Air Reeds CS",
@@ -12000,11 +12047,13 @@
         "type": "MPress",
         "description": "Harmonica vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "838": {
     "name": "Jazz Muted Trp",
-    "controls": []
+    "controls": [],
+    "romId": "contemporary"
   },
   "839": {
     "name": "Jazz Lab Band",
@@ -12013,7 +12062,8 @@
         "type": "MPress",
         "description": "Vibrato, Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "840": {
     "name": "Harmon Section",
@@ -12028,7 +12078,8 @@
         "number": 6,
         "description": "Vibrato, Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "841": {
     "name": "Sfz Cres Brass",
@@ -12047,7 +12098,8 @@
         "type": "MPress",
         "description": "Vibrato, Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "842": {
     "name": "Neo Stabs",
@@ -12062,7 +12114,8 @@
         "number": 6,
         "description": "Vibrato, Filter control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "843": {
     "name": "Gtr Jazz Band",
@@ -12081,7 +12134,8 @@
         "type": "Info",
         "description": "LH hard strikes trigger kick/snare"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "844": {
     "name": "Full Rock Band",
@@ -12104,7 +12158,8 @@
         "type": "Info",
         "description": "LH bass is layered with kick/snare for driving rhythm section. At ff, crash cymbal is triggered"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "845": {
     "name": "World Rave Kit",
@@ -12119,7 +12174,8 @@
         "number": 6,
         "description": "Wet/Dry mix, Disable claps (G6-G#6)"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "846": {
     "name": "Punch Gate Kit",
@@ -12129,7 +12185,8 @@
         "number": 1,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "847": {
     "name": "Shadow Kit",
@@ -12144,7 +12201,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "848": {
     "name": "Fat Traps",
@@ -12159,7 +12217,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "849": {
     "name": "Generator Kit",
@@ -12174,7 +12233,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "850": {
     "name": "Shudder Kit",
@@ -12184,7 +12244,8 @@
         "number": 1,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "851": {
     "name": "Crowd Stomper",
@@ -12194,7 +12255,8 @@
         "number": 1,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "852": {
     "name": "Econo Kit",
@@ -12209,7 +12271,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "853": {
     "name": "EDrum Kit 1",
@@ -12224,7 +12287,8 @@
         "number": 6,
         "description": "Wet/Dry mix Pitch (D6) Sust ped chokes cymbal (F#5)"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "854": {
     "name": "EDrum Kit 2",
@@ -12234,7 +12298,8 @@
         "number": 1,
         "description": "Filter control (A#1-C2, F#6-C7)Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "855": {
     "name": "Dog Chases Tail",
@@ -12253,7 +12318,8 @@
         "type": "Info",
         "description": "Loops below E4 are tuned to play together, as are loops above E4."
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "856": {
     "name": "Saw Loop Factory",
@@ -12268,7 +12334,8 @@
         "number": 6,
         "description": "Tempo (pitch)"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "857": {
     "name": "Two Live Bass",
@@ -12287,7 +12354,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "858": {
     "name": "Dual/Tri Bass",
@@ -12306,7 +12374,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "859": {
     "name": "Clav-o-Bass",
@@ -12325,7 +12394,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "860": {
     "name": "ChirpBass",
@@ -12344,11 +12414,13 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "861": {
     "name": "DigiBass",
-    "controls": []
+    "controls": [],
+    "romId": "contemporary"
   },
   "862": {
     "name": "Mono Synth Bass",
@@ -12363,7 +12435,8 @@
         "number": 6,
         "description": "Pitch bend goes +2/-12ST"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "863": {
     "name": "Touch MiniBass",
@@ -12378,7 +12451,8 @@
         "number": 6,
         "description": "Vibrato, Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "864": {
     "name": "Ostinato Bass",
@@ -12388,7 +12462,8 @@
         "number": 1,
         "description": "EQ"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "865": {
     "name": "House Bass",
@@ -12407,7 +12482,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "866": {
     "name": "Dubb Bass",
@@ -12426,7 +12502,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "867": {
     "name": "Straight Strat",
@@ -12441,7 +12518,8 @@
         "number": 6,
         "description": "EQ"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "868": {
     "name": "Chorus Gtr",
@@ -12456,7 +12534,8 @@
         "number": 6,
         "description": "Detune"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "869": {
     "name": "Strataguitar",
@@ -12466,7 +12545,8 @@
         "number": 1,
         "description": "Alt start"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "870": {
     "name": "Elect 12 String",
@@ -12485,7 +12565,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "871": {
     "name": "Dyn Jazz Guitar",
@@ -12500,7 +12581,8 @@
         "number": 6,
         "description": "PBend gives fretboard slide"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "872": {
     "name": "Pedal Steel",
@@ -12515,7 +12597,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "873": {
     "name": "Strummer DistGtr",
@@ -12530,7 +12613,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "874": {
     "name": "Rock Axe",
@@ -12549,7 +12633,8 @@
         "type": "MPress",
         "description": "Feedback"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "875": {
     "name": "Hammeron",
@@ -12564,7 +12649,8 @@
         "number": 6,
         "description": "Timbre control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "876": {
     "name": "Rock Axe Mono",
@@ -12583,7 +12669,8 @@
         "type": "MPress",
         "description": "Feedback"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "877": {
     "name": "Attack Stack",
@@ -12602,7 +12689,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "878": {
     "name": "SkinnyLead",
@@ -12621,7 +12709,8 @@
         "type": "MPress",
         "description": "Vibrato, Filter"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "879": {
     "name": "Q Sweep SynClav",
@@ -12640,7 +12729,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "880": {
     "name": "Anna Mini",
@@ -12655,7 +12745,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "881": {
     "name": "Ballad Stack",
@@ -12670,7 +12761,8 @@
         "number": 6,
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "882": {
     "name": "Big Stack",
@@ -12689,7 +12781,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "883": {
     "name": "BrazKnuckles",
@@ -12704,7 +12797,8 @@
         "number": 6,
         "description": "EQ"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "884": {
     "name": "Hybrid Breath",
@@ -12719,7 +12813,8 @@
         "number": 6,
         "description": "Envelope control, Wet/Dry mixVibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "885": {
     "name": "Hybrid Stack",
@@ -12729,7 +12824,8 @@
         "number": 1,
         "description": "Layer balance"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "886": {
     "name": "Eye Saw",
@@ -12748,11 +12844,13 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "887": {
     "name": "Mello Hyb Brass",
-    "controls": []
+    "controls": [],
+    "romId": "contemporary"
   },
   "888": {
     "name": "Sizzl E Pno",
@@ -12762,7 +12860,8 @@
         "number": 1,
         "description": "Pad balance"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "889": {
     "name": "My JayDee",
@@ -12781,7 +12880,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "890": {
     "name": "Slo SynthOrch",
@@ -12791,7 +12891,8 @@
         "number": 1,
         "description": "Filter effect"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "891": {
     "name": "SpaceStation",
@@ -12810,7 +12911,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "892": {
     "name": "Glass Web",
@@ -12825,7 +12927,8 @@
         "number": 6,
         "description": "Delay control"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "893": {
     "name": "Circus Music",
@@ -12840,7 +12943,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "894": {
     "name": "Mandala",
@@ -12855,7 +12959,8 @@
         "number": 6,
         "description": "Pitch change"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "895": {
     "name": "Slow Strat",
@@ -12874,7 +12979,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "896": {
     "name": "Fluid Koto",
@@ -12889,7 +12995,8 @@
         "number": 6,
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "897": {
     "name": "Koreana Pad",
@@ -12904,7 +13011,8 @@
         "number": 6,
         "description": "Filter, Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "898": {
     "name": "Tangerine",
@@ -12923,11 +13031,13 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "contemporary"
   },
   "899": {
     "name": "Planet 9",
-    "controls": []
+    "controls": [],
+    "romId": "contemporary"
   },
   "900": {
     "name": "TotalCntrl Orch1",
@@ -12946,7 +13056,8 @@
         "type": "MPress",
         "description": "Swell (trp out - ww solo)"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "901": {
     "name": "TotalCntrl Orch2",
@@ -12965,7 +13076,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "902": {
     "name": "BaroqueOrchestra",
@@ -12978,7 +13090,8 @@
         "type": "Info",
         "description": "Sostenuto pedal disables brass"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "903": {
     "name": "Oboe&Flute w/Str",
@@ -12993,7 +13106,8 @@
         "number": 6,
         "description": "Disables strings"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "904": {
     "name": "Horn&Flute w/Str",
@@ -13008,7 +13122,8 @@
         "number": 6,
         "description": "Disables strings"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "905": {
     "name": "Trp&Horns w/Str",
@@ -13023,7 +13138,8 @@
         "number": 6,
         "description": "Disables strings"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "906": {
     "name": "Piccolo",
@@ -13033,7 +13149,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "907": {
     "name": "Orchestral Flute",
@@ -13048,7 +13165,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "908": {
     "name": "Solo Flute",
@@ -13063,7 +13181,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "909": {
     "name": "Orchestral Oboe",
@@ -13082,7 +13201,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "910": {
     "name": "Solo Oboe",
@@ -13101,7 +13221,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "911": {
     "name": "2nd Oboe",
@@ -13120,7 +13241,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "912": {
     "name": "Orch EnglishHorn",
@@ -13139,7 +13261,8 @@
         "type": "MPress",
         "description": "Vibrato"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "913": {
     "name": "Solo EnglishHorn",
@@ -13158,7 +13281,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "914": {
     "name": "Orch Clarinet",
@@ -13177,7 +13301,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "915": {
     "name": "Solo Clarinet",
@@ -13196,7 +13321,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "916": {
     "name": "Orch Bassoon",
@@ -13215,7 +13341,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "917": {
     "name": "Solo Bassoon",
@@ -13234,7 +13361,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "918": {
     "name": "Woodwinds 1",
@@ -13244,7 +13372,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "919": {
     "name": "Woodwinds 2",
@@ -13258,7 +13387,8 @@
         "type": "MPress",
         "description": "Swell, vibrato"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "920": {
     "name": "Dynamic Trumpet",
@@ -13277,7 +13407,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "921": {
     "name": "Copland Sft Trp",
@@ -13296,7 +13427,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "922": {
     "name": "Orch Trumpet",
@@ -13315,7 +13447,8 @@
         "type": "MPress",
         "description": "Swell, vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "923": {
     "name": "Soft Trumpet",
@@ -13329,7 +13462,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "924": {
     "name": "Strght Mute Trp",
@@ -13348,7 +13482,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "925": {
     "name": "French Horn MW",
@@ -13367,7 +13502,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "926": {
     "name": "Slow Horn",
@@ -13382,7 +13518,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "927": {
     "name": "F Horn Con Sord",
@@ -13401,7 +13538,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "928": {
     "name": "F Horn a2 MW",
@@ -13416,7 +13554,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "929": {
     "name": "French Horn Sec1",
@@ -13430,7 +13569,8 @@
         "type": "MPress",
         "description": "Slight swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "930": {
     "name": "French Horn Sec2",
@@ -13444,7 +13584,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "931": {
     "name": "Solo Trombone",
@@ -13463,7 +13604,8 @@
         "type": "MPress",
         "description": "Slight swell when MW is off"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "932": {
     "name": "Tuba",
@@ -13482,7 +13624,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "933": {
     "name": "Dyn Hi Brass",
@@ -13501,7 +13644,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "934": {
     "name": "Dyn Lo Brass",
@@ -13520,7 +13664,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "935": {
     "name": "Dyn Brass & Horn",
@@ -13535,7 +13680,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "936": {
     "name": "Soaring Brass",
@@ -13545,7 +13691,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "937": {
     "name": "MarcatoViolin MW",
@@ -13564,7 +13711,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "938": {
     "name": "Solo Violin",
@@ -13583,7 +13731,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "939": {
     "name": "2nd Violin",
@@ -13602,7 +13751,8 @@
         "type": "MPress",
         "description": "Vibrato rate"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "940": {
     "name": "Orch Viola",
@@ -13621,7 +13771,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "941": {
     "name": "Solo Viola",
@@ -13640,7 +13791,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "942": {
     "name": "Slow Viola",
@@ -13659,7 +13811,8 @@
         "type": "MPress",
         "description": "Swell, vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "943": {
     "name": "MarcatoCello MW",
@@ -13678,7 +13831,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "944": {
     "name": "Solo Cello",
@@ -13697,7 +13851,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "945": {
     "name": "Slow Cello",
@@ -13716,7 +13871,8 @@
         "type": "MPress",
         "description": "Vibrato rate, swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "946": {
     "name": "Arco Dbl Bass",
@@ -13735,7 +13891,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "947": {
     "name": "Slow Arco Bass",
@@ -13754,7 +13911,8 @@
         "type": "MPress",
         "description": "Swell, vibrato rate & depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "948": {
     "name": "Brt Dbl Bass",
@@ -13773,7 +13931,8 @@
         "type": "MPress",
         "description": "Vibrato rate"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "949": {
     "name": "Touch Strings",
@@ -13792,7 +13951,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "950": {
     "name": "Fast Strings MW",
@@ -13811,7 +13971,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "951": {
     "name": "Chamber Section",
@@ -13825,7 +13986,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "952": {
     "name": "Sfz Strings MW",
@@ -13839,7 +14001,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "953": {
     "name": "Sweet Strings",
@@ -13858,7 +14021,8 @@
         "type": "MPress",
         "description": "Vibrato depth"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "954": {
     "name": "Baroque Strg Ens",
@@ -13873,7 +14037,8 @@
         "number": 6,
         "description": "Wet/Dry mix Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "955": {
     "name": "Big String Ens",
@@ -13887,7 +14052,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "956": {
     "name": "Bass String Sec",
@@ -13902,7 +14068,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "957": {
     "name": "Pizzicato String",
@@ -13917,7 +14084,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "958": {
     "name": "Wet Pizz",
@@ -13932,7 +14100,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "959": {
     "name": "Arco & Pizz",
@@ -13951,7 +14120,8 @@
         "type": "MPress",
         "description": "Swell"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "960": {
     "name": "Classical Guitar",
@@ -13966,7 +14136,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "961": {
     "name": "Virtuoso Guitar",
@@ -13985,7 +14156,8 @@
         "type": "Info",
         "description": "Sostenuto pedal enables stacato envelope"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "962": {
     "name": "Acoustic Bass",
@@ -14000,7 +14172,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "963": {
     "name": "Snappy Jazz Bass",
@@ -14019,7 +14192,8 @@
         "type": "MPress",
         "description": "Vibrato rate & depth Sostenuto pedal disables ride cymbal"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "964": {
     "name": "Dynamic Harp",
@@ -14034,7 +14208,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "965": {
     "name": "Harp w/8ve CTL",
@@ -14049,7 +14224,8 @@
         "number": 6,
         "description": "Enables octave"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "966": {
     "name": "Harp Arps",
@@ -14059,7 +14235,8 @@
         "number": 6,
         "description": "Selects diminished"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "967": {
     "name": "Celesta",
@@ -14069,7 +14246,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "968": {
     "name": "Pipes",
@@ -14084,11 +14262,13 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "969": {
     "name": "Pedal Pipes",
-    "controls": []
+    "controls": [],
+    "romId": "orchestral"
   },
   "970": {
     "name": "Church Bells",
@@ -14103,7 +14283,8 @@
         "number": 6,
         "description": "Timbre (brighter)"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "971": {
     "name": "Glockenspiel",
@@ -14117,7 +14298,8 @@
         "type": "Info",
         "description": "Sustain pedal enables key-up layer (for rolls)"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "972": {
     "name": "Xylophone",
@@ -14136,7 +14318,8 @@
         "type": "Info",
         "description": "Sustain pedal enables key-up layer (for rolls)"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "973": {
     "name": "Chimes",
@@ -14146,7 +14329,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "974": {
     "name": "Timpani/Chimes",
@@ -14161,7 +14345,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "975": {
     "name": "Timpani",
@@ -14180,7 +14365,8 @@
         "type": "Info",
         "description": "Sustain pedal enables key-up layer (for rolls)"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "976": {
     "name": "Timpani & Perc",
@@ -14194,7 +14380,8 @@
         "type": "Info",
         "description": "Sostenuto pedal enables bass drum. Sustain pedal dampens."
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "977": {
     "name": "Big Drum Corp",
@@ -14208,7 +14395,8 @@
         "type": "Info",
         "description": "Sostenuto pedal switches layers. Sustain pedal dampens."
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "978": {
     "name": "Orch Percussion1",
@@ -14222,7 +14410,8 @@
         "type": "Info",
         "description": "Sustain pedal dampens"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "979": {
     "name": "Orch Percussion2",
@@ -14236,7 +14425,8 @@
         "type": "Info",
         "description": "Sustain pedal dampens"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "980": {
     "name": "Jam Corp",
@@ -14251,7 +14441,8 @@
         "number": 6,
         "description": "(black keys:"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "981": {
     "name": "Conga & Perc",
@@ -14266,7 +14457,8 @@
         "number": 6,
         "description": "Wet/Dry mix"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "982": {
     "name": "Woody Jam Rack",
@@ -14281,7 +14473,8 @@
         "number": 6,
         "description": "Enables random drum layer"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "983": {
     "name": "Metal Garden",
@@ -14296,7 +14489,8 @@
         "number": 6,
         "description": "Pitch control down to - 1200ct"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "984": {
     "name": "Hot Tamali Kit",
@@ -14311,7 +14505,8 @@
         "number": 6,
         "description": "Switches to old drum map"
       }
-    ]
+    ],
+    "romId": "orchestral"
   },
   "985": {
     "name": "Funk Kit",
@@ -14326,6 +14521,7 @@
         "number": 6,
         "description": "Switches to old drum map"
       }
-    ]
+    ],
+    "romId": "orchestral"
   }
 }

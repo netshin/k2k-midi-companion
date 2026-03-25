@@ -145,6 +145,8 @@ def build_lookup(base_dir: Path) -> Dict[str, Any]:
             "normalizedName": normalize_name(studio_name),
             "buses": bus_entries,
         }
+        if row.get("romId"):
+            studios_by_id[str(studio_id)]["romId"] = str(row["romId"]).strip()
 
     return {
         "meta": {

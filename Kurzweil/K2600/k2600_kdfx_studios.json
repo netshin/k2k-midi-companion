@@ -1214,11 +1214,603 @@
         "Aux FX Preset": "Real Dense Hall"
     },
     {
+        "ID": 163,
+        "Name": "10Band StIm Hall",
+        "Bus 1 FX Preset": "No Effect",
+        "Bus 2 FX Preset": "Graphic EQ",
+        "Bus 3 FX Preset": "Widespread",
+        "Bus 4 FX Preset": "No Effect",
+        "Aux FX Preset": "The Piano Hall"
+    },
+    {
+        "ID": 164,
+        "Name": "3BndCmp PtFl",
+        "Bus 1 FX Preset": "Preset 978",
+        "Aux FX Preset": "Preset 781"
+    },
+    {
+        "ID": 165,
+        "Name": "AuxDst+Lsr Plt",
+        "Bus 2 FX Preset": "TubeAmp DlyChor",
+        "Bus 3 FX Preset": "LazerfazerEchoes",
+        "Aux FX Preset": "BigPredelayPlate"
+    },
+    {
+        "ID": 166,
+        "Name": "AuxRsFltEnvSwFlt",
+        "Bus 2 FX Preset": "Resonant Filter",
+        "Bus 3 FX Preset": "Phunk Env Filter",
+        "Aux FX Preset": "LFO Sweep Filter"
+    },
+    {
+        "ID": 167,
+        "Name": "AuxChorEnvF Hall"
+    },
+    {
+        "ID": 168,
+        "Name": "AuxChRvEncr Chor"
+    },
+    {
+        "ID": 169,
+        "Name": "AuxChrDstEQ Room"
+    },
+    {
+        "ID": 170,
+        "Name": "Aux ChDlSRS Hall"
+    },
+    {
+        "ID": 171,
+        "Name": "Aux EQFlng DstEQ"
+    },
+    {
+        "ID": 172,
+        "Name": "AuxFlngPhsr Lasr"
+    },
+    {
+        "ID": 173,
+        "Name": "AuxFlShQFlg Hall"
+    },
+    {
+        "ID": 174,
+        "Name": "AuxFlgDist+ Room"
+    },
+    {
+        "ID": 175,
+        "Name": "Aux GtVbFl4T Bth"
+    },
+    {
+        "ID": 176,
+        "Name": "AuxRvRvQFlg Hall"
+    },
+    {
+        "ID": 177,
+        "Name": "AuxRvRbShapeChmb"
+    },
+    {
+        "ID": 178,
+        "Name": "AuxSpinMDelay Room"
+    },
+    {
+        "ID": 179,
+        "Name": "Aux SweepEchoBth"
+    },
+    {
+        "ID": 180,
+        "Name": "AuxRoto&DsFDRPlt"
+    },
+    {
+        "ID": 181,
+        "Name": "AuxRot&Ds2FDRPlt"
+    },
+    {
+        "ID": 182,
+        "Name": "AuxFlgChDl Hall"
+    },
+    {
+        "ID": 183,
+        "Name": "AuxDstLsr CDR"
+    },
+    {
+        "ID": 184,
+        "Name": "CPDlEnFltCmpGtRv"
+    },
+    {
+        "ID": 185,
+        "Name": "RotoOrgFX2 Hall"
+    },
+    {
+        "ID": 186,
+        "Name": "ChDlFlPtLzVb Plt"
+    },
+    {
+        "ID": 187,
+        "Name": "CDFlDelayPhRm Hall"
+    },
+    {
+        "ID": 188,
+        "Name": "CDR FlgRvb Hall"
+    },
+    {
+        "ID": 189,
+        "Name": "DstPhsPnLzVb CDR"
+    },
+    {
+        "ID": 190,
+        "Name": "DistRoom GrphEQ"
+    },
+    {
+        "ID": 191,
+        "Name": "Enh Ch 4T Hall"
+    },
+    {
+        "ID": 192,
+        "Name": "FiltCmpExpFl CDR"
+    },
+    {
+        "ID": 193,
+        "Name": "LzVbFlDstEQ Room"
+    },
+    {
+        "ID": 194,
+        "Name": "PhseDist Room"
+    },
+    {
+        "ID": 195,
+        "Name": "ChDelayRvFlRv Hall"
+    },
+    {
+        "ID": 196,
+        "Name": "RmRotr&DstChrPlt"
+    },
+    {
+        "ID": 197,
+        "Name": "Clear Studio"
+    },
+    {
         "ID": 198,
         "Name": "Digitech Studio"
     },
     {
         "ID": 199,
         "Name": "Default Studio"
+    },
+    {
+        "ID": 600,
+        "Name": "ChorChorCDR Spac",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 601,
+        "Name": "Walrus Studio",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 602,
+        "Name": "DistCabEP Box",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 603,
+        "Name": "DistCabEnh Rm",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 604,
+        "Name": "Phase SmSpace",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 605,
+        "Name": "SuperROAR!",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 606,
+        "Name": "WurlyEQ Amp rvb2",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 607,
+        "Name": "auxEnvSp4T GtVrb",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 608,
+        "Name": "EP Amp",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 609,
+        "Name": "EP AmpEchWah cmb",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 610,
+        "Name": "Flaming Mtron",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 611,
+        "Name": "WurlyEQ Amp Rvb1",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 612,
+        "Name": "Obla-DCP80 6",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 613,
+        "Name": "Pnt Amp",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 614,
+        "Name": "CP80 Wallflower",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 615,
+        "Name": "Rhds TrmCab",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 616,
+        "Name": "CP80 Simple",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 617,
+        "Name": "PntEQ Amp Rvb",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 618,
+        "Name": "Joni's Wurly",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 619,
+        "Name": "RealEchoPlx Rhds",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 620,
+        "Name": "Rhds St Tremolo",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 621,
+        "Name": "Chorus Studio",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 622,
+        "Name": "The Shape I'm In",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 623,
+        "Name": "NoQuarter2Phaser",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 624,
+        "Name": "CP80 Wallflower2",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 625,
+        "Name": "Rhds TrmCab 2",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 626,
+        "Name": "PhaseCompDist",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 627,
+        "Name": "RvrsRvbFlgAmp",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 628,
+        "Name": "Tony's MXR PHS90",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 629,
+        "Name": "Reverse ReverbSB",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 630,
+        "Name": "Barking Amp",
+        "romId": "vintage_keys"
+    },
+    {
+        "ID": 800,
+        "Name": "Sweet Hall"
+    },
+    {
+        "ID": 801,
+        "Name": "Small Hall"
+    },
+    {
+        "ID": 802,
+        "Name": "Medium Hall"
+    },
+    {
+        "ID": 803,
+        "Name": "Large Hall"
+    },
+    {
+        "ID": 804,
+        "Name": "Big Gym"
+    },
+    {
+        "ID": 805,
+        "Name": "Bright Plate 1"
+    },
+    {
+        "ID": 806,
+        "Name": "Opera House"
+    },
+    {
+        "ID": 807,
+        "Name": "Live Chamber"
+    },
+    {
+        "ID": 808,
+        "Name": "Bathroom"
+    },
+    {
+        "ID": 809,
+        "Name": "Med Large Room"
+    },
+    {
+        "ID": 810,
+        "Name": "Real Room"
+    },
+    {
+        "ID": 811,
+        "Name": "Drum Room"
+    },
+    {
+        "ID": 812,
+        "Name": "Small Dark Room"
+    },
+    {
+        "ID": 813,
+        "Name": "Small Closet"
+    },
+    {
+        "ID": 814,
+        "Name": "Add Ambience"
+    },
+    {
+        "ID": 815,
+        "Name": "Gated Reverb"
+    },
+    {
+        "ID": 816,
+        "Name": "Reverse Reverb"
+    },
+    {
+        "ID": 817,
+        "Name": "Non-Linear"
+    },
+    {
+        "ID": 818,
+        "Name": "Slapverb"
+    },
+    {
+        "ID": 819,
+        "Name": "Full Bass"
+    },
+    {
+        "ID": 820,
+        "Name": "Room + Delay"
+    },
+    {
+        "ID": 821,
+        "Name": "Delay Big Hall"
+    },
+    {
+        "ID": 822,
+        "Name": "Chorus Room"
+    },
+    {
+        "ID": 823,
+        "Name": "Chorus Smallhall"
+    },
+    {
+        "ID": 824,
+        "Name": "Chorus Med Hall"
+    },
+    {
+        "ID": 825,
+        "Name": "Chorus Big Hall"
+    },
+    {
+        "ID": 826,
+        "Name": "Chor-Delay Room"
+    },
+    {
+        "ID": 827,
+        "Name": "Chor-Delay Hall"
+    },
+    {
+        "ID": 828,
+        "Name": "Flange-Delay Room"
+    },
+    {
+        "ID": 829,
+        "Name": "Flange-Delay Hall"
+    },
+    {
+        "ID": 830,
+        "Name": "Stereo Chorus"
+    },
+    {
+        "ID": 831,
+        "Name": "Stereo Flanger"
+    },
+    {
+        "ID": 832,
+        "Name": "Stereo Delay"
+    },
+    {
+        "ID": 833,
+        "Name": "4-Tap Delay"
+    },
+    {
+        "ID": 834,
+        "Name": "Chorus Delay"
+    },
+    {
+        "ID": 835,
+        "Name": "Flange Delay"
+    },
+    {
+        "ID": 836,
+        "Name": "Chorus 4-Tap"
+    },
+    {
+        "ID": 837,
+        "Name": "Flange 4 Tap"
+    },
+    {
+        "ID": 838,
+        "Name": "Chorus Echo"
+    },
+    {
+        "ID": 839,
+        "Name": "Chorus Echoverb"
+    },
+    {
+        "ID": 840,
+        "Name": "Fast Flange"
+    },
+    {
+        "ID": 841,
+        "Name": "Wash"
+    },
+    {
+        "ID": 842,
+        "Name": "Into The Abyss"
+    },
+    {
+        "ID": 843,
+        "Name": "Space Flanger"
+    },
+    {
+        "ID": 844,
+        "Name": "Flange Room"
+    },
+    {
+        "ID": 845,
+        "Name": "Predelay Hall"
+    },
+    {
+        "ID": 846,
+        "Name": "Flange Echo"
+    },
+    {
+        "ID": 847,
+        "Name": "Rotary Club"
+    },
+    {
+        "ID": 848,
+        "Name": "Rotary Hall"
+    },
+    {
+        "ID": 849,
+        "Name": "Chorus"
+    },
+    {
+        "ID": 850,
+        "Name": "Soundbrd/rvb"
+    },
+    {
+        "ID": 851,
+        "Name": "Percussive Room"
+    },
+    {
+        "ID": 852,
+        "Name": "Brt Empty Room"
+    },
+    {
+        "ID": 853,
+        "Name": "Mosque Room"
+    },
+    {
+        "ID": 854,
+        "Name": "New Gated"
+    },
+    {
+        "ID": 855,
+        "Name": "Chorus Slap Room"
+    },
+    {
+        "ID": 856,
+        "Name": "Chorus Bass Room"
+    },
+    {
+        "ID": 857,
+        "Name": "New Chorus Hall"
+    },
+    {
+        "ID": 858,
+        "Name": "Spacious"
+    },
+    {
+        "ID": 859,
+        "Name": "Wash Lead"
+    },
+    {
+        "ID": 860,
+        "Name": "New Hall Wet/Dryelay"
+    },
+    {
+        "ID": 861,
+        "Name": "Rich Delay"
+    },
+    {
+        "ID": 862,
+        "Name": "Glass Delay"
+    },
+    {
+        "ID": 863,
+        "Name": "Real Plate"
+    },
+    {
+        "ID": 864,
+        "Name": "Real Niceverb"
+    },
+    {
+        "ID": 865,
+        "Name": "ClassicalChamber"
+    },
+    {
+        "ID": 866,
+        "Name": "Empty Stage"
+    },
+    {
+        "ID": 867,
+        "Name": "Long & Narrow"
+    },
+    {
+        "ID": 868,
+        "Name": "Far Bloom"
+    },
+    {
+        "ID": 869,
+        "Name": "Floyd Hall"
+    },
+    {
+        "ID": 870,
+        "Name": "With A Mic"
     }
 ]
