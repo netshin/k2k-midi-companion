@@ -947,6 +947,12 @@ body {
   background:#0f1d2b;
 }
 
+.kdfx-line-aux {
+  margin-top:12px;
+  padding-top:8px;
+  border-top:1px solid rgba(255,255,255,0.75);
+}
+
 .kdfx-bus {
   color:#7df0ff;
 }

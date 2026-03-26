@@ -3073,7 +3073,7 @@ function getKdfxFavoriteEntries() {
   }
 
   return Object.values(kdfxLookup.studiosById).map(studio => {
-    const busCount = studio.buses ? Object.keys(studio.buses).length : 0;
+    const busCount = getConfiguredKdfxBusCount(studio?.buses);
     const busTokens = studio.buses
       ? Object.values(studio.buses).flatMap(bus => {
           const presetId = bus.presetId;
@@ -3103,6 +3103,14 @@ function getKdfxFavoriteEntries() {
       searchText: [`${studio.id}`, studio.name, ...busTokens].join(" ").toLowerCase(),
     };
   });
+}
+
+function getConfiguredKdfxBusCount(buses) {
+  if (!buses || typeof buses !== "object") {
+    return 0;
+  }
+
+  return Object.keys(buses).filter(busKey => /^bus[1-4]$/i.test(busKey)).length;
 }
 
 function getObjectMetadataBadges(entry) {
@@ -3216,7 +3224,7 @@ function renderKdfxDetail(studioId) {
   }
 
   const buses = studio.buses || {};
-  const busCount = Object.keys(buses).length;
+  const busCount = getConfiguredKdfxBusCount(buses);
 
   const meta = document.createElement("div");
   meta.className = "kdfx-detail-meta";
@@ -3246,7 +3254,24 @@ function renderKdfxDetail(studioId) {
     return String(busKey || "").toUpperCase();
   };
 
-  Object.entries(buses).forEach(([busKey, bus]) => {
+  const sortedBusEntries = Object.entries(buses).sort(([a], [b]) => {
+    const getBusRank = key => {
+      if (key === "aux") {
+        return 99;
+      }
+
+      const match = /^bus(\d+)$/i.exec(key);
+      if (match) {
+        return Number(match[1]);
+      }
+
+      return 50;
+    };
+
+    return getBusRank(a) - getBusRank(b);
+  });
+
+  sortedBusEntries.forEach(([busKey, bus]) => {
     const presetId = bus.presetId;
     const preset = presetId ? kdfxLookup.presetsById?.[String(presetId)] : null;
     const algorithm = preset?.algorithmId
@@ -3263,6 +3288,9 @@ function renderKdfxDetail(studioId) {
 
     const row = document.createElement("div");
     row.className = "kdfx-line";
+    if (busKey === "aux") {
+      row.classList.add("kdfx-line-aux");
+    }
 
     const busEl = document.createElement("span");
     busEl.className = "kdfx-label kdfx-bus";
