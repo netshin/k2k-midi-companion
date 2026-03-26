@@ -1482,6 +1482,210 @@
     "categoryLabel": "Vintage Electric Pianos",
     "sourceLabel": "Vintage Electric Pianos"
   },
+  "605": {
+    "name": "Mello MW/EPnoSw2",
+    "controls": [
+      {
+        "label": "MWheel",
+        "description": "Sw Mellotron Ens Strings/SoloStrings/Flutes"
+      },
+      {
+        "label": "Data",
+        "description": "Octave Switch (Mellotron)"
+      },
+      {
+        "label": "MIDI 22",
+        "description": "Brightness (Mellotron)"
+      },
+      {
+        "label": "MIDI 23",
+        "description": "Reverb Hi Freq Dampening (Brightness)"
+      },
+      {
+        "label": "MIDI 24",
+        "description": "Phaser Wet/Dry"
+      },
+      {
+        "label": "MIDI 25",
+        "description": "(Aux) Send Level, Reverb Decay Time"
+      },
+      {
+        "label": "MIDI 26",
+        "description": "Phaser LFO Rate"
+      },
+      {
+        "label": "MIDI 27",
+        "description": "Phaser Bandwidth"
+      },
+      {
+        "label": "MIDI 28",
+        "description": "Delay Mix/Feedback Level"
+      }
+    ],
+    "categoryId": "vintage_electric_pianos",
+    "categoryLabel": "Vintage Electric Pianos",
+    "sourceLabel": "Vintage Electric Pianos"
+  },
+  "606": {
+    "name": "Electro Arps",
+    "controls": [
+      {
+        "label": "MIDI 29 (Sw2)",
+        "description": "Switches RMI/Rhodes"
+      },
+      {
+        "label": "MIDI 22",
+        "description": "Parametric EQ Amp"
+      },
+      {
+        "label": "MIDI 23",
+        "description": "Phaser Frequency"
+      },
+      {
+        "label": "MIDI 25",
+        "description": "(Aux) Reverb Wet/Dry"
+      },
+      {
+        "label": "MIDI 26",
+        "description": "Phaser LFO Rate"
+      },
+      {
+        "label": "MIDI 27",
+        "description": "Arp Duration"
+      },
+      {
+        "label": "MIDI 28",
+        "description": "Arp Tempo"
+      },
+      {
+        "label": "MIDI 29 (Sw2)",
+        "description": "Arpeggiator Latch"
+      }
+    ],
+    "categoryId": "vintage_electric_pianos",
+    "categoryLabel": "Vintage Electric Pianos",
+    "sourceLabel": "Vintage Electric Pianos"
+  },
+  "607": {
+    "name": "Splitin' Tines",
+    "controls": [
+      {
+        "label": "MWheel",
+        "description": "Tremolo Depth"
+      },
+      {
+        "label": "Data",
+        "description": "Tremolo Rate"
+      },
+      {
+        "label": "MIDI 22",
+        "description": "Brightness (Filter Cutoff Freq in VAST)"
+      },
+      {
+        "label": "MIDI 23",
+        "description": "Enable Percussive Attack"
+      },
+      {
+        "label": "MIDI 24",
+        "description": "L/R Phase"
+      },
+      {
+        "label": "MIDI 25",
+        "description": "Reverb Wet/Dry"
+      },
+      {
+        "label": "MIDI 26",
+        "description": "Distortion Warmth"
+      }
+    ],
+    "categoryId": "vintage_electric_pianos",
+    "categoryLabel": "Vintage Electric Pianos",
+    "sourceLabel": "Vintage Electric Pianos"
+  },
+  "608": {
+    "name": "Pianette/Wurly",
+    "controls": [
+      {
+        "label": "MIDI 27",
+        "description": "Distortion Drive"
+      },
+      {
+        "label": "MWheel",
+        "description": "Pianet Tremolo Depth"
+      },
+      {
+        "label": "Data",
+        "description": "Pianet Tremolo Rate"
+      },
+      {
+        "label": "MIDI 25",
+        "description": "Reverb Wet/Dry"
+      },
+      {
+        "label": "MIDI 26",
+        "description": "Distortion Warmth"
+      },
+      {
+        "label": "MIDI 27",
+        "description": "Distortion Drive"
+      },
+      {
+        "label": "MIDI 28",
+        "description": "Static Phaser XCouple"
+      },
+      {
+        "label": "MWheel",
+        "description": "Tremolo Depth with MIDI 29"
+      },
+      {
+        "label": "Data",
+        "description": "LoPass Filter Frequency"
+      }
+    ],
+    "categoryId": "vintage_electric_pianos",
+    "categoryLabel": "Vintage Electric Pianos",
+    "sourceLabel": "Vintage Electric Pianos"
+  },
+  "609": {
+    "name": "Funkadelic Split",
+    "controls": [
+      {
+        "label": "MIDI 22",
+        "description": "LoPass2 Res Frequency (Bass Lead)"
+      },
+      {
+        "label": "MIDI 23",
+        "description": "Shaper Amt, VAST Dist Drive (Bass Lead), InEQ: Bass (Rhds)"
+      },
+      {
+        "label": "MIDI 24",
+        "description": "Octave Shift (Bass Lead), InEQ:"
+      },
+      {
+        "label": "MIDI 25",
+        "description": "Echo Wet/Dry"
+      },
+      {
+        "label": "MIDI 26",
+        "description": "Distortion Warmth"
+      },
+      {
+        "label": "MIDI 27",
+        "description": "Distortion Drive"
+      },
+      {
+        "label": "MIDI 28",
+        "description": "Feedback Control"
+      },
+      {
+        "label": "MIDI 29 (Sw2)",
+        "description": "MIDI29+Mwheel will produce"
+      }
+    ],
+    "categoryId": "vintage_electric_pianos",
+    "categoryLabel": "Vintage Electric Pianos",
+    "sourceLabel": "Vintage Electric Pianos"
+  },
   "610": {
     "name": "Shuttered Window",
     "controls": [
@@ -1694,210 +1898,6 @@
     "categoryLabel": "Vintage Electric Pianos",
     "sourceLabel": "Vintage Electric Pianos"
   },
-  "605": {
-    "name": "Mello MW/EPnoSw2",
-    "controls": [
-      {
-        "label": "MWheel",
-        "description": "Sw Mellotron Ens Strings/SoloStrings/Flutes"
-      },
-      {
-        "label": "Data",
-        "description": "Octave Switch (Mellotron)"
-      },
-      {
-        "label": "MIDI 22",
-        "description": "Brightness (Mellotron)"
-      },
-      {
-        "label": "MIDI 23",
-        "description": "Reverb Hi Freq Dampening (Brightness)"
-      },
-      {
-        "label": "MIDI 24",
-        "description": "Phaser Wet/Dry"
-      },
-      {
-        "label": "MIDI 25",
-        "description": "(Aux) Send Level, Reverb Decay Time"
-      },
-      {
-        "label": "MIDI 26",
-        "description": "Phaser LFO Rate"
-      },
-      {
-        "label": "MIDI 27",
-        "description": "Phaser Bandwidth"
-      },
-      {
-        "label": "MIDI 28",
-        "description": "Delay Mix/Feedback Level"
-      }
-    ],
-    "categoryId": "vintage_electric_pianos",
-    "categoryLabel": "Vintage Electric Pianos",
-    "sourceLabel": "Vintage Electric Pianos"
-  },
-  "606": {
-    "name": "Electro Arps",
-    "controls": [
-      {
-        "label": "MIDI 29 (Sw2)",
-        "description": "Switches RMI/Rhodes"
-      },
-      {
-        "label": "MIDI 22",
-        "description": "Parametric EQ Amp"
-      },
-      {
-        "label": "MIDI 23",
-        "description": "Phaser Frequency"
-      },
-      {
-        "label": "MIDI 25",
-        "description": "(Aux) Reverb Wet/Dry"
-      },
-      {
-        "label": "MIDI 26",
-        "description": "Phaser LFO Rate"
-      },
-      {
-        "label": "MIDI 27",
-        "description": "Arp Duration"
-      },
-      {
-        "label": "MIDI 28",
-        "description": "Arp Tempo"
-      },
-      {
-        "label": "MIDI 29 (Sw2)",
-        "description": "Arpeggiator Latch"
-      }
-    ],
-    "categoryId": "vintage_electric_pianos",
-    "categoryLabel": "Vintage Electric Pianos",
-    "sourceLabel": "Vintage Electric Pianos"
-  },
-  "607": {
-    "name": "Splitin' Tines",
-    "controls": [
-      {
-        "label": "MWheel",
-        "description": "Tremolo Depth"
-      },
-      {
-        "label": "Data",
-        "description": "Tremolo Rate"
-      },
-      {
-        "label": "MIDI 22",
-        "description": "Brightness (Filter Cutoff Freq in VAST)"
-      },
-      {
-        "label": "MIDI 23",
-        "description": "Enable Percussive Attack"
-      },
-      {
-        "label": "MIDI 24",
-        "description": "L/R Phase"
-      },
-      {
-        "label": "MIDI 25",
-        "description": "Reverb Wet/Dry"
-      },
-      {
-        "label": "MIDI 26",
-        "description": "Distortion Warmth"
-      }
-    ],
-    "categoryId": "vintage_electric_pianos",
-    "categoryLabel": "Vintage Electric Pianos",
-    "sourceLabel": "Vintage Electric Pianos"
-  },
-  "608": {
-    "name": "Pianette/Wurly",
-    "controls": [
-      {
-        "label": "MIDI 27",
-        "description": "Distortion Drive"
-      },
-      {
-        "label": "MWheel",
-        "description": "Pianet Tremolo Depth"
-      },
-      {
-        "label": "Data",
-        "description": "Pianet Tremolo Rate"
-      },
-      {
-        "label": "MIDI 25",
-        "description": "Reverb Wet/Dry"
-      },
-      {
-        "label": "MIDI 26",
-        "description": "Distortion Warmth"
-      },
-      {
-        "label": "MIDI 27",
-        "description": "Distortion Drive"
-      },
-      {
-        "label": "MIDI 28",
-        "description": "Static Phaser XCouple"
-      },
-      {
-        "label": "MWheel",
-        "description": "Tremolo Depth with MIDI 29"
-      },
-      {
-        "label": "Data",
-        "description": "LoPass Filter Frequency"
-      }
-    ],
-    "categoryId": "vintage_electric_pianos",
-    "categoryLabel": "Vintage Electric Pianos",
-    "sourceLabel": "Vintage Electric Pianos"
-  },
-  "609": {
-    "name": "Funkadelic Split",
-    "controls": [
-      {
-        "label": "MIDI 22",
-        "description": "LoPass2 Res Frequency (Bass Lead)"
-      },
-      {
-        "label": "MIDI 23",
-        "description": "Shaper Amt, VAST Dist Drive (Bass Lead), InEQ: Bass (Rhds)"
-      },
-      {
-        "label": "MIDI 24",
-        "description": "Octave Shift (Bass Lead), InEQ:"
-      },
-      {
-        "label": "MIDI 25",
-        "description": "Echo Wet/Dry"
-      },
-      {
-        "label": "MIDI 26",
-        "description": "Distortion Warmth"
-      },
-      {
-        "label": "MIDI 27",
-        "description": "Distortion Drive"
-      },
-      {
-        "label": "MIDI 28",
-        "description": "Feedback Control"
-      },
-      {
-        "label": "MIDI 29 (Sw2)",
-        "description": "MIDI29+Mwheel will produce"
-      }
-    ],
-    "categoryId": "vintage_electric_pianos",
-    "categoryLabel": "Vintage Electric Pianos",
-    "sourceLabel": "Vintage Electric Pianos"
-  },
   "615": {
     "name": "Ringin' Soundboard",
     "controls": [
@@ -2073,5 +2073,719 @@
     "categoryId": "vintage_electric_pianos",
     "categoryLabel": "Vintage Electric Pianos",
     "sourceLabel": "Vintage Electric Pianos"
+  },
+  "800": {
+    "name": "HyperGroov<-C4->",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "801": {
+    "name": "PianoPad w/Percs",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "802": {
+    "name": "Slo Held Arper",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "803": {
+    "name": "Don'tGetFooled",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "804": {
+    "name": "Touch Game",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "805": {
+    "name": "BeatBoy E1",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "806": {
+    "name": "ZawiClav Split",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "807": {
+    "name": "Dyn Piano Pad",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "808": {
+    "name": "Pulsar Stack",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "809": {
+    "name": "Mt Chicorora C2",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "810": {
+    "name": "Hold Low 3sec Rb",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "811": {
+    "name": "Mettlorfus Pad",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "812": {
+    "name": "Black Keys xtra",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "813": {
+    "name": "Jungle Jammer",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "814": {
+    "name": "Huge Rock Band",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "815": {
+    "name": "Rock Ballad",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "816": {
+    "name": "Jazz Setup",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "817": {
+    "name": "Two Touchers",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "818": {
+    "name": "Frontier prs",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "819": {
+    "name": "Eclectric Grand",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "820": {
+    "name": "Bad Trip FtSw/MW",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "821": {
+    "name": "WhirliToys",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "822": {
+    "name": "PluckSynths Perc",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "823": {
+    "name": "SusPed RhythmJam",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "824": {
+    "name": "Ballad Piano Pad",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "825": {
+    "name": "Big AnaLoveVibe",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "826": {
+    "name": "ShockBreaks PSw1",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "827": {
+    "name": "Four Pluckers",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "828": {
+    "name": "WaterPiano Pad",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "829": {
+    "name": "Padded Room",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "830": {
+    "name": "AtmosPolySphere",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "831": {
+    "name": "Breath Pad",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "832": {
+    "name": "Trippy Jam",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "833": {
+    "name": "MeditationGuits",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "834": {
+    "name": "Cool Down Funk",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "835": {
+    "name": "Tek`Groov C5->",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "836": {
+    "name": "Big Fat Split",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "837": {
+    "name": "The Pump C2",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "838": {
+    "name": "Ana Basses",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "839": {
+    "name": "Multi Followers",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "840": {
+    "name": "Plucksynths",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "841": {
+    "name": "10 Leagues Under",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "842": {
+    "name": "Gremlin Arps",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "843": {
+    "name": "Broken Toys",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "844": {
+    "name": "Two Synth",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "845": {
+    "name": "Machine Shop",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "846": {
+    "name": "Farawaway Place",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "847": {
+    "name": "BehindEnemyLines",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "848": {
+    "name": "Tunnel Visionprs",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "849": {
+    "name": "Seismic Trance",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "850": {
+    "name": "Medal",
+    "controls": [],
+    "categoryId": "contemporary",
+    "categoryLabel": "Contemporary ROM",
+    "sourceLabel": "Contemporary ROM"
+  },
+  "900": {
+    "name": "Deep Piano Rbn",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "901": {
+    "name": "Choir & Harp",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "902": {
+    "name": "Orchestrator",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "903": {
+    "name": "Piano Concerto",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "904": {
+    "name": "Xmas Carols",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "905": {
+    "name": "Sideline Perc",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "906": {
+    "name": "TonalGroov C5->",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "907": {
+    "name": "Exotic Grooves",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "908": {
+    "name": "Lunar Harp",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "909": {
+    "name": "Themes",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "910": {
+    "name": "Wet Piano",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "911": {
+    "name": "Enter the Jester",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "912": {
+    "name": "Tap the Jester",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "913": {
+    "name": "Hybrid Strings",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "914": {
+    "name": "Wonderous Spaces",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "915": {
+    "name": "Metal Orch Pad",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "916": {
+    "name": "Toon prs",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "917": {
+    "name": "Tranquil Sea",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "918": {
+    "name": "Sick Clock Jam",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "919": {
+    "name": "Orc Split",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "920": {
+    "name": "Baroque Brass",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "921": {
+    "name": "Unison Orchestra",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "922": {
+    "name": "Unison w/Pizz",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "923": {
+    "name": "Switch Orchestra",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "924": {
+    "name": "Pizz/Str/Winds",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "925": {
+    "name": "Harp Arps Cmaj",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "926": {
+    "name": "Desert Bloom E1",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "927": {
+    "name": "Exotic Charge",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "928": {
+    "name": "ET Comes Home",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "929": {
+    "name": "Fanfare Orch",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "930": {
+    "name": "Switch Orch 2",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "931": {
+    "name": "Orbiting Venus",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "932": {
+    "name": "Glass Dulcimer",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "933": {
+    "name": "Hybrid Reeds",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "934": {
+    "name": "Two Hand Pizz",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "935": {
+    "name": "Slo Str & Horn",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "936": {
+    "name": "Pianist Band",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "937": {
+    "name": "Prepared Pianos",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "938": {
+    "name": "FSW1 solo winds",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "939": {
+    "name": "Strings&Winds",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "940": {
+    "name": "Str Ens Solo MW",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "941": {
+    "name": "Pno&Vox&Pizz",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "942": {
+    "name": "Down Wind SmRbn",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "943": {
+    "name": "Guitar & Piano",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "944": {
+    "name": "Cirrus 9",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "945": {
+    "name": "Dry Plucks",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "946": {
+    "name": "String Collage",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "947": {
+    "name": "Esoterica",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "948": {
+    "name": "Poseidon",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "949": {
+    "name": "Stalkers",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
+  },
+  "950": {
+    "name": "Diabolic Trickle",
+    "controls": [],
+    "categoryId": "orchestral",
+    "categoryLabel": "Orchestral ROM",
+    "sourceLabel": "Orchestral ROM"
   }
 }

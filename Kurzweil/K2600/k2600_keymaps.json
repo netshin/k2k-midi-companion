@@ -8,7 +8,9 @@
     "extractedFiles": [
       "K2600 Keymaps - Best Of VAST.txt",
       "K2600 Keymaps - Vintage Electric Pianos ROM.txt",
-      "K2600 Keymaps - Base ROM.pdf"
+      "K2600 Keymaps - Base ROM.pdf",
+      "K2600 Keymaps - Contemporary ROM.txt",
+      "K2600 Keymaps - Orchestral ROM.txt"
     ],
     "categories": [
       {
@@ -22,9 +24,17 @@
       {
         "id": "vintage_electric_pianos",
         "label": "Vintage Electric Pianos"
+      },
+      {
+        "id": "contemporary",
+        "label": "Contemporary ROM"
+      },
+      {
+        "id": "orchestral",
+        "label": "Orchestral ROM"
       }
     ],
-    "count": 222
+    "count": 407
   },
   "keymaps": [
     {
@@ -1580,6 +1590,1301 @@
       "categoryId": "base_rom",
       "categoryLabel": "Base ROM",
       "sourceLabel": "Base ROM"
+    },
+    {
+      "number": 800,
+      "name": "Hybrid Pan",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 801,
+      "name": "Glass Rim Tone",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 802,
+      "name": "Synth Vox",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 803,
+      "name": "Orch Pad",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 804,
+      "name": "Koreana",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 805,
+      "name": "Heaven Bells",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 806,
+      "name": "MIDI Stack",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 807,
+      "name": "Synth Brass",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 808,
+      "name": "DigiBass",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 809,
+      "name": "AnaBass",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 810,
+      "name": "Mini Saw",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 811,
+      "name": "EBass Pick",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 812,
+      "name": "EBass Slap",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 813,
+      "name": "Clean Elec Gtr",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 814,
+      "name": "Distorted Guitar",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 815,
+      "name": "Dist Harmonics",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 816,
+      "name": "Clav",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 817,
+      "name": "Tone Wheel Organ",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 818,
+      "name": "Muted Trumpet",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 819,
+      "name": "Soft Alto Sax",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 820,
+      "name": "Koto",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 821,
+      "name": "Mbira",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 822,
+      "name": "Tabla Ta",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 823,
+      "name": "Tabla Tin",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 824,
+      "name": "Tabla Dhin",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 825,
+      "name": "Tabla/Bayan Dha",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 826,
+      "name": "Bayan",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 827,
+      "name": "Ghatam Bass Tone",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 828,
+      "name": "Small Ghatam",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 829,
+      "name": "Ghatam Shell",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 830,
+      "name": "Ghatam Slap",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 831,
+      "name": "Dumbek Open Tone",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 832,
+      "name": "Dumbek Brt Tone",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 833,
+      "name": "Dumbek Tek",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 834,
+      "name": "Dumbek Snap",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 835,
+      "name": "Dumbek Dry Dum",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 836,
+      "name": "Djembe Tone",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 837,
+      "name": "Djembe Cl Slap",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 838,
+      "name": "Djembe Open Slap",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 839,
+      "name": "Djembe Finger",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 840,
+      "name": "Djembe w/ Stick",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 841,
+      "name": "Muzhar",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 842,
+      "name": "Talking Drum Lo",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 843,
+      "name": "Talking Drum Hi",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 844,
+      "name": "Luna Drum Dry",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 845,
+      "name": "Luna Drum Hi",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 846,
+      "name": "Log Drum Lo",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 847,
+      "name": "Log Drum Hi",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 848,
+      "name": "Shakers/Tamborim",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 849,
+      "name": "Gankogui Bell Lo",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 850,
+      "name": "Gankogui Bell Hi",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 851,
+      "name": "Tibetan Cymbal",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 852,
+      "name": "Tibetan Bowl",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 853,
+      "name": "Indo Bowl Gong",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 854,
+      "name": "Prev Ethnic Perc",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 855,
+      "name": "Cartoon Perc",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 856,
+      "name": "Prev EDrum Map",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 857,
+      "name": "Toms Map",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 858,
+      "name": "ProcKick/Snr Map",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 859,
+      "name": "EDrum Kit 1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 860,
+      "name": "EDrum Kit 2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 861,
+      "name": "1 Lyr Proc Kit",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 862,
+      "name": "Industry Perc",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 863,
+      "name": "Tuned Loops",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 870,
+      "name": "PreparedMbira L1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 871,
+      "name": "PreparedMbira L2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 872,
+      "name": "World Jam 1 L1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 873,
+      "name": "World Jam 1 L2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 874,
+      "name": "World Jam 1 L3",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 875,
+      "name": "India Jam L1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 876,
+      "name": "India Jam L2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 877,
+      "name": "World Jam 2 L1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 878,
+      "name": "World Jam 2 L2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 879,
+      "name": "World Jam 2 L3",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 880,
+      "name": "World Jam 2 L4",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 881,
+      "name": "World Jam 2 L5",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 882,
+      "name": "World Jam 2 L6",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 883,
+      "name": "World Jam 2 L7",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 884,
+      "name": "World Jam 2 L8",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 885,
+      "name": "CowGogiBell L1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 886,
+      "name": "Dual Log Drum",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 887,
+      "name": "Jungle ProcDrms",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 888,
+      "name": "JungleBrushTip1",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 889,
+      "name": "JungleBrushTip2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 890,
+      "name": "Jungle Birds",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 891,
+      "name": "Jungle Ghtm rel",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 892,
+      "name": "Jungle Tabla",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 893,
+      "name": "Jungle Dumbek",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 894,
+      "name": "Jungle ProcDrms2",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 895,
+      "name": "Jungle GhtmStrgt",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 896,
+      "name": "Syn Bass Pick",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 897,
+      "name": "ARP SAW",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 898,
+      "name": "ARP PW30%",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 899,
+      "name": "OB PW25%",
+      "categoryId": "contemporary",
+      "categoryLabel": "Contemporary ROM",
+      "sourceLabel": "Contemporary ROM"
+    },
+    {
+      "number": 900,
+      "name": "Oboe",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 901,
+      "name": "English Horn",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 902,
+      "name": "Bassoon",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 903,
+      "name": "Clarinet",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 904,
+      "name": "Bassoon/Oboe",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 905,
+      "name": "Bsn/EHrn/Oboe",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 906,
+      "name": "Flute 2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 907,
+      "name": "Eng Horn/Oboe",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 910,
+      "name": "Soft Trumpet",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 911,
+      "name": "French Horn",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 912,
+      "name": "French Hrn Sec",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 913,
+      "name": "Tuba",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 914,
+      "name": "Tuba/Horn",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 915,
+      "name": "Tuba/Hrn Sec",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 916,
+      "name": "Tuba/Sft Trmp",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 917,
+      "name": "Trombet",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 918,
+      "name": "Trumpbone",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 919,
+      "name": "Trombne/SftTrmpt",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 920,
+      "name": "Timpani",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 921,
+      "name": "Snare Roll",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 922,
+      "name": "Snare Hit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 923,
+      "name": "Orch Bass Drum",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 924,
+      "name": "Orch Crash",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 925,
+      "name": "Tam Tam",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 926,
+      "name": "Triangle",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 927,
+      "name": "Tambourine Roll",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 928,
+      "name": "Tamb Hit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 929,
+      "name": "Sleigh Bells",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 930,
+      "name": "Woodblock",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 931,
+      "name": "Low Clave",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 932,
+      "name": "Castanet Hit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 933,
+      "name": "Castanet Up",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 934,
+      "name": "Dry Snares",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 935,
+      "name": "Amb Snares",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 936,
+      "name": "Bass Drums",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 937,
+      "name": "Orch Perc Units",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 938,
+      "name": "Orch Perc Full",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 939,
+      "name": "Misc Percussion",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 940,
+      "name": "2Hand Amb Kit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 941,
+      "name": "2Hand Dry Kit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 942,
+      "name": "2H Kit Unit1",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 943,
+      "name": "2H Kit Unit2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 944,
+      "name": "Xylophone",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 945,
+      "name": "Glockenspiel",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 946,
+      "name": "Chimes",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 947,
+      "name": "2Hand DrumCorp",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 948,
+      "name": "Lite Metal",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 949,
+      "name": "Woody Perc",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 950,
+      "name": "Celeste",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 951,
+      "name": "Plucked Harp",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 952,
+      "name": "Harp Gliss",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 953,
+      "name": "Nylon String Gtr",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 954,
+      "name": "Nylon Str noA2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 955,
+      "name": "Nylon for dulc",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 957,
+      "name": "Acoustic Bass",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 960,
+      "name": "Pizz Strings",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 961,
+      "name": "Full Kbd DblBass",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 962,
+      "name": "Solo Violin",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 963,
+      "name": "Solo Viola",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 964,
+      "name": "Solo Cello",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 965,
+      "name": "fast Solo Cello",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 966,
+      "name": "Solo Double Bass",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 967,
+      "name": "Bass/Cello",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 968,
+      "name": "Bass/Cello/Vio",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 969,
+      "name": "Cello/Vla/Cello",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 970,
+      "name": "Cello/Vla/Vln",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 971,
+      "name": "Ens Strings 2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 972,
+      "name": "Solo Section 1",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 973,
+      "name": "Solo Section 2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 978,
+      "name": "Harparps 2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 979,
+      "name": "BassDrum/Timp",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 980,
+      "name": "Organ Wave 8",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 981,
+      "name": "Buzz Wave 2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 982,
+      "name": "Ahh Buzz Wave",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 983,
+      "name": "OB Wave 1",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 984,
+      "name": "OB Wave 2",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 985,
+      "name": "OB Wave 3",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 986,
+      "name": "Tenor tune alt",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 987,
+      "name": "Dual Ride 1",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 988,
+      "name": "Black Fills C",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 989,
+      "name": "Orc Perc Preview",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 990,
+      "name": "<GM>Standard Kit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 991,
+      "name": "<GM> Orch Kit",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 992,
+      "name": "Castanets x 3",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 993,
+      "name": "Tambourine x 3",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 994,
+      "name": "Black Fills B",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 995,
+      "name": "Black Fills A",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 996,
+      "name": "2HandDrumCrp NB",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 997,
+      "name": "Sleigh Loop",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 998,
+      "name": "BD Rumble <V2.0>",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
+    },
+    {
+      "number": 999,
+      "name": "Church Bell",
+      "categoryId": "orchestral",
+      "categoryLabel": "Orchestral ROM",
+      "sourceLabel": "Orchestral ROM"
     }
   ]
 }
