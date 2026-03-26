@@ -234,11 +234,12 @@ body {
   padding-top:14px;
 }
 
-.browser-header {
+.browser-header,
+.kdfx-header {
   display:flex;
   gap:14px;
   align-items:center;
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
 
 .browser-toolbar {
@@ -246,11 +247,15 @@ body {
   align-items:center;
   justify-content:space-between;
   gap:14px;
-  margin-bottom:16px;
+  min-height:40px;
+  margin-bottom:12px;
 }
 
 .browser-summary {
   min-width:96px;
+  min-height:40px;
+  display:flex;
+  align-items:center;
   color:#9fd0ff;
   font-size:12px;
   letter-spacing:0.7px;
@@ -280,7 +285,7 @@ body {
   display:flex;
   flex-wrap:wrap;
   gap:10px;
-  margin:-4px 0 16px;
+  margin:-2px 0 12px;
 }
 
 .browser-subfilters .k2600-button {
@@ -585,14 +590,7 @@ body {
 ============================== */
 
 .kdfx-view {
-  width:min(98vw, 1480px);
-}
-
-.kdfx-header {
-  display:flex;
-  gap:14px;
-  align-items:center;
-  margin-bottom:16px;
+  width:min(99vw, 1640px);
 }
 
 .kdfx-title {
@@ -623,7 +621,7 @@ body {
 
 .kdfx-grid {
   display:grid;
-  grid-template-columns:320px 1fr;
+  grid-template-columns:300px minmax(0, 1fr);
   gap:16px;
 }
 
@@ -853,15 +851,15 @@ body {
 
 .dsp-stage-grid {
   display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(210px, 1fr));
-  gap:14px;
+  grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+  gap:12px;
 }
 
 .dsp-stage {
   border:1px solid #2c4c67;
   background:linear-gradient(180deg, rgba(15,47,90,0.46), rgba(9,20,34,0.9));
   border-radius:6px;
-  padding:10px;
+  padding:8px;
   min-width:0;
 }
 
@@ -894,8 +892,8 @@ body {
 .dsp-stage-options {
   display:grid;
   grid-template-columns:1fr;
-  gap:6px;
-  margin-top:10px;
+  gap:5px;
+  margin-top:8px;
 }
 
 .dsp-option {
@@ -903,13 +901,13 @@ body {
   align-items:center;
   justify-content:space-between;
   gap:10px;
-  min-height:28px;
-  padding:6px 8px;
+  min-height:24px;
+  padding:5px 7px;
   border:1px solid #3a556f;
   border-radius:4px;
   background:#111d2b;
   color:#e0e0e0;
-  font-size:clamp(13px, 0.92vw, 17px);
+  font-size:clamp(12px, 0.84vw, 16px);
   font-weight:bold;
   line-height:1.25;
 }
@@ -1096,6 +1094,21 @@ body {
 
 #modSourceList {
   scrollbar-gutter:stable;
+}
+
+.modsrc-detail {
+  min-height:500px;
+  max-height:calc(65vh - 44px);
+}
+
+.keymaps-results {
+  min-height:500px;
+  max-height:calc(65vh - 44px);
+}
+
+.search-results {
+  min-height:500px;
+  max-height:calc(65vh - 44px);
 }
 
 .modsrc-info:hover {

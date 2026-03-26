@@ -131,7 +131,7 @@
       <input id="patchSearch" type="text" placeholder="Search programs and setups by name, location, or notes..." />
     </div>
 
-    <div class="browser-toolbar">
+    <div class="browser-toolbar search-toolbar">
       <div id="patchSearchSummary" class="browser-summary" aria-live="polite"></div>
       <div class="browser-filters">
         <button id="filterProgramsButton" class="k2600-button active" type="button">Programs</button>
@@ -139,9 +139,9 @@
       </div>
     </div>
 
-    <div id="programCategoryFilters" class="browser-subfilters hidden"></div>
+    <div id="programCategoryFilters" class="browser-subfilters search-subfilters hidden"></div>
 
-    <div id="patchSearchResults" class="browser-results">
+    <div id="patchSearchResults" class="browser-results search-results">
       Loading search...
     </div>
   </div>
@@ -181,7 +181,7 @@
       <input id="keymapsSearch" type="text" placeholder="Search keymaps by number, name, or category..." />
     </div>
 
-    <div class="browser-toolbar">
+    <div class="browser-toolbar keymaps-toolbar">
       <div id="keymapsSummary" class="browser-summary" aria-live="polite"></div>
       <div id="keymapsFilters" class="browser-filters"></div>
     </div>
@@ -192,7 +192,7 @@
         <span class="keymap-name">Description</span>
         <span class="keymap-category">Source</span>
       </div>
-      <div id="keymapsResults" class="browser-results">
+      <div id="keymapsResults" class="browser-results keymaps-results">
         Loading keymaps...
       </div>
     </div>
@@ -296,7 +296,7 @@
       <input id="modSourceSearch" type="text" placeholder="Search value/source..." />
     </div>
 
-    <div class="browser-toolbar">
+    <div class="browser-toolbar modsrc-toolbar">
       <div id="modSourceSummary" class="browser-summary" aria-live="polite"></div>
       <div id="modSourceFilters" class="browser-filters">
         <button id="modSourceFilterAll" class="k2600-button active" type="button">All</button>
@@ -312,7 +312,7 @@
         <span>Source</span>
         <span>Default Assignment</span>
       </div>
-      <div id="modSourceList" class="kdfx-detail">
+      <div id="modSourceList" class="kdfx-detail modsrc-detail">
         Loading modulation sources...
       </div>
       <div id="modSourceTooltip" class="modsrc-tooltip hidden" role="tooltip" aria-live="polite"></div>

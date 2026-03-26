@@ -3526,7 +3526,6 @@ function renderDspAlgorithmList(query = "") {
       entry.typeLabel,
       entry.layerLabel,
       `${entry.stageCount} stages`,
-      entry.labels.slice(0, 3).join(" | "),
     ].filter(Boolean).join(" | ");
 
     main.appendChild(title);
