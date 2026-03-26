@@ -1,40 +1,187 @@
 {
-  "0": "Bank Select MSB",
-  "1": "Modulation Wheel",
-  "2": "Breath Controller",
-  "4": "Foot Pedal",
-  "5": "Portamento Time",
-  "6": "Slider A",
-  "7": "Volume",
-  "8": "Balance",
-  "10": "Pan",
-  "11": "Expression Pedal",
-  "15": "Short Ribbon",
-  "16": "CtrlA",
-  "17": "CtrlB",
-  "18": "CtrlC",
-  "19": "CtrlD",
-  "21": "Long Ribbon",
-  "22": "Slider B",
-  "23": "Slider C",
-  "24": "Slider D",
-  "25": "Slider E",
-  "26": "Slider F",
-  "27": "Slider G",
-  "28": "Slider H",
-  "29": "Switch 10",
-  "64": "Sustain",
-  "65": "PortSwitch",
-  "66": "Sostenuto",
-  "67": "SoftPedal",
-  "69": "Freeze",
-  "75": "Legato",
-  "80": "CtrlE",
-  "81": "CtrlF",
-  "82": "CtrlG",
-  "83": "CtrlH",
-  "91": "FXDepth",
-  "96": "DataInc",
-  "97": "DataDec",
-  "123": "Panic"
+  "1": {
+    "label": "MWheel",
+    "details": "Modulation Wheel",
+    "defaultAssignment": "Mod Wheel"
+  },
+  "2": {
+    "label": "Breath",
+    "details": "Breath Controller",
+    "defaultAssignment": "Continuous Controller Pedal 2"
+  },
+  "4": {
+    "label": "Foot",
+    "details": "Foot Pedal",
+    "defaultAssignment": "Continuous Controller Pedal 1"
+  },
+  "5": {
+    "label": "PortTim",
+    "details": "Portamento Time",
+    "defaultAssignment": ""
+  },
+  "6": {
+    "label": "Data",
+    "details": "Data Entry",
+    "defaultAssignment": "Slider A"
+  },
+  "7": {
+    "label": "Volume",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "8": {
+    "label": "Balance",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "10": {
+    "label": "Pan",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "11": {
+    "label": "Express",
+    "details": "Expression Controller",
+    "defaultAssignment": ""
+  },
+  "15": {
+    "label": "AuxBend2",
+    "details": "Auxiliary Bender 2",
+    "defaultAssignment": "Small Ribbon Position"
+  },
+  "16": {
+    "label": "Ctl A",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "17": {
+    "label": "Ctl B",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "18": {
+    "label": "Ctl C",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "19": {
+    "label": "Ctl D",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "21": {
+    "label": "AuxBend1",
+    "details": "Auxiliary Bender 1",
+    "defaultAssignment": "Large Ribbon"
+  },
+  "22": {
+    "label": "MIDI 22",
+    "details": "",
+    "defaultAssignment": "Slider B"
+  },
+  "23": {
+    "label": "MIDI 23",
+    "details": "",
+    "defaultAssignment": "Slider C"
+  },
+  "24": {
+    "label": "MIDI 24",
+    "details": "",
+    "defaultAssignment": "Slider D"
+  },
+  "25": {
+    "label": "MIDI 25",
+    "details": "",
+    "defaultAssignment": "Slider E"
+  },
+  "26": {
+    "label": "MIDI 26",
+    "details": "",
+    "defaultAssignment": "Slider F"
+  },
+  "27": {
+    "label": "MIDI 27",
+    "details": "",
+    "defaultAssignment": "Slider G"
+  },
+  "28": {
+    "label": "MIDI 28",
+    "details": "",
+    "defaultAssignment": "Slider H"
+  },
+  "29": {
+    "label": "MIDI 29",
+    "details": "",
+    "defaultAssignment": "Panel Switch 2"
+  },
+  "64": {
+    "label": "Sustain",
+    "details": "",
+    "defaultAssignment": "Footswitch 1"
+  },
+  "65": {
+    "label": "PortSw",
+    "details": "Portamento Switch",
+    "defaultAssignment": ""
+  },
+  "66": {
+    "label": "SostPD",
+    "details": "Sostenuto Pedal",
+    "defaultAssignment": "Footswitch 2"
+  },
+  "67": {
+    "label": "SoftPd",
+    "details": "Soft Pedal",
+    "defaultAssignment": "Footswitch 3"
+  },
+  "69": {
+    "label": "FrezPd",
+    "details": "Freeze Current Amplitudes",
+    "defaultAssignment": ""
+  },
+  "75": {
+    "label": "LegatoSw",
+    "details": "Legato Switch (forces polyphonic programs monophonic)",
+    "defaultAssignment": ""
+  },
+  "80": {
+    "label": "Ctl E",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "81": {
+    "label": "Ctl F",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "82": {
+    "label": "Ctl G",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "83": {
+    "label": "Ctl H",
+    "details": "",
+    "defaultAssignment": ""
+  },
+  "91": {
+    "label": "FXDep",
+    "details": "Effects Depth",
+    "defaultAssignment": ""
+  },
+  "96": {
+    "label": "DataInc",
+    "details": "Data Increment",
+    "defaultAssignment": ""
+  },
+  "97": {
+    "label": "DataDec",
+    "details": "Data Decrement",
+    "defaultAssignment": ""
+  },
+  "123": {
+    "label": "Panic",
+    "details": "All Notes Off + All Controllers Off",
+    "defaultAssignment": ""
+  }
 }

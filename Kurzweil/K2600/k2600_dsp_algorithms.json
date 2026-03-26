@@ -1,8 +1,13 @@
 {
   "source": {
-    "pdf": "K2600 DSP Algs.pdf",
-    "pageCount": 16,
-    "algorithmCount": 31
+    "description": "Merged K2600 DSP algorithm dataset",
+    "files": [
+      "K2600 DSP Algorithms - Base ROM v1.pdf",
+      "K2600 DSP Algorithms - Base ROM v2.pdf"
+    ],
+    "algorithmCount": 125,
+    "blockCount": 98,
+    "optionSetCount": 64
   },
   "blocksById": {
     "pitch": {
@@ -83,7 +88,7 @@
     "hipass": {
       "label": "HIPASS"
     },
-    "alpass": {
+    "allpass": {
       "label": "ALLPASS"
     },
     "gain": {
@@ -187,6 +192,117 @@
     },
     "sync_s": {
       "label": "SYNC S"
+    },
+    "lopas2_gain": {
+      "label": "LOPAS2 GAIN"
+    },
+    "2_12": {
+      "label": "2-12"
+    },
+    "2_13": {
+      "label": "2-13"
+    },
+    "2_14": {
+      "label": "2-14"
+    },
+    "2_15": {
+      "label": "2-15"
+    },
+    "2_16": {
+      "label": "2-16"
+    },
+    "2_17": {
+      "label": "2-17"
+    },
+    "2_18": {
+      "label": "2-18"
+    },
+    "sw_plus_dist": {
+      "label": "SW+DIST"
+    },
+    "hipas2_gain": {
+      "label": "HIPAS2 GAIN"
+    },
+    "band2_gain": {
+      "label": "BAND2 GAIN"
+    },
+    "notch2_gain": {
+      "label": "NOTCH2 GAIN"
+    },
+    "lp2res_gain": {
+      "label": "LP2RES GAIN"
+    },
+    "shape2_gain": {
+      "label": "SHAPE2 GAIN"
+    },
+    "lpgate_gain": {
+      "label": "LPGATE GAIN"
+    },
+    "2_19": {
+      "label": "2-19"
+    },
+    "2_20": {
+      "label": "2-20"
+    },
+    "bang_gain": {
+      "label": "! GAIN"
+    },
+    "2_21": {
+      "label": "2-21"
+    },
+    "2_22": {
+      "label": "2-22"
+    },
+    "2_23": {
+      "label": "2-23"
+    },
+    "2_24": {
+      "label": "2-24"
+    },
+    "2_25": {
+      "label": "2-25"
+    },
+    "2_26": {
+      "label": "2-26"
+    },
+    "shapemod_osc": {
+      "label": "SHAPEMOD OSC"
+    },
+    "2_27": {
+      "label": "2-27"
+    },
+    "2_28": {
+      "label": "2-28"
+    },
+    "2_29": {
+      "label": "2-29"
+    },
+    "2_30": {
+      "label": "2-30"
+    },
+    "bal": {
+      "label": "BAL"
+    },
+    "ampu_ampl": {
+      "label": "AMPU AMPL"
+    },
+    "xamp": {
+      "label": "xAMP"
+    },
+    "noise_plus_gain": {
+      "label": "NOISE+ GAIN"
+    },
+    "2_31": {
+      "label": "2-31"
+    },
+    "2_32": {
+      "label": "2-32"
+    },
+    "2_33": {
+      "label": "2-33"
+    },
+    "2_34": {
+      "label": "2-34"
     }
   },
   "optionSetsById": {
@@ -253,7 +369,7 @@
         "noise_plus",
         "lopass",
         "hipass",
-        "alpass",
+        "allpass",
         "gain",
         "shaper",
         "dist",
@@ -289,7 +405,7 @@
         "noise_plus",
         "lopass",
         "hipass",
-        "alpass",
+        "allpass",
         "gain",
         "shaper",
         "dist",
@@ -305,7 +421,7 @@
       "blockIds": [
         "lopass",
         "hipass",
-        "alpass",
+        "allpass",
         "gain",
         "shaper",
         "dist",
@@ -326,7 +442,7 @@
       "blockIds": [
         "lopass",
         "hipass",
-        "alpass",
+        "allpass",
         "gain",
         "shaper",
         "dist",
@@ -340,7 +456,7 @@
       "blockIds": [
         "lopass",
         "hipass",
-        "alpass",
+        "allpass",
         "gain",
         "shaper",
         "dist",
@@ -407,6 +523,322 @@
       "blockIds": [
         "sync_s"
       ]
+    },
+    "nonethen2param_shaper": {
+      "blockIds": [
+        "none",
+        "2param_shaper",
+        "lopas2_gain",
+        "2pole_lowpass",
+        "bandpass_filt",
+        "notch_filter",
+        "2pole_allpass",
+        "para_bass",
+        "para_treble",
+        "para_mid"
+      ]
+    },
+    "pitchthen2_12": {
+      "blockIds": [
+        "pitch",
+        "2_12"
+      ]
+    },
+    "nonethenamp": {
+      "blockIds": [
+        "none",
+        "amp",
+        "lopass",
+        "hipass",
+        "allpass",
+        "gain",
+        "shaper",
+        "dist",
+        "pwm",
+        "sine",
+        "lf_sin",
+        "sw_plus_shp",
+        "saw_plus",
+        "saw",
+        "lf_saw",
+        "square",
+        "lf_sqr",
+        "wrap"
+      ]
+    },
+    "nonethenparametric_eq": {
+      "blockIds": [
+        "none",
+        "parametric_eq",
+        "steep_resonant_bass"
+      ]
+    },
+    "nonethenx_gain": {
+      "blockIds": [
+        "none",
+        "x_gain",
+        "plus_gain",
+        "xfade",
+        "ampmod"
+      ]
+    },
+    "2_13": {
+      "blockIds": [
+        "2_13"
+      ]
+    },
+    "pitchthen2_14": {
+      "blockIds": [
+        "pitch",
+        "2_14"
+      ]
+    },
+    "2_15": {
+      "blockIds": [
+        "2_15"
+      ]
+    },
+    "pitchthen2_16": {
+      "blockIds": [
+        "pitch",
+        "2_16"
+      ]
+    },
+    "2_17": {
+      "blockIds": [
+        "2_17"
+      ]
+    },
+    "pitchthen2_18": {
+      "blockIds": [
+        "pitch",
+        "2_18"
+      ]
+    },
+    "nonethenamp_2": {
+      "blockIds": [
+        "none",
+        "amp",
+        "lopass",
+        "hipass",
+        "allpass",
+        "gain",
+        "shaper",
+        "dist",
+        "sine",
+        "lf_sin",
+        "sw_plus_shp",
+        "saw_plus",
+        "sw_plus_dist",
+        "lpclip",
+        "sine_plus",
+        "noise_plus"
+      ]
+    },
+    "nonethenlopas2_gain": {
+      "blockIds": [
+        "none",
+        "lopas2_gain",
+        "hipas2_gain",
+        "band2_gain",
+        "notch2_gain",
+        "lp2res_gain",
+        "shape2_gain",
+        "lpgate_gain",
+        "para_mid"
+      ]
+    },
+    "2_19": {
+      "blockIds": [
+        "2_19"
+      ]
+    },
+    "pitchthen2_20": {
+      "blockIds": [
+        "pitch",
+        "2_20"
+      ]
+    },
+    "nonethenx_gain_2": {
+      "blockIds": [
+        "none",
+        "x_gain",
+        "plus_gain",
+        "bang_gain"
+      ]
+    },
+    "2_21": {
+      "blockIds": [
+        "2_21"
+      ]
+    },
+    "pitchthen2_22": {
+      "blockIds": [
+        "pitch",
+        "2_22"
+      ]
+    },
+    "nonethenpara_bass": {
+      "blockIds": [
+        "none",
+        "para_bass",
+        "para_treble"
+      ]
+    },
+    "gain": {
+      "blockIds": [
+        "gain"
+      ]
+    },
+    "2_23": {
+      "blockIds": [
+        "2_23"
+      ]
+    },
+    "nonethenhifreq_stimulator": {
+      "blockIds": [
+        "none",
+        "hifreq_stimulator",
+        "parametric_eq",
+        "steep_resonant_bass",
+        "4pole_lopass_w_sep",
+        "4pole_hipass_w_sep",
+        "twin_peaks_bandpass",
+        "double_notch_w_sep"
+      ]
+    },
+    "2_24": {
+      "blockIds": [
+        "2_24"
+      ]
+    },
+    "2_25": {
+      "blockIds": [
+        "2_25"
+      ]
+    },
+    "2_26": {
+      "blockIds": [
+        "2_26"
+      ]
+    },
+    "nonethenshape_mod_osc": {
+      "blockIds": [
+        "none",
+        "shape_mod_osc",
+        "amp_mod_osc"
+      ]
+    },
+    "nonethenx_shapemod_osc": {
+      "blockIds": [
+        "none",
+        "x_shapemod_osc",
+        "plus_shapemod_osc"
+      ]
+    },
+    "lopas2": {
+      "blockIds": [
+        "lopas2"
+      ]
+    },
+    "shapemod_osc": {
+      "blockIds": [
+        "shapemod_osc"
+      ]
+    },
+    "2_27": {
+      "blockIds": [
+        "2_27"
+      ]
+    },
+    "2_28": {
+      "blockIds": [
+        "2_28"
+      ]
+    },
+    "nonethenlopas2": {
+      "blockIds": [
+        "none",
+        "lopas2",
+        "hipas2",
+        "lpgate",
+        "lp2res",
+        "shape2"
+      ]
+    },
+    "2_29": {
+      "blockIds": [
+        "2_29"
+      ]
+    },
+    "2_30": {
+      "blockIds": [
+        "2_30"
+      ]
+    },
+    "balthenampu_ampl": {
+      "blockIds": [
+        "bal",
+        "ampu_ampl"
+      ]
+    },
+    "xampthenplus_amp": {
+      "blockIds": [
+        "xamp",
+        "plus_amp",
+        "bang_amp"
+      ]
+    },
+    "nonethenlopas2_gain_2": {
+      "blockIds": [
+        "none",
+        "lopas2_gain",
+        "lp2res_gain",
+        "shape2_gain",
+        "lpgate_gain",
+        "noise_plus_gain"
+      ]
+    },
+    "2_31": {
+      "blockIds": [
+        "2_31"
+      ]
+    },
+    "2_32": {
+      "blockIds": [
+        "2_32"
+      ]
+    },
+    "2_33": {
+      "blockIds": [
+        "2_33"
+      ]
+    },
+    "2_34": {
+      "blockIds": [
+        "2_34"
+      ]
+    },
+    "nonethenamp_3": {
+      "blockIds": [
+        "none",
+        "amp",
+        "lopass",
+        "hipass",
+        "allpass",
+        "gain",
+        "shaper",
+        "dist",
+        "pwm",
+        "sine",
+        "lf_sin",
+        "sw_plus_shp",
+        "saw_plus",
+        "sw_plus_dist",
+        "lpclip",
+        "sine_plus",
+        "noise_plus"
+      ]
     }
   },
   "algorithmsById": {
@@ -438,7 +870,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "2": {
       "algorithmId": 2,
@@ -474,7 +908,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "3": {
       "algorithmId": 3,
@@ -504,7 +940,9 @@
           "kind": "choice",
           "optionSetId": "amp_u_amp_lthenbal_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "4": {
       "algorithmId": 4,
@@ -540,7 +978,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "5": {
       "algorithmId": 5,
@@ -576,7 +1016,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "6": {
       "algorithmId": 6,
@@ -612,7 +1054,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "7": {
       "algorithmId": 7,
@@ -648,7 +1092,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "8": {
       "algorithmId": 8,
@@ -690,7 +1136,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "9": {
       "algorithmId": 9,
@@ -732,7 +1180,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "10": {
       "algorithmId": 10,
@@ -774,7 +1224,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "11": {
       "algorithmId": 11,
@@ -816,7 +1268,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "12": {
       "algorithmId": 12,
@@ -858,7 +1312,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "13": {
       "algorithmId": 13,
@@ -900,7 +1356,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "14": {
       "algorithmId": 14,
@@ -936,7 +1394,9 @@
           "kind": "choice",
           "optionSetId": "amp_u_amp_lthenbal_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "15": {
       "algorithmId": 15,
@@ -972,7 +1432,9 @@
           "kind": "choice",
           "optionSetId": "amp_u_amp_lthenbal_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "16": {
       "algorithmId": 16,
@@ -1008,7 +1470,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "17": {
       "algorithmId": 17,
@@ -1044,7 +1508,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "18": {
       "algorithmId": 18,
@@ -1080,7 +1546,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "20": {
       "algorithmId": 20,
@@ -1122,7 +1590,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "19": {
       "algorithmId": 19,
@@ -1158,7 +1628,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "21": {
       "algorithmId": 21,
@@ -1200,7 +1672,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "22": {
       "algorithmId": 22,
@@ -1242,7 +1716,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "23": {
       "algorithmId": 23,
@@ -1284,7 +1760,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "24": {
       "algorithmId": 24,
@@ -1326,7 +1804,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "25": {
       "algorithmId": 25,
@@ -1362,7 +1842,9 @@
           "kind": "choice",
           "optionSetId": "amp_u_amp_lthenbal_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "26": {
       "algorithmId": 26,
@@ -1398,7 +1880,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "27": {
       "algorithmId": 27,
@@ -1434,7 +1918,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "28": {
       "algorithmId": 28,
@@ -1470,7 +1956,9 @@
           "kind": "fixed",
           "optionSetId": "amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "30": {
       "algorithmId": 30,
@@ -1506,7 +1994,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "29": {
       "algorithmId": 29,
@@ -1542,7 +2032,9 @@
           "kind": "choice",
           "optionSetId": "x_ampthenplus_amp"
         }
-      ]
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
     },
     "31": {
       "algorithmId": 31,
@@ -1571,6 +2063,3688 @@
           "x": 325.6,
           "kind": "choice",
           "optionSetId": "amp_u_amp_lthenbal_amp"
+        }
+      ],
+      "algorithmType": "standard",
+      "layerRole": "standard"
+    },
+    "33": {
+      "algorithmId": 33,
+      "sourcePage": "2-12",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 257.7,
+        "x1": 286.3,
+        "y1": 296.1
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.3,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        }
+      ]
+    },
+    "34": {
+      "algorithmId": 34,
+      "sourcePage": "2-12",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 433.7,
+        "x1": 286.3,
+        "y1": 472.1
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.2,
+          "kind": "choice",
+          "optionSetId": "pitchthen2_12"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "35": {
+      "algorithmId": 35,
+      "sourcePage": "2-12",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "36": {
+      "algorithmId": 36,
+      "sourcePage": "2-12",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 436.5,
+        "x1": 532.0,
+        "y1": 474.9
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        }
+      ]
+    },
+    "37": {
+      "algorithmId": 37,
+      "sourcePage": "2-13",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenparametric_eq"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 248.7,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "38": {
+      "algorithmId": 38,
+      "sourcePage": "2-13",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenparametric_eq"
+        }
+      ]
+    },
+    "39": {
+      "algorithmId": 39,
+      "sourcePage": "2-13",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "40": {
+      "algorithmId": 40,
+      "sourcePage": "2-13",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_6",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_13"
+        }
+      ]
+    },
+    "41": {
+      "algorithmId": 41,
+      "sourcePage": "2-14",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "42": {
+      "algorithmId": 42,
+      "sourcePage": "2-14",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.2,
+          "kind": "choice",
+          "optionSetId": "pitchthen2_14"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "43": {
+      "algorithmId": 43,
+      "sourcePage": "2-14",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "44": {
+      "algorithmId": 44,
+      "sourcePage": "2-14",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "45": {
+      "algorithmId": 45,
+      "sourcePage": "2-15",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "46": {
+      "algorithmId": 46,
+      "sourcePage": "2-15",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        }
+      ]
+    },
+    "47": {
+      "algorithmId": 47,
+      "sourcePage": "2-15",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "48": {
+      "algorithmId": 48,
+      "sourcePage": "2-15",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_15"
+        }
+      ]
+    },
+    "49": {
+      "algorithmId": 49,
+      "sourcePage": "2-16",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "50": {
+      "algorithmId": 50,
+      "sourcePage": "2-16",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.2,
+          "kind": "choice",
+          "optionSetId": "pitchthen2_16"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "51": {
+      "algorithmId": 51,
+      "sourcePage": "2-16",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenparametric_eq"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "52": {
+      "algorithmId": 52,
+      "sourcePage": "2-16",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "53": {
+      "algorithmId": 53,
+      "sourcePage": "2-17",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "54": {
+      "algorithmId": 54,
+      "sourcePage": "2-17",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "55": {
+      "algorithmId": 55,
+      "sourcePage": "2-17",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "56": {
+      "algorithmId": 56,
+      "sourcePage": "2-17",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_6",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_17"
+        }
+      ]
+    },
+    "57": {
+      "algorithmId": 57,
+      "sourcePage": "2-18",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "58": {
+      "algorithmId": 58,
+      "sourcePage": "2-18",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.2,
+          "kind": "choice",
+          "optionSetId": "pitchthen2_18"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "59": {
+      "algorithmId": 59,
+      "sourcePage": "2-18",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "60": {
+      "algorithmId": 60,
+      "sourcePage": "2-18",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "61": {
+      "algorithmId": 61,
+      "sourcePage": "2-19",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        }
+      ]
+    },
+    "62": {
+      "algorithmId": 62,
+      "sourcePage": "2-19",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_1",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "63": {
+      "algorithmId": 63,
+      "sourcePage": "2-19",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 175.8,
+        "x1": 526.3,
+        "y1": 214.2
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        }
+      ]
+    },
+    "64": {
+      "algorithmId": 64,
+      "sourcePage": "2-19",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 450.7,
+        "x1": 526.3,
+        "y1": 489.0
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_19"
+        }
+      ]
+    },
+    "65": {
+      "algorithmId": 65,
+      "sourcePage": "2-20",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        }
+      ]
+    },
+    "66": {
+      "algorithmId": 66,
+      "sourcePage": "2-20",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.2,
+          "kind": "choice",
+          "optionSetId": "pitchthen2_20"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "67": {
+      "algorithmId": 67,
+      "sourcePage": "2-20",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        }
+      ]
+    },
+    "68": {
+      "algorithmId": 68,
+      "sourcePage": "2-20",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        }
+      ]
+    },
+    "69": {
+      "algorithmId": 69,
+      "sourcePage": "2-21",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        }
+      ]
+    },
+    "70": {
+      "algorithmId": 70,
+      "sourcePage": "2-21",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "71": {
+      "algorithmId": 71,
+      "sourcePage": "2-21",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "72": {
+      "algorithmId": 72,
+      "sourcePage": "2-21",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_6",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_21"
+        }
+      ]
+    },
+    "73": {
+      "algorithmId": 73,
+      "sourcePage": "2-22",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "74": {
+      "algorithmId": 74,
+      "sourcePage": "2-22",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.2,
+          "kind": "choice",
+          "optionSetId": "pitchthen2_22"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "75": {
+      "algorithmId": 75,
+      "sourcePage": "2-22",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "76": {
+      "algorithmId": 76,
+      "sourcePage": "2-22",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "77": {
+      "algorithmId": 77,
+      "sourcePage": "2-23",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "78": {
+      "algorithmId": 78,
+      "sourcePage": "2-23",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 68.0,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "79": {
+      "algorithmId": 79,
+      "sourcePage": "2-23",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "80": {
+      "algorithmId": 80,
+      "sourcePage": "2-23",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 313.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenpara_bass"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.3,
+          "kind": "fixed",
+          "optionSetId": "gain"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_23"
+        }
+      ]
+    },
+    "81": {
+      "algorithmId": 81,
+      "sourcePage": "2-24",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenhifreq_stimulator"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 248.7,
+          "kind": "fixed",
+          "optionSetId": "gain"
+        }
+      ]
+    },
+    "82": {
+      "algorithmId": 82,
+      "sourcePage": "2-24",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 417.7,
+        "x1": 280.7,
+        "y1": 456.1
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 60.5,
+          "kind": "fixed",
+          "optionSetId": "2_24"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        }
+      ]
+    },
+    "83": {
+      "algorithmId": 83,
+      "sourcePage": "2-24",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 449.2,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        }
+      ]
+    },
+    "84": {
+      "algorithmId": 84,
+      "sourcePage": "2-24",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 449.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "85": {
+      "algorithmId": 85,
+      "sourcePage": "2-25",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "86": {
+      "algorithmId": 86,
+      "sourcePage": "2-25",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        }
+      ]
+    },
+    "87": {
+      "algorithmId": 87,
+      "sourcePage": "2-25",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        }
+      ]
+    },
+    "88": {
+      "algorithmId": 88,
+      "sourcePage": "2-25",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_25"
+        }
+      ]
+    },
+    "89": {
+      "algorithmId": 89,
+      "sourcePage": "2-26",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "90": {
+      "algorithmId": 90,
+      "sourcePage": "2-26",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 60.5,
+          "kind": "fixed",
+          "optionSetId": "2_26"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "91": {
+      "algorithmId": 91,
+      "sourcePage": "2-26",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenpara_bass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "fixed",
+          "optionSetId": "gain"
+        }
+      ]
+    },
+    "92": {
+      "algorithmId": 92,
+      "sourcePage": "2-26",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenshape_mod_osc"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "fixed",
+          "optionSetId": "gain"
+        }
+      ]
+    },
+    "93": {
+      "algorithmId": 93,
+      "sourcePage": "2-27",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_shapemod_osc"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 243.3,
+          "kind": "fixed",
+          "optionSetId": "gain"
+        }
+      ]
+    },
+    "94": {
+      "algorithmId": 94,
+      "sourcePage": "2-27",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "fixed",
+          "optionSetId": "lopas2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "fixed",
+          "optionSetId": "shapemod_osc"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 243.3,
+          "kind": "fixed",
+          "optionSetId": "gain"
+        }
+      ]
+    },
+    "95": {
+      "algorithmId": 95,
+      "sourcePage": "2-27",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        }
+      ]
+    },
+    "96": {
+      "algorithmId": 96,
+      "sourcePage": "2-27",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_27"
+        }
+      ]
+    },
+    "97": {
+      "algorithmId": 97,
+      "sourcePage": "2-28",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 280.7,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "98": {
+      "algorithmId": 98,
+      "sourcePage": "2-28",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 280.7,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 60.5,
+          "kind": "fixed",
+          "optionSetId": "2_28"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "99": {
+      "algorithmId": 99,
+      "sourcePage": "2-28",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 526.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain"
+        }
+      ]
+    },
+    "100": {
+      "algorithmId": 100,
+      "sourcePage": "2-28",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 526.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_2",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethen2param_shaper"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 449.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        }
+      ]
+    },
+    "101": {
+      "algorithmId": 101,
+      "sourcePage": "2-29",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 175.8,
+        "x1": 286.3,
+        "y1": 214.2
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 248.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "102": {
+      "algorithmId": 102,
+      "sourcePage": "2-29",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 454.4,
+        "x1": 286.3,
+        "y1": 492.8
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "103": {
+      "algorithmId": 103,
+      "sourcePage": "2-29",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "104": {
+      "algorithmId": 104,
+      "sourcePage": "2-29",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_29"
+        }
+      ]
+    },
+    "105": {
+      "algorithmId": 105,
+      "sourcePage": "2-30",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 248.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "106": {
+      "algorithmId": 106,
+      "sourcePage": "2-30",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 60.5,
+          "kind": "fixed",
+          "optionSetId": "2_30"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "107": {
+      "algorithmId": 107,
+      "sourcePage": "2-30",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 449.2,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "108": {
+      "algorithmId": 108,
+      "sourcePage": "2-30",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "balthenampu_ampl"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 475.4,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "109": {
+      "algorithmId": 109,
+      "sourcePage": "2-31",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "110": {
+      "algorithmId": 110,
+      "sourcePage": "2-31",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 203.5,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "111": {
+      "algorithmId": 111,
+      "sourcePage": "2-31",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "112": {
+      "algorithmId": 112,
+      "sourcePage": "2-31",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2_gain_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 494.3,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_31"
+        }
+      ]
+    },
+    "113": {
+      "algorithmId": 113,
+      "sourcePage": "2-32",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "114": {
+      "algorithmId": 114,
+      "sourcePage": "2-32",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 60.5,
+          "kind": "fixed",
+          "optionSetId": "2_32"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "115": {
+      "algorithmId": 115,
+      "sourcePage": "2-32",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "116": {
+      "algorithmId": 116,
+      "sourcePage": "2-32",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "117": {
+      "algorithmId": 117,
+      "sourcePage": "2-33",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "118": {
+      "algorithmId": 118,
+      "sourcePage": "2-33",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "119": {
+      "algorithmId": 119,
+      "sourcePage": "2-33",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "120": {
+      "algorithmId": 120,
+      "sourcePage": "2-33",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 449.1,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 494.2,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 515.8,
+          "kind": "fixed",
+          "optionSetId": "2_33"
+        }
+      ]
+    },
+    "121": {
+      "algorithmId": 121,
+      "sourcePage": "2-34",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 203.4,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 248.6,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "122": {
+      "algorithmId": 122,
+      "sourcePage": "2-34",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 60.5,
+          "kind": "fixed",
+          "optionSetId": "2_34"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 158.3,
+          "kind": "choice",
+          "optionSetId": "nonethenx_gain_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 203.4,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 248.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "123": {
+      "algorithmId": 123,
+      "sourcePage": "2-34",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 139.1,
+        "x1": 532.0,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 443.6,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_3"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 488.7,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        }
+      ]
+    },
+    "124": {
+      "algorithmId": 124,
+      "sourcePage": "2-34",
+      "panelRect": {
+        "x0": 306.1,
+        "y0": 414.0,
+        "x1": 532.0,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 358.8,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 403.9,
+          "kind": "choice",
+          "optionSetId": "xampthenplus_amp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 443.6,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 488.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "125": {
+      "algorithmId": 125,
+      "sourcePage": "2-35",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 139.1,
+        "x1": 286.3,
+        "y1": 177.5
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 197.9,
+          "kind": "choice",
+          "optionSetId": "nonethenamp_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 243.1,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "126": {
+      "algorithmId": 126,
+      "sourcePage": "2-35",
+      "panelRect": {
+        "x0": 60.5,
+        "y0": 414.0,
+        "x1": 286.3,
+        "y1": 452.3
+      },
+      "algorithmType": "triple",
+      "layerRole": "layer_3",
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 113.2,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 158.3,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 197.9,
+          "kind": "choice",
+          "optionSetId": "nonethenlopas2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 243.1,
+          "kind": "fixed",
+          "optionSetId": "amp"
         }
       ]
     }

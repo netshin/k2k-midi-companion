@@ -94,7 +94,7 @@
   <div id="keymapsButton" class="keymapsButton k2600-button" title="Display Keymaps">Keymaps</div>
   <div id="modSourcesButton" class="modSourcesButton k2600-button" title="Display Modulation Sources and Constants (Alt+M)">Mod Sources</div>
   <div id="kdfxButton" class="kdfxButton k2600-button" title="Display Details about KDFX Studio structure">KDFX Studios</div>
-  <div id="fxPresetsButton" class="fxPresetsButton k2600-button" title="Display FX Presets">FX Presets</div>
+  <div id="fxPresetsButton" class="fxPresetsButton k2600-button" title="Display KDFX Presets">KDFX Presets</div>
   <div id="dspButton" class="dspButton k2600-button" title="Display DSP Algorithms">DSP Algorithms</div>
   <div id="settingsButton" class="settingsButton k2600-button" title="Configure Application (Alt+C)">Config</div>
   <div id="webButton" class="webButton k2600-button" title="Visit support for your synth">Web</div>
@@ -186,8 +186,15 @@
       <div id="keymapsFilters" class="browser-filters"></div>
     </div>
 
-    <div id="keymapsResults" class="browser-results">
-      Loading keymaps...
+    <div class="kdfx-detail-panel">
+      <div class="keymap-legend">
+        <span class="keymap-id">ID</span>
+        <span class="keymap-name">Description</span>
+        <span class="keymap-category">Source</span>
+      </div>
+      <div id="keymapsResults" class="browser-results">
+        Loading keymaps...
+      </div>
     </div>
   </div>
 </div>
@@ -199,6 +206,16 @@
     <div class="kdfx-header">
       <div class="kdfx-title">DSP Algorithms</div>
       <input id="dspSearch" type="text" placeholder="Search algorithm number or block..." />
+    </div>
+
+    <div class="browser-toolbar">
+      <div id="dspSummary" class="browser-summary" aria-live="polite"></div>
+      <div class="browser-filters">
+        <button id="dspFilterStandard" class="k2600-button active" type="button">Standard Layer</button>
+        <button id="dspFilterTriple" class="k2600-button active" type="button">Triple Layer</button>
+        <button id="dspFilterLayer1" class="k2600-button active" type="button">Layer 1</button>
+        <button id="dspFilterLayer3" class="k2600-button active" type="button">Layer 3</button>
+      </div>
     </div>
 
     <div class="kdfx-grid">
@@ -231,9 +248,10 @@
         <div id="kdfxLegend" class="kdfx-legend">
           <span class="kdfx-bus">Bus</span>
           <span class="kdfx-preset">Preset</span>
-          <span class="kdfx-preset-id">[Preset Number]</span>
-          <span class="kdfx-algorithm">(Algorithm)</span>
-          <span class="kdfx-algorithm-id">[Algorithm Number]</span>
+          <span class="kdfx-preset-id">Preset</span>
+          <span class="kdfx-algorithm">Algorithm</span>
+          <span class="kdfx-algorithm-id">ID</span>
+          <span class="kdfx-algorithm-pau">PAUs</span>
         </div>
         <div id="kdfxStudioDetail" class="kdfx-detail">
           Select a studio to view routing details.
@@ -248,8 +266,8 @@
 <div id="fxPresetsView" class="rack kdfx-view hidden">
   <div class="panel">
     <div class="browser-header">
-      <div class="kdfx-title">FX Presets</div>
-      <input id="fxPresetsSearch" type="text" placeholder="Search FX presets by ID or name..." />
+      <div class="kdfx-title">KDFX Presets</div>
+      <input id="fxPresetsSearch" type="text" placeholder="Search KDFX presets by ID or name..." />
     </div>
 
     <div class="browser-toolbar">
@@ -262,7 +280,7 @@
       </div>
       <div class="kdfx-detail-panel">
         <div id="fxPresetsDetail" class="kdfx-detail">
-          Select an FX preset to view details.
+          Select a KDFX preset to view details.
         </div>
       </div>
     </div>
@@ -278,10 +296,21 @@
       <input id="modSourceSearch" type="text" placeholder="Search value/source..." />
     </div>
 
+    <div class="browser-toolbar">
+      <div id="modSourceSummary" class="browser-summary" aria-live="polite"></div>
+      <div id="modSourceFilters" class="browser-filters">
+        <button id="modSourceFilterAll" class="k2600-button active" type="button">All</button>
+        <button id="modSourceFilterControls" class="k2600-button" type="button">Controls</button>
+        <button id="modSourceFilterMidi" class="k2600-button" type="button">MIDI</button>
+      </div>
+    </div>
+
     <div class="kdfx-detail-panel">
       <div class="modsrc-legend">
-        <span>Assigned Value</span>
+        <span>ID</span>
+        <span>Type</span>
         <span>Source</span>
+        <span>Default Assignment</span>
       </div>
       <div id="modSourceList" class="kdfx-detail">
         Loading modulation sources...

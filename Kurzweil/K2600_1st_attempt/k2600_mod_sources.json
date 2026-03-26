@@ -12,8 +12,8 @@
     "details": "This control source generates a control signal of -1 when the value of the control to\nwhich it’s assigned is at its minimum, and +1 when the control is at its maximum.\nFor example, if you had the MPress control assignment parameter assigned to send\nBMPress, and you had Src1 on a program layer’s PITCH page assigned to BMPress,\nwith its depth parameter set to 1200 cents, then the layer would be transposed\ndown an octave when no pressure (value 0) was applied to your controller’s keys\n(assuming it sends mono pressure). Maximum pressure (value 127) would\ntranspose the layer up an octave, while a pressure level of 64 would leave the pitch\nunchanged."
   },
   "35": {
-    "label": "Pitch Wheel Message (PWheel)",
-    "details": "The K2600 is hard-wired to respond to this message. Any parameter with PWheel\nassigned as its value will be affected when your MIDI controller’s Pitch Wheel is\nmoved."
+    "label": "Pitch Wheel Message",
+    "details": "The K2600 is hard-wired to respond to this message. Any parameter with Pitch Wheel\nassigned as its value will be affected when your MIDI controller’s Pitch Wheel is\nmoved."
   },
   "36": {
     "label": "Bipolar Mod Wheel (Bi-Mwl)",
@@ -57,7 +57,7 @@
   },
   "46": {
     "label": "Channel Count (ChanCnt)",
-    "details": "This control source keeps track of the total number of active voice channels (how\nmany notes are playing), and converts the number into a control signal between 0\nand +1. The control signal’s value is 1 when all 48 voice channels are active, and 0\nwhen no voice channels are active.\n\nYou can use this control source in several ways. One example is to limit the volume\nof each note so that you have a more nearly constant volume regardless of how\nmany notes you’re playing (this is independent of the effect of attack velocity on\nvolume). To set this up, you would go to the F4 AMP page in the Program Editor,\nand set the Src1 parameter to a value of ChanCnt. Then set the Depth parameter to\na negative value. This will decrease the overall amplitude of each note as you play\nmore simultaneous notes. This example works best with short-release sounds. It’s\ngreat for an organ program, for example.\n\nChannel count is also useful for controlling the modulation applied to a sound. For\nexample, you may have a sound that you use both as a lead and for rhythm.\nSuppose you want a deep vibrato when you’re soloing, but less vibrato when you’re\nplaying chords. Set up the vibrato by using LFO1 as the value for the Src2\nparameter on the PITCH page in the Program Editor. Set the MinDpt parameter to\n72 cts, and the MaxDpt parameter to 12 cts. Then set the value of the DptCtl\nparameter to ChanCnt, and You’ll get maximum vibrato depth when only one note\nis active. (Channel count outputs a control signal of 0 when no notes are playing, so\nwith only one note playing, its value is near 0, which causes the DptCtl parameter to\ngenerate a value near its minimum: 72 cents in this case.)\n\nIf you want to increase the depth of the vibrato as you increase the number of active\nnotes, set the value of the MaxDpt parameter higher than that of the MinDpt\nparameter.\n\nNote: There are no control sources that correspond to the numeric entries 47—54."
+    "details": "This control source keeps track of the total number of active voice channels (how\nmany notes are playing), and converts the number into a control signal between 0 and +1\nThe control signal’s value is 1 when all 48 voice channels are active, and 0 when no voice channels are active"
   },
   "55": {
     "label": "Sync State (SyncSt)",
@@ -73,26 +73,26 @@
   },
   "58": {
     "label": "B Clock",
-    "details": "This is similar to A Clock, but it’s bipolar—it switches from +1 to -1 with every\nclock beat."
+    "details": "beat.\nThis is similar to A Clock, but it’s bipolar—it switches from +1 to -1 with every clock"
   },
   "59": {
     "label": "Negative B Clock (~B Clock)",
     "details": "The opposite of B Clock, this bipolar control source switches from -1 to +1 with\nevery clock beat (the square wave is 180 degrees out of phase with that of B Clock)."
   },
   "60": {
-    "label": "Global Phase 1 (G Phase 1)",
-    "details": "These bipolar global control sources are both rising sawtooth waves that rise from\n-1 to +1 with each MIDI clock beat. Like A Clock and B Clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
+    "label": "Global Phase 1",
+    "details": "These bipolar global control sources are both rising sawtooth waves that rise from -\n1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
   },
   "61": {
-    "label": "Global Phase 2 (G Phase 2)",
-    "details": "These bipolar global control sources are both rising sawtooth waves that rise from\n-1 to +1 with each MIDI clock beat. Like A Clock and B Clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
+    "label": "Global Phase 2",
+    "details": "These bipolar global control sources are both rising sawtooth waves that rise from -\n1 to +1 with each MIDI clock beat. Like A Clock and B clock, they look for an\nexternal clock signal, and if none is received, they respond to the K2600’s internal\nclock."
   },
   "62": {
-    "label": "Global Random Variant 1 (GRandV 1)",
+    "label": "Global Random Variant 1",
     "details": "These are also bipolar and global, and generate random control signal values\nbetween -1 and +1 when assigned to a control source parameter. There is a subtle\ndifference in the randomness of the signals they generate, therefore choosing\nbetween them is a matter of preference."
   },
   "63": {
-    "label": "Global Random Variant 2 (GRandV 2)",
+    "label": "Global Random Variant 2",
     "details": "These are also bipolar and global, and generate random control signal values\nbetween -1 and +1 when assigned to a control source parameter. There is a subtle\ndifference in the randomness of the signals they generate, therefore choosing\nbetween them is a matter of preference."
   },
   "96": {
@@ -136,19 +136,19 @@
     "details": "This is similar to AttVel, but scales its signal values from -1 to +1."
   },
   "106": {
-    "label": "Velocity Trigger 1 (VTRIG1)",
+    "label": "Velocity Triggers 1",
     "details": "These unipolar control sources are switch controls, that is, they generate signal\nvalues of either 0 or +1. These must be programmed in order to have an effect; their\nprogramming parameters are found on the VTRIG page in the Program Editor.\nWhen a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note\nplays at a dynamic level exceeding the dynamic level set for its Level parameter. See\npage 6-44 of the Musician’s Guide for more information."
   },
   "107": {
-    "label": "Velocity Trigger 2 (VTRIG2)",
+    "label": "Velocity Triggers 2",
     "details": "These unipolar control sources are switch controls, that is, they generate signal\nvalues of either 0 or +1. These must be programmed in order to have an effect; their\nprogramming parameters are found on the VTRIG page in the Program Editor.\nWhen a VTRIG’s Sense parameter is set to normal, it switches to +1 when a note\nplays at a dynamic level exceeding the dynamic level set for its Level parameter. See\npage 6-44 of the Musician’s Guide for more information."
   },
   "108": {
-    "label": "Random Variant 1 (RandV1)",
+    "label": "Random Variants 1",
     "details": "These are similar to GRandV1 and GRandV2, but are local, so will affect each\ncontrol source parameter independently."
   },
   "109": {
-    "label": "Random Variant 2 (RandV2)",
+    "label": "Random Variants 2",
     "details": "These are similar to GRandV1 and GRandV2, but are local, so will affect each\ncontrol source parameter independently."
   },
   "110": {
@@ -196,11 +196,11 @@
     "details": "This programmable unipolar control source lets you vary the effect of a control\nsource parameter over time. See page 6-35 of the Musician’s Guide."
   },
   "121": {
-    "label": "Envelope 2 (ENV2)",
+    "label": "Envelopes 2",
     "details": "These are programmed in the same way as AMPENV, but they can be bipolar."
   },
   "122": {
-    "label": "Envelope 3 (ENV3)",
+    "label": "Envelopes 3",
     "details": "These are programmed in the same way as AMPENV, but they can be bipolar."
   },
   "123": {

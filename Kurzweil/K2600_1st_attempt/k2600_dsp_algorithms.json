@@ -1,0 +1,1578 @@
+{
+  "source": {
+    "pdf": "K2600 DSP Algs.pdf",
+    "pageCount": 16,
+    "algorithmCount": 31
+  },
+  "blocksById": {
+    "pitch": {
+      "label": "PITCH"
+    },
+    "hifreq_stimulator": {
+      "label": "HIFREQ STIMULATOR"
+    },
+    "parametric_eq": {
+      "label": "PARAMETRIC EQ"
+    },
+    "steep_resonant_bass": {
+      "label": "STEEP RESONANT BASS"
+    },
+    "4pole_lopass_w_sep": {
+      "label": "4POLE LOPASS W/SEP"
+    },
+    "4pole_hipass_w_sep": {
+      "label": "4POLE HIPASS W/SEP"
+    },
+    "twin_peaks_bandpass": {
+      "label": "TWIN PEAKS BANDPASS"
+    },
+    "double_notch_w_sep": {
+      "label": "DOUBLE NOTCH W/SEP"
+    },
+    "none": {
+      "label": "NONE"
+    },
+    "amp": {
+      "label": "AMP"
+    },
+    "2param_shaper": {
+      "label": "2PARAM SHAPER"
+    },
+    "2pole_lowpass": {
+      "label": "2POLE LOWPASS"
+    },
+    "bandpass_filt": {
+      "label": "BANDPASS FILT"
+    },
+    "notch_filter": {
+      "label": "NOTCH FILTER"
+    },
+    "2pole_allpass": {
+      "label": "2POLE ALLPASS"
+    },
+    "para_bass": {
+      "label": "PARA BASS"
+    },
+    "para_treble": {
+      "label": "PARA TREBLE"
+    },
+    "para_mid": {
+      "label": "PARA MID"
+    },
+    "panner": {
+      "label": "PANNER"
+    },
+    "amp_u_amp_l": {
+      "label": "AMP U AMP L"
+    },
+    "bal_amp": {
+      "label": "BAL AMP"
+    },
+    "lpclip": {
+      "label": "LPCLIP"
+    },
+    "sine_plus": {
+      "label": "SINE+"
+    },
+    "noise_plus": {
+      "label": "NOISE+"
+    },
+    "lopass": {
+      "label": "LOPASS"
+    },
+    "hipass": {
+      "label": "HIPASS"
+    },
+    "alpass": {
+      "label": "ALLPASS"
+    },
+    "gain": {
+      "label": "GAIN"
+    },
+    "shaper": {
+      "label": "SHAPER"
+    },
+    "dist": {
+      "label": "DIST"
+    },
+    "sw_plus_shp": {
+      "label": "SW+SHP"
+    },
+    "saw_plus": {
+      "label": "SAW+"
+    },
+    "sw_plus_dst": {
+      "label": "SW+DST"
+    },
+    "lp2res": {
+      "label": "LP2RES"
+    },
+    "shape2": {
+      "label": "SHAPE2"
+    },
+    "band2": {
+      "label": "BAND2"
+    },
+    "notch2": {
+      "label": "NOTCH2"
+    },
+    "lopas2": {
+      "label": "LOPAS2"
+    },
+    "hipas2": {
+      "label": "HIPAS2"
+    },
+    "lpgate": {
+      "label": "LPGATE"
+    },
+    "x_amp": {
+      "label": "x AMP"
+    },
+    "plus_amp": {
+      "label": "+ AMP"
+    },
+    "bang_amp": {
+      "label": "! AMP"
+    },
+    "sine": {
+      "label": "SINE"
+    },
+    "lf_sin": {
+      "label": "LF SIN"
+    },
+    "pwm": {
+      "label": "PWM"
+    },
+    "saw": {
+      "label": "SAW"
+    },
+    "lf_saw": {
+      "label": "LF SAW"
+    },
+    "square": {
+      "label": "SQUARE"
+    },
+    "lf_sqr": {
+      "label": "LF SQR"
+    },
+    "wrap": {
+      "label": "WRAP"
+    },
+    "shape_mod_osc": {
+      "label": "SHAPE MOD OSC"
+    },
+    "amp_mod_osc": {
+      "label": "AMP MOD OSC"
+    },
+    "x_shapemod_osc": {
+      "label": "x SHAPEMOD OSC"
+    },
+    "plus_shapemod_osc": {
+      "label": "+ SHAPEMOD OSC"
+    },
+    "x_gain": {
+      "label": "x GAIN"
+    },
+    "plus_gain": {
+      "label": "+ GAIN"
+    },
+    "xfade": {
+      "label": "XFADE"
+    },
+    "ampmod": {
+      "label": "AMPMOD"
+    },
+    "sync_m": {
+      "label": "SYNC M"
+    },
+    "sync_s": {
+      "label": "SYNC S"
+    }
+  },
+  "optionSetsById": {
+    "pitch": {
+      "blockIds": [
+        "pitch"
+      ]
+    },
+    "hifreq_stimulatorthenparametric_eq": {
+      "blockIds": [
+        "hifreq_stimulator",
+        "parametric_eq",
+        "steep_resonant_bass",
+        "4pole_lopass_w_sep",
+        "4pole_hipass_w_sep",
+        "twin_peaks_bandpass",
+        "double_notch_w_sep",
+        "none"
+      ]
+    },
+    "amp": {
+      "blockIds": [
+        "amp"
+      ]
+    },
+    "2param_shaperthen2pole_lowpass": {
+      "blockIds": [
+        "2param_shaper",
+        "2pole_lowpass",
+        "bandpass_filt",
+        "notch_filter",
+        "2pole_allpass",
+        "para_bass",
+        "para_treble",
+        "para_mid",
+        "none"
+      ]
+    },
+    "panner": {
+      "blockIds": [
+        "panner"
+      ]
+    },
+    "2param_shaperthen2pole_lowpass_2": {
+      "blockIds": [
+        "2param_shaper",
+        "2pole_lowpass",
+        "bandpass_filt",
+        "notch_filter",
+        "2pole_allpass",
+        "none"
+      ]
+    },
+    "amp_u_amp_lthenbal_amp": {
+      "blockIds": [
+        "amp_u_amp_l",
+        "bal_amp"
+      ]
+    },
+    "lpclipthensine_plus": {
+      "blockIds": [
+        "lpclip",
+        "sine_plus",
+        "noise_plus",
+        "lopass",
+        "hipass",
+        "alpass",
+        "gain",
+        "shaper",
+        "dist",
+        "sw_plus_shp",
+        "saw_plus",
+        "sw_plus_dst",
+        "none"
+      ]
+    },
+    "lp2resthenshape2": {
+      "blockIds": [
+        "lp2res",
+        "shape2",
+        "band2",
+        "notch2",
+        "lopas2",
+        "hipas2",
+        "lpgate",
+        "none"
+      ]
+    },
+    "x_ampthenplus_amp": {
+      "blockIds": [
+        "x_amp",
+        "plus_amp",
+        "bang_amp"
+      ]
+    },
+    "lpclipthensine_plus_2": {
+      "blockIds": [
+        "lpclip",
+        "sine_plus",
+        "noise_plus",
+        "lopass",
+        "hipass",
+        "alpass",
+        "gain",
+        "shaper",
+        "dist",
+        "sine",
+        "lf_sin",
+        "sw_plus_shp",
+        "saw_plus",
+        "sw_plus_dst",
+        "none"
+      ]
+    },
+    "lopassthenhipass": {
+      "blockIds": [
+        "lopass",
+        "hipass",
+        "alpass",
+        "gain",
+        "shaper",
+        "dist",
+        "pwm",
+        "sine",
+        "lf_sin",
+        "sw_plus_shp",
+        "saw_plus",
+        "saw",
+        "lf_saw",
+        "square",
+        "lf_sqr",
+        "wrap",
+        "none"
+      ]
+    },
+    "lopassthenhipass_2": {
+      "blockIds": [
+        "lopass",
+        "hipass",
+        "alpass",
+        "gain",
+        "shaper",
+        "dist",
+        "sw_plus_shp",
+        "saw_plus",
+        "wrap",
+        "none"
+      ]
+    },
+    "lopassthenhipass_3": {
+      "blockIds": [
+        "lopass",
+        "hipass",
+        "alpass",
+        "gain",
+        "shaper",
+        "dist",
+        "sine",
+        "lf_sin",
+        "sw_plus_shp",
+        "saw_plus",
+        "saw",
+        "lf_saw",
+        "square",
+        "lf_sqr",
+        "wrap",
+        "none"
+      ]
+    },
+    "para_bassthenpara_treble": {
+      "blockIds": [
+        "para_bass",
+        "para_treble",
+        "none"
+      ]
+    },
+    "shape_mod_oscthenamp_mod_osc": {
+      "blockIds": [
+        "shape_mod_osc",
+        "amp_mod_osc",
+        "none"
+      ]
+    },
+    "x_shapemod_oscthenplus_shapemod_osc": {
+      "blockIds": [
+        "x_shapemod_osc",
+        "plus_shapemod_osc",
+        "none"
+      ]
+    },
+    "x_gainthenplus_gain": {
+      "blockIds": [
+        "x_gain",
+        "plus_gain",
+        "xfade",
+        "ampmod",
+        "none"
+      ]
+    },
+    "lopas2thennone": {
+      "blockIds": [
+        "lopas2",
+        "none"
+      ]
+    },
+    "shape_mod_oscthennone": {
+      "blockIds": [
+        "shape_mod_osc",
+        "none"
+      ]
+    },
+    "sync_m": {
+      "blockIds": [
+        "sync_m"
+      ]
+    },
+    "sync_s": {
+      "blockIds": [
+        "sync_s"
+      ]
+    }
+  },
+  "algorithmsById": {
+    "1": {
+      "algorithmId": 1,
+      "sourcePage": "page-1",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 233.1,
+        "x1": 296.7,
+        "y1": 413.9
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "hifreq_stimulatorthenparametric_eq"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 246.9,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "2": {
+      "algorithmId": 2,
+      "sourcePage": "page-1",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 233.1,
+        "x1": 542.5,
+        "y1": 429.9
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 356.7,
+          "kind": "choice",
+          "optionSetId": "2param_shaperthen2pole_lowpass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 447.5,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.6,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "3": {
+      "algorithmId": 3,
+      "sourcePage": "3-2",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 151.7,
+        "x1": 296.7,
+        "y1": 300.4
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "2param_shaperthen2pole_lowpass_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "amp_u_amp_lthenbal_amp"
+        }
+      ]
+    },
+    "4": {
+      "algorithmId": 4,
+      "sourcePage": "3-2",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 151.7,
+        "x1": 542.5,
+        "y1": 412.4
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.5,
+          "kind": "choice",
+          "optionSetId": "2param_shaperthen2pole_lowpass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "5": {
+      "algorithmId": 5,
+      "sourcePage": "3-3",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 148.9,
+        "x1": 296.7,
+        "y1": 345.7
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "2param_shaperthen2pole_lowpass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lp2resthenshape2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 246.8,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "6": {
+      "algorithmId": 6,
+      "sourcePage": "3-3",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 148.9,
+        "x1": 542.5,
+        "y1": 409.7
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.0,
+          "kind": "choice",
+          "optionSetId": "2param_shaperthen2pole_lowpass_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "7": {
+      "algorithmId": 7,
+      "sourcePage": "3-4",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 148.9,
+        "x1": 296.7,
+        "y1": 441.7
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "2param_shaperthen2pole_lowpass_2"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 246.8,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "8": {
+      "algorithmId": 8,
+      "sourcePage": "3-4",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 148.9,
+        "x1": 542.5,
+        "y1": 473.7
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 401.4,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "9": {
+      "algorithmId": 9,
+      "sourcePage": "3-5",
+      "panelRect": {
+        "x0": 56.2,
+        "y0": 146.5,
+        "x1": 295.3,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 64.7,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 109.8,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 155.0,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 200.2,
+          "kind": "choice",
+          "optionSetId": "lp2resthenshape2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 245.4,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "10": {
+      "algorithmId": 10,
+      "sourcePage": "3-5",
+      "panelRect": {
+        "x0": 302.0,
+        "y0": 146.5,
+        "x1": 541.1,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 310.5,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 355.8,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 399.9,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 446.0,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 491.3,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "11": {
+      "algorithmId": 11,
+      "sourcePage": "3-6",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 155.4,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 246.8,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "12": {
+      "algorithmId": 12,
+      "sourcePage": "3-6",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 401.4,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 492.7,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "13": {
+      "algorithmId": 13,
+      "sourcePage": "3-7",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 201.6,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 246.8,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "14": {
+      "algorithmId": 14,
+      "sourcePage": "3-7",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 455.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.1,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 402.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "amp_u_amp_lthenbal_amp"
+        }
+      ]
+    },
+    "15": {
+      "algorithmId": 15,
+      "sourcePage": "3-8",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "amp_u_amp_lthenbal_amp"
+        }
+      ]
+    },
+    "16": {
+      "algorithmId": 16,
+      "sourcePage": "3-8",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 455.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.1,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 401.7,
+          "kind": "choice",
+          "optionSetId": "para_bassthenpara_treble"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "17": {
+      "algorithmId": 17,
+      "sourcePage": "3-9",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 471.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "shape_mod_oscthenamp_mod_osc"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 246.8,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "18": {
+      "algorithmId": 18,
+      "sourcePage": "3-9",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 455.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 401.7,
+          "kind": "choice",
+          "optionSetId": "x_shapemod_oscthenplus_shapemod_osc"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "20": {
+      "algorithmId": 20,
+      "sourcePage": "3-10",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 147.2,
+        "x1": 542.5,
+        "y1": 456.0
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 401.4,
+          "kind": "choice",
+          "optionSetId": "x_gainthenplus_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "19": {
+      "algorithmId": 19,
+      "sourcePage": "3-10",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 147.2,
+        "x1": 296.7,
+        "y1": 232.0
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopas2thennone"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "shape_mod_oscthennone"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 246.8,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "21": {
+      "algorithmId": 21,
+      "sourcePage": "3-11",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 455.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "x_gainthenplus_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lp2resthenshape2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 246.8,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "22": {
+      "algorithmId": 22,
+      "sourcePage": "3-11",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 455.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 402.3,
+          "kind": "choice",
+          "optionSetId": "x_gainthenplus_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 492.7,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "23": {
+      "algorithmId": 23,
+      "sourcePage": "3-12",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 142.3,
+        "x1": 296.7,
+        "y1": 450.1
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.4,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "x_gainthenplus_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 246.9,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "24": {
+      "algorithmId": 24,
+      "sourcePage": "3-12",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 142.3,
+        "x1": 542.5,
+        "y1": 451.0
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 311.9,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 357.2,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 402.3,
+          "kind": "choice",
+          "optionSetId": "x_gainthenplus_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 447.5,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_5",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "25": {
+      "algorithmId": 25,
+      "sourcePage": "3-13",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 455.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 66.1,
+          "kind": "fixed",
+          "optionSetId": "pitch"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 111.3,
+          "kind": "choice",
+          "optionSetId": "lopassthenhipass_3"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 156.5,
+          "kind": "choice",
+          "optionSetId": "x_gainthenplus_gain"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "amp_u_amp_lthenbal_amp"
+        }
+      ]
+    },
+    "26": {
+      "algorithmId": 26,
+      "sourcePage": "3-13",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 216.1
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 357.2,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 401.4,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 447.5,
+          "kind": "fixed",
+          "optionSetId": "panner"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "27": {
+      "algorithmId": 27,
+      "sourcePage": "3-14",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 146.5,
+        "x1": 296.7,
+        "y1": 439.2
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 111.3,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 155.4,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 246.8,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "28": {
+      "algorithmId": 28,
+      "sourcePage": "3-14",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 146.5,
+        "x1": 542.5,
+        "y1": 326.3
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 357.2,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 401.4,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lp2resthenshape2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "fixed",
+          "optionSetId": "amp"
+        }
+      ]
+    },
+    "30": {
+      "algorithmId": 30,
+      "sourcePage": "3-15",
+      "panelRect": {
+        "x0": 303.5,
+        "y0": 148.9,
+        "x1": 542.5,
+        "y1": 441.7
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 357.2,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 402.4,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 447.5,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 492.7,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "29": {
+      "algorithmId": 29,
+      "sourcePage": "3-15",
+      "panelRect": {
+        "x0": 57.6,
+        "y0": 148.9,
+        "x1": 296.7,
+        "y1": 439.8
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 111.3,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 156.5,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 201.6,
+          "kind": "choice",
+          "optionSetId": "lpclipthensine_plus_2"
+        },
+        {
+          "stageId": "stage_4",
+          "x": 246.8,
+          "kind": "choice",
+          "optionSetId": "x_ampthenplus_amp"
+        }
+      ]
+    },
+    "31": {
+      "algorithmId": 31,
+      "sourcePage": "3-15",
+      "panelRect": {
+        "x0": 181.6,
+        "y0": 500.9,
+        "x1": 420.6,
+        "y1": 583.8
+      },
+      "stages": [
+        {
+          "stageId": "stage_1",
+          "x": 235.2,
+          "kind": "fixed",
+          "optionSetId": "sync_m"
+        },
+        {
+          "stageId": "stage_2",
+          "x": 280.4,
+          "kind": "fixed",
+          "optionSetId": "sync_s"
+        },
+        {
+          "stageId": "stage_3",
+          "x": 325.6,
+          "kind": "choice",
+          "optionSetId": "amp_u_amp_lthenbal_amp"
+        }
+      ]
+    }
+  }
+}

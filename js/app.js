@@ -31,6 +31,13 @@ let selectedProgramNumber = null;
 let selectedSetupNumber = null;
 let currentDisplayedType = "programs";
 let currentDisplayedNumber = null;
+let currentModSourceFilter = "all";
+let currentDspAlgorithmFilters = {
+  standard: true,
+  triple: true,
+  layer1: true,
+  layer3: true,
+};
 let searchFilters = {
   programs: true,
   setups: true,
@@ -526,7 +533,7 @@ function renderProgramNotes(patch) {
 
       notesHtml +=
         `<div class="ctrl-row">
-          <span class="ctrl-name">${midiControllers[control.number] || `CC ${control.number}`}</span>
+          <span class="ctrl-name">${getMidiControllerDisplayLabel(control.number)}</span>
           <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
         </div>`;
 
@@ -570,8 +577,10 @@ function renderSetupNotes(setup) {
         return `<div class="meta">${row.description}</div>`;
       }
 
+      const displayLabel = formatSetupControlLabel(row.label);
+
       return `<div class="ctrl-row">
-        <span class="ctrl-name">${row.label}</span>
+        <span class="ctrl-name">${displayLabel}</span>
         <span class="ctrl-desc">${row.description}</span>
       </div>`;
     }).join("");
@@ -600,7 +609,7 @@ function renderSetupNotes(setup) {
     }
 
     return `<div class="ctrl-row">
-      <span class="ctrl-name">${row.label}</span>
+      <span class="ctrl-name">${formatSetupControlLabel(row.label)}</span>
       <span class="ctrl-desc">${formatDisplayedNoteText(row.description)}</span>
     </div>`;
   }).join("");
@@ -612,6 +621,11 @@ function formatControlTypeLabel(type) {
 
   if (typeof type !== "string") {
     return String(type || "");
+  }
+
+  const normalizedHardwareLabel = getHardwareControlDisplayLabel(type);
+  if (normalizedHardwareLabel) {
+    return normalizedHardwareLabel;
   }
 
   const sliderLabels = new Set(["A", "B", "C", "D", "E", "F", "G", "H", "D,E", "E/F"]);
@@ -737,6 +751,11 @@ function formatSetupControlLabel(label) {
   }
 
   const compact = label.replace(/\s+/g, " ").trim();
+  const directHardwareLabel = getHardwareControlDisplayLabel(compact);
+
+  if (directHardwareLabel) {
+    return directHardwareLabel;
+  }
 
   if (/^[A-H]$/.test(compact) || compact === "D,E" || compact === "E/F") {
     return formatControlTypeLabel(compact);
@@ -767,7 +786,10 @@ function formatSetupControlLabel(label) {
     "Sm Rib Press": "Small Ribbon Press",
   };
 
-  return aliases[compact] || compact;
+  const aliased = aliases[compact] || compact;
+  const mappedAlias = getHardwareControlDisplayLabel(aliased) || aliased;
+
+  return mappedAlias;
 }
 
 function expandSetupNoteRow(row) {
@@ -1305,14 +1327,7 @@ function getProgramSearchEntries() {
   return Object.entries(patches || {})
     .map(([key, patch]) => {
       const number = Number(key);
-      const controls = Array.isArray(patch?.controls) ? patch.controls : [];
       const categoryLabel = String(patch?.categoryLabel || "");
-      const controlText = controls.map(control => {
-        const ctrlName = control.type === "MIDI"
-          ? (midiControllers[control.number] || `CC ${control.number}`)
-          : control.type;
-        return `${ctrlName} ${control.description || ""}`.trim();
-      });
 
       return {
         number,
@@ -1322,13 +1337,12 @@ function getProgramSearchEntries() {
         location: formatPatchLocation(number, "programs"),
         categoryId: String(patch?.categoryId || ""),
         categoryLabel,
-        meta: [categoryLabel, ...controlText.slice(0, 2)].filter(Boolean).join(" | ") || "No notes",
+        meta: categoryLabel || "-",
         searchText: [
           number,
           formatPatchLocation(number, "programs"),
           patch?.name || "",
           categoryLabel,
-          ...controlText,
         ].join(" ").toLowerCase(),
       };
     })
@@ -1343,7 +1357,8 @@ function getSetupSearchEntries() {
       const setup = resolveSetupByNumber(number);
       const secondarySingular = getSecondaryLabelSingular().toLowerCase();
       const ribbonText = setup?.longRibbonFunction || `No ${secondarySingular} notes available`;
-      const meta = setup?.longRibbonFunction ? `Long Ribbon: ${ribbonText}` : ribbonText;
+      const categoryLabel = String(setup?.categoryLabel || "");
+      const meta = categoryLabel || "-";
 
       return {
         number,
@@ -1356,6 +1371,7 @@ function getSetupSearchEntries() {
           number,
           formatPatchLocation(number, "setups"),
           setup?.name || "",
+          categoryLabel,
           ribbonText,
         ].join(" ").toLowerCase(),
       };
@@ -1367,11 +1383,11 @@ function getSetupSearchEntries() {
 function getCombinedSearchEntries() {
   return [...getProgramSearchEntries(), ...getSetupSearchEntries()]
     .sort((a, b) => {
-      const byName = a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
-      if (byName !== 0) return byName;
+      const byNumber = a.number - b.number;
+      if (byNumber !== 0) return byNumber;
       const byType = a.typeLabel.localeCompare(b.typeLabel, undefined, { sensitivity: "base" });
       if (byType !== 0) return byType;
-      return a.number - b.number;
+      return a.name.localeCompare(b.name, undefined, { sensitivity: "base" });
     });
 }
 
@@ -1681,6 +1697,11 @@ function getKeymapCategories() {
     : [];
   const romCards = Array.isArray(synthModel?.romCards) ? synthModel.romCards : [];
   const savedRomIds = getSavedRomIds();
+  const availableCategoryIds = new Set(
+    Array.isArray(keymapsData?.keymaps)
+      ? keymapsData.keymaps.map(entry => String(entry.categoryId || ""))
+      : []
+  );
 
   return sourceCategories.map(category => {
     if (category.id === "base_rom") {
@@ -1695,7 +1716,7 @@ function getKeymapCategories() {
     return {
       id: category.id,
       label: romCard?.label || category.label || category.id,
-      enabled: savedRomIds.includes(category.id),
+      enabled: availableCategoryIds.has(category.id) || (romCard ? savedRomIds.includes(category.id) : true),
     };
   });
 }
@@ -1811,27 +1832,23 @@ function renderKeymaps(query = "") {
 
   filteredEntries.forEach(entry => {
     const item = document.createElement("div");
-    item.className = "browser-item";
+    item.className = "keymap-row";
 
-    const location = document.createElement("div");
-    location.className = "browser-item-location";
+    const location = document.createElement("span");
+    location.className = "keymap-id";
     location.textContent = entry.location;
 
-    const type = document.createElement("div");
-    type.className = "browser-item-type";
+    const type = document.createElement("span");
+    type.className = "keymap-category";
     type.textContent = entry.categoryLabel;
 
-    const body = document.createElement("div");
-    body.className = "browser-item-body";
-
-    const name = document.createElement("div");
-    name.className = "browser-item-name";
+    const name = document.createElement("span");
+    name.className = "keymap-name";
     name.textContent = entry.name;
 
-    body.appendChild(name);
     item.appendChild(location);
+    item.appendChild(name);
     item.appendChild(type);
-    item.appendChild(body);
     fragment.appendChild(item);
   });
 
@@ -1839,17 +1856,24 @@ function renderKeymaps(query = "") {
 }
 
 function getFxPresetEntries() {
-  return Array.isArray(fxPresetsData?.presets)
+  const sourcePresets = Array.isArray(fxPresetsData?.presets)
     ? fxPresetsData.presets
+    : (kdfxLookup?.presetsById ? Object.values(kdfxLookup.presetsById) : []);
+
+  return Array.isArray(sourcePresets)
+    ? sourcePresets
       .map(entry => ({
         id: Number(entry.id),
         name: String(entry.name || ""),
         algorithmId: entry.algorithmId ?? null,
         algorithmName: entry.algorithmName || "",
         size: entry.size ?? null,
+        algorithmPau: entry.algorithmId != null
+          ? (kdfxLookup?.algorithmsById?.[String(entry.algorithmId)]?.pau ?? null)
+          : null,
         v1: entry.v1 === true,
         v2: entry.v2 === true,
-        source: entry.source || null,
+        source: entry.source || entry.sourceLabel || null,
         possibleDuplicate: entry.possibleDuplicate || null,
         badges: getObjectMetadataBadges(entry),
         searchText: `${entry.id} ${entry.name || ""} ${entry.algorithmName || ""}`.toLowerCase(),
@@ -1859,7 +1883,7 @@ function getFxPresetEntries() {
 }
 
 function shouldShowFxPresetsView() {
-  return synthModel?.showFxPresetsView !== false;
+  return synthModel?.showFxPresetsView !== false && getFxPresetEntries().length > 0;
 }
 
 function renderFxPresets(query = "") {
@@ -1881,7 +1905,7 @@ function renderFxPresets(query = "") {
   if (filteredEntries.length === 0) {
     const empty = document.createElement("div");
     empty.className = "browser-empty";
-    empty.textContent = "No FX presets match the search.";
+    empty.textContent = "No KDFX presets match the search.";
     container.appendChild(empty);
     renderFxPresetDetail(null);
     return;
@@ -1942,7 +1966,7 @@ function renderFxPresetDetail(presetId) {
   const entry = entries.find(item => item.id === presetId);
 
   if (!entry) {
-    detail.textContent = "Select an FX preset to view details.";
+    detail.textContent = "Select a KDFX preset to view details.";
     return;
   }
 
@@ -1957,23 +1981,58 @@ function renderFxPresetDetail(presetId) {
     detail.appendChild(badges);
   }
 
-  const meta = document.createElement("div");
-  meta.className = "kdfx-detail-meta";
-  const algorithmLabel = entry.algorithmId ? `A${String(entry.algorithmId).padStart(3, "0")} ${entry.algorithmName || ""}` : "Algorithm unknown";
-  const sizeLabel = entry.size != null ? `${entry.size} PAU${entry.size === 1 ? "" : "s"}` : "PAUs unknown";
-  meta.textContent = `${algorithmLabel} | ${sizeLabel}`;
-  detail.appendChild(meta);
+  const algorithm = entry.algorithmId != null
+    ? kdfxLookup?.algorithmsById?.[String(entry.algorithmId)] || null
+    : null;
+
+  const metaGrid = document.createElement("div");
+  metaGrid.className = "fx-preset-meta-grid";
+
+  const fields = [
+    {
+      label: "Description",
+      value: algorithm?.description || "-",
+      toneClass: "fx-preset-meta-description",
+    },
+    {
+      label: "Algorithm",
+      value: entry.algorithmId != null ? `${entry.algorithmId}` : "-",
+      toneClass: "fx-preset-meta-algorithm",
+    },
+    {
+      label: "PAUs",
+      value: entry.size ?? entry.algorithmPau ?? "-",
+      toneClass: "fx-preset-meta-pau",
+    },
+    {
+      label: "Type",
+      value: entry.source || "-",
+      toneClass: "fx-preset-meta-type",
+    },
+  ];
+
+  fields.forEach(field => {
+    const cell = document.createElement("div");
+    cell.className = `fx-preset-meta-cell ${field.toneClass}`;
+
+    const label = document.createElement("div");
+    label.className = "fx-preset-meta-label";
+    label.textContent = field.label;
+
+    const value = document.createElement("div");
+    value.className = "fx-preset-meta-value";
+    value.textContent = `${field.value}`;
+
+    cell.appendChild(label);
+    cell.appendChild(value);
+    metaGrid.appendChild(cell);
+  });
+
+  detail.appendChild(metaGrid);
 
   const notes = buildObjectNoteBlock(buildObjectNotes(entry, "preset"));
   if (notes) {
     detail.appendChild(notes);
-  }
-
-  if (entry.source) {
-    const source = document.createElement("div");
-    source.className = "meta";
-    source.textContent = `Source: ${entry.source}`;
-    detail.appendChild(source);
   }
 }
 
@@ -2036,6 +2095,13 @@ function setupKdfxButton() {
   const kdfxButton = document.getElementById("kdfxButton");
   const dspSearch = document.getElementById("dspSearch");
   const modSourceSearch = document.getElementById("modSourceSearch");
+  const modSourceFilterAll = document.getElementById("modSourceFilterAll");
+  const modSourceFilterControls = document.getElementById("modSourceFilterControls");
+  const modSourceFilterMidi = document.getElementById("modSourceFilterMidi");
+  const dspFilterStandard = document.getElementById("dspFilterStandard");
+  const dspFilterTriple = document.getElementById("dspFilterTriple");
+  const dspFilterLayer1 = document.getElementById("dspFilterLayer1");
+  const dspFilterLayer3 = document.getElementById("dspFilterLayer3");
   const searchInput = document.getElementById("kdfxSearch");
   const patchSearch = document.getElementById("patchSearch");
   const favoritesSearch = document.getElementById("favoritesSearch");
@@ -2075,7 +2141,7 @@ function setupKdfxButton() {
   }
 
   if (fxPresetsButton) {
-    if (!shouldShowFxPresetsView() || !Array.isArray(fxPresetsData?.presets) || fxPresetsData.presets.length === 0) {
+    if (!shouldShowFxPresetsView()) {
       fxPresetsButton.classList.add("hidden");
     } else {
       fxPresetsButton.addEventListener("click", () => {
@@ -2102,7 +2168,7 @@ function setupKdfxButton() {
   }
 
   if (modSourcesButton) {
-    if (!modSources || Object.keys(modSources).length === 0) {
+    if ((!modSources || Object.keys(modSources).length === 0) && (!midiControllers || Object.keys(midiControllers).length === 0)) {
       modSourcesButton.classList.add("hidden");
     } else {
       modSourcesButton.addEventListener("click", () => {
@@ -2112,11 +2178,43 @@ function setupKdfxButton() {
     }
   }
 
-  if (modSourceSearch && modSources && Object.keys(modSources).length > 0) {
+  if (modSourceSearch && (Object.keys(modSources || {}).length > 0 || Object.keys(midiControllers || {}).length > 0)) {
     modSourceSearch.addEventListener("input", () => {
       renderModSources(modSourceSearch.value);
     });
   }
+
+  if (modSourceFilterAll) {
+    modSourceFilterAll.addEventListener("click", () => setModSourceFilter("all"));
+  }
+
+  if (modSourceFilterControls) {
+    modSourceFilterControls.addEventListener("click", () => setModSourceFilter("controls"));
+  }
+
+  if (modSourceFilterMidi) {
+    modSourceFilterMidi.addEventListener("click", () => setModSourceFilter("midi"));
+  }
+
+  updateModSourceFilterButtons();
+
+  if (dspFilterStandard) {
+    dspFilterStandard.addEventListener("click", () => setDspAlgorithmFilter("standard"));
+  }
+
+  if (dspFilterTriple) {
+    dspFilterTriple.addEventListener("click", () => setDspAlgorithmFilter("triple"));
+  }
+
+  if (dspFilterLayer1) {
+    dspFilterLayer1.addEventListener("click", () => setDspAlgorithmFilter("layer1"));
+  }
+
+  if (dspFilterLayer3) {
+    dspFilterLayer3.addEventListener("click", () => setDspAlgorithmFilter("layer3"));
+  }
+
+  updateDspAlgorithmFilterButtons();
 
   if (dspButton) {
     if (!dspAlgorithms?.algorithmsById) {
@@ -2461,30 +2559,30 @@ function renderModSources(query = "") {
 
   const list = document.getElementById("modSourceList");
   const tooltip = document.getElementById("modSourceTooltip");
+  const summary = document.getElementById("modSourceSummary");
 
   if (!list) return;
 
   const text = query.trim().toLowerCase();
 
-  const rows = Object.entries(modSources || {})
-    .map(([assignedValue, source]) => {
-      const sourceObj = (source && typeof source === "object")
-        ? source
-        : { label: String(source || ""), details: "" };
-
-      return {
-      assignedValue: Number(assignedValue),
-      source: String(sourceObj.label || ""),
-      details: String(sourceObj.details || ""),
-    };
-    })
-    .sort((a, b) => a.assignedValue - b.assignedValue)
+  const rows = getMergedModSourceRows()
+    .filter(row => currentModSourceFilter === "all" || row.typeKey === currentModSourceFilter)
     .filter(row => {
       if (!text) return true;
       return String(row.assignedValue).includes(text)
+        || row.typeLabel.toLowerCase().includes(text)
         || row.source.toLowerCase().includes(text)
         || row.details.toLowerCase().includes(text);
     });
+
+  if (summary) {
+    const filterLabel = currentModSourceFilter === "all"
+      ? "All"
+      : currentModSourceFilter === "controls"
+        ? "Controls"
+        : "MIDI";
+    summary.textContent = `${rows.length} ${rows.length === 1 ? "entry" : "entries"} shown · ${filterLabel}`;
+  }
 
   if (rows.length === 0) {
     list.textContent = "No modulation sources match the search.";
@@ -2505,13 +2603,26 @@ function renderModSources(query = "") {
     idEl.className = "modsrc-id";
     idEl.textContent = String(row.assignedValue);
 
+    const typeEl = document.createElement("span");
+    typeEl.className = "modsrc-type";
+    typeEl.textContent = row.typeLabel;
+
     const nameEl = document.createElement("span");
     nameEl.className = "modsrc-name";
     nameEl.textContent = row.source;
 
-    const iconEl = document.createElement("span");
+    const defaultEl = document.createElement("span");
+    defaultEl.className = "modsrc-default";
+    defaultEl.textContent = row.defaultAssignment || "";
 
     if (row.details) {
+      const nameTextEl = document.createElement("span");
+      nameTextEl.className = "modsrc-name-text";
+      nameTextEl.textContent = row.source;
+      nameEl.textContent = "";
+      nameEl.appendChild(nameTextEl);
+
+      const iconEl = document.createElement("span");
       iconEl.className = "modsrc-info";
       iconEl.textContent = "i";
       iconEl.title = "Show details";
@@ -2533,11 +2644,14 @@ function renderModSources(query = "") {
           showModSourceTooltip(row.details, iconEl);
         }
       });
+
+      nameEl.appendChild(iconEl);
     }
 
     rowEl.appendChild(idEl);
+    rowEl.appendChild(typeEl);
     rowEl.appendChild(nameEl);
-    rowEl.appendChild(iconEl);
+    rowEl.appendChild(defaultEl);
     frag.appendChild(rowEl);
   });
 
@@ -2548,6 +2662,152 @@ function renderModSources(query = "") {
     tooltip.onmouseleave = () => scheduleHideModSourceTooltip();
   }
 
+}
+
+function getMidiControllerEntry(number) {
+
+  const entry = midiControllers?.[number];
+
+  if (entry && typeof entry === "object") {
+    return {
+      label: String(entry.label || `CC ${number}`),
+      details: String(entry.details || ""),
+      defaultAssignment: String(entry.defaultAssignment || ""),
+    };
+  }
+
+  if (typeof entry === "string") {
+    return {
+      label: entry,
+      details: "",
+      defaultAssignment: "",
+    };
+  }
+
+  return {
+    label: `CC ${number}`,
+    details: "",
+    defaultAssignment: "",
+  };
+}
+
+function getMidiControllerLabel(number) {
+  return getMidiControllerEntry(number).label;
+}
+
+function getMidiControllerDisplayLabel(number) {
+  const entry = getMidiControllerEntry(number);
+  const assignment = String(entry.defaultAssignment || "").trim();
+
+  if (!assignment) {
+    return entry.label;
+  }
+
+  return assignment;
+}
+
+function getHardwareControlDisplayLabel(label) {
+
+  if (typeof label !== "string") {
+    return "";
+  }
+
+  const trimmed = label.trim();
+  if (!trimmed) {
+    return "";
+  }
+
+  const midiMatch = trimmed.match(/^MIDI\s+(\d+)(?:\s+\(Sw2\))?$/i);
+  if (midiMatch) {
+    return getMidiControllerDisplayLabel(Number(midiMatch[1]));
+  }
+
+  const normalized = trimmed.toLowerCase();
+
+  if (normalized === "mwheel" || normalized === "mod wheel" || normalized === "modulation wheel") {
+    return getMidiControllerDisplayLabel(1);
+  }
+
+  if (normalized === "data" || normalized === "data entry") {
+    return getMidiControllerDisplayLabel(6);
+  }
+
+  if (normalized === "ccpedal 1" || normalized === "cc pedal 1") {
+    return getMidiControllerDisplayLabel(4);
+  }
+
+  if (normalized === "ccpedal 2" || normalized === "cc pedal 2") {
+    return getMidiControllerDisplayLabel(2);
+  }
+
+  if (normalized === "suspedal" || normalized === "sus pedal" || normalized === "sustain pedal") {
+    return getMidiControllerDisplayLabel(64);
+  }
+
+  return "";
+}
+
+function getMergedModSourceRows() {
+
+  const controlRows = Object.entries(modSources || {}).map(([assignedValue, source]) => {
+    const sourceObj = (source && typeof source === "object")
+      ? source
+      : { label: String(source || ""), details: "" };
+
+    return {
+      assignedValue: Number(assignedValue),
+      typeKey: "controls",
+      typeLabel: "Control",
+      source: String(sourceObj.label || ""),
+      details: String(sourceObj.details || ""),
+      defaultAssignment: "",
+    };
+  });
+
+  const midiRows = Object.entries(midiControllers || {}).map(([assignedValue, source]) => {
+    const sourceObj = (source && typeof source === "object")
+      ? source
+      : { label: String(source || ""), details: "", defaultAssignment: "" };
+
+    return {
+      assignedValue: Number(assignedValue),
+      typeKey: "midi",
+      typeLabel: "MIDI",
+      source: String(sourceObj.label || ""),
+      details: String(sourceObj.details || ""),
+      defaultAssignment: String(sourceObj.defaultAssignment || ""),
+    };
+  });
+
+  return [...controlRows, ...midiRows].sort((a, b) => {
+    if (a.assignedValue !== b.assignedValue) {
+      return a.assignedValue - b.assignedValue;
+    }
+
+    if (a.typeKey === b.typeKey) {
+      return a.source.localeCompare(b.source);
+    }
+
+    return a.typeKey === "midi" ? -1 : 1;
+  });
+}
+
+function updateModSourceFilterButtons() {
+
+  const allButton = document.getElementById("modSourceFilterAll");
+  const controlsButton = document.getElementById("modSourceFilterControls");
+  const midiButton = document.getElementById("modSourceFilterMidi");
+
+  allButton?.classList.toggle("active", currentModSourceFilter === "all");
+  controlsButton?.classList.toggle("active", currentModSourceFilter === "controls");
+  midiButton?.classList.toggle("active", currentModSourceFilter === "midi");
+}
+
+function setModSourceFilter(filter) {
+
+  currentModSourceFilter = filter;
+  updateModSourceFilterButtons();
+  renderModSources(document.getElementById("modSourceSearch")?.value || "");
 }
 
 function clearHideModSourceTooltipTimer() {
@@ -2838,7 +3098,7 @@ function getKdfxFavoriteEntries() {
       location: String(studio.id).padStart(3, "0"),
       typeLabel: getKdfxLabelSingular(),
       name: String(studio.name || ""),
-      meta: busCount > 0 ? `${busCount} bus${busCount === 1 ? "" : "es"}` : "Top-level entry",
+      meta: busCount > 0 ? `${busCount} bus${busCount === 1 ? "" : "es"}` : "",
       badges: getObjectMetadataBadges(studio),
       searchText: [`${studio.id}`, studio.name, ...busTokens].join(" ").toLowerCase(),
     };
@@ -2851,22 +3111,9 @@ function getObjectMetadataBadges(entry) {
   }
 
   const badges = [];
-  const hasV1 = entry.v1 === true;
-  const hasV2 = entry.v2 === true;
-
-  if (hasV1 && hasV2) {
-    badges.push({ label: "V1+V2", tone: "version" });
-  } else if (hasV2) {
-    badges.push({ label: "V2 only", tone: "version" });
-  }
 
   if (entry.possibleDuplicate) {
     badges.push({ label: "Possible Duplicate", tone: "duplicate" });
-  }
-
-  if ((Object.prototype.hasOwnProperty.call(entry, "algorithmId") && entry.algorithmId == null)
-      || (Object.prototype.hasOwnProperty.call(entry, "size") && entry.size == null)) {
-    badges.push({ label: "Incomplete", tone: "incomplete" });
   }
 
   return badges;
@@ -2904,14 +3151,6 @@ function buildObjectNotes(entry, objectLabel) {
     });
   }
 
-  if ((Object.prototype.hasOwnProperty.call(entry, "algorithmId") && entry.algorithmId == null)
-      || (Object.prototype.hasOwnProperty.call(entry, "size") && entry.size == null)) {
-    notes.push({
-      tone: "incomplete",
-      text: "Some fields are unavailable in the current source material.",
-    });
-  }
-
   return notes;
 }
 
@@ -2931,6 +3170,25 @@ function buildObjectNoteBlock(notes) {
   });
 
   return container;
+}
+
+function getKdfxAlgorithmDetail(algorithmId) {
+  if (!algorithmId || !kdfxLookup?.algorithmsById?.[String(algorithmId)]) {
+    return null;
+  }
+
+  const algorithm = kdfxLookup.algorithmsById[String(algorithmId)];
+  const description = String(algorithm.description || "").trim();
+  const body = description;
+
+  if (!body) {
+    return null;
+  }
+
+  return {
+    header: `A${String(algorithm.id).padStart(3, "0")} ${algorithm.name || ""}`.trim(),
+    body,
+  };
 }
 
 function renderKdfxDetail(studioId) {
@@ -2964,8 +3222,10 @@ function renderKdfxDetail(studioId) {
   meta.className = "kdfx-detail-meta";
   meta.textContent = busCount > 0
     ? `${busCount} bus${busCount === 1 ? "" : "es"} configured`
-    : "No details available.";
-  detail.appendChild(meta);
+    : "";
+  if (meta.textContent) {
+    detail.appendChild(meta);
+  }
 
   const notes = buildObjectNoteBlock(buildObjectNotes(studio, getKdfxLabelSingular().toLowerCase()));
   if (notes) {
@@ -2995,14 +3255,83 @@ function renderKdfxDetail(studioId) {
 
     const busLabel = formatKdfxBusLabel(busKey);
     const presetName = bus.presetName || "N/A";
-    const algorithmName = algorithm?.name || (preset?.algorithmName || "Unknown");
-    const presetIdLabel = presetId ? `P${String(presetId).padStart(3, "0")}` : "P---";
+    const algorithmName = algorithm?.name || bus.algorithmName || preset?.algorithmName || "";
+    const presetIdLabel = presetId ? `P${String(presetId).padStart(3, "0")}` : "";
     const algorithmId = preset?.algorithmId || bus.algorithmId || null;
-    const algorithmIdLabel = algorithmId ? `A${String(algorithmId).padStart(3, "0")}` : "A---";
+    const algorithmIdLabel = algorithmId ? `${algorithmId}` : "";
+    const algorithmDetail = getKdfxAlgorithmDetail(algorithmId);
 
-    lines.push(
-      `<div class="kdfx-line"><span class="kdfx-label kdfx-bus">${busLabel}</span><span class="kdfx-preset">${presetName}</span> <span class="kdfx-preset-id">[${presetIdLabel}]</span> <span class="kdfx-algorithm">(${algorithmName})</span> <span class="kdfx-algorithm-id">[${algorithmIdLabel}]</span></div>`
-    );
+    const row = document.createElement("div");
+    row.className = "kdfx-line";
+
+    const busEl = document.createElement("span");
+    busEl.className = "kdfx-label kdfx-bus";
+    busEl.textContent = busLabel;
+    row.appendChild(busEl);
+
+    const presetEl = document.createElement("span");
+    presetEl.className = "kdfx-preset";
+    presetEl.textContent = presetName;
+    row.appendChild(presetEl);
+
+    const presetIdEl = document.createElement("span");
+    presetIdEl.className = "kdfx-preset-id";
+    presetIdEl.textContent = presetIdLabel ? `[${presetIdLabel}]` : "";
+    row.appendChild(presetIdEl);
+
+    const algorithmWrap = document.createElement("span");
+    algorithmWrap.className = "kdfx-algorithm-wrap";
+
+    const algorithmEl = document.createElement("span");
+    algorithmEl.className = "kdfx-algorithm";
+    algorithmEl.textContent = algorithmName;
+    algorithmWrap.appendChild(algorithmEl);
+
+    const algorithmInfoSlot = document.createElement("span");
+    algorithmInfoSlot.className = "kdfx-algorithm-info";
+    algorithmWrap.appendChild(algorithmInfoSlot);
+
+    if (algorithmDetail) {
+      const info = document.createElement("span");
+      info.className = "modsrc-info";
+      info.textContent = "i";
+      info.title = "Show algorithm details";
+      info.tabIndex = 0;
+      info.setAttribute("role", "button");
+      info.setAttribute("aria-label", `Show details for algorithm ${algorithmIdLabel || algorithmName}`);
+
+      const show = () => showDspTooltip(algorithmDetail, info);
+      const hide = () => scheduleHideDspTooltip();
+
+      info.addEventListener("mouseenter", show);
+      info.addEventListener("mouseleave", hide);
+      info.addEventListener("focus", show);
+      info.addEventListener("blur", hide);
+      info.addEventListener("click", show);
+      info.addEventListener("keydown", e => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          show();
+        }
+      });
+
+      algorithmInfoSlot.appendChild(info);
+    }
+
+    row.appendChild(algorithmWrap);
+
+    const algorithmIdEl = document.createElement("span");
+    algorithmIdEl.className = "kdfx-algorithm-id";
+    const algorithmPau = algorithmId ? kdfxLookup.algorithmsById?.[String(algorithmId)]?.pau : null;
+    algorithmIdEl.textContent = algorithmIdLabel ? `[${algorithmIdLabel}]` : "";
+    row.appendChild(algorithmIdEl);
+
+    const algorithmPauEl = document.createElement("span");
+    algorithmPauEl.className = "kdfx-algorithm-pau";
+    algorithmPauEl.textContent = algorithmPau != null ? `${algorithmPau}` : "";
+    row.appendChild(algorithmPauEl);
+
+    lines.push(row);
   });
 
   const legend = document.getElementById("kdfxLegend");
@@ -3013,7 +3342,7 @@ function renderKdfxDetail(studioId) {
     return;
   }
 
-  detail.innerHTML += lines.join("");
+  lines.forEach(line => detail.appendChild(line));
 }
 
 function getDspAlgorithmEntries() {
@@ -3033,11 +3362,17 @@ function getDspAlgorithmEntries() {
 
       return {
         id: Number(algorithm.algorithmId),
+        algorithmType: algorithm.algorithmType || "standard",
+        layerRole: algorithm.layerRole || "standard",
         stageCount: stages.length,
         labels: blockLabels,
         sourcePage: algorithm.sourcePage || "",
+        typeLabel: getDspAlgorithmTypeLabel(algorithm),
+        layerLabel: getDspAlgorithmLayerLabel(algorithm),
         searchText: [
           algorithm.algorithmId,
+          getDspAlgorithmTypeLabel(algorithm),
+          getDspAlgorithmLayerLabel(algorithm),
           algorithm.sourcePage || "",
           ...blockLabels,
         ].join(" ").toLowerCase(),
@@ -3046,21 +3381,119 @@ function getDspAlgorithmEntries() {
     .sort((a, b) => a.id - b.id);
 }
 
+function getDspAlgorithmTypeLabel(algorithm) {
+
+  if ((algorithm?.algorithmType || "standard") === "triple") {
+    return "Triple Layer";
+  }
+
+  return "Standard Layer";
+}
+
+function getDspAlgorithmLayerLabel(algorithm) {
+
+  switch (algorithm?.layerRole) {
+    case "layer_1":
+      return "Layer 1";
+    case "layer_2":
+      return "Layer 2";
+    case "layer_3":
+      return "Layer 3";
+    default:
+      return "";
+  }
+}
+
+function matchesDspAlgorithmFilters(entry) {
+
+  if (entry.algorithmType !== "triple") {
+    return currentDspAlgorithmFilters.standard;
+  }
+
+  if (!currentDspAlgorithmFilters.triple) {
+    return false;
+  }
+
+  if (currentDspAlgorithmFilters.layer1 && currentDspAlgorithmFilters.layer3) {
+    return true;
+  }
+
+  return (
+    (currentDspAlgorithmFilters.layer1 && entry.layerRole === "layer_1") ||
+    (currentDspAlgorithmFilters.layer3 && entry.layerRole === "layer_3")
+  );
+}
+
+function updateDspAlgorithmFilterButtons() {
+
+  const standardButton = document.getElementById("dspFilterStandard");
+  const tripleButton = document.getElementById("dspFilterTriple");
+  const layer1Button = document.getElementById("dspFilterLayer1");
+  const layer3Button = document.getElementById("dspFilterLayer3");
+  const canUseLayerFilters = currentDspAlgorithmFilters.triple;
+
+  standardButton?.classList.toggle("active", currentDspAlgorithmFilters.standard);
+  tripleButton?.classList.toggle("active", currentDspAlgorithmFilters.triple);
+  layer1Button?.classList.toggle("active", currentDspAlgorithmFilters.layer1);
+  layer3Button?.classList.toggle("active", currentDspAlgorithmFilters.layer3);
+
+  if (layer1Button) {
+    layer1Button.disabled = !canUseLayerFilters;
+  }
+
+  if (layer3Button) {
+    layer3Button.disabled = !canUseLayerFilters;
+  }
+}
+
+function setDspAlgorithmFilter(filterKey) {
+
+  if ((filterKey === "layer1" || filterKey === "layer3") && !currentDspAlgorithmFilters.triple) {
+    return;
+  }
+
+  if (filterKey === "triple") {
+    currentDspAlgorithmFilters.triple = !currentDspAlgorithmFilters.triple;
+
+    if (currentDspAlgorithmFilters.triple) {
+      currentDspAlgorithmFilters.layer1 = true;
+      currentDspAlgorithmFilters.layer3 = true;
+    } else {
+      currentDspAlgorithmFilters.layer1 = false;
+      currentDspAlgorithmFilters.layer3 = false;
+    }
+  } else {
+    currentDspAlgorithmFilters[filterKey] = !currentDspAlgorithmFilters[filterKey];
+  }
+
+  updateDspAlgorithmFilterButtons();
+  renderDspAlgorithmList(getDspSearchQuery());
+}
+
+function getDspSearchQuery() {
+  return document.getElementById("dspSearch")?.value || "";
+}
+
 function renderDspAlgorithmList(query = "") {
 
   if (!dspAlgorithms?.algorithmsById) return;
 
   const container = document.getElementById("dspAlgorithmList");
+  const summary = document.getElementById("dspSummary");
   if (!container) return;
 
   const text = query.trim().toLowerCase();
   const entries = getDspAlgorithmEntries()
+    .filter(entry => matchesDspAlgorithmFilters(entry))
     .filter(entry => !text || entry.searchText.includes(text));
 
   container.textContent = "";
+  if (summary) {
+    summary.textContent = `${entries.length} algorithms`;
+  }
 
   if (entries.length === 0) {
-    container.textContent = "No DSP algorithms match the search.";
+    container.textContent = "No DSP algorithms match the current search/filter.";
     renderDspAlgorithmDetail(null);
     return;
   }
@@ -3089,7 +3522,12 @@ function renderDspAlgorithmList(query = "") {
 
     const meta = document.createElement("span");
     meta.className = "dsp-list-item-meta";
-    meta.textContent = `${entry.stageCount} stages | ${entry.labels.slice(0, 3).join(" | ")}`;
+    meta.textContent = [
+      entry.typeLabel,
+      entry.layerLabel,
+      `${entry.stageCount} stages`,
+      entry.labels.slice(0, 3).join(" | "),
+    ].filter(Boolean).join(" | ");
 
     main.appendChild(title);
     main.appendChild(meta);
@@ -3131,7 +3569,11 @@ function renderDspAlgorithmDetail(algorithmId) {
   detail.appendChild(heading);
 
   if (meta) {
-    meta.textContent = `${stages.length} stages | Source: ${algorithm.sourcePage || "Unknown page"}`;
+    meta.textContent = [
+      getDspAlgorithmTypeLabel(algorithm),
+      getDspAlgorithmLayerLabel(algorithm),
+      `${stages.length} stages`,
+    ].filter(Boolean).join(" | ");
   }
 
   const grid = document.createElement("div");

@@ -5,12 +5,11 @@
   "supportUrl": "https://kurzweil.com/k2600/",
   "patchDataPath": "k2600_programs.json",
   "setupDataPath": "k2600_setups.json",
-  "keymapDataPath": "k2600_keymaps.json",
-  "midiCcDataPath": "k2600_midi_cc.json",
-  "modSourceDataPath": "k2600_mod_sources.json",
   "kdfxLookupDataPath": "k2600_kdfx_lookup.json",
   "dspAlgorithmDataPath": "k2600_dsp_algorithms.json",
   "dspBlockDetailDataPath": "k2600_dsp_block_details.json",
+  "keymapDataPath": "k2600_keymaps.json",
+  "controllerDataPath": "k2600_controllers.json",
   "locationDigits": 3,
   "setupLocationDigits": 2,
   "setupIndex": {
@@ -36,19 +35,17 @@
     },
     {
       "id": "piano",
-      "label": "Stereo Dynamic Piano",
+      "label": "SD Piano",
       "aliases": [
         "Piano",
-        "SD Piano",
         "Stereo Dynamic Piano"
       ]
     },
     {
-      "id": "vintage_electric_pianos",
-      "label": "Vintage Electric Pianos",
+      "id": "vintage_keys",
+      "label": "Vintage EPs",
       "aliases": [
-        "Vintage Electric",
-        "Vintage Electric Pianos",
+        "Vintage Keys",
         "Vintage EPs"
       ]
     },
@@ -67,5 +64,7 @@
         "Live Mode"
       ]
     }
-  ]
+  ],
+  "midiCcDataPath": "k2600_midi_cc.json",
+  "modSourceDataPath": "k2600_mod_sources.json"
 }

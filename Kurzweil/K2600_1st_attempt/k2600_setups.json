@@ -1,0 +1,992 @@
+{
+  "1": {
+    "name": "Tripped Up Fonk",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "2": {
+    "name": "Like Groovay",
+    "longRibbonFunction": "Clear setup",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Clear setup"
+      }
+    ]
+  },
+  "3": {
+    "name": "1984 Funkhouse",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "4": {
+    "name": "On The Bell",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "5": {
+    "name": "FilteredFreak",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "6": {
+    "name": "MakinSweetLove",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "7": {
+    "name": "Tomsemble",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "8": {
+    "name": "Salsa-esque",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "9": {
+    "name": "Pickin&Grinnin",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "10": {
+    "name": "Funk Street",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "11": {
+    "name": "Rockin'Redneck",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "12": {
+    "name": "OldSkool SynJam",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "13": {
+    "name": "Progresso",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "14": {
+    "name": "Trio 4 Groovin",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "15": {
+    "name": "Fresh Tracks",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "16": {
+    "name": "Survival",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "17": {
+    "name": "SUV Ad?",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "18": {
+    "name": "80's LoveJam",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "19": {
+    "name": "Hoe Down!",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "20": {
+    "name": "FrEaKeD OuT",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "21": {
+    "name": "303/808 Madness",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "22": {
+    "name": "Dance Madness",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "23": {
+    "name": "Rave Madness",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "24": {
+    "name": "StrangeMixstriss",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "25": {
+    "name": "808Flangelicious",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "26": {
+    "name": "Surreal Groove",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "27": {
+    "name": "Hicup Groove",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "28": {
+    "name": "Newjack Groove",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "29": {
+    "name": "Nonlinear Jam",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "30": {
+    "name": "We Be JahMon",
+    "longRibbonFunction": "Fill",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Fill"
+      }
+    ]
+  },
+  "31": {
+    "name": "Nogorov Arp",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "32": {
+    "name": "Desert Rose",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "33": {
+    "name": "Arp Bell Pad",
+    "longRibbonFunction": "Arpeggiator shift limit",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Arpeggiator shift limit"
+      }
+    ]
+  },
+  "34": {
+    "name": "Intergalatica",
+    "longRibbonFunction": "Arpeggiator note shift",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Arpeggiator note shift"
+      }
+    ]
+  },
+  "35": {
+    "name": "Flute Arps",
+    "longRibbonFunction": "Pitch bend - flute arp layer only",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend - flute arp layer only"
+      }
+    ]
+  },
+  "36": {
+    "name": "Pad/Arp Rbn Walk",
+    "longRibbonFunction": "Envelope control, arpeggiator zone",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Envelope control, arpeggiator zone"
+      }
+    ]
+  },
+  "37": {
+    "name": "Arp Bell Pad 2",
+    "longRibbonFunction": "Delay feedback level",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Delay feedback level"
+      }
+    ]
+  },
+  "38": {
+    "name": "Hold & Tap",
+    "longRibbonFunction": "Percussion trigger, effects",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Percussion trigger, effects"
+      }
+    ]
+  },
+  "39": {
+    "name": "Aqua Ribbon",
+    "longRibbonFunction": "Filter frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Filter frequency"
+      }
+    ]
+  },
+  "40": {
+    "name": "Slo Wood Pad",
+    "longRibbonFunction": "Low-pass frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Low-pass frequency"
+      }
+    ]
+  },
+  "41": {
+    "name": "Jazz Guitar Trio",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "42": {
+    "name": "Folk Rhythm Sect",
+    "longRibbonFunction": "Pitch bend - bass only",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend - bass only"
+      }
+    ]
+  },
+  "43": {
+    "name": "Shades of Bombay",
+    "longRibbonFunction": "Mark tree trigger",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Mark tree trigger"
+      }
+    ]
+  },
+  "44": {
+    "name": "Jazz Ensemble",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "45": {
+    "name": "Stevie Bass/EP",
+    "longRibbonFunction": "Pitch bend - bass only",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend - bass only"
+      }
+    ]
+  },
+  "46": {
+    "name": "Polar Reverie",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "47": {
+    "name": "Triple Trip",
+    "longRibbonFunction": "Low-pass frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Low-pass frequency"
+      }
+    ]
+  },
+  "48": {
+    "name": "Vortex Coil",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "49": {
+    "name": "Barren Landscape",
+    "longRibbonFunction": "Lunar Wind trigger",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Lunar Wind trigger"
+      }
+    ]
+  },
+  "50": {
+    "name": "Otherworldly",
+    "longRibbonFunction": "Low-pass frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Low-pass frequency"
+      }
+    ]
+  },
+  "51": {
+    "name": "Super Lush",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "52": {
+    "name": "Pad Soundscape",
+    "longRibbonFunction": "Band-pass frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Band-pass frequency"
+      }
+    ]
+  },
+  "53": {
+    "name": "Glassy Eyed",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "54": {
+    "name": "Expansive",
+    "longRibbonFunction": "Low-pass frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Low-pass frequency"
+      }
+    ]
+  },
+  "55": {
+    "name": "Ethereal Shadows",
+    "longRibbonFunction": "Flanger feedback level",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Flanger feedback level"
+      }
+    ]
+  },
+  "56": {
+    "name": "Sparkle & Bass",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "57": {
+    "name": "Vintage Poly",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "58": {
+    "name": "Big Analog",
+    "longRibbonFunction": "Low-pass resonance",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Low-pass resonance"
+      }
+    ]
+  },
+  "59": {
+    "name": "Searing Lead",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "60": {
+    "name": "Poly Pitcher",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "61": {
+    "name": "Liquid Guitars",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "62": {
+    "name": "Roto 12 String",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "63": {
+    "name": "Nylon & Steel",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "64": {
+    "name": "Layered Guitars",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "65": {
+    "name": "We're Plucked",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "66": {
+    "name": "Cathedral",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "67": {
+    "name": "RbnSpltB3+MIDIPd",
+    "longRibbonFunction": "Splits (via zone mutes)",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Splits (via zone mutes)"
+      }
+    ]
+  },
+  "68": {
+    "name": "Registrations",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "69": {
+    "name": "Pipes & Choir",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "70": {
+    "name": "Elegant Grandeur",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "71": {
+    "name": "Cinematic Strings",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "72": {
+    "name": "Chamber Players",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "73": {
+    "name": "18th Century",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "74": {
+    "name": "Harp/Fl & Str",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "75": {
+    "name": "Tutti Orch",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "76": {
+    "name": "Chorused Piano",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "77": {
+    "name": "Funky Keys",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "78": {
+    "name": "Piano & Vibes",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "79": {
+    "name": "FM & Tines EP",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "80": {
+    "name": "Ballad Keys",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "81": {
+    "name": "Gnu Age Piano",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "82": {
+    "name": "Digi Keys",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "83": {
+    "name": "FM & Tines EP 2",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "84": {
+    "name": "Big Key Stack",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "85": {
+    "name": "Dynamic Stack",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "86": {
+    "name": "Organ/Synth Solo",
+    "longRibbonFunction": "Pitch bend - synth lead only",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend - synth lead only"
+      }
+    ]
+  },
+  "87": {
+    "name": "Guitar / Flute",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "88": {
+    "name": "Puffy Winds",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "89": {
+    "name": "Real & Syn Str",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "90": {
+    "name": "Ruggratts",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "91": {
+    "name": "Orchestral Keys",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "92": {
+    "name": "Tutti Strings",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "93": {
+    "name": "Orch Pno & Pizz",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "94": {
+    "name": "Press Roll Timps",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "95": {
+    "name": "Dreamy Fairlite",
+    "longRibbonFunction": "Filter frequency",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Filter frequency"
+      }
+    ]
+  },
+  "96": {
+    "name": "Pad W/ Rotor",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "97": {
+    "name": "ControlSetup",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  },
+  "98": {
+    "name": "Clear Setup",
+    "longRibbonFunction": "None",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "None"
+      }
+    ]
+  },
+  "99": {
+    "name": "Default Setup",
+    "longRibbonFunction": "Pitch bend",
+    "controls": [
+      {
+        "label": "Long Ribbon",
+        "description": "Pitch bend"
+      }
+    ]
+  }
+}
