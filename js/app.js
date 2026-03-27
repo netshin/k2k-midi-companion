@@ -520,50 +520,226 @@ function resolveSetupByNumber(setupNumber) {
 
 function renderProgramNotes(patch) {
 
-  let notesHtml = "";
   const controls = Array.isArray(patch?.controls) ? patch.controls : [];
-  const visibleControls = controls.filter(control => !isKdfxStudioInfoControl(control));
-  const primaryControls = visibleControls.filter(control => control.type !== "Info" && control.type !== "MPress");
-  const mpressControls = visibleControls.filter(control => control.type === "MPress");
-  const infoControls = visibleControls.filter(control => control.type === "Info");
+  const visibleControls = controls
+    .filter(control => !isKdfxStudioInfoControl(control))
+    .map((control, index) => ({ control, index }))
+    .sort(compareProgramControls)
+    .map(({ control }) => control);
 
-  primaryControls.forEach(control => {
+  const renderedRows = visibleControls.map(control => {
+    if (control.type === "Info") {
+      return {
+        kind: "meta",
+        label: "Playing info",
+        nameClass: "ctrl-name ctrl-name-info",
+        rowClass: "ctrl-row ctrl-row-info",
+        description: formatDisplayedNoteText(control.description)
+      };
+    }
 
     if (control.type === "MIDI") {
-
-      notesHtml +=
-        `<div class="ctrl-row">
-          <span class="ctrl-name">${getMidiControllerDisplayLabel(control.number)}</span>
-          <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
-        </div>`;
-
+      const number = Number(control.number);
+      return {
+        kind: "control",
+        label: getMidiControllerDisplayLabel(number),
+        description: formatDisplayedNoteText(control.description),
+        nameClass: getProgramControlNameClass(control, getMidiControllerDisplayLabel(number)),
+        rowClass: "ctrl-row"
+      };
     }
 
-    else {
-
-      notesHtml +=
-        `<div class="ctrl-row">
-          <span class="ctrl-name">${formatControlTypeLabel(control.type)}</span>
-          <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
-        </div>`;
-
+    if (control.type === "MPress") {
+      return {
+        kind: "control",
+        label: "MPress",
+        description: formatDisplayedNoteText(control.description),
+        nameClass: "ctrl-name ctrl-name-mpress",
+        rowClass: "ctrl-row"
+      };
     }
 
+    const label = formatControlTypeLabel(control.type);
+    return {
+      kind: "control",
+      label,
+      description: formatDisplayedNoteText(control.description),
+      nameClass: getProgramControlNameClass(control, label),
+      rowClass: "ctrl-row"
+    };
   });
 
-  mpressControls.forEach(control => {
-    notesHtml +=
-      `<div class="ctrl-row">
-        <span class="ctrl-name ctrl-name-mpress">MPress</span>
-        <span class="ctrl-desc">${formatDisplayedNoteText(control.description)}</span>
+  const notesHtml = renderedRows.map(row => {
+    if (row.kind === "meta") {
+      return `<div class="${row.rowClass}">
+        <span class="${row.nameClass}">${row.label}</span>
+        <span class="ctrl-desc">${row.description}</span>
       </div>`;
-  });
+    }
 
-  infoControls.forEach(control => {
-    notesHtml += `<div class="meta">${formatDisplayedNoteText(control.description)}</div>`;
-  });
+    return `<div class="${row.rowClass}">
+      <span class="${row.nameClass}">${row.label}</span>
+      <span class="ctrl-desc">${row.description}</span>
+    </div>`;
+  }).join("");
 
   document.getElementById("notes").innerHTML = notesHtml;
+}
+
+function compareProgramControls(a, b) {
+
+  const rankA = getProgramControlSortRank(a.control);
+  const rankB = getProgramControlSortRank(b.control);
+
+  if (rankA !== rankB) {
+    return rankA - rankB;
+  }
+
+  const labelA = getProgramControlSortLabel(a.control);
+  const labelB = getProgramControlSortLabel(b.control);
+
+  if (labelA !== labelB) {
+    return labelA.localeCompare(labelB);
+  }
+
+  const numberA = getProgramControlSortNumber(a.control);
+  const numberB = getProgramControlSortNumber(b.control);
+
+  if (numberA !== numberB) {
+    return numberA - numberB;
+  }
+
+  return a.index - b.index;
+}
+
+function getProgramControlSortRank(control) {
+
+  if (!control || control.type === "Info") {
+    return 400;
+  }
+
+  if (isProgramModWheelControl(control)) {
+    return 0;
+  }
+
+  if (isProgramPitchBendControl(control)) {
+    return 10;
+  }
+
+  if (control?.type === "MPress") {
+    return 15;
+  }
+
+  if (isProgramSliderControl(control)) {
+    return 20 + getProgramSliderSortIndex(control);
+  }
+
+  return 100;
+}
+
+function getProgramControlSortLabel(control) {
+
+  if (!control) {
+    return "";
+  }
+
+  if (control.type === "MIDI") {
+    return getMidiControllerDisplayLabel(Number(control.number)).toLowerCase();
+  }
+
+  return formatControlTypeLabel(control.type).toLowerCase();
+}
+
+function getProgramControlSortNumber(control) {
+
+  if (control?.type === "MIDI" && Number.isFinite(Number(control.number))) {
+    return Number(control.number);
+  }
+
+  return Number.MAX_SAFE_INTEGER;
+}
+
+function isProgramModWheelControl(control) {
+
+  if (!control) {
+    return false;
+  }
+
+  if (control.type === "MIDI" && Number(control.number) === 1) {
+    return true;
+  }
+
+  return control.type === "Modulation Wheel";
+}
+
+function isProgramPitchBendControl(control) {
+
+  if (!control?.type) {
+    return false;
+  }
+
+  return control.type === "Pitch Bend" || control.type === "Pitch Wheel";
+}
+
+function isProgramSliderControl(control) {
+
+  if (!control) {
+    return false;
+  }
+
+  if (control.type === "Data") {
+    return true;
+  }
+
+  if (control.type !== "MIDI") {
+    return false;
+  }
+
+  return getProgramSliderSortIndex(control) !== Number.MAX_SAFE_INTEGER;
+}
+
+function getProgramSliderSortIndex(control) {
+
+  const sliderNumbers = {
+    6: 0,
+    22: 1,
+    23: 2,
+    24: 3,
+    25: 4,
+    26: 5,
+    27: 6,
+    28: 7,
+  };
+
+  if (control?.type === "Data") {
+    return 0;
+  }
+
+  const number = Number(control?.number);
+  return Object.prototype.hasOwnProperty.call(sliderNumbers, number)
+    ? sliderNumbers[number]
+    : Number.MAX_SAFE_INTEGER;
+}
+
+function getProgramControlNameClass(control, label) {
+
+  if (isProgramModWheelControl(control)) {
+    return "ctrl-name ctrl-name-modwheel";
+  }
+
+  if (control?.type === "MPress") {
+    return "ctrl-name ctrl-name-mpress";
+  }
+
+  if (label === "Playing info") {
+    return "ctrl-name ctrl-name-info";
+  }
+
+  if (isProgramSliderControl(control)) {
+    return "ctrl-name ctrl-name-slider";
+  }
+
+  return "ctrl-name";
 }
 
 function renderSetupNotes(setup) {

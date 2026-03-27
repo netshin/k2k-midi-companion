@@ -470,20 +470,36 @@ body {
 .ctrl-row {
   display:grid;
   grid-template-columns:170px minmax(0, 1fr);
-  column-gap:0;
+  align-items:start;
+  column-gap:10px;
   margin-bottom:6px;
 }
 
 .ctrl-name {
+  display:block;
   color:#ffd84d;
   font-weight:bold;
+  white-space:nowrap;
 }
 
 .ctrl-name-mpress {
   color:#ffb56b;
 }
 
+.ctrl-name-modwheel {
+  color:#7df0ff;
+}
+
+.ctrl-name-info {
+  color:#9bc6e6;
+}
+
+.ctrl-name-slider {
+  color:#b9dea7;
+}
+
 .ctrl-desc {
+  display:block;
   min-width:0;
   color:#e0e0e0;
   overflow-wrap:anywhere;
@@ -491,10 +507,16 @@ body {
 }
 
 .meta {
+  display:block;
   min-width:0;
+  margin-left:180px;
   color:#e0e0e0;
   overflow-wrap:anywhere;
   word-break:break-word;
+}
+
+.ctrl-row-info {
+  margin-top:14px;
 }
 
 

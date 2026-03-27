@@ -13199,8 +13199,18 @@
     "name": "Jungle Jam",
     "controls": [
       {
-        "type": "Info",
-        "description": "This program uses the mirror image drum mapping, symmetrical around D4. Identical or similar drum articulations are found at equal distances above and below D4, with extras outside the center region. Mod wheel disables layered \"chirps\" and fades rain stick on A0. Data slider enables \"screamers\" on G5-C6."
+        "description": "disables layered \u201cchirps\" and fades rain stick on A0",
+        "type": "MIDI",
+        "number": 1
+      },
+      {
+        "description": "enables \"screamers\" on G5-C6",
+        "type": "MIDI",
+        "number": 6
+      },
+      {
+        "description": "This program uses the mirror image drum mapping, symmetrical around D4. Identical or similar drum articulations are found at equal distances above and below D4, with extras outside the center region",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -13211,9 +13221,9 @@
     "name": "Mbira Stack",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13224,14 +13234,13 @@
     "name": "Ritual Metals",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13242,9 +13251,9 @@
     "name": "Prepared Mbira",
     "controls": [
       {
+        "description": "Pitch change",
         "type": "MIDI",
-        "number": 1,
-        "description": "Pitch change"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13255,9 +13264,9 @@
     "name": "Balinesque",
     "controls": [
       {
+        "description": "Pan flute fade",
         "type": "MIDI",
-        "number": 1,
-        "description": "Pan flute fade"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13268,14 +13277,13 @@
     "name": "Ambient Bells",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13286,14 +13294,13 @@
     "name": "World Jam 1",
     "controls": [
       {
+        "description": "Pitch change",
         "type": "MIDI",
-        "number": 1,
-        "description": "Pitch change"
+        "number": 6
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Mirror image drum mapping"
+        "description": "Mirror image drum mapping",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -13304,22 +13311,17 @@
     "name": "World Jam 2",
     "controls": [
       {
+        "description": "Pitch change",
         "type": "MIDI",
-        "number": 1,
-        "description": "Pitch change"
+        "number": 6
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Layer pitch"
+        "description": "Layer pitch",
+        "type": "MPress"
       },
       {
-        "type": "MPress",
-        "description": "Mirror image drum mapping"
-      },
-      {
-        "type": "Info",
-        "description": "Tablas appear at center with the mirror-image mapping, tuned to C. Pressure controls pitch for the bayan and RH lead sound."
+        "description": "Mirror image drum mapping",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -13330,8 +13332,22 @@
     "name": "India Jam",
     "controls": [
       {
-        "type": "Info",
-        "description": "Tablas appear at center with the mirror-image mapping, tuned to C. Pressure controls pitch for the bayan and RH lead sound. LH drone may be played as broken chord C2,G2,C3,G3 and held with sustain or sostenuto. Mod Wheel fades the drone. Data Slider controls Wet/Dry mix."
+        "description": "fades the drone",
+        "type": "MIDI",
+        "number": 1
+      },
+      {
+        "description": "Wet/Dry mix",
+        "type": "MIDI",
+        "number": 6
+      },
+      {
+        "description": "pitch for the bayan and RH lead sound",
+        "type": "MPress"
+      },
+      {
+        "description": "Tablas appear at center with the mirror-image mapping, tuned to C. LH drone may be played as broken chord C2,G2,C3,G3 and held with sustain or sostenuto",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -13342,14 +13358,13 @@
     "name": "Slo Wood Flute",
     "controls": [
       {
+        "description": "Less tremolo",
         "type": "MIDI",
-        "number": 1,
-        "description": "Less tremolo"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Filter ctl"
+        "description": "Filter ctl",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13360,14 +13375,13 @@
     "name": "Hybrid Pan Flute",
     "controls": [
       {
+        "description": "Tremolo",
         "type": "MIDI",
-        "number": 1,
-        "description": "Tremolo"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Tremolo"
+        "description": "Tremolo",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13378,18 +13392,18 @@
     "name": "Chiff Brass Lead",
     "controls": [
       {
+        "description": "Vibrato, Swell",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato, Swell"
+        "number": 1
       },
       {
+        "description": "Unison layers",
         "type": "MIDI",
-        "number": 6,
-        "description": "Unison layers"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato, Filter"
+        "description": "Vibrato, Filter",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13400,14 +13414,14 @@
     "name": "Bell Players",
     "controls": [
       {
+        "description": "Muzhar fade",
         "type": "MIDI",
-        "number": 1,
-        "description": "Muzhar fade"
+        "number": 1
       },
       {
+        "description": "Tibetan cym env ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Tibetan cym env ctl"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13418,9 +13432,8 @@
     "name": "Prs Koto",
     "controls": [
       {
-        "type": "MIDI",
-        "number": 1,
-        "description": "Pitch mod"
+        "description": "Pitch mod",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13438,14 +13451,14 @@
     "name": "Mbira",
     "controls": [
       {
+        "description": "Release ctl",
         "type": "MIDI",
-        "number": 1,
-        "description": "Release ctl"
+        "number": 1
       },
       {
+        "description": "Tremolo",
         "type": "MIDI",
-        "number": 6,
-        "description": "Tremolo"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13456,9 +13469,9 @@
     "name": "Kotobira",
     "controls": [
       {
+        "description": "Mbira balance",
         "type": "MIDI",
-        "number": 1,
-        "description": "Mbira balance"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13469,9 +13482,9 @@
     "name": "Cartoon Perc",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13482,14 +13495,14 @@
     "name": "CowGogiBell",
     "controls": [
       {
+        "description": "Alt start",
         "type": "MIDI",
-        "number": 1,
-        "description": "Alt start"
+        "number": 1
       },
       {
+        "description": "Layer select",
         "type": "MIDI",
-        "number": 6,
-        "description": "Layer select"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13500,9 +13513,9 @@
     "name": "Perc Pan Lead",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13513,14 +13526,13 @@
     "name": "Trippy Organ",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13531,14 +13543,13 @@
     "name": "Koto Followers",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13549,14 +13560,13 @@
     "name": "Hybrid Horn",
     "controls": [
       {
+        "description": "Balance (bell)",
         "type": "MIDI",
-        "number": 1,
-        "description": "Balance (bell)"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Timbre ctl, Vibrato"
+        "description": "Timbre ctl, Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13567,9 +13577,9 @@
     "name": "Dyno EP Lead",
     "controls": [
       {
+        "description": "Tremolo, Env ctl",
         "type": "MIDI",
-        "number": 1,
-        "description": "Tremolo, Env ctl"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13580,9 +13590,9 @@
     "name": "ParaKoto",
     "controls": [
       {
+        "description": "Pad tremolo",
         "type": "MIDI",
-        "number": 1,
-        "description": "Pad tremolo"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13593,18 +13603,18 @@
     "name": "Super Clav",
     "controls": [
       {
+        "description": "Phase clav enable",
         "type": "MIDI",
-        "number": 1,
-        "description": "Phase clav enable"
+        "number": 1
       },
       {
+        "description": "Disable release",
         "type": "MIDI",
-        "number": 6,
-        "description": "Disable release"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Filter rate"
+        "description": "Filter rate",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13615,14 +13625,13 @@
     "name": "StrataClav",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13633,18 +13642,18 @@
     "name": "Touch Clav",
     "controls": [
       {
+        "description": "EQ, Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "EQ, Vibrato"
+        "number": 1
       },
       {
+        "description": "Disables release",
         "type": "MIDI",
-        "number": 6,
-        "description": "Disables release"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Filter control"
+        "description": "Filter control",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13662,9 +13671,9 @@
     "name": "Rad Rotor",
     "controls": [
       {
+        "description": "Rotary speaker",
         "type": "MIDI",
-        "number": 1,
-        "description": "Rotary speaker"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -13675,18 +13684,18 @@
     "name": "B-2001",
     "controls": [
       {
+        "description": "Rotary speaker",
         "type": "MIDI",
-        "number": 1,
-        "description": "Rotary speaker"
+        "number": 1
       },
       {
+        "description": "Perc balance",
         "type": "MIDI",
-        "number": 6,
-        "description": "Perc balance"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Rotary speaker"
+        "description": "Rotary speaker",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13697,18 +13706,18 @@
     "name": "Perc Organ",
     "controls": [
       {
+        "description": "Rotary speaker",
         "type": "MIDI",
-        "number": 1,
-        "description": "Rotary speaker"
+        "number": 1
       },
       {
+        "description": "Perc balance",
         "type": "MIDI",
-        "number": 6,
-        "description": "Perc balance"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Rotary speaker"
+        "description": "Rotary speaker",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13719,14 +13728,14 @@
     "name": "Drawbar Organ CS",
     "controls": [
       {
+        "description": "Rotary speaker",
         "type": "MIDI",
-        "number": 1,
-        "description": "Rotary speaker"
+        "number": 1
       },
       {
+        "description": "Filter ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Filter ctl"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13737,14 +13746,13 @@
     "name": "Bebop Alto Sax",
     "controls": [
       {
+        "description": "Attack ctl",
         "type": "MIDI",
-        "number": 1,
-        "description": "Attack ctl"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13755,9 +13763,8 @@
     "name": "Soft Alto Sax",
     "controls": [
       {
-        "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato, Swell"
+        "description": "Vibrato, Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13768,14 +13775,13 @@
     "name": "Soprano Sax",
     "controls": [
       {
+        "description": "Vibrato, Swell",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato, Swell"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato, Swell"
+        "description": "Vibrato, Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13786,9 +13792,8 @@
     "name": "Low Soft Sax",
     "controls": [
       {
-        "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13799,18 +13804,18 @@
     "name": "Air Reeds CS",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Harmonica enable",
         "type": "MIDI",
-        "number": 6,
-        "description": "Harmonica enable"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Harmonica vibrato"
+        "description": "Harmonica vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13828,9 +13833,8 @@
     "name": "Jazz Lab Band",
     "controls": [
       {
-        "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato, Swell"
+        "description": "Vibrato, Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13841,14 +13845,13 @@
     "name": "Harmon Section",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato, Swell"
+        "description": "Vibrato, Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13859,18 +13862,18 @@
     "name": "Sfz Cres Brass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato, Swell"
+        "description": "Vibrato, Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13881,18 +13884,13 @@
     "name": "Neo Stabs",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato, Filter ctl"
-      },
-      {
-        "type": "Info",
-        "description": "LH bass is layered with ride for walking rhythm section. LH hard strikes trigger kick/snare."
+        "description": "Vibrato, Filter ctl",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -13903,8 +13901,17 @@
     "name": "Gtr Jazz Band",
     "controls": [
       {
-        "type": "Info",
-        "description": "Data slider switches RH from guitar to horn section; SostPed holds horns and adds bright tenor. LH bass is layered with kick/snare for driving rhythm section. At ff, crash cymbal is triggered."
+        "description": "switches RH from guitar to horn section",
+        "type": "MIDI",
+        "number": 6
+      },
+      {
+        "description": "holds horns and adds bright tenor",
+        "type": "Sostenuto Pedal"
+      },
+      {
+        "description": "LH bass is layered with ride for walking rhythm section. LH hard strikes trigger kick/snare",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -13915,8 +13922,22 @@
     "name": "Full Rock Band",
     "controls": [
       {
-        "type": "Info",
-        "description": "Mod wheel and pressure enable rotary speaker for RH organ. Data slider switches LH to walking rhythm section, and RH to guitar solo."
+        "description": "rotary speaker for RH organ",
+        "type": "MIDI",
+        "number": 1
+      },
+      {
+        "description": "switches LH to walking rhythm section, and RH to guitar solo",
+        "type": "MIDI",
+        "number": 6
+      },
+      {
+        "description": "rotary speaker for RH organ",
+        "type": "MPress"
+      },
+      {
+        "description": "LH bass is layered with kick/snare for driving rhythm section. At ff , crash cymbal is triggered",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -13927,13 +13948,14 @@
     "name": "World Rave Kit",
     "controls": [
       {
+        "description": "Disable chirps",
         "type": "MIDI",
-        "number": 1,
-        "description": "Disable chirps"
+        "number": 1
       },
       {
-        "type": "Info",
-        "description": "claps (G6-G#6)"
+        "description": "Wet/Dry mix, Disable claps (G6-G#6)",
+        "type": "MIDI",
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13944,9 +13966,9 @@
     "name": "Punch Gate Kit",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13957,14 +13979,14 @@
     "name": "Shadow Kit",
     "controls": [
       {
+        "description": "Flanging (A#3-B3)",
         "type": "MIDI",
-        "number": 1,
-        "description": "Flanging (A#3-B3)"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13975,14 +13997,14 @@
     "name": "Fat Traps",
     "controls": [
       {
+        "description": "Filter (C2-A#2)",
         "type": "MIDI",
-        "number": 1,
-        "description": "Filter (C2-A#2)"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -13993,14 +14015,14 @@
     "name": "Generator Kit",
     "controls": [
       {
+        "description": "Disable claps (G3-G#3)",
         "type": "MIDI",
-        "number": 1,
-        "description": "Disable claps (G3-G#3)"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14011,9 +14033,9 @@
     "name": "Shudder Kit",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14024,9 +14046,9 @@
     "name": "Crowd Stomper",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14037,18 +14059,18 @@
     "name": "Econo Kit",
     "controls": [
       {
+        "description": "Gate time (G3-C#4)",
         "type": "MIDI",
-        "number": 1,
-        "description": "Gate time (G3-C#4)"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "Info",
-        "description": "Gate time (B2-D#3, G3-C#4),"
+        "description": "Gate time (B2-D#3, G3-C#4),",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -14059,22 +14081,17 @@
     "name": "EDrum Kit 1",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Pitch (D6)"
+        "description": "Pitch (D6)",
+        "type": "MPress"
       },
       {
-        "type": "MPress",
-        "description": "Sust ped chokes cymbal (F#5)"
-      },
-      {
-        "type": "Info",
-        "description": "Pitch (D6)"
+        "description": "Chokes cymbal (F#5) Pitch (D6)",
+        "type": "Sostenuto Pedal"
       }
     ],
     "categoryId": "contemporary",
@@ -14085,14 +14102,14 @@
     "name": "EDrum Kit 2",
     "controls": [
       {
+        "description": "Filter ctl (A#1-C2, F#6-C7)",
         "type": "MIDI",
-        "number": 1,
-        "description": "Filter ctl (A#1-C2, F#6-C7)"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14103,18 +14120,18 @@
     "name": "Dog Chases Tail",
     "controls": [
       {
+        "description": "Various loop effects",
         "type": "MIDI",
-        "number": 1,
-        "description": "Various loop effects"
+        "number": 1
       },
       {
+        "description": "Tempo (pitch)",
         "type": "MIDI",
-        "number": 6,
-        "description": "Tempo (pitch)"
+        "number": 6
       },
       {
-        "type": "Info",
-        "description": "Loops below E4 are tuned to play together, as are loops above E4."
+        "description": "Loops below E4 are tuned to play together, as are loops above E4",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -14125,14 +14142,14 @@
     "name": "Saw Loop Factory",
     "controls": [
       {
+        "description": "Layer balance",
         "type": "MIDI",
-        "number": 1,
-        "description": "Layer balance"
+        "number": 1
       },
       {
+        "description": "Tempo (pitch)",
         "type": "MIDI",
-        "number": 6,
-        "description": "Tempo (pitch)"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14143,18 +14160,18 @@
     "name": "Two Live Bass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Layer select",
         "type": "MIDI",
-        "number": 6,
-        "description": "Layer select"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14165,18 +14182,18 @@
     "name": "Dual/Tri Bass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Ghost note enable",
         "type": "MIDI",
-        "number": 6,
-        "description": "Ghost note enable"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14187,18 +14204,18 @@
     "name": "Clav-o-Bass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14209,22 +14226,18 @@
     "name": "Chirp Bass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "ChirpBass"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Wet/Dry mix"
-      },
-      {
-        "type": "Info",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14242,14 +14255,13 @@
     "name": "Mono Synth Bass",
     "controls": [
       {
+        "description": "Filter",
         "type": "MIDI",
-        "number": 1,
-        "description": "Filter"
+        "number": 6
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Pitch bend goes +2/-12ST"
+        "description": "Pitch bend goes +2/-12ST",
+        "type": "Info"
       }
     ],
     "categoryId": "contemporary",
@@ -14260,14 +14272,13 @@
     "name": "Touch MiniBass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato, Swell"
+        "description": "Vibrato, Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14278,9 +14289,9 @@
     "name": "Ostinato Bass",
     "controls": [
       {
+        "description": "EQ",
         "type": "MIDI",
-        "number": 1,
-        "description": "EQ"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14291,18 +14302,18 @@
     "name": "House Bass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Release ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Release ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14313,18 +14324,18 @@
     "name": "Dubb Bass",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Release ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Release ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14335,14 +14346,14 @@
     "name": "Straight Strat",
     "controls": [
       {
+        "description": "Tremolo",
         "type": "MIDI",
-        "number": 1,
-        "description": "Tremolo"
+        "number": 1
       },
       {
+        "description": "EQ",
         "type": "MIDI",
-        "number": 6,
-        "description": "EQ"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14353,14 +14364,13 @@
     "name": "Chorus Gtr",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Detune"
+        "description": "Detune",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14371,9 +14381,9 @@
     "name": "Strataguitar",
     "controls": [
       {
+        "description": "Alt start",
         "type": "MIDI",
-        "number": 1,
-        "description": "Alt start"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -14384,18 +14394,18 @@
     "name": "Elect 12 String",
     "controls": [
       {
+        "description": "Detune",
         "type": "MIDI",
-        "number": 1,
-        "description": "Detune"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix, EQ",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix, EQ"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14406,14 +14416,13 @@
     "name": "Dyn Jazz Guitar",
     "controls": [
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 1,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "PBend gives fretboard slide"
+        "description": "fretboard slide",
+        "type": "Pitch Bend"
       }
     ],
     "categoryId": "contemporary",
@@ -14424,14 +14433,13 @@
     "name": "Pedal Steel",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14442,14 +14450,13 @@
     "name": "Strummer DistGtr",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14460,18 +14467,18 @@
     "name": "Rock Axe",
     "controls": [
       {
+        "description": "Alt start",
         "type": "MIDI",
-        "number": 1,
-        "description": "Alt start"
+        "number": 1
       },
       {
+        "description": "EQ",
         "type": "MIDI",
-        "number": 6,
-        "description": "EQ"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Feedback"
+        "description": "Feedback",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14482,14 +14489,13 @@
     "name": "Hammeron",
     "controls": [
       {
+        "description": "Timbre ctl",
         "type": "MIDI",
-        "number": 1,
-        "description": "Timbre ctl"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Timbre ctl"
+        "description": "Timbre ctl",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14500,22 +14506,18 @@
     "name": "Rock Axe mono",
     "controls": [
       {
+        "description": "Alt start",
         "type": "MIDI",
-        "number": 1,
-        "description": "Rock Axe Mono"
+        "number": 1
       },
       {
+        "description": "EQ, Delay",
         "type": "MIDI",
-        "number": 6,
-        "description": "Alt start"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "EQ, Delay"
-      },
-      {
-        "type": "Info",
-        "description": "Feedback"
+        "description": "Feedback",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14526,18 +14528,18 @@
     "name": "Attack Stack",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14548,22 +14550,18 @@
     "name": "Skinny Lead",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "SkinnyLead"
+        "number": 1
       },
       {
+        "description": "Overdrive enable",
         "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Overdrive enable"
-      },
-      {
-        "type": "Info",
-        "description": "Vibrato, Filter"
+        "description": "Vibrato, Filter",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14574,18 +14572,18 @@
     "name": "Q Sweep SynClav",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Sweep rate ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Sweep rate ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14596,14 +14594,13 @@
     "name": "Anna Mini",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14614,14 +14611,13 @@
     "name": "Ballad Stack",
     "controls": [
       {
+        "description": "Swell",
         "type": "MIDI",
-        "number": 1,
-        "description": "Swell"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Swell"
+        "description": "Swell",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14632,18 +14628,18 @@
     "name": "Big Stack",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Env ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Env ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14654,14 +14650,14 @@
     "name": "BrazKnuckles",
     "controls": [
       {
+        "description": "Swell",
         "type": "MIDI",
-        "number": 1,
-        "description": "Swell"
+        "number": 1
       },
       {
+        "description": "EQ",
         "type": "MIDI",
-        "number": 6,
-        "description": "EQ"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14672,18 +14668,18 @@
     "name": "Hybrid Breath",
     "controls": [
       {
+        "description": "Envelope ctl, EQ",
         "type": "MIDI",
-        "number": 1,
-        "description": "Envelope ctl, EQ"
+        "number": 1
       },
       {
+        "description": "Envelope ctl, Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Envelope ctl, Wet/Dry mix"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14694,9 +14690,9 @@
     "name": "Hybrid Stack",
     "controls": [
       {
+        "description": "Layer balance",
         "type": "MIDI",
-        "number": 1,
-        "description": "Layer balance"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14707,18 +14703,18 @@
     "name": "Eye Saw",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Release ctl, Filter",
         "type": "MIDI",
-        "number": 6,
-        "description": "Release ctl, Filter"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14736,9 +14732,9 @@
     "name": "Sizzl E Pno",
     "controls": [
       {
+        "description": "Pad balance",
         "type": "MIDI",
-        "number": 1,
-        "description": "Pad balance"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -14749,18 +14745,18 @@
     "name": "My JayDee",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Release ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Release ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14771,9 +14767,9 @@
     "name": "Slo SynthOrch",
     "controls": [
       {
+        "description": "Filter effect",
         "type": "MIDI",
-        "number": 1,
-        "description": "Filter effect"
+        "number": 1
       }
     ],
     "categoryId": "contemporary",
@@ -14784,18 +14780,18 @@
     "name": "SpaceStation",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Envelope ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Envelope ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14806,14 +14802,14 @@
     "name": "Glass Web",
     "controls": [
       {
+        "description": "EQ",
         "type": "MIDI",
-        "number": 1,
-        "description": "EQ"
+        "number": 1
       },
       {
+        "description": "Delay ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Delay ctl"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14824,14 +14820,13 @@
     "name": "Circus Music",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14842,14 +14837,14 @@
     "name": "Mandala",
     "controls": [
       {
+        "description": "Filter ctl",
         "type": "MIDI",
-        "number": 1,
-        "description": "Filter ctl"
+        "number": 1
       },
       {
+        "description": "Pitch change",
         "type": "MIDI",
-        "number": 6,
-        "description": "Pitch change"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14860,18 +14855,18 @@
     "name": "Slow Strat",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
+        "description": "Filter sweep enable",
         "type": "MIDI",
-        "number": 6,
-        "description": "Filter sweep enable"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14882,14 +14877,13 @@
     "name": "Fluid Koto",
     "controls": [
       {
+        "description": "Vibrato",
         "type": "MIDI",
-        "number": 1,
-        "description": "Vibrato"
+        "number": 1
       },
       {
-        "type": "MIDI",
-        "number": 6,
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -14900,14 +14894,14 @@
     "name": "Koreana Pad",
     "controls": [
       {
+        "description": "Tremolo",
         "type": "MIDI",
-        "number": 1,
-        "description": "Tremolo"
+        "number": 1
       },
       {
+        "description": "Filter, Wet/Dry mix",
         "type": "MIDI",
-        "number": 6,
-        "description": "Filter, Wet/Dry mix"
+        "number": 6
       }
     ],
     "categoryId": "contemporary",
@@ -14918,18 +14912,18 @@
     "name": "Tangerine",
     "controls": [
       {
+        "description": "Enable 5th",
         "type": "MIDI",
-        "number": 1,
-        "description": "Enable 5th"
+        "number": 1
       },
       {
+        "description": "Envelope Ctl",
         "type": "MIDI",
-        "number": 6,
-        "description": "Envelope Ctl"
+        "number": 6
       },
       {
-        "type": "MPress",
-        "description": "Vibrato"
+        "description": "Vibrato",
+        "type": "MPress"
       }
     ],
     "categoryId": "contemporary",
@@ -16380,7 +16374,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Wet/Dry mix (for rolls) Sost ped enables bass drum."
+        "description": "Wet/Dry mix (for rolls) Sost ped enables bass drum"
       }
     ],
     "categoryId": "orchestral",
@@ -16409,7 +16403,7 @@
     "controls": [
       {
         "type": "Info",
-        "description": "(black keys: f#3-a#4) ped dampens."
+        "description": "(black keys: f#3-a#4) ped dampens"
       }
     ],
     "categoryId": "orchestral",
@@ -16554,5 +16548,4417 @@
     "categoryId": "orchestral",
     "categoryLabel": "Orchestral ROM",
     "sourceLabel": "Orchestral ROM"
+  },
+  "112": {
+    "name": "Trip Wah Clav",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wah Filter"
+      },
+      {
+        "type": "Foot",
+        "description": "Wah Filter"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enable Release Layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level, Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Compression Ratio & MakeUp Gain"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(Aux) Pre-Delay"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "113": {
+    "name": "FM E Piano",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Chorusy Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer 1 Pitch"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Modulator Pitch Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Modulator Pitch Layer 3"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": ""
+      },
+      {
+        "type": "Info",
+        "description": "(FX1) Enhancer In/Out, (FX2) Chorus Wet/Dry, (FX3) CDR Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Enhancer Crossover"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Feedback Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Chorus Depth"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "114": {
+    "name": "Stage EP",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tremolo Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency & Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Bass EQ Gain (KDFX)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(FX1) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(FX1) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX1) HF Damping"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "115": {
+    "name": "Growlin' EP",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Tremolo Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Tremolo Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Room Level, Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time, Size Scale"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(FX3) Cabinet LP , Warmth"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Alt Sample Start"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "116": {
+    "name": "Ballad Organ",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Leslie Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Drawbar 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Drawbar 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Drawbar 3, (aux) Plate Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Drawbar 4, Plate Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "KeyClick"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Perc Harmonic (Hi/Low)"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "HF damping, Perc Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Cabinet Dist Drive+Low-pass"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: VibeChorus in/out"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "117": {
+    "name": "Cookin Bee",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Leslie Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Distortion Drive"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Vibrato/Chorus"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "(FX2) Hi,Lo Gain"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "(FX2) Hi,Lo Trem"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Plate Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "118": {
+    "name": "Dance Perc Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Disable Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Disable Layer 3, Para EQ Width Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Hi Pass Separation, Para EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Hi Pass Resonance, Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Treble Shelve Frequency"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "119": {
+    "name": "Chiffy Pipes",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Decrescendo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Key Click"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level+Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Hall Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Hall Early Ref Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Chorus in/out, Hall HF damping+Predelay"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "120": {
+    "name": "Pipe Organ 4",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Subtle Pitch and LP Filter modulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(FX1) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "122": {
+    "name": "Adagio Strings",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "none"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Treble Shelf EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Bass Shelf EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Hall Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Reverb Time"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "123": {
+    "name": "Brighter Pizz",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "EQ Duller"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Shaper"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Hall Wet/Dry, Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "HF Damping"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "124": {
+    "name": "Slo Solo Cello",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "4P Low-pass Separation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency, Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time, HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX1) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(FX1) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Aux off, FX1 change Room preset"
+      },
+      {
+        "type": "MPress",
+        "description": "Increase Vibrato Depth"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "125": {
+    "name": "Arco Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Para Bass EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(FX1) Wet/Dry"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "126": {
+    "name": "Solo Strings",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Shaper"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time, HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX1) Wet/Dry"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "127": {
+    "name": "Touch Strings",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope Control: Attack & Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "128": {
+    "name": "Mixed Choir",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato+Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer XFade"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Release, Notch + ParaTreble Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "InEQ: Bass, ParaTreble, Notch Width"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Room Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Room Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "In finite Decay on Keydown"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "In finite Decay"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato+Rate"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "129": {
+    "name": "Bamboo Voices",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato, Para EQ Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Boost Vox Layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Bass EQ (KDFX)"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Treble EQ (KDFX)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level, FX1 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 Reverb Time"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "130": {
+    "name": "Syn Orch Power",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato+Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "LP2Res Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Release (faster)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX2 Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX2 Chorus Feedback Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX2 Chorus LFO Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Switch to FX2 Chorus"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato+Rate"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "131": {
+    "name": "Strummer Guitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enhancer Drive & Gain (less)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Reverb Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) Compression Ratio"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Switch to FX2 Pitcher"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "132": {
+    "name": "Blue Moods",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Slight Vibrato, String Balance"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "String Balance, Gtr Hi Frequency Cut"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Impact+Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Hall Time+HF damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Enhc Lo Mix, Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Enhc Hi Mix+Drive, Chorus Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Enhc + Chorus, Hall + Room"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "133": {
+    "name": "ES335",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Notch Filt Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Para Mid Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Para Mid Amp (ES335),"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Hall HF damping, InEQ: Bass+Treble (Abercrmbie)"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Turns off Semi-Tone Pitch Bend"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      },
+      {
+        "type": "Pitch Wheel",
+        "description": "Simulates Fretboard Slide (ES335)"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "134": {
+    "name": "Kotolin",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Para EQ AMP"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Para EQ Frequency, Width, Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level, (Fx3) reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Fx2) Phase Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Phase L/R LFO, (Fx3) Flange Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Buss toggle:, Phaser LFO Rate"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "135": {
+    "name": "Dreamguitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Octave Pitch shift Pad layer"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Notch Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Reverb Mix, (Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Pre-Delay, Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX1 Reverb Wet/Dry, Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Chorus Delay"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Chorus Feedback"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "136": {
+    "name": "Hyper Guitar",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enhancer Amplitude"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Treble Shelf EQ Gain"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX2 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX2 LFO Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Toggle: effect to Stereo Image"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "137": {
+    "name": "SliderDistJazzGt",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato/Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enables Dist Gtr Layers"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Para EQ ^ Hi Frequency Stim Drive, Dist EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Impact, Dist Drive"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) FDR Hall Level, reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Flange Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Tempo"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Delay Feedback"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Harmonics Level"
+      },
+      {
+        "type": "Pitch Wheel",
+        "description": "(Dist Layer) +2/-12 Pitch Bend"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "138": {
+    "name": "Liquid T Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope control: Att, Low-pass Frequency+Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency+Resonance, Steep Bass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Hall Time+HF damping, Chorus Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Delay Mix, SRS EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Feedback, SRS Centerspace"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: CHDelay + SRS"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Layer Enable (Harmonics)"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "140": {
+    "name": "CeeTaur",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level, (Fx3) reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Fx2) Phase Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Phase L/R LFO, (Fx3) Flange Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Bus toggle:, Phaser LFO Rate"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "141": {
+    "name": "Brite Stand-up",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Octave Pitch Shift Layer 2, (Aux) Ambience Level"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "142": {
+    "name": "DualBass^SlpBass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "toggle: DualBass + SlpBass"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Decay, Band-pass adjustment, ParaTreble"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control : Att+Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Room Level+Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Phaser Notch/ BP ^ Enhc LoDrive+Delay"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Phaser Center Frequency L ^ Enhc Hi Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Phaser Center Frequency R ^ Enhc Mid Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Phaser Feedback boost * Enhc Crossover Frequency"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "143": {
+    "name": "Sust Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Band-pass Frequency+Width, Envelope control: Impact, Low-pass adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "In EQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Comp Att Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Comp Release Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Comp Ratio"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Comp ThReshhold"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Comp in/out, (aux) Room in/out"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "144": {
+    "name": "Fonkin Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Bass EQ Gain (KDFX)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Comp Att Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Comp Release Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Comp Ratio"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Comp ThReshhold"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "(Aux) Room Level"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "145": {
+    "name": "Synth Fretless",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Shaper amt, HiPass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Flange Wet/Dry, Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Feedback, Chorus Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Flange L/R Phase, Chorus Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Flange + Chorus"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Shaper adjustment, Flange Wet/Dry"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "148": {
+    "name": "Studio Kit II",
+    "controls": [
+      {
+        "type": "Info",
+        "description": "MW"
+      },
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Multiple Layer toggle"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch: Kicks, Toms"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Pitch: Snares, Crash2"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry, FX1+2 Aux Levels, Aux Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 Reverb Time,FX2 Wet/Dry"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "151": {
+    "name": "QuestHipKit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "EP Chord Tremolo"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency Snare"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "EP Chord Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "EP Chord Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1,2,3 Aux Level, FX3 Reverb Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Aux Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX3 Flanger Feedback Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Toggle FX3, FX2"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "152": {
+    "name": "e Drums",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "none"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch Toms, Kicks"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Pitch Snares"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Para EQ Toms"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 Wet/Dry, Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(aux) Reverb Time"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "154": {
+    "name": "Steel Drumz",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX2 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX2 Flanger Feedback Leve"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX2 LFO Tempo"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: to Flanger"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "156": {
+    "name": "Mr. Parker",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Att+Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Plate Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Plate Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Mix (sys)"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Plate LFO adjustment, Delay Feedback"
+      },
+      {
+        "type": "MPress",
+        "description": "Pitch Bend down"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "158": {
+    "name": "Solo Trombone",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato, Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Treble Shelf EQ"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry, (aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 HF Damping"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, volume"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "159": {
+    "name": "Trumpets",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "InEQ:Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Chamber Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Chamber Time+HF damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Chorus Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Chorus in/out"
+      },
+      {
+        "type": "MPress",
+        "description": "Swell"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "161": {
+    "name": "Oboe ^ Eng Hrn",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "toggle: Oboe ^ Eng Hrn"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1, (aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(aux) HF Damping"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "162": {
+    "name": "Clarinet",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1, Aux Reverb Time"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "163": {
+    "name": "Bassoon",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1, Aux Reverb Time"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "164": {
+    "name": "Accordion",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Enable Layer 3&4"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "fade out layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 Reverb Time,FX2 Feedback Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX2 Center Frequency, LFO Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Room^Phaser"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "165": {
+    "name": "Matrix 12",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency, Envelope Control: Att, Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Octave Shift Saw+"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Plate Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Delay Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Delay HF Damping (FX3)"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Switch in Delay"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "166": {
+    "name": "OB Brass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Attack, Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Plate Level+Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Enhc Lo Drive+Mix, Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Enhc Mid Drive, Mid Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Enhc Hi Drive, Hi Mix, InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Enhancer + Chorus"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "167": {
+    "name": "PWM Comper",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1b Reverb Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX1a Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX1a Chorus Feedback Level"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "168": {
+    "name": "Soft Matrix 12",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Pitch Shift - Fifths"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(aux) Decay Time, Room Size, HF Damp"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX3 Delay Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX3 Delay Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Switch in Delay"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "169": {
+    "name": "Synth Brass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Chorus Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle Chorus, Envelope Follower"
+      },
+      {
+        "type": "MPress",
+        "description": "Low-pass Frequency Layer 1"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "170": {
+    "name": "Moogy Bass Too",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency, Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level, Aux Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Chorus Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX2 Reverb HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Chorus^ Enhancer"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "171": {
+    "name": "Chirp Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "HiPass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Att+Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Room Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Flange Wet/Dry, Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Feedback, Chorus Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Flange LFO Period, Chorus Tap Delay"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Flange + Chorus"
+      },
+      {
+        "type": "Info",
+        "description": "PW Octave Shift"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "172": {
+    "name": "Pulsepluck",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pulse Width"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Disable Layer 3"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(Aux) Treble Shelf Frequency"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "173": {
+    "name": "Resoshape",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch Modulation"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Shaper Layer 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Shaper Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Band-pass Width"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Global LFO Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry, (aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 Course Xcursion"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX1 Flange Feedback Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX1 HF Damping"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "174": {
+    "name": "Solar Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "175": {
+    "name": "Flutey Leads",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch - Octave Shift"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level, (FX3) Hall Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(aux) Hall HF damping+Predelay"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Chorus Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: CDR + Room"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "176": {
+    "name": "TM Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Octave Harmonic Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "! Gain"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX3 Delay Time"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "177": {
+    "name": "Modular Lead",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Octave Pitch Shift Layer 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency, fade Layer 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Feedback"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "179": {
+    "name": "Retrosiren",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "180": {
+    "name": "Odysseus",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Band-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Sine + Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 (aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "FX1 Loop Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) Spacing"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(Aux) HF Damping"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "181": {
+    "name": "Synth Caliopies",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer disable(up); Low-pass Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Band-pass Frequency; Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Low-pass Frequency+Resonance, Hipass Frequency, Treble boost"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Att+Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level, Room Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Phaser Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Phaser LFO Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Room+Phaser(Layer 1+3), Phaser+CDR(Layer 2+4)"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "182": {
+    "name": "Harmonica",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Fx1) Room Wet/Dry, (aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Room Time, Phase Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(aux) Hall adjustment, Phase Center Frequency+LFO Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(aux) Hall HF damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Room + Phaser"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "183": {
+    "name": "Space Log",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch Shift"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "184": {
+    "name": "Brite Bells",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Gain"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Sine+ Pitch"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry, (Aux) Room Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle Hall^Chorus"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "185": {
+    "name": "Glasswaves",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Non Lin Gain, Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX1 Wet/Dry, (Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle Hall^Chorus"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "186": {
+    "name": "Meditator",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency + Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "HFstim adjustment, Layer Pitch adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Band-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level + Decay Time ^ Miniverb Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Flang Wet/Dry ^ Minivrb Time + Predelay"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Flange + CDR"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "187": {
+    "name": "Chariots",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Octave Pitch Shift"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "(Aux) Hall Level"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "188": {
+    "name": "Heaven Stack",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Hi Frequency Stimulator Drive (less)"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Fade Out Layer 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Room Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time, FX2 Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX2 Chorus LFO Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX2 Chorus Feedback Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Switch in FX2 Chorus"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "189": {
+    "name": "Vortex Rev",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "HiPass Frequencys+Width"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Layer Xfade"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "InEQ: Treble, Envelope control: Att+Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Hall Predelay"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Chorus Depth+Delay"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Delay Mix+Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Hall HF damping"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "190": {
+    "name": "Luscious",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Panner LFO Rate, Layer Delay, Layer Xfade"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Impact+Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "InEQ: Bass, Envelope control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "InEQ: Treble, Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Time+Predelay+HF damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Flange Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Flange Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Hall Predelay adjustment"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      },
+      {
+        "type": "Tempo",
+        "description": "Low-pass Frequency"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "191": {
+    "name": "Sphaerique",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "High-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "All-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Octave Shift Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "InA Bass EQ"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "192": {
+    "name": "Padifier",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope Control: Attack"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "FX3 Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level, FX3 Reverb Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux), FX3 Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX3 Chorus Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX3 Chorus Depth"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Chorus^Room"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "193": {
+    "name": "Tang Vox Pad",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope Control: Att, Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Decay"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(Aux) Treble Shelf Frequency"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "194": {
+    "name": "Interference",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Wrap"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Shaper"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Room Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX1 4 Tap Mix"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "195": {
+    "name": "One Shot",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "LPGate Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Saw+ Pitch Layer 1"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Saw+ Pitch Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope Control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "FX3, Aux Wet/Dry (dryer)"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Hall Level (less)"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "FX3 Tap Delays, Loop Length"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "FX3 HF Damping"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "197": {
+    "name": "Doomsday",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch, Shaper Layer 2"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Decay Time"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "198": {
+    "name": "Click",
+    "controls": [],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "199": {
+    "name": "Default Program",
+    "controls": [],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "730": {
+    "name": "L'il Nipper Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "SFX Pitch"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch: Kick, Toms"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Pitch: Snares, AuxPerc"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Filter: Hihats, Cymbals"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Kicks, Snares"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Plate Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(FX3) Laserverb Spacing"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX2) Pitcher Pitch, Pitcher Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Pitcher control"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Laserverb Delay+Contour+Feedback"
+      },
+      {
+        "type": "MPress",
+        "description": "AuxPerc Pitch"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "731": {
+    "name": "Industry Set II",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Filter Resonance (A#4-C5)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": ""
+      },
+      {
+        "type": "Info",
+        "description": "AltControl on some layers, Pitch on Kick-like elements and some Toms"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Various Pitch controls on many elements"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Filters or Modulation Pitch on many elements"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: assorted kinds of control on many elements"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(FX2) Flange Wet/Dry, InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(aux) Hall Level, (FX2) Mix Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX3) DistEQ Wet/Dry+Gain adjustmentust"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Distortion Warmth"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: RoomType: Hall + Delay"
+      },
+      {
+        "type": "MPress",
+        "description": "Filter Resonance (A#4-C5)"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "732": {
+    "name": "Technoo Kit",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Alternate Kick (B2-C3)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch: nearly all elements"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Filter: Kicks, AuxPerc"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Filter: Snares, Toms, Ride, Crashes, HiHats (A#1-B1)"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Kicks, Snares (not G#1-A1), Ride, Choke Cym"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(FX1) Gated Reverb Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Gated Reverb Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX1+2) (aux) LaserVerb Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(FX4) LaserVerb Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: GateRvb HF damping+Gate Threshold"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "733": {
+    "name": "Geo-Kit",
+    "controls": [
+      {
+        "type": "Info",
+        "description": "MW+22"
+      },
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Multiple Layer toggle"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch: Kicks, Snares, Toms, Shaker"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Crossfade to tertiary Kicks; Pitch: Elec. Snare only"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": ""
+      },
+      {
+        "type": "Info",
+        "description": "Filter: Kicks, Snares, HiHats, Crashes, Ride, Shaker Amp LFO: SFX (A6-B6)"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": ""
+      },
+      {
+        "type": "Info",
+        "description": "Envelope control: most Kicks, Snares, Toms, Shaker, Elec HiHat LFO Rate: SFX (A6-B6)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(FX3) Mix Level, (aux) GateRvb Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(FX4) Mix Level, GateRvb Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX3) Compressor SmoothTime+MakeUp Gain"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": ""
+      },
+      {
+        "type": "Info",
+        "description": "(FX2) EnvFlt Frequency"
+      },
+      {
+        "type": "Info",
+        "description": "Sweep+Threshold, (FX1) Delay Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Compressor + ChorDelay"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "734": {
+    "name": "Slam 'n Drums I",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(FX1) Reverb Time, Wet/Dry, HF Damping"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(FX1) Aux Level, InA EQ Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(FX2, FX4) Aux Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(FX2) Wet/Dry"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "736": {
+    "name": "Lowdown Bass",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato, HiPass Frequency (Chirp)"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Low-pass Gate"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Envelope control: Impact"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Envelope control: Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Layer Enable, Envelope control: Decay+Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Dist Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Dist Drive, Mid EQ cut, Flange Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "InEQ: Bass, Flange Feedback"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Cab HiPass"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: EQ + Flange"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "739": {
+    "name": "Default Triple",
+    "controls": [],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "794": {
+    "name": "Water Piano",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(Aux) FDR Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(Aux) Wet/Dry, Delay Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "(Aux) Flanger Mix"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "(Aux) Flanger tempo"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "795": {
+    "name": "Piano Chase",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Vibrato (Strings)"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "InEQ: Treble"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Plate Level+Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Flange Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Feedback, (aux) Decay Time"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Flange LFO Tempo"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Flange Cross Feedback"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato (Strings)"
+      },
+      {
+        "type": "Sostenuto Pedal",
+        "description": "Disables Strings"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "796": {
+    "name": "Noise Toys",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Pitch LFO, Shaper amt"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch (Sine+) adjustment, Band-pass Frequency, Dist amt"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Pitch adjustment, Shaper LFO, HiPass Frequency"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Low-pass + HiPass Frequency, Envelope control: Att"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "LrsDelay Wet/Dry, Pitch Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "LsrDelay contour, Pitch pair weights"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Pitch odd weights"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Laser + Pitch"
+      },
+      {
+        "type": "MPress",
+        "description": "Vibrato, Pitch LFO adjustment"
+      },
+      {
+        "type": "Pitch Wheel",
+        "description": "Shaper adjustment"
+      },
+      {
+        "type": "Tempo",
+        "description": "LsrDelay Delay coarse + spacing"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "797": {
+    "name": "Environments",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "hi bird LFO Rate, Panner adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "lo bird LFO Rate"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "ParaEQ Frequency, shaper amt"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Pitch adjustment, Low-pass Frequency, Band-pass Frequency+Width"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "HiPass Frequency, Pitch (sine)"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "Chorus Level, reverb Level, CDR Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "(fx2) Chorus Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Phaser Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "CDR Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "Chorus Rate"
+      },
+      {
+        "type": "MPress",
+        "description": "InEQ: Bass"
+      },
+      {
+        "type": "MIDI",
+        "number": 70,
+        "description": "Alternate control"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "798": {
+    "name": "Lunar Wind",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Low-pass Frequency+Resonance"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Pitch adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Low-pass Resonance, Pan adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Panner sweep"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Room Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Pitcher Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Flange Mix (sys)"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Pitcher Pitch"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Pitcher in/out"
+      },
+      {
+        "type": "MPress",
+        "description": "Low-pass Frequency, Pan LFO"
+      },
+      {
+        "type": "Channel State",
+        "description": "Envelope control: Release"
+      },
+      {
+        "type": "Breath",
+        "description": "Low-pass adjustment"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
+  },
+  "799": {
+    "name": "Gremlin Groupies",
+    "controls": [
+      {
+        "type": "MIDI",
+        "number": 1,
+        "description": "Layer Pitch, Low-pass Frequency+Resonance, Wrap adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 6,
+        "description": "Layer Pitch, Low-pass LFO adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 22,
+        "description": "Layer Pitch, Pitch (Sine) adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 23,
+        "description": "Layer Pitch adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 24,
+        "description": "Layer Pitch, Wrap adjustment"
+      },
+      {
+        "type": "MIDI",
+        "number": 25,
+        "description": "(aux) Hall Level"
+      },
+      {
+        "type": "MIDI",
+        "number": 26,
+        "description": "Pitcher Wet/Dry, LsrDelay Time+Wet/Dry"
+      },
+      {
+        "type": "MIDI",
+        "number": 27,
+        "description": "Pitcher wts pair, Lsr Spacing"
+      },
+      {
+        "type": "MIDI",
+        "number": 28,
+        "description": "Pitcher wts odd, Lsr Contour"
+      },
+      {
+        "type": "MIDI",
+        "number": 29,
+        "description": "toggle: Pitcher + LaserDelay"
+      }
+    ],
+    "categoryId": "best_of_vast",
+    "categoryLabel": "Best Of VAST",
+    "sourceLabel": "Best Of VAST"
   }
 }
