@@ -56,6 +56,9 @@ let favoritesState = {
 let favoritesSortMode = "type";
 let keymapFilters = {};
 let heldMidiNotes = new Map();
+let physicallyHeldMidiNotes = new Map();
+let sustainLatchedMidiNotes = new Map();
+let sustainPedalActive = false;
 
 let myBankMSB = 0;
 let myBankLSB = 0;
@@ -437,6 +440,9 @@ function connectDevice(input) {
   localStorage.setItem(getMidiStorageKey(), input.id);
 
   heldMidiNotes = new Map();
+  physicallyHeldMidiNotes = new Map();
+  sustainLatchedMidiNotes = new Map();
+  sustainPedalActive = false;
   attachMidiListeners();
   setWaitingDisplay();
 
@@ -488,6 +494,10 @@ function attachMidiListeners() {
       value: e.rawValue,
       rawData: e.data || null,
     });
+
+    if (e.controller.number === 64) {
+      handleSustainPedalChange(e.rawValue);
+    }
 
     if (e.controller.number === 0) {
       myBankMSB = e.rawValue;
@@ -821,7 +831,13 @@ function handleLiveNoteOn(event) {
     return;
   }
 
-  heldMidiNotes.set(noteNumber, (heldMidiNotes.get(noteNumber) || 0) + 1);
+  physicallyHeldMidiNotes.set(noteNumber, (physicallyHeldMidiNotes.get(noteNumber) || 0) + 1);
+
+  if (sustainLatchedMidiNotes.has(noteNumber)) {
+    sustainLatchedMidiNotes.delete(noteNumber);
+  }
+
+  syncHeldMidiNotes();
   renderLiveChordPanel();
 }
 
@@ -833,15 +849,61 @@ function handleLiveNoteOff(event) {
     return;
   }
 
-  const nextCount = (heldMidiNotes.get(noteNumber) || 0) - 1;
+  const nextCount = (physicallyHeldMidiNotes.get(noteNumber) || 0) - 1;
 
   if (nextCount > 0) {
-    heldMidiNotes.set(noteNumber, nextCount);
+    physicallyHeldMidiNotes.set(noteNumber, nextCount);
   } else {
-    heldMidiNotes.delete(noteNumber);
+    physicallyHeldMidiNotes.delete(noteNumber);
+
+    if (sustainPedalActive) {
+      sustainLatchedMidiNotes.set(noteNumber, 1);
+    }
   }
 
+  syncHeldMidiNotes();
   renderLiveChordPanel();
+}
+
+function handleSustainPedalChange(rawValue) {
+
+  const nextActive = Number(rawValue) >= 64;
+
+  if (sustainPedalActive === nextActive) {
+    return;
+  }
+
+  sustainPedalActive = nextActive;
+
+  if (!sustainPedalActive) {
+    releaseSustainLatchedNotes();
+  }
+
+  syncHeldMidiNotes();
+  renderLiveChordPanel();
+}
+
+function releaseSustainLatchedNotes() {
+  sustainLatchedMidiNotes = new Map();
+}
+
+function syncHeldMidiNotes() {
+
+  const nextHeldNotes = new Map();
+
+  physicallyHeldMidiNotes.forEach((count, noteNumber) => {
+    if (count > 0) {
+      nextHeldNotes.set(noteNumber, count);
+    }
+  });
+
+  sustainLatchedMidiNotes.forEach((count, noteNumber) => {
+    if (count > 0 && !nextHeldNotes.has(noteNumber)) {
+      nextHeldNotes.set(noteNumber, count);
+    }
+  });
+
+  heldMidiNotes = nextHeldNotes;
 }
 
 function renderLiveChordPanel() {
