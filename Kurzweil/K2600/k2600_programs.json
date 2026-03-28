@@ -20437,10 +20437,6 @@
     "name": "Geo-Kit",
     "controls": [
       {
-        "type": "Info",
-        "description": "MW+22"
-      },
-      {
         "type": "MIDI",
         "number": 1,
         "description": "Multiple Layer toggle"
@@ -20448,7 +20444,7 @@
       {
         "type": "MIDI",
         "number": 6,
-        "description": "Pitch: Kicks, Snares, Toms, Shaker"
+        "description": "Pitch: Kicks; Snares; Toms; Shaker"
       },
       {
         "type": "MIDI",
@@ -20458,48 +20454,32 @@
       {
         "type": "MIDI",
         "number": 23,
-        "description": ""
-      },
-      {
-        "type": "Info",
-        "description": "Filter: Kicks, Snares, HiHats, Crashes, Ride, Shaker Amp LFO: SFX (A6-B6)"
+        "description": "Filter: Kicks; Snares; HiHats; Crashes; Ride; Shaker AmpLFO: SFX (A6-B6)"
       },
       {
         "type": "MIDI",
         "number": 24,
-        "description": ""
-      },
-      {
-        "type": "Info",
-        "description": "Envelope control: most Kicks, Snares, Toms, Shaker, Elec HiHat LFO Rate: SFX (A6-B6)"
+        "description": "EnvCtl: most Kicks; Snares; Toms; Shaker; Elec HiHat LFO Rate: SFX (A6-B6)"
       },
       {
         "type": "MIDI",
         "number": 25,
-        "description": "(FX3) Mix Level, (aux) GateRvb Level"
+        "description": "(FX3) Mix Lvl; (aux) GateRvb Lvl"
       },
       {
         "type": "MIDI",
         "number": 26,
-        "description": "(FX4) Mix Level, GateRvb Level"
+        "description": "(FX4) Mix Lvl; GateRvb Lvl"
       },
       {
         "type": "MIDI",
         "number": 27,
-        "description": "(FX3) Compressor SmoothTime+MakeUp Gain"
+        "description": "(FX3) Compressor Smooth-Time+MakeUpGain"
       },
       {
         "type": "MIDI",
         "number": 28,
-        "description": ""
-      },
-      {
-        "type": "Info",
-        "description": "(FX2) EnvFlt Frequency"
-      },
-      {
-        "type": "Info",
-        "description": "Sweep+Threshold, (FX1) Delay Level"
+        "description": "(FX2) EnvFlt Freq Sweep+Threshold; (FX1); Delay Lvl"
       },
       {
         "type": "MIDI",
