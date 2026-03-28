@@ -1,7 +1,7 @@
 const CONFIG = {
 
   appName: "K2k-MIDI-Companion",
-  appVersion: "1.2.21",
+  appVersion: "1.2.34",
   modelsIndexPath: "models/index.json",
   selectedModelKey: "kurzweil-forte",
   manufacturer: "Kurzweil",
@@ -12,7 +12,8 @@ const CONFIG = {
   midi: {
     autoConnect: "Kurzweil",
     preferredPort: 0,
-    debugEnabled: false
+    debugEnabled: false,
+    liveChordEnabled: true
   },
 
   debug: true

@@ -55,6 +55,7 @@ let favoritesState = {
 };
 let favoritesSortMode = "type";
 let keymapFilters = {};
+let heldMidiNotes = new Map();
 
 let myBankMSB = 0;
 let myBankLSB = 0;
@@ -305,6 +306,7 @@ function showDeviceModal() {
   const modal = document.getElementById("deviceModal");
   const container = document.getElementById("deviceTiles");
   const midiDebugEnabled = document.getElementById("midiDebugEnabled");
+  const liveChordEnabled = document.getElementById("liveChordEnabled");
   const midiChannelSelect = document.getElementById("midiChannelSelect");
   const needsModelSelection = isFirstRunModelSelectionRequired();
 
@@ -314,6 +316,9 @@ function showDeviceModal() {
   updateFavoritesTransferSummary();
   if (midiDebugEnabled) {
     midiDebugEnabled.checked = isMidiDebugEnabled();
+  }
+  if (liveChordEnabled) {
+    liveChordEnabled.checked = isLiveChordEnabled();
   }
   if (midiChannelSelect) {
     midiChannelSelect.textContent = "";
@@ -431,6 +436,7 @@ function connectDevice(input) {
 
   localStorage.setItem(getMidiStorageKey(), input.id);
 
+  heldMidiNotes = new Map();
   attachMidiListeners();
   setWaitingDisplay();
 
@@ -450,6 +456,7 @@ function attachMidiListeners() {
   for (let channelNumber = 1; channelNumber <= 16; channelNumber += 1) {
     const cleanupChannel = mySynth.channels[channelNumber];
     cleanupChannel.removeListener("noteon");
+    cleanupChannel.removeListener("noteoff");
     cleanupChannel.removeListener("controlchange");
     cleanupChannel.removeListener("programchange");
   }
@@ -460,7 +467,16 @@ function attachMidiListeners() {
   midiDebugLog(`Listening on MIDI channel ${channelNumber}`);
 
   channel.addListener("noteon", e => {
+    handleLiveNoteOn(e);
     midiDebugLog(`CH${channelNumber} Note On`, {
+      note: e.note?.identifier || e.note?.name || null,
+      rawData: e.data || null,
+    });
+  });
+
+  channel.addListener("noteoff", e => {
+    handleLiveNoteOff(e);
+    midiDebugLog(`CH${channelNumber} Note Off`, {
       note: e.note?.identifier || e.note?.name || null,
       rawData: e.data || null,
     });
@@ -584,6 +600,7 @@ function renderProgramNotes(patch) {
   }).join("");
 
   document.getElementById("notes").innerHTML = notesHtml;
+  renderLiveChordPanel();
 }
 
 function compareProgramControls(a, b) {
@@ -762,6 +779,7 @@ function renderSetupNotes(setup) {
     }).join("");
 
     document.getElementById("notes").innerHTML = notesHtml;
+    renderLiveChordPanel();
     return;
   }
 
@@ -776,6 +794,7 @@ function renderSetupNotes(setup) {
         <span class="ctrl-name">${label}</span>
         <span class="ctrl-desc">${formatDisplayedNoteText(formatSetupNotesText(text))}</span>
       </div>`;
+    renderLiveChordPanel();
     return;
   }
 
@@ -791,6 +810,369 @@ function renderSetupNotes(setup) {
   }).join("");
 
   document.getElementById("notes").innerHTML = notesHtml;
+  renderLiveChordPanel();
+}
+
+function handleLiveNoteOn(event) {
+
+  const noteNumber = Number(event?.note?.number);
+
+  if (!Number.isFinite(noteNumber)) {
+    return;
+  }
+
+  heldMidiNotes.set(noteNumber, (heldMidiNotes.get(noteNumber) || 0) + 1);
+  renderLiveChordPanel();
+}
+
+function handleLiveNoteOff(event) {
+
+  const noteNumber = Number(event?.note?.number);
+
+  if (!Number.isFinite(noteNumber)) {
+    return;
+  }
+
+  const nextCount = (heldMidiNotes.get(noteNumber) || 0) - 1;
+
+  if (nextCount > 0) {
+    heldMidiNotes.set(noteNumber, nextCount);
+  } else {
+    heldMidiNotes.delete(noteNumber);
+  }
+
+  renderLiveChordPanel();
+}
+
+function renderLiveChordPanel() {
+
+  const panel = document.getElementById("liveChordPanel");
+  const nameNode = document.getElementById("liveChordName");
+  const ledNode = document.getElementById("liveChordLed");
+  const mainView = document.getElementById("mainView");
+
+  if (!panel || !nameNode || !ledNode || !mainView) {
+    return;
+  }
+
+  if (!isLiveChordEnabled() || (selectedMode !== "programs" && selectedMode !== "setups") || mainView.classList.contains("hidden")) {
+    panel.classList.add("hidden");
+    return;
+  }
+
+  panel.classList.remove("hidden");
+
+  const analysis = analyzeHeldChord();
+
+  if (analysis.noteNames.length === 0) {
+    nameNode.textContent = "";
+    ledNode.classList.remove("active");
+    return;
+  }
+
+  nameNode.textContent = analysis.chordName || "";
+  ledNode.classList.toggle("active", analysis.noteNames.length > 0);
+}
+
+function analyzeHeldChord() {
+
+  const noteNumbers = Array.from(heldMidiNotes.keys()).sort((a, b) => a - b);
+  const pitchClasses = Array.from(new Set(noteNumbers.map(number => modulo(number, 12))));
+  const bass = noteNumbers.length > 0 ? modulo(noteNumbers[0], 12) : null;
+
+  return {
+    noteNames: noteNumbers.map(formatMidiNoteName),
+    chordName: identifyChordName(pitchClasses, bass),
+  };
+}
+
+function identifyChordName(pitchClasses, bassPitchClass) {
+
+  if (!Array.isArray(pitchClasses) || pitchClasses.length < 2) {
+    return "";
+  }
+
+  const sortedPitchClasses = [...pitchClasses].sort((a, b) => a - b);
+  const roots = bassPitchClass == null
+    ? sortedPitchClasses
+    : [bassPitchClass, ...sortedPitchClasses.filter(pc => pc !== bassPitchClass)];
+  const analyses = roots
+    .map(root => analyzeChordForRoot(sortedPitchClasses, root, bassPitchClass))
+    .filter(Boolean)
+    .sort((a, b) => b.score - a.score);
+
+  return analyses[0]?.name || "";
+}
+
+function analyzeChordForRoot(pitchClasses, root, bassPitchClass) {
+
+  const intervals = pitchClasses
+    .map(pc => modulo(pc - root, 12))
+    .sort((a, b) => a - b);
+  const intervalSet = new Set(intervals);
+
+  const has = value => intervalSet.has(value);
+  const hasMinorThird = has(3);
+  const hasMajorThird = has(4);
+  const hasPerfectFifth = has(7);
+  const hasDiminishedFifth = has(6);
+  const hasAugmentedFifth = has(8);
+  const hasSecond = has(2);
+  const hasFourth = has(5);
+  const hasSixth = has(9);
+  const hasMinorSeventh = has(10);
+  const hasMajorSeventh = has(11);
+  const hasFlatNine = has(1);
+  const hasSharpNine = has(3) && hasMajorThird;
+  const hasSharpEleven = has(6) && hasPerfectFifth;
+  const hasFlatThirteen = has(8) && hasPerfectFifth;
+
+  let quality = "";
+  let score = 0;
+
+  if (hasMajorThird && hasPerfectFifth) {
+    quality = "";
+    score += 30;
+  } else if (hasMinorThird && hasPerfectFifth) {
+    quality = "m";
+    score += 30;
+  } else if (hasMinorThird && hasDiminishedFifth) {
+    quality = hasSixth ? "dim7" : (hasMinorSeventh ? "m7b5" : "dim");
+    score += 32;
+  } else if (hasMajorThird && hasAugmentedFifth) {
+    quality = "aug";
+    score += 28;
+  } else if (hasFourth && hasPerfectFifth) {
+    quality = "sus4";
+    score += 24;
+  } else if (hasSecond && hasPerfectFifth) {
+    quality = "sus2";
+    score += 24;
+  } else if (hasPerfectFifth) {
+    quality = "5";
+    score += 12;
+  } else {
+    return null;
+  }
+
+  let suffix = quality;
+
+  if (quality === "") {
+    if (hasMajorSeventh) {
+      if (hasSixth && hasSecond) {
+        suffix = "maj13";
+        score += 34;
+      } else if (hasFourth && hasSecond) {
+        suffix = "maj11";
+        score += 30;
+      } else if (hasSecond) {
+        suffix = "maj9";
+        score += 26;
+      } else {
+        suffix = "maj7";
+        score += 18;
+      }
+
+      const majAlterations = joinChordTokens([
+        hasSharpEleven ? "#11" : "",
+        hasFlatThirteen ? "b13" : "",
+      ]);
+      suffix += majAlterations;
+      if (majAlterations) {
+        score += 6;
+      }
+    } else if (hasMinorSeventh) {
+      if (hasSixth) {
+        suffix = "13";
+        score += 34;
+      } else if (hasFourth && hasSecond) {
+        suffix = "11";
+        score += 30;
+      } else if (hasSecond) {
+        suffix = "9";
+        score += 24;
+      } else {
+        suffix = "7";
+        score += 16;
+      }
+
+      const dominantAlterations = joinChordTokens([
+        hasFlatNine ? "b9" : "",
+        hasSharpNine ? "#9" : "",
+        hasSharpEleven ? "#11" : "",
+        hasFlatThirteen ? "b13" : "",
+      ]);
+      suffix += dominantAlterations;
+      if (dominantAlterations) {
+        score += 8;
+      }
+    } else if (hasSixth && hasSecond) {
+      suffix = "6/9";
+      score += 22;
+    } else if (hasSixth) {
+      suffix = "6";
+      score += 14;
+    } else if (hasSecond && hasFourth) {
+      suffix = "add9add11";
+      score += 16;
+    } else if (hasSecond) {
+      suffix = "add9";
+      score += 12;
+    } else if (hasFourth) {
+      suffix = "add11";
+      score += 10;
+    } else if (hasSharpEleven) {
+      suffix = "add#11";
+      score += 10;
+    }
+  } else if (quality === "m") {
+    if (hasMajorSeventh) {
+      if (hasSixth) {
+        suffix = "m(maj13)";
+        score += 34;
+      } else if (hasFourth && hasSecond) {
+        suffix = "m(maj11)";
+        score += 30;
+      } else if (hasSecond) {
+        suffix = "m(maj9)";
+        score += 26;
+      } else {
+        suffix = "m(maj7)";
+        score += 22;
+      }
+    } else if (hasMinorSeventh) {
+      if (hasSixth) {
+        suffix = "m13";
+        score += 34;
+      } else if (hasFourth && hasSecond) {
+        suffix = "m11";
+        score += 30;
+      } else if (hasSecond) {
+        suffix = "m9";
+        score += 24;
+      } else {
+        suffix = "m7";
+        score += 16;
+      }
+    } else if (hasSixth && hasSecond) {
+      suffix = "m6/9";
+      score += 22;
+    } else if (hasSixth) {
+      suffix = "m6";
+      score += 14;
+    } else if (hasSecond && hasFourth) {
+      suffix = "m(add9add11)";
+      score += 16;
+    } else if (hasSecond) {
+      suffix = "m(add9)";
+      score += 12;
+    } else if (hasFourth) {
+      suffix = "m(add11)";
+      score += 10;
+    }
+  } else if (quality === "sus4") {
+    if (hasMinorSeventh && hasSixth) {
+      suffix = "13sus4";
+      score += 28;
+    } else if (hasMinorSeventh && hasSecond) {
+      suffix = "9sus4";
+      score += 22;
+    } else if (hasMinorSeventh) {
+      suffix = "7sus4";
+      score += 16;
+    } else if (hasSecond) {
+      suffix = "sus4(add9)";
+      score += 12;
+    }
+  } else if (quality === "sus2") {
+    if (hasMinorSeventh) {
+      suffix = "7sus2";
+      score += 16;
+    } else if (hasSixth) {
+      suffix = "6/9(no3)";
+      score += 12;
+    }
+  } else if (quality === "aug") {
+    if (hasMajorSeventh) {
+      suffix = "maj7#5";
+      score += 18;
+    } else if (hasMinorSeventh) {
+      suffix = "7#5";
+      score += 18;
+    }
+  } else if (quality === "m7b5" || quality === "dim7" || quality === "dim") {
+    if (quality === "m7b5" && hasSecond) {
+      suffix = "m9b5";
+      score += 18;
+    }
+  }
+
+  score += intervals.length * 2;
+  score += getChordComplexityBonus({
+    hasFlatNine,
+    hasSecond,
+    hasSharpNine,
+    hasFourth,
+    hasSharpEleven,
+    hasSixth,
+    hasFlatThirteen,
+    hasMinorSeventh,
+    hasMajorSeventh,
+  });
+
+  if (bassPitchClass === root) {
+    score += 10;
+  } else if (bassPitchClass != null) {
+    score -= 8;
+  }
+
+  const rootName = formatPitchClassName(root);
+  const bassSuffix = bassPitchClass != null && bassPitchClass !== root
+    ? `/${formatPitchClassName(bassPitchClass)}`
+    : "";
+
+  return {
+    name: `${rootName}${suffix}${bassSuffix}`,
+    score,
+  };
+}
+
+function joinChordTokens(tokens) {
+
+  return tokens.filter(Boolean).join("");
+}
+
+function getChordComplexityBonus(features) {
+
+  let bonus = 0;
+
+  if (features.hasFlatNine) bonus += 3;
+  if (features.hasSecond) bonus += 3;
+  if (features.hasSharpNine) bonus += 4;
+  if (features.hasFourth) bonus += 2;
+  if (features.hasSharpEleven) bonus += 4;
+  if (features.hasSixth) bonus += 3;
+  if (features.hasFlatThirteen) bonus += 4;
+  if (features.hasMinorSeventh || features.hasMajorSeventh) bonus += 2;
+
+  return bonus;
+}
+
+function modulo(value, divisor) {
+  return ((value % divisor) + divisor) % divisor;
+}
+
+function formatPitchClassName(pitchClass) {
+
+  const names = ["C", "C#", "D", "Eb", "E", "F", "F#", "G", "Ab", "A", "Bb", "B"];
+  return names[modulo(pitchClass, 12)] || "?";
+}
+
+function formatMidiNoteName(noteNumber) {
+
+  const pitchClassName = formatPitchClassName(noteNumber);
+  const octave = Math.floor(Number(noteNumber) / 12) - 1;
+  return `${pitchClassName}${octave}`;
 }
 
 function formatControlTypeLabel(type) {
@@ -2547,6 +2929,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     focusPatchSearch();
     return;
   }
@@ -2570,6 +2953,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     focusFavoritesSearch();
     return;
   }
@@ -2593,6 +2977,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     focusKeymapsSearch();
     return;
   }
@@ -2616,6 +3001,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     focusFxPresetsSearch();
     return;
   }
@@ -2639,6 +3025,7 @@ function showView(viewId) {
     dspButton?.classList.add("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     focusInputById("dspSearch");
     return;
   }
@@ -2662,6 +3049,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.add("active");
+    renderLiveChordPanel();
     focusInputById("kdfxSearch");
     return;
   }
@@ -2685,6 +3073,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.add("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     focusInputById("modSourceSearch");
     return;
   }
@@ -2708,6 +3097,7 @@ function showView(viewId) {
     dspButton?.classList.remove("active");
     modSourcesButton?.classList.remove("active");
     kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
     return;
   }
 
@@ -2729,6 +3119,7 @@ function showView(viewId) {
   dspButton?.classList.remove("active");
   modSourcesButton?.classList.remove("active");
   kdfxButton?.classList.remove("active");
+  renderLiveChordPanel();
 }
 
 function renderModSources(query = "") {
@@ -4079,6 +4470,11 @@ function getMidiDebugStorageKey() {
   return `${modelId}_midiDebugEnabled`;
 }
 
+function getLiveChordStorageKey() {
+  const modelId = synthModel?.modelId || "default";
+  return `${modelId}_liveChordEnabled`;
+}
+
 function getMidiChannelStorageKey() {
   const modelId = synthModel?.modelId || "default";
   return `${modelId}_midiReceiveChannel`;
@@ -4100,6 +4496,24 @@ function isMidiDebugEnabled() {
 
 function setMidiDebugEnabled(enabled) {
   localStorage.setItem(getMidiDebugStorageKey(), enabled ? "true" : "false");
+}
+
+function isLiveChordEnabled() {
+  const stored = localStorage.getItem(getLiveChordStorageKey());
+
+  if (stored === "true") {
+    return true;
+  }
+
+  if (stored === "false") {
+    return false;
+  }
+
+  return CONFIG?.midi?.liveChordEnabled !== false;
+}
+
+function setLiveChordEnabled(enabled) {
+  localStorage.setItem(getLiveChordStorageKey(), enabled ? "true" : "false");
 }
 
 function getSelectedMidiChannel() {
@@ -4431,6 +4845,7 @@ function closeModal() {
 async function saveSettings() {
   const selectedModelKey = document.getElementById("modelSelect")?.value || selectedModelEntry?.key || "";
   const midiDebugEnabled = document.getElementById("midiDebugEnabled")?.checked === true;
+  const liveChordEnabled = document.getElementById("liveChordEnabled")?.checked !== false;
   const midiChannel = Number(document.getElementById("midiChannelSelect")?.value || getSelectedMidiChannel());
   const modelChanged = Boolean(selectedModelKey && selectedModelKey !== selectedModelEntry?.key);
 
@@ -4445,6 +4860,7 @@ async function saveSettings() {
   }
 
   setMidiDebugEnabled(midiDebugEnabled);
+  setLiveChordEnabled(liveChordEnabled);
   setSelectedMidiChannel(midiChannel);
 
   const selectedModelEntryForSave = availableModels.find(model => model.key === selectedModelKey) || selectedModelEntry || null;
@@ -4464,6 +4880,7 @@ async function saveSettings() {
     renderKeymaps(getKeymapSearchQuery());
     renderSearchResults(getPatchSearchQuery());
     renderFavoritesResults(getFavoritesSearchQuery());
+    renderLiveChordPanel();
   }
 
   console.log("Settings saved");

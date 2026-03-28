@@ -63,6 +63,15 @@
       <div class="midi-debug-help">Use the Browser's Development Mode Console.</div>
     </div>
 
+    <h2>Live Chord</h2>
+    <div class="midi-debug-settings">
+      <label class="midi-debug-toggle">
+        <input id="liveChordEnabled" type="checkbox" />
+        <span>Enable live chord detection</span>
+      </label>
+      <div class="midi-debug-help">Shows a detected chord on the Programs screen.</div>
+    </div>
+
     <div class="modal-actions">
 
   <button class="k2600-button cancelButton">
@@ -110,6 +119,16 @@
     <div class="lcd-frame">
       <button id="favoriteToggleButton" class="favorite-toggle favorite-toggle-main hidden" type="button" title="Add current item to favorites" aria-label="Add current item to favorites">★</button>
       <div id="display">Waiting...</div>
+    </div>
+
+    <div id="liveChordPanel" class="live-chord-panel hidden" aria-live="polite">
+      <div class="live-chord-header">
+        <div class="live-chord-heading">Live Chord</div>
+        <div id="liveChordName" class="live-chord-name">No notes held</div>
+      </div>
+      <div class="live-chord-footer">
+        <div id="liveChordLed" class="live-chord-led" aria-hidden="true"></div>
+      </div>
     </div>
 
     <div class="notes-frame">
