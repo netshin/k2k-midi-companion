@@ -38,7 +38,8 @@
         "k2600_mod_sources.json",
         "k2600_dsp_algorithms.json",
         "k2600_dsp_block_details.json",
-        "k2600_keymaps.json"
+        "k2600_keymaps.json",
+        "k2600_notes.json"
       ]
     },
     {

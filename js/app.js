@@ -14,6 +14,7 @@ let dspBlockDetails = {};
 let keymapsData = null;
 let fxPresetsData = null;
 let programCategoriesData = null;
+let notesPageData = null;
 let synthModel = null;
 let selectedModelEntry = null;
 let availableModels = [];
@@ -153,6 +154,12 @@ async function loadData() {
     programCategoriesData = await fetchJson(resolveModelPath(synthModel.programCategoryDataPath), "program category data");
   } else {
     programCategoriesData = null;
+  }
+
+  if (synthModel.notesDataPath) {
+    notesPageData = await fetchJson(resolveModelPath(synthModel.notesDataPath), "notes page data");
+  } else {
+    notesPageData = null;
   }
 
   console.log("JSON loaded");
@@ -1885,6 +1892,11 @@ function applyModelLabels() {
     favoritesButton.title = "Display favorites (Alt+F)";
   }
 
+  const notesPageButton = document.getElementById("notesPageButton");
+  if (notesPageButton) {
+    notesPageButton.title = `Display notes for ${synthModel?.displayName || "this model"}`;
+  }
+
   const programsButton = document.getElementById("programsButton");
   if (programsButton) {
     programsButton.title = `Display Details about ${programPlural} (Alt+P)`;
@@ -2506,6 +2518,60 @@ function shouldShowFxPresetsView() {
   return synthModel?.showFxPresetsView !== false && getFxPresetEntries().length > 0;
 }
 
+function getNotesPageEntries() {
+  if (Array.isArray(notesPageData)) {
+    return notesPageData;
+  }
+
+  if (Array.isArray(notesPageData?.items)) {
+    return notesPageData.items;
+  }
+
+  return [];
+}
+
+function escapeHtml(value) {
+  return String(value)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
+}
+
+function renderNotesPage() {
+  const container = document.getElementById("notesPageResults");
+
+  if (!container) {
+    return;
+  }
+
+  const entries = getNotesPageEntries()
+    .map(entry => ({
+      text: String(entry?.text || "").trim(),
+      label: String(entry?.label || "").trim(),
+      context: String(entry?.context || "").trim(),
+    }))
+    .filter(entry => entry.text);
+
+  if (entries.length === 0) {
+    container.innerHTML = '<div class="browser-empty">No notes available for this model.</div>';
+    return;
+  }
+
+  const itemsHtml = entries.map(entry => {
+    const meta = [entry.label, entry.context].filter(Boolean).join(" · ");
+    const text = escapeHtml(entry.text);
+
+    if (!meta) {
+      return `<li class="notes-page-item"><div class="notes-page-text">${text}</div></li>`;
+    }
+
+    return `<li class="notes-page-item"><div class="browser-item-meta">${escapeHtml(meta)}</div><div class="notes-page-text">${text}</div></li>`;
+  }).join("");
+
+  container.innerHTML = `<ul class="notes-page-list">${itemsHtml}</ul>`;
+}
+
 function renderFxPresets(query = "") {
   const container = document.getElementById("fxPresetsResults");
   const summary = document.getElementById("fxPresetsSummary");
@@ -2706,6 +2772,7 @@ function setupKdfxButton() {
 
   const searchButton = document.getElementById("searchButton");
   const favoritesButton = document.getElementById("favoritesButton");
+  const notesPageButton = document.getElementById("notesPageButton");
   const keymapsButton = document.getElementById("keymapsButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
@@ -2747,6 +2814,17 @@ function setupKdfxButton() {
       showView("favorites");
       renderFavoritesResults(getFavoritesSearchQuery());
     });
+  }
+
+  if (notesPageButton) {
+    if (getNotesPageEntries().length === 0) {
+      notesPageButton.classList.add("hidden");
+    } else {
+      notesPageButton.addEventListener("click", () => {
+        showView("notes");
+        renderNotesPage();
+      });
+    }
   }
 
   if (keymapsButton) {
@@ -2955,6 +3033,7 @@ function showView(viewId) {
   const mainView = document.getElementById("mainView");
   const searchView = document.getElementById("searchView");
   const favoritesView = document.getElementById("favoritesView");
+  const notesPageView = document.getElementById("notesPageView");
   const keymapsView = document.getElementById("keymapsView");
   const fxPresetsView = document.getElementById("fxPresetsView");
   const dspView = document.getElementById("dspView");
@@ -2962,6 +3041,7 @@ function showView(viewId) {
   const kdfxView = document.getElementById("kdfxView");
   const searchButton = document.getElementById("searchButton");
   const favoritesButton = document.getElementById("favoritesButton");
+  const notesPageButton = document.getElementById("notesPageButton");
   const keymapsButton = document.getElementById("keymapsButton");
   const programsButton = document.getElementById("programsButton");
   const setupsButton = document.getElementById("setupsButton");
@@ -2977,6 +3057,7 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.remove("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
@@ -2984,6 +3065,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.add("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3001,6 +3083,7 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.remove("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
@@ -3008,6 +3091,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.add("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3020,11 +3104,37 @@ function showView(viewId) {
     return;
   }
 
+  if (viewId === "notes") {
+    selectedMode = "programs";
+    mainView?.classList.add("hidden");
+    searchView?.classList.add("hidden");
+    favoritesView?.classList.add("hidden");
+    notesPageView?.classList.remove("hidden");
+    keymapsView?.classList.add("hidden");
+    fxPresetsView?.classList.add("hidden");
+    dspView?.classList.add("hidden");
+    modSourcesView?.classList.add("hidden");
+    kdfxView?.classList.add("hidden");
+    searchButton?.classList.remove("active");
+    favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.add("active");
+    keymapsButton?.classList.remove("active");
+    programsButton?.classList.remove("active");
+    setupsButton?.classList.remove("active");
+    fxPresetsButton?.classList.remove("active");
+    dspButton?.classList.remove("active");
+    modSourcesButton?.classList.remove("active");
+    kdfxButton?.classList.remove("active");
+    renderLiveChordPanel();
+    return;
+  }
+
   if (viewId === "keymaps") {
     selectedMode = "programs";
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.remove("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
@@ -3032,6 +3142,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.add("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3049,6 +3160,7 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.remove("hidden");
     dspView?.classList.add("hidden");
@@ -3056,6 +3168,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3073,6 +3186,7 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.remove("hidden");
@@ -3080,6 +3194,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3097,6 +3212,7 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
@@ -3104,6 +3220,7 @@ function showView(viewId) {
     kdfxView?.classList.remove("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3121,6 +3238,7 @@ function showView(viewId) {
     mainView?.classList.add("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
@@ -3128,6 +3246,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.remove("active");
@@ -3145,6 +3264,7 @@ function showView(viewId) {
     mainView?.classList.remove("hidden");
     searchView?.classList.add("hidden");
     favoritesView?.classList.add("hidden");
+    notesPageView?.classList.add("hidden");
     keymapsView?.classList.add("hidden");
     fxPresetsView?.classList.add("hidden");
     dspView?.classList.add("hidden");
@@ -3152,6 +3272,7 @@ function showView(viewId) {
     kdfxView?.classList.add("hidden");
     searchButton?.classList.remove("active");
     favoritesButton?.classList.remove("active");
+    notesPageButton?.classList.remove("active");
     keymapsButton?.classList.remove("active");
     programsButton?.classList.remove("active");
     setupsButton?.classList.add("active");
@@ -3167,6 +3288,7 @@ function showView(viewId) {
   mainView?.classList.remove("hidden");
   searchView?.classList.add("hidden");
   favoritesView?.classList.add("hidden");
+  notesPageView?.classList.add("hidden");
   keymapsView?.classList.add("hidden");
   fxPresetsView?.classList.add("hidden");
   dspView?.classList.add("hidden");
@@ -3174,6 +3296,7 @@ function showView(viewId) {
   kdfxView?.classList.add("hidden");
   searchButton?.classList.remove("active");
   favoritesButton?.classList.remove("active");
+  notesPageButton?.classList.remove("active");
   keymapsButton?.classList.remove("active");
   programsButton?.classList.add("active");
   setupsButton?.classList.remove("active");
@@ -5077,6 +5200,7 @@ async function startApp() {
   setupKeyboardShortcuts();
   renderSearchResults(getPatchSearchQuery());
   renderFavoritesResults(getFavoritesSearchQuery());
+  renderNotesPage();
   renderKeymaps(getKeymapSearchQuery());
   showView("main");
 

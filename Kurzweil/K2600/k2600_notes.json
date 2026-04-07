@@ -1,0 +1,10 @@
+{
+  "items": [
+    {
+      "text": "When recording MIXER or MIXDOWN faders, they will not be played back until the song record track is set to NONE or a specific track."
+    },
+    {
+      "text": "In Setup > Common, the parameter \"sngctl\" determines if controller data is played back from Song or is static / modified in real time as a performance."
+    }
+  ]
+}

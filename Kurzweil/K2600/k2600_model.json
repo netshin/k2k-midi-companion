@@ -11,6 +11,7 @@
   "kdfxLookupDataPath": "k2600_kdfx_lookup.json",
   "dspAlgorithmDataPath": "k2600_dsp_algorithms.json",
   "dspBlockDetailDataPath": "k2600_dsp_block_details.json",
+  "notesDataPath": "k2600_notes.json",
   "locationDigits": 3,
   "setupLocationDigits": 2,
   "setupIndex": {

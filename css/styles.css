@@ -536,6 +536,26 @@ body {
   padding:12px;
 }
 
+.notes-page-results {
+  padding:18px 22px;
+}
+
+.notes-page-list {
+  margin:0;
+  padding-left:22px;
+  color:#e7f7ff;
+}
+
+.notes-page-item + .notes-page-item {
+  margin-top:14px;
+}
+
+.notes-page-text {
+  line-height:1.5;
+  overflow-wrap:anywhere;
+  word-break:break-word;
+}
+
 #notes {
   width:100%;
   max-width:100%;
